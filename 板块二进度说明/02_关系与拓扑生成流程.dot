@@ -2,7 +2,7 @@ digraph G {
 graph [rankdir=TB,bgcolor="white",pad=0.3,nodesep=0.3,ranksep=0.4,fontname="Noto Sans CJK SC",fontsize=19];
 node [shape=box,style="rounded,filled",fillcolor="#EAF2FA",color="#38658A",fontname="Noto Sans CJK SC",fontsize=12,margin="0.18,0.12"];
 edge [color="#587188",fontname="Noto Sans CJK SC",fontsize=10];
-label="功能关系与逻辑连接处理流程（当前服务器代码）";labelloc=t;
+label="功能关系分析与拓扑连接生成流程（当前服务器代码）";labelloc=t;
 a[label="遍历FunctionRelation
 保留type、confidence、source_refs"];
 b[label="两端附加簇标签

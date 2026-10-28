@@ -2,24 +2,30 @@ digraph G {
 graph [rankdir=TB,bgcolor="white",pad=0.3,nodesep=0.3,ranksep=0.4,fontname="Noto Sans CJK SC",fontsize=19];
 node [shape=box,style="rounded,filled",fillcolor="#EAF2FA",color="#38658A",fontname="Noto Sans CJK SC",fontsize=12,margin="0.18,0.12"];
 edge [color="#587188",fontname="Noto Sans CJK SC",fontsize=10];
-label="板块二处理流程与交付边界";labelloc=t;
-a[label="板块一确认后的功能图
-或物理架构模块提供的完整上下文"];
-b[label="本地输入适配
-functions映射 → function_points数组
-function_relations → relations"];
-c[shape=diamond,label="模型、ID与引用有效？"];
-d[label="报告错误并修正输入",fillcolor="#FCE8E6"];
-e[label="多字段语义特征构建 → BIRCH聚类"];
-f[label="生成分组归属、关系簇标签与逻辑连接"];
-g[label="记录metrics / processing
-检查功能覆盖及关联一致性"];
-h[label="功能逻辑架构数据JSON"];
-i[label="物理架构组件选型及连接布局模块
-对外接口适配与返回（待接入/对齐）",fillcolor="#FFF3CD"];
-j[label="板块三周瑜璇
-JSON交接 → SysML v2转换与校验",fillcolor="#E6F4EA"];
-a->b->c;
-k[label="对话补全（功能设计）\noption启用 → 建议/追问 → 用户采纳、修改或自补\n校验合并确认内容，再次分析",fillcolor="#FFF3CD"];
-a->k[label="需要补全"];k->a[label="更新上下文"];c->d[label="否"];c->e[label="是"];e->f->g->h;h->i;h->j;
+label="板块一、板块二对话补全与功能逻辑架构交付流程";labelloc=t;
+subgraph cluster_one {
+ label="板块一：功能点及其关联关系的形成与完善";color="#7C9DB8";style=rounded;
+ a[label="提取整理功能点及其关联关系"];
+ a1[label="板块一对话补全\n建议/追问 → 用户采纳、修改或自补\n校验合并已确认内容",fillcolor="#FFF3CD"];
+ a2[label="确认功能点及其关联关系"];
+ a->a1[label="需要补全"];a1->a[label="继续完善"];a->a2[label="当前内容确认"];a1->a2[label="采纳并确认"];
+}
+q[label="物理架构模块提供的上下文（另一输入来源）"];
+subgraph cluster_two {
+ label="板块二：功能逻辑架构分析";color="#38658A";style=rounded;
+ b[label="接收功能点及其关联关系 / 上下文\n本地输入适配与初步分析"];
+ k[label="板块二对话补全（功能设计）\noption启用 → 建议/追问\n用户采纳、修改或自补 → 校验合并",fillcolor="#FFF3CD"];
+ c[shape=diamond,label="当前确认数据\n满足计算条件？"];
+ d[label="说明缺失与错误，继续澄清",fillcolor="#FCE8E6"];
+ e[label="多字段语义表征 → BIRCH功能聚类"];
+ f[label="功能关系分析与拓扑连接生成\n保留关系语义、聚类归属及来源"];
+ g[label="评价与一致性检查\n记录metrics / processing"];
+ h[label="功能逻辑架构数据JSON"];
+ b->k[label="启用补全且需完善"];k->b[label="更新已确认上下文"];
+ b->c[label="提交当前数据"];c->d[label="否"];d->b;c->e[label="是"];e->f->g->h;
+}
+a2->b;q->b;
+i[label="物理架构组件选型及连接布局模块\n两个对外接口开发中，双方字段正在协商",fillcolor="#FFF3CD"];
+j[label="板块三：周瑜璇\n接收JSON → SysML v2转换与校验",fillcolor="#E6F4EA"];
+h->i;h->j;
 }
