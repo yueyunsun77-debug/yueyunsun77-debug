@@ -1,0 +1,27 @@
+digraph G {
+ graph [rankdir=TB,bgcolor="white",pad=0.3,nodesep=0.25,ranksep=0.35,fontname="Noto Sans CJK SC",fontsize=18];
+ node [shape=box,style="rounded,filled",fillcolor="#EAF2FA",color="#38658A",fontname="Noto Sans CJK SC",fontsize=12,margin="0.18,0.12"];
+ edge [color="#587188",fontname="Noto Sans CJK SC",fontsize=10];
+label="关系标注与逻辑拓扑生成（基于 MBSE_all.py）";labelloc=t;
+a[label="遍历去重后的功能关系"];
+b[shape=diamond,label="两端功能ID均存在？"];
+c[label="异常记录
+前置校验阻断；生成段保留过滤防御",fillcolor="#FCE8E6"];
+d[label="关系编码标准化
+补充REL编号、方向、置信度、证据与源/目标簇"];
+e[label="写入聚类功能点关系表"];
+f[label="取源outputs[0]、目标inputs[0]
+缺失时使用占位符 —"];
+g[shape=diamond,label="关系类型？"];
+h[label="DATA_FLOW
+流对象 = 源端口"];
+i[label="TRIGGER
+流对象 = 触发信号"];
+j[label="其他类型
+流对象 = —；保留关系语义"];
+k[label="写入拓扑连接表
+生成L编号并保留所属簇"];
+l[label="继续下一条；完成后导出两表
+设计验收：行数相等、端点可追溯"];
+a->b;b->c[label="否"];b->d[label="是"];d->e->f->g;g->h;g->i;g->j;h->k;i->k;j->k;k->l;
+}
