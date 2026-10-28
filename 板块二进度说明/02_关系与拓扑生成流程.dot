@@ -1,27 +1,23 @@
 digraph G {
- graph [rankdir=TB,bgcolor="white",pad=0.3,nodesep=0.25,ranksep=0.35,fontname="Noto Sans CJK SC",fontsize=18];
- node [shape=box,style="rounded,filled",fillcolor="#EAF2FA",color="#38658A",fontname="Noto Sans CJK SC",fontsize=12,margin="0.18,0.12"];
- edge [color="#587188",fontname="Noto Sans CJK SC",fontsize=10];
-label="关系标注与逻辑拓扑生成（基于 MBSE_all.py）";labelloc=t;
-a[label="遍历去重后的功能关系"];
-b[shape=diamond,label="两端功能ID均存在？"];
-c[label="异常记录
-前置校验阻断；生成段保留过滤防御",fillcolor="#FCE8E6"];
-d[label="关系编码标准化
-补充REL编号、方向、置信度、证据与源/目标簇"];
-e[label="写入聚类功能点关系表"];
-f[label="取源outputs[0]、目标inputs[0]
-缺失时使用占位符 —"];
-g[shape=diamond,label="关系类型？"];
-h[label="DATA_FLOW
-流对象 = 源端口"];
-i[label="TRIGGER
-流对象 = 触发信号"];
-j[label="其他类型
-流对象 = —；保留关系语义"];
-k[label="写入拓扑连接表
-生成L编号并保留所属簇"];
-l[label="继续下一条；完成后导出两表
-设计验收：行数相等、端点可追溯"];
-a->b;b->c[label="否"];b->d[label="是"];d->e->f->g;g->h;g->i;g->j;h->k;i->k;j->k;k->l;
+graph [rankdir=TB,bgcolor="white",pad=0.3,nodesep=0.3,ranksep=0.4,fontname="Noto Sans CJK SC",fontsize=19];
+node [shape=box,style="rounded,filled",fillcolor="#EAF2FA",color="#38658A",fontname="Noto Sans CJK SC",fontsize=12,margin="0.18,0.12"];
+edge [color="#587188",fontname="Noto Sans CJK SC",fontsize=10];
+label="功能关系与逻辑连接处理流程（当前服务器代码）";labelloc=t;
+a[label="遍历FunctionRelation
+保留type、confidence、source_refs"];
+b[label="两端附加簇标签
+写入clustered_relations"];
+c[shape=diamond,label="type为数据流或DATA_FLOW？"];
+d[label="读取源outputs与目标inputs中的name"];
+e[shape=diamond,label="去空格后存在同名信号？"];
+f[label="使用匹配到的输入输出"];
+g[label="回退到各自首项
+缺失端口填 —"];
+h[label="端口与流对象填 —
+保留非数据流关系原始语义"];
+i[label="写入logical_connections
+L编号、名称、端口、类型、簇、证据"];
+j[label="处理下一条
+输出功能逻辑架构数据"];
+a->b->c;c->d[label="是"];c->h[label="否"];d->e;e->f[label="是"];e->g[label="否"];f->i;g->i;h->i;i->j;
 }

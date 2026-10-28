@@ -1,32 +1,23 @@
 digraph G {
- graph [rankdir=TB,bgcolor="white",pad=0.3,nodesep=0.25,ranksep=0.35,fontname="Noto Sans CJK SC",fontsize=18];
- node [shape=box,style="rounded,filled",fillcolor="#EAF2FA",color="#38658A",fontname="Noto Sans CJK SC",fontsize=12,margin="0.18,0.12"];
- edge [color="#587188",fontname="Noto Sans CJK SC",fontsize=10];
-label="板块二：逻辑功能架构数据生成流程（整合设计）"; labelloc=t;
-a[label="板块一输出
-补全后的功能点、关系、摘要"];
-b[label="JSON → 输入三表
-功能点列表 / 功能点关系图 / 摘要信息"];
-c[label="前置校验与关系标准化
-非空、类型、去重、ID引用、数据流端口"];
-d[shape=diamond,label="校验通过？"];
-e[label="错误报告与上游修正",fillcolor="#FCE8E6"];
-f[label="功能名称分词 → TF-IDF → L2归一化"];
-g[label="BIRCH 功能聚类
-threshold=0.6，branching_factor=50"];
-h[label="建立功能ID → 簇 / 名称 / 输入输出映射"];
-i[label="表1：聚类架构分层表
-组件行 + 所属子系统 / 功能簇"];
-j[label="表2：聚类功能点关系表
-有效端点 + 关系编码 + 簇标签 + 证据"];
-k[label="表3：IBD/BDD逻辑拓扑连接表
-端口选择 + 流对象 / 约束关系"];
-l[label="评价指标与一致性检查
-统一评分及完整验收规则待整合",fillcolor="#FFF3CD"];
-m[label="Excel / JSON 输出"];
-n[label="REST API 查询 / 重生成"];
-o[label="RAG 输入转换"];
-p[label="SysML v2 文本 / JSON 转换
-已有校验未通过，待修正与复验",fillcolor="#FFF3CD"];
-a->b->c->d;d->e[label="否"];e->a;d->f[label="是"];f->g->h;h->i;h->j;j->k;i->l;k->l;l->m;m->n;m->o;m->p;
+graph [rankdir=TB,bgcolor="white",pad=0.3,nodesep=0.3,ranksep=0.4,fontname="Noto Sans CJK SC",fontsize=19];
+node [shape=box,style="rounded,filled",fillcolor="#EAF2FA",color="#38658A",fontname="Noto Sans CJK SC",fontsize=12,margin="0.18,0.12"];
+edge [color="#587188",fontname="Noto Sans CJK SC",fontsize=10];
+label="板块二处理流程与交付边界";labelloc=t;
+a[label="板块一确认后的功能图
+或物理架构模块提供的完整上下文"];
+b[label="本地输入适配
+functions映射 → function_points数组
+function_relations → relations"];
+c[shape=diamond,label="模型、ID与引用有效？"];
+d[label="报告错误并修正输入",fillcolor="#FCE8E6"];
+e[label="多字段语义特征构建 → BIRCH聚类"];
+f[label="生成分组归属、关系簇标签与逻辑连接"];
+g[label="记录metrics / processing
+检查功能覆盖及关联一致性"];
+h[label="功能逻辑架构数据JSON"];
+i[label="物理架构组件选型及连接布局模块
+对外接口适配与返回（待接入/对齐）",fillcolor="#FFF3CD"];
+j[label="板块三周瑜璇
+JSON交接 → SysML v2转换与校验",fillcolor="#E6F4EA"];
+a->b->c;c->d[label="否"];c->e[label="是"];e->f->g->h;h->i;h->j;
 }
