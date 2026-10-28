@@ -22,9 +22,9 @@ g[label="质量评价
 h[label="功能逻辑架构数据（JSON）
 功能归属、关联关系、逻辑连接、指标与配置"];
 i[label="对外接口
-/generate_logical_arch（待接入）
-/complement_arch_gen_context（待对齐only_check）
-物理架构组件选型及连接布局模块",fillcolor="#FFF3CD"];
+逻辑架构生成接口（开发中）
+对话补全接口（开发中）
+物理架构组件选型及连接布局模块\n双方字段正在协商对齐",fillcolor="#FFF3CD"];
 j[label="板块三：周瑜璇
 接收JSON，负责SysML v2转换与校验",fillcolor="#E6F4EA"];
 a->b->c->d;d->e;d->f;e->g;f->g;g->h;h->i;h->j;

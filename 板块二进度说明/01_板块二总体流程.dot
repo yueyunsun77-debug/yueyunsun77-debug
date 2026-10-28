@@ -19,5 +19,7 @@ i[label="物理架构组件选型及连接布局模块
 对外接口适配与返回（待接入/对齐）",fillcolor="#FFF3CD"];
 j[label="板块三周瑜璇
 JSON交接 → SysML v2转换与校验",fillcolor="#E6F4EA"];
-a->b->c;c->d[label="否"];c->e[label="是"];e->f->g->h;h->i;h->j;
+a->b->c;
+k[label="对话补全（功能设计）\noption启用 → 建议/追问 → 用户采纳、修改或自补\n校验合并确认内容，再次分析",fillcolor="#FFF3CD"];
+a->k[label="需要补全"];k->a[label="更新上下文"];c->d[label="否"];c->e[label="是"];e->f->g->h;h->i;h->j;
 }
