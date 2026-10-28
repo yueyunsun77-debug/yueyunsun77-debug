@@ -3,31 +3,15 @@ graph [rankdir=TB,bgcolor="white",pad=0.3,nodesep=0.3,ranksep=0.4,fontname="Noto
 node [shape=box,style="rounded,filled",fillcolor="#EAF2FA",color="#38658A",fontname="Noto Sans CJK SC",fontsize=12,margin="0.18,0.12"];
 edge [color="#587188",fontname="Noto Sans CJK SC",fontsize=10];
 label="板块二技术路线图";labelloc=t;
-a[label="研究输入
-板块一经对话补全并确认的\n功能点及其关联关系"];
-b[label="标准功能点及其关联关系与校验
-Function / FunctionRelation，ID唯一与端点引用"];
-c[label="多字段语义表征
-名称、描述、作用对象、效果、输入输出等
-jieba → TF-IDF → L2归一化"];
-d[label="BIRCH功能聚类
-threshold=0.6，branching_factor=50"];
-e[label="功能归属组织
-function_id → cluster_id → 子系统释义"];
-f[label="功能关系分析与拓扑连接生成
-关系挂接簇标签；显式数据流匹配端口"];
-g[label="质量评价
-内聚、解耦、碎片化及几何指标
-参数比较与权重研究待实验验证"];
-h[label="功能逻辑架构数据（JSON）
-功能归属、关联关系、逻辑连接、指标与配置"];
-i[label="对外接口
-逻辑架构生成接口（开发中）
-对话补全接口（开发中）
-物理架构组件选型及连接布局模块\n双方字段正在协商对齐",fillcolor="#FFF3CD"];
-j[label="板块三：周瑜璇
-接收JSON，负责SysML v2转换与校验",fillcolor="#E6F4EA"];
-a->b->c->d;
-k[label="板块二对话补全（功能设计）\noption启用 → 建议/追问 → 用户反馈\n校验合并确认内容",fillcolor="#FFF3CD"];
-b->k[label="需完善"];k->b[label="更新上下文"];d->e;d->f;e->g;f->g;g->h;h->i;h->j;
+a[label="板块一\n功能点及其关联关系数据"];
+z[label="板块三：郑心如\n补全功能点及其关联关系",fillcolor="#E6F4EA"];
+b[label="板块二：输入规范与校验\nFunction / FunctionRelation，ID唯一与端点引用"];
+c[label="多字段语义表征\n名称、描述、作用对象、效果、输入输出等\njieba → TF-IDF → L2归一化"];
+d[label="BIRCH功能聚类\nthreshold=0.6，branching_factor=50"];
+e[label="功能归属组织\nfunction_id → cluster_id → 子系统释义"];
+f[label="功能关系分析与拓扑连接生成\n关系挂接簇标签；显式数据流匹配端口"];
+g[label="质量评价\n内聚、解耦、碎片化及几何指标\n参数比较与权重研究待实验验证"];
+h[label="功能逻辑架构数据（JSON）\n功能归属、关联关系、逻辑连接、指标与配置"];
+j[label="板块三：周瑜璇\n接收JSON，负责SysML v2转换与校验",fillcolor="#E6F4EA"];
+a->z->b->c->d;d->e;d->f;e->g;f->g;g->h->j;
 }
