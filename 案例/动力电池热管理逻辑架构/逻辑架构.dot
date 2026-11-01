@@ -1,0 +1,254 @@
+digraph G {
+graph [fontname="Noto Sans CJK SC", fontsize=22, bgcolor="white", rankdir=LR, compound=true, nodesep=0.32, ranksep=0.85, pad=0.4, splines=polyline, pack=true];
+node [shape=box, style="filled", fillcolor="#DAF6B6", color="#70945A", penwidth=1.4, fontname="Noto Sans CJK SC", fontsize=15, margin="0.20,0.15"];
+edge [color="#4B7051", fontcolor="#496050", fontname="Noto Sans CJK SC", fontsize=10, arrowsize=0.7];
+subgraph cluster_system {label="原始 JSON 功能分组与关系"; color="#7D97AD"; penwidth=1.8; bgcolor="#F7FBFF";
+subgraph cluster_s0 {label="子系统_0"; color="#8094AC"; bgcolor="#DBEAF8"; penwidth=1.4;
+subgraph cluster_c0 {label="簇 0 · 簇0业务功能"; fontsize=13; color="#A1B9CD"; bgcolor="#EAF3FB";
+n0 [label="Ⓛ  获取电芯控制温度", tooltip="fn-获取电芯控制温度-138DBC2A-aab4d4c52be0"];
+}
+}
+subgraph cluster_s1 {label="子系统_1"; color="#8094AC"; bgcolor="#DBEAF8"; penwidth=1.4;
+subgraph cluster_c1 {label="簇 1 · 簇1业务功能"; fontsize=13; color="#A1B9CD"; bgcolor="#EAF3FB";
+n1 [label="Ⓛ  形成主动冷却需求", tooltip="fn-形成主动冷却需求-138DBC2A-81fd9f7841c0"];
+n2 [label="Ⓛ  提出主动供风请求", tooltip="fn-提出主动供风请求-138DBC2A-4bf744cc848d"];
+}
+}
+subgraph cluster_s2 {label="子系统_2"; color="#8094AC"; bgcolor="#DBEAF8"; penwidth=1.4;
+subgraph cluster_c2 {label="簇 2 · 簇2业务功能"; fontsize=13; color="#A1B9CD"; bgcolor="#EAF3FB";
+n3 [label="Ⓛ  撤销或保持无主动请求", tooltip="fn-撤销或保持无主动请求-138DBC2A-a86ccd842093"];
+}
+}
+subgraph cluster_s3 {label="子系统_3"; color="#8094AC"; bgcolor="#DBEAF8"; penwidth=1.4;
+subgraph cluster_c3 {label="簇 3 · 簇3业务功能"; fontsize=13; color="#A1B9CD"; bgcolor="#EAF3FB";
+n4 [label="Ⓛ  汇总换热贡献", tooltip="fn-汇总换热贡献-138DBC2A-1321c44843a7"];
+}
+}
+subgraph cluster_s4 {label="动力电池热管理子系统"; color="#8094AC"; bgcolor="#DBEAF8"; penwidth=1.4;
+subgraph cluster_c4 {label="簇 4 · 动力电池热管理功能簇"; fontsize=13; color="#A1B9CD"; bgcolor="#EAF3FB";
+n5 [label="Ⓛ  向电池热模型提供结果", tooltip="fn-向电池热模型提供结果-138DBC2A-da9eb084e313"];
+}
+subgraph cluster_c6 {label="簇 6 · 动力电池热管理功能簇"; fontsize=13; color="#A1B9CD"; bgcolor="#EAF3FB";
+n8 [label="Ⓛ  接收评估周期启动事件", tooltip="fn-接收评估周期启动事件-78B74133-a185f7a455b7"];
+n9 [label="Ⓛ  请求电池温度快照", tooltip="fn-请求电池温度快照-78B74133-7fd3cb48fbea"];
+n10 [label="Ⓛ  接收电池温度快照", tooltip="fn-接收电池温度快照-78B74133-5a29474f9fa6"];
+}
+subgraph cluster_c11 {label="簇 11 · 动力电池热管理功能簇"; fontsize=13; color="#A1B9CD"; bgcolor="#EAF3FB";
+n17 [label="Ⓛ  提交总换热贡献给电池热\n模型", tooltip="fn-提交总换热贡献给电池热模型-78B74133-b5410fb4d891"];
+n19 [label="Ⓛ  统一推进电池热状态", tooltip="fn-统一推进电池热状态-78B74133-d1f6d0ee535b"];
+}
+subgraph cluster_c14 {label="簇 14 · 动力电池热管理功能簇"; fontsize=13; color="#A1B9CD"; bgcolor="#EAF3FB";
+n26 [label="Ⓛ  处理无主动冷却请求", tooltip="fn-处理无主动冷却请求-78B74133-13202d7749b5"];
+n27 [label="Ⓛ  处理供风不可用", tooltip="fn-处理供风不可用-78B74133-ca188220293e"];
+n28 [label="Ⓛ  处理已请求但尚无实际供\n风", tooltip="fn-处理已请求但尚无实际供风-78B74133-e72979197a3b"];
+n29 [label="Ⓛ  计算主动供风换热", tooltip="fn-计算主动供风换热-78B74133-d7408bfbdaa9"];
+n52 [label="Ⓛ  撤销电池主动供风", tooltip="fn-撤销电池主动供风-23D10441-efe442b2a20b"];
+}
+subgraph cluster_c16 {label="簇 16 · 动力电池热管理功能簇"; fontsize=13; color="#A1B9CD"; bgcolor="#EAF3FB";
+n32 [label="Ⓛ  电池冷却请求状态监测", tooltip="fn-电池冷却请求状态监测-799883A1-252695df4ee8"];
+n33 [label="Ⓛ  初始未评估状态转移", tooltip="fn-初始未评估状态转移-799883A1-9bd02ce4ea12"];
+n34 [label="Ⓛ  初始进入无请求状态", tooltip="fn-初始进入无请求状态-799883A1-7efd1421ca69"];
+n35 [label="Ⓛ  初始进入请求状态", tooltip="fn-初始进入请求状态-799883A1-f4168276c624"];
+}
+subgraph cluster_c26 {label="簇 26 · 动力电池热管理功能簇"; fontsize=13; color="#A1B9CD"; bgcolor="#EAF3FB";
+n51 [label="Ⓛ  请求电池冷却供风", tooltip="fn-请求电池冷却供风-23D10441-77db605d3581"];
+}
+}
+subgraph cluster_s5 {label="子系统_5"; color="#8094AC"; bgcolor="#DBEAF8"; penwidth=1.4;
+subgraph cluster_c5 {label="簇 5 · 簇5业务功能"; fontsize=13; color="#A1B9CD"; bgcolor="#EAF3FB";
+n6 [label="Ⓛ  发送座舱降温需求", tooltip="fn-发送座舱降温需求-78B74133-bdc0ad9e672e"];
+n7 [label="Ⓛ  按座舱需求进行温控", tooltip="fn-按座舱需求进行温控-78B74133-d453a32be303"];
+}
+}
+subgraph cluster_s6 {label="子系统_7"; color="#8094AC"; bgcolor="#DBEAF8"; penwidth=1.4;
+subgraph cluster_c7 {label="簇 7 · 簇7业务功能"; fontsize=13; color="#A1B9CD"; bgcolor="#EAF3FB";
+n11 [label="Ⓛ  计算控制温度与主动冷却\n请求", tooltip="fn-计算控制温度与主动冷却请求-78B74133-a55dc1bdeeea"];
+}
+}
+subgraph cluster_s7 {label="子系统_8"; color="#8094AC"; bgcolor="#DBEAF8"; penwidth=1.4;
+subgraph cluster_c8 {label="簇 8 · 簇8业务功能"; fontsize=13; color="#A1B9CD"; bgcolor="#EAF3FB";
+n12 [label="Ⓛ  请求环境换热评估", tooltip="fn-请求环境换热评估-78B74133-8d287ff70809"];
+n20 [label="Ⓛ  接收环境换热评估请求", tooltip="fn-接收环境换热评估请求-78B74133-8ed060f49072"];
+n23 [label="Ⓛ  计算有符号环境换热热流", tooltip="fn-计算有符号环境换热热流-78B74133-df1ae175ca89"];
+}
+}
+subgraph cluster_s8 {label="子系统_9"; color="#8094AC"; bgcolor="#DBEAF8"; penwidth=1.4;
+subgraph cluster_c9 {label="簇 9 · 簇9业务功能"; fontsize=13; color="#A1B9CD"; bgcolor="#EAF3FB";
+n13 [label="Ⓛ  接收环境换热贡献", tooltip="fn-接收环境换热贡献-78B74133-18b26309ffe6"];
+n16 [label="Ⓛ  汇总总换热贡献", tooltip="fn-汇总总换热贡献-78B74133-8af923810be3"];
+n24 [label="Ⓛ  返回环境换热贡献", tooltip="fn-返回环境换热贡献-78B74133-68e6a8ca319c"];
+}
+}
+subgraph cluster_s9 {label="子系统_10"; color="#8094AC"; bgcolor="#DBEAF8"; penwidth=1.4;
+subgraph cluster_c10 {label="簇 10 · 簇10业务功能"; fontsize=13; color="#A1B9CD"; bgcolor="#EAF3FB";
+n14 [label="Ⓛ  发送主动冷却请求或撤销", tooltip="fn-发送主动冷却请求或撤销-78B74133-ffc1aecb1efc"];
+n15 [label="Ⓛ  接收主动冷却执行结果", tooltip="fn-接收主动冷却执行结果-78B74133-af106dfe2b16"];
+n25 [label="Ⓛ  接收主动冷却请求或撤销", tooltip="fn-接收主动冷却请求或撤销-78B74133-512c042e3d27"];
+n30 [label="Ⓛ  返回主动冷却执行结果", tooltip="fn-返回主动冷却执行结果-78B74133-c38c573cfb96"];
+}
+}
+subgraph cluster_s10 {label="子系统_12"; color="#8094AC"; bgcolor="#DBEAF8"; penwidth=1.4;
+subgraph cluster_c12 {label="簇 12 · 簇12业务功能"; fontsize=13; color="#A1B9CD"; bgcolor="#EAF3FB";
+n18 [label="Ⓛ  结束本次功能评估", tooltip="fn-结束本次功能评估-78B74133-98f0857a2804"];
+}
+}
+subgraph cluster_s11 {label="子系统_13"; color="#8094AC"; bgcolor="#DBEAF8"; penwidth=1.4;
+subgraph cluster_c13 {label="簇 13 · 簇13业务功能"; fontsize=13; color="#A1B9CD"; bgcolor="#EAF3FB";
+n21 [label="Ⓛ  请求前舱空气边界数据", tooltip="fn-请求前舱空气边界数据-78B74133-8b055203bbe0"];
+n22 [label="Ⓛ  接收前舱空气边界数据", tooltip="fn-接收前舱空气边界数据-78B74133-f8e85862d2a2"];
+n40 [label="Ⓛ  确定换热节点和边界", tooltip="fn-确定换热节点和边界-035A6165-9bb7b14ace8e"];
+}
+}
+subgraph cluster_s12 {label="子系统_15"; color="#8094AC"; bgcolor="#DBEAF8"; penwidth=1.4;
+subgraph cluster_c15 {label="簇 15 · 簇15业务功能"; fontsize=13; color="#A1B9CD"; bgcolor="#EAF3FB";
+n31 [label="Ⓛ  按场景驱动重复F0评估", tooltip="fn-按场景驱动重复F0评估-78B74133-f1a8327b7d27"];
+}
+}
+subgraph cluster_s13 {label="子系统_17"; color="#8094AC"; bgcolor="#DBEAF8"; penwidth=1.4;
+subgraph cluster_c17 {label="簇 17 · 簇17业务功能"; fontsize=13; color="#A1B9CD"; bgcolor="#EAF3FB";
+n36 [label="Ⓛ  未评估状态", tooltip="fn-未评估状态-799883A1-6b0b54ffaad7"];
+n37 [label="Ⓛ  无请求状态", tooltip="fn-无请求状态-799883A1-e537b97f4bcf"];
+n38 [label="Ⓛ  已请求状态", tooltip="fn-已请求状态-799883A1-95cd3df71859"];
+}
+}
+subgraph cluster_s14 {label="子系统_18"; color="#8094AC"; bgcolor="#DBEAF8"; penwidth=1.4;
+subgraph cluster_c18 {label="簇 18 · 簇18业务功能"; fontsize=13; color="#A1B9CD"; bgcolor="#EAF3FB";
+n39 [label="Ⓛ  刷新温度决策快照", tooltip="fn-刷新温度决策快照-799883A1-1cee250beeb3"];
+n45 [label="Ⓛ  记录环境换热节点状态快\n照", tooltip="fn-记录环境换热节点状态快照-AAA64E59-707336df5b50"];
+}
+}
+subgraph cluster_s15 {label="子系统_19"; color="#8094AC"; bgcolor="#DBEAF8"; penwidth=1.4;
+subgraph cluster_c19 {label="簇 19 · 簇19业务功能"; fontsize=13; color="#A1B9CD"; bgcolor="#EAF3FB";
+n41 [label="Ⓛ  读取温度和有效热导", tooltip="fn-读取温度和有效热导-035A6165-1e5f6f347570"];
+}
+}
+subgraph cluster_s16 {label="子系统_20"; color="#8094AC"; bgcolor="#DBEAF8"; penwidth=1.4;
+subgraph cluster_c20 {label="簇 20 · 簇20业务功能"; fontsize=13; color="#A1B9CD"; bgcolor="#EAF3FB";
+n42 [label="Ⓛ  计算有符号环境换热热流", tooltip="fn-计算有符号环境换热热流-035A6165-c62e21251fc7"];
+}
+}
+subgraph cluster_s17 {label="子系统_21"; color="#8094AC"; bgcolor="#DBEAF8"; penwidth=1.4;
+subgraph cluster_c21 {label="簇 21 · 簇21业务功能"; fontsize=13; color="#A1B9CD"; bgcolor="#EAF3FB";
+n43 [label="Ⓛ  输出环境换热贡献", tooltip="fn-输出环境换热贡献-035A6165-bbc5b74c4104"];
+}
+}
+subgraph cluster_s18 {label="子系统_22"; color="#8094AC"; bgcolor="#DBEAF8"; penwidth=1.4;
+subgraph cluster_c22 {label="簇 22 · 簇22业务功能"; fontsize=13; color="#A1B9CD"; bgcolor="#EAF3FB";
+n44 [label="Ⓛ  执行单次环境空气换热评\n估", tooltip="fn-执行单次环境空气换热评估-8A890163-e40675e78659"];
+}
+}
+subgraph cluster_s19 {label="子系统_23"; color="#8094AC"; bgcolor="#DBEAF8"; penwidth=1.4;
+subgraph cluster_c23 {label="簇 23 · 簇23业务功能"; fontsize=13; color="#A1B9CD"; bgcolor="#EAF3FB";
+n46 [label="Ⓛ  进入未评估状态", tooltip="fn-进入未评估状态-AAA64E59-565cb5353b94"];
+n47 [label="Ⓛ  判定向环境放热状态", tooltip="fn-判定向环境放热状态-AAA64E59-c98b3812e8e2"];
+n48 [label="Ⓛ  判定零净换热状态", tooltip="fn-判定零净换热状态-AAA64E59-3a9db56e60c4"];
+}
+}
+subgraph cluster_s20 {label="子系统_24"; color="#8094AC"; bgcolor="#DBEAF8"; penwidth=1.4;
+subgraph cluster_c24 {label="簇 24 · 簇24业务功能"; fontsize=13; color="#A1B9CD"; bgcolor="#EAF3FB";
+n49 [label="Ⓛ  判定从环境吸热状态", tooltip="fn-判定从环境吸热状态-AAA64E59-20cbb9d29359"];
+}
+}
+subgraph cluster_s21 {label="子系统_25"; color="#8094AC"; bgcolor="#DBEAF8"; penwidth=1.4;
+subgraph cluster_c25 {label="簇 25 · 簇25业务功能"; fontsize=13; color="#A1B9CD"; bgcolor="#EAF3FB";
+n50 [label="Ⓛ  接收主动冷却请求", tooltip="fn-接收主动冷却请求-23D10441-df18622c6a28"];
+}
+}
+subgraph cluster_s22 {label="子系统_27"; color="#8094AC"; bgcolor="#DBEAF8"; penwidth=1.4;
+subgraph cluster_c27 {label="簇 27 · 簇27业务功能"; fontsize=13; color="#A1B9CD"; bgcolor="#EAF3FB";
+n53 [label="Ⓛ  读取实际供风条件", tooltip="fn-读取实际供风条件-23D10441-bf3c438b582d"];
+}
+}
+subgraph cluster_s23 {label="子系统_28"; color="#8094AC"; bgcolor="#DBEAF8"; penwidth=1.4;
+subgraph cluster_c28 {label="簇 28 · 簇28业务功能"; fontsize=13; color="#A1B9CD"; bgcolor="#EAF3FB";
+n54 [label="Ⓛ  计算主动供风换热", tooltip="fn-计算主动供风换热-23D10441-363694c2c59f"];
+}
+}
+subgraph cluster_s24 {label="子系统_29"; color="#8094AC"; bgcolor="#DBEAF8"; penwidth=1.4;
+subgraph cluster_c29 {label="簇 29 · 簇29业务功能"; fontsize=13; color="#A1B9CD"; bgcolor="#EAF3FB";
+n55 [label="Ⓛ  记录尚未建立供风", tooltip="fn-记录尚未建立供风-23D10441-92b1bb6fbfd6"];
+n56 [label="Ⓛ  记录供风不可用", tooltip="fn-记录供风不可用-23D10441-a767d1bdccfa"];
+}
+}
+subgraph cluster_s25 {label="子系统_30"; color="#8094AC"; bgcolor="#DBEAF8"; penwidth=1.4;
+subgraph cluster_c30 {label="簇 30 · 簇30业务功能"; fontsize=13; color="#A1B9CD"; bgcolor="#EAF3FB";
+n57 [label="Ⓛ  反馈执行状态和换热贡献", tooltip="fn-反馈执行状态和换热贡献-23D10441-d1c726939d4b"];
+}
+}
+subgraph cluster_s26 {label="子系统_31"; color="#8094AC"; bgcolor="#DBEAF8"; penwidth=1.4;
+subgraph cluster_c31 {label="簇 31 · 簇31业务功能"; fontsize=13; color="#A1B9CD"; bgcolor="#EAF3FB";
+n58 [label="Ⓛ  无主动冷却请求轨迹", tooltip="fn-无主动冷却请求轨迹-5CCD33B1-9e6dbcb98c7a"];
+n59 [label="Ⓛ  供风不可用轨迹", tooltip="fn-供风不可用轨迹-5CCD33B1-45cd9e9f0cfb"];
+n60 [label="Ⓛ  已请求但尚未建立供风轨\n迹", tooltip="fn-已请求但尚未建立供风轨迹-5CCD33B1-3b40ad942138"];
+n61 [label="Ⓛ  实际供风下计算主动换热\n轨迹", tooltip="fn-实际供风下计算主动换热轨迹-5CCD33B1-0c968025c3ab"];
+}
+}
+subgraph cluster_s27 {label="子系统_32"; color="#8094AC"; bgcolor="#DBEAF8"; penwidth=1.4;
+subgraph cluster_c32 {label="簇 32 · 簇32业务功能"; fontsize=13; color="#A1B9CD"; bgcolor="#EAF3FB";
+n62 [label="Ⓛ  F2四条轨迹互斥选择", tooltip="fn-F2四条轨迹互斥选择-5CCD33B1-1f6131c7cd3d"];
+}
+}
+subgraph cluster_s28 {label="子系统_33"; color="#8094AC"; bgcolor="#DBEAF8"; penwidth=1.4;
+subgraph cluster_c33 {label="簇 33 · 簇33业务功能"; fontsize=13; color="#A1B9CD"; bgcolor="#EAF3FB";
+n63 [label="Ⓛ  确定主动冷却初始模式", tooltip="fn-确定主动冷却初始模式-D7264D39-417adfdf2ece"];
+}
+}
+subgraph cluster_s29 {label="子系统_34"; color="#8094AC"; bgcolor="#DBEAF8"; penwidth=1.4;
+subgraph cluster_c34 {label="簇 34 · 簇34业务功能"; fontsize=13; color="#A1B9CD"; bgcolor="#EAF3FB";
+n64 [label="Ⓛ  记录主动冷却执行快照", tooltip="fn-记录主动冷却执行快照-D7264D39-63cf62113747"];
+}
+}
+subgraph cluster_s30 {label="子系统_35"; color="#8094AC"; bgcolor="#DBEAF8"; penwidth=1.4;
+subgraph cluster_c35 {label="簇 35 · 簇35业务功能"; fontsize=13; color="#A1B9CD"; bgcolor="#EAF3FB";
+n65 [label="Ⓛ  标记主动冷却未评估", tooltip="fn-标记主动冷却未评估-D7264D39-aff650c1b0ac"];
+n66 [label="Ⓛ  标记主动冷却未请求", tooltip="fn-标记主动冷却未请求-D7264D39-2a47e5230c31"];
+n67 [label="Ⓛ  标记主动冷却不可用", tooltip="fn-标记主动冷却不可用-D7264D39-409a7b2b467c"];
+n68 [label="Ⓛ  标记主动冷却请求等待", tooltip="fn-标记主动冷却请求等待-D7264D39-bc5f0d8bf0e0"];
+n69 [label="Ⓛ  标记主动冷却供风中", tooltip="fn-标记主动冷却供风中-D7264D39-f673ca96e31f"];
+}
+}
+}
+n1 -> n0 [label="L-001 · 依赖", style=solid, dir=forward, tooltip="置信度 0.95"];
+n2 -> n1 [label="L-002 · 依赖", style=solid, dir=forward, tooltip="置信度 0.95"];
+n3 -> n1 [label="L-003 · 依赖", style=solid, dir=forward, tooltip="置信度 0.95"];
+n2 -> n3 [label="L-004 · 互斥", style=dashed, dir=none, tooltip="置信度 0.9"];
+n5 -> n4 [label="L-005 · 依赖", style=solid, dir=forward, tooltip="置信度 0.95"];
+n7 -> n6 [label="L-006 · 依赖", style=solid, dir=forward, tooltip="置信度 0.75"];
+n9 -> n8 [label="L-007 · 依赖", style=solid, dir=forward, tooltip="置信度 0.75"];
+n10 -> n9 [label="L-008 · 依赖", style=solid, dir=forward, tooltip="置信度 0.75"];
+n11 -> n10 [label="L-009 · 依赖", style=solid, dir=forward, tooltip="置信度 0.8"];
+n12 -> n11 [label="L-010 · 依赖", style=solid, dir=forward, tooltip="置信度 0.8"];
+n14 -> n11 [label="L-011 · 依赖", style=solid, dir=forward, tooltip="置信度 0.8"];
+n13 -> n12 [label="L-012 · 依赖", style=solid, dir=forward, tooltip="置信度 0.7"];
+n16 -> n13 [label="L-013 · 依赖", style=solid, dir=forward, tooltip="置信度 0.8"];
+n16 -> n15 [label="L-014 · 依赖", style=solid, dir=forward, tooltip="置信度 0.8"];
+n17 -> n16 [label="L-015 · 依赖", style=solid, dir=forward, tooltip="置信度 0.85"];
+n19 -> n17 [label="L-016 · 依赖", style=solid, dir=forward, tooltip="置信度 0.8"];
+n25 -> n14 [label="L-017 · 依赖", style=solid, dir=forward, tooltip="置信度 0.8"];
+n15 -> n30 [label="L-018 · 依赖", style=solid, dir=forward, tooltip="置信度 0.8"];
+n31 -> n6 [label="L-019 · 依赖", style=solid, dir=forward, tooltip="置信度 0.65"];
+n33 -> n34 [label="L-020 · 互斥条件分支", style=dashed, dir=none, tooltip="置信度 0.8"];
+n33 -> n35 [label="L-021 · 互斥条件分支", style=dashed, dir=none, tooltip="置信度 0.8"];
+n34 -> n35 [label="L-022 · 互斥条件分支", style=dashed, dir=none, tooltip="置信度 0.85"];
+n41 -> n42 [label="L-023 · 依赖", style=solid, dir=forward, tooltip="置信度 0.95"];
+n42 -> n43 [label="L-024 · 依赖", style=solid, dir=forward, tooltip="置信度 0.95"];
+n40 -> n42 [label="L-025 · 依赖", style=solid, dir=forward, tooltip="置信度 0.7"];
+n47 -> n48 [label="L-026 · 竞争", style=dashed, dir=none, tooltip="置信度 0.9"];
+n47 -> n49 [label="L-027 · 竞争", style=dashed, dir=none, tooltip="置信度 0.9"];
+n46 -> n47 [label="L-028 · 竞争", style=dashed, dir=none, tooltip="置信度 0.9"];
+n46 -> n48 [label="L-029 · 竞争", style=dashed, dir=none, tooltip="置信度 0.9"];
+n46 -> n49 [label="L-030 · 竞争", style=dashed, dir=none, tooltip="置信度 0.9"];
+n51 -> n52 [label="L-031 · 互斥选择", style=dashed, dir=none, tooltip="置信度 0.8"];
+n54 -> n55 [label="L-032 · 互斥选择", style=dashed, dir=none, tooltip="置信度 0.8"];
+n53 -> n56 [label="L-033 · 互斥选择", style=dashed, dir=none, tooltip="置信度 0.8"];
+n53 -> n54 [label="L-034 · 依赖", style=solid, dir=forward, tooltip="置信度 0.85"];
+n62 -> n58 [label="L-035 · 依赖", style=solid, dir=forward, tooltip="置信度 0.95"];
+n62 -> n59 [label="L-036 · 依赖", style=solid, dir=forward, tooltip="置信度 0.95"];
+n62 -> n60 [label="L-037 · 依赖", style=solid, dir=forward, tooltip="置信度 0.95"];
+n62 -> n61 [label="L-038 · 依赖", style=solid, dir=forward, tooltip="置信度 0.95"];
+n63 -> n65 [label="L-039 · 依赖", style=solid, dir=forward, tooltip="置信度 0.85"];
+n63 -> n66 [label="L-040 · 依赖", style=solid, dir=forward, tooltip="置信度 0.85"];
+n63 -> n67 [label="L-041 · 依赖", style=solid, dir=forward, tooltip="置信度 0.85"];
+n63 -> n68 [label="L-042 · 依赖", style=solid, dir=forward, tooltip="置信度 0.85"];
+n63 -> n69 [label="L-043 · 依赖", style=solid, dir=forward, tooltip="置信度 0.85"];
+}

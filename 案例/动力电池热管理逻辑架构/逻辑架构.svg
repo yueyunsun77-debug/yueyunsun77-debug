@@ -1,0 +1,1402 @@
+<?xml version='1.0' encoding='utf-8'?>
+<ns0:svg xmlns:ns0="http://www.w3.org/2000/svg" xmlns:ns1="http://www.w3.org/1999/xlink" width="2416.6pt" height="3241.6pt" viewBox="0 0 2416.6 3241.6">
+<ns0:g transform="translate(0,145)"><ns0:g id="graph0" class="graph" transform="scale(1 1) rotate(0) translate(28.8 3067.8)">
+<ns0:title>G</ns0:title>
+<ns0:polygon fill="white" stroke="transparent" points="-28.8,28.8 -28.8,-3067.8 2387.8,-3067.8 2387.8,28.8 -28.8,28.8" />
+<ns0:g id="clust1" class="cluster">
+<ns0:title>cluster_system</ns0:title>
+<ns0:polygon fill="#f7fbff" stroke="#7d97ad" stroke-width="1.8" points="8,-8 8,-3031 2351,-3031 2351,-8 8,-8" />
+<ns0:text text-anchor="middle" x="1179.5" y="-3009.4" font-family="Noto Sans CJK SC" font-size="22.00">原始 JSON 功能分组与关系</ns0:text>
+</ns0:g>
+<ns0:g id="clust2" class="cluster">
+<ns0:title>cluster_s0</ns0:title>
+<ns0:polygon fill="#dbeaf8" stroke="#8094ac" stroke-width="1.4" points="728.5,-2731 728.5,-2857 930.5,-2857 930.5,-2731 728.5,-2731" />
+<ns0:text text-anchor="middle" x="829.5" y="-2835.4" font-family="Noto Sans CJK SC" font-size="22.00">子系统_0</ns0:text>
+</ns0:g>
+<ns0:g id="clust3" class="cluster">
+<ns0:title>cluster_c0</ns0:title>
+<ns0:polygon fill="#eaf3fb" stroke="#a1b9cd" stroke-width="1.4" points="736.5,-2739 736.5,-2817 922.5,-2817 922.5,-2739 736.5,-2739" />
+<ns0:text text-anchor="middle" x="829.5" y="-2802.6" font-family="Noto Sans CJK SC" font-size="13.00">簇 0 · 簇0业务功能</ns0:text>
+</ns0:g>
+<ns0:g id="clust4" class="cluster">
+<ns0:title>cluster_s1</ns0:title>
+<ns0:polygon fill="#dbeaf8" stroke="#8094ac" stroke-width="1.4" points="38.5,-2731 38.5,-2857 575.5,-2857 575.5,-2731 38.5,-2731" />
+<ns0:text text-anchor="middle" x="307" y="-2835.4" font-family="Noto Sans CJK SC" font-size="22.00">子系统_1</ns0:text>
+</ns0:g>
+<ns0:g id="clust5" class="cluster">
+<ns0:title>cluster_c1</ns0:title>
+<ns0:polygon fill="#eaf3fb" stroke="#a1b9cd" stroke-width="1.4" points="46.5,-2739 46.5,-2817 567.5,-2817 567.5,-2739 46.5,-2739" />
+<ns0:text text-anchor="middle" x="307" y="-2802.6" font-family="Noto Sans CJK SC" font-size="13.00">簇 1 · 簇1业务功能</ns0:text>
+</ns0:g>
+<ns0:g id="clust6" class="cluster">
+<ns0:title>cluster_s2</ns0:title>
+<ns0:polygon fill="#dbeaf8" stroke="#8094ac" stroke-width="1.4" points="358.5,-2865 358.5,-2991 590.5,-2991 590.5,-2865 358.5,-2865" />
+<ns0:text text-anchor="middle" x="474.5" y="-2969.4" font-family="Noto Sans CJK SC" font-size="22.00">子系统_2</ns0:text>
+</ns0:g>
+<ns0:g id="clust7" class="cluster">
+<ns0:title>cluster_c2</ns0:title>
+<ns0:polygon fill="#eaf3fb" stroke="#a1b9cd" stroke-width="1.4" points="366.5,-2873 366.5,-2951 582.5,-2951 582.5,-2873 366.5,-2873" />
+<ns0:text text-anchor="middle" x="474.5" y="-2936.6" font-family="Noto Sans CJK SC" font-size="13.00">簇 2 · 簇2业务功能</ns0:text>
+</ns0:g>
+<ns0:g id="clust8" class="cluster">
+<ns0:title>cluster_s3</ns0:title>
+<ns0:polygon fill="#dbeaf8" stroke="#8094ac" stroke-width="1.4" points="1774.5,-1879 1774.5,-2005 1946.5,-2005 1946.5,-1879 1774.5,-1879" />
+<ns0:text text-anchor="middle" x="1860.5" y="-1983.4" font-family="Noto Sans CJK SC" font-size="22.00">子系统_3</ns0:text>
+</ns0:g>
+<ns0:g id="clust9" class="cluster">
+<ns0:title>cluster_c3</ns0:title>
+<ns0:polygon fill="#eaf3fb" stroke="#a1b9cd" stroke-width="1.4" points="1782.5,-1887 1782.5,-1965 1938.5,-1965 1938.5,-1887 1782.5,-1887" />
+<ns0:text text-anchor="middle" x="1860.5" y="-1950.6" font-family="Noto Sans CJK SC" font-size="13.00">簇 3 · 簇3业务功能</ns0:text>
+</ns0:g>
+<ns0:g id="clust10" class="cluster">
+<ns0:title>cluster_s4</ns0:title>
+<ns0:polygon fill="#dbeaf8" stroke="#8094ac" stroke-width="1.4" points="1373,-2013 1373,-2741 2343,-2741 2343,-2013 1373,-2013" />
+<ns0:text text-anchor="middle" x="1858" y="-2719.4" font-family="Noto Sans CJK SC" font-size="22.00">动力电池热管理子系统</ns0:text>
+</ns0:g>
+<ns0:g id="clust11" class="cluster">
+<ns0:title>cluster_c4</ns0:title>
+<ns0:polygon fill="#eaf3fb" stroke="#a1b9cd" stroke-width="1.4" points="1381,-2021 1381,-2099 1597,-2099 1597,-2021 1381,-2021" />
+<ns0:text text-anchor="middle" x="1489" y="-2084.6" font-family="Noto Sans CJK SC" font-size="13.00">簇 4 · 动力电池热管理功能簇</ns0:text>
+</ns0:g>
+<ns0:g id="clust12" class="cluster">
+<ns0:title>cluster_c6</ns0:title>
+<ns0:polygon fill="#eaf3fb" stroke="#a1b9cd" stroke-width="1.4" points="1396,-2623 1396,-2701 2335,-2701 2335,-2623 1396,-2623" />
+<ns0:text text-anchor="middle" x="1865.5" y="-2686.6" font-family="Noto Sans CJK SC" font-size="13.00">簇 6 · 动力电池热管理功能簇</ns0:text>
+</ns0:g>
+<ns0:g id="clust13" class="cluster">
+<ns0:title>cluster_c11</ns0:title>
+<ns0:polygon fill="#eaf3fb" stroke="#a1b9cd" stroke-width="1.4" points="1388.5,-2521 1388.5,-2615 1976,-2615 1976,-2521 1388.5,-2521" />
+<ns0:text text-anchor="middle" x="1682.25" y="-2600.6" font-family="Noto Sans CJK SC" font-size="13.00">簇 11 · 动力电池热管理功能簇</ns0:text>
+</ns0:g>
+<ns0:g id="clust14" class="cluster">
+<ns0:title>cluster_c14</ns0:title>
+<ns0:polygon fill="#eaf3fb" stroke="#a1b9cd" stroke-width="1.4" points="1745,-2021 1745,-2365 1976,-2365 1976,-2021 1745,-2021" />
+<ns0:text text-anchor="middle" x="1860.5" y="-2350.6" font-family="Noto Sans CJK SC" font-size="13.00">簇 14 · 动力电池热管理功能簇</ns0:text>
+</ns0:g>
+<ns0:g id="clust15" class="cluster">
+<ns0:title>cluster_c16</ns0:title>
+<ns0:polygon fill="#eaf3fb" stroke="#a1b9cd" stroke-width="1.4" points="1381,-2373 1381,-2513 2320,-2513 2320,-2373 1381,-2373" />
+<ns0:text text-anchor="middle" x="1850.5" y="-2498.6" font-family="Noto Sans CJK SC" font-size="13.00">簇 16 · 动力电池热管理功能簇</ns0:text>
+</ns0:g>
+<ns0:g id="clust16" class="cluster">
+<ns0:title>cluster_c26</ns0:title>
+<ns0:polygon fill="#eaf3fb" stroke="#a1b9cd" stroke-width="1.4" points="1392,-2107 1392,-2185 1586,-2185 1586,-2107 1392,-2107" />
+<ns0:text text-anchor="middle" x="1489" y="-2170.6" font-family="Noto Sans CJK SC" font-size="13.00">簇 26 · 动力电池热管理功能簇</ns0:text>
+</ns0:g>
+<ns0:g id="clust17" class="cluster">
+<ns0:title>cluster_s5</ns0:title>
+<ns0:polygon fill="#dbeaf8" stroke="#8094ac" stroke-width="1.4" points="31,-2133 31,-2259 575.5,-2259 575.5,-2133 31,-2133" />
+<ns0:text text-anchor="middle" x="303.25" y="-2237.4" font-family="Noto Sans CJK SC" font-size="22.00">子系统_5</ns0:text>
+</ns0:g>
+<ns0:g id="clust18" class="cluster">
+<ns0:title>cluster_c5</ns0:title>
+<ns0:polygon fill="#eaf3fb" stroke="#a1b9cd" stroke-width="1.4" points="39,-2141 39,-2219 567.5,-2219 567.5,-2141 39,-2141" />
+<ns0:text text-anchor="middle" x="303.25" y="-2204.6" font-family="Noto Sans CJK SC" font-size="13.00">簇 5 · 簇5业务功能</ns0:text>
+</ns0:g>
+<ns0:g id="clust19" class="cluster">
+<ns0:title>cluster_s6</ns0:title>
+<ns0:polygon fill="#dbeaf8" stroke="#8094ac" stroke-width="1.4" points="1041,-2571 1041,-2713 1288,-2713 1288,-2571 1041,-2571" />
+<ns0:text text-anchor="middle" x="1164.5" y="-2691.4" font-family="Noto Sans CJK SC" font-size="22.00">子系统_7</ns0:text>
+</ns0:g>
+<ns0:g id="clust20" class="cluster">
+<ns0:title>cluster_c7</ns0:title>
+<ns0:polygon fill="#eaf3fb" stroke="#a1b9cd" stroke-width="1.4" points="1049,-2579 1049,-2673 1280,-2673 1280,-2579 1049,-2579" />
+<ns0:text text-anchor="middle" x="1164.5" y="-2658.6" font-family="Noto Sans CJK SC" font-size="13.00">簇 7 · 簇7业务功能</ns0:text>
+</ns0:g>
+<ns0:g id="clust21" class="cluster">
+<ns0:title>cluster_s7</ns0:title>
+<ns0:polygon fill="#dbeaf8" stroke="#8094ac" stroke-width="1.4" points="706,-2463 706,-2713 953,-2713 953,-2463 706,-2463" />
+<ns0:text text-anchor="middle" x="829.5" y="-2691.4" font-family="Noto Sans CJK SC" font-size="22.00">子系统_8</ns0:text>
+</ns0:g>
+<ns0:g id="clust22" class="cluster">
+<ns0:title>cluster_c8</ns0:title>
+<ns0:polygon fill="#eaf3fb" stroke="#a1b9cd" stroke-width="1.4" points="714,-2471 714,-2673 945,-2673 945,-2471 714,-2471" />
+<ns0:text text-anchor="middle" x="829.5" y="-2658.6" font-family="Noto Sans CJK SC" font-size="13.00">簇 8 · 簇8业务功能</ns0:text>
+</ns0:g>
+<ns0:g id="clust23" class="cluster">
+<ns0:title>cluster_s8</ns0:title>
+<ns0:polygon fill="#dbeaf8" stroke="#8094ac" stroke-width="1.4" points="38.5,-2535 38.5,-2723 575.5,-2723 575.5,-2535 38.5,-2535" />
+<ns0:text text-anchor="middle" x="307" y="-2701.4" font-family="Noto Sans CJK SC" font-size="22.00">子系统_9</ns0:text>
+</ns0:g>
+<ns0:g id="clust24" class="cluster">
+<ns0:title>cluster_c9</ns0:title>
+<ns0:polygon fill="#eaf3fb" stroke="#a1b9cd" stroke-width="1.4" points="46.5,-2543 46.5,-2683 567.5,-2683 567.5,-2543 46.5,-2543" />
+<ns0:text text-anchor="middle" x="307" y="-2668.6" font-family="Noto Sans CJK SC" font-size="13.00">簇 9 · 簇9业务功能</ns0:text>
+</ns0:g>
+<ns0:g id="clust25" class="cluster">
+<ns0:title>cluster_s9</ns0:title>
+<ns0:polygon fill="#dbeaf8" stroke="#8094ac" stroke-width="1.4" points="351,-2267 351,-2455 953,-2455 953,-2267 351,-2267" />
+<ns0:text text-anchor="middle" x="652" y="-2433.4" font-family="Noto Sans CJK SC" font-size="22.00">子系统_10</ns0:text>
+</ns0:g>
+<ns0:g id="clust26" class="cluster">
+<ns0:title>cluster_c10</ns0:title>
+<ns0:polygon fill="#eaf3fb" stroke="#a1b9cd" stroke-width="1.4" points="359,-2275 359,-2415 945,-2415 945,-2275 359,-2275" />
+<ns0:text text-anchor="middle" x="652" y="-2400.6" font-family="Noto Sans CJK SC" font-size="13.00">簇 10 · 簇10业务功能</ns0:text>
+</ns0:g>
+<ns0:g id="clust27" class="cluster">
+<ns0:title>cluster_s10</ns0:title>
+<ns0:polygon fill="#dbeaf8" stroke="#8094ac" stroke-width="1.4" points="38.5,-2401 38.5,-2527 240.5,-2527 240.5,-2401 38.5,-2401" />
+<ns0:text text-anchor="middle" x="139.5" y="-2505.4" font-family="Noto Sans CJK SC" font-size="22.00">子系统_12</ns0:text>
+</ns0:g>
+<ns0:g id="clust28" class="cluster">
+<ns0:title>cluster_c12</ns0:title>
+<ns0:polygon fill="#eaf3fb" stroke="#a1b9cd" stroke-width="1.4" points="46.5,-2409 46.5,-2487 232.5,-2487 232.5,-2409 46.5,-2409" />
+<ns0:text text-anchor="middle" x="139.5" y="-2472.6" font-family="Noto Sans CJK SC" font-size="13.00">簇 12 · 簇12业务功能</ns0:text>
+</ns0:g>
+<ns0:g id="clust29" class="cluster">
+<ns0:title>cluster_s11</ns0:title>
+<ns0:polygon fill="#dbeaf8" stroke="#8094ac" stroke-width="1.4" points="23.5,-1875 23.5,-2125 255.5,-2125 255.5,-1875 23.5,-1875" />
+<ns0:text text-anchor="middle" x="139.5" y="-2103.4" font-family="Noto Sans CJK SC" font-size="22.00">子系统_13</ns0:text>
+</ns0:g>
+<ns0:g id="clust30" class="cluster">
+<ns0:title>cluster_c13</ns0:title>
+<ns0:polygon fill="#eaf3fb" stroke="#a1b9cd" stroke-width="1.4" points="31.5,-1883 31.5,-2085 247.5,-2085 247.5,-1883 31.5,-1883" />
+<ns0:text text-anchor="middle" x="139.5" y="-2070.6" font-family="Noto Sans CJK SC" font-size="13.00">簇 13 · 簇13业务功能</ns0:text>
+</ns0:g>
+<ns0:g id="clust31" class="cluster">
+<ns0:title>cluster_s12</ns0:title>
+<ns0:polygon fill="#dbeaf8" stroke="#8094ac" stroke-width="1.4" points="23,-2267 23,-2393 256,-2393 256,-2267 23,-2267" />
+<ns0:text text-anchor="middle" x="139.5" y="-2371.4" font-family="Noto Sans CJK SC" font-size="22.00">子系统_15</ns0:text>
+</ns0:g>
+<ns0:g id="clust32" class="cluster">
+<ns0:title>cluster_c15</ns0:title>
+<ns0:polygon fill="#eaf3fb" stroke="#a1b9cd" stroke-width="1.4" points="31,-2275 31,-2353 248,-2353 248,-2275 31,-2275" />
+<ns0:text text-anchor="middle" x="139.5" y="-2338.6" font-family="Noto Sans CJK SC" font-size="13.00">簇 15 · 簇15业务功能</ns0:text>
+</ns0:g>
+<ns0:g id="clust33" class="cluster">
+<ns0:title>cluster_s13</ns0:title>
+<ns0:polygon fill="#dbeaf8" stroke="#8094ac" stroke-width="1.4" points="59,-1617 59,-1867 220,-1867 220,-1617 59,-1617" />
+<ns0:text text-anchor="middle" x="139.5" y="-1845.4" font-family="Noto Sans CJK SC" font-size="22.00">子系统_17</ns0:text>
+</ns0:g>
+<ns0:g id="clust34" class="cluster">
+<ns0:title>cluster_c17</ns0:title>
+<ns0:polygon fill="#eaf3fb" stroke="#a1b9cd" stroke-width="1.4" points="67,-1625 67,-1827 212,-1827 212,-1625 67,-1625" />
+<ns0:text text-anchor="middle" x="139.5" y="-1812.6" font-family="Noto Sans CJK SC" font-size="13.00">簇 17 · 簇17业务功能</ns0:text>
+</ns0:g>
+<ns0:g id="clust35" class="cluster">
+<ns0:title>cluster_s14</ns0:title>
+<ns0:polygon fill="#dbeaf8" stroke="#8094ac" stroke-width="1.4" points="16,-1404 16,-1609 263,-1609 263,-1404 16,-1404" />
+<ns0:text text-anchor="middle" x="139.5" y="-1587.4" font-family="Noto Sans CJK SC" font-size="22.00">子系统_18</ns0:text>
+</ns0:g>
+<ns0:g id="clust36" class="cluster">
+<ns0:title>cluster_c18</ns0:title>
+<ns0:polygon fill="#eaf3fb" stroke="#a1b9cd" stroke-width="1.4" points="24,-1412 24,-1569 255,-1569 255,-1412 24,-1412" />
+<ns0:text text-anchor="middle" x="139.5" y="-1554.6" font-family="Noto Sans CJK SC" font-size="13.00">簇 18 · 簇18业务功能</ns0:text>
+</ns0:g>
+<ns0:g id="clust37" class="cluster">
+<ns0:title>cluster_s15</ns0:title>
+<ns0:polygon fill="#dbeaf8" stroke="#8094ac" stroke-width="1.4" points="31,-1270 31,-1396 248,-1396 248,-1270 31,-1270" />
+<ns0:text text-anchor="middle" x="139.5" y="-1374.4" font-family="Noto Sans CJK SC" font-size="22.00">子系统_19</ns0:text>
+</ns0:g>
+<ns0:g id="clust38" class="cluster">
+<ns0:title>cluster_c19</ns0:title>
+<ns0:polygon fill="#eaf3fb" stroke="#a1b9cd" stroke-width="1.4" points="39,-1278 39,-1356 240,-1356 240,-1278 39,-1278" />
+<ns0:text text-anchor="middle" x="139.5" y="-1341.6" font-family="Noto Sans CJK SC" font-size="13.00">簇 19 · 簇19业务功能</ns0:text>
+</ns0:g>
+<ns0:g id="clust39" class="cluster">
+<ns0:title>cluster_s16</ns0:title>
+<ns0:polygon fill="#dbeaf8" stroke="#8094ac" stroke-width="1.4" points="351,-1430 351,-1556 598,-1556 598,-1430 351,-1430" />
+<ns0:text text-anchor="middle" x="474.5" y="-1534.4" font-family="Noto Sans CJK SC" font-size="22.00">子系统_20</ns0:text>
+</ns0:g>
+<ns0:g id="clust40" class="cluster">
+<ns0:title>cluster_c20</ns0:title>
+<ns0:polygon fill="#eaf3fb" stroke="#a1b9cd" stroke-width="1.4" points="359,-1438 359,-1516 590,-1516 590,-1438 359,-1438" />
+<ns0:text text-anchor="middle" x="474.5" y="-1501.6" font-family="Noto Sans CJK SC" font-size="13.00">簇 20 · 簇20业务功能</ns0:text>
+</ns0:g>
+<ns0:g id="clust41" class="cluster">
+<ns0:title>cluster_s17</ns0:title>
+<ns0:polygon fill="#dbeaf8" stroke="#8094ac" stroke-width="1.4" points="728.5,-1430 728.5,-1556 930.5,-1556 930.5,-1430 728.5,-1430" />
+<ns0:text text-anchor="middle" x="829.5" y="-1534.4" font-family="Noto Sans CJK SC" font-size="22.00">子系统_21</ns0:text>
+</ns0:g>
+<ns0:g id="clust42" class="cluster">
+<ns0:title>cluster_c21</ns0:title>
+<ns0:polygon fill="#eaf3fb" stroke="#a1b9cd" stroke-width="1.4" points="736.5,-1438 736.5,-1516 922.5,-1516 922.5,-1438 736.5,-1438" />
+<ns0:text text-anchor="middle" x="829.5" y="-1501.6" font-family="Noto Sans CJK SC" font-size="13.00">簇 21 · 簇21业务功能</ns0:text>
+</ns0:g>
+<ns0:g id="clust43" class="cluster">
+<ns0:title>cluster_s18</ns0:title>
+<ns0:polygon fill="#dbeaf8" stroke="#8094ac" stroke-width="1.4" points="16,-1120 16,-1262 263,-1262 263,-1120 16,-1120" />
+<ns0:text text-anchor="middle" x="139.5" y="-1240.4" font-family="Noto Sans CJK SC" font-size="22.00">子系统_22</ns0:text>
+</ns0:g>
+<ns0:g id="clust44" class="cluster">
+<ns0:title>cluster_c22</ns0:title>
+<ns0:polygon fill="#eaf3fb" stroke="#a1b9cd" stroke-width="1.4" points="24,-1128 24,-1222 255,-1222 255,-1128 24,-1128" />
+<ns0:text text-anchor="middle" x="139.5" y="-1207.6" font-family="Noto Sans CJK SC" font-size="13.00">簇 22 · 簇22业务功能</ns0:text>
+</ns0:g>
+<ns0:g id="clust45" class="cluster">
+<ns0:title>cluster_s19</ns0:title>
+<ns0:polygon fill="#dbeaf8" stroke="#8094ac" stroke-width="1.4" points="46,-929 46,-1112 930.5,-1112 930.5,-929 46,-929" />
+<ns0:text text-anchor="middle" x="488.25" y="-1090.4" font-family="Noto Sans CJK SC" font-size="22.00">子系统_23</ns0:text>
+</ns0:g>
+<ns0:g id="clust46" class="cluster">
+<ns0:title>cluster_c23</ns0:title>
+<ns0:polygon fill="#eaf3fb" stroke="#a1b9cd" stroke-width="1.4" points="54,-937 54,-1072 922.5,-1072 922.5,-937 54,-937" />
+<ns0:text text-anchor="middle" x="488.25" y="-1057.6" font-family="Noto Sans CJK SC" font-size="13.00">簇 23 · 簇23业务功能</ns0:text>
+</ns0:g>
+<ns0:g id="clust47" class="cluster">
+<ns0:title>cluster_s20</ns0:title>
+<ns0:polygon fill="#dbeaf8" stroke="#8094ac" stroke-width="1.4" points="721,-1120 721,-1246 938,-1246 938,-1120 721,-1120" />
+<ns0:text text-anchor="middle" x="829.5" y="-1224.4" font-family="Noto Sans CJK SC" font-size="22.00">子系统_24</ns0:text>
+</ns0:g>
+<ns0:g id="clust48" class="cluster">
+<ns0:title>cluster_c24</ns0:title>
+<ns0:polygon fill="#eaf3fb" stroke="#a1b9cd" stroke-width="1.4" points="729,-1128 729,-1206 930,-1206 930,-1128 729,-1128" />
+<ns0:text text-anchor="middle" x="829.5" y="-1191.6" font-family="Noto Sans CJK SC" font-size="13.00">簇 24 · 簇24业务功能</ns0:text>
+</ns0:g>
+<ns0:g id="clust49" class="cluster">
+<ns0:title>cluster_s21</ns0:title>
+<ns0:polygon fill="#dbeaf8" stroke="#8094ac" stroke-width="1.4" points="38.5,-795 38.5,-921 240.5,-921 240.5,-795 38.5,-795" />
+<ns0:text text-anchor="middle" x="139.5" y="-899.4" font-family="Noto Sans CJK SC" font-size="22.00">子系统_25</ns0:text>
+</ns0:g>
+<ns0:g id="clust50" class="cluster">
+<ns0:title>cluster_c25</ns0:title>
+<ns0:polygon fill="#eaf3fb" stroke="#a1b9cd" stroke-width="1.4" points="46.5,-803 46.5,-881 232.5,-881 232.5,-803 46.5,-803" />
+<ns0:text text-anchor="middle" x="139.5" y="-866.6" font-family="Noto Sans CJK SC" font-size="13.00">簇 25 · 簇25业务功能</ns0:text>
+</ns0:g>
+<ns0:g id="clust51" class="cluster">
+<ns0:title>cluster_s22</ns0:title>
+<ns0:polygon fill="#dbeaf8" stroke="#8094ac" stroke-width="1.4" points="38.5,-661 38.5,-787 240.5,-787 240.5,-661 38.5,-661" />
+<ns0:text text-anchor="middle" x="139.5" y="-765.4" font-family="Noto Sans CJK SC" font-size="22.00">子系统_27</ns0:text>
+</ns0:g>
+<ns0:g id="clust52" class="cluster">
+<ns0:title>cluster_c27</ns0:title>
+<ns0:polygon fill="#eaf3fb" stroke="#a1b9cd" stroke-width="1.4" points="46.5,-669 46.5,-747 232.5,-747 232.5,-669 46.5,-669" />
+<ns0:text text-anchor="middle" x="139.5" y="-732.6" font-family="Noto Sans CJK SC" font-size="13.00">簇 27 · 簇27业务功能</ns0:text>
+</ns0:g>
+<ns0:g id="clust53" class="cluster">
+<ns0:title>cluster_s23</ns0:title>
+<ns0:polygon fill="#dbeaf8" stroke="#8094ac" stroke-width="1.4" points="373.5,-753 373.5,-879 575.5,-879 575.5,-753 373.5,-753" />
+<ns0:text text-anchor="middle" x="474.5" y="-857.4" font-family="Noto Sans CJK SC" font-size="22.00">子系统_28</ns0:text>
+</ns0:g>
+<ns0:g id="clust54" class="cluster">
+<ns0:title>cluster_c28</ns0:title>
+<ns0:polygon fill="#eaf3fb" stroke="#a1b9cd" stroke-width="1.4" points="381.5,-761 381.5,-839 567.5,-839 567.5,-761 381.5,-761" />
+<ns0:text text-anchor="middle" x="474.5" y="-824.6" font-family="Noto Sans CJK SC" font-size="13.00">簇 28 · 簇28业务功能</ns0:text>
+</ns0:g>
+<ns0:g id="clust55" class="cluster">
+<ns0:title>cluster_s24</ns0:title>
+<ns0:polygon fill="#dbeaf8" stroke="#8094ac" stroke-width="1.4" points="728.5,-733 728.5,-921 930.5,-921 930.5,-733 728.5,-733" />
+<ns0:text text-anchor="middle" x="829.5" y="-899.4" font-family="Noto Sans CJK SC" font-size="22.00">子系统_29</ns0:text>
+</ns0:g>
+<ns0:g id="clust56" class="cluster">
+<ns0:title>cluster_c29</ns0:title>
+<ns0:polygon fill="#eaf3fb" stroke="#a1b9cd" stroke-width="1.4" points="736.5,-741 736.5,-881 922.5,-881 922.5,-741 736.5,-741" />
+<ns0:text text-anchor="middle" x="829.5" y="-866.6" font-family="Noto Sans CJK SC" font-size="13.00">簇 29 · 簇29业务功能</ns0:text>
+</ns0:g>
+<ns0:g id="clust57" class="cluster">
+<ns0:title>cluster_s25</ns0:title>
+<ns0:polygon fill="#dbeaf8" stroke="#8094ac" stroke-width="1.4" points="16,-527 16,-653 263,-653 263,-527 16,-527" />
+<ns0:text text-anchor="middle" x="139.5" y="-631.4" font-family="Noto Sans CJK SC" font-size="22.00">子系统_30</ns0:text>
+</ns0:g>
+<ns0:g id="clust58" class="cluster">
+<ns0:title>cluster_c30</ns0:title>
+<ns0:polygon fill="#eaf3fb" stroke="#a1b9cd" stroke-width="1.4" points="24,-535 24,-613 255,-613 255,-535 24,-535" />
+<ns0:text text-anchor="middle" x="139.5" y="-598.6" font-family="Noto Sans CJK SC" font-size="13.00">簇 30 · 簇30业务功能</ns0:text>
+</ns0:g>
+<ns0:g id="clust59" class="cluster">
+<ns0:title>cluster_s26</ns0:title>
+<ns0:polygon fill="#dbeaf8" stroke="#8094ac" stroke-width="1.4" points="351,-398 351,-745 598,-745 598,-398 351,-398" />
+<ns0:text text-anchor="middle" x="474.5" y="-723.4" font-family="Noto Sans CJK SC" font-size="22.00">子系统_31</ns0:text>
+</ns0:g>
+<ns0:g id="clust60" class="cluster">
+<ns0:title>cluster_c31</ns0:title>
+<ns0:polygon fill="#eaf3fb" stroke="#a1b9cd" stroke-width="1.4" points="359,-406 359,-705 590,-705 590,-406 359,-406" />
+<ns0:text text-anchor="middle" x="474.5" y="-690.6" font-family="Noto Sans CJK SC" font-size="13.00">簇 31 · 簇31业务功能</ns0:text>
+</ns0:g>
+<ns0:g id="clust61" class="cluster">
+<ns0:title>cluster_s27</ns0:title>
+<ns0:polygon fill="#dbeaf8" stroke="#8094ac" stroke-width="1.4" points="30.5,-393 30.5,-519 248.5,-519 248.5,-393 30.5,-393" />
+<ns0:text text-anchor="middle" x="139.5" y="-497.4" font-family="Noto Sans CJK SC" font-size="22.00">子系统_32</ns0:text>
+</ns0:g>
+<ns0:g id="clust62" class="cluster">
+<ns0:title>cluster_c32</ns0:title>
+<ns0:polygon fill="#eaf3fb" stroke="#a1b9cd" stroke-width="1.4" points="38.5,-401 38.5,-479 240.5,-479 240.5,-401 38.5,-401" />
+<ns0:text text-anchor="middle" x="139.5" y="-464.6" font-family="Noto Sans CJK SC" font-size="13.00">簇 32 · 簇32业务功能</ns0:text>
+</ns0:g>
+<ns0:g id="clust63" class="cluster">
+<ns0:title>cluster_s28</ns0:title>
+<ns0:polygon fill="#dbeaf8" stroke="#8094ac" stroke-width="1.4" points="23.5,-150 23.5,-276 255.5,-276 255.5,-150 23.5,-150" />
+<ns0:text text-anchor="middle" x="139.5" y="-254.4" font-family="Noto Sans CJK SC" font-size="22.00">子系统_33</ns0:text>
+</ns0:g>
+<ns0:g id="clust64" class="cluster">
+<ns0:title>cluster_c33</ns0:title>
+<ns0:polygon fill="#eaf3fb" stroke="#a1b9cd" stroke-width="1.4" points="31.5,-158 31.5,-236 247.5,-236 247.5,-158 31.5,-158" />
+<ns0:text text-anchor="middle" x="139.5" y="-221.6" font-family="Noto Sans CJK SC" font-size="13.00">簇 33 · 簇33业务功能</ns0:text>
+</ns0:g>
+<ns0:g id="clust65" class="cluster">
+<ns0:title>cluster_s29</ns0:title>
+<ns0:polygon fill="#dbeaf8" stroke="#8094ac" stroke-width="1.4" points="23.5,-16 23.5,-142 255.5,-142 255.5,-16 23.5,-16" />
+<ns0:text text-anchor="middle" x="139.5" y="-120.4" font-family="Noto Sans CJK SC" font-size="22.00">子系统_34</ns0:text>
+</ns0:g>
+<ns0:g id="clust66" class="cluster">
+<ns0:title>cluster_c34</ns0:title>
+<ns0:polygon fill="#eaf3fb" stroke="#a1b9cd" stroke-width="1.4" points="31.5,-24 31.5,-102 247.5,-102 247.5,-24 31.5,-24" />
+<ns0:text text-anchor="middle" x="139.5" y="-87.6" font-family="Noto Sans CJK SC" font-size="13.00">簇 34 · 簇34业务功能</ns0:text>
+</ns0:g>
+<ns0:g id="clust67" class="cluster">
+<ns0:title>cluster_s30</ns0:title>
+<ns0:polygon fill="#dbeaf8" stroke="#8094ac" stroke-width="1.4" points="358.5,-16 358.5,-390 590.5,-390 590.5,-16 358.5,-16" />
+<ns0:text text-anchor="middle" x="474.5" y="-368.4" font-family="Noto Sans CJK SC" font-size="22.00">子系统_35</ns0:text>
+</ns0:g>
+<ns0:g id="clust68" class="cluster">
+<ns0:title>cluster_c35</ns0:title>
+<ns0:polygon fill="#eaf3fb" stroke="#a1b9cd" stroke-width="1.4" points="366.5,-24 366.5,-350 582.5,-350 582.5,-24 366.5,-24" />
+<ns0:text text-anchor="middle" x="474.5" y="-335.6" font-family="Noto Sans CJK SC" font-size="13.00">簇 35 · 簇35业务功能</ns0:text>
+</ns0:g>
+
+<ns0:g id="node1" class="node">
+<ns0:title>n0</ns0:title>
+<ns0:g id="a_node1"><ns0:a ns1:title="fn-获取电芯控制温度-138DBC2A-aab4d4c52be0">
+<ns0:polygon fill="#daf6b6" stroke="#70945a" stroke-width="1.4" points="914.5,-2786.5 744.5,-2786.5 744.5,-2747.5 914.5,-2747.5 914.5,-2786.5" />
+<ns0:text text-anchor="middle" x="829.5" y="-2763.5" font-family="Noto Sans CJK SC" font-size="15.00">Ⓛ  获取电芯控制温度</ns0:text>
+</ns0:a>
+</ns0:g>
+</ns0:g>
+
+<ns0:g id="node2" class="node">
+<ns0:title>n1</ns0:title>
+<ns0:g id="a_node2"><ns0:a ns1:title="fn-形成主动冷却需求-138DBC2A-81fd9f7841c0">
+<ns0:polygon fill="#daf6b6" stroke="#70945a" stroke-width="1.4" points="559.5,-2786.5 389.5,-2786.5 389.5,-2747.5 559.5,-2747.5 559.5,-2786.5" />
+<ns0:text text-anchor="middle" x="474.5" y="-2763.5" font-family="Noto Sans CJK SC" font-size="15.00">Ⓛ  形成主动冷却需求</ns0:text>
+</ns0:a>
+</ns0:g>
+</ns0:g>
+
+<ns0:g id="edge1" class="edge">
+<ns0:title>n1-&gt;n0</ns0:title>
+<ns0:g id="a_edge1"><ns0:a ns1:title="置信度 0.95">
+<ns0:path fill="none" stroke="#4b7051" d="M559.6,-2767C613.08,-2767 682.31,-2767 737.13,-2767" />
+<ns0:polygon fill="#4b7051" stroke="#4b7051" points="737.43,-2769.45 744.43,-2767 737.43,-2764.55 737.43,-2769.45" />
+</ns0:a>
+</ns0:g>
+<ns0:text text-anchor="middle" x="652" y="-2770" font-family="Noto Sans CJK SC" font-size="10.00" fill="#496050">L-001 · 依赖</ns0:text>
+</ns0:g>
+
+<ns0:g id="node3" class="node">
+<ns0:title>n2</ns0:title>
+<ns0:g id="a_node3"><ns0:a ns1:title="fn-提出主动供风请求-138DBC2A-4bf744cc848d">
+<ns0:polygon fill="#daf6b6" stroke="#70945a" stroke-width="1.4" points="224.5,-2786.5 54.5,-2786.5 54.5,-2747.5 224.5,-2747.5 224.5,-2786.5" />
+<ns0:text text-anchor="middle" x="139.5" y="-2763.5" font-family="Noto Sans CJK SC" font-size="15.00">Ⓛ  提出主动供风请求</ns0:text>
+</ns0:a>
+</ns0:g>
+</ns0:g>
+
+<ns0:g id="edge2" class="edge">
+<ns0:title>n2-&gt;n1</ns0:title>
+<ns0:g id="a_edge2"><ns0:a ns1:title="置信度 0.95">
+<ns0:path fill="none" stroke="#4b7051" d="M224.53,-2767C272.64,-2767 333.05,-2767 382.31,-2767" />
+<ns0:polygon fill="#4b7051" stroke="#4b7051" points="382.5,-2769.45 389.5,-2767 382.5,-2764.55 382.5,-2769.45" />
+</ns0:a>
+</ns0:g>
+<ns0:text text-anchor="middle" x="307" y="-2770" font-family="Noto Sans CJK SC" font-size="10.00" fill="#496050">L-002 · 依赖</ns0:text>
+</ns0:g>
+
+<ns0:g id="node4" class="node">
+<ns0:title>n3</ns0:title>
+<ns0:g id="a_node4"><ns0:a ns1:title="fn-撤销或保持无主动请求-138DBC2A-a86ccd842093">
+<ns0:polygon fill="#daf6b6" stroke="#70945a" stroke-width="1.4" points="574.5,-2920.5 374.5,-2920.5 374.5,-2881.5 574.5,-2881.5 574.5,-2920.5" />
+<ns0:text text-anchor="middle" x="474.5" y="-2897.5" font-family="Noto Sans CJK SC" font-size="15.00">Ⓛ  撤销或保持无主动请求</ns0:text>
+</ns0:a>
+</ns0:g>
+</ns0:g>
+
+<ns0:g id="edge4" class="edge">
+<ns0:title>n2-&gt;n3</ns0:title>
+<ns0:g id="a_edge4"><ns0:a ns1:title="置信度 0.9">
+<ns0:path fill="none" stroke="#4b7051" stroke-dasharray="5,2" d="M189.28,-2786.63C252.42,-2812.04 361.79,-2856.05 424.86,-2881.43" />
+</ns0:a>
+</ns0:g>
+<ns0:text text-anchor="middle" x="307" y="-2845" font-family="Noto Sans CJK SC" font-size="10.00" fill="#496050">L-004 · 互斥</ns0:text>
+</ns0:g>
+
+<ns0:g id="edge3" class="edge">
+<ns0:title>n3-&gt;n1</ns0:title>
+<ns0:g id="a_edge3"><ns0:a ns1:title="置信度 0.95">
+<ns0:path fill="none" stroke="#4b7051" d="M474.5,-2881.15C474.5,-2858.05 474.5,-2819.81 474.5,-2794.02" />
+<ns0:polygon fill="#4b7051" stroke="#4b7051" points="476.95,-2793.77 474.5,-2786.77 472.05,-2793.77 476.95,-2793.77" />
+</ns0:a>
+</ns0:g>
+<ns0:text text-anchor="middle" x="466" y="-2831.5" font-family="Noto Sans CJK SC" font-size="10.00" fill="#496050">L-003 · 依赖</ns0:text>
+</ns0:g>
+
+<ns0:g id="node5" class="node">
+<ns0:title>n4</ns0:title>
+<ns0:g id="a_node5"><ns0:a ns1:title="fn-汇总换热贡献-138DBC2A-1321c44843a7">
+<ns0:polygon fill="#daf6b6" stroke="#70945a" stroke-width="1.4" points="1930.5,-1934.5 1790.5,-1934.5 1790.5,-1895.5 1930.5,-1895.5 1930.5,-1934.5" />
+<ns0:text text-anchor="middle" x="1860.5" y="-1911.5" font-family="Noto Sans CJK SC" font-size="15.00">Ⓛ  汇总换热贡献</ns0:text>
+</ns0:a>
+</ns0:g>
+</ns0:g>
+
+<ns0:g id="node6" class="node">
+<ns0:title>n5</ns0:title>
+<ns0:g id="a_node6"><ns0:a ns1:title="fn-向电池热模型提供结果-138DBC2A-da9eb084e313">
+<ns0:polygon fill="#daf6b6" stroke="#70945a" stroke-width="1.4" points="1589,-2068.5 1389,-2068.5 1389,-2029.5 1589,-2029.5 1589,-2068.5" />
+<ns0:text text-anchor="middle" x="1489" y="-2045.5" font-family="Noto Sans CJK SC" font-size="15.00">Ⓛ  向电池热模型提供结果</ns0:text>
+</ns0:a>
+</ns0:g>
+</ns0:g>
+
+<ns0:g id="edge5" class="edge">
+<ns0:title>n5-&gt;n4</ns0:title>
+<ns0:g id="a_edge5"><ns0:a ns1:title="置信度 0.95">
+<ns0:path fill="none" stroke="#4b7051" d="M1544.12,-2029.37C1611.99,-2004.76 1728.01,-1962.68 1798.82,-1937" />
+<ns0:polygon fill="#4b7051" stroke="#4b7051" points="1799.79,-1939.26 1805.53,-1934.57 1798.12,-1934.66 1799.79,-1939.26" />
+</ns0:a>
+</ns0:g>
+<ns0:text text-anchor="middle" x="1673.5" y="-2000" font-family="Noto Sans CJK SC" font-size="10.00" fill="#496050">L-005 · 依赖</ns0:text>
+</ns0:g>
+
+<ns0:g id="node7" class="node">
+<ns0:title>n8</ns0:title>
+<ns0:g id="a_node7"><ns0:a ns1:title="fn-接收评估周期启动事件-78B74133-a185f7a455b7">
+<ns0:polygon fill="#daf6b6" stroke="#70945a" stroke-width="1.4" points="2327,-2670.5 2127,-2670.5 2127,-2631.5 2327,-2631.5 2327,-2670.5" />
+<ns0:text text-anchor="middle" x="2227" y="-2647.5" font-family="Noto Sans CJK SC" font-size="15.00">Ⓛ  接收评估周期启动事件</ns0:text>
+</ns0:a>
+</ns0:g>
+</ns0:g>
+
+<ns0:g id="node8" class="node">
+<ns0:title>n9</ns0:title>
+<ns0:g id="a_node8"><ns0:a ns1:title="fn-请求电池温度快照-78B74133-7fd3cb48fbea">
+<ns0:polygon fill="#daf6b6" stroke="#70945a" stroke-width="1.4" points="1945.5,-2670.5 1775.5,-2670.5 1775.5,-2631.5 1945.5,-2631.5 1945.5,-2670.5" />
+<ns0:text text-anchor="middle" x="1860.5" y="-2647.5" font-family="Noto Sans CJK SC" font-size="15.00">Ⓛ  请求电池温度快照</ns0:text>
+</ns0:a>
+</ns0:g>
+</ns0:g>
+
+<ns0:g id="edge7" class="edge">
+<ns0:title>n9-&gt;n8</ns0:title>
+<ns0:g id="a_edge7"><ns0:a ns1:title="置信度 0.75">
+<ns0:path fill="none" stroke="#4b7051" d="M1945.58,-2651C1997.4,-2651 2064.31,-2651 2119.77,-2651" />
+<ns0:polygon fill="#4b7051" stroke="#4b7051" points="2119.82,-2653.45 2126.82,-2651 2119.82,-2648.55 2119.82,-2653.45" />
+</ns0:a>
+</ns0:g>
+<ns0:text text-anchor="middle" x="2047.5" y="-2654" font-family="Noto Sans CJK SC" font-size="10.00" fill="#496050">L-007 · 依赖</ns0:text>
+</ns0:g>
+
+<ns0:g id="node9" class="node">
+<ns0:title>n10</ns0:title>
+<ns0:g id="a_node9"><ns0:a ns1:title="fn-接收电池温度快照-78B74133-5a29474f9fa6">
+<ns0:polygon fill="#daf6b6" stroke="#70945a" stroke-width="1.4" points="1574,-2670.5 1404,-2670.5 1404,-2631.5 1574,-2631.5 1574,-2670.5" />
+<ns0:text text-anchor="middle" x="1489" y="-2647.5" font-family="Noto Sans CJK SC" font-size="15.00">Ⓛ  接收电池温度快照</ns0:text>
+</ns0:a>
+</ns0:g>
+</ns0:g>
+
+<ns0:g id="edge8" class="edge">
+<ns0:title>n10-&gt;n9</ns0:title>
+<ns0:g id="a_edge8"><ns0:a ns1:title="置信度 0.75">
+<ns0:path fill="none" stroke="#4b7051" d="M1574.31,-2651C1632.13,-2651 1708.81,-2651 1768.09,-2651" />
+<ns0:polygon fill="#4b7051" stroke="#4b7051" points="1768.24,-2653.45 1775.24,-2651 1768.24,-2648.55 1768.24,-2653.45" />
+</ns0:a>
+</ns0:g>
+<ns0:text text-anchor="middle" x="1673.5" y="-2654" font-family="Noto Sans CJK SC" font-size="10.00" fill="#496050">L-008 · 依赖</ns0:text>
+</ns0:g>
+
+<ns0:g id="node10" class="node">
+<ns0:title>n17</ns0:title>
+<ns0:g id="a_node10"><ns0:a ns1:title="fn-提交总换热贡献给电池热模型-78B74133-b5410fb4d891">
+<ns0:polygon fill="#daf6b6" stroke="#70945a" stroke-width="1.4" points="1968,-2585 1753,-2585 1753,-2529 1968,-2529 1968,-2585" />
+<ns0:text text-anchor="middle" x="1860.5" y="-2562" font-family="Noto Sans CJK SC" font-size="15.00">Ⓛ  提交总换热贡献给电池热</ns0:text>
+<ns0:text text-anchor="middle" x="1860.5" y="-2545" font-family="Noto Sans CJK SC" font-size="15.00">模型</ns0:text>
+</ns0:a>
+</ns0:g>
+</ns0:g>
+
+<ns0:g id="node29" class="node">
+<ns0:title>n16</ns0:title>
+<ns0:g id="a_node29"><ns0:a ns1:title="fn-汇总总换热贡献-78B74133-8af923810be3">
+<ns0:polygon fill="#daf6b6" stroke="#70945a" stroke-width="1.4" points="217,-2652.5 62,-2652.5 62,-2613.5 217,-2613.5 217,-2652.5" />
+<ns0:text text-anchor="middle" x="139.5" y="-2629.5" font-family="Noto Sans CJK SC" font-size="15.00">Ⓛ  汇总总换热贡献</ns0:text>
+</ns0:a>
+</ns0:g>
+</ns0:g>
+
+<ns0:g id="edge15" class="edge">
+<ns0:title>n17-&gt;n16</ns0:title>
+<ns0:g id="a_edge15"><ns0:a ns1:title="置信度 0.85">
+<ns0:path fill="none" stroke="#4b7051" d="M1806.94,-2585C1776.84,-2601.04 1745,-2618 1745,-2618 1745,-2618 1722,-2706 1722,-2706 1722,-2706 1490,-2722 1490,-2722 473.5,-2722 473.5,-2722 473.5,-2722 473.5,-2722 319.1,-2680.73 220.57,-2654.4" />
+<ns0:polygon fill="#4b7051" stroke="#4b7051" points="220.97,-2651.97 213.58,-2652.53 219.71,-2656.71 220.97,-2651.97" />
+</ns0:a>
+</ns0:g>
+<ns0:text text-anchor="middle" x="997" y="-2725" font-family="Noto Sans CJK SC" font-size="10.00" fill="#496050">L-015 · 依赖</ns0:text>
+</ns0:g>
+
+<ns0:g id="node11" class="node">
+<ns0:title>n19</ns0:title>
+<ns0:g id="a_node11"><ns0:a ns1:title="fn-统一推进电池热状态-78B74133-d1f6d0ee535b">
+<ns0:polygon fill="#daf6b6" stroke="#70945a" stroke-width="1.4" points="1581.5,-2576.5 1396.5,-2576.5 1396.5,-2537.5 1581.5,-2537.5 1581.5,-2576.5" />
+<ns0:text text-anchor="middle" x="1489" y="-2553.5" font-family="Noto Sans CJK SC" font-size="15.00">Ⓛ  统一推进电池热状态</ns0:text>
+</ns0:a>
+</ns0:g>
+</ns0:g>
+
+<ns0:g id="edge16" class="edge">
+<ns0:title>n19-&gt;n17</ns0:title>
+<ns0:g id="a_edge16"><ns0:a ns1:title="置信度 0.8">
+<ns0:path fill="none" stroke="#4b7051" d="M1581.81,-2557C1631.42,-2557 1693.11,-2557 1745.73,-2557" />
+<ns0:polygon fill="#4b7051" stroke="#4b7051" points="1745.76,-2559.45 1752.76,-2557 1745.76,-2554.55 1745.76,-2559.45" />
+</ns0:a>
+</ns0:g>
+<ns0:text text-anchor="middle" x="1673.5" y="-2560" font-family="Noto Sans CJK SC" font-size="10.00" fill="#496050">L-016 · 依赖</ns0:text>
+</ns0:g>
+
+<ns0:g id="node12" class="node">
+<ns0:title>n26</ns0:title>
+<ns0:g id="a_node12"><ns0:a ns1:title="fn-处理无主动冷却请求-78B74133-13202d7749b5">
+<ns0:polygon fill="#daf6b6" stroke="#70945a" stroke-width="1.4" points="1953,-2334.5 1768,-2334.5 1768,-2295.5 1953,-2295.5 1953,-2334.5" />
+<ns0:text text-anchor="middle" x="1860.5" y="-2311.5" font-family="Noto Sans CJK SC" font-size="15.00">Ⓛ  处理无主动冷却请求</ns0:text>
+</ns0:a>
+</ns0:g>
+</ns0:g>
+
+<ns0:g id="node13" class="node">
+<ns0:title>n27</ns0:title>
+<ns0:g id="a_node13"><ns0:a ns1:title="fn-处理供风不可用-78B74133-ca188220293e">
+<ns0:polygon fill="#daf6b6" stroke="#70945a" stroke-width="1.4" points="1938,-2272.5 1783,-2272.5 1783,-2233.5 1938,-2233.5 1938,-2272.5" />
+<ns0:text text-anchor="middle" x="1860.5" y="-2249.5" font-family="Noto Sans CJK SC" font-size="15.00">Ⓛ  处理供风不可用</ns0:text>
+</ns0:a>
+</ns0:g>
+</ns0:g>
+
+<ns0:g id="node14" class="node">
+<ns0:title>n28</ns0:title>
+<ns0:g id="a_node14"><ns0:a ns1:title="fn-处理已请求但尚无实际供风-78B74133-e72979197a3b">
+<ns0:polygon fill="#daf6b6" stroke="#70945a" stroke-width="1.4" points="1968,-2210 1753,-2210 1753,-2154 1968,-2154 1968,-2210" />
+<ns0:text text-anchor="middle" x="1860.5" y="-2187" font-family="Noto Sans CJK SC" font-size="15.00">Ⓛ  处理已请求但尚无实际供</ns0:text>
+<ns0:text text-anchor="middle" x="1860.5" y="-2170" font-family="Noto Sans CJK SC" font-size="15.00">风</ns0:text>
+</ns0:a>
+</ns0:g>
+</ns0:g>
+
+<ns0:g id="node15" class="node">
+<ns0:title>n29</ns0:title>
+<ns0:g id="a_node15"><ns0:a ns1:title="fn-计算主动供风换热-78B74133-d7408bfbdaa9">
+<ns0:polygon fill="#daf6b6" stroke="#70945a" stroke-width="1.4" points="1945.5,-2130.5 1775.5,-2130.5 1775.5,-2091.5 1945.5,-2091.5 1945.5,-2130.5" />
+<ns0:text text-anchor="middle" x="1860.5" y="-2107.5" font-family="Noto Sans CJK SC" font-size="15.00">Ⓛ  计算主动供风换热</ns0:text>
+</ns0:a>
+</ns0:g>
+</ns0:g>
+
+<ns0:g id="node16" class="node">
+<ns0:title>n52</ns0:title>
+<ns0:g id="a_node16"><ns0:a ns1:title="fn-撤销电池主动供风-23D10441-efe442b2a20b">
+<ns0:polygon fill="#daf6b6" stroke="#70945a" stroke-width="1.4" points="1945.5,-2068.5 1775.5,-2068.5 1775.5,-2029.5 1945.5,-2029.5 1945.5,-2068.5" />
+<ns0:text text-anchor="middle" x="1860.5" y="-2045.5" font-family="Noto Sans CJK SC" font-size="15.00">Ⓛ  撤销电池主动供风</ns0:text>
+</ns0:a>
+</ns0:g>
+</ns0:g>
+
+<ns0:g id="node17" class="node">
+<ns0:title>n32</ns0:title>
+<ns0:g id="a_node17"><ns0:a ns1:title="fn-电池冷却请求状态监测-799883A1-252695df4ee8">
+<ns0:polygon fill="#daf6b6" stroke="#70945a" stroke-width="1.4" points="1589,-2482.5 1389,-2482.5 1389,-2443.5 1589,-2443.5 1589,-2482.5" />
+<ns0:text text-anchor="middle" x="1489" y="-2459.5" font-family="Noto Sans CJK SC" font-size="15.00">Ⓛ  电池冷却请求状态监测</ns0:text>
+</ns0:a>
+</ns0:g>
+</ns0:g>
+
+<ns0:g id="node18" class="node">
+<ns0:title>n33</ns0:title>
+<ns0:g id="a_node18"><ns0:a ns1:title="fn-初始未评估状态转移-799883A1-9bd02ce4ea12">
+<ns0:polygon fill="#daf6b6" stroke="#70945a" stroke-width="1.4" points="1581.5,-2420.5 1396.5,-2420.5 1396.5,-2381.5 1581.5,-2381.5 1581.5,-2420.5" />
+<ns0:text text-anchor="middle" x="1489" y="-2397.5" font-family="Noto Sans CJK SC" font-size="15.00">Ⓛ  初始未评估状态转移</ns0:text>
+</ns0:a>
+</ns0:g>
+</ns0:g>
+
+<ns0:g id="node19" class="node">
+<ns0:title>n34</ns0:title>
+<ns0:g id="a_node19"><ns0:a ns1:title="fn-初始进入无请求状态-799883A1-7efd1421ca69">
+<ns0:polygon fill="#daf6b6" stroke="#70945a" stroke-width="1.4" points="1953,-2421.5 1768,-2421.5 1768,-2382.5 1953,-2382.5 1953,-2421.5" />
+<ns0:text text-anchor="middle" x="1860.5" y="-2398.5" font-family="Noto Sans CJK SC" font-size="15.00">Ⓛ  初始进入无请求状态</ns0:text>
+</ns0:a>
+</ns0:g>
+</ns0:g>
+
+<ns0:g id="edge20" class="edge">
+<ns0:title>n33-&gt;n34</ns0:title>
+<ns0:g id="a_edge20"><ns0:a ns1:title="置信度 0.8">
+<ns0:path fill="none" stroke="#4b7051" stroke-dasharray="5,2" d="M1581.81,-2401.25C1638.56,-2401.4 1711.12,-2401.6 1767.84,-2401.75" />
+</ns0:a>
+</ns0:g>
+<ns0:text text-anchor="middle" x="1673.5" y="-2404" font-family="Noto Sans CJK SC" font-size="10.00" fill="#496050">L-020 · 互斥条件分支</ns0:text>
+</ns0:g>
+
+<ns0:g id="node20" class="node">
+<ns0:title>n35</ns0:title>
+<ns0:g id="a_node20"><ns0:a ns1:title="fn-初始进入请求状态-799883A1-f4168276c624">
+<ns0:polygon fill="#daf6b6" stroke="#70945a" stroke-width="1.4" points="2312,-2464.5 2142,-2464.5 2142,-2425.5 2312,-2425.5 2312,-2464.5" />
+<ns0:text text-anchor="middle" x="2227" y="-2441.5" font-family="Noto Sans CJK SC" font-size="15.00">Ⓛ  初始进入请求状态</ns0:text>
+</ns0:a>
+</ns0:g>
+</ns0:g>
+
+<ns0:g id="edge21" class="edge">
+<ns0:title>n33-&gt;n35</ns0:title>
+<ns0:g id="a_edge21"><ns0:a ns1:title="置信度 0.8">
+<ns0:path fill="none" stroke="#4b7051" stroke-dasharray="5,2" d="M1581.7,-2412.51C1654.81,-2421.68 1745,-2433 1745,-2433 1745,-2433 1999,-2444 1999,-2444 1999,-2444 2077.19,-2444.34 2141.8,-2444.63" />
+</ns0:a>
+</ns0:g>
+<ns0:text text-anchor="middle" x="1860.5" y="-2445" font-family="Noto Sans CJK SC" font-size="10.00" fill="#496050">L-021 · 互斥条件分支</ns0:text>
+</ns0:g>
+
+<ns0:g id="edge22" class="edge">
+<ns0:title>n34-&gt;n35</ns0:title>
+<ns0:g id="a_edge22"><ns0:a ns1:title="置信度 0.85">
+<ns0:path fill="none" stroke="#4b7051" stroke-dasharray="5,2" d="M1953.01,-2412.8C2011,-2419.64 2085.45,-2428.42 2141.95,-2435.08" />
+</ns0:a>
+</ns0:g>
+<ns0:text text-anchor="middle" x="2047.5" y="-2431" font-family="Noto Sans CJK SC" font-size="10.00" fill="#496050">L-022 · 互斥条件分支</ns0:text>
+</ns0:g>
+
+<ns0:g id="node21" class="node">
+<ns0:title>n51</ns0:title>
+<ns0:g id="a_node21"><ns0:a ns1:title="fn-请求电池冷却供风-23D10441-77db605d3581">
+<ns0:polygon fill="#daf6b6" stroke="#70945a" stroke-width="1.4" points="1574,-2154.5 1404,-2154.5 1404,-2115.5 1574,-2115.5 1574,-2154.5" />
+<ns0:text text-anchor="middle" x="1489" y="-2131.5" font-family="Noto Sans CJK SC" font-size="15.00">Ⓛ  请求电池冷却供风</ns0:text>
+</ns0:a>
+</ns0:g>
+</ns0:g>
+
+<ns0:g id="edge31" class="edge">
+<ns0:title>n51-&gt;n52</ns0:title>
+<ns0:g id="a_edge31"><ns0:a ns1:title="置信度 0.8">
+<ns0:path fill="none" stroke="#4b7051" stroke-dasharray="5,2" d="M1573.85,-2115.49C1634.21,-2101.44 1715.31,-2082.56 1775.67,-2068.51" />
+</ns0:a>
+</ns0:g>
+<ns0:text text-anchor="middle" x="1673.5" y="-2105" font-family="Noto Sans CJK SC" font-size="10.00" fill="#496050">L-031 · 互斥选择</ns0:text>
+</ns0:g>
+
+<ns0:g id="node22" class="node">
+<ns0:title>n6</ns0:title>
+<ns0:g id="a_node22"><ns0:a ns1:title="fn-发送座舱降温需求-78B74133-bdc0ad9e672e">
+<ns0:polygon fill="#daf6b6" stroke="#70945a" stroke-width="1.4" points="559.5,-2188.5 389.5,-2188.5 389.5,-2149.5 559.5,-2149.5 559.5,-2188.5" />
+<ns0:text text-anchor="middle" x="474.5" y="-2165.5" font-family="Noto Sans CJK SC" font-size="15.00">Ⓛ  发送座舱降温需求</ns0:text>
+</ns0:a>
+</ns0:g>
+</ns0:g>
+
+<ns0:g id="node23" class="node">
+<ns0:title>n7</ns0:title>
+<ns0:g id="a_node23"><ns0:a ns1:title="fn-按座舱需求进行温控-78B74133-d453a32be303">
+<ns0:polygon fill="#daf6b6" stroke="#70945a" stroke-width="1.4" points="232,-2188.5 47,-2188.5 47,-2149.5 232,-2149.5 232,-2188.5" />
+<ns0:text text-anchor="middle" x="139.5" y="-2165.5" font-family="Noto Sans CJK SC" font-size="15.00">Ⓛ  按座舱需求进行温控</ns0:text>
+</ns0:a>
+</ns0:g>
+</ns0:g>
+
+<ns0:g id="edge6" class="edge">
+<ns0:title>n7-&gt;n6</ns0:title>
+<ns0:g id="a_edge6"><ns0:a ns1:title="置信度 0.75">
+<ns0:path fill="none" stroke="#4b7051" d="M232.38,-2169C279.07,-2169 335.63,-2169 382.24,-2169" />
+<ns0:polygon fill="#4b7051" stroke="#4b7051" points="382.34,-2171.45 389.34,-2169 382.34,-2166.55 382.34,-2171.45" />
+</ns0:a>
+</ns0:g>
+<ns0:text text-anchor="middle" x="307" y="-2172" font-family="Noto Sans CJK SC" font-size="10.00" fill="#496050">L-006 · 依赖</ns0:text>
+</ns0:g>
+
+<ns0:g id="node24" class="node">
+<ns0:title>n11</ns0:title>
+<ns0:g id="a_node24"><ns0:a ns1:title="fn-计算控制温度与主动冷却请求-78B74133-a55dc1bdeeea">
+<ns0:polygon fill="#daf6b6" stroke="#70945a" stroke-width="1.4" points="1272,-2643 1057,-2643 1057,-2587 1272,-2587 1272,-2643" />
+<ns0:text text-anchor="middle" x="1164.5" y="-2620" font-family="Noto Sans CJK SC" font-size="15.00">Ⓛ  计算控制温度与主动冷却</ns0:text>
+<ns0:text text-anchor="middle" x="1164.5" y="-2603" font-family="Noto Sans CJK SC" font-size="15.00">请求</ns0:text>
+</ns0:a>
+</ns0:g>
+</ns0:g>
+
+<ns0:g id="edge9" class="edge">
+<ns0:title>n11-&gt;n10</ns0:title>
+<ns0:g id="a_edge9"><ns0:a ns1:title="置信度 0.8">
+<ns0:path fill="none" stroke="#4b7051" d="M1272.44,-2626.94C1312.66,-2631.43 1357.98,-2636.49 1396.65,-2640.8" />
+<ns0:polygon fill="#4b7051" stroke="#4b7051" points="1396.56,-2643.26 1403.79,-2641.6 1397.11,-2638.39 1396.56,-2643.26" />
+</ns0:a>
+</ns0:g>
+<ns0:text text-anchor="middle" x="1332" y="-2639" font-family="Noto Sans CJK SC" font-size="10.00" fill="#496050">L-009 · 依赖</ns0:text>
+</ns0:g>
+
+<ns0:g id="node25" class="node">
+<ns0:title>n12</ns0:title>
+<ns0:g id="a_node25"><ns0:a ns1:title="fn-请求环境换热评估-78B74133-8d287ff70809">
+<ns0:polygon fill="#daf6b6" stroke="#70945a" stroke-width="1.4" points="914.5,-2642.5 744.5,-2642.5 744.5,-2603.5 914.5,-2603.5 914.5,-2642.5" />
+<ns0:text text-anchor="middle" x="829.5" y="-2619.5" font-family="Noto Sans CJK SC" font-size="15.00">Ⓛ  请求环境换热评估</ns0:text>
+</ns0:a>
+</ns0:g>
+</ns0:g>
+
+<ns0:g id="edge10" class="edge">
+<ns0:title>n12-&gt;n11</ns0:title>
+<ns0:g id="a_edge10"><ns0:a ns1:title="置信度 0.8">
+<ns0:path fill="none" stroke="#4b7051" d="M914.53,-2620.98C955.5,-2620 1005.38,-2618.8 1049.7,-2617.73" />
+<ns0:polygon fill="#4b7051" stroke="#4b7051" points="1049.82,-2620.18 1056.76,-2617.56 1049.71,-2615.28 1049.82,-2620.18" />
+</ns0:a>
+</ns0:g>
+<ns0:text text-anchor="middle" x="997" y="-2622" font-family="Noto Sans CJK SC" font-size="10.00" fill="#496050">L-010 · 依赖</ns0:text>
+</ns0:g>
+
+<ns0:g id="node26" class="node">
+<ns0:title>n20</ns0:title>
+<ns0:g id="a_node26"><ns0:a ns1:title="fn-接收环境换热评估请求-78B74133-8ed060f49072">
+<ns0:polygon fill="#daf6b6" stroke="#70945a" stroke-width="1.4" points="929.5,-2580.5 729.5,-2580.5 729.5,-2541.5 929.5,-2541.5 929.5,-2580.5" />
+<ns0:text text-anchor="middle" x="829.5" y="-2557.5" font-family="Noto Sans CJK SC" font-size="15.00">Ⓛ  接收环境换热评估请求</ns0:text>
+</ns0:a>
+</ns0:g>
+</ns0:g>
+
+<ns0:g id="node27" class="node">
+<ns0:title>n23</ns0:title>
+<ns0:g id="a_node27"><ns0:a ns1:title="fn-计算有符号环境换热热流-78B74133-df1ae175ca89">
+<ns0:polygon fill="#daf6b6" stroke="#70945a" stroke-width="1.4" points="937,-2518.5 722,-2518.5 722,-2479.5 937,-2479.5 937,-2518.5" />
+<ns0:text text-anchor="middle" x="829.5" y="-2495.5" font-family="Noto Sans CJK SC" font-size="15.00">Ⓛ  计算有符号环境换热热流</ns0:text>
+</ns0:a>
+</ns0:g>
+</ns0:g>
+
+<ns0:g id="node28" class="node">
+<ns0:title>n13</ns0:title>
+<ns0:g id="a_node28"><ns0:a ns1:title="fn-接收环境换热贡献-78B74133-18b26309ffe6">
+<ns0:polygon fill="#daf6b6" stroke="#70945a" stroke-width="1.4" points="559.5,-2647.5 389.5,-2647.5 389.5,-2608.5 559.5,-2608.5 559.5,-2647.5" />
+<ns0:text text-anchor="middle" x="474.5" y="-2624.5" font-family="Noto Sans CJK SC" font-size="15.00">Ⓛ  接收环境换热贡献</ns0:text>
+</ns0:a>
+</ns0:g>
+</ns0:g>
+
+<ns0:g id="edge12" class="edge">
+<ns0:title>n13-&gt;n12</ns0:title>
+<ns0:g id="a_edge12"><ns0:a ns1:title="置信度 0.7">
+<ns0:path fill="none" stroke="#4b7051" d="M559.6,-2626.81C613.08,-2626.05 682.31,-2625.07 737.13,-2624.29" />
+<ns0:polygon fill="#4b7051" stroke="#4b7051" points="737.46,-2626.74 744.43,-2624.19 737.4,-2621.84 737.46,-2626.74" />
+</ns0:a>
+</ns0:g>
+<ns0:text text-anchor="middle" x="652" y="-2628" font-family="Noto Sans CJK SC" font-size="10.00" fill="#496050">L-012 · 依赖</ns0:text>
+</ns0:g>
+
+<ns0:g id="edge13" class="edge">
+<ns0:title>n16-&gt;n13</ns0:title>
+<ns0:g id="a_edge13"><ns0:a ns1:title="置信度 0.8">
+<ns0:path fill="none" stroke="#4b7051" d="M217.32,-2631.85C266.48,-2631.11 330.51,-2630.15 382.26,-2629.37" />
+<ns0:polygon fill="#4b7051" stroke="#4b7051" points="382.52,-2631.82 389.48,-2629.26 382.44,-2626.92 382.52,-2631.82" />
+</ns0:a>
+</ns0:g>
+<ns0:text text-anchor="middle" x="307" y="-2633" font-family="Noto Sans CJK SC" font-size="10.00" fill="#496050">L-013 · 依赖</ns0:text>
+</ns0:g>
+
+<ns0:g id="node32" class="node">
+<ns0:title>n15</ns0:title>
+<ns0:g id="a_node32"><ns0:a ns1:title="fn-接收主动冷却执行结果-78B74133-af106dfe2b16">
+<ns0:polygon fill="#daf6b6" stroke="#70945a" stroke-width="1.4" points="574.5,-2384.5 374.5,-2384.5 374.5,-2345.5 574.5,-2345.5 574.5,-2384.5" />
+<ns0:text text-anchor="middle" x="474.5" y="-2361.5" font-family="Noto Sans CJK SC" font-size="15.00">Ⓛ  接收主动冷却执行结果</ns0:text>
+</ns0:a>
+</ns0:g>
+</ns0:g>
+
+<ns0:g id="edge14" class="edge">
+<ns0:title>n16-&gt;n15</ns0:title>
+<ns0:g id="a_edge14"><ns0:a ns1:title="置信度 0.8">
+<ns0:path fill="none" stroke="#4b7051" d="M217.04,-2613.63C241.8,-2607.37 263,-2602 263,-2602 263,-2602 397.11,-2451.01 451.24,-2390.06" />
+<ns0:polygon fill="#4b7051" stroke="#4b7051" points="453.1,-2391.66 455.91,-2384.8 449.43,-2388.41 453.1,-2391.66" />
+</ns0:a>
+</ns0:g>
+<ns0:text text-anchor="middle" x="307" y="-2584" font-family="Noto Sans CJK SC" font-size="10.00" fill="#496050">L-014 · 依赖</ns0:text>
+</ns0:g>
+
+<ns0:g id="node30" class="node">
+<ns0:title>n24</ns0:title>
+<ns0:g id="a_node30"><ns0:a ns1:title="fn-返回环境换热贡献-78B74133-68e6a8ca319c">
+<ns0:polygon fill="#daf6b6" stroke="#70945a" stroke-width="1.4" points="224.5,-2590.5 54.5,-2590.5 54.5,-2551.5 224.5,-2551.5 224.5,-2590.5" />
+<ns0:text text-anchor="middle" x="139.5" y="-2567.5" font-family="Noto Sans CJK SC" font-size="15.00">Ⓛ  返回环境换热贡献</ns0:text>
+</ns0:a>
+</ns0:g>
+</ns0:g>
+
+<ns0:g id="node31" class="node">
+<ns0:title>n14</ns0:title>
+<ns0:g id="a_node31"><ns0:a ns1:title="fn-发送主动冷却请求或撤销-78B74133-ffc1aecb1efc">
+<ns0:polygon fill="#daf6b6" stroke="#70945a" stroke-width="1.4" points="937,-2322.5 722,-2322.5 722,-2283.5 937,-2283.5 937,-2322.5" />
+<ns0:text text-anchor="middle" x="829.5" y="-2299.5" font-family="Noto Sans CJK SC" font-size="15.00">Ⓛ  发送主动冷却请求或撤销</ns0:text>
+</ns0:a>
+</ns0:g>
+</ns0:g>
+
+<ns0:g id="edge11" class="edge">
+<ns0:title>n14-&gt;n11</ns0:title>
+<ns0:g id="a_edge11"><ns0:a ns1:title="置信度 0.8">
+<ns0:path fill="none" stroke="#4b7051" d="M907.73,-2322.54C932.2,-2328.74 953,-2334 953,-2334 953,-2334 1082.16,-2506.41 1138.13,-2581.13" />
+<ns0:polygon fill="#4b7051" stroke="#4b7051" points="1136.19,-2582.64 1142.35,-2586.77 1140.12,-2579.7 1136.19,-2582.64" />
+</ns0:a>
+</ns0:g>
+<ns0:text text-anchor="middle" x="997" y="-2427" font-family="Noto Sans CJK SC" font-size="10.00" fill="#496050">L-011 · 依赖</ns0:text>
+</ns0:g>
+
+<ns0:g id="node34" class="node">
+<ns0:title>n30</ns0:title>
+<ns0:g id="a_node34"><ns0:a ns1:title="fn-返回主动冷却执行结果-78B74133-c38c573cfb96">
+<ns0:polygon fill="#daf6b6" stroke="#70945a" stroke-width="1.4" points="929.5,-2384.5 729.5,-2384.5 729.5,-2345.5 929.5,-2345.5 929.5,-2384.5" />
+<ns0:text text-anchor="middle" x="829.5" y="-2361.5" font-family="Noto Sans CJK SC" font-size="15.00">Ⓛ  返回主动冷却执行结果</ns0:text>
+</ns0:a>
+</ns0:g>
+</ns0:g>
+
+<ns0:g id="edge18" class="edge">
+<ns0:title>n15-&gt;n30</ns0:title>
+<ns0:g id="a_edge18"><ns0:a ns1:title="置信度 0.8">
+<ns0:path fill="none" stroke="#4b7051" d="M574.77,-2365C620.74,-2365 675.42,-2365 722.22,-2365" />
+<ns0:polygon fill="#4b7051" stroke="#4b7051" points="722.36,-2367.45 729.36,-2365 722.36,-2362.55 722.36,-2367.45" />
+</ns0:a>
+</ns0:g>
+<ns0:text text-anchor="middle" x="652" y="-2368" font-family="Noto Sans CJK SC" font-size="10.00" fill="#496050">L-018 · 依赖</ns0:text>
+</ns0:g>
+
+<ns0:g id="node33" class="node">
+<ns0:title>n25</ns0:title>
+<ns0:g id="a_node33"><ns0:a ns1:title="fn-接收主动冷却请求或撤销-78B74133-512c042e3d27">
+<ns0:polygon fill="#daf6b6" stroke="#70945a" stroke-width="1.4" points="582,-2322.5 367,-2322.5 367,-2283.5 582,-2283.5 582,-2322.5" />
+<ns0:text text-anchor="middle" x="474.5" y="-2299.5" font-family="Noto Sans CJK SC" font-size="15.00">Ⓛ  接收主动冷却请求或撤销</ns0:text>
+</ns0:a>
+</ns0:g>
+</ns0:g>
+
+<ns0:g id="edge17" class="edge">
+<ns0:title>n25-&gt;n14</ns0:title>
+<ns0:g id="a_edge17"><ns0:a ns1:title="置信度 0.8">
+<ns0:path fill="none" stroke="#4b7051" d="M582.37,-2303C624.27,-2303 672.42,-2303 714.94,-2303" />
+<ns0:polygon fill="#4b7051" stroke="#4b7051" points="714.99,-2305.45 721.99,-2303 714.99,-2300.55 714.99,-2305.45" />
+</ns0:a>
+</ns0:g>
+<ns0:text text-anchor="middle" x="652" y="-2306" font-family="Noto Sans CJK SC" font-size="10.00" fill="#496050">L-017 · 依赖</ns0:text>
+</ns0:g>
+
+<ns0:g id="node35" class="node">
+<ns0:title>n18</ns0:title>
+<ns0:g id="a_node35"><ns0:a ns1:title="fn-结束本次功能评估-78B74133-98f0857a2804">
+<ns0:polygon fill="#daf6b6" stroke="#70945a" stroke-width="1.4" points="224.5,-2456.5 54.5,-2456.5 54.5,-2417.5 224.5,-2417.5 224.5,-2456.5" />
+<ns0:text text-anchor="middle" x="139.5" y="-2433.5" font-family="Noto Sans CJK SC" font-size="15.00">Ⓛ  结束本次功能评估</ns0:text>
+</ns0:a>
+</ns0:g>
+</ns0:g>
+
+<ns0:g id="node36" class="node">
+<ns0:title>n21</ns0:title>
+<ns0:g id="a_node36"><ns0:a ns1:title="fn-请求前舱空气边界数据-78B74133-8b055203bbe0">
+<ns0:polygon fill="#daf6b6" stroke="#70945a" stroke-width="1.4" points="239.5,-2054.5 39.5,-2054.5 39.5,-2015.5 239.5,-2015.5 239.5,-2054.5" />
+<ns0:text text-anchor="middle" x="139.5" y="-2031.5" font-family="Noto Sans CJK SC" font-size="15.00">Ⓛ  请求前舱空气边界数据</ns0:text>
+</ns0:a>
+</ns0:g>
+</ns0:g>
+
+<ns0:g id="node37" class="node">
+<ns0:title>n22</ns0:title>
+<ns0:g id="a_node37"><ns0:a ns1:title="fn-接收前舱空气边界数据-78B74133-f8e85862d2a2">
+<ns0:polygon fill="#daf6b6" stroke="#70945a" stroke-width="1.4" points="239.5,-1992.5 39.5,-1992.5 39.5,-1953.5 239.5,-1953.5 239.5,-1992.5" />
+<ns0:text text-anchor="middle" x="139.5" y="-1969.5" font-family="Noto Sans CJK SC" font-size="15.00">Ⓛ  接收前舱空气边界数据</ns0:text>
+</ns0:a>
+</ns0:g>
+</ns0:g>
+
+<ns0:g id="node38" class="node">
+<ns0:title>n40</ns0:title>
+<ns0:g id="a_node38"><ns0:a ns1:title="fn-确定换热节点和边界-035A6165-9bb7b14ace8e">
+<ns0:polygon fill="#daf6b6" stroke="#70945a" stroke-width="1.4" points="232,-1930.5 47,-1930.5 47,-1891.5 232,-1891.5 232,-1930.5" />
+<ns0:text text-anchor="middle" x="139.5" y="-1907.5" font-family="Noto Sans CJK SC" font-size="15.00">Ⓛ  确定换热节点和边界</ns0:text>
+</ns0:a>
+</ns0:g>
+</ns0:g>
+
+<ns0:g id="node46" class="node">
+<ns0:title>n42</ns0:title>
+<ns0:g id="a_node46"><ns0:a ns1:title="fn-计算有符号环境换热热流-035A6165-c62e21251fc7">
+<ns0:polygon fill="#daf6b6" stroke="#70945a" stroke-width="1.4" points="582,-1485.5 367,-1485.5 367,-1446.5 582,-1446.5 582,-1485.5" />
+<ns0:text text-anchor="middle" x="474.5" y="-1462.5" font-family="Noto Sans CJK SC" font-size="15.00">Ⓛ  计算有符号环境换热热流</ns0:text>
+</ns0:a>
+</ns0:g>
+</ns0:g>
+
+<ns0:g id="edge25" class="edge">
+<ns0:title>n40-&gt;n42</ns0:title>
+<ns0:g id="a_edge25"><ns0:a ns1:title="置信度 0.7">
+<ns0:path fill="none" stroke="#4b7051" d="M170.78,-1891.47C207.06,-1868.08 263,-1832 263,-1832 263,-1832 410.67,-1575.25 458.64,-1491.84" />
+<ns0:polygon fill="#4b7051" stroke="#4b7051" points="460.82,-1492.97 462.18,-1485.68 456.57,-1490.52 460.82,-1492.97" />
+</ns0:a>
+</ns0:g>
+<ns0:text text-anchor="middle" x="307" y="-1803" font-family="Noto Sans CJK SC" font-size="10.00" fill="#496050">L-025 · 依赖</ns0:text>
+</ns0:g>
+
+<ns0:g id="node39" class="node">
+<ns0:title>n31</ns0:title>
+<ns0:g id="a_node39"><ns0:a ns1:title="fn-按场景驱动重复F0评估-78B74133-f1a8327b7d27">
+<ns0:polygon fill="#daf6b6" stroke="#70945a" stroke-width="1.4" points="240,-2322.5 39,-2322.5 39,-2283.5 240,-2283.5 240,-2322.5" />
+<ns0:text text-anchor="middle" x="139.5" y="-2299.5" font-family="Noto Sans CJK SC" font-size="15.00">Ⓛ  按场景驱动重复F0评估</ns0:text>
+</ns0:a>
+</ns0:g>
+</ns0:g>
+
+<ns0:g id="edge19" class="edge">
+<ns0:title>n31-&gt;n6</ns0:title>
+<ns0:g id="a_edge19"><ns0:a ns1:title="置信度 0.65">
+<ns0:path fill="none" stroke="#4b7051" d="M189.28,-2283.37C250.2,-2258.86 354.16,-2217.02 418.04,-2191.32" />
+<ns0:polygon fill="#4b7051" stroke="#4b7051" points="419.28,-2193.46 424.86,-2188.57 417.45,-2188.91 419.28,-2193.46" />
+</ns0:a>
+</ns0:g>
+<ns0:text text-anchor="middle" x="307" y="-2247" font-family="Noto Sans CJK SC" font-size="10.00" fill="#496050">L-019 · 依赖</ns0:text>
+</ns0:g>
+
+<ns0:g id="node40" class="node">
+<ns0:title>n36</ns0:title>
+<ns0:g id="a_node40"><ns0:a ns1:title="fn-未评估状态-799883A1-6b0b54ffaad7">
+<ns0:polygon fill="#daf6b6" stroke="#70945a" stroke-width="1.4" points="202,-1796.5 77,-1796.5 77,-1757.5 202,-1757.5 202,-1796.5" />
+<ns0:text text-anchor="middle" x="139.5" y="-1773.5" font-family="Noto Sans CJK SC" font-size="15.00">Ⓛ  未评估状态</ns0:text>
+</ns0:a>
+</ns0:g>
+</ns0:g>
+
+<ns0:g id="node41" class="node">
+<ns0:title>n37</ns0:title>
+<ns0:g id="a_node41"><ns0:a ns1:title="fn-无请求状态-799883A1-e537b97f4bcf">
+<ns0:polygon fill="#daf6b6" stroke="#70945a" stroke-width="1.4" points="202,-1734.5 77,-1734.5 77,-1695.5 202,-1695.5 202,-1734.5" />
+<ns0:text text-anchor="middle" x="139.5" y="-1711.5" font-family="Noto Sans CJK SC" font-size="15.00">Ⓛ  无请求状态</ns0:text>
+</ns0:a>
+</ns0:g>
+</ns0:g>
+
+<ns0:g id="node42" class="node">
+<ns0:title>n38</ns0:title>
+<ns0:g id="a_node42"><ns0:a ns1:title="fn-已请求状态-799883A1-95cd3df71859">
+<ns0:polygon fill="#daf6b6" stroke="#70945a" stroke-width="1.4" points="202,-1672.5 77,-1672.5 77,-1633.5 202,-1633.5 202,-1672.5" />
+<ns0:text text-anchor="middle" x="139.5" y="-1649.5" font-family="Noto Sans CJK SC" font-size="15.00">Ⓛ  已请求状态</ns0:text>
+</ns0:a>
+</ns0:g>
+</ns0:g>
+
+<ns0:g id="node43" class="node">
+<ns0:title>n39</ns0:title>
+<ns0:g id="a_node43"><ns0:a ns1:title="fn-刷新温度决策快照-799883A1-1cee250beeb3">
+<ns0:polygon fill="#daf6b6" stroke="#70945a" stroke-width="1.4" points="224.5,-1538.5 54.5,-1538.5 54.5,-1499.5 224.5,-1499.5 224.5,-1538.5" />
+<ns0:text text-anchor="middle" x="139.5" y="-1515.5" font-family="Noto Sans CJK SC" font-size="15.00">Ⓛ  刷新温度决策快照</ns0:text>
+</ns0:a>
+</ns0:g>
+</ns0:g>
+
+<ns0:g id="node44" class="node">
+<ns0:title>n45</ns0:title>
+<ns0:g id="a_node44"><ns0:a ns1:title="fn-记录环境换热节点状态快照-AAA64E59-707336df5b50">
+<ns0:polygon fill="#daf6b6" stroke="#70945a" stroke-width="1.4" points="247,-1476 32,-1476 32,-1420 247,-1420 247,-1476" />
+<ns0:text text-anchor="middle" x="139.5" y="-1453" font-family="Noto Sans CJK SC" font-size="15.00">Ⓛ  记录环境换热节点状态快</ns0:text>
+<ns0:text text-anchor="middle" x="139.5" y="-1436" font-family="Noto Sans CJK SC" font-size="15.00">照</ns0:text>
+</ns0:a>
+</ns0:g>
+</ns0:g>
+
+<ns0:g id="node45" class="node">
+<ns0:title>n41</ns0:title>
+<ns0:g id="a_node45"><ns0:a ns1:title="fn-读取温度和有效热导-035A6165-1e5f6f347570">
+<ns0:polygon fill="#daf6b6" stroke="#70945a" stroke-width="1.4" points="232,-1325.5 47,-1325.5 47,-1286.5 232,-1286.5 232,-1325.5" />
+<ns0:text text-anchor="middle" x="139.5" y="-1302.5" font-family="Noto Sans CJK SC" font-size="15.00">Ⓛ  读取温度和有效热导</ns0:text>
+</ns0:a>
+</ns0:g>
+</ns0:g>
+
+<ns0:g id="edge23" class="edge">
+<ns0:title>n41-&gt;n42</ns0:title>
+<ns0:g id="a_edge23"><ns0:a ns1:title="置信度 0.95">
+<ns0:path fill="none" stroke="#4b7051" d="M181.33,-1325.62C243.29,-1355.39 360.75,-1411.83 426.29,-1443.32" />
+<ns0:polygon fill="#4b7051" stroke="#4b7051" points="425.48,-1445.65 432.86,-1446.47 427.61,-1441.23 425.48,-1445.65" />
+</ns0:a>
+</ns0:g>
+<ns0:text text-anchor="middle" x="307" y="-1398" font-family="Noto Sans CJK SC" font-size="10.00" fill="#496050">L-023 · 依赖</ns0:text>
+</ns0:g>
+
+<ns0:g id="node47" class="node">
+<ns0:title>n43</ns0:title>
+<ns0:g id="a_node47"><ns0:a ns1:title="fn-输出环境换热贡献-035A6165-bbc5b74c4104">
+<ns0:polygon fill="#daf6b6" stroke="#70945a" stroke-width="1.4" points="914.5,-1485.5 744.5,-1485.5 744.5,-1446.5 914.5,-1446.5 914.5,-1485.5" />
+<ns0:text text-anchor="middle" x="829.5" y="-1462.5" font-family="Noto Sans CJK SC" font-size="15.00">Ⓛ  输出环境换热贡献</ns0:text>
+</ns0:a>
+</ns0:g>
+</ns0:g>
+
+<ns0:g id="edge24" class="edge">
+<ns0:title>n42-&gt;n43</ns0:title>
+<ns0:g id="a_edge24"><ns0:a ns1:title="置信度 0.95">
+<ns0:path fill="none" stroke="#4b7051" d="M582.37,-1466C631.78,-1466 689.86,-1466 737.19,-1466" />
+<ns0:polygon fill="#4b7051" stroke="#4b7051" points="737.4,-1468.45 744.4,-1466 737.4,-1463.55 737.4,-1468.45" />
+</ns0:a>
+</ns0:g>
+<ns0:text text-anchor="middle" x="652" y="-1469" font-family="Noto Sans CJK SC" font-size="10.00" fill="#496050">L-024 · 依赖</ns0:text>
+</ns0:g>
+
+<ns0:g id="node48" class="node">
+<ns0:title>n44</ns0:title>
+<ns0:g id="a_node48"><ns0:a ns1:title="fn-执行单次环境空气换热评估-8A890163-e40675e78659">
+<ns0:polygon fill="#daf6b6" stroke="#70945a" stroke-width="1.4" points="247,-1192 32,-1192 32,-1136 247,-1136 247,-1192" />
+<ns0:text text-anchor="middle" x="139.5" y="-1169" font-family="Noto Sans CJK SC" font-size="15.00">Ⓛ  执行单次环境空气换热评</ns0:text>
+<ns0:text text-anchor="middle" x="139.5" y="-1152" font-family="Noto Sans CJK SC" font-size="15.00">估</ns0:text>
+</ns0:a>
+</ns0:g>
+</ns0:g>
+
+<ns0:g id="node49" class="node">
+<ns0:title>n46</ns0:title>
+<ns0:g id="a_node49"><ns0:a ns1:title="fn-进入未评估状态-AAA64E59-565cb5353b94">
+<ns0:polygon fill="#daf6b6" stroke="#70945a" stroke-width="1.4" points="217,-1041.5 62,-1041.5 62,-1002.5 217,-1002.5 217,-1041.5" />
+<ns0:text text-anchor="middle" x="139.5" y="-1018.5" font-family="Noto Sans CJK SC" font-size="15.00">Ⓛ  进入未评估状态</ns0:text>
+</ns0:a>
+</ns0:g>
+</ns0:g>
+
+<ns0:g id="node50" class="node">
+<ns0:title>n47</ns0:title>
+<ns0:g id="a_node50"><ns0:a ns1:title="fn-判定向环境放热状态-AAA64E59-c98b3812e8e2">
+<ns0:polygon fill="#daf6b6" stroke="#70945a" stroke-width="1.4" points="567,-1041.5 382,-1041.5 382,-1002.5 567,-1002.5 567,-1041.5" />
+<ns0:text text-anchor="middle" x="474.5" y="-1018.5" font-family="Noto Sans CJK SC" font-size="15.00">Ⓛ  判定向环境放热状态</ns0:text>
+</ns0:a>
+</ns0:g>
+</ns0:g>
+
+<ns0:g id="edge28" class="edge">
+<ns0:title>n46-&gt;n47</ns0:title>
+<ns0:g id="a_edge28"><ns0:a ns1:title="置信度 0.9">
+<ns0:path fill="none" stroke="#4b7051" stroke-dasharray="5,2" d="M217.32,-1022C266.39,-1022 330.28,-1022 381.98,-1022" />
+</ns0:a>
+</ns0:g>
+<ns0:text text-anchor="middle" x="307" y="-1025" font-family="Noto Sans CJK SC" font-size="10.00" fill="#496050">L-028 · 竞争</ns0:text>
+</ns0:g>
+
+<ns0:g id="node51" class="node">
+<ns0:title>n48</ns0:title>
+<ns0:g id="a_node51"><ns0:a ns1:title="fn-判定零净换热状态-AAA64E59-3a9db56e60c4">
+<ns0:polygon fill="#daf6b6" stroke="#70945a" stroke-width="1.4" points="914.5,-1007.5 744.5,-1007.5 744.5,-968.5 914.5,-968.5 914.5,-1007.5" />
+<ns0:text text-anchor="middle" x="829.5" y="-984.5" font-family="Noto Sans CJK SC" font-size="15.00">Ⓛ  判定零净换热状态</ns0:text>
+</ns0:a>
+</ns0:g>
+</ns0:g>
+
+<ns0:g id="edge29" class="edge">
+<ns0:title>n46-&gt;n48</ns0:title>
+<ns0:g id="a_edge29"><ns0:a ns1:title="置信度 0.9">
+<ns0:path fill="none" stroke="#4b7051" stroke-dasharray="5,2" d="M217.09,-1006.72C277.28,-994.71 351,-980 351,-980 351,-980 598,-980 598,-980 598,-980 678.46,-982.79 744.31,-985.08" />
+</ns0:a>
+</ns0:g>
+<ns0:text text-anchor="middle" x="474.5" y="-983" font-family="Noto Sans CJK SC" font-size="10.00" fill="#496050">L-029 · 竞争</ns0:text>
+</ns0:g>
+
+<ns0:g id="node52" class="node">
+<ns0:title>n49</ns0:title>
+<ns0:g id="a_node52"><ns0:a ns1:title="fn-判定从环境吸热状态-AAA64E59-20cbb9d29359">
+<ns0:polygon fill="#daf6b6" stroke="#70945a" stroke-width="1.4" points="922,-1175.5 737,-1175.5 737,-1136.5 922,-1136.5 922,-1175.5" />
+<ns0:text text-anchor="middle" x="829.5" y="-1152.5" font-family="Noto Sans CJK SC" font-size="15.00">Ⓛ  判定从环境吸热状态</ns0:text>
+</ns0:a>
+</ns0:g>
+</ns0:g>
+
+<ns0:g id="edge30" class="edge">
+<ns0:title>n46-&gt;n49</ns0:title>
+<ns0:g id="a_edge30"><ns0:a ns1:title="置信度 0.9">
+<ns0:path fill="none" stroke="#4b7051" stroke-dasharray="5,2" d="M217.2,-1037.42C351.01,-1064.33 613,-1117 613,-1117 613,-1117 678.14,-1128.79 736.8,-1139.4" />
+</ns0:a>
+</ns0:g>
+<ns0:text text-anchor="middle" x="474.5" y="-1116" font-family="Noto Sans CJK SC" font-size="10.00" fill="#496050">L-030 · 竞争</ns0:text>
+</ns0:g>
+
+<ns0:g id="edge26" class="edge">
+<ns0:title>n47-&gt;n48</ns0:title>
+<ns0:g id="a_edge26"><ns0:a ns1:title="置信度 0.9">
+<ns0:path fill="none" stroke="#4b7051" stroke-dasharray="5,2" d="M567.33,-1013.16C622.07,-1007.88 691.06,-1001.24 744.39,-996.1" />
+</ns0:a>
+</ns0:g>
+<ns0:text text-anchor="middle" x="652" y="-1011" font-family="Noto Sans CJK SC" font-size="10.00" fill="#496050">L-026 · 竞争</ns0:text>
+</ns0:g>
+
+<ns0:g id="edge27" class="edge">
+<ns0:title>n47-&gt;n49</ns0:title>
+<ns0:g id="a_edge27"><ns0:a ns1:title="置信度 0.9">
+<ns0:path fill="none" stroke="#4b7051" stroke-dasharray="5,2" d="M527.21,-1041.63C594.14,-1067.04 710.08,-1111.05 776.94,-1136.43" />
+</ns0:a>
+</ns0:g>
+<ns0:text text-anchor="middle" x="652" y="-1104" font-family="Noto Sans CJK SC" font-size="10.00" fill="#496050">L-027 · 竞争</ns0:text>
+</ns0:g>
+
+<ns0:g id="node53" class="node">
+<ns0:title>n50</ns0:title>
+<ns0:g id="a_node53"><ns0:a ns1:title="fn-接收主动冷却请求-23D10441-df18622c6a28">
+<ns0:polygon fill="#daf6b6" stroke="#70945a" stroke-width="1.4" points="224.5,-850.5 54.5,-850.5 54.5,-811.5 224.5,-811.5 224.5,-850.5" />
+<ns0:text text-anchor="middle" x="139.5" y="-827.5" font-family="Noto Sans CJK SC" font-size="15.00">Ⓛ  接收主动冷却请求</ns0:text>
+</ns0:a>
+</ns0:g>
+</ns0:g>
+
+<ns0:g id="node54" class="node">
+<ns0:title>n53</ns0:title>
+<ns0:g id="a_node54"><ns0:a ns1:title="fn-读取实际供风条件-23D10441-bf3c438b582d">
+<ns0:polygon fill="#daf6b6" stroke="#70945a" stroke-width="1.4" points="224.5,-716.5 54.5,-716.5 54.5,-677.5 224.5,-677.5 224.5,-716.5" />
+<ns0:text text-anchor="middle" x="139.5" y="-693.5" font-family="Noto Sans CJK SC" font-size="15.00">Ⓛ  读取实际供风条件</ns0:text>
+</ns0:a>
+</ns0:g>
+</ns0:g>
+
+<ns0:g id="node55" class="node">
+<ns0:title>n54</ns0:title>
+<ns0:g id="a_node55"><ns0:a ns1:title="fn-计算主动供风换热-23D10441-363694c2c59f">
+<ns0:polygon fill="#daf6b6" stroke="#70945a" stroke-width="1.4" points="559.5,-808.5 389.5,-808.5 389.5,-769.5 559.5,-769.5 559.5,-808.5" />
+<ns0:text text-anchor="middle" x="474.5" y="-785.5" font-family="Noto Sans CJK SC" font-size="15.00">Ⓛ  计算主动供风换热</ns0:text>
+</ns0:a>
+</ns0:g>
+</ns0:g>
+
+<ns0:g id="edge34" class="edge">
+<ns0:title>n53-&gt;n54</ns0:title>
+<ns0:g id="a_edge34"><ns0:a ns1:title="置信度 0.85">
+<ns0:path fill="none" stroke="#4b7051" d="M211.12,-716.51C265.22,-731.46 339.81,-752.07 395.64,-767.49" />
+<ns0:polygon fill="#4b7051" stroke="#4b7051" points="395.29,-769.94 402.69,-769.44 396.6,-765.21 395.29,-769.94" />
+</ns0:a>
+</ns0:g>
+<ns0:text text-anchor="middle" x="307" y="-751" font-family="Noto Sans CJK SC" font-size="10.00" fill="#496050">L-034 · 依赖</ns0:text>
+</ns0:g>
+
+<ns0:g id="node57" class="node">
+<ns0:title>n56</ns0:title>
+<ns0:g id="a_node57"><ns0:a ns1:title="fn-记录供风不可用-23D10441-a767d1bdccfa">
+<ns0:polygon fill="#daf6b6" stroke="#70945a" stroke-width="1.4" points="907,-850.5 752,-850.5 752,-811.5 907,-811.5 907,-850.5" />
+<ns0:text text-anchor="middle" x="829.5" y="-827.5" font-family="Noto Sans CJK SC" font-size="15.00">Ⓛ  记录供风不可用</ns0:text>
+</ns0:a>
+</ns0:g>
+</ns0:g>
+
+<ns0:g id="edge33" class="edge">
+<ns0:title>n53-&gt;n56</ns0:title>
+<ns0:g id="a_edge33"><ns0:a ns1:title="置信度 0.8">
+<ns0:path fill="none" stroke="#4b7051" stroke-dasharray="5,2" d="M168.45,-716.52C225.71,-756.51 351,-844 351,-844 351,-844 598,-844 598,-844 598,-844 684.69,-839.11 751.75,-835.33" />
+</ns0:a>
+</ns0:g>
+<ns0:text text-anchor="middle" x="474.5" y="-847" font-family="Noto Sans CJK SC" font-size="10.00" fill="#496050">L-033 · 互斥选择</ns0:text>
+</ns0:g>
+
+<ns0:g id="node56" class="node">
+<ns0:title>n55</ns0:title>
+<ns0:g id="a_node56"><ns0:a ns1:title="fn-记录尚未建立供风-23D10441-92b1bb6fbfd6">
+<ns0:polygon fill="#daf6b6" stroke="#70945a" stroke-width="1.4" points="914.5,-788.5 744.5,-788.5 744.5,-749.5 914.5,-749.5 914.5,-788.5" />
+<ns0:text text-anchor="middle" x="829.5" y="-765.5" font-family="Noto Sans CJK SC" font-size="15.00">Ⓛ  记录尚未建立供风</ns0:text>
+</ns0:a>
+</ns0:g>
+</ns0:g>
+
+<ns0:g id="edge32" class="edge">
+<ns0:title>n54-&gt;n55</ns0:title>
+<ns0:g id="a_edge32"><ns0:a ns1:title="置信度 0.8">
+<ns0:path fill="none" stroke="#4b7051" stroke-dasharray="5,2" d="M559.6,-784.23C615.48,-781.07 688.56,-776.93 744.43,-773.76" />
+</ns0:a>
+</ns0:g>
+<ns0:text text-anchor="middle" x="652" y="-783" font-family="Noto Sans CJK SC" font-size="10.00" fill="#496050">L-032 · 互斥选择</ns0:text>
+</ns0:g>
+
+<ns0:g id="node58" class="node">
+<ns0:title>n57</ns0:title>
+<ns0:g id="a_node58"><ns0:a ns1:title="fn-反馈执行状态和换热贡献-23D10441-d1c726939d4b">
+<ns0:polygon fill="#daf6b6" stroke="#70945a" stroke-width="1.4" points="247,-582.5 32,-582.5 32,-543.5 247,-543.5 247,-582.5" />
+<ns0:text text-anchor="middle" x="139.5" y="-559.5" font-family="Noto Sans CJK SC" font-size="15.00">Ⓛ  反馈执行状态和换热贡献</ns0:text>
+</ns0:a>
+</ns0:g>
+</ns0:g>
+
+<ns0:g id="node59" class="node">
+<ns0:title>n58</ns0:title>
+<ns0:g id="a_node59"><ns0:a ns1:title="fn-无主动冷却请求轨迹-5CCD33B1-9e6dbcb98c7a">
+<ns0:polygon fill="#daf6b6" stroke="#70945a" stroke-width="1.4" points="567,-674.5 382,-674.5 382,-635.5 567,-635.5 567,-674.5" />
+<ns0:text text-anchor="middle" x="474.5" y="-651.5" font-family="Noto Sans CJK SC" font-size="15.00">Ⓛ  无主动冷却请求轨迹</ns0:text>
+</ns0:a>
+</ns0:g>
+</ns0:g>
+
+<ns0:g id="node60" class="node">
+<ns0:title>n59</ns0:title>
+<ns0:g id="a_node60"><ns0:a ns1:title="fn-供风不可用轨迹-5CCD33B1-45cd9e9f0cfb">
+<ns0:polygon fill="#daf6b6" stroke="#70945a" stroke-width="1.4" points="552,-453.5 397,-453.5 397,-414.5 552,-414.5 552,-453.5" />
+<ns0:text text-anchor="middle" x="474.5" y="-430.5" font-family="Noto Sans CJK SC" font-size="15.00">Ⓛ  供风不可用轨迹</ns0:text>
+</ns0:a>
+</ns0:g>
+</ns0:g>
+
+<ns0:g id="node61" class="node">
+<ns0:title>n60</ns0:title>
+<ns0:g id="a_node61"><ns0:a ns1:title="fn-已请求但尚未建立供风轨迹-5CCD33B1-3b40ad942138">
+<ns0:polygon fill="#daf6b6" stroke="#70945a" stroke-width="1.4" points="582,-533 367,-533 367,-477 582,-477 582,-533" />
+<ns0:text text-anchor="middle" x="474.5" y="-510" font-family="Noto Sans CJK SC" font-size="15.00">Ⓛ  已请求但尚未建立供风轨</ns0:text>
+<ns0:text text-anchor="middle" x="474.5" y="-493" font-family="Noto Sans CJK SC" font-size="15.00">迹</ns0:text>
+</ns0:a>
+</ns0:g>
+</ns0:g>
+
+<ns0:g id="node62" class="node">
+<ns0:title>n61</ns0:title>
+<ns0:g id="a_node62"><ns0:a ns1:title="fn-实际供风下计算主动换热轨迹-5CCD33B1-0c968025c3ab">
+<ns0:polygon fill="#daf6b6" stroke="#70945a" stroke-width="1.4" points="582,-612 367,-612 367,-556 582,-556 582,-612" />
+<ns0:text text-anchor="middle" x="474.5" y="-589" font-family="Noto Sans CJK SC" font-size="15.00">Ⓛ  实际供风下计算主动换热</ns0:text>
+<ns0:text text-anchor="middle" x="474.5" y="-572" font-family="Noto Sans CJK SC" font-size="15.00">轨迹</ns0:text>
+</ns0:a>
+</ns0:g>
+</ns0:g>
+
+<ns0:g id="node63" class="node">
+<ns0:title>n62</ns0:title>
+<ns0:g id="a_node63"><ns0:a ns1:title="fn-F2四条轨迹互斥选择-5CCD33B1-1f6131c7cd3d">
+<ns0:polygon fill="#daf6b6" stroke="#70945a" stroke-width="1.4" points="232.5,-448.5 46.5,-448.5 46.5,-409.5 232.5,-409.5 232.5,-448.5" />
+<ns0:text text-anchor="middle" x="139.5" y="-425.5" font-family="Noto Sans CJK SC" font-size="15.00">Ⓛ  F2四条轨迹互斥选择</ns0:text>
+</ns0:a>
+</ns0:g>
+</ns0:g>
+
+<ns0:g id="edge35" class="edge">
+<ns0:title>n62-&gt;n58</ns0:title>
+<ns0:g id="a_edge35"><ns0:a ns1:title="置信度 0.95">
+<ns0:path fill="none" stroke="#4b7051" d="M164.41,-448.71C200.06,-478.11 263,-530 263,-530 263,-530 278,-551 278,-551 278,-551 351,-624 351,-624 351,-624 367.94,-628.29 389.22,-633.67" />
+<ns0:polygon fill="#4b7051" stroke="#4b7051" points="388.88,-636.11 396.27,-635.46 390.08,-631.36 388.88,-636.11" />
+</ns0:a>
+</ns0:g>
+<ns0:text text-anchor="middle" x="307" y="-611" font-family="Noto Sans CJK SC" font-size="10.00" fill="#496050">L-035 · 依赖</ns0:text>
+</ns0:g>
+
+<ns0:g id="edge36" class="edge">
+<ns0:title>n62-&gt;n59</ns0:title>
+<ns0:g id="a_edge36"><ns0:a ns1:title="置信度 0.95">
+<ns0:path fill="none" stroke="#4b7051" d="M232.82,-430.39C281.88,-431.12 341.75,-432.02 389.5,-432.74" />
+<ns0:polygon fill="#4b7051" stroke="#4b7051" points="389.72,-435.19 396.76,-432.85 389.8,-430.29 389.72,-435.19" />
+</ns0:a>
+</ns0:g>
+<ns0:text text-anchor="middle" x="307" y="-434" font-family="Noto Sans CJK SC" font-size="10.00" fill="#496050">L-036 · 依赖</ns0:text>
+</ns0:g>
+
+<ns0:g id="edge37" class="edge">
+<ns0:title>n62-&gt;n60</ns0:title>
+<ns0:g id="a_edge37"><ns0:a ns1:title="置信度 0.95">
+<ns0:path fill="none" stroke="#4b7051" d="M226.26,-448.57C266.96,-457.86 316.15,-469.09 359.9,-479.07" />
+<ns0:polygon fill="#4b7051" stroke="#4b7051" points="359.51,-481.5 366.88,-480.67 360.6,-476.72 359.51,-481.5" />
+</ns0:a>
+</ns0:g>
+<ns0:text text-anchor="middle" x="307" y="-474" font-family="Noto Sans CJK SC" font-size="10.00" fill="#496050">L-037 · 依赖</ns0:text>
+</ns0:g>
+
+<ns0:g id="edge38" class="edge">
+<ns0:title>n62-&gt;n61</ns0:title>
+<ns0:g id="a_edge38"><ns0:a ns1:title="置信度 0.95">
+<ns0:path fill="none" stroke="#4b7051" d="M176.21,-448.68C236.27,-481.77 351,-545 351,-545 351,-545 362.46,-548.65 378.38,-553.72" />
+<ns0:polygon fill="#4b7051" stroke="#4b7051" points="378.04,-556.18 385.45,-555.97 379.52,-551.51 378.04,-556.18" />
+</ns0:a>
+</ns0:g>
+<ns0:text text-anchor="middle" x="307" y="-538" font-family="Noto Sans CJK SC" font-size="10.00" fill="#496050">L-038 · 依赖</ns0:text>
+</ns0:g>
+
+<ns0:g id="node64" class="node">
+<ns0:title>n63</ns0:title>
+<ns0:g id="a_node64"><ns0:a ns1:title="fn-确定主动冷却初始模式-D7264D39-417adfdf2ece">
+<ns0:polygon fill="#daf6b6" stroke="#70945a" stroke-width="1.4" points="239.5,-205.5 39.5,-205.5 39.5,-166.5 239.5,-166.5 239.5,-205.5" />
+<ns0:text text-anchor="middle" x="139.5" y="-182.5" font-family="Noto Sans CJK SC" font-size="15.00">Ⓛ  确定主动冷却初始模式</ns0:text>
+</ns0:a>
+</ns0:g>
+</ns0:g>
+
+<ns0:g id="node66" class="node">
+<ns0:title>n65</ns0:title>
+<ns0:g id="a_node66"><ns0:a ns1:title="fn-标记主动冷却未评估-D7264D39-aff650c1b0ac">
+<ns0:polygon fill="#daf6b6" stroke="#70945a" stroke-width="1.4" points="567,-319.5 382,-319.5 382,-280.5 567,-280.5 567,-319.5" />
+<ns0:text text-anchor="middle" x="474.5" y="-296.5" font-family="Noto Sans CJK SC" font-size="15.00">Ⓛ  标记主动冷却未评估</ns0:text>
+</ns0:a>
+</ns0:g>
+</ns0:g>
+
+<ns0:g id="edge39" class="edge">
+<ns0:title>n63-&gt;n65</ns0:title>
+<ns0:g id="a_edge39"><ns0:a ns1:title="置信度 0.85">
+<ns0:path fill="none" stroke="#4b7051" d="M190.12,-205.56C252.35,-230.1 351,-269 351,-269 351,-269 367.94,-273.29 389.22,-278.67" />
+<ns0:polygon fill="#4b7051" stroke="#4b7051" points="388.88,-281.11 396.27,-280.46 390.08,-276.36 388.88,-281.11" />
+</ns0:a>
+</ns0:g>
+<ns0:text text-anchor="middle" x="307" y="-264" font-family="Noto Sans CJK SC" font-size="10.00" fill="#496050">L-039 · 依赖</ns0:text>
+</ns0:g>
+
+<ns0:g id="node67" class="node">
+<ns0:title>n66</ns0:title>
+<ns0:g id="a_node67"><ns0:a ns1:title="fn-标记主动冷却未请求-D7264D39-2a47e5230c31">
+<ns0:polygon fill="#daf6b6" stroke="#70945a" stroke-width="1.4" points="567,-71.5 382,-71.5 382,-32.5 567,-32.5 567,-71.5" />
+<ns0:text text-anchor="middle" x="474.5" y="-48.5" font-family="Noto Sans CJK SC" font-size="15.00">Ⓛ  标记主动冷却未请求</ns0:text>
+</ns0:a>
+</ns0:g>
+</ns0:g>
+
+<ns0:g id="edge40" class="edge">
+<ns0:title>n63-&gt;n66</ns0:title>
+<ns0:g id="a_edge40"><ns0:a ns1:title="置信度 0.85">
+<ns0:path fill="none" stroke="#4b7051" d="M180.59,-166.38C241.66,-136.5 351,-83 351,-83 351,-83 367.94,-78.71 389.22,-73.33" />
+<ns0:polygon fill="#4b7051" stroke="#4b7051" points="390.08,-75.64 396.27,-71.54 388.88,-70.89 390.08,-75.64" />
+</ns0:a>
+</ns0:g>
+<ns0:text text-anchor="middle" x="307" y="-120" font-family="Noto Sans CJK SC" font-size="10.00" fill="#496050">L-040 · 依赖</ns0:text>
+</ns0:g>
+
+<ns0:g id="node68" class="node">
+<ns0:title>n67</ns0:title>
+<ns0:g id="a_node68"><ns0:a ns1:title="fn-标记主动冷却不可用-D7264D39-409a7b2b467c">
+<ns0:polygon fill="#daf6b6" stroke="#70945a" stroke-width="1.4" points="567,-133.5 382,-133.5 382,-94.5 567,-94.5 567,-133.5" />
+<ns0:text text-anchor="middle" x="474.5" y="-110.5" font-family="Noto Sans CJK SC" font-size="15.00">Ⓛ  标记主动冷却不可用</ns0:text>
+</ns0:a>
+</ns0:g>
+</ns0:g>
+
+<ns0:g id="edge41" class="edge">
+<ns0:title>n63-&gt;n67</ns0:title>
+<ns0:g id="a_edge41"><ns0:a ns1:title="置信度 0.85">
+<ns0:path fill="none" stroke="#4b7051" d="M231.05,-166.42C276.03,-156.7 330.41,-144.94 376.26,-135.02" />
+<ns0:polygon fill="#4b7051" stroke="#4b7051" points="376.93,-137.39 383.25,-133.51 375.89,-132.6 376.93,-137.39" />
+</ns0:a>
+</ns0:g>
+<ns0:text text-anchor="middle" x="307" y="-158" font-family="Noto Sans CJK SC" font-size="10.00" fill="#496050">L-041 · 依赖</ns0:text>
+</ns0:g>
+
+<ns0:g id="node69" class="node">
+<ns0:title>n68</ns0:title>
+<ns0:g id="a_node69"><ns0:a ns1:title="fn-标记主动冷却请求等待-D7264D39-bc5f0d8bf0e0">
+<ns0:polygon fill="#daf6b6" stroke="#70945a" stroke-width="1.4" points="574.5,-195.5 374.5,-195.5 374.5,-156.5 574.5,-156.5 574.5,-195.5" />
+<ns0:text text-anchor="middle" x="474.5" y="-172.5" font-family="Noto Sans CJK SC" font-size="15.00">Ⓛ  标记主动冷却请求等待</ns0:text>
+</ns0:a>
+</ns0:g>
+</ns0:g>
+
+<ns0:g id="edge42" class="edge">
+<ns0:title>n63-&gt;n68</ns0:title>
+<ns0:g id="a_edge42"><ns0:a ns1:title="置信度 0.85">
+<ns0:path fill="none" stroke="#4b7051" d="M239.51,-183.03C279.74,-181.82 326.31,-180.42 367.25,-179.19" />
+<ns0:polygon fill="#4b7051" stroke="#4b7051" points="367.37,-181.64 374.3,-178.98 367.23,-176.74 367.37,-181.64" />
+</ns0:a>
+</ns0:g>
+<ns0:text text-anchor="middle" x="307" y="-185" font-family="Noto Sans CJK SC" font-size="10.00" fill="#496050">L-042 · 依赖</ns0:text>
+</ns0:g>
+
+<ns0:g id="node70" class="node">
+<ns0:title>n69</ns0:title>
+<ns0:g id="a_node70"><ns0:a ns1:title="fn-标记主动冷却供风中-D7264D39-f673ca96e31f">
+<ns0:polygon fill="#daf6b6" stroke="#70945a" stroke-width="1.4" points="567,-257.5 382,-257.5 382,-218.5 567,-218.5 567,-257.5" />
+<ns0:text text-anchor="middle" x="474.5" y="-234.5" font-family="Noto Sans CJK SC" font-size="15.00">Ⓛ  标记主动冷却供风中</ns0:text>
+</ns0:a>
+</ns0:g>
+</ns0:g>
+
+<ns0:g id="edge43" class="edge">
+<ns0:title>n63-&gt;n69</ns0:title>
+<ns0:g id="a_edge43"><ns0:a ns1:title="置信度 0.85">
+<ns0:path fill="none" stroke="#4b7051" d="M239.51,-201.46C282.28,-208.14 332.2,-215.93 374.92,-222.61" />
+<ns0:polygon fill="#4b7051" stroke="#4b7051" points="374.69,-225.05 381.98,-223.71 375.45,-220.21 374.69,-225.05" />
+</ns0:a>
+</ns0:g>
+<ns0:text text-anchor="middle" x="307" y="-218" font-family="Noto Sans CJK SC" font-size="10.00" fill="#496050">L-043 · 依赖</ns0:text>
+</ns0:g>
+
+<ns0:g id="node65" class="node">
+<ns0:title>n64</ns0:title>
+<ns0:g id="a_node65"><ns0:a ns1:title="fn-记录主动冷却执行快照-D7264D39-63cf62113747">
+<ns0:polygon fill="#daf6b6" stroke="#70945a" stroke-width="1.4" points="239.5,-71.5 39.5,-71.5 39.5,-32.5 239.5,-32.5 239.5,-71.5" />
+<ns0:text text-anchor="middle" x="139.5" y="-48.5" font-family="Noto Sans CJK SC" font-size="15.00">Ⓛ  记录主动冷却执行快照</ns0:text>
+</ns0:a>
+</ns0:g>
+</ns0:g>
+</ns0:g>
+</ns0:g><ns0:text x="1208.3" y="65" text-anchor="middle" font-family="Noto Sans CJK SC" font-size="36" font-weight="bold" fill="#283844">逻辑架构</ns0:text><ns0:text x="24" y="120" font-family="Noto Sans CJK SC" font-size="14" fill="#486073">70 个功能 · 36 个簇 · 43 条关系  |  实线箭头：依赖（指向被依赖方）；虚线：互斥、分支、选择或竞争（详见标签）  |  簇名与关系来自原始 JSON</ns0:text></ns0:svg>
