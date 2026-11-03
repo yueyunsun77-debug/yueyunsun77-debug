@@ -1,0 +1,686 @@
+[
+  {
+    "req_id": "3.3.1.2",
+    "changed_fields": [
+      "extras.baseline_status",
+      "source_refs"
+    ],
+    "id_preserved": true
+  },
+  {
+    "req_id": "3.3.1.6",
+    "changed_fields": [
+      "extras.baseline_status",
+      "source_refs"
+    ],
+    "id_preserved": true
+  },
+  {
+    "req_id": "3.3.1.9",
+    "changed_fields": [
+      "extras.baseline_status",
+      "source_refs"
+    ],
+    "id_preserved": true
+  },
+  {
+    "req_id": "IND-001",
+    "changed_fields": [
+      "extras.classification_basis",
+      "extras.indicator_scope",
+      "extras.logical_responsibility",
+      "extras.review_outcome"
+    ],
+    "id_preserved": true
+  },
+  {
+    "req_id": "IND-002",
+    "changed_fields": [
+      "extras.classification_basis",
+      "extras.indicator_scope",
+      "extras.logical_responsibility",
+      "extras.review_outcome"
+    ],
+    "id_preserved": true
+  },
+  {
+    "req_id": "IND-003",
+    "changed_fields": [
+      "extras.classification_basis",
+      "extras.indicator_scope",
+      "extras.logical_responsibility",
+      "extras.review_outcome"
+    ],
+    "id_preserved": true
+  },
+  {
+    "req_id": "IND-004",
+    "changed_fields": [
+      "extras.classification_basis",
+      "extras.indicator_scope",
+      "extras.logical_responsibility",
+      "extras.review_outcome"
+    ],
+    "id_preserved": true
+  },
+  {
+    "req_id": "IND-005",
+    "changed_fields": [
+      "extras.classification_basis",
+      "extras.indicator_scope",
+      "extras.logical_responsibility",
+      "extras.review_outcome"
+    ],
+    "id_preserved": true
+  },
+  {
+    "req_id": "IND-006",
+    "changed_fields": [
+      "extras.classification_basis",
+      "extras.indicator_scope",
+      "extras.logical_responsibility",
+      "extras.review_outcome"
+    ],
+    "id_preserved": true
+  },
+  {
+    "req_id": "IND-007",
+    "changed_fields": [
+      "extras.classification_basis",
+      "extras.indicator_scope",
+      "extras.logical_responsibility",
+      "extras.review_outcome"
+    ],
+    "id_preserved": true
+  },
+  {
+    "req_id": "IND-008",
+    "changed_fields": [
+      "category",
+      "extras.classification_basis",
+      "extras.indicator_scope",
+      "extras.logical_responsibility",
+      "extras.review_outcome",
+      "extras.secondary_categories"
+    ],
+    "id_preserved": true
+  },
+  {
+    "req_id": "IND-009",
+    "changed_fields": [
+      "extras.classification_basis",
+      "extras.indicator_scope",
+      "extras.logical_responsibility",
+      "extras.review_outcome"
+    ],
+    "id_preserved": true
+  },
+  {
+    "req_id": "IND-010",
+    "changed_fields": [
+      "extras.classification_basis",
+      "extras.indicator_scope",
+      "extras.logical_responsibility",
+      "extras.review_outcome"
+    ],
+    "id_preserved": true
+  },
+  {
+    "req_id": "IND-011",
+    "changed_fields": [
+      "extras.classification_basis",
+      "extras.indicator_scope",
+      "extras.logical_responsibility",
+      "extras.review_outcome"
+    ],
+    "id_preserved": true
+  },
+  {
+    "req_id": "IND-012",
+    "changed_fields": [
+      "extras.classification_basis",
+      "extras.indicator_scope",
+      "extras.logical_responsibility",
+      "extras.review_outcome"
+    ],
+    "id_preserved": true
+  },
+  {
+    "req_id": "IND-013",
+    "changed_fields": [
+      "extras.classification_basis",
+      "extras.indicator_scope",
+      "extras.logical_responsibility",
+      "extras.review_outcome"
+    ],
+    "id_preserved": true
+  },
+  {
+    "req_id": "IND-014",
+    "changed_fields": [
+      "extras.classification_basis",
+      "extras.indicator_scope",
+      "extras.logical_responsibility",
+      "extras.review_outcome"
+    ],
+    "id_preserved": true
+  },
+  {
+    "req_id": "IND-015",
+    "changed_fields": [
+      "extras.classification_basis",
+      "extras.indicator_scope",
+      "extras.logical_responsibility",
+      "extras.review_outcome"
+    ],
+    "id_preserved": true
+  },
+  {
+    "req_id": "IND-016",
+    "changed_fields": [
+      "extras.classification_basis",
+      "extras.indicator_scope",
+      "extras.logical_responsibility",
+      "extras.review_outcome"
+    ],
+    "id_preserved": true
+  },
+  {
+    "req_id": "IND-017",
+    "changed_fields": [
+      "extras.classification_basis",
+      "extras.indicator_scope",
+      "extras.logical_responsibility",
+      "extras.review_outcome"
+    ],
+    "id_preserved": true
+  },
+  {
+    "req_id": "IND-018",
+    "changed_fields": [
+      "extras.classification_basis",
+      "extras.indicator_scope",
+      "extras.logical_responsibility",
+      "extras.review_outcome"
+    ],
+    "id_preserved": true
+  },
+  {
+    "req_id": "IND-019",
+    "changed_fields": [
+      "extras.classification_basis",
+      "extras.indicator_scope",
+      "extras.logical_responsibility",
+      "extras.review_outcome"
+    ],
+    "id_preserved": true
+  },
+  {
+    "req_id": "IND-020",
+    "changed_fields": [
+      "extras.classification_basis",
+      "extras.indicator_scope",
+      "extras.logical_responsibility",
+      "extras.review_outcome"
+    ],
+    "id_preserved": true
+  },
+  {
+    "req_id": "IND-021",
+    "changed_fields": [
+      "extras.classification_basis",
+      "extras.indicator_scope",
+      "extras.logical_responsibility",
+      "extras.review_outcome"
+    ],
+    "id_preserved": true
+  },
+  {
+    "req_id": "IND-022",
+    "changed_fields": [
+      "extras.classification_basis",
+      "extras.indicator_scope",
+      "extras.logical_responsibility",
+      "extras.review_outcome"
+    ],
+    "id_preserved": true
+  },
+  {
+    "req_id": "IND-023",
+    "changed_fields": [
+      "extras.classification_basis",
+      "extras.indicator_scope",
+      "extras.logical_responsibility",
+      "extras.review_outcome"
+    ],
+    "id_preserved": true
+  },
+  {
+    "req_id": "IND-024",
+    "changed_fields": [
+      "extras.classification_basis",
+      "extras.indicator_scope",
+      "extras.logical_responsibility",
+      "extras.review_outcome"
+    ],
+    "id_preserved": true
+  },
+  {
+    "req_id": "IND-025",
+    "changed_fields": [
+      "extras.classification_basis",
+      "extras.indicator_scope",
+      "extras.logical_responsibility",
+      "extras.review_outcome"
+    ],
+    "id_preserved": true
+  },
+  {
+    "req_id": "IND-026",
+    "changed_fields": [
+      "extras.classification_basis",
+      "extras.indicator_scope",
+      "extras.logical_responsibility",
+      "extras.review_outcome"
+    ],
+    "id_preserved": true
+  },
+  {
+    "req_id": "IND-027",
+    "changed_fields": [
+      "extras.classification_basis",
+      "extras.indicator_scope",
+      "extras.logical_responsibility",
+      "extras.review_outcome"
+    ],
+    "id_preserved": true
+  },
+  {
+    "req_id": "IND-028",
+    "changed_fields": [
+      "extras.classification_basis",
+      "extras.indicator_scope",
+      "extras.logical_responsibility",
+      "extras.review_outcome"
+    ],
+    "id_preserved": true
+  },
+  {
+    "req_id": "IND-029",
+    "changed_fields": [
+      "extras.classification_basis",
+      "extras.indicator_scope",
+      "extras.logical_responsibility",
+      "extras.review_outcome"
+    ],
+    "id_preserved": true
+  },
+  {
+    "req_id": "IND-030",
+    "changed_fields": [
+      "extras.classification_basis",
+      "extras.indicator_scope",
+      "extras.logical_responsibility",
+      "extras.review_outcome"
+    ],
+    "id_preserved": true
+  },
+  {
+    "req_id": "IND-031",
+    "changed_fields": [
+      "extras.classification_basis",
+      "extras.indicator_scope",
+      "extras.logical_responsibility",
+      "extras.review_outcome"
+    ],
+    "id_preserved": true
+  },
+  {
+    "req_id": "IND-032",
+    "changed_fields": [
+      "extras.classification_basis",
+      "extras.indicator_scope",
+      "extras.logical_responsibility",
+      "extras.review_outcome"
+    ],
+    "id_preserved": true
+  },
+  {
+    "req_id": "IND-033",
+    "changed_fields": [
+      "extras.classification_basis",
+      "extras.indicator_scope",
+      "extras.logical_responsibility",
+      "extras.review_outcome"
+    ],
+    "id_preserved": true
+  },
+  {
+    "req_id": "IND-034",
+    "changed_fields": [
+      "extras.classification_basis",
+      "extras.indicator_scope",
+      "extras.logical_responsibility",
+      "extras.review_outcome"
+    ],
+    "id_preserved": true
+  },
+  {
+    "req_id": "IND-035",
+    "changed_fields": [
+      "extras.classification_basis",
+      "extras.indicator_scope",
+      "extras.logical_responsibility",
+      "extras.review_outcome"
+    ],
+    "id_preserved": true
+  },
+  {
+    "req_id": "IND-036",
+    "changed_fields": [
+      "extras.classification_basis",
+      "extras.indicator_scope",
+      "extras.logical_responsibility",
+      "extras.review_outcome"
+    ],
+    "id_preserved": true
+  },
+  {
+    "req_id": "IND-037",
+    "changed_fields": [
+      "extras.classification_basis",
+      "extras.indicator_scope",
+      "extras.logical_responsibility",
+      "extras.review_outcome"
+    ],
+    "id_preserved": true
+  },
+  {
+    "req_id": "IND-038",
+    "changed_fields": [
+      "extras.classification_basis",
+      "extras.indicator_scope",
+      "extras.logical_responsibility",
+      "extras.review_outcome"
+    ],
+    "id_preserved": true
+  },
+  {
+    "req_id": "IND-039",
+    "changed_fields": [
+      "extras.classification_basis",
+      "extras.indicator_scope",
+      "extras.logical_responsibility",
+      "extras.review_outcome"
+    ],
+    "id_preserved": true
+  },
+  {
+    "req_id": "IND-040",
+    "changed_fields": [
+      "extras.classification_basis",
+      "extras.indicator_scope",
+      "extras.logical_responsibility",
+      "extras.review_outcome"
+    ],
+    "id_preserved": true
+  },
+  {
+    "req_id": "IND-041",
+    "changed_fields": [
+      "extras.classification_basis",
+      "extras.indicator_scope",
+      "extras.logical_responsibility",
+      "extras.review_outcome"
+    ],
+    "id_preserved": true
+  },
+  {
+    "req_id": "SC1-001",
+    "changed_fields": [
+      "extras.baseline_status",
+      "extras.record_role"
+    ],
+    "id_preserved": true
+  },
+  {
+    "req_id": "SC1-002",
+    "changed_fields": [
+      "extras.baseline_status",
+      "extras.record_role"
+    ],
+    "id_preserved": true
+  },
+  {
+    "req_id": "SC1-003",
+    "changed_fields": [
+      "extras.baseline_status",
+      "extras.record_role"
+    ],
+    "id_preserved": true
+  },
+  {
+    "req_id": "SC1-004",
+    "changed_fields": [
+      "extras.baseline_status",
+      "extras.record_role"
+    ],
+    "id_preserved": true
+  },
+  {
+    "req_id": "SC1-005",
+    "changed_fields": [
+      "extras.baseline_status",
+      "extras.record_role"
+    ],
+    "id_preserved": true
+  },
+  {
+    "req_id": "SC1-006",
+    "changed_fields": [
+      "extras.baseline_status",
+      "extras.record_role"
+    ],
+    "id_preserved": true
+  },
+  {
+    "req_id": "SC1-007",
+    "changed_fields": [
+      "extras.baseline_status",
+      "extras.record_role"
+    ],
+    "id_preserved": true
+  },
+  {
+    "req_id": "SC1-008",
+    "changed_fields": [
+      "extras.baseline_status",
+      "extras.record_role"
+    ],
+    "id_preserved": true
+  },
+  {
+    "req_id": "SC1-009",
+    "changed_fields": [
+      "extras.baseline_status",
+      "extras.record_role"
+    ],
+    "id_preserved": true
+  },
+  {
+    "req_id": "SC1-010",
+    "changed_fields": [
+      "extras.baseline_status",
+      "extras.record_role"
+    ],
+    "id_preserved": true
+  },
+  {
+    "req_id": "SC2-001",
+    "changed_fields": [
+      "extras.baseline_status",
+      "extras.record_role"
+    ],
+    "id_preserved": true
+  },
+  {
+    "req_id": "SC2-002",
+    "changed_fields": [
+      "extras.baseline_status",
+      "extras.record_role"
+    ],
+    "id_preserved": true
+  },
+  {
+    "req_id": "SC2-003",
+    "changed_fields": [
+      "extras.baseline_status",
+      "extras.record_role"
+    ],
+    "id_preserved": true
+  },
+  {
+    "req_id": "SC2-004",
+    "changed_fields": [
+      "extras.baseline_status",
+      "extras.record_role"
+    ],
+    "id_preserved": true
+  },
+  {
+    "req_id": "SC2-005",
+    "changed_fields": [
+      "extras.baseline_status",
+      "extras.record_role"
+    ],
+    "id_preserved": true
+  },
+  {
+    "req_id": "SC2-006",
+    "changed_fields": [
+      "extras.baseline_status",
+      "extras.record_role"
+    ],
+    "id_preserved": true
+  },
+  {
+    "req_id": "SC2-007",
+    "changed_fields": [
+      "extras.baseline_status",
+      "extras.record_role"
+    ],
+    "id_preserved": true
+  },
+  {
+    "req_id": "SC2-008",
+    "changed_fields": [
+      "extras.baseline_status",
+      "extras.record_role"
+    ],
+    "id_preserved": true
+  },
+  {
+    "req_id": "SC2-009",
+    "changed_fields": [
+      "extras.baseline_status",
+      "extras.record_role"
+    ],
+    "id_preserved": true
+  },
+  {
+    "req_id": "SC2-010",
+    "changed_fields": [
+      "extras.baseline_status",
+      "extras.record_role"
+    ],
+    "id_preserved": true
+  },
+  {
+    "req_id": "SC3-001",
+    "changed_fields": [
+      "extras.baseline_status",
+      "extras.record_role"
+    ],
+    "id_preserved": true
+  },
+  {
+    "req_id": "SC3-002",
+    "changed_fields": [
+      "extras.baseline_status",
+      "extras.record_role"
+    ],
+    "id_preserved": true
+  },
+  {
+    "req_id": "SC3-003",
+    "changed_fields": [
+      "extras.baseline_status",
+      "extras.record_role"
+    ],
+    "id_preserved": true
+  },
+  {
+    "req_id": "SC3-004",
+    "changed_fields": [
+      "extras.baseline_status",
+      "extras.record_role"
+    ],
+    "id_preserved": true
+  },
+  {
+    "req_id": "SC3-005",
+    "changed_fields": [
+      "extras.baseline_status",
+      "extras.record_role"
+    ],
+    "id_preserved": true
+  },
+  {
+    "req_id": "SC3-006",
+    "changed_fields": [
+      "extras.baseline_status",
+      "extras.record_role"
+    ],
+    "id_preserved": true
+  },
+  {
+    "req_id": "SC3-007",
+    "changed_fields": [
+      "extras.baseline_status",
+      "extras.record_role"
+    ],
+    "id_preserved": true
+  },
+  {
+    "req_id": "SC3-008",
+    "changed_fields": [
+      "extras.baseline_status",
+      "extras.record_role"
+    ],
+    "id_preserved": true
+  },
+  {
+    "req_id": "SC3-009",
+    "changed_fields": [
+      "extras.baseline_status",
+      "extras.record_role"
+    ],
+    "id_preserved": true
+  },
+  {
+    "req_id": "SC3-010",
+    "changed_fields": [
+      "extras.baseline_status",
+      "extras.record_role"
+    ],
+    "id_preserved": true
+  },
+  {
+    "req_id": "SC3-011",
+    "changed_fields": [
+      "extras.baseline_status",
+      "extras.record_role"
+    ],
+    "id_preserved": true
+  }
+]

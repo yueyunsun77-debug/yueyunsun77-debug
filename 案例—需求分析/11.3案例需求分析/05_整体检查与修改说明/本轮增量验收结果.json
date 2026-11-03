@@ -1,0 +1,16 @@
+{
+  "baseline_commit": "08198b8a3bf47d72aca5640adb902356e33a38b1",
+  "original_requirement_ids_preserved": 3,
+  "original_child_requirement_ids_preserved": 20,
+  "all_record_ids_preserved": 75,
+  "indicator_values_preserved": 41,
+  "eight_field_tables_values_unchanged": true,
+  "original_boundary_first_six_columns_preserved": 77,
+  "rendered_views": 8,
+  "rendered_artifacts": 24,
+  "bdd_interface_connections_preserved": 8,
+  "original_attachment_hashes_verified": 15,
+  "sysml_native_compiler": "not_executed",
+  "plantuml_local_render": "passed",
+  "raw_material_publication": "excluded"
+}

@@ -4,7 +4,7 @@ package RequirementModel_03 {
     // SysML v2 建模：以 requirement def 定义所选需求，以嵌套 requirement usage 表达细化需求。
     requirement def <'3.3.1.9'> FrontRearDefrostDemist {
         requirement <'3.3.1.9-01'> defrostRequestFeedback {
-            doc /* IVI经CAN接收前除霜/前除雾请求并反馈状态 */
+            doc /* CCU经CAN接收IVI发出的前除霜/前除雾请求，并向IVI反馈状态 */
         }
         requirement <'3.3.1.9-02'> frontDefrostConfiguration {
             doc /* 前除霜/除雾位置、最大风量、外循环90%待定；温度保持 */

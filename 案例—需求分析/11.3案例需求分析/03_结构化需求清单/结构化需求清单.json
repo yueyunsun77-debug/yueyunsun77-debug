@@ -45,6 +45,12 @@
         "pdf_pages": [
           30
         ]
+      },
+      {
+        "file": "原始文件备份/LCATC-DS-04-XX-27-B0-热管理.xlsx",
+        "sheet": "topology(PT)",
+        "drawing_index": 1,
+        "evidence_role": "部署差异审查上下文；不据此裁定控制器归属"
       }
     ],
     "extras": {
@@ -61,7 +67,8 @@
         "Excel允许触摸或物理控制，PDF详细描述主要为IVI向CCU发送请求，物理按键输入路径需确认。",
         "电加热温度上限/恢复阈值尚未给出具体数值。"
       ],
-      "original_requirement_id": "3.3.1.2"
+      "original_requirement_id": "3.3.1.2",
+      "baseline_status": "原主需求ID保留，正文修正保持字段级可追溯"
     }
   },
   {
@@ -110,6 +117,12 @@
         "pdf_pages": [
           30
         ]
+      },
+      {
+        "file": "原始文件备份/LCATC-DS-04-XX-27-B0-热管理.xlsx",
+        "sheet": "topology(PT)",
+        "drawing_index": 1,
+        "evidence_role": "部署差异审查上下文；不据此裁定控制器归属"
       }
     ],
     "extras": {
@@ -139,7 +152,8 @@
         "PDF指出制冷执行功能、空气输送功能、电加热功率之间的匹配关系需要进一步商讨明确。",
         "温度LO/HI的具体控制策略和标定参数应在后续测试/标定中确认。"
       ],
-      "original_requirement_id": "3.3.1.6"
+      "original_requirement_id": "3.3.1.6",
+      "baseline_status": "原主需求ID保留，正文修正保持字段级可追溯"
     }
   },
   {
@@ -189,6 +203,12 @@
           13,
           14
         ]
+      },
+      {
+        "file": "原始文件备份/LCATC-DS-04-XX-27-B0-热管理.xlsx",
+        "sheet": "topology(PT)",
+        "drawing_index": 1,
+        "evidence_role": "部署差异审查上下文；不据此裁定控制器归属"
       }
     ],
     "extras": {
@@ -215,7 +235,8 @@
         "外循环开度90%和制冷执行能力（转速接口）属于待定/待标定内容。",
         "需明确后风窗是否采用独立电加热丝、由哪个控制器驱动以及反馈信号。"
       ],
-      "original_requirement_id": "3.3.1.9"
+      "original_requirement_id": "3.3.1.9",
+      "baseline_status": "原主需求ID保留，正文修正保持字段级可追溯"
     }
   },
   {
@@ -250,7 +271,11 @@
       "original_row": 2,
       "original_indicator_name": "鼓风机状态",
       "original_measurement_text": "鼓风机必须处于开启状态",
-      "confirmation_status": "原文/原表要求"
+      "confirmation_status": "原文/原表要求",
+      "indicator_scope": "原表迁移/拆分",
+      "logical_responsibility": "HeatingEnableAndProtection",
+      "classification_basis": "依据原表条目的控制/保护/接口或性能目的，保留原指标类型",
+      "review_outcome": "保留；未知值继续待确认"
     }
   },
   {
@@ -285,7 +310,11 @@
       "original_row": 3,
       "original_indicator_name": "目标温度与室内温度关系",
       "original_measurement_text": "目标温度高于室内温度",
-      "confirmation_status": "原文/原表要求"
+      "confirmation_status": "原文/原表要求",
+      "indicator_scope": "原表迁移/拆分",
+      "logical_responsibility": "HeatingEnableAndProtection",
+      "classification_basis": "依据原表条目的控制/保护/接口或性能目的，保留原指标类型",
+      "review_outcome": "保留；未知值继续待确认"
     }
   },
   {
@@ -320,7 +349,11 @@
       "original_row": 4,
       "original_indicator_name": "车辆高压状态",
       "original_measurement_text": "车辆处于高压状态",
-      "confirmation_status": "原文/原表要求"
+      "confirmation_status": "原文/原表要求",
+      "indicator_scope": "原表迁移/拆分",
+      "logical_responsibility": "HeatingEnableAndProtection",
+      "classification_basis": "依据原表条目的控制/保护/接口或性能目的，保留原指标类型",
+      "review_outcome": "保留；未知值继续待确认"
     }
   },
   {
@@ -355,7 +388,11 @@
       "original_row": 5,
       "original_indicator_name": "整车故障状态",
       "original_measurement_text": "整车无故障",
-      "confirmation_status": "原文/原表要求"
+      "confirmation_status": "原文/原表要求",
+      "indicator_scope": "原表迁移/拆分",
+      "logical_responsibility": "HeatingEnableAndProtection",
+      "classification_basis": "依据原表条目的控制/保护/接口或性能目的，保留原指标类型",
+      "review_outcome": "保留；未知值继续待确认"
     }
   },
   {
@@ -390,7 +427,11 @@
       "original_row": 6,
       "original_indicator_name": "SOC使能阈值",
       "original_measurement_text": "SOC > 10%",
-      "confirmation_status": "原文/原表要求"
+      "confirmation_status": "原文/原表要求",
+      "indicator_scope": "原表迁移/拆分",
+      "logical_responsibility": "HeatingEnableAndProtection",
+      "classification_basis": "依据原表条目的控制/保护/接口或性能目的，保留原指标类型",
+      "review_outcome": "保留；未知值继续待确认"
     }
   },
   {
@@ -425,7 +466,11 @@
       "original_row": 7,
       "original_indicator_name": "PTC继电器控制",
       "original_measurement_text": "满足全部使能条件后，CCU按请求控制PTC继电器闭合/断开",
-      "confirmation_status": "原文/原表要求"
+      "confirmation_status": "原文/原表要求",
+      "indicator_scope": "原表迁移/拆分",
+      "logical_responsibility": "HeatingEnableAndProtection",
+      "classification_basis": "依据原表条目的控制/保护/接口或性能目的，保留原指标类型",
+      "review_outcome": "保留；未知值继续待确认"
     }
   },
   {
@@ -460,7 +505,11 @@
       "original_row": 8,
       "original_indicator_name": "PTC过温断开阈值",
       "original_measurement_text": "PTC温度 ≥ XXX ℃ 时断开继电器；具体阈值待标定",
-      "confirmation_status": "待确认/待标定"
+      "confirmation_status": "待确认/待标定",
+      "indicator_scope": "原表迁移/拆分",
+      "logical_responsibility": "HeatingEnableAndProtection",
+      "classification_basis": "依据原表条目的控制/保护/接口或性能目的，保留原指标类型",
+      "review_outcome": "保留；未知值继续待确认"
     }
   },
   {
@@ -468,7 +517,7 @@
     "name": "电加热重新允许闭合温度",
     "description": "电加热温度 ≤ XXX ℃ 时才允许再次闭合；具体阈值待标定",
     "type": "指标",
-    "category": "可靠性",
+    "category": "安全性",
     "source_refs": [
       {
         "file": "原始文件备份/3.3.1.2、3.3.1.6、3.3.1.9-指标分配表.xlsx",
@@ -495,7 +544,14 @@
       "original_row": 9,
       "original_indicator_name": "PTC重新允许闭合温度",
       "original_measurement_text": "PTC温度 ≤ XXX ℃ 时才允许再次闭合；具体阈值待标定",
-      "confirmation_status": "待确认/待标定"
+      "confirmation_status": "待确认/待标定",
+      "indicator_scope": "原表迁移/拆分",
+      "logical_responsibility": "HeatingEnableAndProtection",
+      "secondary_categories": [
+        "可靠性"
+      ],
+      "classification_basis": "过温后安全恢复许可为主要约束目的；不将该条目解读为定量可靠度指标",
+      "review_outcome": "保留；未知值继续待确认"
     }
   },
   {
@@ -530,7 +586,11 @@
       "original_row": 10,
       "original_indicator_name": "PTC状态反馈内容",
       "original_measurement_text": "PTC继电器状态、PTC当前温度、PTC工作状态、实际功率、最大工作功率发送至总线",
-      "confirmation_status": "原文/原表要求"
+      "confirmation_status": "原文/原表要求",
+      "indicator_scope": "原表迁移/拆分",
+      "logical_responsibility": "StateFeedback",
+      "classification_basis": "依据原表条目的控制/保护/接口或性能目的，保留原指标类型",
+      "review_outcome": "保留；未知值继续待确认"
     }
   },
   {
@@ -558,7 +618,11 @@
       "original_row": 11,
       "original_indicator_name": "PTC控制响应时间",
       "original_measurement_text": "TBD（所给规范未明确具体时限）",
-      "confirmation_status": "待确认/待标定"
+      "confirmation_status": "待确认/待标定",
+      "indicator_scope": "原表迁移/拆分",
+      "logical_responsibility": "HeatingEnableAndProtection",
+      "classification_basis": "依据原表条目的控制/保护/接口或性能目的，保留原指标类型",
+      "review_outcome": "保留；未知值继续待确认"
     }
   },
   {
@@ -594,7 +658,11 @@
       "original_row": 12,
       "original_indicator_name": "低温边界显示",
       "original_measurement_text": "设定温度 < 16 ℃ 时定义为 LO",
-      "confirmation_status": "原文/原表要求"
+      "confirmation_status": "原文/原表要求",
+      "indicator_scope": "原表迁移/拆分",
+      "logical_responsibility": "AutomaticClimateCoordination",
+      "classification_basis": "依据原表条目的控制/保护/接口或性能目的，保留原指标类型",
+      "review_outcome": "保留；未知值继续待确认"
     }
   },
   {
@@ -630,7 +698,11 @@
       "original_row": 13,
       "original_indicator_name": "高温边界显示",
       "original_measurement_text": "设定温度 > 30 ℃ 时定义为 HI",
-      "confirmation_status": "原文/原表要求"
+      "confirmation_status": "原文/原表要求",
+      "indicator_scope": "原表迁移/拆分",
+      "logical_responsibility": "AutomaticClimateCoordination",
+      "classification_basis": "依据原表条目的控制/保护/接口或性能目的，保留原指标类型",
+      "review_outcome": "保留；未知值继续待确认"
     }
   },
   {
@@ -666,7 +738,11 @@
       "original_row": 14,
       "original_indicator_name": "单次温度调节步长",
       "original_measurement_text": "每次温度增加/减小 0.5 ℃",
-      "confirmation_status": "原文/原表要求"
+      "confirmation_status": "原文/原表要求",
+      "indicator_scope": "原表迁移/拆分",
+      "logical_responsibility": "AutomaticClimateCoordination",
+      "classification_basis": "依据原表条目的控制/保护/接口或性能目的，保留原指标类型",
+      "review_outcome": "保留；未知值继续待确认"
     }
   },
   {
@@ -702,7 +778,11 @@
       "original_row": 15,
       "original_indicator_name": "自动调节输入信息",
       "original_measurement_text": "室内温度、室外温度、阳光传感器信号、PTC暖芯入口温度",
-      "confirmation_status": "原文/原表要求"
+      "confirmation_status": "原文/原表要求",
+      "indicator_scope": "原表迁移/拆分",
+      "logical_responsibility": "ThermalInformationProcessing",
+      "classification_basis": "依据原表条目的控制/保护/接口或性能目的，保留原指标类型",
+      "review_outcome": "保留；未知值继续待确认"
     }
   },
   {
@@ -738,7 +818,11 @@
       "original_row": 16,
       "original_indicator_name": "自动调节对象",
       "original_measurement_text": "鼓风机转速、冷热风门、模式风门、循环风门、压缩机转速；根据系统配置控制PTC功率",
-      "confirmation_status": "原文/原表要求"
+      "confirmation_status": "原文/原表要求",
+      "indicator_scope": "原表迁移/拆分",
+      "logical_responsibility": "AutomaticClimateCoordination",
+      "classification_basis": "依据原表条目的控制/保护/接口或性能目的，保留原指标类型",
+      "review_outcome": "保留；未知值继续待确认"
     }
   },
   {
@@ -774,7 +858,11 @@
       "original_row": 17,
       "original_indicator_name": "自动模式状态反馈",
       "original_measurement_text": "CCU反馈自动模式状态给IVI；接口信号包括 CCU_AUTO_Status",
-      "confirmation_status": "原文/原表要求"
+      "confirmation_status": "原文/原表要求",
+      "indicator_scope": "原表迁移/拆分",
+      "logical_responsibility": "StateFeedback",
+      "classification_basis": "依据原表条目的控制/保护/接口或性能目的，保留原指标类型",
+      "review_outcome": "保留；未知值继续待确认"
     }
   },
   {
@@ -810,7 +898,11 @@
       "original_row": 18,
       "original_indicator_name": "空调状态反馈内容",
       "original_measurement_text": "鼓风机档位、温度档位、AC状态、循环状态、吹风模式、AUTO状态",
-      "confirmation_status": "原文/原表要求"
+      "confirmation_status": "原文/原表要求",
+      "indicator_scope": "原表迁移/拆分",
+      "logical_responsibility": "StateFeedback",
+      "classification_basis": "依据原表条目的控制/保护/接口或性能目的，保留原指标类型",
+      "review_outcome": "保留；未知值继续待确认"
     }
   },
   {
@@ -846,7 +938,11 @@
       "original_row": 19,
       "original_indicator_name": "温度调节后的模式状态",
       "original_measurement_text": "AUTO状态下调节温度不退出AUTO，仅更新目标温度并继续自动控制",
-      "confirmation_status": "原文/原表要求"
+      "confirmation_status": "原文/原表要求",
+      "indicator_scope": "原表迁移/拆分",
+      "logical_responsibility": "AutomaticClimateCoordination",
+      "classification_basis": "依据原表条目的控制/保护/接口或性能目的，保留原指标类型",
+      "review_outcome": "保留；未知值继续待确认"
     }
   },
   {
@@ -874,7 +970,11 @@
       "original_row": 20,
       "original_indicator_name": "目标温度控制偏差",
       "original_measurement_text": "TBD（原表未给出控制偏差数值）",
-      "confirmation_status": "待确认/待标定"
+      "confirmation_status": "待确认/待标定",
+      "indicator_scope": "原表迁移/拆分",
+      "logical_responsibility": "AutomaticClimateCoordination",
+      "classification_basis": "依据原表条目的控制/保护/接口或性能目的，保留原指标类型",
+      "review_outcome": "保留；未知值继续待确认"
     }
   },
   {
@@ -902,7 +1002,11 @@
       "original_row": 20,
       "original_indicator_name": "目标温度稳定时间",
       "original_measurement_text": "TBD（原表未给出稳定时间数值）",
-      "confirmation_status": "待确认/待标定"
+      "confirmation_status": "待确认/待标定",
+      "indicator_scope": "原表迁移/拆分",
+      "logical_responsibility": "AutomaticClimateCoordination",
+      "classification_basis": "依据原表条目的控制/保护/接口或性能目的，保留原指标类型",
+      "review_outcome": "保留；未知值继续待确认"
     }
   },
   {
@@ -938,7 +1042,11 @@
       "original_row": 21,
       "original_indicator_name": "前除霜/除雾请求通道",
       "original_measurement_text": "IVI通过CAN向CCU发送前除霜/前除雾请求",
-      "confirmation_status": "原文/原表要求"
+      "confirmation_status": "原文/原表要求",
+      "indicator_scope": "原表迁移/拆分",
+      "logical_responsibility": "DefrostAndDemistControl",
+      "classification_basis": "依据原表条目的控制/保护/接口或性能目的，保留原指标类型",
+      "review_outcome": "保留；未知值继续待确认"
     }
   },
   {
@@ -974,7 +1082,11 @@
       "original_row": 22,
       "original_indicator_name": "初始出风口位置",
       "original_measurement_text": "进入前除霜/除雾状态后，出风口切换至对应除霜/除雾位置",
-      "confirmation_status": "原文/原表要求"
+      "confirmation_status": "原文/原表要求",
+      "indicator_scope": "原表迁移/拆分",
+      "logical_responsibility": "DefrostAndDemistControl",
+      "classification_basis": "依据原表条目的控制/保护/接口或性能目的，保留原指标类型",
+      "review_outcome": "保留；未知值继续待确认"
     }
   },
   {
@@ -1010,7 +1122,11 @@
       "original_row": 23,
       "original_indicator_name": "初始鼓风机风量",
       "original_measurement_text": "最大风量",
-      "confirmation_status": "原文/原表要求"
+      "confirmation_status": "原文/原表要求",
+      "indicator_scope": "原表迁移/拆分",
+      "logical_responsibility": "DefrostAndDemistControl",
+      "classification_basis": "依据原表条目的控制/保护/接口或性能目的，保留原指标类型",
+      "review_outcome": "保留；未知值继续待确认"
     }
   },
   {
@@ -1046,7 +1162,11 @@
       "original_row": 24,
       "original_indicator_name": "外循环开度",
       "original_measurement_text": "90%（原规范标注待定）",
-      "confirmation_status": "待确认/待标定"
+      "confirmation_status": "待确认/待标定",
+      "indicator_scope": "原表迁移/拆分",
+      "logical_responsibility": "DefrostAndDemistControl",
+      "classification_basis": "依据原表条目的控制/保护/接口或性能目的，保留原指标类型",
+      "review_outcome": "保留；未知值继续待确认"
     }
   },
   {
@@ -1082,7 +1202,11 @@
       "original_row": 25,
       "original_indicator_name": "除湿时压缩机转速",
       "original_measurement_text": "最低转速 1000 r/min（规范描述为除湿用途；相关转速仍需结合标定确认）",
-      "confirmation_status": "待确认/待标定"
+      "confirmation_status": "待确认/待标定",
+      "indicator_scope": "原表迁移/拆分",
+      "logical_responsibility": "DefrostAndDemistControl",
+      "classification_basis": "依据原表条目的控制/保护/接口或性能目的，保留原指标类型",
+      "review_outcome": "保留；未知值继续待确认"
     }
   },
   {
@@ -1118,7 +1242,11 @@
       "original_row": 26,
       "original_indicator_name": "进入模式后的温度设定",
       "original_measurement_text": "温度保持不变；用户操作温度按键时按规范更新当前设定",
-      "confirmation_status": "原文/原表要求"
+      "confirmation_status": "原文/原表要求",
+      "indicator_scope": "原表迁移/拆分",
+      "logical_responsibility": "DefrostAndDemistControl",
+      "classification_basis": "依据原表条目的控制/保护/接口或性能目的，保留原指标类型",
+      "review_outcome": "保留；未知值继续待确认"
     }
   },
   {
@@ -1154,7 +1282,11 @@
       "original_row": 27,
       "original_indicator_name": "前除霜/除雾反馈内容",
       "original_measurement_text": "鼓风机档位、温度状态、AC状态、循环状态、前除霜/除雾状态反馈给IVI",
-      "confirmation_status": "原文/原表要求"
+      "confirmation_status": "原文/原表要求",
+      "indicator_scope": "原表迁移/拆分",
+      "logical_responsibility": "StateFeedback",
+      "classification_basis": "依据原表条目的控制/保护/接口或性能目的，保留原指标类型",
+      "review_outcome": "保留；未知值继续待确认"
     }
   },
   {
@@ -1190,7 +1322,11 @@
       "original_row": 28,
       "original_indicator_name": "热管理控制优先级",
       "original_measurement_text": "前除霜模式 > 电池包降温（达到阈值）> 乘员舱制冷 > 电池包降温（未达到阈值）",
-      "confirmation_status": "原文/原表要求"
+      "confirmation_status": "原文/原表要求",
+      "indicator_scope": "原表迁移/拆分",
+      "logical_responsibility": "DefrostAndDemistControl",
+      "classification_basis": "依据原表条目的控制/保护/接口或性能目的，保留原指标类型",
+      "review_outcome": "保留；未知值继续待确认"
     }
   },
   {
@@ -1226,7 +1362,11 @@
       "original_row": 29,
       "original_indicator_name": "SOC低于10%时的压缩机许可",
       "original_measurement_text": "前除霜关闭时不允许压缩机输出功率；前除霜开启时允许开启压缩机",
-      "confirmation_status": "原文/原表要求"
+      "confirmation_status": "原文/原表要求",
+      "indicator_scope": "原表迁移/拆分",
+      "logical_responsibility": "DefrostAndDemistControl",
+      "classification_basis": "依据原表条目的控制/保护/接口或性能目的，保留原指标类型",
+      "review_outcome": "保留；未知值继续待确认"
     }
   },
   {
@@ -1254,7 +1394,11 @@
       "original_row": 30,
       "original_indicator_name": "后风窗除霜/除雾参数",
       "original_measurement_text": "TBD（所给两份PDF未找到完整后风窗控制逻辑及具体指标）",
-      "confirmation_status": "待确认/待标定"
+      "confirmation_status": "待确认/待标定",
+      "indicator_scope": "原表迁移/拆分",
+      "logical_responsibility": "DefrostAndDemistControl",
+      "classification_basis": "依据原表条目的控制/保护/接口或性能目的，保留原指标类型",
+      "review_outcome": "保留；未知值继续待确认"
     }
   },
   {
@@ -1282,7 +1426,11 @@
       "original_row": 31,
       "original_indicator_name": "风窗请求响应时间",
       "original_measurement_text": "TBD（原表未给出请求响应时限）",
-      "confirmation_status": "待确认/待标定"
+      "confirmation_status": "待确认/待标定",
+      "indicator_scope": "原表迁移/拆分",
+      "logical_responsibility": "DefrostAndDemistControl",
+      "classification_basis": "依据原表条目的控制/保护/接口或性能目的，保留原指标类型",
+      "review_outcome": "保留；未知值继续待确认"
     }
   },
   {
@@ -1310,7 +1458,11 @@
       "original_row": 31,
       "original_indicator_name": "风窗除霜除雾效果达成时间",
       "original_measurement_text": "TBD（原表未给出效果时限及验收阈值）",
-      "confirmation_status": "待确认/待标定"
+      "confirmation_status": "待确认/待标定",
+      "indicator_scope": "原表迁移/拆分",
+      "logical_responsibility": "DefrostAndDemistControl",
+      "classification_basis": "依据原表条目的控制/保护/接口或性能目的，保留原指标类型",
+      "review_outcome": "保留；未知值继续待确认"
     }
   },
   {
@@ -1335,7 +1487,11 @@
       "indicator_type": "未提供",
       "component_function_name": "温度与环境信息采集",
       "function_id": "LF-010",
-      "confirmation_status": "PDF明确"
+      "confirmation_status": "PDF明确",
+      "indicator_scope": "PDF有来源补充",
+      "logical_responsibility": "ThermalInformationProcessing",
+      "classification_basis": "依据原表条目的控制/保护/接口或性能目的，保留原指标类型",
+      "review_outcome": "保留；未知值继续待确认"
     }
   },
   {
@@ -1360,7 +1516,11 @@
       "indicator_type": "未提供",
       "component_function_name": "电加热温度信息采集",
       "function_id": "LF-027",
-      "confirmation_status": "PDF明确"
+      "confirmation_status": "PDF明确",
+      "indicator_scope": "PDF有来源补充",
+      "logical_responsibility": "ThermalInformationProcessing",
+      "classification_basis": "依据原表条目的控制/保护/接口或性能目的，保留原指标类型",
+      "review_outcome": "保留；未知值继续待确认"
     }
   },
   {
@@ -1384,7 +1544,11 @@
       "default_value": null,
       "indicator_type": "未提供",
       "component_function_name": "AUTO下AC操作处理",
-      "function_id": "LF-028"
+      "function_id": "LF-028",
+      "indicator_scope": "PDF有来源补充",
+      "logical_responsibility": "AutomaticClimateCoordination",
+      "classification_basis": "依据原表条目的控制/保护/接口或性能目的，保留原指标类型",
+      "review_outcome": "保留；未知值继续待确认"
     }
   },
   {
@@ -1408,7 +1572,11 @@
       "default_value": null,
       "indicator_type": "未提供",
       "component_function_name": "AUTO下AC操作处理",
-      "function_id": "LF-028"
+      "function_id": "LF-028",
+      "indicator_scope": "PDF有来源补充",
+      "logical_responsibility": "AutomaticClimateCoordination",
+      "classification_basis": "依据原表条目的控制/保护/接口或性能目的，保留原指标类型",
+      "review_outcome": "保留；未知值继续待确认"
     }
   },
   {
@@ -1430,7 +1598,11 @@
       "indicator_type": "未提供",
       "component_function_name": "高效发电运行调节",
       "function_id": "LF-029",
-      "constraint_nature": "偏好"
+      "constraint_nature": "偏好",
+      "indicator_scope": "任务书场景量化条件",
+      "logical_responsibility": "ScenarioAnalysisContext",
+      "classification_basis": "按控制目的分类；场景工况不是通用产品性能指标",
+      "review_outcome": "保留；未知值继续待确认"
     }
   },
   {
@@ -1452,7 +1624,11 @@
       "indicator_type": "未提供",
       "component_function_name": "静置预冷计时",
       "function_id": "LF-030",
-      "constraint_nature": "场景条件"
+      "constraint_nature": "场景条件",
+      "indicator_scope": "任务书场景量化条件",
+      "logical_responsibility": "ScenarioAnalysisContext",
+      "classification_basis": "按控制目的分类；场景工况不是通用产品性能指标",
+      "review_outcome": "保留；未知值继续待确认"
     }
   },
   {
@@ -1474,7 +1650,11 @@
       "indicator_type": "未提供",
       "component_function_name": "匀速行驶工况控制",
       "function_id": "LF-031",
-      "constraint_nature": "场景条件"
+      "constraint_nature": "场景条件",
+      "indicator_scope": "任务书场景量化条件",
+      "logical_responsibility": "ScenarioAnalysisContext",
+      "classification_basis": "按控制目的分类；场景工况不是通用产品性能指标",
+      "review_outcome": "保留；未知值继续待确认"
     }
   },
   {
@@ -1496,7 +1676,11 @@
       "indicator_type": "未提供",
       "component_function_name": "匀速行驶工况控制",
       "function_id": "LF-031",
-      "constraint_nature": "场景条件"
+      "constraint_nature": "场景条件",
+      "indicator_scope": "任务书场景量化条件",
+      "logical_responsibility": "ScenarioAnalysisContext",
+      "classification_basis": "按控制目的分类；场景工况不是通用产品性能指标",
+      "review_outcome": "保留；未知值继续待确认"
     }
   },
   {
@@ -1518,7 +1702,11 @@
       "indicator_type": "未提供",
       "component_function_name": "电池主动冷却触发判断",
       "function_id": "LF-032",
-      "constraint_nature": "触发条件"
+      "constraint_nature": "触发条件",
+      "indicator_scope": "任务书场景量化条件",
+      "logical_responsibility": "ScenarioAnalysisContext",
+      "classification_basis": "按控制目的分类；场景工况不是通用产品性能指标",
+      "review_outcome": "保留；未知值继续待确认"
     }
   },
   {
@@ -1536,7 +1724,9 @@
     "extras": {
       "function_id": "S1-F01",
       "scenario": "混合动力汽车动力经济性建模",
-      "analysis_status": "来源支持的功能分解；输入输出为分析契约，非新增物理接口"
+      "analysis_status": "来源支持的功能分解；输入输出为分析契约，非新增物理接口",
+      "record_role": "场景功能分析记录",
+      "baseline_status": "由任务书分析得出的功能条目，不作为新增已批准产品需求"
     }
   },
   {
@@ -1554,7 +1744,9 @@
     "extras": {
       "function_id": "S1-F02",
       "scenario": "混合动力汽车动力经济性建模",
-      "analysis_status": "来源支持的功能分解；输入输出为分析契约，非新增物理接口"
+      "analysis_status": "来源支持的功能分解；输入输出为分析契约，非新增物理接口",
+      "record_role": "场景功能分析记录",
+      "baseline_status": "由任务书分析得出的功能条目，不作为新增已批准产品需求"
     }
   },
   {
@@ -1572,7 +1764,9 @@
     "extras": {
       "function_id": "S1-F03",
       "scenario": "混合动力汽车动力经济性建模",
-      "analysis_status": "来源支持的功能分解；输入输出为分析契约，非新增物理接口"
+      "analysis_status": "来源支持的功能分解；输入输出为分析契约，非新增物理接口",
+      "record_role": "场景功能分析记录",
+      "baseline_status": "由任务书分析得出的功能条目，不作为新增已批准产品需求"
     }
   },
   {
@@ -1590,7 +1784,9 @@
     "extras": {
       "function_id": "S1-F04",
       "scenario": "混合动力汽车动力经济性建模",
-      "analysis_status": "来源支持的功能分解；输入输出为分析契约，非新增物理接口"
+      "analysis_status": "来源支持的功能分解；输入输出为分析契约，非新增物理接口",
+      "record_role": "场景功能分析记录",
+      "baseline_status": "由任务书分析得出的功能条目，不作为新增已批准产品需求"
     }
   },
   {
@@ -1608,7 +1804,9 @@
     "extras": {
       "function_id": "S1-F05",
       "scenario": "混合动力汽车动力经济性建模",
-      "analysis_status": "来源支持的功能分解；输入输出为分析契约，非新增物理接口"
+      "analysis_status": "来源支持的功能分解；输入输出为分析契约，非新增物理接口",
+      "record_role": "场景功能分析记录",
+      "baseline_status": "由任务书分析得出的功能条目，不作为新增已批准产品需求"
     }
   },
   {
@@ -1626,7 +1824,9 @@
     "extras": {
       "function_id": "S1-F06",
       "scenario": "混合动力汽车动力经济性建模",
-      "analysis_status": "来源支持的功能分解；输入输出为分析契约，非新增物理接口"
+      "analysis_status": "来源支持的功能分解；输入输出为分析契约，非新增物理接口",
+      "record_role": "场景功能分析记录",
+      "baseline_status": "由任务书分析得出的功能条目，不作为新增已批准产品需求"
     }
   },
   {
@@ -1644,7 +1844,9 @@
     "extras": {
       "function_id": "S1-F07",
       "scenario": "混合动力汽车动力经济性建模",
-      "analysis_status": "来源支持的功能分解；输入输出为分析契约，非新增物理接口"
+      "analysis_status": "来源支持的功能分解；输入输出为分析契约，非新增物理接口",
+      "record_role": "场景功能分析记录",
+      "baseline_status": "由任务书分析得出的功能条目，不作为新增已批准产品需求"
     }
   },
   {
@@ -1662,7 +1864,9 @@
     "extras": {
       "function_id": "S1-F08",
       "scenario": "混合动力汽车动力经济性建模",
-      "analysis_status": "来源支持的功能分解；输入输出为分析契约，非新增物理接口"
+      "analysis_status": "来源支持的功能分解；输入输出为分析契约，非新增物理接口",
+      "record_role": "场景功能分析记录",
+      "baseline_status": "由任务书分析得出的功能条目，不作为新增已批准产品需求"
     }
   },
   {
@@ -1680,7 +1884,9 @@
     "extras": {
       "function_id": "S1-F09",
       "scenario": "混合动力汽车动力经济性建模",
-      "analysis_status": "来源支持的功能分解；输入输出为分析契约，非新增物理接口"
+      "analysis_status": "来源支持的功能分解；输入输出为分析契约，非新增物理接口",
+      "record_role": "场景功能分析记录",
+      "baseline_status": "由任务书分析得出的功能条目，不作为新增已批准产品需求"
     }
   },
   {
@@ -1698,7 +1904,9 @@
     "extras": {
       "function_id": "S1-F10",
       "scenario": "混合动力汽车动力经济性建模",
-      "analysis_status": "来源支持的功能分解；输入输出为分析契约，非新增物理接口"
+      "analysis_status": "来源支持的功能分解；输入输出为分析契约，非新增物理接口",
+      "record_role": "场景功能分析记录",
+      "baseline_status": "由任务书分析得出的功能条目，不作为新增已批准产品需求"
     }
   },
   {
@@ -1716,7 +1924,9 @@
     "extras": {
       "function_id": "S2-F01",
       "scenario": "纯电热管理建模",
-      "analysis_status": "来源支持的功能分解；输入输出为分析契约，非新增物理接口"
+      "analysis_status": "来源支持的功能分解；输入输出为分析契约，非新增物理接口",
+      "record_role": "场景功能分析记录",
+      "baseline_status": "由任务书分析得出的功能条目，不作为新增已批准产品需求"
     }
   },
   {
@@ -1734,7 +1944,9 @@
     "extras": {
       "function_id": "S2-F02",
       "scenario": "纯电热管理建模",
-      "analysis_status": "来源支持的功能分解；输入输出为分析契约，非新增物理接口"
+      "analysis_status": "来源支持的功能分解；输入输出为分析契约，非新增物理接口",
+      "record_role": "场景功能分析记录",
+      "baseline_status": "由任务书分析得出的功能条目，不作为新增已批准产品需求"
     }
   },
   {
@@ -1752,7 +1964,9 @@
     "extras": {
       "function_id": "S2-F03",
       "scenario": "纯电热管理建模",
-      "analysis_status": "来源支持的功能分解；输入输出为分析契约，非新增物理接口"
+      "analysis_status": "来源支持的功能分解；输入输出为分析契约，非新增物理接口",
+      "record_role": "场景功能分析记录",
+      "baseline_status": "由任务书分析得出的功能条目，不作为新增已批准产品需求"
     }
   },
   {
@@ -1770,7 +1984,9 @@
     "extras": {
       "function_id": "S2-F04",
       "scenario": "纯电热管理建模",
-      "analysis_status": "来源支持的功能分解；输入输出为分析契约，非新增物理接口"
+      "analysis_status": "来源支持的功能分解；输入输出为分析契约，非新增物理接口",
+      "record_role": "场景功能分析记录",
+      "baseline_status": "由任务书分析得出的功能条目，不作为新增已批准产品需求"
     }
   },
   {
@@ -1788,7 +2004,9 @@
     "extras": {
       "function_id": "S2-F05",
       "scenario": "纯电热管理建模",
-      "analysis_status": "来源支持的功能分解；输入输出为分析契约，非新增物理接口"
+      "analysis_status": "来源支持的功能分解；输入输出为分析契约，非新增物理接口",
+      "record_role": "场景功能分析记录",
+      "baseline_status": "由任务书分析得出的功能条目，不作为新增已批准产品需求"
     }
   },
   {
@@ -1806,7 +2024,9 @@
     "extras": {
       "function_id": "S2-F06",
       "scenario": "纯电热管理建模",
-      "analysis_status": "来源支持的功能分解；输入输出为分析契约，非新增物理接口"
+      "analysis_status": "来源支持的功能分解；输入输出为分析契约，非新增物理接口",
+      "record_role": "场景功能分析记录",
+      "baseline_status": "由任务书分析得出的功能条目，不作为新增已批准产品需求"
     }
   },
   {
@@ -1824,7 +2044,9 @@
     "extras": {
       "function_id": "S2-F07",
       "scenario": "纯电热管理建模",
-      "analysis_status": "来源支持的功能分解；输入输出为分析契约，非新增物理接口"
+      "analysis_status": "来源支持的功能分解；输入输出为分析契约，非新增物理接口",
+      "record_role": "场景功能分析记录",
+      "baseline_status": "由任务书分析得出的功能条目，不作为新增已批准产品需求"
     }
   },
   {
@@ -1842,7 +2064,9 @@
     "extras": {
       "function_id": "S2-F08",
       "scenario": "纯电热管理建模",
-      "analysis_status": "来源支持的功能分解；输入输出为分析契约，非新增物理接口"
+      "analysis_status": "来源支持的功能分解；输入输出为分析契约，非新增物理接口",
+      "record_role": "场景功能分析记录",
+      "baseline_status": "由任务书分析得出的功能条目，不作为新增已批准产品需求"
     }
   },
   {
@@ -1860,7 +2084,9 @@
     "extras": {
       "function_id": "S2-F09",
       "scenario": "纯电热管理建模",
-      "analysis_status": "来源支持的功能分解；输入输出为分析契约，非新增物理接口"
+      "analysis_status": "来源支持的功能分解；输入输出为分析契约，非新增物理接口",
+      "record_role": "场景功能分析记录",
+      "baseline_status": "由任务书分析得出的功能条目，不作为新增已批准产品需求"
     }
   },
   {
@@ -1878,7 +2104,9 @@
     "extras": {
       "function_id": "S2-F10",
       "scenario": "纯电热管理建模",
-      "analysis_status": "来源支持的功能分解；输入输出为分析契约，非新增物理接口"
+      "analysis_status": "来源支持的功能分解；输入输出为分析契约，非新增物理接口",
+      "record_role": "场景功能分析记录",
+      "baseline_status": "由任务书分析得出的功能条目，不作为新增已批准产品需求"
     }
   },
   {
@@ -1896,7 +2124,9 @@
     "extras": {
       "function_id": "S3-F01",
       "scenario": "座舱空气调节",
-      "analysis_status": "来源支持的功能分解；输入输出为分析契约，非新增物理接口"
+      "analysis_status": "来源支持的功能分解；输入输出为分析契约，非新增物理接口",
+      "record_role": "场景功能分析记录",
+      "baseline_status": "由任务书分析得出的功能条目，不作为新增已批准产品需求"
     }
   },
   {
@@ -1914,7 +2144,9 @@
     "extras": {
       "function_id": "S3-F02",
       "scenario": "座舱空气调节",
-      "analysis_status": "来源支持的功能分解；输入输出为分析契约，非新增物理接口"
+      "analysis_status": "来源支持的功能分解；输入输出为分析契约，非新增物理接口",
+      "record_role": "场景功能分析记录",
+      "baseline_status": "由任务书分析得出的功能条目，不作为新增已批准产品需求"
     }
   },
   {
@@ -1932,7 +2164,9 @@
     "extras": {
       "function_id": "S3-F03",
       "scenario": "座舱空气调节",
-      "analysis_status": "来源支持的功能分解；输入输出为分析契约，非新增物理接口"
+      "analysis_status": "来源支持的功能分解；输入输出为分析契约，非新增物理接口",
+      "record_role": "场景功能分析记录",
+      "baseline_status": "由任务书分析得出的功能条目，不作为新增已批准产品需求"
     }
   },
   {
@@ -1950,7 +2184,9 @@
     "extras": {
       "function_id": "S3-F04",
       "scenario": "座舱空气调节",
-      "analysis_status": "来源支持的功能分解；输入输出为分析契约，非新增物理接口"
+      "analysis_status": "来源支持的功能分解；输入输出为分析契约，非新增物理接口",
+      "record_role": "场景功能分析记录",
+      "baseline_status": "由任务书分析得出的功能条目，不作为新增已批准产品需求"
     }
   },
   {
@@ -1968,7 +2204,9 @@
     "extras": {
       "function_id": "S3-F05",
       "scenario": "座舱空气调节",
-      "analysis_status": "来源支持的功能分解；输入输出为分析契约，非新增物理接口"
+      "analysis_status": "来源支持的功能分解；输入输出为分析契约，非新增物理接口",
+      "record_role": "场景功能分析记录",
+      "baseline_status": "由任务书分析得出的功能条目，不作为新增已批准产品需求"
     }
   },
   {
@@ -1986,7 +2224,9 @@
     "extras": {
       "function_id": "S3-F06",
       "scenario": "座舱空气调节",
-      "analysis_status": "来源支持的功能分解；输入输出为分析契约，非新增物理接口"
+      "analysis_status": "来源支持的功能分解；输入输出为分析契约，非新增物理接口",
+      "record_role": "场景功能分析记录",
+      "baseline_status": "由任务书分析得出的功能条目，不作为新增已批准产品需求"
     }
   },
   {
@@ -2004,7 +2244,9 @@
     "extras": {
       "function_id": "S3-F07",
       "scenario": "座舱空气调节",
-      "analysis_status": "来源支持的功能分解；输入输出为分析契约，非新增物理接口"
+      "analysis_status": "来源支持的功能分解；输入输出为分析契约，非新增物理接口",
+      "record_role": "场景功能分析记录",
+      "baseline_status": "由任务书分析得出的功能条目，不作为新增已批准产品需求"
     }
   },
   {
@@ -2022,7 +2264,9 @@
     "extras": {
       "function_id": "S3-F08",
       "scenario": "座舱空气调节",
-      "analysis_status": "来源支持的功能分解；输入输出为分析契约，非新增物理接口"
+      "analysis_status": "来源支持的功能分解；输入输出为分析契约，非新增物理接口",
+      "record_role": "场景功能分析记录",
+      "baseline_status": "由任务书分析得出的功能条目，不作为新增已批准产品需求"
     }
   },
   {
@@ -2040,7 +2284,9 @@
     "extras": {
       "function_id": "S3-F09",
       "scenario": "座舱空气调节",
-      "analysis_status": "来源支持的功能分解；输入输出为分析契约，非新增物理接口"
+      "analysis_status": "来源支持的功能分解；输入输出为分析契约，非新增物理接口",
+      "record_role": "场景功能分析记录",
+      "baseline_status": "由任务书分析得出的功能条目，不作为新增已批准产品需求"
     }
   },
   {
@@ -2058,7 +2304,9 @@
     "extras": {
       "function_id": "S3-F10",
       "scenario": "座舱空气调节",
-      "analysis_status": "来源支持的功能分解；输入输出为分析契约，非新增物理接口"
+      "analysis_status": "来源支持的功能分解；输入输出为分析契约，非新增物理接口",
+      "record_role": "场景功能分析记录",
+      "baseline_status": "由任务书分析得出的功能条目，不作为新增已批准产品需求"
     }
   },
   {
@@ -2076,7 +2324,9 @@
     "extras": {
       "function_id": "S3-F11",
       "scenario": "座舱空气调节",
-      "analysis_status": "来源支持的功能分解；输入输出为分析契约，非新增物理接口"
+      "analysis_status": "来源支持的功能分解；输入输出为分析契约，非新增物理接口",
+      "record_role": "场景功能分析记录",
+      "baseline_status": "由任务书分析得出的功能条目，不作为新增已批准产品需求"
     }
   }
 ]

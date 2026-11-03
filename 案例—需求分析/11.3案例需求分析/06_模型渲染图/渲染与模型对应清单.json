@@ -1,0 +1,489 @@
+{
+  "tool": "PlantUML 1.2026.9",
+  "jar_sha256": "96ace11f947a04a4320a413a0a2c6bad8b87daaac1869fe51e82622d812fe13c",
+  "source_type": "当前SysML文本投影，ACT含doc规则可视化展开；不代表SysML编译通过",
+  "views": [
+    {
+      "view_type": "01_需求图",
+      "stem": "06_模型渲染图/01_需求图/3.3.1.2-需求图",
+      "model_file": "01_系统边界与逻辑化表达/修改后的SysML模型/3.3.1.2-需求图.sysml",
+      "model_sha256": "dfe602f4aa5c80697b6c1d8342673d81961f194810e26c50bcfc8e85caf25a9f",
+      "requirement_ids": [
+        "3.3.1.2",
+        "3.3.1.2-01",
+        "3.3.1.2-02",
+        "3.3.1.2-03",
+        "3.3.1.2-04",
+        "3.3.1.2-05",
+        "3.3.1.2-06",
+        "3.3.1.2-07"
+      ],
+      "relation_semantics": "原SysML需求嵌套包含",
+      "artifacts": {
+        "puml": {
+          "file": "06_模型渲染图/01_需求图/3.3.1.2-需求图.puml",
+          "bytes": 2057,
+          "sha256": "2592d30b412550cd4b93916fc81a7bcba285fb09520e7172f1c159ff66a19756"
+        },
+        "png": {
+          "file": "06_模型渲染图/01_需求图/3.3.1.2-需求图.png",
+          "bytes": 105384,
+          "sha256": "adc6b1d4f0bb680b0a3fba02a507034329d2ede1365865a800830f0d983d6f01"
+        },
+        "svg": {
+          "file": "06_模型渲染图/01_需求图/3.3.1.2-需求图.svg",
+          "bytes": 15212,
+          "sha256": "127b0377b5d2fcf1264372c25ffe56aa8a62b23c57066074c26928b874cf7b97"
+        }
+      },
+      "png_dimensions": [
+        845,
+        1532
+      ]
+    },
+    {
+      "view_type": "01_需求图",
+      "stem": "06_模型渲染图/01_需求图/3.3.1.6-需求图",
+      "model_file": "01_系统边界与逻辑化表达/修改后的SysML模型/3.3.1.6-需求图.sysml",
+      "model_sha256": "2c5be1c0ec41267618b2d3c7abd036204d961d9c40bcbe4c61a4e87d37f8fe4c",
+      "requirement_ids": [
+        "3.3.1.6",
+        "3.3.1.6-01",
+        "3.3.1.6-02",
+        "3.3.1.6-03",
+        "3.3.1.6-04",
+        "3.3.1.6-05",
+        "3.3.1.6-06",
+        "3.3.1.6-07"
+      ],
+      "relation_semantics": "原SysML需求嵌套包含",
+      "artifacts": {
+        "puml": {
+          "file": "06_模型渲染图/01_需求图/3.3.1.6-需求图.puml",
+          "bytes": 2032,
+          "sha256": "da141573c616914bca057016102e218c4837c53872be8552b68674d2d41f0764"
+        },
+        "png": {
+          "file": "06_模型渲染图/01_需求图/3.3.1.6-需求图.png",
+          "bytes": 104706,
+          "sha256": "5c66742e29906c0b79b94b20b30d035f28f1db96cc40caedc75d319b7ef25ca1"
+        },
+        "svg": {
+          "file": "06_模型渲染图/01_需求图/3.3.1.6-需求图.svg",
+          "bytes": 15512,
+          "sha256": "aeef980cdf78ee9a2216bf666de5ad8f714862cf16f3f3e35320d486e5040080"
+        }
+      },
+      "png_dimensions": [
+        820,
+        1620
+      ]
+    },
+    {
+      "view_type": "01_需求图",
+      "stem": "06_模型渲染图/01_需求图/3.3.1.9-需求图",
+      "model_file": "01_系统边界与逻辑化表达/修改后的SysML模型/3.3.1.9-需求图.sysml",
+      "model_sha256": "1a05ec6b9736dc0ea4fe543110b0bd63bca2cfb105529386dfb64c28109d0f53",
+      "requirement_ids": [
+        "3.3.1.9",
+        "3.3.1.9-01",
+        "3.3.1.9-02",
+        "3.3.1.9-03",
+        "3.3.1.9-04",
+        "3.3.1.9-05",
+        "3.3.1.9-06"
+      ],
+      "relation_semantics": "原SysML需求嵌套包含",
+      "artifacts": {
+        "puml": {
+          "file": "06_模型渲染图/01_需求图/3.3.1.9-需求图.puml",
+          "bytes": 1983,
+          "sha256": "b26556ca19b319e8424e4832592059941da6f40f7b171ca7a3c8694486281e26"
+        },
+        "png": {
+          "file": "06_模型渲染图/01_需求图/3.3.1.9-需求图.png",
+          "bytes": 101283,
+          "sha256": "32d3c1f1d53c1aca9a494dce5e387179d74537fb39b2420c9d62180965a181e8"
+        },
+        "svg": {
+          "file": "06_模型渲染图/01_需求图/3.3.1.9-需求图.svg",
+          "bytes": 14021,
+          "sha256": "ee1474ff971821dd4da9a1b265bc59b094db9475e592537195bdf96a6cac40be"
+        }
+      },
+      "png_dimensions": [
+        859,
+        1464
+      ]
+    },
+    {
+      "view_type": "02_需求活动图",
+      "stem": "06_模型渲染图/02_需求活动图/3.3.1.2-需求活动图",
+      "model_file": "01_系统边界与逻辑化表达/修改后的SysML模型/3.3.1.2-需求活动图.sysml",
+      "model_sha256": "feecbbbdf933776023471fbb5fbb782f805ceaa535f6c2661e70c10166e26227",
+      "phase_names": [
+        "接收制热请求并读取目标温度",
+        "检查电加热使能条件",
+        "根据使能条件控制电加热通断",
+        "监测电加热温度并执行过温保护",
+        "反馈电加热状态与功率信息"
+      ],
+      "projection": "原阶段主链＋动作doc明示规则展开；不是原平台执行仿真",
+      "artifacts": {
+        "puml": {
+          "file": "06_模型渲染图/02_需求活动图/3.3.1.2-需求活动图.puml",
+          "bytes": 1831,
+          "sha256": "12461f5ac6ecf6b1419e869637f51306611bf7cd8a6c4d44b4e8347c9cb137f0"
+        },
+        "png": {
+          "file": "06_模型渲染图/02_需求活动图/3.3.1.2-需求活动图.png",
+          "bytes": 144476,
+          "sha256": "ee210c4cc322081919eb353269a998262bd97dff66b2d24d40cb8c40e6ff8c82"
+        },
+        "svg": {
+          "file": "06_模型渲染图/02_需求活动图/3.3.1.2-需求活动图.svg",
+          "bytes": 19283,
+          "sha256": "9c8f3e1256da783584f92bce2d9304e626b94128cd034d4808de1b0dd36d12a5"
+        }
+      },
+      "png_dimensions": [
+        1228,
+        1368
+      ]
+    },
+    {
+      "view_type": "02_需求活动图",
+      "stem": "06_模型渲染图/02_需求活动图/3.3.1.6-需求活动图",
+      "model_file": "01_系统边界与逻辑化表达/修改后的SysML模型/3.3.1.6-需求活动图.sysml",
+      "model_sha256": "fc3fc0c045ef350b7946c2d12e654a88776e8f8b24e0844af5d1d3d5ab3cbbcd",
+      "phase_names": [
+        "接收AUTO模式请求",
+        "处理请求并反馈AUTO状态",
+        "采集环境与温度信号",
+        "协调热量与空气调节服务",
+        "处理用户操作与模式切换",
+        "更新控制输出并持续反馈状态"
+      ],
+      "projection": "原阶段主链＋动作doc明示规则展开；不是原平台执行仿真",
+      "artifacts": {
+        "puml": {
+          "file": "06_模型渲染图/02_需求活动图/3.3.1.6-需求活动图.puml",
+          "bytes": 1565,
+          "sha256": "2f131ab9cf95401954d7831930b837cc1defb4ea352a081a4ffa9d22fd49aa0b"
+        },
+        "png": {
+          "file": "06_模型渲染图/02_需求活动图/3.3.1.6-需求活动图.png",
+          "bytes": 127783,
+          "sha256": "ba5901e426508a8d329759fbd1fd7341f86c3f575a68eba58bd403867fa580c5"
+        },
+        "svg": {
+          "file": "06_模型渲染图/02_需求活动图/3.3.1.6-需求活动图.svg",
+          "bytes": 14810,
+          "sha256": "93a6ebb3ba7727e4e658787ef5cd14038174468ad7f96932f8776576aa7aff62"
+        }
+      },
+      "png_dimensions": [
+        1542,
+        1222
+      ]
+    },
+    {
+      "view_type": "02_需求活动图",
+      "stem": "06_模型渲染图/02_需求活动图/3.3.1.9-需求活动图",
+      "model_file": "01_系统边界与逻辑化表达/修改后的SysML模型/3.3.1.9-需求活动图.sysml",
+      "model_sha256": "2417d4d9681a9f1f3f4216edd62aa3f7be8eeec3b08e22730109da1fcc16722f",
+      "phase_names": [
+        "接收风窗除霜或除雾请求",
+        "识别前除霜、前除雾或后风窗请求",
+        "配置风口、风量与循环状态",
+        "确定AC与制冷能力请求",
+        "实施热量与空气调节",
+        "反馈模式与空调状态"
+      ],
+      "projection": "原阶段主链＋动作doc明示规则展开；不是原平台执行仿真",
+      "artifacts": {
+        "puml": {
+          "file": "06_模型渲染图/02_需求活动图/3.3.1.9-需求活动图.puml",
+          "bytes": 1531,
+          "sha256": "a8e8526642ac62c1bf6814d26c2351842ac8726e8af113ca3bc49b454cb5dc41"
+        },
+        "png": {
+          "file": "06_模型渲染图/02_需求活动图/3.3.1.9-需求活动图.png",
+          "bytes": 115169,
+          "sha256": "a1fa3ea71f79911c3f5b86ec7a84e1959e43c69da21d557129b984c4b4198e9e"
+        },
+        "svg": {
+          "file": "06_模型渲染图/02_需求活动图/3.3.1.9-需求活动图.svg",
+          "bytes": 11280,
+          "sha256": "f476928802f0492781d482d8323db8ce62823a8621d296aa814cb4731a8492dc"
+        }
+      },
+      "png_dimensions": [
+        1145,
+        1021
+      ]
+    },
+    {
+      "view_type": "03_需求用例图",
+      "stem": "06_模型渲染图/03_需求用例图/综合-需求用例图",
+      "model_file": "01_系统边界与逻辑化表达/修改后的SysML模型/3.3.1.2、3.3.1.6、3.3.1.9-需求用例图.sysml",
+      "model_sha256": "b240d6764adaa6131a49f7a44af4f5060a65f85085967099eb98ff39eb8a0c2f",
+      "use_cases": [
+        "执行乘员舱制热",
+        "管理自动空调模式",
+        "管理风窗除霜与除雾"
+      ],
+      "actors": [
+        "驾驶员",
+        "IVI中控交互系统"
+      ],
+      "require_aliases": [
+        "req3312",
+        "req3316",
+        "req3319"
+      ],
+      "artifacts": {
+        "puml": {
+          "file": "06_模型渲染图/03_需求用例图/综合-需求用例图.puml",
+          "bytes": 1297,
+          "sha256": "3fc622a9c3ef014fb64d8ce162cdafc8fec5349c93ce240f81f88e2c4d3dfb6d"
+        },
+        "png": {
+          "file": "06_模型渲染图/03_需求用例图/综合-需求用例图.png",
+          "bytes": 77419,
+          "sha256": "3ae179c47090f6e173a060e11c39cad8e0b8c92184cc01653b13c20c021bd157"
+        },
+        "svg": {
+          "file": "06_模型渲染图/03_需求用例图/综合-需求用例图.svg",
+          "bytes": 9186,
+          "sha256": "c3b696d100b4bdc5e24203fe4ea3da11417ec27764f45b5e5724f64d80f29767"
+        }
+      },
+      "png_dimensions": [
+        868,
+        549
+      ]
+    },
+    {
+      "view_type": "04_需求外部环境BDD图",
+      "stem": "06_模型渲染图/04_需求外部环境BDD图/综合-需求外部环境BDD图",
+      "model_file": "01_系统边界与逻辑化表达/修改后的SysML模型/3.3.1.2、3.3.1.6、3.3.1.9-BDD图.sysml",
+      "model_sha256": "49731f64c8ba4007180d2f917982fd164dbd5c929f43ccadca7c3e47548c5242",
+      "parts": [
+        [
+          "SYS",
+          "热管理逻辑控制服务"
+        ],
+        [
+          "IVI",
+          "IVI中控交互系统"
+        ],
+        [
+          "CAN",
+          "车载CAN通信网络"
+        ],
+        [
+          "VEHICLE",
+          "整车状态与电源管理系统"
+        ],
+        [
+          "SENSORS",
+          "温度与环境信息提供服务"
+        ],
+        [
+          "ACTUATORS",
+          "热量与空气调节执行服务"
+        ],
+        [
+          "CABIN_WINDSCREEN",
+          "乘员舱与前风窗环境"
+        ]
+      ],
+      "connections": [
+        {
+          "name": "requestIVIToCAN",
+          "interface_type": "ThermalRequestInterface",
+          "source": "IVI.requestOut",
+          "target": "CAN.requestIn"
+        },
+        {
+          "name": "requestCANToSYS",
+          "interface_type": "ThermalRequestInterface",
+          "source": "CAN.requestOut",
+          "target": "SYS.requestIn"
+        },
+        {
+          "name": "statusSYSOutToCAN",
+          "interface_type": "ThermalStatusInterface",
+          "source": "SYS.statusOut",
+          "target": "CAN.statusIn"
+        },
+        {
+          "name": "statusCANToIVI",
+          "interface_type": "ThermalStatusInterface",
+          "source": "CAN.statusOut",
+          "target": "IVI.statusIn"
+        },
+        {
+          "name": "vehicleStateToSYS",
+          "interface_type": "VehicleStateInterface",
+          "source": "VEHICLE.stateOut",
+          "target": "SYS.vehicleStateIn"
+        },
+        {
+          "name": "sensorDataToSYS",
+          "interface_type": "SensorDataInterface",
+          "source": "SENSORS.dataOut",
+          "target": "SYS.sensorDataIn"
+        },
+        {
+          "name": "actuatorCommandsToHVAC",
+          "interface_type": "ActuatorCommandInterface",
+          "source": "SYS.actuatorCommandOut",
+          "target": "ACTUATORS.commandIn"
+        },
+        {
+          "name": "cabinEffectsFromSYS",
+          "interface_type": "CabinEffectInterface",
+          "source": "SYS.cabinEffectOut",
+          "target": "CABIN_WINDSCREEN.effectIn"
+        }
+      ],
+      "port_type_features": {
+        "ThermalRequestPort": [
+          [
+            "heatingRequest",
+            "Boolean"
+          ],
+          [
+            "autoModeRequest",
+            "Boolean"
+          ],
+          [
+            "frontDefrostRequest",
+            "Boolean"
+          ],
+          [
+            "frontDemistRequest",
+            "Boolean"
+          ],
+          [
+            "targetTemperature",
+            "Real"
+          ]
+        ],
+        "ThermalStatusPort": [
+          [
+            "heatingActive",
+            "Boolean"
+          ],
+          [
+            "autoModeActive",
+            "Boolean"
+          ],
+          [
+            "frontDefrostActive",
+            "Boolean"
+          ],
+          [
+            "frontDemistActive",
+            "Boolean"
+          ]
+        ],
+        "VehicleStatePort": [
+          [
+            "highVoltageAvailable",
+            "Boolean"
+          ],
+          [
+            "vehicleFaultActive",
+            "Boolean"
+          ],
+          [
+            "stateOfCharge",
+            "Real"
+          ]
+        ],
+        "SensorDataPort": [
+          [
+            "cabinTemperature",
+            "Real"
+          ],
+          [
+            "ambientTemperature",
+            "Real"
+          ],
+          [
+            "sunLoad",
+            "Real"
+          ],
+          [
+            "heaterCoreInletTemperature",
+            "Real"
+          ],
+          [
+            "ptcTemperature",
+            "Real"
+          ]
+        ],
+        "ActuatorCommandPort": [
+          [
+            "ptcEnable",
+            "Boolean"
+          ],
+          [
+            "blowerCommand",
+            "Real"
+          ],
+          [
+            "compressorRequest",
+            "Boolean"
+          ],
+          [
+            "airDistributionMode",
+            "Real"
+          ],
+          [
+            "recirculationRequest",
+            "Boolean"
+          ]
+        ],
+        "CabinEffectPort": [
+          [
+            "cabinHeatingEffect",
+            "Boolean"
+          ],
+          [
+            "frontWindscreenDefrostEffect",
+            "Boolean"
+          ],
+          [
+            "frontWindscreenDemistEffect",
+            "Boolean"
+          ]
+        ]
+      },
+      "artifacts": {
+        "puml": {
+          "file": "06_模型渲染图/04_需求外部环境BDD图/综合-需求外部环境BDD图.puml",
+          "bytes": 3347,
+          "sha256": "c439b5f6cab3ba53cdb0a83e823a88096b6662abe80482b39477ffe5e4441ea2"
+        },
+        "png": {
+          "file": "06_模型渲染图/04_需求外部环境BDD图/综合-需求外部环境BDD图.png",
+          "bytes": 209421,
+          "sha256": "44e56981ece24f65de2617db56feda264e1a4ac6b773bacf8e9e9fa3ac9617a8"
+        },
+        "svg": {
+          "file": "06_模型渲染图/04_需求外部环境BDD图/综合-需求外部环境BDD图.svg",
+          "bytes": 21452,
+          "sha256": "919b5d4cc83b45dd18a361642b9f986ea445abd711e16136c5fa70a94a10765c"
+        }
+      },
+      "png_dimensions": [
+        2754,
+        1574
+      ]
+    }
+  ]
+}

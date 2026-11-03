@@ -1,0 +1,63 @@
+@startuml
+skinparam defaultFontName Noto Sans CJK SC
+skinparam defaultFontSize 14
+skinparam dpi 140
+skinparam shadowing false
+skinparam backgroundColor white
+skinparam ArrowColor #35566C
+skinparam NoteBackgroundColor #FFF5D6
+skinparam NoteBorderColor #C9AD66
+skinparam roundcorner 10
+skinparam packageStyle rectangle
+skinparam classBackgroundColor #EAF3FB
+skinparam classBorderColor #496C84
+skinparam activityBackgroundColor #EAF3FB
+skinparam activityBorderColor #496C84
+skinparam usecaseBackgroundColor #EAF3FB
+hide empty members
+hide circle
+title 3.3.1.2 空调制热 — 需求活动图
+start
+:接收制热请求并读取目标温度;
+:检查电加热使能条件;
+partition "根据使能条件控制电加热通断" {
+if (全部使能条件满足？) then (是)
+:允许电加热输出;
+else (否)
+:禁止/保持关闭电加热输出;
+endif
+}
+note right
+空气输送已开启；目标温度 > 室内温度；
+高压可用；整车无故障；SOC > 10%。
+end note
+partition "监测电加热温度并执行过温保护" {
+if (已触发且尚未解除过温保护？) then (是)
+if (温度 <= 恢复XXX℃？) then (是)
+:重新允许加热
+（仍须满足全部使能条件）;
+else (否)
+:保持保护禁止状态;
+endif
+else (否)
+if (电加热温度 >= 上限XXX℃？) then (是)
+:停止电加热输出；进入保护状态;
+else (否)
+:按当前许可控制加热;
+endif
+endif
+}
+note right
+温度上限/恢复阈值待标定；
+电加热温度按50 ms检测（SL29 4.6.3.5）。
+持续监测，不表示只检测一次。
+end note
+:反馈电加热状态与功率信息;
+stop
+legend bottom
+保留原阶段顺序；阶段内部按当前SysML动作doc展开。
+这是一次评估/处理片段，终点不表示全系统持续调节或监测停止。
+未规定的控制算法、周期和标定值不补造。
+endlegend
+
+@enduml

@@ -21,3 +21,9 @@
 source_refs中Excel旧文件名“热管理(1).xlsx”更正为本次上传文件名。原JSON引用SL29印刷34—35/16—17页与实际上传PDF不符，已改用可复核的pdf_pages=30/13—14，同时保留original_printed_pages记录差异；章节ID不变。PDF页码均为本附件从1开始的页面序号。
 
 场景记录是用户要求的功能分解结果，不作为原Function List已存在条目的伪造转录。场景功能与原三个空调模式需求属于不同视角，不能未经证据一一合并。
+
+## 本轮增量规则
+
+原3个主需求、41个IND及31个SC的ID全部保留，总数仍为75。SC记录通过extras.record_role与baseline_status明确为“场景功能分析记录”，不能将分析分解当成已批准新增产品需求。IND通过indicator_scope区分原表迁移/拆分、PDF补充、场景量化条件；新增logical_responsibility供矩阵核对，不等同正式SysML satisfy/allocate关系。IND-008主要类别调整为安全性，可靠性作为辅助类别保留。七个顶层字段不变。
+
+新增原Excel图片source_ref只作部署差异上下文，明确不据图裁定控制器归属；原图片仍保留本地。字段级变化清单记录本轮相对08198b8的具体字段，未改写原附件。

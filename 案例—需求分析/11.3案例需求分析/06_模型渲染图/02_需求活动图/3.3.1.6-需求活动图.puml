@@ -1,0 +1,53 @@
+@startuml
+skinparam defaultFontName Noto Sans CJK SC
+skinparam defaultFontSize 14
+skinparam dpi 140
+skinparam shadowing false
+skinparam backgroundColor white
+skinparam ArrowColor #35566C
+skinparam NoteBackgroundColor #FFF5D6
+skinparam NoteBorderColor #C9AD66
+skinparam roundcorner 10
+skinparam packageStyle rectangle
+skinparam classBackgroundColor #EAF3FB
+skinparam classBorderColor #496C84
+skinparam activityBackgroundColor #EAF3FB
+skinparam activityBorderColor #496C84
+skinparam usecaseBackgroundColor #EAF3FB
+hide empty members
+hide circle
+title 3.3.1.6 自动空调模式 — 需求活动图
+start
+:接收AUTO模式请求;
+:处理请求并反馈AUTO状态;
+:采集环境与温度信号;
+:协调热量与空气调节服务;
+partition "处理用户操作与模式切换" {
+switch (AUTO内的用户操作)
+case (温度 / 循环)
+:保持AUTO；更新对应设置;
+case (风量 / 吹风模式)
+:退出AUTO；其余指定项仍自动;
+case (前除霜)
+:进入前除霜状态;
+case (AC)
+:关闭制冷请求；转速请求=0;
+:AUTO反馈Close；
+风量、温度、模式、循环仍自动;
+case (AUTO再次操作)
+:原文invalid；具体交互待确认;
+endswitch
+}
+:更新控制输出并持续反馈状态;
+note right
+目标温度<16℃为LO，>30℃为HI；
+每次调节0.5℃，不补造默认温度。
+end note
+stop
+legend bottom
+保留原阶段顺序；阶段内部按当前SysML动作doc展开。
+这是一次评估/处理片段，终点不表示全系统持续调节或监测停止。
+未规定的控制算法、周期和标定值不补造。
+endlegend
+
+@enduml

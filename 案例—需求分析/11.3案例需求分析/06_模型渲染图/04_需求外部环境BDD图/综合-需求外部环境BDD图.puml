@@ -1,0 +1,89 @@
+@startuml
+skinparam defaultFontName Noto Sans CJK SC
+skinparam defaultFontSize 14
+skinparam dpi 140
+skinparam shadowing false
+skinparam backgroundColor white
+skinparam ArrowColor #35566C
+skinparam NoteBackgroundColor #FFF5D6
+skinparam NoteBorderColor #C9AD66
+skinparam roundcorner 10
+skinparam packageStyle rectangle
+skinparam classBackgroundColor #EAF3FB
+skinparam classBorderColor #496C84
+skinparam activityBackgroundColor #EAF3FB
+skinparam activityBorderColor #496C84
+skinparam usecaseBackgroundColor #EAF3FB
+hide empty members
+hide circle
+title 热管理逻辑控制服务 — 外部环境 BDD
+left to right direction
+skinparam nodesep 70
+skinparam ranksep 90
+class "热管理逻辑控制服务" as SYS <<system>> {
+ requestIn : ~ThermalRequestPort
+ statusOut : ThermalStatusPort
+ vehicleStateIn : ~VehicleStatePort
+ sensorDataIn : ~SensorDataPort
+ actuatorCommandOut : ActuatorCommandPort
+ cabinEffectOut : CabinEffectPort
+}
+class "IVI中控交互系统" as IVI <<external role>> {
+ requestOut : ThermalRequestPort
+ statusIn : ~ThermalStatusPort
+}
+class "车载CAN通信网络" as CAN <<external role>> {
+ requestIn : ~ThermalRequestPort
+ requestOut : ThermalRequestPort
+ statusIn : ~ThermalStatusPort
+ statusOut : ThermalStatusPort
+}
+class "整车状态与电源管理系统" as VEHICLE <<external role>> {
+ stateOut : VehicleStatePort
+}
+class "温度与环境信息提供服务" as SENSORS <<external role>> {
+ dataOut : SensorDataPort
+}
+class "热量与空气调节执行服务" as ACTUATORS <<external role>> {
+ commandIn : ~ActuatorCommandPort
+}
+class "乘员舱与前风窗环境" as CABIN_WINDSCREEN <<external role>> {
+ effectIn : ~CabinEffectPort
+}
+IVI --> CAN : requestIVIToCAN\nThermalRequestInterface\nrequestOut → requestIn
+CAN --> SYS : requestCANToSYS\nThermalRequestInterface\nrequestOut → requestIn
+SYS --> CAN : statusSYSOutToCAN\nThermalStatusInterface\nstatusOut → statusIn
+CAN --> IVI : statusCANToIVI\nThermalStatusInterface\nstatusOut → statusIn
+VEHICLE --> SYS : vehicleStateToSYS\nVehicleStateInterface\nstateOut → vehicleStateIn
+SENSORS --> SYS : sensorDataToSYS\nSensorDataInterface\ndataOut → sensorDataIn
+SYS --> ACTUATORS : actuatorCommandsToHVAC\nActuatorCommandInterface\nactuatorCommandOut → commandIn
+SYS --> CABIN_WINDSCREEN : cabinEffectsFromSYS\nCabinEffectInterface\ncabinEffectOut → effectIn
+legend bottom left
+端口特征（均保留原接口语义）
+ThermalRequestPort:
+heatingRequest:Boolean, autoModeRequest:Boolean
+frontDefrostRequest:Boolean, frontDemistRequest:Boolean
+targetTemperature:Real
+ThermalStatusPort:
+heatingActive:Boolean, autoModeActive:Boolean
+frontDefrostActive:Boolean, frontDemistActive:Boolean
+VehicleStatePort:
+highVoltageAvailable:Boolean, vehicleFaultActive:Boolean
+stateOfCharge:Real
+SensorDataPort:
+cabinTemperature:Real, ambientTemperature:Real
+sunLoad:Real, heaterCoreInletTemperature:Real
+ptcTemperature:Real
+ActuatorCommandPort:
+ptcEnable:Boolean, blowerCommand:Real
+compressorRequest:Boolean, airDistributionMode:Real
+recirculationRequest:Boolean
+CabinEffectPort:
+cabinHeatingEffect:Boolean, frontWindscreenDefrostEffect:Boolean
+frontWindscreenDemistEffect:Boolean
+----
+~表示原模型共轭端口；箭头表示原interface connect的信息流向。
+物理部署/供货归属不由本黑盒图裁定；不展开CAN内部转发。
+endlegend
+
+@enduml

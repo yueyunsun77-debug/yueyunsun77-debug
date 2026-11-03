@@ -1,0 +1,59 @@
+@startuml
+skinparam defaultFontName Noto Sans CJK SC
+skinparam defaultFontSize 14
+skinparam dpi 140
+skinparam shadowing false
+skinparam backgroundColor white
+skinparam ArrowColor #35566C
+skinparam NoteBackgroundColor #FFF5D6
+skinparam NoteBorderColor #C9AD66
+skinparam roundcorner 10
+skinparam packageStyle rectangle
+skinparam classBackgroundColor #EAF3FB
+skinparam classBorderColor #496C84
+skinparam activityBackgroundColor #EAF3FB
+skinparam activityBorderColor #496C84
+skinparam usecaseBackgroundColor #EAF3FB
+hide empty members
+hide circle
+title 3.3.1.6 自动空调模式 — 需求图
+left to right direction
+skinparam nodesep 30
+skinparam ranksep 55
+class "自动空调模式" as MAIN <<requirement>> {
+ Id = 3.3.1.6
+}
+class "3.3.1.6-01\nautoButtonStatus" as R0 <<requirement>> {
+ Text = 处理AUTO请求并反馈状态；AUTO内重复AU\nTO为invalid，语义待确认
+}
+MAIN *-- R0 : 包含
+class "3.3.1.6-02\nsensorInputs" as R1 <<requirement>> {
+ Text = 获取室内、室外、日照及供热入口/加热温度信息
+}
+MAIN *-- R1 : 包含
+class "3.3.1.6-03\nautomaticActuatorControl" as R2 <<requirement>> {
+ Text = 协调空气输送、温度/模式/循环调节、制冷与电加\n热能力
+}
+MAIN *-- R2 : 包含
+class "3.3.1.6-04\ntargetTemperatureAdjustment" as R3 <<requirement>> {
+ Text = LO<16℃、HI>30℃，每次温度调节0.5\n℃；保持当前模式
+}
+MAIN *-- R3 : 包含
+class "3.3.1.6-05\ncirculationKeepsAuto" as R4 <<requirement>> {
+ Text = 循环操作保持AUTO
+}
+MAIN *-- R4 : 包含
+class "3.3.1.6-06\nmodeExitAndTransition" as R5 <<requirement>> {
+ Text = 风量/模式操作退出AUTO但其他项仍自动；前除\n霜操作进入前除霜
+}
+MAIN *-- R5 : 包含
+class "3.3.1.6-07\nacButtonBehavior" as R6 <<requirement>> {
+ Text = AC操作关闭制冷，转速请求=0，AUTO反馈C\nlose，其余指定项保持自动
+}
+MAIN *-- R6 : 包含
+legend bottom
+原RD嵌套包含关系；保留原编号。
+XXX/TBD和标定说明保留；图中未新增deriveReqt或satisfy。
+endlegend
+
+@enduml

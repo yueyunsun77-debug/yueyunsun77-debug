@@ -1,0 +1,59 @@
+@startuml
+skinparam defaultFontName Noto Sans CJK SC
+skinparam defaultFontSize 14
+skinparam dpi 140
+skinparam shadowing false
+skinparam backgroundColor white
+skinparam ArrowColor #35566C
+skinparam NoteBackgroundColor #FFF5D6
+skinparam NoteBorderColor #C9AD66
+skinparam roundcorner 10
+skinparam packageStyle rectangle
+skinparam classBackgroundColor #EAF3FB
+skinparam classBorderColor #496C84
+skinparam activityBackgroundColor #EAF3FB
+skinparam activityBorderColor #496C84
+skinparam usecaseBackgroundColor #EAF3FB
+hide empty members
+hide circle
+title 3.3.1.2 空调制热 — 需求图
+left to right direction
+skinparam nodesep 30
+skinparam ranksep 55
+class "空调制热" as MAIN <<requirement>> {
+ Id = 3.3.1.2
+}
+class "3.3.1.2-01\nheatingRequestInput" as R0 <<requirement>> {
+ Text = 接收用户制热请求与目标温度；物理输入路径待确认
+}
+MAIN *-- R0 : 包含
+class "3.3.1.2-02\nenvironmentLoadAdaptation" as R1 <<requirement>> {
+ Text = 环境温度与电池热负荷对输出优化方式待明确
+}
+MAIN *-- R1 : 包含
+class "3.3.1.2-03\nptcEnableConditions" as R2 <<requirement>> {
+ Text = 空气输送开启、目标温度高于室内、高压可用、整车\n无故障、SOC>10%全部满足后允许加热
+}
+MAIN *-- R2 : 包含
+class "3.3.1.2-04\nptcRelayControl" as R3 <<requirement>> {
+ Text = 按使能条件控制电加热通断；不设计具体继电器硬件
+}
+MAIN *-- R3 : 包含
+class "3.3.1.2-05\nptcOvertemperatureProtection" as R4 <<requirement>> {
+ Text = 温度>=XXX℃停止加热，<=XXX℃允许恢复\n；阈值待标定
+}
+MAIN *-- R4 : 包含
+class "3.3.1.2-06\nptcStatusFeedback" as R5 <<requirement>> {
+ Text = 反馈电加热通断、温度、状态及实际/最大功率
+}
+MAIN *-- R5 : 包含
+class "3.3.1.2-07\ncabinOutdoorTemperatureCheck" as R6 <<requirement>> {
+ Text = 获取室内和室外温度，保留来源采集/通信接口
+}
+MAIN *-- R6 : 包含
+legend bottom
+原RD嵌套包含关系；保留原编号。
+XXX/TBD和标定说明保留；图中未新增deriveReqt或satisfy。
+endlegend
+
+@enduml

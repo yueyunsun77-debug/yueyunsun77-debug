@@ -1,0 +1,51 @@
+@startuml
+skinparam defaultFontName Noto Sans CJK SC
+skinparam defaultFontSize 14
+skinparam dpi 140
+skinparam shadowing false
+skinparam backgroundColor white
+skinparam ArrowColor #35566C
+skinparam NoteBackgroundColor #FFF5D6
+skinparam NoteBorderColor #C9AD66
+skinparam roundcorner 10
+skinparam packageStyle rectangle
+skinparam classBackgroundColor #EAF3FB
+skinparam classBorderColor #496C84
+skinparam activityBackgroundColor #EAF3FB
+skinparam activityBorderColor #496C84
+skinparam usecaseBackgroundColor #EAF3FB
+hide empty members
+hide circle
+title 热管理三条需求 — 综合用例图
+left to right direction
+actor "驾驶员" as A0
+actor "IVI中控交互系统" as A1
+rectangle "热管理逻辑控制服务" {
+usecase "执行乘员舱制热" as UC0
+usecase "管理自动空调模式" as UC1
+usecase "管理风窗除霜与除雾" as UC2
+}
+A0 -- UC0
+A1 -- UC0
+note right of UC0
+对应需求 3.3.1.2
+objective require req3312
+end note
+A0 -- UC1
+A1 -- UC1
+note right of UC1
+对应需求 3.3.1.6
+objective require req3316
+end note
+A0 -- UC2
+A1 -- UC2
+note right of UC2
+对应需求 3.3.1.9
+objective require req3319
+end note
+legend bottom
+保留原参与者、3个用例及需求追溯；未新增include/extend。
+风窗用例中，后风窗控制细节仍待补充依据。
+endlegend
+
+@enduml

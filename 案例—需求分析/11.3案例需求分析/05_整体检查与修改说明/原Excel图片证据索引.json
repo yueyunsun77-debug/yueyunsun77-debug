@@ -1,0 +1,42 @@
+[
+  {
+    "file": "原始文件备份/LCATC-DS-04-XX-27-B0-热管理.xlsx",
+    "sheet": "PREEvision",
+    "drawing_index": 1,
+    "anchor_cell": "A1",
+    "width": 4762,
+    "height": 6735,
+    "sha256": "7f79f79e880ce5e509a308ad0bda276a87216203d4418bb4f2c9f0a6a1756d09",
+    "evidence_summary": "模型层次方法示意；不是项目需求"
+  },
+  {
+    "file": "原始文件备份/LCATC-DS-04-XX-27-B0-热管理.xlsx",
+    "sheet": "topology(PT)",
+    "drawing_index": 1,
+    "anchor_cell": "A1",
+    "width": 1212,
+    "height": 828,
+    "sha256": "70e48821a21b84b00cd3fc2d6adf09cb237758740a8ec7674bb8ba825829b299",
+    "evidence_summary": "动力网络拓扑，含CCU、RUC及各自EAC/PTC等连接；不可推定两控制器等同"
+  },
+  {
+    "file": "原始文件备份/LCATC-DS-04-XX-27-B0-热管理.xlsx",
+    "sheet": "topology(PT)",
+    "drawing_index": 2,
+    "anchor_cell": "R1",
+    "width": 836,
+    "height": 686,
+    "sha256": "9886c47a18b879d59ec34dba809f746d2bc7afe0ca671ace45897f48b1440bdc",
+    "evidence_summary": "网络拓扑缩略语说明"
+  },
+  {
+    "file": "原始文件备份/LCATC-DS-04-XX-27-B0-热管理.xlsx",
+    "sheet": "thermal",
+    "drawing_index": 1,
+    "anchor_cell": "A1",
+    "width": 976,
+    "height": 564,
+    "sha256": "a4358cc3c2a926efea9a43322b413132a50fd4c9ba81bb20d6c6480247ce218f",
+    "evidence_summary": "电池、电驱、制冷及加热回路物理示意；用于逻辑换热接口核对"
+  }
+]

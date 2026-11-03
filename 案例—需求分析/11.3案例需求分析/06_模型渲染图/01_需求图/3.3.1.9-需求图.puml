@@ -1,0 +1,55 @@
+@startuml
+skinparam defaultFontName Noto Sans CJK SC
+skinparam defaultFontSize 14
+skinparam dpi 140
+skinparam shadowing false
+skinparam backgroundColor white
+skinparam ArrowColor #35566C
+skinparam NoteBackgroundColor #FFF5D6
+skinparam NoteBorderColor #C9AD66
+skinparam roundcorner 10
+skinparam packageStyle rectangle
+skinparam classBackgroundColor #EAF3FB
+skinparam classBorderColor #496C84
+skinparam activityBackgroundColor #EAF3FB
+skinparam activityBorderColor #496C84
+skinparam usecaseBackgroundColor #EAF3FB
+hide empty members
+hide circle
+title 3.3.1.9 前后风窗除霜/除雾 — 需求图
+left to right direction
+skinparam nodesep 30
+skinparam ranksep 55
+class "前后风窗除霜/除雾" as MAIN <<requirement>> {
+ Id = 3.3.1.9
+}
+class "3.3.1.9-01\ndefrostRequestFeedback" as R0 <<requirement>> {
+ Text = CCU经CAN接收IVI发出的前除霜/前除雾请\n求，并向IVI反馈状态
+}
+MAIN *-- R0 : 包含
+class "3.3.1.9-02\nfrontDefrostConfiguration" as R1 <<requirement>> {
+ Text = 前除霜/除雾位置、最大风量、外循环90%待定；\n温度保持
+}
+MAIN *-- R1 : 包含
+class "3.3.1.9-03\nactuatorStatusFeedback" as R2 <<requirement>> {
+ Text = 反馈风量、温度、AC、循环与前风窗模式状态
+}
+MAIN *-- R2 : 包含
+class "3.3.1.9-04\nmodePersistenceAndExit" as R3 <<requirement>> {
+ Text = 按规范保持、退出、返回此前非OFF模式；后风窗\n逻辑不可由前风窗外推
+}
+MAIN *-- R3 : 包含
+class "3.3.1.9-05\ncompressorDehumidificationPriority" as R4 <<requirement>> {
+ Text = 除湿转速接口最低1000\nr/min待标定；优先级参SL29\n4.1.3.3，阈值XX未定
+}
+MAIN *-- R4 : 包含
+class "3.3.1.9-06\nlowSocDefrostException" as R5 <<requirement>> {
+ Text = SOC<10%且前除霜关闭则禁止制冷输出，开启\n则允许；SOC=10%边界未规定
+}
+MAIN *-- R5 : 包含
+legend bottom
+原RD嵌套包含关系；保留原编号。
+XXX/TBD和标定说明保留；图中未新增deriveReqt或satisfy。
+endlegend
+
+@enduml
