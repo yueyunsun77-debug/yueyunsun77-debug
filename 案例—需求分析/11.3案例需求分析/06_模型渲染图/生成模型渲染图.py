@@ -1,186 +1,168 @@
-"""从当前增量修订的模型生成PlantUML投影视图并在本地渲染；不是SysML v2编译器。"""
+"""按用户参考图调整可视化；使用PlantUML支持的@startdot布局，保持用例图原字节。"""
 from pathlib import Path
-import argparse,hashlib,json,re,subprocess,os,textwrap,xml.etree.ElementTree as ET
+import argparse,hashlib,json,re,subprocess,os,textwrap,html,math
+import xml.etree.ElementTree as ET
 from PIL import Image
 
 HERE=Path(__file__).resolve().parent
 ROOT=HERE.parent if HERE.name=='06_模型渲染图' else Path('/workspace/yueyunsun77-debug/案例—需求分析/11.3案例需求分析')
-MODEL=ROOT/'01_系统边界与逻辑化表达/修改后的SysML模型'
-OUT=ROOT/'06_模型渲染图'
-P=argparse.ArgumentParser();P.add_argument('--jar',type=Path,required=True);args=P.parse_args()
-EXPECTED_JAR_SHA256='96ace11f947a04a4320a413a0a2c6bad8b87daaac1869fe51e82622d812fe13c'
-assert hashlib.sha256(args.jar.read_bytes()).hexdigest()==EXPECTED_JAR_SHA256,'PlantUML版本或校验和不符，需使用文档固定版本1.2026.9'
-BASE='''@startuml
-skinparam defaultFontName Noto Sans CJK SC
-skinparam defaultFontSize 14
-skinparam dpi 140
-skinparam shadowing false
-skinparam backgroundColor white
-skinparam ArrowColor #35566C
-skinparam NoteBackgroundColor #FFF5D6
-skinparam NoteBorderColor #C9AD66
-skinparam roundcorner 10
-skinparam packageStyle rectangle
-skinparam classBackgroundColor #EAF3FB
-skinparam classBorderColor #496C84
-skinparam activityBackgroundColor #EAF3FB
-skinparam activityBorderColor #496C84
-skinparam usecaseBackgroundColor #EAF3FB
-hide empty members
-hide circle
-'''
-records=[]
-def wrap(s,n=24):return '\\n'.join(textwrap.wrap(s,n,break_long_words=True,break_on_hyphens=False))
-def make(group,name,title,body,source,meta):
- p=OUT/group/(name+'.puml');p.parent.mkdir(parents=True,exist_ok=True)
- p.write_text(BASE+'title '+title+'\n'+body+'\n@enduml\n',encoding='utf-8')
- records.append(dict(view_type=group,stem=str(p.relative_to(ROOT).with_suffix('')),model_file=str(source.relative_to(ROOT)),model_sha256=hashlib.sha256(source.read_bytes()).hexdigest(),**meta))
+OUT=ROOT/'06_模型渲染图';MODEL=ROOT/'01_系统边界与逻辑化表达/修改后的SysML模型'
+parser=argparse.ArgumentParser();parser.add_argument('--jar',type=Path,required=True);args=parser.parse_args()
+assert hashlib.sha256(args.jar.read_bytes()).hexdigest()=='96ace11f947a04a4320a413a0a2c6bad8b87daaac1869fe51e82622d812fe13c'
+manifest=json.loads((OUT/'渲染与模型对应清单.json').read_text())
+original_uc=next(v for v in manifest['views'] if v['view_type']=='03_需求用例图')
+uc_before={ext:hashlib.sha256((ROOT/a['file']).read_bytes()).hexdigest() for ext,a in original_uc['artifacts'].items()}
+records=[];details=[]
+q=lambda s:json.dumps(s,ensure_ascii=False)
+def esc(s):return html.escape(s,quote=True)
+def lines(s,n=17):return '<BR/>'.join(esc(x) for x in textwrap.wrap(s,n,break_long_words=True,break_on_hyphens=False))
+def comment(s):return '// '+s.replace('\n',' ')+'\n'
+def start(title,extra=''):
+ return 'digraph G {\n'+f'graph [bgcolor="white", fontname="Noto Sans CJK SC", fontsize=20, labelloc=t, label={q(title)}, pad=0.45, nodesep=0.65, ranksep=1.0, splines=ortho, dpi=150{extra}];\n'+'node [shape=box, style="rounded,filled", fillcolor="white", color="#858585", penwidth=1.1, fontname="Noto Sans CJK SC", fontsize=14, margin="0.18,0.14"];\nedge [color="#666666", penwidth=1.0, fontname="Noto Sans CJK SC", fontsize=11, arrowsize=0.7];\n'
+def save(view,body):
+ p=ROOT/(view['stem']+'.puml');p.write_text('@startdot\n'+body+'}\n@enddot\n',encoding='utf-8')
+ view['visual_style']='按用户参考：白底圆角细灰线、紫色小图标；保留原语义，PlantUML @startdot投影'
+ view['model_sha256']=hashlib.sha256((ROOT/view['model_file']).read_bytes()).hexdigest()
+ records.append(view)
 
-# RD: 从当前SysML读取每个原子需求的短ID、标识和doc正文；不补造derive/satisfy关系。
+rdnames={
+ '3.3.1.2':['制热请求输入','环境与电池热负荷适配','电加热使能条件','电加热通断控制','电加热过温保护','加热状态反馈','舱内外温度信息获取'],
+ '3.3.1.6':['AUTO请求与状态','环境与温度信息采集','自动温控协调','目标温度调节','循环操作保持AUTO','模式退出与切换','AC操作处理'],
+ '3.3.1.9':['风窗请求与反馈','前风窗模式配置','空调状态反馈','模式保持与退出','除湿制冷与优先级','低电量除霜许可']}
 data={r['req_id']:r for r in json.loads((ROOT/'03_结构化需求清单/结构化需求清单.json').read_text())}
-for rid in ['3.3.1.2','3.3.1.6','3.3.1.9']:
- source=MODEL/(rid+'-需求图.sysml');s=source.read_text()
+for v in manifest['views']:
+ if v['view_type']!='01_需求图':continue
+ source=ROOT/v['model_file'];s=source.read_text();rid=re.search(r"requirement def <'([^']+)'>",s)[1]
  leaves=re.findall(r"requirement <'([^']+)'> (\w+) \{\s*doc /\*(.*?)\*/\s*}",s,re.S)
- body='left to right direction\nskinparam nodesep 30\nskinparam ranksep 55\n'
- body+='class "'+data[rid]['name']+'" as MAIN <<requirement>> {\n Id = '+rid+'\n}\n'
- for i,(ident,alias,doc) in enumerate(leaves):
-  # 整理文档空白，数值和比较关系保留。
-  text=' '.join(doc.split())
-  body+='class "'+ident+'\\n'+alias+'" as R'+str(i)+' <<requirement>> {\n Text = '+wrap(text,23)+'\n}\n'
-  body+='MAIN *-- R'+str(i)+' : 包含\n'
- body+='legend bottom\n原RD嵌套包含关系；保留原编号。\nXXX/TBD和标定说明保留；图中未新增deriveReqt或satisfy。\nendlegend\n'
- make('01_需求图',rid+'-需求图',rid+' '+data[rid]['name']+' — 需求图',body,source,dict(requirement_ids=[rid]+[x[0] for x in leaves],relation_semantics='原SysML需求嵌套包含'))
+ b=start(rid+' '+data[rid]['name']+' · 需求图',', layout=neato, overlap=false, notranslate=true')
+ title=f'<FONT COLOR="#8070AC">▣</FONT> «requirement def»<BR/><B>{esc(data[rid]["name"])}</B><BR/>{rid} · 系统需求'
+ b+='MAIN [pos="0,0!", shape=plain, label=<<TABLE BORDER="1" COLOR="#858585" CELLBORDER="0" CELLSPACING="0" CELLPADDING="10" STYLE="ROUNDED"><TR><TD>'+title+'</TD></TR><TR><TD BORDER="1" SIDES="T"><I>doc</I><BR/>原需求层次保留</TD></TR></TABLE>>];\n'
+ positions=[(-4.5,3.3),(0,4.7),(4.5,3.3),(-4.7,0.2),(4.7,0.2),(-3.0,-3.4),(3.0,-3.4)] if len(leaves)==7 else [(-4.5,3.3),(0,4.7),(4.5,3.3),(-4.7,-0.2),(4.7,-0.2),(0,-3.7)]
+ for i,((ident,alias,doc),(x,y),name) in enumerate(zip(leaves,positions,rdnames[rid])):
+  label='<FONT COLOR="#8070AC">▣</FONT> «requirement»<BR/>'+ident+'<BR/>'+lines(name,14)+'<BR/><FONT POINT-SIZE="11">系统需求</FONT>'
+  b+=f'R{i} [pos="{x},{y}!", width=2.6, height=0.95, label=<{label}>];\n'
+  b+=f'MAIN -> R{i} [dir=both, arrowtail=diamond, arrowhead=none];\n'
+  b+=comment(ident+' | '+alias+' | '+' '.join(doc.split()))
+  details.append(dict(requirement_id=ident,display_name=name,model_alias=alias,text=' '.join(doc.split()),source_model=v['model_file']))
+ b+=comment('连线保留原SysML嵌套包含含义；中心端菱形不表示新增deriveReqt/satisfy。详细doc见需求条目明细。')
+ v['display_names']=dict(zip([x[0] for x in leaves],rdnames[rid]));save(v,b)
 
-# ACT: 读取原有阶段名称；在相应阶段内展开其doc已明示条件/模式差异。
-for rid in ['3.3.1.2','3.3.1.6','3.3.1.9']:
- source=MODEL/(rid+'-需求活动图.sysml');s=source.read_text()
- actions=re.findall(r"\baction '([^']+)'",s)[1:]
- phase=lambda i:':'+wrap(actions[i],26)+';\n'
- part=lambda i:'partition "'+wrap(actions[i],28)+'" {\n'
- body='start\n'
+# 带«action»的虚线动作网络；阶段来自模型，分支条件沿用上版已核对doc规则。
+for v in manifest['views']:
+ if v['view_type']!='02_需求活动图':continue
+ rid=Path(v['model_file']).name.split('-')[0];s=(ROOT/v['model_file']).read_text()
+ phases=re.findall(r"\baction '([^']+)'",s)[1:];nodes={f'A{i}':x for i,x in enumerate(phases)};edges=[]
+ b=start(rid+' '+data[rid]['name']+' · 需求活动图',', rankdir=TB, ranksep=0.65, dpi=130')
  if rid=='3.3.1.2':
-  body+=phase(0)+phase(1)
-  body+=part(2)+'''if (全部使能条件满足？) then (是)
-:允许电加热输出;
-else (否)
-:禁止/保持关闭电加热输出;
-endif
-}
-note right
-空气输送已开启；目标温度 > 室内温度；
-高压可用；整车无故障；SOC > 10%。
-end note
-'''
-  body+=part(3)+'''if (已触发且尚未解除过温保护？) then (是)
-if (温度 <= 恢复XXX℃？) then (是)
-:重新允许加热\n（仍须满足全部使能条件）;
-else (否)
-:保持保护禁止状态;
-endif
-else (否)
-if (电加热温度 >= 上限XXX℃？) then (是)
-:停止电加热输出；进入保护状态;
-else (否)
-:按当前许可控制加热;
-endif
-endif
-}
-note right
-温度上限/恢复阈值待标定；
-电加热温度按50 ms检测（SL29 4.6.3.5）。
-持续监测，不表示只检测一次。
-end note
-'''+phase(4)
+  nodes.update(ON='允许电加热输出',OFF='禁止或保持关闭加热',REC='判断保护恢复条件',UNLOCK='重新允许加热\n仍须满足全部使能条件',HOLD='保持保护禁止状态',STOP='停止加热并进入保护',KEEP='按当前许可调节输出')
+  edges=[('A0','A1',''),('A1','A2','使能条件判断结果'),('A2','ON','全部条件满足'),('A2','OFF','任一条件不满足'),('ON','A3',''),('OFF','A3',''),('A3','REC','已触发且未解除保护'),('A3','STOP','未处于保护且温度≥上限XXX℃'),('A3','KEEP','未处于保护且未达上限'),('REC','UNLOCK','温度≤恢复XXX℃'),('REC','HOLD','尚未满足恢复条件'),('UNLOCK','A4',''),('HOLD','A4',''),('STOP','A4',''),('KEEP','A4','')]
+  b+='{rank=same; ON; OFF;}\n{rank=same; REC; STOP; KEEP;}\n{rank=same; UNLOCK; HOLD;}\n'
+  note='使能：送风开启、目标温度>舱温、高压可用、无整车故障、SOC>10%。\n电加热温度检测50 ms；上限/恢复阈值XXX待标定。'
  elif rid=='3.3.1.6':
-  body+=''.join(phase(i) for i in range(4))
-  body+=part(4)+'''switch (AUTO内的用户操作)
-case (温度 / 循环)
-:保持AUTO；更新对应设置;
-case (风量 / 吹风模式)
-:退出AUTO；其余指定项仍自动;
-case (前除霜)
-:进入前除霜状态;
-case (AC)
-:关闭制冷请求；转速请求=0;
-:AUTO反馈Close；\n风量、温度、模式、循环仍自动;
-case (AUTO再次操作)
-:原文invalid；具体交互待确认;
-endswitch
-}
-'''+phase(5)
-  body+='note right\n目标温度<16℃为LO，>30℃为HI；\n每次调节0.5℃，不补造默认温度。\nend note\n'
+  nodes.update(TEMP='保持AUTO并更新设置',MANUAL='退出AUTO\n其余指定项仍自动',DEF='进入前除霜状态',AC='关闭制冷请求\n转速请求=0',CLOSE='AUTO反馈Close\n风量/温度/模式/循环仍自动',INVALID='重复AUTO操作：invalid\n具体交互待确认')
+  edges=[('A0','A1',''),('A1','A2',''),('A2','A3',''),('A3','A4',''),('A4','TEMP','温度/循环操作'),('A4','MANUAL','风量/吹风模式操作'),('A4','DEF','前除霜操作'),('A4','AC','AC操作'),('A4','INVALID','再次AUTO操作'),('AC','CLOSE',''),('TEMP','A5',''),('MANUAL','A5',''),('DEF','A5',''),('CLOSE','A5',''),('INVALID','A5','')]
+  b+='{rank=same; TEMP; MANUAL; DEF; AC; INVALID;}\n'
+  note='温度<16℃为LO，>30℃为HI；每次调节0.5℃。\nAUTO反馈状态与各局部自动控制行为分别表达。'
  else:
-  body+=phase(0)+phase(1)
-  body+='if (有依据的前除霜/前除雾请求？) then (是)\n'+phase(2)
-  body+='note right\n对应风口、最大风量、外循环；\n外循环90%待定；温度保持。\nend note\n'
-  body+=phase(3)
-  body+='note right\n环境温度决定AC请求；除湿转速最低1000 r/min待标定。\nSL29优先级/低SOC许可按其适用条件，XX阈值未定；\n不把场景二35℃移作仲裁门限。\nend note\n'
-  body+=phase(4)+phase(5)
-  body+='else (后风窗等缺少依据)\n:停留在待确认处理；\n不套用前风窗控制配置;\nendif\n'
- body+='stop\nlegend bottom\n保留原阶段顺序；阶段内部按当前SysML动作doc展开。\n这是一次评估/处理片段，终点不表示全系统持续调节或监测停止。\n未规定的控制算法、周期和标定值不补造。\nendlegend\n'
- make('02_需求活动图',rid+'-需求活动图',rid+' '+data[rid]['name']+' — 需求活动图',body,source,dict(phase_names=actions,projection='原阶段主链＋动作doc明示规则展开；不是原平台执行仿真'))
+  nodes.update(PENDING='后风窗请求保持待确认\n不套用前风窗控制配置')
+  edges=[('A0','A1',''),('A1','A2','有依据的前除霜/前除雾请求'),('A1','PENDING','后风窗等缺少依据'),('A2','A3',''),('A3','A4',''),('A4','A5','')]
+  b+='{rank=same; A2; PENDING;}\n'
+  note='对应风口、最大风量、外循环90%待定、温度保持。\nAC请求依据环境温度；除湿最低1000 r/min待标定；仲裁XX阈值未定。'
+ for alias,name in nodes.items():
+  b+=alias+' [width=2.4, height=0.65, label=<<FONT COLOR="#8070AC">▣</FONT> «action»<BR/>'+lines(name,12)+'>];\n'
+ for a,c,condition in edges:
+  b+=a+' -> '+c+' [style=dashed, arrowhead=vee'+(', xlabel='+q('\n'.join(textwrap.wrap(condition,12))) if condition else '')+'];\n'
+ # 使用独立说明框承载标定信息，避免把说明当控制节点。
+ b+='NOTE [shape=note, style=filled, fillcolor="white", fontsize=11, label='+q(note+'\n保留原阶段和doc规则；一次评估片段不代表持续监测停止。')+'];\n'
+ b+=f'A{len(phases)-1} -> NOTE [style=invis];\n'
+ v['phase_names']=phases;v['action_network']=dict(nodes=nodes,edges=[dict(source=a,target=c,condition=d) for a,c,d in edges]);save(v,b)
 
-# UC: 原3用例、两类参与者和objective require映射保持不变。
-source=next(MODEL.glob('*需求用例图.sysml'));s=source.read_text()
-ucs=re.findall(r"use case def '([^']+)'",s)
-actors=re.findall(r"actor \w+ : '([^']+)'",s);actors=list(dict.fromkeys(actors))
-subject=re.search(r"subject \w+ : '([^']+)'",s)[1]
-body='left to right direction\n'
-for i,actor in enumerate(actors):body+='actor "'+actor+'" as A'+str(i)+'\n'
-body+='rectangle "'+subject+'" {\n'
-for i,uc in enumerate(ucs):body+='usecase "'+uc+'" as UC'+str(i)+'\n'
-body+='}\n'
-for i,_ in enumerate(ucs):
- for j,_ in enumerate(actors):body+='A'+str(j)+' -- UC'+str(i)+'\n'
- rid=['3.3.1.2','3.3.1.6','3.3.1.9'][i]
- body+='note right of UC'+str(i)+'\n对应需求 '+rid+'\nobjective require req'+rid.replace('.','')[1:]+'\nend note\n'
-body+='legend bottom\n保留原参与者、3个用例及需求追溯；未新增include/extend。\n风窗用例中，后风窗控制细节仍待补充依据。\nendlegend\n'
-# req3312等原标识直接从模型取出，避免字符串推算错误。
-reqaliases=re.findall(r'\brequire (\w+);',s)
-for i,alias in enumerate(reqaliases):
- wrong='req'+['3.3.1.2','3.3.1.6','3.3.1.9'][i].replace('.','')[1:]
- body=body.replace('objective require '+wrong+'\n','objective require '+alias+'\n')
-make('03_需求用例图','综合-需求用例图','热管理三条需求 — 综合用例图',body,source,dict(use_cases=ucs,actors=actors,require_aliases=reqaliases))
-
-# BDD: 从实际SysML解析原7个角色的端口及8条interface connect，不发明端口。
-source=next(MODEL.glob('*BDD图.sysml'));s=source.read_text()
-partdefs={name:ports for name,ports in re.findall(r"part def '([^']+)' \{(.*?)\n    }",s,re.S)}
-parts=re.findall(r"\bpart (\w+) : '([^']+)';",s)
-parts=[(alias,name) for alias,name in parts if name!='热管理控制外部环境']
+# BDD方形端口：每个原端口是真实可连接的HTML table PORT，而不是新增物理实体。
+v=next(x for x in manifest['views'] if x['view_type']=='04_需求外部环境BDD图')
+s=(ROOT/v['model_file']).read_text()
+defs={name:ports for name,ports in re.findall(r"part def '([^']+)' \{(.*?)\n    }",s,re.S)}
+parts=[(a,n) for a,n in re.findall(r"\bpart (\w+) : '([^']+)';",s) if n!='热管理控制外部环境']
 connections=re.findall(r'\binterface (\w+) : (\w+)\s+connect ([\w.]+) to ([\w.]+);',s)
-ports={}
-for name,chunk in re.findall(r'port def (\w+) \{(.*?)\n    }',s,re.S):
- ports[name]=re.findall(r'out attribute (\w+) : (\w+);',chunk)
-body='left to right direction\nskinparam nodesep 70\nskinparam ranksep 90\n'
+portdata={a:re.findall(r'port (\w+) : (~?\w+);',defs[n]) for a,n in parts}
+portnames={'requestIn':'用户请求输入','requestOut':'用户请求输出','statusIn':'状态显示接收','statusOut':'控制状态反馈','vehicleStateIn':'整车状态输入','stateOut':'整车状态输出','sensorDataIn':'温度环境输入','dataOut':'温度环境输出','actuatorCommandOut':'调节指令输出','commandIn':'调节指令接收','cabinEffectOut':'抽象调节效果输出','effectIn':'抽象效果接收'}
+outputs={x for _,_,x,_ in connections};pos={'SYS':(0,0),'CAN':(0,5),'IVI':(-4.8,5),'VEHICLE':(-6.2,0.8),'SENSORS':(-6.2,-2.3),'ACTUATORS':(6.2,0.8),'CABIN_WINDSCREEN':(6.2,-2.3)}
+b=start('热管理三条需求 · 外部环境模型',', layout=neato, overlap=true, notranslate=true, splines=line')
+b+='subgraph cluster_context {label="热管理逻辑控制外部环境"; color="#858585"; penwidth=1.1;\n'
+positions={'SYS':(0,0,3.8,3.0),'IVI':(0,4.6,3.6,0.9),'CAN':(0,2.8,3.6,0.9),'VEHICLE':(-6.2,0.8,3.7,1.0),'SENSORS':(-6.2,-1.2,3.7,1.0),'ACTUATORS':(6.2,0.8,3.7,1.0),'CABIN_WINDSCREEN':(6.2,-1.2,3.7,1.0)}
+pins={
+ 'SYS.requestIn':(-0.65,1.5), 'SYS.statusOut':(0.65,1.5),
+ 'SYS.vehicleStateIn':(-1.9,0.6), 'SYS.sensorDataIn':(-1.9,-0.6),
+ 'SYS.actuatorCommandOut':(1.9,0.6), 'SYS.cabinEffectOut':(1.9,-0.6),
+ 'IVI.requestOut':(-0.65,4.15), 'IVI.statusIn':(0.65,4.15),
+ 'CAN.requestIn':(-0.65,3.25), 'CAN.statusOut':(0.65,3.25),
+ 'CAN.requestOut':(-0.65,2.35), 'CAN.statusIn':(0.65,2.35),
+ 'VEHICLE.stateOut':(-4.35,0.8),'SENSORS.dataOut':(-4.35,-1.2),
+ 'ACTUATORS.commandIn':(4.35,0.8),'CABIN_WINDSCREEN.effectIn':(4.35,-1.2)}
+labels={
+ 'SYS.requestIn':(-1.9,1.85),'SYS.statusOut':(1.9,1.85),
+ 'CAN.requestOut':(-1.9,2.05),'CAN.statusIn':(1.9,2.05),
+ 'CAN.requestIn':(-1.9,3.55),'CAN.statusOut':(1.9,3.55),
+ 'IVI.requestOut':(-1.9,3.9),'IVI.statusIn':(1.9,3.9),
+ 'SYS.vehicleStateIn':(-2.8,0.25),'SYS.sensorDataIn':(-2.8,-0.25),
+ 'SYS.actuatorCommandOut':(2.8,0.25),'SYS.cabinEffectOut':(2.8,-0.25),
+ 'VEHICLE.stateOut':(-3.8,1.15),'SENSORS.dataOut':(-3.8,-1.55),
+ 'ACTUATORS.commandIn':(3.8,1.15),'CABIN_WINDSCREEN.effectIn':(3.8,-1.55)}
 for alias,name in parts:
- body+='class "'+name+'" as '+alias+(' <<system>>' if alias=='SYS' else ' <<external role>>')+' {\n'
- for port,typ in re.findall(r'port (\w+) : (~?\w+);',partdefs[name]):body+=' '+port+' : '+typ+'\n'
- body+='}\n'
-for alias,typ,start,end in connections:
- a,ap=start.split('.');b,bp=end.split('.')
- body+=a+' --> '+b+' : '+alias+'\\n'+typ+'\\n'+ap+' → '+bp+'\n'
-body+='legend bottom left\n端口特征（均保留原接口语义）\n'
-for name,fields in ports.items():
- body+=''+name+':\n'+'\n'.join(', '.join(k+':'+t for k,t in fields[i:i+2]) for i in range(0,len(fields),2))+'\n'
-body+='----\n~表示原模型共轭端口；箭头表示原interface connect的信息流向。\n物理部署/供货归属不由本黑盒图裁定；不展开CAN内部转发。\nendlegend\n'
-make('04_需求外部环境BDD图','综合-需求外部环境BDD图','热管理逻辑控制服务 — 外部环境 BDD',body,source,dict(parts=parts,connections=[dict(name=a,interface_type=t,source=x,target=y) for a,t,x,y in connections],port_type_features=ports))
+ x,y,w,h=positions[alias];display={'CABIN_WINDSCREEN':'cabin'}.get(alias,alias.lower())
+ label='<FONT COLOR="#8070AC">▣</FONT> «part»<BR/>'+display+' : '+lines(name,13)
+ b+=alias+f' [pos="{x},{y}!", width={w}, height={h}, fixedsize=true, label=<'+label+'>];\n'
+ for port,typ in portdata[alias]:
+  key=alias+'.'+port;px,py=pins[key];lx,ly=labels[key];pid=alias+'__'+port
+  b+=pid+f' [shape=box, style=filled, pos="{px},{py}!", width=0.12, height=0.12, fixedsize=true, margin=0, label=""];\n'
+  b+=pid+'_label'+f' [shape=plain, pos="{lx},{ly}!", fontsize=11, label='+q(portnames[port])+'];\n'
+  b+=comment(key+' : '+typ+'；方形端口为原part上的端口，不是新增外部角色')
+for alias,typ,a,c in connections:
+ aa,ap=a.split('.');cc,cp=c.split('.')
+ src=aa+'__'+ap;dst=cc+'__'+cp;xy1=pins[a];xy2=pins[c]
+ if xy1[0]==xy2[0] or xy1[1]==xy2[1]:
+  b+=src+' -> '+dst+' [dir=none];\n'
+ else:
+  mid=(xy1[0]+xy2[0])/2;g1=alias+'_bend1';g2=alias+'_bend2'
+  for guide,x,y in [(g1,mid,xy1[1]),(g2,mid,xy2[1])]:b+=guide+f' [shape=point, pos="{x},{y}!", width=0, height=0, style=invis, label=""];\n'
+  b+=src+' -> '+g1+' -> '+g2+' -> '+dst+' [dir=none];\n'
+ b+=comment(alias+' : '+typ+' connect '+a+' to '+c)
+for name,fields in v['port_type_features'].items():b+=comment(name+' '+', '.join(k+':'+t for k,t in fields))
+b+=comment('保留原7个角色、6种端口类型及8个interface connect；原技术特征见外部接口明细。布局不裁定物理归属。')
+b+='}\n'
+save(v,b)
 
+# 用例图所有格式不写入、不重新渲染。
+records.append(original_uc);records.sort(key=lambda r:(r['view_type'],r['stem']))
 env={**os.environ,'PLANTUML_LIMIT_SIZE':'16384','XDG_CACHE_HOME':'/workspace/.cache'}
-files=[str(ROOT/(r['stem']+'.puml')) for r in records]
-for fmt in ['png','svg']:
- subprocess.run(['java','-Djava.awt.headless=true','-jar',str(args.jar),'-charset','UTF-8','-failfast2','-t'+fmt,*files],check=True,env=env)
-for r in records:
- r['artifacts']={}
- for ext in ['puml','png','svg']:
-  p=ROOT/(r['stem']+'.'+ext);assert p.is_file() and p.stat().st_size>0
-  r['artifacts'][ext]=dict(file=str(p.relative_to(ROOT)),bytes=p.stat().st_size,sha256=hashlib.sha256(p.read_bytes()).hexdigest())
-  if ext=='svg':
-   tree=ET.parse(p)
-   text=''.join(tree.getroot().itertext())
-   assert 'Syntax Error' not in text and 'Error line' not in text
+targets=[str(ROOT/(v['stem']+'.puml')) for v in records if v['view_type']!='03_需求用例图']
+for target in targets:
+ for ext in ['png','svg']:
+  subprocess.run(['java','-Djava.awt.headless=true','-jar',str(args.jar),'-charset','UTF-8','-failfast2','-t'+ext,target],check=True,env=env)
+  artifact=Path(target).with_suffix('.'+ext)
   if ext=='png':
-   with Image.open(p) as im:r['png_dimensions']=list(im.size);im.verify()
-manifest=dict(tool='PlantUML 1.2026.9',jar_sha256=hashlib.sha256(args.jar.read_bytes()).hexdigest(),source_type='当前SysML文本投影，ACT含doc规则可视化展开；不代表SysML编译通过',views=records)
+   with Image.open(artifact) as check:check.verify()
+  else:ET.parse(artifact)
+for view in records:
+ if view['view_type']=='03_需求用例图':continue
+ for ext in ['puml','png','svg']:
+  p=ROOT/(view['stem']+'.'+ext);assert p.is_file() and p.stat().st_size>0
+  view['artifacts'][ext]=dict(file=str(p.relative_to(ROOT)),bytes=p.stat().st_size,sha256=hashlib.sha256(p.read_bytes()).hexdigest())
+  if ext=='png':
+   with Image.open(p) as im:view['png_dimensions']=list(im.size);im.verify()
+  if ext=='svg':
+   tree=ET.parse(p);assert 'Syntax Error' not in ''.join(tree.getroot().itertext())
+assert all(hashlib.sha256((ROOT/original_uc['artifacts'][e]['file']).read_bytes()).hexdigest()==h for e,h in uc_before.items())
+manifest['views']=records;manifest['visual_revision']='按用户三张参考图调整RD/ACT/BDD；UC字节不变；2026-11-03'
+manifest['source_type']='当前SysML投影视图；参考样式采用PlantUML @startdot；UC原样保留；未运行SysML编译'
 (OUT/'渲染与模型对应清单.json').write_text(json.dumps(manifest,ensure_ascii=False,indent=2)+'\n')
-print('Rendered',len(records),'views,',len(records)*3,'artifacts')
-for r in records:print(r['stem'],r['png_dimensions'])
+(OUT/'需求条目明细.json').write_text(json.dumps(details,ensure_ascii=False,indent=2)+'\n')
+md='# 需求条目明细\n\n需求图改为参考图的简洁卡片；原doc正文完整保留在本表及SysML中，不因图形精简而删除要求。\n\n|需求ID|图中名称|原模型标识|原doc|\n|---|---|---|---|\n'
+for d in details:md+='|'+d['requirement_id']+'|'+d['display_name']+'|'+d['model_alias']+'|'+d['text']+'|\n'
+(OUT/'需求条目明细.md').write_text(md)
+md='# 外部接口明细\n\nBDD按参考图显示方形端口及中文角色，接口定义及特征仍以当前SysML为准。未添加参考图中的BMS、电驱或远控等不属于原三需求模型的角色。\n\n|接口ID|接口类型|来源端口|目标端口|\n|---|---|---|---|\n'
+for a,t,x,y in connections:md+='|'+a+'|'+t+'|'+x+'|'+y+'|\n'
+md+='\n## 端口特征\n\n'
+for t,fields in v['port_type_features'].items():md+='- '+t+'：'+', '.join(k+':'+typ for k,typ in fields)+'\n'
+(OUT/'外部接口明细.md').write_text(md)
+print('Restyled 7 sets (21 files); use case puml/png/svg unchanged.')
+for view in records:print(view['stem'],view['png_dimensions'])

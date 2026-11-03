@@ -1,89 +1,95 @@
-@startuml
-skinparam defaultFontName Noto Sans CJK SC
-skinparam defaultFontSize 14
-skinparam dpi 140
-skinparam shadowing false
-skinparam backgroundColor white
-skinparam ArrowColor #35566C
-skinparam NoteBackgroundColor #FFF5D6
-skinparam NoteBorderColor #C9AD66
-skinparam roundcorner 10
-skinparam packageStyle rectangle
-skinparam classBackgroundColor #EAF3FB
-skinparam classBorderColor #496C84
-skinparam activityBackgroundColor #EAF3FB
-skinparam activityBorderColor #496C84
-skinparam usecaseBackgroundColor #EAF3FB
-hide empty members
-hide circle
-title 热管理逻辑控制服务 — 外部环境 BDD
-left to right direction
-skinparam nodesep 70
-skinparam ranksep 90
-class "热管理逻辑控制服务" as SYS <<system>> {
- requestIn : ~ThermalRequestPort
- statusOut : ThermalStatusPort
- vehicleStateIn : ~VehicleStatePort
- sensorDataIn : ~SensorDataPort
- actuatorCommandOut : ActuatorCommandPort
- cabinEffectOut : CabinEffectPort
+@startdot
+digraph G {
+graph [bgcolor="white", fontname="Noto Sans CJK SC", fontsize=20, labelloc=t, label="热管理三条需求 · 外部环境模型", pad=0.45, nodesep=0.65, ranksep=1.0, splines=ortho, dpi=150, layout=neato, overlap=true, notranslate=true, splines=line];
+node [shape=box, style="rounded,filled", fillcolor="white", color="#858585", penwidth=1.1, fontname="Noto Sans CJK SC", fontsize=14, margin="0.18,0.14"];
+edge [color="#666666", penwidth=1.0, fontname="Noto Sans CJK SC", fontsize=11, arrowsize=0.7];
+subgraph cluster_context {label="热管理逻辑控制外部环境"; color="#858585"; penwidth=1.1;
+SYS [pos="0,0!", width=3.8, height=3.0, fixedsize=true, label=<<FONT COLOR="#8070AC">▣</FONT> «part»<BR/>sys : 热管理逻辑控制服务>];
+SYS__requestIn [shape=box, style=filled, pos="-0.65,1.5!", width=0.12, height=0.12, fixedsize=true, margin=0, label=""];
+SYS__requestIn_label [shape=plain, pos="-1.9,1.85!", fontsize=11, label="用户请求输入"];
+// SYS.requestIn : ~ThermalRequestPort；方形端口为原part上的端口，不是新增外部角色
+SYS__statusOut [shape=box, style=filled, pos="0.65,1.5!", width=0.12, height=0.12, fixedsize=true, margin=0, label=""];
+SYS__statusOut_label [shape=plain, pos="1.9,1.85!", fontsize=11, label="控制状态反馈"];
+// SYS.statusOut : ThermalStatusPort；方形端口为原part上的端口，不是新增外部角色
+SYS__vehicleStateIn [shape=box, style=filled, pos="-1.9,0.6!", width=0.12, height=0.12, fixedsize=true, margin=0, label=""];
+SYS__vehicleStateIn_label [shape=plain, pos="-2.8,0.25!", fontsize=11, label="整车状态输入"];
+// SYS.vehicleStateIn : ~VehicleStatePort；方形端口为原part上的端口，不是新增外部角色
+SYS__sensorDataIn [shape=box, style=filled, pos="-1.9,-0.6!", width=0.12, height=0.12, fixedsize=true, margin=0, label=""];
+SYS__sensorDataIn_label [shape=plain, pos="-2.8,-0.25!", fontsize=11, label="温度环境输入"];
+// SYS.sensorDataIn : ~SensorDataPort；方形端口为原part上的端口，不是新增外部角色
+SYS__actuatorCommandOut [shape=box, style=filled, pos="1.9,0.6!", width=0.12, height=0.12, fixedsize=true, margin=0, label=""];
+SYS__actuatorCommandOut_label [shape=plain, pos="2.8,0.25!", fontsize=11, label="调节指令输出"];
+// SYS.actuatorCommandOut : ActuatorCommandPort；方形端口为原part上的端口，不是新增外部角色
+SYS__cabinEffectOut [shape=box, style=filled, pos="1.9,-0.6!", width=0.12, height=0.12, fixedsize=true, margin=0, label=""];
+SYS__cabinEffectOut_label [shape=plain, pos="2.8,-0.25!", fontsize=11, label="抽象调节效果输出"];
+// SYS.cabinEffectOut : CabinEffectPort；方形端口为原part上的端口，不是新增外部角色
+IVI [pos="0,4.6!", width=3.6, height=0.9, fixedsize=true, label=<<FONT COLOR="#8070AC">▣</FONT> «part»<BR/>ivi : IVI中控交互系统>];
+IVI__requestOut [shape=box, style=filled, pos="-0.65,4.15!", width=0.12, height=0.12, fixedsize=true, margin=0, label=""];
+IVI__requestOut_label [shape=plain, pos="-1.9,3.9!", fontsize=11, label="用户请求输出"];
+// IVI.requestOut : ThermalRequestPort；方形端口为原part上的端口，不是新增外部角色
+IVI__statusIn [shape=box, style=filled, pos="0.65,4.15!", width=0.12, height=0.12, fixedsize=true, margin=0, label=""];
+IVI__statusIn_label [shape=plain, pos="1.9,3.9!", fontsize=11, label="状态显示接收"];
+// IVI.statusIn : ~ThermalStatusPort；方形端口为原part上的端口，不是新增外部角色
+CAN [pos="0,2.8!", width=3.6, height=0.9, fixedsize=true, label=<<FONT COLOR="#8070AC">▣</FONT> «part»<BR/>can : 车载CAN通信网络>];
+CAN__requestIn [shape=box, style=filled, pos="-0.65,3.25!", width=0.12, height=0.12, fixedsize=true, margin=0, label=""];
+CAN__requestIn_label [shape=plain, pos="-1.9,3.55!", fontsize=11, label="用户请求输入"];
+// CAN.requestIn : ~ThermalRequestPort；方形端口为原part上的端口，不是新增外部角色
+CAN__requestOut [shape=box, style=filled, pos="-0.65,2.35!", width=0.12, height=0.12, fixedsize=true, margin=0, label=""];
+CAN__requestOut_label [shape=plain, pos="-1.9,2.05!", fontsize=11, label="用户请求输出"];
+// CAN.requestOut : ThermalRequestPort；方形端口为原part上的端口，不是新增外部角色
+CAN__statusIn [shape=box, style=filled, pos="0.65,2.35!", width=0.12, height=0.12, fixedsize=true, margin=0, label=""];
+CAN__statusIn_label [shape=plain, pos="1.9,2.05!", fontsize=11, label="状态显示接收"];
+// CAN.statusIn : ~ThermalStatusPort；方形端口为原part上的端口，不是新增外部角色
+CAN__statusOut [shape=box, style=filled, pos="0.65,3.25!", width=0.12, height=0.12, fixedsize=true, margin=0, label=""];
+CAN__statusOut_label [shape=plain, pos="1.9,3.55!", fontsize=11, label="控制状态反馈"];
+// CAN.statusOut : ThermalStatusPort；方形端口为原part上的端口，不是新增外部角色
+VEHICLE [pos="-6.2,0.8!", width=3.7, height=1.0, fixedsize=true, label=<<FONT COLOR="#8070AC">▣</FONT> «part»<BR/>vehicle : 整车状态与电源管理系统>];
+VEHICLE__stateOut [shape=box, style=filled, pos="-4.35,0.8!", width=0.12, height=0.12, fixedsize=true, margin=0, label=""];
+VEHICLE__stateOut_label [shape=plain, pos="-3.8,1.15!", fontsize=11, label="整车状态输出"];
+// VEHICLE.stateOut : VehicleStatePort；方形端口为原part上的端口，不是新增外部角色
+SENSORS [pos="-6.2,-1.2!", width=3.7, height=1.0, fixedsize=true, label=<<FONT COLOR="#8070AC">▣</FONT> «part»<BR/>sensors : 温度与环境信息提供服务>];
+SENSORS__dataOut [shape=box, style=filled, pos="-4.35,-1.2!", width=0.12, height=0.12, fixedsize=true, margin=0, label=""];
+SENSORS__dataOut_label [shape=plain, pos="-3.8,-1.55!", fontsize=11, label="温度环境输出"];
+// SENSORS.dataOut : SensorDataPort；方形端口为原part上的端口，不是新增外部角色
+ACTUATORS [pos="6.2,0.8!", width=3.7, height=1.0, fixedsize=true, label=<<FONT COLOR="#8070AC">▣</FONT> «part»<BR/>actuators : 热量与空气调节执行服务>];
+ACTUATORS__commandIn [shape=box, style=filled, pos="4.35,0.8!", width=0.12, height=0.12, fixedsize=true, margin=0, label=""];
+ACTUATORS__commandIn_label [shape=plain, pos="3.8,1.15!", fontsize=11, label="调节指令接收"];
+// ACTUATORS.commandIn : ~ActuatorCommandPort；方形端口为原part上的端口，不是新增外部角色
+CABIN_WINDSCREEN [pos="6.2,-1.2!", width=3.7, height=1.0, fixedsize=true, label=<<FONT COLOR="#8070AC">▣</FONT> «part»<BR/>cabin : 乘员舱与前风窗环境>];
+CABIN_WINDSCREEN__effectIn [shape=box, style=filled, pos="4.35,-1.2!", width=0.12, height=0.12, fixedsize=true, margin=0, label=""];
+CABIN_WINDSCREEN__effectIn_label [shape=plain, pos="3.8,-1.55!", fontsize=11, label="抽象效果接收"];
+// CABIN_WINDSCREEN.effectIn : ~CabinEffectPort；方形端口为原part上的端口，不是新增外部角色
+IVI__requestOut -> CAN__requestIn [dir=none];
+// requestIVIToCAN : ThermalRequestInterface connect IVI.requestOut to CAN.requestIn
+CAN__requestOut -> SYS__requestIn [dir=none];
+// requestCANToSYS : ThermalRequestInterface connect CAN.requestOut to SYS.requestIn
+SYS__statusOut -> CAN__statusIn [dir=none];
+// statusSYSOutToCAN : ThermalStatusInterface connect SYS.statusOut to CAN.statusIn
+CAN__statusOut -> IVI__statusIn [dir=none];
+// statusCANToIVI : ThermalStatusInterface connect CAN.statusOut to IVI.statusIn
+vehicleStateToSYS_bend1 [shape=point, pos="-3.125,0.8!", width=0, height=0, style=invis, label=""];
+vehicleStateToSYS_bend2 [shape=point, pos="-3.125,0.6!", width=0, height=0, style=invis, label=""];
+VEHICLE__stateOut -> vehicleStateToSYS_bend1 -> vehicleStateToSYS_bend2 -> SYS__vehicleStateIn [dir=none];
+// vehicleStateToSYS : VehicleStateInterface connect VEHICLE.stateOut to SYS.vehicleStateIn
+sensorDataToSYS_bend1 [shape=point, pos="-3.125,-1.2!", width=0, height=0, style=invis, label=""];
+sensorDataToSYS_bend2 [shape=point, pos="-3.125,-0.6!", width=0, height=0, style=invis, label=""];
+SENSORS__dataOut -> sensorDataToSYS_bend1 -> sensorDataToSYS_bend2 -> SYS__sensorDataIn [dir=none];
+// sensorDataToSYS : SensorDataInterface connect SENSORS.dataOut to SYS.sensorDataIn
+actuatorCommandsToHVAC_bend1 [shape=point, pos="3.125,0.6!", width=0, height=0, style=invis, label=""];
+actuatorCommandsToHVAC_bend2 [shape=point, pos="3.125,0.8!", width=0, height=0, style=invis, label=""];
+SYS__actuatorCommandOut -> actuatorCommandsToHVAC_bend1 -> actuatorCommandsToHVAC_bend2 -> ACTUATORS__commandIn [dir=none];
+// actuatorCommandsToHVAC : ActuatorCommandInterface connect SYS.actuatorCommandOut to ACTUATORS.commandIn
+cabinEffectsFromSYS_bend1 [shape=point, pos="3.125,-0.6!", width=0, height=0, style=invis, label=""];
+cabinEffectsFromSYS_bend2 [shape=point, pos="3.125,-1.2!", width=0, height=0, style=invis, label=""];
+SYS__cabinEffectOut -> cabinEffectsFromSYS_bend1 -> cabinEffectsFromSYS_bend2 -> CABIN_WINDSCREEN__effectIn [dir=none];
+// cabinEffectsFromSYS : CabinEffectInterface connect SYS.cabinEffectOut to CABIN_WINDSCREEN.effectIn
+// ThermalRequestPort heatingRequest:Boolean, autoModeRequest:Boolean, frontDefrostRequest:Boolean, frontDemistRequest:Boolean, targetTemperature:Real
+// ThermalStatusPort heatingActive:Boolean, autoModeActive:Boolean, frontDefrostActive:Boolean, frontDemistActive:Boolean
+// VehicleStatePort highVoltageAvailable:Boolean, vehicleFaultActive:Boolean, stateOfCharge:Real
+// SensorDataPort cabinTemperature:Real, ambientTemperature:Real, sunLoad:Real, heaterCoreInletTemperature:Real, ptcTemperature:Real
+// ActuatorCommandPort ptcEnable:Boolean, blowerCommand:Real, compressorRequest:Boolean, airDistributionMode:Real, recirculationRequest:Boolean
+// CabinEffectPort cabinHeatingEffect:Boolean, frontWindscreenDefrostEffect:Boolean, frontWindscreenDemistEffect:Boolean
+// 保留原7个角色、6种端口类型及8个interface connect；原技术特征见外部接口明细。布局不裁定物理归属。
 }
-class "IVI中控交互系统" as IVI <<external role>> {
- requestOut : ThermalRequestPort
- statusIn : ~ThermalStatusPort
 }
-class "车载CAN通信网络" as CAN <<external role>> {
- requestIn : ~ThermalRequestPort
- requestOut : ThermalRequestPort
- statusIn : ~ThermalStatusPort
- statusOut : ThermalStatusPort
-}
-class "整车状态与电源管理系统" as VEHICLE <<external role>> {
- stateOut : VehicleStatePort
-}
-class "温度与环境信息提供服务" as SENSORS <<external role>> {
- dataOut : SensorDataPort
-}
-class "热量与空气调节执行服务" as ACTUATORS <<external role>> {
- commandIn : ~ActuatorCommandPort
-}
-class "乘员舱与前风窗环境" as CABIN_WINDSCREEN <<external role>> {
- effectIn : ~CabinEffectPort
-}
-IVI --> CAN : requestIVIToCAN\nThermalRequestInterface\nrequestOut → requestIn
-CAN --> SYS : requestCANToSYS\nThermalRequestInterface\nrequestOut → requestIn
-SYS --> CAN : statusSYSOutToCAN\nThermalStatusInterface\nstatusOut → statusIn
-CAN --> IVI : statusCANToIVI\nThermalStatusInterface\nstatusOut → statusIn
-VEHICLE --> SYS : vehicleStateToSYS\nVehicleStateInterface\nstateOut → vehicleStateIn
-SENSORS --> SYS : sensorDataToSYS\nSensorDataInterface\ndataOut → sensorDataIn
-SYS --> ACTUATORS : actuatorCommandsToHVAC\nActuatorCommandInterface\nactuatorCommandOut → commandIn
-SYS --> CABIN_WINDSCREEN : cabinEffectsFromSYS\nCabinEffectInterface\ncabinEffectOut → effectIn
-legend bottom left
-端口特征（均保留原接口语义）
-ThermalRequestPort:
-heatingRequest:Boolean, autoModeRequest:Boolean
-frontDefrostRequest:Boolean, frontDemistRequest:Boolean
-targetTemperature:Real
-ThermalStatusPort:
-heatingActive:Boolean, autoModeActive:Boolean
-frontDefrostActive:Boolean, frontDemistActive:Boolean
-VehicleStatePort:
-highVoltageAvailable:Boolean, vehicleFaultActive:Boolean
-stateOfCharge:Real
-SensorDataPort:
-cabinTemperature:Real, ambientTemperature:Real
-sunLoad:Real, heaterCoreInletTemperature:Real
-ptcTemperature:Real
-ActuatorCommandPort:
-ptcEnable:Boolean, blowerCommand:Real
-compressorRequest:Boolean, airDistributionMode:Real
-recirculationRequest:Boolean
-CabinEffectPort:
-cabinHeatingEffect:Boolean, frontWindscreenDefrostEffect:Boolean
-frontWindscreenDemistEffect:Boolean
-----
-~表示原模型共轭端口；箭头表示原interface connect的信息流向。
-物理部署/供货归属不由本黑盒图裁定；不展开CAN内部转发。
-endlegend
-
-@enduml
+@enddot

@@ -1,7 +1,7 @@
 {
   "tool": "PlantUML 1.2026.9",
   "jar_sha256": "96ace11f947a04a4320a413a0a2c6bad8b87daaac1869fe51e82622d812fe13c",
-  "source_type": "当前SysML文本投影，ACT含doc规则可视化展开；不代表SysML编译通过",
+  "source_type": "当前SysML投影视图；参考样式采用PlantUML @startdot；UC原样保留；未运行SysML编译",
   "views": [
     {
       "view_type": "01_需求图",
@@ -22,24 +22,34 @@
       "artifacts": {
         "puml": {
           "file": "06_模型渲染图/01_需求图/3.3.1.2-需求图.puml",
-          "bytes": 2057,
-          "sha256": "2592d30b412550cd4b93916fc81a7bcba285fb09520e7172f1c159ff66a19756"
+          "bytes": 3526,
+          "sha256": "22cc9e1b360b54a2d33046848710a84786e3105b1ead18e51b8a4b71a72f2664"
         },
         "png": {
           "file": "06_模型渲染图/01_需求图/3.3.1.2-需求图.png",
-          "bytes": 105384,
-          "sha256": "adc6b1d4f0bb680b0a3fba02a507034329d2ede1365865a800830f0d983d6f01"
+          "bytes": 191988,
+          "sha256": "4ccd5d7a95eb183ac47401c07fc302ebae71065590fab9d973c2e866d4e915f5"
         },
         "svg": {
           "file": "06_模型渲染图/01_需求图/3.3.1.2-需求图.svg",
-          "bytes": 15212,
-          "sha256": "127b0377b5d2fcf1264372c25ffe56aa8a62b23c57066074c26928b874cf7b97"
+          "bytes": 340,
+          "sha256": "815061a1bd5a955d66d08d6743456892c8d446b2cf60a501683f59dabcc470c0"
         }
       },
       "png_dimensions": [
-        845,
-        1532
-      ]
+        1373,
+        1081
+      ],
+      "display_names": {
+        "3.3.1.2-01": "制热请求输入",
+        "3.3.1.2-02": "环境与电池热负荷适配",
+        "3.3.1.2-03": "电加热使能条件",
+        "3.3.1.2-04": "电加热通断控制",
+        "3.3.1.2-05": "电加热过温保护",
+        "3.3.1.2-06": "加热状态反馈",
+        "3.3.1.2-07": "舱内外温度信息获取"
+      },
+      "visual_style": "按用户参考：白底圆角细灰线、紫色小图标；保留原语义，PlantUML @startdot投影"
     },
     {
       "view_type": "01_需求图",
@@ -60,24 +70,34 @@
       "artifacts": {
         "puml": {
           "file": "06_模型渲染图/01_需求图/3.3.1.6-需求图.puml",
-          "bytes": 2032,
-          "sha256": "da141573c616914bca057016102e218c4837c53872be8552b68674d2d41f0764"
+          "bytes": 3478,
+          "sha256": "eed113c83390df0cc08fb4b47f57bcb336cc81712192d5c2e1295ca01b16c2e5"
         },
         "png": {
           "file": "06_模型渲染图/01_需求图/3.3.1.6-需求图.png",
-          "bytes": 104706,
-          "sha256": "5c66742e29906c0b79b94b20b30d035f28f1db96cc40caedc75d319b7ef25ca1"
+          "bytes": 189936,
+          "sha256": "8203212b628f7a2b903c298eca52a9d87b2da28124b5be0760ea5564a4320e2e"
         },
         "svg": {
           "file": "06_模型渲染图/01_需求图/3.3.1.6-需求图.svg",
-          "bytes": 15512,
-          "sha256": "aeef980cdf78ee9a2216bf666de5ad8f714862cf16f3f3e35320d486e5040080"
+          "bytes": 340,
+          "sha256": "815061a1bd5a955d66d08d6743456892c8d446b2cf60a501683f59dabcc470c0"
         }
       },
       "png_dimensions": [
-        820,
-        1620
-      ]
+        1373,
+        1081
+      ],
+      "display_names": {
+        "3.3.1.6-01": "AUTO请求与状态",
+        "3.3.1.6-02": "环境与温度信息采集",
+        "3.3.1.6-03": "自动温控协调",
+        "3.3.1.6-04": "目标温度调节",
+        "3.3.1.6-05": "循环操作保持AUTO",
+        "3.3.1.6-06": "模式退出与切换",
+        "3.3.1.6-07": "AC操作处理"
+      },
+      "visual_style": "按用户参考：白底圆角细灰线、紫色小图标；保留原语义，PlantUML @startdot投影"
     },
     {
       "view_type": "01_需求图",
@@ -97,24 +117,33 @@
       "artifacts": {
         "puml": {
           "file": "06_模型渲染图/01_需求图/3.3.1.9-需求图.puml",
-          "bytes": 1983,
-          "sha256": "b26556ca19b319e8424e4832592059941da6f40f7b171ca7a3c8694486281e26"
+          "bytes": 3244,
+          "sha256": "416db42447c2ee5d7d0be6021da3aa165c2c9fe467c21f456b073e1df13c05a8"
         },
         "png": {
           "file": "06_模型渲染图/01_需求图/3.3.1.9-需求图.png",
-          "bytes": 101283,
-          "sha256": "32d3c1f1d53c1aca9a494dce5e387179d74537fb39b2420c9d62180965a181e8"
+          "bytes": 161871,
+          "sha256": "bf9b73ac8150435f5993d0c3b36bd1fbd37c3710042d5be13452f8abc561c504"
         },
         "svg": {
           "file": "06_模型渲染图/01_需求图/3.3.1.9-需求图.svg",
-          "bytes": 14021,
-          "sha256": "ee1474ff971821dd4da9a1b265bc59b094db9475e592537195bdf96a6cac40be"
+          "bytes": 340,
+          "sha256": "815061a1bd5a955d66d08d6743456892c8d446b2cf60a501683f59dabcc470c0"
         }
       },
       "png_dimensions": [
-        859,
-        1464
-      ]
+        1373,
+        1108
+      ],
+      "display_names": {
+        "3.3.1.9-01": "风窗请求与反馈",
+        "3.3.1.9-02": "前风窗模式配置",
+        "3.3.1.9-03": "空调状态反馈",
+        "3.3.1.9-04": "模式保持与退出",
+        "3.3.1.9-05": "除湿制冷与优先级",
+        "3.3.1.9-06": "低电量除霜许可"
+      },
+      "visual_style": "按用户参考：白底圆角细灰线、紫色小图标；保留原语义，PlantUML @startdot投影"
     },
     {
       "view_type": "02_需求活动图",
@@ -132,24 +161,118 @@
       "artifacts": {
         "puml": {
           "file": "06_模型渲染图/02_需求活动图/3.3.1.2-需求活动图.puml",
-          "bytes": 1831,
-          "sha256": "12461f5ac6ecf6b1419e869637f51306611bf7cd8a6c4d44b4e8347c9cb137f0"
+          "bytes": 3295,
+          "sha256": "c4900888630f55781332c9049660378e7f480ed51a301b9b456bb5050b9ef676"
         },
         "png": {
           "file": "06_模型渲染图/02_需求活动图/3.3.1.2-需求活动图.png",
-          "bytes": 144476,
-          "sha256": "ee210c4cc322081919eb353269a998262bd97dff66b2d24d40cb8c40e6ff8c82"
+          "bytes": 268458,
+          "sha256": "b3390a1a66037ea7bd4e63e62f648a98c960f9c81e1d8645148e47c52fa8f4de"
         },
         "svg": {
           "file": "06_模型渲染图/02_需求活动图/3.3.1.2-需求活动图.svg",
-          "bytes": 19283,
-          "sha256": "9c8f3e1256da783584f92bce2d9304e626b94128cd034d4808de1b0dd36d12a5"
+          "bytes": 340,
+          "sha256": "815061a1bd5a955d66d08d6743456892c8d446b2cf60a501683f59dabcc470c0"
         }
       },
       "png_dimensions": [
-        1228,
-        1368
-      ]
+        1451,
+        1746
+      ],
+      "action_network": {
+        "nodes": {
+          "A0": "接收制热请求并读取目标温度",
+          "A1": "检查电加热使能条件",
+          "A2": "根据使能条件控制电加热通断",
+          "A3": "监测电加热温度并执行过温保护",
+          "A4": "反馈电加热状态与功率信息",
+          "ON": "允许电加热输出",
+          "OFF": "禁止或保持关闭加热",
+          "REC": "判断保护恢复条件",
+          "UNLOCK": "重新允许加热\n仍须满足全部使能条件",
+          "HOLD": "保持保护禁止状态",
+          "STOP": "停止加热并进入保护",
+          "KEEP": "按当前许可调节输出"
+        },
+        "edges": [
+          {
+            "source": "A0",
+            "target": "A1",
+            "condition": ""
+          },
+          {
+            "source": "A1",
+            "target": "A2",
+            "condition": "使能条件判断结果"
+          },
+          {
+            "source": "A2",
+            "target": "ON",
+            "condition": "全部条件满足"
+          },
+          {
+            "source": "A2",
+            "target": "OFF",
+            "condition": "任一条件不满足"
+          },
+          {
+            "source": "ON",
+            "target": "A3",
+            "condition": ""
+          },
+          {
+            "source": "OFF",
+            "target": "A3",
+            "condition": ""
+          },
+          {
+            "source": "A3",
+            "target": "REC",
+            "condition": "已触发且未解除保护"
+          },
+          {
+            "source": "A3",
+            "target": "STOP",
+            "condition": "未处于保护且温度≥上限XXX℃"
+          },
+          {
+            "source": "A3",
+            "target": "KEEP",
+            "condition": "未处于保护且未达上限"
+          },
+          {
+            "source": "REC",
+            "target": "UNLOCK",
+            "condition": "温度≤恢复XXX℃"
+          },
+          {
+            "source": "REC",
+            "target": "HOLD",
+            "condition": "尚未满足恢复条件"
+          },
+          {
+            "source": "UNLOCK",
+            "target": "A4",
+            "condition": ""
+          },
+          {
+            "source": "HOLD",
+            "target": "A4",
+            "condition": ""
+          },
+          {
+            "source": "STOP",
+            "target": "A4",
+            "condition": ""
+          },
+          {
+            "source": "KEEP",
+            "target": "A4",
+            "condition": ""
+          }
+        ]
+      },
+      "visual_style": "按用户参考：白底圆角细灰线、紫色小图标；保留原语义，PlantUML @startdot投影"
     },
     {
       "view_type": "02_需求活动图",
@@ -168,24 +291,118 @@
       "artifacts": {
         "puml": {
           "file": "06_模型渲染图/02_需求活动图/3.3.1.6-需求活动图.puml",
-          "bytes": 1565,
-          "sha256": "2f131ab9cf95401954d7831930b837cc1defb4ea352a081a4ffa9d22fd49aa0b"
+          "bytes": 3114,
+          "sha256": "82513eecf89b61d6f9e550a254c44df9af0db7afe60cbe3693f72b6ac881baa9"
         },
         "png": {
           "file": "06_模型渲染图/02_需求活动图/3.3.1.6-需求活动图.png",
-          "bytes": 127783,
-          "sha256": "ba5901e426508a8d329759fbd1fd7341f86c3f575a68eba58bd403867fa580c5"
+          "bytes": 266158,
+          "sha256": "2a9bd88d53d5a1a1d4033ef31eb6ed236806e91ec36db7f6de8b1a899274c90c"
         },
         "svg": {
           "file": "06_模型渲染图/02_需求活动图/3.3.1.6-需求活动图.svg",
-          "bytes": 14810,
-          "sha256": "93a6ebb3ba7727e4e658787ef5cd14038174468ad7f96932f8776576aa7aff62"
+          "bytes": 340,
+          "sha256": "815061a1bd5a955d66d08d6743456892c8d446b2cf60a501683f59dabcc470c0"
         }
       },
       "png_dimensions": [
-        1542,
-        1222
-      ]
+        2018,
+        1771
+      ],
+      "action_network": {
+        "nodes": {
+          "A0": "接收AUTO模式请求",
+          "A1": "处理请求并反馈AUTO状态",
+          "A2": "采集环境与温度信号",
+          "A3": "协调热量与空气调节服务",
+          "A4": "处理用户操作与模式切换",
+          "A5": "更新控制输出并持续反馈状态",
+          "TEMP": "保持AUTO并更新设置",
+          "MANUAL": "退出AUTO\n其余指定项仍自动",
+          "DEF": "进入前除霜状态",
+          "AC": "关闭制冷请求\n转速请求=0",
+          "CLOSE": "AUTO反馈Close\n风量/温度/模式/循环仍自动",
+          "INVALID": "重复AUTO操作：invalid\n具体交互待确认"
+        },
+        "edges": [
+          {
+            "source": "A0",
+            "target": "A1",
+            "condition": ""
+          },
+          {
+            "source": "A1",
+            "target": "A2",
+            "condition": ""
+          },
+          {
+            "source": "A2",
+            "target": "A3",
+            "condition": ""
+          },
+          {
+            "source": "A3",
+            "target": "A4",
+            "condition": ""
+          },
+          {
+            "source": "A4",
+            "target": "TEMP",
+            "condition": "温度/循环操作"
+          },
+          {
+            "source": "A4",
+            "target": "MANUAL",
+            "condition": "风量/吹风模式操作"
+          },
+          {
+            "source": "A4",
+            "target": "DEF",
+            "condition": "前除霜操作"
+          },
+          {
+            "source": "A4",
+            "target": "AC",
+            "condition": "AC操作"
+          },
+          {
+            "source": "A4",
+            "target": "INVALID",
+            "condition": "再次AUTO操作"
+          },
+          {
+            "source": "AC",
+            "target": "CLOSE",
+            "condition": ""
+          },
+          {
+            "source": "TEMP",
+            "target": "A5",
+            "condition": ""
+          },
+          {
+            "source": "MANUAL",
+            "target": "A5",
+            "condition": ""
+          },
+          {
+            "source": "DEF",
+            "target": "A5",
+            "condition": ""
+          },
+          {
+            "source": "CLOSE",
+            "target": "A5",
+            "condition": ""
+          },
+          {
+            "source": "INVALID",
+            "target": "A5",
+            "condition": ""
+          }
+        ]
+      },
+      "visual_style": "按用户参考：白底圆角细灰线、紫色小图标；保留原语义，PlantUML @startdot投影"
     },
     {
       "view_type": "02_需求活动图",
@@ -204,24 +421,68 @@
       "artifacts": {
         "puml": {
           "file": "06_模型渲染图/02_需求活动图/3.3.1.9-需求活动图.puml",
-          "bytes": 1531,
-          "sha256": "a8e8526642ac62c1bf6814d26c2351842ac8726e8af113ca3bc49b454cb5dc41"
+          "bytes": 2090,
+          "sha256": "7492e2d9f0dbb6389c86f742401a3e1692de6c8295c115e9b44f311d342db59a"
         },
         "png": {
           "file": "06_模型渲染图/02_需求活动图/3.3.1.9-需求活动图.png",
-          "bytes": 115169,
-          "sha256": "a1fa3ea71f79911c3f5b86ec7a84e1959e43c69da21d557129b984c4b4198e9e"
+          "bytes": 161340,
+          "sha256": "b0ad4d51a3acde49560a387371e4b525896aed9766769a2e57ee81e5a95e6e8d"
         },
         "svg": {
           "file": "06_模型渲染图/02_需求活动图/3.3.1.9-需求活动图.svg",
-          "bytes": 11280,
-          "sha256": "f476928802f0492781d482d8323db8ce62823a8621d296aa814cb4731a8492dc"
+          "bytes": 340,
+          "sha256": "815061a1bd5a955d66d08d6743456892c8d446b2cf60a501683f59dabcc470c0"
         }
       },
       "png_dimensions": [
-        1145,
-        1021
-      ]
+        1034,
+        1352
+      ],
+      "action_network": {
+        "nodes": {
+          "A0": "接收风窗除霜或除雾请求",
+          "A1": "识别前除霜、前除雾或后风窗请求",
+          "A2": "配置风口、风量与循环状态",
+          "A3": "确定AC与制冷能力请求",
+          "A4": "实施热量与空气调节",
+          "A5": "反馈模式与空调状态",
+          "PENDING": "后风窗请求保持待确认\n不套用前风窗控制配置"
+        },
+        "edges": [
+          {
+            "source": "A0",
+            "target": "A1",
+            "condition": ""
+          },
+          {
+            "source": "A1",
+            "target": "A2",
+            "condition": "有依据的前除霜/前除雾请求"
+          },
+          {
+            "source": "A1",
+            "target": "PENDING",
+            "condition": "后风窗等缺少依据"
+          },
+          {
+            "source": "A2",
+            "target": "A3",
+            "condition": ""
+          },
+          {
+            "source": "A3",
+            "target": "A4",
+            "condition": ""
+          },
+          {
+            "source": "A4",
+            "target": "A5",
+            "condition": ""
+          }
+        ]
+      },
+      "visual_style": "按用户参考：白底圆角细灰线、紫色小图标；保留原语义，PlantUML @startdot投影"
     },
     {
       "view_type": "03_需求用例图",
@@ -466,24 +727,34 @@
       "artifacts": {
         "puml": {
           "file": "06_模型渲染图/04_需求外部环境BDD图/综合-需求外部环境BDD图.puml",
-          "bytes": 3347,
-          "sha256": "c439b5f6cab3ba53cdb0a83e823a88096b6662abe80482b39477ffe5e4441ea2"
+          "bytes": 10008,
+          "sha256": "2c940cfa88ea8506889f992c974dac5727a28de3cbd1ddfbd63af9e936640338"
         },
         "png": {
           "file": "06_模型渲染图/04_需求外部环境BDD图/综合-需求外部环境BDD图.png",
-          "bytes": 209421,
-          "sha256": "44e56981ece24f65de2617db56feda264e1a4ac6b773bacf8e9e9fa3ac9617a8"
+          "bytes": 186119,
+          "sha256": "88d7e8c28c115edc79cd1646e2334f1c7eb9428d99c6b99422a9a77cd154bbf3"
         },
         "svg": {
           "file": "06_模型渲染图/04_需求外部环境BDD图/综合-需求外部环境BDD图.svg",
-          "bytes": 21452,
-          "sha256": "919b5d4cc83b45dd18a361642b9f986ea445abd711e16136c5fa70a94a10765c"
+          "bytes": 340,
+          "sha256": "815061a1bd5a955d66d08d6743456892c8d446b2cf60a501683f59dabcc470c0"
         }
       },
       "png_dimensions": [
-        2754,
-        1574
-      ]
+        2549,
+        1210
+      ],
+      "visual_style": "按用户参考：白底圆角细灰线、紫色小图标；保留原语义，PlantUML @startdot投影"
     }
-  ]
+  ],
+  "visual_revision": "按用户三张参考图调整RD/ACT/BDD；UC字节不变；2026-11-03",
+  "protected_use_case": {
+    "baseline_commit": "1ab18531b449bb9061660e4e3f36f0da2fd3901e",
+    "sha256": {
+      "06_模型渲染图/03_需求用例图/综合-需求用例图.puml": "3fc622a9c3ef014fb64d8ce162cdafc8fec5349c93ce240f81f88e2c4d3dfb6d",
+      "06_模型渲染图/03_需求用例图/综合-需求用例图.png": "3ae179c47090f6e173a060e11c39cad8e0b8c92184cc01653b13c20c021bd157",
+      "06_模型渲染图/03_需求用例图/综合-需求用例图.svg": "c3b696d100b4bdc5e24203fe4ea3da11417ec27764f45b5e5724f64d80f29767"
+    }
+  }
 }

@@ -1,11 +1,13 @@
 from pathlib import Path
-import hashlib,json,re,xml.etree.ElementTree as ET
+import hashlib,html,json,re,xml.etree.ElementTree as ET
 from PIL import Image
 
 ROOT=Path(__file__).resolve().parents[1]
 def run():
  manifest=json.loads((ROOT/'06_模型渲染图/渲染与模型对应清单.json').read_text())
  views=manifest['views'];assert len(views)==8
+ if 'protected_use_case' in manifest:
+  for file,expected in manifest['protected_use_case']['sha256'].items():assert hashlib.sha256((ROOT/file).read_bytes()).hexdigest()==expected,('用例图应保持不变',file)
  assert [len([v for v in views if v['view_type'].startswith(str(i).zfill(2))]) for i in range(1,5)]==[3,3,1,1]
  hashes=0;rd_ids=set()
  for v in views:
@@ -23,13 +25,13 @@ def run():
     tree=ET.parse(p);text=''.join(tree.getroot().itertext())
     assert not any(x in text for x in ['Syntax Error','Error line','An error has occurred'])
   puml=(ROOT/v['artifacts']['puml']['file']).read_text()
-  assert puml.startswith('@startuml') and puml.rstrip().endswith('@enduml')
+  assert (puml.startswith('@startuml') and puml.rstrip().endswith('@enduml')) or (puml.startswith('@startdot') and puml.rstrip().endswith('@enddot'))
   if v['view_type']=='01_需求图':
    ids=re.findall(r"<'([^']+)'>",source)
    assert ids==v['requirement_ids'];assert all(x in puml for x in ids);rd_ids.update(ids)
   elif v['view_type']=='02_需求活动图':
    acts=re.findall(r"\baction '([^']+)'",source)[1:]
-   assert acts==v['phase_names'];flat=puml.replace('\\n','')
+   assert acts==v['phase_names'];flat=html.unescape(puml.replace('<BR/>','').replace('\\n',''))
    assert all(x in flat for x in acts)
   elif v['view_type']=='03_需求用例图':
    assert re.findall(r"use case def '([^']+)'",source)==v['use_cases']

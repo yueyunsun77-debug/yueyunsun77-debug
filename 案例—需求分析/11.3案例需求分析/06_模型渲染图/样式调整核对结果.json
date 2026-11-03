@@ -1,0 +1,18 @@
+{
+  "baseline_commit": "1ab18531b449bb9061660e4e3f36f0da2fd3901e",
+  "updated_view_sets": 7,
+  "updated_diagram_artifacts": 21,
+  "unchanged_use_case_formats": [
+    "puml",
+    "png",
+    "svg"
+  ],
+  "unchanged_non_render_files": 74,
+  "unchanged_use_case_sha256": {
+    "06_模型渲染图/03_需求用例图/综合-需求用例图.puml": "3fc622a9c3ef014fb64d8ce162cdafc8fec5349c93ce240f81f88e2c4d3dfb6d",
+    "06_模型渲染图/03_需求用例图/综合-需求用例图.png": "3ae179c47090f6e173a060e11c39cad8e0b8c92184cc01653b13c20c021bd157",
+    "06_模型渲染图/03_需求用例图/综合-需求用例图.svg": "c3b696d100b4bdc5e24203fe4ea3da11417ec27764f45b5e5724f64d80f29767"
+  },
+  "rendering": "PlantUML 1.2026.9 @startdot; UC @startuml preserved",
+  "native_sysml_validation": false
+}

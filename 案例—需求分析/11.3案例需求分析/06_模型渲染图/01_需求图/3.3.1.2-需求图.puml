@@ -1,59 +1,30 @@
-@startuml
-skinparam defaultFontName Noto Sans CJK SC
-skinparam defaultFontSize 14
-skinparam dpi 140
-skinparam shadowing false
-skinparam backgroundColor white
-skinparam ArrowColor #35566C
-skinparam NoteBackgroundColor #FFF5D6
-skinparam NoteBorderColor #C9AD66
-skinparam roundcorner 10
-skinparam packageStyle rectangle
-skinparam classBackgroundColor #EAF3FB
-skinparam classBorderColor #496C84
-skinparam activityBackgroundColor #EAF3FB
-skinparam activityBorderColor #496C84
-skinparam usecaseBackgroundColor #EAF3FB
-hide empty members
-hide circle
-title 3.3.1.2 空调制热 — 需求图
-left to right direction
-skinparam nodesep 30
-skinparam ranksep 55
-class "空调制热" as MAIN <<requirement>> {
- Id = 3.3.1.2
+@startdot
+digraph G {
+graph [bgcolor="white", fontname="Noto Sans CJK SC", fontsize=20, labelloc=t, label="3.3.1.2 空调制热 · 需求图", pad=0.45, nodesep=0.65, ranksep=1.0, splines=ortho, dpi=150, layout=neato, overlap=false, notranslate=true];
+node [shape=box, style="rounded,filled", fillcolor="white", color="#858585", penwidth=1.1, fontname="Noto Sans CJK SC", fontsize=14, margin="0.18,0.14"];
+edge [color="#666666", penwidth=1.0, fontname="Noto Sans CJK SC", fontsize=11, arrowsize=0.7];
+MAIN [pos="0,0!", shape=plain, label=<<TABLE BORDER="1" COLOR="#858585" CELLBORDER="0" CELLSPACING="0" CELLPADDING="10" STYLE="ROUNDED"><TR><TD><FONT COLOR="#8070AC">▣</FONT> «requirement def»<BR/><B>空调制热</B><BR/>3.3.1.2 · 系统需求</TD></TR><TR><TD BORDER="1" SIDES="T"><I>doc</I><BR/>原需求层次保留</TD></TR></TABLE>>];
+R0 [pos="-4.5,3.3!", width=2.6, height=0.95, label=<<FONT COLOR="#8070AC">▣</FONT> «requirement»<BR/>3.3.1.2-01<BR/>制热请求输入<BR/><FONT POINT-SIZE="11">系统需求</FONT>>];
+MAIN -> R0 [dir=both, arrowtail=diamond, arrowhead=none];
+// 3.3.1.2-01 | heatingRequestInput | 接收用户制热请求与目标温度；物理输入路径待确认
+R1 [pos="0,4.7!", width=2.6, height=0.95, label=<<FONT COLOR="#8070AC">▣</FONT> «requirement»<BR/>3.3.1.2-02<BR/>环境与电池热负荷适配<BR/><FONT POINT-SIZE="11">系统需求</FONT>>];
+MAIN -> R1 [dir=both, arrowtail=diamond, arrowhead=none];
+// 3.3.1.2-02 | environmentLoadAdaptation | 环境温度与电池热负荷对输出优化方式待明确
+R2 [pos="4.5,3.3!", width=2.6, height=0.95, label=<<FONT COLOR="#8070AC">▣</FONT> «requirement»<BR/>3.3.1.2-03<BR/>电加热使能条件<BR/><FONT POINT-SIZE="11">系统需求</FONT>>];
+MAIN -> R2 [dir=both, arrowtail=diamond, arrowhead=none];
+// 3.3.1.2-03 | ptcEnableConditions | 空气输送开启、目标温度高于室内、高压可用、整车无故障、SOC>10%全部满足后允许加热
+R3 [pos="-4.7,0.2!", width=2.6, height=0.95, label=<<FONT COLOR="#8070AC">▣</FONT> «requirement»<BR/>3.3.1.2-04<BR/>电加热通断控制<BR/><FONT POINT-SIZE="11">系统需求</FONT>>];
+MAIN -> R3 [dir=both, arrowtail=diamond, arrowhead=none];
+// 3.3.1.2-04 | ptcRelayControl | 按使能条件控制电加热通断；不设计具体继电器硬件
+R4 [pos="4.7,0.2!", width=2.6, height=0.95, label=<<FONT COLOR="#8070AC">▣</FONT> «requirement»<BR/>3.3.1.2-05<BR/>电加热过温保护<BR/><FONT POINT-SIZE="11">系统需求</FONT>>];
+MAIN -> R4 [dir=both, arrowtail=diamond, arrowhead=none];
+// 3.3.1.2-05 | ptcOvertemperatureProtection | 温度>=XXX℃停止加热，<=XXX℃允许恢复；阈值待标定
+R5 [pos="-3.0,-3.4!", width=2.6, height=0.95, label=<<FONT COLOR="#8070AC">▣</FONT> «requirement»<BR/>3.3.1.2-06<BR/>加热状态反馈<BR/><FONT POINT-SIZE="11">系统需求</FONT>>];
+MAIN -> R5 [dir=both, arrowtail=diamond, arrowhead=none];
+// 3.3.1.2-06 | ptcStatusFeedback | 反馈电加热通断、温度、状态及实际/最大功率
+R6 [pos="3.0,-3.4!", width=2.6, height=0.95, label=<<FONT COLOR="#8070AC">▣</FONT> «requirement»<BR/>3.3.1.2-07<BR/>舱内外温度信息获取<BR/><FONT POINT-SIZE="11">系统需求</FONT>>];
+MAIN -> R6 [dir=both, arrowtail=diamond, arrowhead=none];
+// 3.3.1.2-07 | cabinOutdoorTemperatureCheck | 获取室内和室外温度，保留来源采集/通信接口
+// 连线保留原SysML嵌套包含含义；中心端菱形不表示新增deriveReqt/satisfy。详细doc见需求条目明细。
 }
-class "3.3.1.2-01\nheatingRequestInput" as R0 <<requirement>> {
- Text = 接收用户制热请求与目标温度；物理输入路径待确认
-}
-MAIN *-- R0 : 包含
-class "3.3.1.2-02\nenvironmentLoadAdaptation" as R1 <<requirement>> {
- Text = 环境温度与电池热负荷对输出优化方式待明确
-}
-MAIN *-- R1 : 包含
-class "3.3.1.2-03\nptcEnableConditions" as R2 <<requirement>> {
- Text = 空气输送开启、目标温度高于室内、高压可用、整车\n无故障、SOC>10%全部满足后允许加热
-}
-MAIN *-- R2 : 包含
-class "3.3.1.2-04\nptcRelayControl" as R3 <<requirement>> {
- Text = 按使能条件控制电加热通断；不设计具体继电器硬件
-}
-MAIN *-- R3 : 包含
-class "3.3.1.2-05\nptcOvertemperatureProtection" as R4 <<requirement>> {
- Text = 温度>=XXX℃停止加热，<=XXX℃允许恢复\n；阈值待标定
-}
-MAIN *-- R4 : 包含
-class "3.3.1.2-06\nptcStatusFeedback" as R5 <<requirement>> {
- Text = 反馈电加热通断、温度、状态及实际/最大功率
-}
-MAIN *-- R5 : 包含
-class "3.3.1.2-07\ncabinOutdoorTemperatureCheck" as R6 <<requirement>> {
- Text = 获取室内和室外温度，保留来源采集/通信接口
-}
-MAIN *-- R6 : 包含
-legend bottom
-原RD嵌套包含关系；保留原编号。
-XXX/TBD和标定说明保留；图中未新增deriveReqt或satisfy。
-endlegend
-
-@enduml
+@enddot

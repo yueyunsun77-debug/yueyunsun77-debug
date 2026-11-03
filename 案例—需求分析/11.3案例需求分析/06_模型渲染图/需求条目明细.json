@@ -1,0 +1,142 @@
+[
+  {
+    "requirement_id": "3.3.1.2-01",
+    "display_name": "制热请求输入",
+    "model_alias": "heatingRequestInput",
+    "text": "接收用户制热请求与目标温度；物理输入路径待确认",
+    "source_model": "01_系统边界与逻辑化表达/修改后的SysML模型/3.3.1.2-需求图.sysml"
+  },
+  {
+    "requirement_id": "3.3.1.2-02",
+    "display_name": "环境与电池热负荷适配",
+    "model_alias": "environmentLoadAdaptation",
+    "text": "环境温度与电池热负荷对输出优化方式待明确",
+    "source_model": "01_系统边界与逻辑化表达/修改后的SysML模型/3.3.1.2-需求图.sysml"
+  },
+  {
+    "requirement_id": "3.3.1.2-03",
+    "display_name": "电加热使能条件",
+    "model_alias": "ptcEnableConditions",
+    "text": "空气输送开启、目标温度高于室内、高压可用、整车无故障、SOC>10%全部满足后允许加热",
+    "source_model": "01_系统边界与逻辑化表达/修改后的SysML模型/3.3.1.2-需求图.sysml"
+  },
+  {
+    "requirement_id": "3.3.1.2-04",
+    "display_name": "电加热通断控制",
+    "model_alias": "ptcRelayControl",
+    "text": "按使能条件控制电加热通断；不设计具体继电器硬件",
+    "source_model": "01_系统边界与逻辑化表达/修改后的SysML模型/3.3.1.2-需求图.sysml"
+  },
+  {
+    "requirement_id": "3.3.1.2-05",
+    "display_name": "电加热过温保护",
+    "model_alias": "ptcOvertemperatureProtection",
+    "text": "温度>=XXX℃停止加热，<=XXX℃允许恢复；阈值待标定",
+    "source_model": "01_系统边界与逻辑化表达/修改后的SysML模型/3.3.1.2-需求图.sysml"
+  },
+  {
+    "requirement_id": "3.3.1.2-06",
+    "display_name": "加热状态反馈",
+    "model_alias": "ptcStatusFeedback",
+    "text": "反馈电加热通断、温度、状态及实际/最大功率",
+    "source_model": "01_系统边界与逻辑化表达/修改后的SysML模型/3.3.1.2-需求图.sysml"
+  },
+  {
+    "requirement_id": "3.3.1.2-07",
+    "display_name": "舱内外温度信息获取",
+    "model_alias": "cabinOutdoorTemperatureCheck",
+    "text": "获取室内和室外温度，保留来源采集/通信接口",
+    "source_model": "01_系统边界与逻辑化表达/修改后的SysML模型/3.3.1.2-需求图.sysml"
+  },
+  {
+    "requirement_id": "3.3.1.6-01",
+    "display_name": "AUTO请求与状态",
+    "model_alias": "autoButtonStatus",
+    "text": "处理AUTO请求并反馈状态；AUTO内重复AUTO为invalid，语义待确认",
+    "source_model": "01_系统边界与逻辑化表达/修改后的SysML模型/3.3.1.6-需求图.sysml"
+  },
+  {
+    "requirement_id": "3.3.1.6-02",
+    "display_name": "环境与温度信息采集",
+    "model_alias": "sensorInputs",
+    "text": "获取室内、室外、日照及供热入口/加热温度信息",
+    "source_model": "01_系统边界与逻辑化表达/修改后的SysML模型/3.3.1.6-需求图.sysml"
+  },
+  {
+    "requirement_id": "3.3.1.6-03",
+    "display_name": "自动温控协调",
+    "model_alias": "automaticActuatorControl",
+    "text": "协调空气输送、温度/模式/循环调节、制冷与电加热能力",
+    "source_model": "01_系统边界与逻辑化表达/修改后的SysML模型/3.3.1.6-需求图.sysml"
+  },
+  {
+    "requirement_id": "3.3.1.6-04",
+    "display_name": "目标温度调节",
+    "model_alias": "targetTemperatureAdjustment",
+    "text": "LO<16℃、HI>30℃，每次温度调节0.5℃；保持当前模式",
+    "source_model": "01_系统边界与逻辑化表达/修改后的SysML模型/3.3.1.6-需求图.sysml"
+  },
+  {
+    "requirement_id": "3.3.1.6-05",
+    "display_name": "循环操作保持AUTO",
+    "model_alias": "circulationKeepsAuto",
+    "text": "循环操作保持AUTO",
+    "source_model": "01_系统边界与逻辑化表达/修改后的SysML模型/3.3.1.6-需求图.sysml"
+  },
+  {
+    "requirement_id": "3.3.1.6-06",
+    "display_name": "模式退出与切换",
+    "model_alias": "modeExitAndTransition",
+    "text": "风量/模式操作退出AUTO但其他项仍自动；前除霜操作进入前除霜",
+    "source_model": "01_系统边界与逻辑化表达/修改后的SysML模型/3.3.1.6-需求图.sysml"
+  },
+  {
+    "requirement_id": "3.3.1.6-07",
+    "display_name": "AC操作处理",
+    "model_alias": "acButtonBehavior",
+    "text": "AC操作关闭制冷，转速请求=0，AUTO反馈Close，其余指定项保持自动",
+    "source_model": "01_系统边界与逻辑化表达/修改后的SysML模型/3.3.1.6-需求图.sysml"
+  },
+  {
+    "requirement_id": "3.3.1.9-01",
+    "display_name": "风窗请求与反馈",
+    "model_alias": "defrostRequestFeedback",
+    "text": "CCU经CAN接收IVI发出的前除霜/前除雾请求，并向IVI反馈状态",
+    "source_model": "01_系统边界与逻辑化表达/修改后的SysML模型/3.3.1.9-需求图.sysml"
+  },
+  {
+    "requirement_id": "3.3.1.9-02",
+    "display_name": "前风窗模式配置",
+    "model_alias": "frontDefrostConfiguration",
+    "text": "前除霜/除雾位置、最大风量、外循环90%待定；温度保持",
+    "source_model": "01_系统边界与逻辑化表达/修改后的SysML模型/3.3.1.9-需求图.sysml"
+  },
+  {
+    "requirement_id": "3.3.1.9-03",
+    "display_name": "空调状态反馈",
+    "model_alias": "actuatorStatusFeedback",
+    "text": "反馈风量、温度、AC、循环与前风窗模式状态",
+    "source_model": "01_系统边界与逻辑化表达/修改后的SysML模型/3.3.1.9-需求图.sysml"
+  },
+  {
+    "requirement_id": "3.3.1.9-04",
+    "display_name": "模式保持与退出",
+    "model_alias": "modePersistenceAndExit",
+    "text": "按规范保持、退出、返回此前非OFF模式；后风窗逻辑不可由前风窗外推",
+    "source_model": "01_系统边界与逻辑化表达/修改后的SysML模型/3.3.1.9-需求图.sysml"
+  },
+  {
+    "requirement_id": "3.3.1.9-05",
+    "display_name": "除湿制冷与优先级",
+    "model_alias": "compressorDehumidificationPriority",
+    "text": "除湿转速接口最低1000 r/min待标定；优先级参SL29 4.1.3.3，阈值XX未定",
+    "source_model": "01_系统边界与逻辑化表达/修改后的SysML模型/3.3.1.9-需求图.sysml"
+  },
+  {
+    "requirement_id": "3.3.1.9-06",
+    "display_name": "低电量除霜许可",
+    "model_alias": "lowSocDefrostException",
+    "text": "SOC<10%且前除霜关闭则禁止制冷输出，开启则允许；SOC=10%边界未规定",
+    "source_model": "01_系统边界与逻辑化表达/修改后的SysML模型/3.3.1.9-需求图.sysml"
+  }
+]

@@ -1,48 +1,23 @@
-@startuml
-skinparam defaultFontName Noto Sans CJK SC
-skinparam defaultFontSize 14
-skinparam dpi 140
-skinparam shadowing false
-skinparam backgroundColor white
-skinparam ArrowColor #35566C
-skinparam NoteBackgroundColor #FFF5D6
-skinparam NoteBorderColor #C9AD66
-skinparam roundcorner 10
-skinparam packageStyle rectangle
-skinparam classBackgroundColor #EAF3FB
-skinparam classBorderColor #496C84
-skinparam activityBackgroundColor #EAF3FB
-skinparam activityBorderColor #496C84
-skinparam usecaseBackgroundColor #EAF3FB
-hide empty members
-hide circle
-title 3.3.1.9 前后风窗除霜/除雾 — 需求活动图
-start
-:接收风窗除霜或除雾请求;
-:识别前除霜、前除雾或后风窗请求;
-if (有依据的前除霜/前除雾请求？) then (是)
-:配置风口、风量与循环状态;
-note right
-对应风口、最大风量、外循环；
-外循环90%待定；温度保持。
-end note
-:确定AC与制冷能力请求;
-note right
-环境温度决定AC请求；除湿转速最低1000 r/min待标定。
-SL29优先级/低SOC许可按其适用条件，XX阈值未定；
-不把场景二35℃移作仲裁门限。
-end note
-:实施热量与空气调节;
-:反馈模式与空调状态;
-else (后风窗等缺少依据)
-:停留在待确认处理；
-不套用前风窗控制配置;
-endif
-stop
-legend bottom
-保留原阶段顺序；阶段内部按当前SysML动作doc展开。
-这是一次评估/处理片段，终点不表示全系统持续调节或监测停止。
-未规定的控制算法、周期和标定值不补造。
-endlegend
-
-@enduml
+@startdot
+digraph G {
+graph [bgcolor="white", fontname="Noto Sans CJK SC", fontsize=20, labelloc=t, label="3.3.1.9 前后风窗除霜/除雾 · 需求活动图", pad=0.45, nodesep=0.65, ranksep=1.0, splines=ortho, dpi=150, rankdir=TB, ranksep=0.65, dpi=130];
+node [shape=box, style="rounded,filled", fillcolor="white", color="#858585", penwidth=1.1, fontname="Noto Sans CJK SC", fontsize=14, margin="0.18,0.14"];
+edge [color="#666666", penwidth=1.0, fontname="Noto Sans CJK SC", fontsize=11, arrowsize=0.7];
+{rank=same; A2; PENDING;}
+A0 [width=2.4, height=0.65, label=<<FONT COLOR="#8070AC">▣</FONT> «action»<BR/>接收风窗除霜或除雾请求>];
+A1 [width=2.4, height=0.65, label=<<FONT COLOR="#8070AC">▣</FONT> «action»<BR/>识别前除霜、前除雾或后风<BR/>窗请求>];
+A2 [width=2.4, height=0.65, label=<<FONT COLOR="#8070AC">▣</FONT> «action»<BR/>配置风口、风量与循环状态>];
+A3 [width=2.4, height=0.65, label=<<FONT COLOR="#8070AC">▣</FONT> «action»<BR/>确定AC与制冷能力请求>];
+A4 [width=2.4, height=0.65, label=<<FONT COLOR="#8070AC">▣</FONT> «action»<BR/>实施热量与空气调节>];
+A5 [width=2.4, height=0.65, label=<<FONT COLOR="#8070AC">▣</FONT> «action»<BR/>反馈模式与空调状态>];
+PENDING [width=2.4, height=0.65, label=<<FONT COLOR="#8070AC">▣</FONT> «action»<BR/>后风窗请求保持待确认<BR/>不套用前风窗控制配置>];
+A0 -> A1 [style=dashed, arrowhead=vee];
+A1 -> A2 [style=dashed, arrowhead=vee, xlabel="有依据的前除霜/前除雾请\n求"];
+A1 -> PENDING [style=dashed, arrowhead=vee, xlabel="后风窗等缺少依据"];
+A2 -> A3 [style=dashed, arrowhead=vee];
+A3 -> A4 [style=dashed, arrowhead=vee];
+A4 -> A5 [style=dashed, arrowhead=vee];
+NOTE [shape=note, style=filled, fillcolor="white", fontsize=11, label="对应风口、最大风量、外循环90%待定、温度保持。\nAC请求依据环境温度；除湿最低1000 r/min待标定；仲裁XX阈值未定。\n保留原阶段和doc规则；一次评估片段不代表持续监测停止。"];
+A5 -> NOTE [style=invis];
+}
+@enddot
