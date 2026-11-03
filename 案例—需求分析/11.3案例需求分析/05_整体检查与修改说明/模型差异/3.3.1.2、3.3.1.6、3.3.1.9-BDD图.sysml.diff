@@ -1,0 +1,46 @@
+--- 原始/3.3.1.2、3.3.1.6、3.3.1.9-BDD图.sysml
++++ 修改后/3.3.1.2、3.3.1.6、3.3.1.9-BDD图.sysml
+@@ -1,3 +1,4 @@
++// 修改说明：以逻辑功能表达内部职责；原技术信号与需求短ID保留，物理组件映射见Excel。
+ // 热管理三条需求综合外部环境 BDD
+ // 覆盖需求：3.3.1.2 空调制热；3.3.1.6 自动空调模式；3.3.1.9 前后风窗除霜/除雾。
+ // 依据：用户提供的 SysML v2.0 正式规范中 Ports、Connections、Interfaces、Flows and Messages 相关章节。
+@@ -122,7 +123,7 @@
+     }
+ 
+     // ---------- 部件定义及端口 ----------
+-    part def 'CCU热管理控制功能' {
++    part def '热管理逻辑控制服务' {
+         port requestIn : ~ThermalRequestPort;
+         port statusOut : ThermalStatusPort;
+         port vehicleStateIn : ~VehicleStatePort;
+@@ -147,11 +148,11 @@
+         port stateOut : VehicleStatePort;
+     }
+ 
+-    part def '环境与温度传感器组' {
++    part def '温度与环境信息提供服务' {
+         port dataOut : SensorDataPort;
+     }
+ 
+-    part def 'HVAC执行器组' {
++    part def '热量与空气调节执行服务' {
+         port commandIn : ~ActuatorCommandPort;
+     }
+ 
+@@ -161,12 +162,12 @@
+ 
+     // ---------- 外部环境上下文及接口连接 ----------
+     part def '热管理控制外部环境' {
+-        part SYS : 'CCU热管理控制功能';
++        part SYS : '热管理逻辑控制服务';
+         part IVI : 'IVI中控交互系统';
+         part CAN : '车载CAN通信网络';
+         part VEHICLE : '整车状态与电源管理系统';
+-        part SENSORS : '环境与温度传感器组';
+-        part ACTUATORS : 'HVAC执行器组';
++        part SENSORS : '温度与环境信息提供服务';
++        part ACTUATORS : '热量与空气调节执行服务';
+         part CABIN_WINDSCREEN : '乘员舱与前风窗环境';
+ 
+         // 请求路径：IVI -> CAN -> CCU。

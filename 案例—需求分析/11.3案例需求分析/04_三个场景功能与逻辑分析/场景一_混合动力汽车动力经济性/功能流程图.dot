@@ -1,0 +1,27 @@
+digraph G {
+graph [rankdir=TB, nodesep=0.7, ranksep=1.1, pad=0.3, bgcolor="white", fontname="Noto Sans CJK SC", labelloc=t, label="混合动力汽车动力经济性建模（分析视角，未决条件见说明）"];
+node [shape=box, style="rounded,filled", fillcolor="#EAF3FB", fontname="Noto Sans CJK SC"];
+edge [fontname="Noto Sans CJK SC", fontsize=10];
+f1 [label="S1-F01\n驾驶指令接收"];
+f2 [label="S1-F02\n动力需求分析"];
+f3 [label="S1-F03\n工作模式选择"];
+f4 [label="S1-F04\n电驱动能量转换控制"];
+f5 [label="S1-F05\n再生制动触发判断"];
+f6 [label="S1-F06\n再生能量转换与充电协调"];
+f7 [label="S1-F07\n发动机启动协调"];
+f8 [label="S1-F08\n高效发电运行调节"];
+f9 [label="S1-F09\n充电与能量收支管理"];
+f10 [label="S1-F10\n运行反馈与模式更新"];
+f1 -> f2 [label="顺序：指令到达后分析需求"];
+f2 -> f3 [label="顺序：需求先于模式选择"];
+f3 -> f4 [label="条件：驱动请求有效"];
+f3 -> f5 [label="条件：制动触发"];
+f5 -> f6 [label="条件：允许再生时"];
+f3 -> f7 [label="条件：选择启动发电路径；阈值待确认"];
+f7 -> f8 [label="顺序：确认启动完成"];
+f8 -> f9 [label="数据/并行候选：发电可与电驱动协同；\n调度条件待确认"];
+f6 -> f9 [label="数据：回收电能"];
+f4 -> f10 [label="反馈：驱动响应"];
+f9 -> f10 [label="反馈：能量收支"];
+f10 -> f2 [label="闭环：更新需求与模式"];
+}

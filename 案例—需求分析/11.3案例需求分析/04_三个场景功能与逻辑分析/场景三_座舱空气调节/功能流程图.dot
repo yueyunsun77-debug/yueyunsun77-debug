@@ -1,0 +1,29 @@
+digraph G {
+graph [rankdir=TB, nodesep=0.7, ranksep=1.1, pad=0.3, bgcolor="white", fontname="Noto Sans CJK SC", labelloc=t, label="座舱空气调节（分析视角，未决条件见说明）"];
+node [shape=box, style="rounded,filled", fillcolor="#EAF3FB", fontname="Noto Sans CJK SC"];
+edge [fontname="Noto Sans CJK SC", fontsize=10];
+f1 [label="S3-F01\n座舱温度目标获取"];
+f2 [label="S3-F02\n座舱温度信息采集"];
+f3 [label="S3-F03\n座舱偏差与制冷需求判断"];
+f4 [label="S3-F04\n座舱制冷能力调节"];
+f5 [label="S3-F05\n空气输送与送风调节"];
+f6 [label="S3-F06\n电池温度及功率获取"];
+f7 [label="S3-F07\n电池辅助冷却需求判断"];
+f8 [label="S3-F08\n电池冷却能力需求计算"];
+f9 [label="S3-F09\n制冷能力需求分配"];
+f10 [label="S3-F10\n电池换热调节"];
+f11 [label="S3-F11\n冷却效果反馈与需求更新"];
+f1 -> f3 [label="汇合：目标温度"];
+f2 -> f3 [label="汇合：实测温度"];
+f3 -> f9 [label="数据：座舱需求"];
+f6 -> f7 [label="顺序：获取有效输入"];
+f7 -> f8 [label="条件：温度偏高或功率较大"];
+f8 -> f9 [label="数据：电池能力请求"];
+f9 -> f4 [label="并行候选：资源允许时"];
+f9 -> f10 [label="并行候选：资源允许时"];
+f4 -> f5 [label="顺序：制冷调节后向座舱送风"];
+f5 -> f11 [label="反馈：座舱响应"];
+f10 -> f11 [label="反馈：电池响应"];
+f11 -> f2 [label="闭环：更新座舱温度"];
+f11 -> f6 [label="闭环：更新电池温度及功率"];
+}

@@ -1,0 +1,28 @@
+--- 原始/3.3.1.9-需求图.sysml
++++ 修改后/3.3.1.9-需求图.sysml
+@@ -1,18 +1,25 @@
++// 修改说明：以逻辑功能表达内部职责；原技术信号与需求短ID保留，物理组件映射见Excel。
+ package RequirementModel_03 {
+     // 来源：Excel Function list 3.3.1.9；CCU CTS 第62–65页（前除霜/前除雾控制）；SL29 SSTS 第13–14页（压缩机请求与前除霜优先级）。
+     // SysML v2 建模：以 requirement def 定义所选需求，以嵌套 requirement usage 表达细化需求。
+     requirement def <'3.3.1.9'> FrontRearDefrostDemist {
+         requirement <'3.3.1.9-01'> defrostRequestFeedback {
++            doc /* IVI经CAN接收前除霜/前除雾请求并反馈状态 */
+         }
+         requirement <'3.3.1.9-02'> frontDefrostConfiguration {
++            doc /* 前除霜/除雾位置、最大风量、外循环90%待定；温度保持 */
+         }
+         requirement <'3.3.1.9-03'> actuatorStatusFeedback {
++            doc /* 反馈风量、温度、AC、循环与前风窗模式状态 */
+         }
+         requirement <'3.3.1.9-04'> modePersistenceAndExit {
++            doc /* 按规范保持、退出、返回此前非OFF模式；后风窗逻辑不可由前风窗外推 */
+         }
+         requirement <'3.3.1.9-05'> compressorDehumidificationPriority {
++            doc /* 除湿转速接口最低1000 r/min待标定；优先级参SL29 4.1.3.3，阈值XX未定 */
+         }
+         requirement <'3.3.1.9-06'> lowSocDefrostException {
++            doc /* SOC<10%且前除霜关闭则禁止制冷输出，开启则允许；SOC=10%边界未规定 */
+         }
+         // 资料缺口：所给PDF仅描述前除霜/前除雾，未给出后风窗控制逻辑；
+         // 因此不将后风窗控制细节虚构为正式子需求。

@@ -1,0 +1,28 @@
+digraph G {
+graph [rankdir=TB, nodesep=0.7, ranksep=1.1, pad=0.3, bgcolor="white", fontname="Noto Sans CJK SC", labelloc=t, label="纯电热管理建模（分析视角，未决条件见说明）"];
+node [shape=box, style="rounded,filled", fillcolor="#EAF3FB", fontname="Noto Sans CJK SC"];
+edge [fontname="Noto Sans CJK SC", fontsize=10];
+f1 [label="S2-F01\n驾驶循环初始化"];
+f2 [label="S2-F02\n静置预冷计时"];
+f3 [label="S2-F03\n匀速行驶工况控制"];
+f4 [label="S2-F04\n座舱降温需求处理"];
+f5 [label="S2-F05\n电池温度信息获取"];
+f6 [label="S2-F06\n电池主动冷却触发判断"];
+f7 [label="S2-F07\n环境空气对流换热评估"];
+f8 [label="S2-F08\n座舱与电池冷却能力协调"];
+f9 [label="S2-F09\n主动冷却执行状态评估"];
+f10 [label="S2-F10\n换热汇总与热状态反馈"];
+f1 -> f2 [label="顺序：静置阶段计时"];
+f2 -> f3 [label="条件：静置已满2分钟"];
+f1 -> f4 [label="并行：空调启动并维持降温"];
+f1 -> f5 [label="并行：两个阶段都监测"];
+f5 -> f6 [label="顺序：有效温度到达"];
+f5 -> f7 [label="并行候选：相同快照供环境换热评估"];
+f6 -> f8 [label="条件：T>=35℃形成主动冷却请求"];
+f4 -> f8 [label="数据：座舱需求"];
+f8 -> f9 [label="顺序：分配后核对实际执行状态"];
+f7 -> f10 [label="汇合：环境换热贡献"];
+f9 -> f10 [label="汇合：实际主动冷却贡献"];
+f10 -> f5 [label="反馈：下一次温度评估"];
+f3 -> f10 [label="数据：车辆工况影响热状态"];
+}

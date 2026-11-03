@@ -1,0 +1,29 @@
+digraph G {
+graph [rankdir=TB, nodesep=0.7, ranksep=1.1, pad=0.3, bgcolor="white", fontname="Noto Sans CJK SC", labelloc=t, label="热管理逻辑控制服务；保持原CCU黑盒交互边界"];
+node [shape=box, style="rounded,filled", fillcolor="#EAF3FB", fontname="Noto Sans CJK SC"];
+edge [fontname="Noto Sans CJK SC", fontsize=10];
+req [label="外部：IVI请求/整车状态"];
+info [label="外部：温度与环境信息服务"];
+input [label="请求与模式管理"];
+judge [label="热状态处理与使能/保护"];
+auto [label="自动温控协调"];
+defrost [label="风窗除霜除雾控制"];
+heat [label="受保护电加热控制"];
+feedback [label="状态反馈"];
+exec [label="外部：热量与空气调节服务"];
+cabin [label="外部：乘员舱/前风窗环境"];
+req -> input [label="请求/车辆状态"];
+info -> judge [label="温度/环境信息"];
+input -> auto [label="AUTO与目标"];
+input -> defrost [label="前风窗请求"];
+judge -> heat [label="加热许可/保护"];
+judge -> auto [label="热状态"];
+auto -> exec [label="抽象调节请求"];
+defrost -> exec [label="送风/循环/制冷"];
+heat -> exec [label="加热通断与能力"];
+exec -> cabin [label="作用于被服务对象"];
+auto -> feedback [label="自动模式状态"];
+heat -> feedback [label="加热状态"];
+defrost -> feedback [label="风窗状态"];
+feedback -> req [label="显示反馈"];
+}

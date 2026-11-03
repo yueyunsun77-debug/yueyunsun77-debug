@@ -1,0 +1,77 @@
+[
+  {
+    "file": "原始文件备份/3.3.1.2-需求图.sysml",
+    "bytes": 828,
+    "sha256": "f9f84a7d63b2c101d4603a68252ff2e21d776da25fed13fb913da7cf250098da"
+  },
+  {
+    "file": "原始文件备份/3.3.1.2-需求活动图.sysml",
+    "bytes": 3713,
+    "sha256": "6a52a84a332662c8ce60c4a5c77770aac0f3936627d563bf6aab8c7537c77463"
+  },
+  {
+    "file": "原始文件备份/3.3.1.2、3.3.1.6、3.3.1.9-BDD图.sysml",
+    "bytes": 8291,
+    "sha256": "ea10a9155f51a8ae933a792c0478791c73729798b7ab6c7ad762be4edf09f44a"
+  },
+  {
+    "file": "原始文件备份/3.3.1.2、3.3.1.6、3.3.1.9-指标分配表.xlsx",
+    "bytes": 9717,
+    "sha256": "23ce6a31de6027319269ecdcd37a1b01032b17fc08b782871be29ba9700c9867"
+  },
+  {
+    "file": "原始文件备份/3.3.1.2、3.3.1.6、3.3.1.9-需求条目.json",
+    "bytes": 10748,
+    "sha256": "e58fea74f7af1a650052cb2d53a8b9621fc4e8ebfa042de77d88bef496ccaf88"
+  },
+  {
+    "file": "原始文件备份/3.3.1.2、3.3.1.6、3.3.1.9-需求用例图.sysml",
+    "bytes": 3028,
+    "sha256": "d40b987a870fa5f61dabbe6536bc70eb6e8b2b0804ba51a964073eed4b44e9e6"
+  },
+  {
+    "file": "原始文件备份/3.3.1.6-需求图.sysml",
+    "bytes": 803,
+    "sha256": "9b120886af3ff1c7fba502063e75efc207816d8fdbe3f6cbda1a02f9a4e5423f"
+  },
+  {
+    "file": "原始文件备份/3.3.1.6-需求活动图.sysml",
+    "bytes": 3962,
+    "sha256": "9527f7b84fb96b57fbc57590f3a4ccbf7c07884adddde3f990b393eca6fdc660"
+  },
+  {
+    "file": "原始文件备份/3.3.1.9-需求图.sysml",
+    "bytes": 988,
+    "sha256": "2ace11a20e0ff6fa5ae45d1dcec31ddad9cda2eec08e632b7e60151d846a088c"
+  },
+  {
+    "file": "原始文件备份/3.3.1.9-需求活动图.sysml",
+    "bytes": 4165,
+    "sha256": "93c2d3eec304687563622615b706a2e28b7f4a3c79eb88118cdf2d753c33f92f"
+  },
+  {
+    "file": "原始文件备份/LCATC-DS-04-29-XX-B0-SL29_热管理子系统功能规范.pdf",
+    "bytes": 1326424,
+    "sha256": "7d33c5458574e650852af28ead158bfca9fb97d0f6c13a3239566d6b510a71d5"
+  },
+  {
+    "file": "原始文件备份/LCATC-DS-04-XX-27-B0-(CCU)Component Technical Specification.pdf",
+    "bytes": 2414616,
+    "sha256": "9be483b2c72546152eea0eb75792fbeaad55b7ba5b8e270602cfe13b0f59126c"
+  },
+  {
+    "file": "原始文件备份/LCATC-DS-04-XX-27-B0-热管理.xlsx",
+    "bytes": 1555543,
+    "sha256": "e46b3c878ae12a31c23ad22a6ba14aa34bbab00690a13c8d3e23e2f95e8ff7a5"
+  },
+  {
+    "file": "原始文件备份/热管理物理实体清单与系统边界分析.md",
+    "bytes": 20122,
+    "sha256": "4d9138a9c9583b5fe84f8588742710a71c8fe16103eaffc62a2d350dee68a11b"
+  },
+  {
+    "file": "原始文件备份/热管理系统需求分析与建模修改任务书.txt",
+    "bytes": 26950,
+    "sha256": "75180dbe2ddb8dbf05ba7c71e6b2c74777201b735ae16c68e899d770ca68dc25"
+  }
+]
