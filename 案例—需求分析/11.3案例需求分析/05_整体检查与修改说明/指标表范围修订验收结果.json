@@ -1,0 +1,17 @@
+{
+  "baseline_commit": "364c470fc2b79e52dbeba30225a3d42a8e284d12",
+  "main_table_rows": 36,
+  "field_count": 8,
+  "analysis_owner": "原需求/一级功能",
+  "allocation_owner": "承接逻辑功能",
+  "other_seven_columns_match": true,
+  "separate_scenario_rows": 5,
+  "original_source_table_rows_covered": 30,
+  "retained_source_derived_rows": 32,
+  "linked_norm_support_rows": 4,
+  "unresolved_main_rows": 10,
+  "all_record_ids_preserved": 75,
+  "all_indicator_value_source_fingerprint_preserved": true,
+  "sysml_and_rendered_files_unchanged": true,
+  "original_source_hashes_verified": 15
+}

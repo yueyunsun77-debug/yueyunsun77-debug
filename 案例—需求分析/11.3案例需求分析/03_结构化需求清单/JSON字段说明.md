@@ -27,3 +27,9 @@ source_refs中Excel旧文件名“热管理(1).xlsx”更正为本次上传文�
 原3个主需求、41个IND及31个SC的ID全部保留，总数仍为75。SC记录通过extras.record_role与baseline_status明确为“场景功能分析记录”，不能将分析分解当成已批准新增产品需求。IND通过indicator_scope区分原表迁移/拆分、PDF补充、场景量化条件；新增logical_responsibility供矩阵核对，不等同正式SysML satisfy/allocate关系。IND-008主要类别调整为安全性，可靠性作为辅助类别保留。七个顶层字段不变。
 
 新增原Excel图片source_ref只作部署差异上下文，明确不据图裁定控制器归属；原图片仍保留本地。字段级变化清单记录本轮相对08198b8的具体字段，未改写原附件。
+
+## 当前表格范围与字段2对应规则
+
+统一清单保留41个指标记录，IND-001—036进入两张三需求主表，IND-037—041进入场景参数表；不是删除5条原记录或改变其ID。extras.in_selected_requirement_tables为筛选标记，table_scope为范围说明。分析表的“部件/功能名称”对应extras.analysis_function_name（主要原需求），分配表对应extras.component_function_name（LF逻辑功能）；两个层级通过parent_requirement、applicable_requirement_ids及映射表连接。其余7列与同一JSON指标一一对应。
+
+IND-033/034是关联规范中的共用采样支撑约束，分别主要归AUTO/制热，并保留另一需求为兼涉对象；IND-035/036主要归AUTO。10项待定条目仍未冻结。七个顶层字段无增删，不为表格范围修改原度量值、默认值、类别或来源。

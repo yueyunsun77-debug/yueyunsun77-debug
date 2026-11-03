@@ -35,16 +35,30 @@ def run():
  assert all(coverage[i]==(2 if i in [20,31] else 1) for i in coverage)
  assert len(indicators)==41 and len(rs)==75
  expected=['序号','部件/功能名称','指标类型','指标名称','度量单位','度量范围','默认值','描述']
+ selected=[r for r in indicators if r['extras'].get('in_selected_requirement_tables')]
+ scene=[r for r in indicators if not r['extras'].get('in_selected_requirement_tables')]
+ assert len(selected)==36 and len(scene)==5
+ assert {r['req_id'] for r in selected}=={f'IND-{i:03d}' for i in range(1,37)}
+ assert {r['req_id'] for r in scene}=={f'IND-{i:03d}' for i in range(37,42)}
  tables=[]
  for name in ['指标分析表','指标分配表']:
   wb=load_workbook(ROOT/'02_指标分析与指标分配'/(name+'.xlsx'),data_only=True)
   ws=wb.active;assert ws.max_column==8 and list(next(ws.values))==expected
-  values=list(ws.values)[1:];assert len(values)==len(indicators)
-  for i,(row,r) in enumerate(zip(values,indicators),1):
-   x=r['extras'];assert list(row)==[i,x['component_function_name'],x['indicator_type'],r['name'],x['measurement_unit'] or '未提供',x['measurement_range'],x['default_value'],r['description']],r['req_id']
+  values=list(ws.values)[1:];assert len(values)==len(selected)
+  for row,r in zip(values,selected):
+   x=r['extras'];n=int(r['req_id'].split('-')[1])
+   owner=x['analysis_function_name'] if name=='指标分析表' else x['component_function_name']
+   assert list(row)==[n,owner,x['indicator_type'],r['name'],x['measurement_unit'] or '未提供',x['measurement_range'],x['default_value'],r['description']],r['req_id']
+   assert x['parent_requirement'] in {r['req_id'] for r in old}
    assert r['category'] in ['功能性','非功能性','性能','安全性','可靠性']
   tables.append(values)
- assert tables[0]==tables[1]
+ for a,b in zip(*tables):assert a[0]==b[0] and a[2:]==b[2:]
+ scenario_ws=load_workbook(ROOT/'04_三个场景功能与逻辑分析/场景参数表.xlsx',data_only=True).active
+ assert scenario_ws.max_column==8 and list(next(scenario_ws.values))==expected
+ scenario_values=list(scenario_ws.values)[1:];assert len(scenario_values)==len(scene)
+ for row,r in zip(scenario_values,scene):
+  x=r['extras'];assert list(row)==[int(r['req_id'].split('-')[1]),x['component_function_name'],x['indicator_type'],r['name'],x['measurement_unit'] or '未提供',x['measurement_range'],x['default_value'],r['description']]
+  assert x['applicable_requirement_ids']==[]
  manifest=json.loads((ROOT/'05_整体检查与修改说明/原始证据清单.json').read_text())
  assert len(manifest)==15
  for e in manifest:
@@ -77,7 +91,9 @@ def run():
  lookup=dict(catalogue)
  assert all(lookup[r['extras']['function_id']]==r['extras']['component_function_name'] for r in indicators)
  countfunctions=countrelations=0
- for folder in (ROOT/'04_三个场景功能与逻辑分析').glob('场景*'):
+ scenario_folders=[p for p in (ROOT/'04_三个场景功能与逻辑分析').glob('场景*') if p.is_dir()]
+ assert len(scenario_folders)==3
+ for folder in scenario_folders:
   fs=list(load_workbook(folder/'功能清单.xlsx',data_only=True).active.values)[1:]
   es=list(load_workbook(folder/'功能关系表.xlsx',data_only=True).active.values)[1:]
   ids={x[0] for x in fs};assert len(ids)==len(fs)
@@ -89,6 +105,6 @@ def run():
  for p in ROOT.rglob('*.md'):
   for target in re.findall(r'\]\(([^)]+)\)',p.read_text()):
    if not target.startswith(('http:','https:','#')):assert (p.parent/target).exists(),(p.name,target)
- result=dict(requirements=len(rs),indicators=len(indicators),original_indicator_rows=len(source_rows),original_source_files=len(manifest),physical_entities=77,scenario_functions=countfunctions,scenario_relations=countrelations,original_models=8,rendered_new_diagrams=4)
+ result=dict(requirements=len(rs),indicators=len(indicators),selected_table_indicators=len(selected),separate_scenario_parameters=len(scene),original_indicator_rows=len(source_rows),original_source_files=len(manifest),physical_entities=77,scenario_functions=countfunctions,scenario_relations=countrelations,original_models=8,rendered_new_diagrams=4)
  print(json.dumps(result,ensure_ascii=False,indent=2));return result
 if __name__=='__main__':run()

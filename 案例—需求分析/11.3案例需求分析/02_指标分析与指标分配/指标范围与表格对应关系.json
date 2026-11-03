@@ -1,0 +1,96 @@
+{
+  "baseline_commit": "364c470fc2b79e52dbeba30225a3d42a8e284d12",
+  "selected_requirement_ids": [
+    "3.3.1.2",
+    "3.3.1.6",
+    "3.3.1.9"
+  ],
+  "main_indicator_ids": [
+    "IND-001",
+    "IND-002",
+    "IND-003",
+    "IND-004",
+    "IND-005",
+    "IND-006",
+    "IND-007",
+    "IND-008",
+    "IND-009",
+    "IND-010",
+    "IND-011",
+    "IND-012",
+    "IND-013",
+    "IND-014",
+    "IND-015",
+    "IND-016",
+    "IND-017",
+    "IND-018",
+    "IND-019",
+    "IND-020",
+    "IND-021",
+    "IND-022",
+    "IND-023",
+    "IND-024",
+    "IND-025",
+    "IND-026",
+    "IND-027",
+    "IND-028",
+    "IND-029",
+    "IND-030",
+    "IND-031",
+    "IND-032",
+    "IND-033",
+    "IND-034",
+    "IND-035",
+    "IND-036"
+  ],
+  "scenario_parameter_ids": [
+    "IND-037",
+    "IND-038",
+    "IND-039",
+    "IND-040",
+    "IND-041"
+  ],
+  "unresolved_main_ids": [
+    "IND-007",
+    "IND-008",
+    "IND-010",
+    "IND-019",
+    "IND-020",
+    "IND-024",
+    "IND-025",
+    "IND-030",
+    "IND-031",
+    "IND-032"
+  ],
+  "main_table_headers": [
+    "序号",
+    "部件/功能名称",
+    "指标类型",
+    "指标名称",
+    "度量单位",
+    "度量范围",
+    "默认值",
+    "描述"
+  ],
+  "analysis_assignment_semantics": "指标分析表字段2为主要需求层归属；指标分配表字段2为逻辑功能承接；其他7列同一指标保持一致。",
+  "shared_associations": {
+    "IND-033": [
+      "3.3.1.6",
+      "3.3.1.2"
+    ],
+    "IND-034": [
+      "3.3.1.2",
+      "3.3.1.6"
+    ]
+  },
+  "counts": {
+    "main_rows": 36,
+    "source_table_derived_rows": 32,
+    "pdf_support_rows": 4,
+    "scenario_parameter_rows": 5,
+    "json_indicator_records": 41,
+    "json_total_records": 75,
+    "unresolved_main_rows": 10
+  },
+  "baseline_indicator_value_sha256": "e0abeab0027e63c0805226ee42189800f462acaba99c4bcd470f79ceff9490e0"
+}

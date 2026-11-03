@@ -1,0 +1,503 @@
+[
+  {
+    "req_id": "IND-001",
+    "changed_extras": [
+      "allocation_status",
+      "analysis_function_name",
+      "applicable_requirement_ids",
+      "in_selected_requirement_tables",
+      "review_outcome",
+      "table_scope"
+    ],
+    "top_level_non_extras_unchanged": true
+  },
+  {
+    "req_id": "IND-002",
+    "changed_extras": [
+      "allocation_status",
+      "analysis_function_name",
+      "applicable_requirement_ids",
+      "in_selected_requirement_tables",
+      "review_outcome",
+      "table_scope"
+    ],
+    "top_level_non_extras_unchanged": true
+  },
+  {
+    "req_id": "IND-003",
+    "changed_extras": [
+      "allocation_status",
+      "analysis_function_name",
+      "applicable_requirement_ids",
+      "in_selected_requirement_tables",
+      "review_outcome",
+      "table_scope"
+    ],
+    "top_level_non_extras_unchanged": true
+  },
+  {
+    "req_id": "IND-004",
+    "changed_extras": [
+      "allocation_status",
+      "analysis_function_name",
+      "applicable_requirement_ids",
+      "in_selected_requirement_tables",
+      "review_outcome",
+      "table_scope"
+    ],
+    "top_level_non_extras_unchanged": true
+  },
+  {
+    "req_id": "IND-005",
+    "changed_extras": [
+      "allocation_status",
+      "analysis_function_name",
+      "applicable_requirement_ids",
+      "in_selected_requirement_tables",
+      "review_outcome",
+      "table_scope"
+    ],
+    "top_level_non_extras_unchanged": true
+  },
+  {
+    "req_id": "IND-006",
+    "changed_extras": [
+      "allocation_status",
+      "analysis_function_name",
+      "applicable_requirement_ids",
+      "in_selected_requirement_tables",
+      "review_outcome",
+      "table_scope"
+    ],
+    "top_level_non_extras_unchanged": true
+  },
+  {
+    "req_id": "IND-007",
+    "changed_extras": [
+      "allocation_status",
+      "analysis_function_name",
+      "applicable_requirement_ids",
+      "in_selected_requirement_tables",
+      "review_outcome",
+      "table_scope"
+    ],
+    "top_level_non_extras_unchanged": true
+  },
+  {
+    "req_id": "IND-008",
+    "changed_extras": [
+      "allocation_status",
+      "analysis_function_name",
+      "applicable_requirement_ids",
+      "in_selected_requirement_tables",
+      "review_outcome",
+      "table_scope"
+    ],
+    "top_level_non_extras_unchanged": true
+  },
+  {
+    "req_id": "IND-009",
+    "changed_extras": [
+      "allocation_status",
+      "analysis_function_name",
+      "applicable_requirement_ids",
+      "in_selected_requirement_tables",
+      "review_outcome",
+      "table_scope"
+    ],
+    "top_level_non_extras_unchanged": true
+  },
+  {
+    "req_id": "IND-010",
+    "changed_extras": [
+      "allocation_status",
+      "analysis_function_name",
+      "applicable_requirement_ids",
+      "in_selected_requirement_tables",
+      "review_outcome",
+      "table_scope"
+    ],
+    "top_level_non_extras_unchanged": true
+  },
+  {
+    "req_id": "IND-011",
+    "changed_extras": [
+      "allocation_status",
+      "analysis_function_name",
+      "applicable_requirement_ids",
+      "in_selected_requirement_tables",
+      "review_outcome",
+      "table_scope"
+    ],
+    "top_level_non_extras_unchanged": true
+  },
+  {
+    "req_id": "IND-012",
+    "changed_extras": [
+      "allocation_status",
+      "analysis_function_name",
+      "applicable_requirement_ids",
+      "in_selected_requirement_tables",
+      "review_outcome",
+      "table_scope"
+    ],
+    "top_level_non_extras_unchanged": true
+  },
+  {
+    "req_id": "IND-013",
+    "changed_extras": [
+      "allocation_status",
+      "analysis_function_name",
+      "applicable_requirement_ids",
+      "in_selected_requirement_tables",
+      "review_outcome",
+      "table_scope"
+    ],
+    "top_level_non_extras_unchanged": true
+  },
+  {
+    "req_id": "IND-014",
+    "changed_extras": [
+      "allocation_status",
+      "analysis_function_name",
+      "applicable_requirement_ids",
+      "in_selected_requirement_tables",
+      "review_outcome",
+      "table_scope"
+    ],
+    "top_level_non_extras_unchanged": true
+  },
+  {
+    "req_id": "IND-015",
+    "changed_extras": [
+      "allocation_status",
+      "analysis_function_name",
+      "applicable_requirement_ids",
+      "in_selected_requirement_tables",
+      "review_outcome",
+      "table_scope"
+    ],
+    "top_level_non_extras_unchanged": true
+  },
+  {
+    "req_id": "IND-016",
+    "changed_extras": [
+      "allocation_status",
+      "analysis_function_name",
+      "applicable_requirement_ids",
+      "in_selected_requirement_tables",
+      "review_outcome",
+      "table_scope"
+    ],
+    "top_level_non_extras_unchanged": true
+  },
+  {
+    "req_id": "IND-017",
+    "changed_extras": [
+      "allocation_status",
+      "analysis_function_name",
+      "applicable_requirement_ids",
+      "in_selected_requirement_tables",
+      "review_outcome",
+      "table_scope"
+    ],
+    "top_level_non_extras_unchanged": true
+  },
+  {
+    "req_id": "IND-018",
+    "changed_extras": [
+      "allocation_status",
+      "analysis_function_name",
+      "applicable_requirement_ids",
+      "in_selected_requirement_tables",
+      "review_outcome",
+      "table_scope"
+    ],
+    "top_level_non_extras_unchanged": true
+  },
+  {
+    "req_id": "IND-019",
+    "changed_extras": [
+      "allocation_status",
+      "analysis_function_name",
+      "applicable_requirement_ids",
+      "in_selected_requirement_tables",
+      "review_outcome",
+      "table_scope"
+    ],
+    "top_level_non_extras_unchanged": true
+  },
+  {
+    "req_id": "IND-020",
+    "changed_extras": [
+      "allocation_status",
+      "analysis_function_name",
+      "applicable_requirement_ids",
+      "in_selected_requirement_tables",
+      "review_outcome",
+      "table_scope"
+    ],
+    "top_level_non_extras_unchanged": true
+  },
+  {
+    "req_id": "IND-021",
+    "changed_extras": [
+      "allocation_status",
+      "analysis_function_name",
+      "applicable_requirement_ids",
+      "in_selected_requirement_tables",
+      "review_outcome",
+      "table_scope"
+    ],
+    "top_level_non_extras_unchanged": true
+  },
+  {
+    "req_id": "IND-022",
+    "changed_extras": [
+      "allocation_status",
+      "analysis_function_name",
+      "applicable_requirement_ids",
+      "in_selected_requirement_tables",
+      "review_outcome",
+      "table_scope"
+    ],
+    "top_level_non_extras_unchanged": true
+  },
+  {
+    "req_id": "IND-023",
+    "changed_extras": [
+      "allocation_status",
+      "analysis_function_name",
+      "applicable_requirement_ids",
+      "in_selected_requirement_tables",
+      "review_outcome",
+      "table_scope"
+    ],
+    "top_level_non_extras_unchanged": true
+  },
+  {
+    "req_id": "IND-024",
+    "changed_extras": [
+      "allocation_status",
+      "analysis_function_name",
+      "applicable_requirement_ids",
+      "in_selected_requirement_tables",
+      "review_outcome",
+      "table_scope"
+    ],
+    "top_level_non_extras_unchanged": true
+  },
+  {
+    "req_id": "IND-025",
+    "changed_extras": [
+      "allocation_status",
+      "analysis_function_name",
+      "applicable_requirement_ids",
+      "in_selected_requirement_tables",
+      "review_outcome",
+      "table_scope"
+    ],
+    "top_level_non_extras_unchanged": true
+  },
+  {
+    "req_id": "IND-026",
+    "changed_extras": [
+      "allocation_status",
+      "analysis_function_name",
+      "applicable_requirement_ids",
+      "in_selected_requirement_tables",
+      "review_outcome",
+      "table_scope"
+    ],
+    "top_level_non_extras_unchanged": true
+  },
+  {
+    "req_id": "IND-027",
+    "changed_extras": [
+      "allocation_status",
+      "analysis_function_name",
+      "applicable_requirement_ids",
+      "in_selected_requirement_tables",
+      "review_outcome",
+      "table_scope"
+    ],
+    "top_level_non_extras_unchanged": true
+  },
+  {
+    "req_id": "IND-028",
+    "changed_extras": [
+      "allocation_status",
+      "analysis_function_name",
+      "applicable_requirement_ids",
+      "in_selected_requirement_tables",
+      "review_outcome",
+      "table_scope"
+    ],
+    "top_level_non_extras_unchanged": true
+  },
+  {
+    "req_id": "IND-029",
+    "changed_extras": [
+      "allocation_status",
+      "analysis_function_name",
+      "applicable_requirement_ids",
+      "in_selected_requirement_tables",
+      "review_outcome",
+      "table_scope"
+    ],
+    "top_level_non_extras_unchanged": true
+  },
+  {
+    "req_id": "IND-030",
+    "changed_extras": [
+      "allocation_status",
+      "analysis_function_name",
+      "applicable_requirement_ids",
+      "in_selected_requirement_tables",
+      "review_outcome",
+      "table_scope"
+    ],
+    "top_level_non_extras_unchanged": true
+  },
+  {
+    "req_id": "IND-031",
+    "changed_extras": [
+      "allocation_status",
+      "analysis_function_name",
+      "applicable_requirement_ids",
+      "in_selected_requirement_tables",
+      "review_outcome",
+      "table_scope"
+    ],
+    "top_level_non_extras_unchanged": true
+  },
+  {
+    "req_id": "IND-032",
+    "changed_extras": [
+      "allocation_status",
+      "analysis_function_name",
+      "applicable_requirement_ids",
+      "in_selected_requirement_tables",
+      "review_outcome",
+      "table_scope"
+    ],
+    "top_level_non_extras_unchanged": true
+  },
+  {
+    "req_id": "IND-033",
+    "changed_extras": [
+      "allocation_status",
+      "analysis_function_name",
+      "applicable_requirement_ids",
+      "association_basis",
+      "in_selected_requirement_tables",
+      "parent_requirement",
+      "review_outcome",
+      "table_scope"
+    ],
+    "top_level_non_extras_unchanged": true
+  },
+  {
+    "req_id": "IND-034",
+    "changed_extras": [
+      "allocation_status",
+      "analysis_function_name",
+      "applicable_requirement_ids",
+      "association_basis",
+      "in_selected_requirement_tables",
+      "parent_requirement",
+      "review_outcome",
+      "shared_applicability_conditions",
+      "table_scope"
+    ],
+    "top_level_non_extras_unchanged": true
+  },
+  {
+    "req_id": "IND-035",
+    "changed_extras": [
+      "allocation_status",
+      "analysis_function_name",
+      "applicable_requirement_ids",
+      "association_basis",
+      "in_selected_requirement_tables",
+      "parent_requirement",
+      "review_outcome",
+      "table_scope"
+    ],
+    "top_level_non_extras_unchanged": true
+  },
+  {
+    "req_id": "IND-036",
+    "changed_extras": [
+      "allocation_status",
+      "analysis_function_name",
+      "applicable_requirement_ids",
+      "association_basis",
+      "in_selected_requirement_tables",
+      "parent_requirement",
+      "review_outcome",
+      "table_scope"
+    ],
+    "top_level_non_extras_unchanged": true
+  },
+  {
+    "req_id": "IND-037",
+    "changed_extras": [
+      "allocation_status",
+      "applicable_requirement_ids",
+      "in_selected_requirement_tables",
+      "review_outcome",
+      "scenario_context",
+      "table_scope"
+    ],
+    "top_level_non_extras_unchanged": true
+  },
+  {
+    "req_id": "IND-038",
+    "changed_extras": [
+      "allocation_status",
+      "applicable_requirement_ids",
+      "in_selected_requirement_tables",
+      "review_outcome",
+      "scenario_context",
+      "table_scope"
+    ],
+    "top_level_non_extras_unchanged": true
+  },
+  {
+    "req_id": "IND-039",
+    "changed_extras": [
+      "allocation_status",
+      "applicable_requirement_ids",
+      "in_selected_requirement_tables",
+      "review_outcome",
+      "scenario_context",
+      "table_scope"
+    ],
+    "top_level_non_extras_unchanged": true
+  },
+  {
+    "req_id": "IND-040",
+    "changed_extras": [
+      "allocation_status",
+      "applicable_requirement_ids",
+      "in_selected_requirement_tables",
+      "review_outcome",
+      "scenario_context",
+      "table_scope"
+    ],
+    "top_level_non_extras_unchanged": true
+  },
+  {
+    "req_id": "IND-041",
+    "changed_extras": [
+      "allocation_status",
+      "applicable_requirement_ids",
+      "in_selected_requirement_tables",
+      "review_outcome",
+      "scenario_context",
+      "table_scope"
+    ],
+    "top_level_non_extras_unchanged": true
+  }
+]

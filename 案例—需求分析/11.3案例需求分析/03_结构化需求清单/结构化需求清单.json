@@ -275,7 +275,14 @@
       "indicator_scope": "原表迁移/拆分",
       "logical_responsibility": "HeatingEnableAndProtection",
       "classification_basis": "依据原表条目的控制/保护/接口或性能目的，保留原指标类型",
-      "review_outcome": "保留；未知值继续待确认"
+      "review_outcome": "纳入三需求主表；功能层分配为分析级承接，待定值不冻结",
+      "in_selected_requirement_tables": true,
+      "applicable_requirement_ids": [
+        "3.3.1.2"
+      ],
+      "analysis_function_name": "3.3.1.2 空调制热",
+      "table_scope": "所选三需求及直接关联规范支撑约束",
+      "allocation_status": "分析级逻辑功能承接；非硬件部署确认"
     }
   },
   {
@@ -314,7 +321,14 @@
       "indicator_scope": "原表迁移/拆分",
       "logical_responsibility": "HeatingEnableAndProtection",
       "classification_basis": "依据原表条目的控制/保护/接口或性能目的，保留原指标类型",
-      "review_outcome": "保留；未知值继续待确认"
+      "review_outcome": "纳入三需求主表；功能层分配为分析级承接，待定值不冻结",
+      "in_selected_requirement_tables": true,
+      "applicable_requirement_ids": [
+        "3.3.1.2"
+      ],
+      "analysis_function_name": "3.3.1.2 空调制热",
+      "table_scope": "所选三需求及直接关联规范支撑约束",
+      "allocation_status": "分析级逻辑功能承接；非硬件部署确认"
     }
   },
   {
@@ -353,7 +367,14 @@
       "indicator_scope": "原表迁移/拆分",
       "logical_responsibility": "HeatingEnableAndProtection",
       "classification_basis": "依据原表条目的控制/保护/接口或性能目的，保留原指标类型",
-      "review_outcome": "保留；未知值继续待确认"
+      "review_outcome": "纳入三需求主表；功能层分配为分析级承接，待定值不冻结",
+      "in_selected_requirement_tables": true,
+      "applicable_requirement_ids": [
+        "3.3.1.2"
+      ],
+      "analysis_function_name": "3.3.1.2 空调制热",
+      "table_scope": "所选三需求及直接关联规范支撑约束",
+      "allocation_status": "分析级逻辑功能承接；非硬件部署确认"
     }
   },
   {
@@ -392,7 +413,14 @@
       "indicator_scope": "原表迁移/拆分",
       "logical_responsibility": "HeatingEnableAndProtection",
       "classification_basis": "依据原表条目的控制/保护/接口或性能目的，保留原指标类型",
-      "review_outcome": "保留；未知值继续待确认"
+      "review_outcome": "纳入三需求主表；功能层分配为分析级承接，待定值不冻结",
+      "in_selected_requirement_tables": true,
+      "applicable_requirement_ids": [
+        "3.3.1.2"
+      ],
+      "analysis_function_name": "3.3.1.2 空调制热",
+      "table_scope": "所选三需求及直接关联规范支撑约束",
+      "allocation_status": "分析级逻辑功能承接；非硬件部署确认"
     }
   },
   {
@@ -431,7 +459,14 @@
       "indicator_scope": "原表迁移/拆分",
       "logical_responsibility": "HeatingEnableAndProtection",
       "classification_basis": "依据原表条目的控制/保护/接口或性能目的，保留原指标类型",
-      "review_outcome": "保留；未知值继续待确认"
+      "review_outcome": "纳入三需求主表；功能层分配为分析级承接，待定值不冻结",
+      "in_selected_requirement_tables": true,
+      "applicable_requirement_ids": [
+        "3.3.1.2"
+      ],
+      "analysis_function_name": "3.3.1.2 空调制热",
+      "table_scope": "所选三需求及直接关联规范支撑约束",
+      "allocation_status": "分析级逻辑功能承接；非硬件部署确认"
     }
   },
   {
@@ -470,7 +505,14 @@
       "indicator_scope": "原表迁移/拆分",
       "logical_responsibility": "HeatingEnableAndProtection",
       "classification_basis": "依据原表条目的控制/保护/接口或性能目的，保留原指标类型",
-      "review_outcome": "保留；未知值继续待确认"
+      "review_outcome": "纳入三需求主表；功能层分配为分析级承接，待定值不冻结",
+      "in_selected_requirement_tables": true,
+      "applicable_requirement_ids": [
+        "3.3.1.2"
+      ],
+      "analysis_function_name": "3.3.1.2 空调制热",
+      "table_scope": "所选三需求及直接关联规范支撑约束",
+      "allocation_status": "分析级逻辑功能承接；非硬件部署确认"
     }
   },
   {
@@ -509,7 +551,14 @@
       "indicator_scope": "原表迁移/拆分",
       "logical_responsibility": "HeatingEnableAndProtection",
       "classification_basis": "依据原表条目的控制/保护/接口或性能目的，保留原指标类型",
-      "review_outcome": "保留；未知值继续待确认"
+      "review_outcome": "纳入三需求主表；功能层分配为分析级承接，待定值不冻结",
+      "in_selected_requirement_tables": true,
+      "applicable_requirement_ids": [
+        "3.3.1.2"
+      ],
+      "analysis_function_name": "3.3.1.2 空调制热",
+      "table_scope": "所选三需求及直接关联规范支撑约束",
+      "allocation_status": "分析级逻辑功能承接；非硬件部署确认"
     }
   },
   {
@@ -551,7 +600,14 @@
         "可靠性"
       ],
       "classification_basis": "过温后安全恢复许可为主要约束目的；不将该条目解读为定量可靠度指标",
-      "review_outcome": "保留；未知值继续待确认"
+      "review_outcome": "纳入三需求主表；功能层分配为分析级承接，待定值不冻结",
+      "in_selected_requirement_tables": true,
+      "applicable_requirement_ids": [
+        "3.3.1.2"
+      ],
+      "analysis_function_name": "3.3.1.2 空调制热",
+      "table_scope": "所选三需求及直接关联规范支撑约束",
+      "allocation_status": "分析级逻辑功能承接；非硬件部署确认"
     }
   },
   {
@@ -590,7 +646,14 @@
       "indicator_scope": "原表迁移/拆分",
       "logical_responsibility": "StateFeedback",
       "classification_basis": "依据原表条目的控制/保护/接口或性能目的，保留原指标类型",
-      "review_outcome": "保留；未知值继续待确认"
+      "review_outcome": "纳入三需求主表；功能层分配为分析级承接，待定值不冻结",
+      "in_selected_requirement_tables": true,
+      "applicable_requirement_ids": [
+        "3.3.1.2"
+      ],
+      "analysis_function_name": "3.3.1.2 空调制热",
+      "table_scope": "所选三需求及直接关联规范支撑约束",
+      "allocation_status": "分析级逻辑功能承接；非硬件部署确认"
     }
   },
   {
@@ -622,7 +685,14 @@
       "indicator_scope": "原表迁移/拆分",
       "logical_responsibility": "HeatingEnableAndProtection",
       "classification_basis": "依据原表条目的控制/保护/接口或性能目的，保留原指标类型",
-      "review_outcome": "保留；未知值继续待确认"
+      "review_outcome": "纳入三需求主表；功能层分配为分析级承接，待定值不冻结",
+      "in_selected_requirement_tables": true,
+      "applicable_requirement_ids": [
+        "3.3.1.2"
+      ],
+      "analysis_function_name": "3.3.1.2 空调制热",
+      "table_scope": "所选三需求及直接关联规范支撑约束",
+      "allocation_status": "分析级逻辑功能承接；非硬件部署确认"
     }
   },
   {
@@ -662,7 +732,14 @@
       "indicator_scope": "原表迁移/拆分",
       "logical_responsibility": "AutomaticClimateCoordination",
       "classification_basis": "依据原表条目的控制/保护/接口或性能目的，保留原指标类型",
-      "review_outcome": "保留；未知值继续待确认"
+      "review_outcome": "纳入三需求主表；功能层分配为分析级承接，待定值不冻结",
+      "in_selected_requirement_tables": true,
+      "applicable_requirement_ids": [
+        "3.3.1.6"
+      ],
+      "analysis_function_name": "3.3.1.6 自动空调模式",
+      "table_scope": "所选三需求及直接关联规范支撑约束",
+      "allocation_status": "分析级逻辑功能承接；非硬件部署确认"
     }
   },
   {
@@ -702,7 +779,14 @@
       "indicator_scope": "原表迁移/拆分",
       "logical_responsibility": "AutomaticClimateCoordination",
       "classification_basis": "依据原表条目的控制/保护/接口或性能目的，保留原指标类型",
-      "review_outcome": "保留；未知值继续待确认"
+      "review_outcome": "纳入三需求主表；功能层分配为分析级承接，待定值不冻结",
+      "in_selected_requirement_tables": true,
+      "applicable_requirement_ids": [
+        "3.3.1.6"
+      ],
+      "analysis_function_name": "3.3.1.6 自动空调模式",
+      "table_scope": "所选三需求及直接关联规范支撑约束",
+      "allocation_status": "分析级逻辑功能承接；非硬件部署确认"
     }
   },
   {
@@ -742,7 +826,14 @@
       "indicator_scope": "原表迁移/拆分",
       "logical_responsibility": "AutomaticClimateCoordination",
       "classification_basis": "依据原表条目的控制/保护/接口或性能目的，保留原指标类型",
-      "review_outcome": "保留；未知值继续待确认"
+      "review_outcome": "纳入三需求主表；功能层分配为分析级承接，待定值不冻结",
+      "in_selected_requirement_tables": true,
+      "applicable_requirement_ids": [
+        "3.3.1.6"
+      ],
+      "analysis_function_name": "3.3.1.6 自动空调模式",
+      "table_scope": "所选三需求及直接关联规范支撑约束",
+      "allocation_status": "分析级逻辑功能承接；非硬件部署确认"
     }
   },
   {
@@ -782,7 +873,14 @@
       "indicator_scope": "原表迁移/拆分",
       "logical_responsibility": "ThermalInformationProcessing",
       "classification_basis": "依据原表条目的控制/保护/接口或性能目的，保留原指标类型",
-      "review_outcome": "保留；未知值继续待确认"
+      "review_outcome": "纳入三需求主表；功能层分配为分析级承接，待定值不冻结",
+      "in_selected_requirement_tables": true,
+      "applicable_requirement_ids": [
+        "3.3.1.6"
+      ],
+      "analysis_function_name": "3.3.1.6 自动空调模式",
+      "table_scope": "所选三需求及直接关联规范支撑约束",
+      "allocation_status": "分析级逻辑功能承接；非硬件部署确认"
     }
   },
   {
@@ -822,7 +920,14 @@
       "indicator_scope": "原表迁移/拆分",
       "logical_responsibility": "AutomaticClimateCoordination",
       "classification_basis": "依据原表条目的控制/保护/接口或性能目的，保留原指标类型",
-      "review_outcome": "保留；未知值继续待确认"
+      "review_outcome": "纳入三需求主表；功能层分配为分析级承接，待定值不冻结",
+      "in_selected_requirement_tables": true,
+      "applicable_requirement_ids": [
+        "3.3.1.6"
+      ],
+      "analysis_function_name": "3.3.1.6 自动空调模式",
+      "table_scope": "所选三需求及直接关联规范支撑约束",
+      "allocation_status": "分析级逻辑功能承接；非硬件部署确认"
     }
   },
   {
@@ -862,7 +967,14 @@
       "indicator_scope": "原表迁移/拆分",
       "logical_responsibility": "StateFeedback",
       "classification_basis": "依据原表条目的控制/保护/接口或性能目的，保留原指标类型",
-      "review_outcome": "保留；未知值继续待确认"
+      "review_outcome": "纳入三需求主表；功能层分配为分析级承接，待定值不冻结",
+      "in_selected_requirement_tables": true,
+      "applicable_requirement_ids": [
+        "3.3.1.6"
+      ],
+      "analysis_function_name": "3.3.1.6 自动空调模式",
+      "table_scope": "所选三需求及直接关联规范支撑约束",
+      "allocation_status": "分析级逻辑功能承接；非硬件部署确认"
     }
   },
   {
@@ -902,7 +1014,14 @@
       "indicator_scope": "原表迁移/拆分",
       "logical_responsibility": "StateFeedback",
       "classification_basis": "依据原表条目的控制/保护/接口或性能目的，保留原指标类型",
-      "review_outcome": "保留；未知值继续待确认"
+      "review_outcome": "纳入三需求主表；功能层分配为分析级承接，待定值不冻结",
+      "in_selected_requirement_tables": true,
+      "applicable_requirement_ids": [
+        "3.3.1.6"
+      ],
+      "analysis_function_name": "3.3.1.6 自动空调模式",
+      "table_scope": "所选三需求及直接关联规范支撑约束",
+      "allocation_status": "分析级逻辑功能承接；非硬件部署确认"
     }
   },
   {
@@ -942,7 +1061,14 @@
       "indicator_scope": "原表迁移/拆分",
       "logical_responsibility": "AutomaticClimateCoordination",
       "classification_basis": "依据原表条目的控制/保护/接口或性能目的，保留原指标类型",
-      "review_outcome": "保留；未知值继续待确认"
+      "review_outcome": "纳入三需求主表；功能层分配为分析级承接，待定值不冻结",
+      "in_selected_requirement_tables": true,
+      "applicable_requirement_ids": [
+        "3.3.1.6"
+      ],
+      "analysis_function_name": "3.3.1.6 自动空调模式",
+      "table_scope": "所选三需求及直接关联规范支撑约束",
+      "allocation_status": "分析级逻辑功能承接；非硬件部署确认"
     }
   },
   {
@@ -974,7 +1100,14 @@
       "indicator_scope": "原表迁移/拆分",
       "logical_responsibility": "AutomaticClimateCoordination",
       "classification_basis": "依据原表条目的控制/保护/接口或性能目的，保留原指标类型",
-      "review_outcome": "保留；未知值继续待确认"
+      "review_outcome": "纳入三需求主表；功能层分配为分析级承接，待定值不冻结",
+      "in_selected_requirement_tables": true,
+      "applicable_requirement_ids": [
+        "3.3.1.6"
+      ],
+      "analysis_function_name": "3.3.1.6 自动空调模式",
+      "table_scope": "所选三需求及直接关联规范支撑约束",
+      "allocation_status": "分析级逻辑功能承接；非硬件部署确认"
     }
   },
   {
@@ -1006,7 +1139,14 @@
       "indicator_scope": "原表迁移/拆分",
       "logical_responsibility": "AutomaticClimateCoordination",
       "classification_basis": "依据原表条目的控制/保护/接口或性能目的，保留原指标类型",
-      "review_outcome": "保留；未知值继续待确认"
+      "review_outcome": "纳入三需求主表；功能层分配为分析级承接，待定值不冻结",
+      "in_selected_requirement_tables": true,
+      "applicable_requirement_ids": [
+        "3.3.1.6"
+      ],
+      "analysis_function_name": "3.3.1.6 自动空调模式",
+      "table_scope": "所选三需求及直接关联规范支撑约束",
+      "allocation_status": "分析级逻辑功能承接；非硬件部署确认"
     }
   },
   {
@@ -1046,7 +1186,14 @@
       "indicator_scope": "原表迁移/拆分",
       "logical_responsibility": "DefrostAndDemistControl",
       "classification_basis": "依据原表条目的控制/保护/接口或性能目的，保留原指标类型",
-      "review_outcome": "保留；未知值继续待确认"
+      "review_outcome": "纳入三需求主表；功能层分配为分析级承接，待定值不冻结",
+      "in_selected_requirement_tables": true,
+      "applicable_requirement_ids": [
+        "3.3.1.9"
+      ],
+      "analysis_function_name": "3.3.1.9 前后风窗除霜/除雾",
+      "table_scope": "所选三需求及直接关联规范支撑约束",
+      "allocation_status": "分析级逻辑功能承接；非硬件部署确认"
     }
   },
   {
@@ -1086,7 +1233,14 @@
       "indicator_scope": "原表迁移/拆分",
       "logical_responsibility": "DefrostAndDemistControl",
       "classification_basis": "依据原表条目的控制/保护/接口或性能目的，保留原指标类型",
-      "review_outcome": "保留；未知值继续待确认"
+      "review_outcome": "纳入三需求主表；功能层分配为分析级承接，待定值不冻结",
+      "in_selected_requirement_tables": true,
+      "applicable_requirement_ids": [
+        "3.3.1.9"
+      ],
+      "analysis_function_name": "3.3.1.9 前后风窗除霜/除雾",
+      "table_scope": "所选三需求及直接关联规范支撑约束",
+      "allocation_status": "分析级逻辑功能承接；非硬件部署确认"
     }
   },
   {
@@ -1126,7 +1280,14 @@
       "indicator_scope": "原表迁移/拆分",
       "logical_responsibility": "DefrostAndDemistControl",
       "classification_basis": "依据原表条目的控制/保护/接口或性能目的，保留原指标类型",
-      "review_outcome": "保留；未知值继续待确认"
+      "review_outcome": "纳入三需求主表；功能层分配为分析级承接，待定值不冻结",
+      "in_selected_requirement_tables": true,
+      "applicable_requirement_ids": [
+        "3.3.1.9"
+      ],
+      "analysis_function_name": "3.3.1.9 前后风窗除霜/除雾",
+      "table_scope": "所选三需求及直接关联规范支撑约束",
+      "allocation_status": "分析级逻辑功能承接；非硬件部署确认"
     }
   },
   {
@@ -1166,7 +1327,14 @@
       "indicator_scope": "原表迁移/拆分",
       "logical_responsibility": "DefrostAndDemistControl",
       "classification_basis": "依据原表条目的控制/保护/接口或性能目的，保留原指标类型",
-      "review_outcome": "保留；未知值继续待确认"
+      "review_outcome": "纳入三需求主表；功能层分配为分析级承接，待定值不冻结",
+      "in_selected_requirement_tables": true,
+      "applicable_requirement_ids": [
+        "3.3.1.9"
+      ],
+      "analysis_function_name": "3.3.1.9 前后风窗除霜/除雾",
+      "table_scope": "所选三需求及直接关联规范支撑约束",
+      "allocation_status": "分析级逻辑功能承接；非硬件部署确认"
     }
   },
   {
@@ -1206,7 +1374,14 @@
       "indicator_scope": "原表迁移/拆分",
       "logical_responsibility": "DefrostAndDemistControl",
       "classification_basis": "依据原表条目的控制/保护/接口或性能目的，保留原指标类型",
-      "review_outcome": "保留；未知值继续待确认"
+      "review_outcome": "纳入三需求主表；功能层分配为分析级承接，待定值不冻结",
+      "in_selected_requirement_tables": true,
+      "applicable_requirement_ids": [
+        "3.3.1.9"
+      ],
+      "analysis_function_name": "3.3.1.9 前后风窗除霜/除雾",
+      "table_scope": "所选三需求及直接关联规范支撑约束",
+      "allocation_status": "分析级逻辑功能承接；非硬件部署确认"
     }
   },
   {
@@ -1246,7 +1421,14 @@
       "indicator_scope": "原表迁移/拆分",
       "logical_responsibility": "DefrostAndDemistControl",
       "classification_basis": "依据原表条目的控制/保护/接口或性能目的，保留原指标类型",
-      "review_outcome": "保留；未知值继续待确认"
+      "review_outcome": "纳入三需求主表；功能层分配为分析级承接，待定值不冻结",
+      "in_selected_requirement_tables": true,
+      "applicable_requirement_ids": [
+        "3.3.1.9"
+      ],
+      "analysis_function_name": "3.3.1.9 前后风窗除霜/除雾",
+      "table_scope": "所选三需求及直接关联规范支撑约束",
+      "allocation_status": "分析级逻辑功能承接；非硬件部署确认"
     }
   },
   {
@@ -1286,7 +1468,14 @@
       "indicator_scope": "原表迁移/拆分",
       "logical_responsibility": "StateFeedback",
       "classification_basis": "依据原表条目的控制/保护/接口或性能目的，保留原指标类型",
-      "review_outcome": "保留；未知值继续待确认"
+      "review_outcome": "纳入三需求主表；功能层分配为分析级承接，待定值不冻结",
+      "in_selected_requirement_tables": true,
+      "applicable_requirement_ids": [
+        "3.3.1.9"
+      ],
+      "analysis_function_name": "3.3.1.9 前后风窗除霜/除雾",
+      "table_scope": "所选三需求及直接关联规范支撑约束",
+      "allocation_status": "分析级逻辑功能承接；非硬件部署确认"
     }
   },
   {
@@ -1326,7 +1515,14 @@
       "indicator_scope": "原表迁移/拆分",
       "logical_responsibility": "DefrostAndDemistControl",
       "classification_basis": "依据原表条目的控制/保护/接口或性能目的，保留原指标类型",
-      "review_outcome": "保留；未知值继续待确认"
+      "review_outcome": "纳入三需求主表；功能层分配为分析级承接，待定值不冻结",
+      "in_selected_requirement_tables": true,
+      "applicable_requirement_ids": [
+        "3.3.1.9"
+      ],
+      "analysis_function_name": "3.3.1.9 前后风窗除霜/除雾",
+      "table_scope": "所选三需求及直接关联规范支撑约束",
+      "allocation_status": "分析级逻辑功能承接；非硬件部署确认"
     }
   },
   {
@@ -1366,7 +1562,14 @@
       "indicator_scope": "原表迁移/拆分",
       "logical_responsibility": "DefrostAndDemistControl",
       "classification_basis": "依据原表条目的控制/保护/接口或性能目的，保留原指标类型",
-      "review_outcome": "保留；未知值继续待确认"
+      "review_outcome": "纳入三需求主表；功能层分配为分析级承接，待定值不冻结",
+      "in_selected_requirement_tables": true,
+      "applicable_requirement_ids": [
+        "3.3.1.9"
+      ],
+      "analysis_function_name": "3.3.1.9 前后风窗除霜/除雾",
+      "table_scope": "所选三需求及直接关联规范支撑约束",
+      "allocation_status": "分析级逻辑功能承接；非硬件部署确认"
     }
   },
   {
@@ -1398,7 +1601,14 @@
       "indicator_scope": "原表迁移/拆分",
       "logical_responsibility": "DefrostAndDemistControl",
       "classification_basis": "依据原表条目的控制/保护/接口或性能目的，保留原指标类型",
-      "review_outcome": "保留；未知值继续待确认"
+      "review_outcome": "纳入三需求主表；功能层分配为分析级承接，待定值不冻结",
+      "in_selected_requirement_tables": true,
+      "applicable_requirement_ids": [
+        "3.3.1.9"
+      ],
+      "analysis_function_name": "3.3.1.9 前后风窗除霜/除雾",
+      "table_scope": "所选三需求及直接关联规范支撑约束",
+      "allocation_status": "后风窗依据不足，功能分配待确认"
     }
   },
   {
@@ -1430,7 +1640,14 @@
       "indicator_scope": "原表迁移/拆分",
       "logical_responsibility": "DefrostAndDemistControl",
       "classification_basis": "依据原表条目的控制/保护/接口或性能目的，保留原指标类型",
-      "review_outcome": "保留；未知值继续待确认"
+      "review_outcome": "纳入三需求主表；功能层分配为分析级承接，待定值不冻结",
+      "in_selected_requirement_tables": true,
+      "applicable_requirement_ids": [
+        "3.3.1.9"
+      ],
+      "analysis_function_name": "3.3.1.9 前后风窗除霜/除雾",
+      "table_scope": "所选三需求及直接关联规范支撑约束",
+      "allocation_status": "分析级逻辑功能承接；非硬件部署确认"
     }
   },
   {
@@ -1462,7 +1679,14 @@
       "indicator_scope": "原表迁移/拆分",
       "logical_responsibility": "DefrostAndDemistControl",
       "classification_basis": "依据原表条目的控制/保护/接口或性能目的，保留原指标类型",
-      "review_outcome": "保留；未知值继续待确认"
+      "review_outcome": "纳入三需求主表；功能层分配为分析级承接，待定值不冻结",
+      "in_selected_requirement_tables": true,
+      "applicable_requirement_ids": [
+        "3.3.1.9"
+      ],
+      "analysis_function_name": "3.3.1.9 前后风窗除霜/除雾",
+      "table_scope": "所选三需求及直接关联规范支撑约束",
+      "allocation_status": "分析级逻辑功能承接；非硬件部署确认"
     }
   },
   {
@@ -1491,7 +1715,17 @@
       "indicator_scope": "PDF有来源补充",
       "logical_responsibility": "ThermalInformationProcessing",
       "classification_basis": "依据原表条目的控制/保护/接口或性能目的，保留原指标类型",
-      "review_outcome": "保留；未知值继续待确认"
+      "review_outcome": "纳入三需求主表；功能层分配为分析级承接，待定值不冻结",
+      "in_selected_requirement_tables": true,
+      "parent_requirement": "3.3.1.6",
+      "applicable_requirement_ids": [
+        "3.3.1.6",
+        "3.3.1.2"
+      ],
+      "analysis_function_name": "3.3.1.6 自动空调模式",
+      "table_scope": "所选三需求及直接关联规范支撑约束",
+      "allocation_status": "分析级逻辑功能承接；非硬件部署确认",
+      "association_basis": "CCU手动加热需比较舱温且监测加热温度；AUTO需相应温度输入。50 ms来自SL29对应检测规范，作为关联信息采集支撑约束。"
     }
   },
   {
@@ -1520,7 +1754,20 @@
       "indicator_scope": "PDF有来源补充",
       "logical_responsibility": "ThermalInformationProcessing",
       "classification_basis": "依据原表条目的控制/保护/接口或性能目的，保留原指标类型",
-      "review_outcome": "保留；未知值继续待确认"
+      "review_outcome": "纳入三需求主表；功能层分配为分析级承接，待定值不冻结",
+      "in_selected_requirement_tables": true,
+      "parent_requirement": "3.3.1.2",
+      "applicable_requirement_ids": [
+        "3.3.1.2",
+        "3.3.1.6"
+      ],
+      "analysis_function_name": "3.3.1.2 空调制热",
+      "table_scope": "所选三需求及直接关联规范支撑约束",
+      "allocation_status": "分析级逻辑功能承接；非硬件部署确认",
+      "association_basis": "CCU手动加热需比较舱温且监测加热温度；AUTO需相应温度输入。50 ms来自SL29对应检测规范，作为关联信息采集支撑约束。",
+      "shared_applicability_conditions": {
+        "3.3.1.6": "仅在AUTO使用PTC温度输入的配置下关联；不得据此推定暖芯入口温度或所有温度信号的采样周期。"
+      }
     }
   },
   {
@@ -1548,7 +1795,16 @@
       "indicator_scope": "PDF有来源补充",
       "logical_responsibility": "AutomaticClimateCoordination",
       "classification_basis": "依据原表条目的控制/保护/接口或性能目的，保留原指标类型",
-      "review_outcome": "保留；未知值继续待确认"
+      "review_outcome": "纳入三需求主表；功能层分配为分析级承接，待定值不冻结",
+      "in_selected_requirement_tables": true,
+      "parent_requirement": "3.3.1.6",
+      "applicable_requirement_ids": [
+        "3.3.1.6"
+      ],
+      "analysis_function_name": "3.3.1.6 自动空调模式",
+      "table_scope": "所选三需求及直接关联规范支撑约束",
+      "allocation_status": "分析级逻辑功能承接；非硬件部署确认",
+      "association_basis": "CCU 6.13.1.3在AUTO状态下明确规定AC按键行为；归属3.3.1.6。"
     }
   },
   {
@@ -1576,7 +1832,16 @@
       "indicator_scope": "PDF有来源补充",
       "logical_responsibility": "AutomaticClimateCoordination",
       "classification_basis": "依据原表条目的控制/保护/接口或性能目的，保留原指标类型",
-      "review_outcome": "保留；未知值继续待确认"
+      "review_outcome": "纳入三需求主表；功能层分配为分析级承接，待定值不冻结",
+      "in_selected_requirement_tables": true,
+      "parent_requirement": "3.3.1.6",
+      "applicable_requirement_ids": [
+        "3.3.1.6"
+      ],
+      "analysis_function_name": "3.3.1.6 自动空调模式",
+      "table_scope": "所选三需求及直接关联规范支撑约束",
+      "allocation_status": "分析级逻辑功能承接；非硬件部署确认",
+      "association_basis": "CCU 6.13.1.3在AUTO状态下明确规定AC按键行为；归属3.3.1.6。"
     }
   },
   {
@@ -1602,7 +1867,12 @@
       "indicator_scope": "任务书场景量化条件",
       "logical_responsibility": "ScenarioAnalysisContext",
       "classification_basis": "按控制目的分类；场景工况不是通用产品性能指标",
-      "review_outcome": "保留；未知值继续待确认"
+      "review_outcome": "保留原IND编号与数值，移至独立场景参数表；不列作三条产品需求指标",
+      "in_selected_requirement_tables": false,
+      "applicable_requirement_ids": [],
+      "table_scope": "任务书场景分析参数，不纳入所选三需求主表",
+      "allocation_status": "场景分析功能；不是三需求产品功能分配",
+      "scenario_context": "场景一：混合动力汽车动力经济性建模"
     }
   },
   {
@@ -1628,7 +1898,12 @@
       "indicator_scope": "任务书场景量化条件",
       "logical_responsibility": "ScenarioAnalysisContext",
       "classification_basis": "按控制目的分类；场景工况不是通用产品性能指标",
-      "review_outcome": "保留；未知值继续待确认"
+      "review_outcome": "保留原IND编号与数值，移至独立场景参数表；不列作三条产品需求指标",
+      "in_selected_requirement_tables": false,
+      "applicable_requirement_ids": [],
+      "table_scope": "任务书场景分析参数，不纳入所选三需求主表",
+      "allocation_status": "场景分析功能；不是三需求产品功能分配",
+      "scenario_context": "场景二：纯电热管理建模"
     }
   },
   {
@@ -1654,7 +1929,12 @@
       "indicator_scope": "任务书场景量化条件",
       "logical_responsibility": "ScenarioAnalysisContext",
       "classification_basis": "按控制目的分类；场景工况不是通用产品性能指标",
-      "review_outcome": "保留；未知值继续待确认"
+      "review_outcome": "保留原IND编号与数值，移至独立场景参数表；不列作三条产品需求指标",
+      "in_selected_requirement_tables": false,
+      "applicable_requirement_ids": [],
+      "table_scope": "任务书场景分析参数，不纳入所选三需求主表",
+      "allocation_status": "场景分析功能；不是三需求产品功能分配",
+      "scenario_context": "场景二：纯电热管理建模"
     }
   },
   {
@@ -1680,7 +1960,12 @@
       "indicator_scope": "任务书场景量化条件",
       "logical_responsibility": "ScenarioAnalysisContext",
       "classification_basis": "按控制目的分类；场景工况不是通用产品性能指标",
-      "review_outcome": "保留；未知值继续待确认"
+      "review_outcome": "保留原IND编号与数值，移至独立场景参数表；不列作三条产品需求指标",
+      "in_selected_requirement_tables": false,
+      "applicable_requirement_ids": [],
+      "table_scope": "任务书场景分析参数，不纳入所选三需求主表",
+      "allocation_status": "场景分析功能；不是三需求产品功能分配",
+      "scenario_context": "场景二：纯电热管理建模"
     }
   },
   {
@@ -1706,7 +1991,12 @@
       "indicator_scope": "任务书场景量化条件",
       "logical_responsibility": "ScenarioAnalysisContext",
       "classification_basis": "按控制目的分类；场景工况不是通用产品性能指标",
-      "review_outcome": "保留；未知值继续待确认"
+      "review_outcome": "保留原IND编号与数值，移至独立场景参数表；不列作三条产品需求指标",
+      "in_selected_requirement_tables": false,
+      "applicable_requirement_ids": [],
+      "table_scope": "任务书场景分析参数，不纳入所选三需求主表",
+      "allocation_status": "场景分析功能；不是三需求产品功能分配",
+      "scenario_context": "场景二：纯电热管理建模"
     }
   },
   {
