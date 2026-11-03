@@ -1,0 +1,584 @@
+{
+  "selected_requirements": [
+    "3.3.1.2",
+    "3.3.1.6",
+    "3.3.1.9"
+  ],
+  "mapping": [
+    {
+      "scenario": 1,
+      "requirement": "3.3.1.2 空调制热",
+      "relation": "条件扩展",
+      "support": "叠加制热请求时，引入电加热使能、过温保护、反馈；其电耗作为供能协调输入。",
+      "limit": "驱动、再生制动、发动机发电不由本需求定义。"
+    },
+    {
+      "scenario": 1,
+      "requirement": "3.3.1.6 自动空调模式",
+      "relation": "条件扩展",
+      "support": "显式选择AUTO时，可在动力经济性场景加入座舱自动调节及辅助用电。",
+      "limit": "场景未指定开启空调或AUTO，不能直接假设。"
+    },
+    {
+      "scenario": 1,
+      "requirement": "3.3.1.9 前后风窗除霜/除雾",
+      "relation": "条件扩展",
+      "support": "叠加前除霜/除雾请求时分析可视性与供能负荷。",
+      "limit": "场景未规定风窗工况，后风窗逻辑仍缺资料。"
+    },
+    {
+      "scenario": 2,
+      "requirement": "3.3.1.2 空调制热",
+      "relation": "非基准功能；可扩展",
+      "support": "当前基准是座舱降温；增加低温/制热工况后才验证制热使能及保护。",
+      "limit": "不能将制冷请求解释为制热使能。"
+    },
+    {
+      "scenario": 2,
+      "requirement": "3.3.1.6 自动空调模式",
+      "relation": "条件支撑",
+      "support": "座舱温控与该需求相关；显式进入AUTO后，可使用其温度采集、自动协调和模式处理要求。",
+      "limit": "启动空调不等于进入AUTO；电池35℃触发逻辑来自场景。"
+    },
+    {
+      "scenario": 2,
+      "requirement": "3.3.1.9 前后风窗除霜/除雾",
+      "relation": "条件扩展",
+      "support": "叠加有依据的前除霜/除雾后，可分析与电池冷却的共享能力协调。",
+      "limit": "基准工况未规定风窗请求；35℃不能代替规范未定的仲裁XX阈值。"
+    },
+    {
+      "scenario": 3,
+      "requirement": "3.3.1.2 空调制热",
+      "relation": "供热扩展",
+      "support": "若扩展座舱供热，可引入电加热请求、使能及过温保护。",
+      "limit": "截图只给出制冷剂回路制冷路径，供热路径需另明确。"
+    },
+    {
+      "scenario": 3,
+      "requirement": "3.3.1.6 自动空调模式",
+      "relation": "条件支撑",
+      "support": "显式启用AUTO时，对应目标温度、输入采集、制冷能力自动调节及模式反馈。",
+      "limit": "电池辅助冷却触发和Chiller换热要求不能全部归于AUTO需求。"
+    },
+    {
+      "scenario": 3,
+      "requirement": "3.3.1.9 前后风窗除霜/除雾",
+      "relation": "截图允许的功能扩展",
+      "support": "截图明确可扩展除湿/除霜；叠加前除霜/除雾时引用已有风窗控制及优先级要求。",
+      "limit": "仅支持已有资料所覆盖的前风窗；后风窗仍待确认。"
+    }
+  ],
+  "functions": [
+    {
+      "record_id": "SC1-001",
+      "function_id": "S1-F01",
+      "name": "驾驶指令接收",
+      "description": "驾驶指令接收：输入加速/制动指令；输出驾驶意图。输入同时有效时仲裁待确认。",
+      "scope": "场景一核心动力功能；与所选热管理需求仅在叠加热负荷时耦合",
+      "status": "沿用既有场景分析ID；与本次截图逐项核对，非新增已批准产品需求"
+    },
+    {
+      "record_id": "SC1-002",
+      "function_id": "S1-F02",
+      "name": "动力需求分析",
+      "description": "动力需求分析：输入驾驶意图、工况；输出驱动/制动需求。需求先于模式选择。",
+      "scope": "场景一核心动力功能；与所选热管理需求仅在叠加热负荷时耦合",
+      "status": "沿用既有场景分析ID；与本次截图逐项核对，非新增已批准产品需求"
+    },
+    {
+      "record_id": "SC1-003",
+      "function_id": "S1-F03",
+      "name": "工作模式选择",
+      "description": "工作模式选择：输入动力需求、能源状态；输出驱动/回收/发电请求。启动和停机阈值未给出。",
+      "scope": "场景一核心动力功能；与所选热管理需求仅在叠加热负荷时耦合",
+      "status": "沿用既有场景分析ID；与本次截图逐项核对，非新增已批准产品需求"
+    },
+    {
+      "record_id": "SC1-004",
+      "function_id": "S1-F04",
+      "name": "电驱动能量转换控制",
+      "description": "电驱动能量转换控制：输入驱动请求、可用电能；输出驱动力请求与用电反馈。发动机不直接机械驱动。",
+      "scope": "场景一核心动力功能；与所选热管理需求仅在叠加热负荷时耦合",
+      "status": "沿用既有场景分析ID；与本次截图逐项核对，非新增已批准产品需求"
+    },
+    {
+      "record_id": "SC1-005",
+      "function_id": "S1-F05",
+      "name": "再生制动触发判断",
+      "description": "再生制动触发判断：输入制动请求、回收可用性；输出再生请求。回收上限及摩擦制动融合待确认。",
+      "scope": "场景一核心动力功能；与所选热管理需求仅在叠加热负荷时耦合",
+      "status": "沿用既有场景分析ID；与本次截图逐项核对，非新增已批准产品需求"
+    },
+    {
+      "record_id": "SC1-006",
+      "function_id": "S1-F06",
+      "name": "再生能量转换与充电协调",
+      "description": "再生能量转换与充电协调：输入再生请求、电池充电状态；输出回收能量与充电请求。受电池接受能力约束，数值未给出。",
+      "scope": "场景一核心动力功能；与所选热管理需求仅在叠加热负荷时耦合",
+      "status": "沿用既有场景分析ID；与本次截图逐项核对，非新增已批准产品需求"
+    },
+    {
+      "record_id": "SC1-007",
+      "function_id": "S1-F07",
+      "name": "发动机启动协调",
+      "description": "发动机启动协调：输入发电请求、启动状态；输出发动机已启动状态。启动完成先于发电控制。",
+      "scope": "场景一核心动力功能；与所选热管理需求仅在叠加热负荷时耦合",
+      "status": "沿用既有场景分析ID；与本次截图逐项核对，非新增已批准产品需求"
+    },
+    {
+      "record_id": "SC1-008",
+      "function_id": "S1-F08",
+      "name": "高效发电运行调节",
+      "description": "高效发电运行调节：输入发动机已启动、负载转速反馈；输出发电电能、负载转速目标。最优转速区间未给出；优先维持50%以上负载。",
+      "scope": "场景一核心动力功能；与所选热管理需求仅在叠加热负荷时耦合",
+      "status": "沿用既有场景分析ID；与本次截图逐项核对，非新增已批准产品需求"
+    },
+    {
+      "record_id": "SC1-009",
+      "function_id": "S1-F09",
+      "name": "充电与能量收支管理",
+      "description": "充电与能量收支管理：输入发电/回收电能、电池状态、驱动消耗；输出充电调度与能耗记录。发电和回收能量不得重复记账。",
+      "scope": "场景一核心动力功能；与所选热管理需求仅在叠加热负荷时耦合",
+      "status": "沿用既有场景分析ID；与本次截图逐项核对，非新增已批准产品需求"
+    },
+    {
+      "record_id": "SC1-010",
+      "function_id": "S1-F10",
+      "name": "运行反馈与模式更新",
+      "description": "运行反馈与模式更新：输入转速、负载、电池及车辆响应；输出下一步模式评估信息。闭环周期与控制算法待确认。",
+      "scope": "场景一核心动力功能；与所选热管理需求仅在叠加热负荷时耦合",
+      "status": "沿用既有场景分析ID；与本次截图逐项核对，非新增已批准产品需求"
+    },
+    {
+      "record_id": "SC2-001",
+      "function_id": "S2-F01",
+      "name": "驾驶循环初始化",
+      "description": "驾驶循环初始化：输入仿真开始、空调启动操作；输出静置阶段与座舱降温请求。初始温度、时间步长未给出。",
+      "scope": "场景二基准温控/工况功能；AUTO需要显式选择",
+      "status": "沿用既有场景分析ID；与本次截图逐项核对，非新增已批准产品需求"
+    },
+    {
+      "record_id": "SC2-002",
+      "function_id": "S2-F02",
+      "name": "静置预冷计时",
+      "description": "静置预冷计时：输入阶段起点、经过时间；输出静置2分钟完成事件。不可省略座舱空调启动。",
+      "scope": "场景二基准温控/工况功能；AUTO需要显式选择",
+      "status": "沿用既有场景分析ID；与本次截图逐项核对，非新增已批准产品需求"
+    },
+    {
+      "record_id": "SC2-003",
+      "function_id": "S2-F03",
+      "name": "匀速行驶工况控制",
+      "description": "匀速行驶工况控制：输入预冷完成事件、车速反馈；输出45 km/h行驶20分钟工况。总循环22分钟由2+20推导，不新增指标。",
+      "scope": "场景二基准温控/工况功能；AUTO需要显式选择",
+      "status": "沿用既有场景分析ID；与本次截图逐项核对，非新增已批准产品需求"
+    },
+    {
+      "record_id": "SC2-004",
+      "function_id": "S2-F04",
+      "name": "座舱降温需求处理",
+      "description": "座舱降温需求处理：输入空调启动、座舱状态；输出座舱制冷需求与响应。目标温度未提供。",
+      "scope": "场景二基准温控/工况功能；AUTO需要显式选择",
+      "status": "沿用既有场景分析ID；与本次截图逐项核对，非新增已批准产品需求"
+    },
+    {
+      "record_id": "SC2-005",
+      "function_id": "S2-F05",
+      "name": "电池温度信息获取",
+      "description": "电池温度信息获取：输入电芯温度快照；输出有效温度输入。控制温度取最大/均值未规定。",
+      "scope": "场景二基准温控/工况功能；AUTO需要显式选择",
+      "status": "沿用既有场景分析ID；与本次截图逐项核对，非新增已批准产品需求"
+    },
+    {
+      "record_id": "SC2-006",
+      "function_id": "S2-F06",
+      "name": "电池主动冷却触发判断",
+      "description": "电池主动冷却触发判断：输入电芯温度；输出主动冷却请求。T>=35℃触发；退出回差未提供。",
+      "scope": "场景二基准温控/工况功能；AUTO需要显式选择",
+      "status": "沿用既有场景分析ID；与本次截图逐项核对，非新增已批准产品需求"
+    },
+    {
+      "record_id": "SC2-007",
+      "function_id": "S2-F07",
+      "name": "环境空气对流换热评估",
+      "description": "环境空气对流换热评估：输入电芯与发动机舱空气状态、换热条件；输出有符号环境换热贡献。温差可能反向，不能总假定降温。",
+      "scope": "场景二基准温控/工况功能；AUTO需要显式选择",
+      "status": "沿用既有场景分析ID；与本次截图逐项核对，非新增已批准产品需求"
+    },
+    {
+      "record_id": "SC2-008",
+      "function_id": "S2-F08",
+      "name": "座舱与电池冷却能力协调",
+      "description": "座舱与电池冷却能力协调：输入两类冷却需求、可用能力；输出各路径能力分配。不足时优先级待确认。",
+      "scope": "场景二基准温控/工况功能；AUTO需要显式选择",
+      "status": "沿用既有场景分析ID；与本次截图逐项核对，非新增已批准产品需求"
+    },
+    {
+      "record_id": "SC2-009",
+      "function_id": "S2-F09",
+      "name": "主动冷却执行状态评估",
+      "description": "主动冷却执行状态评估：输入冷却请求、分配能力及热状态；输出实际冷却贡献及效果反馈。请求不等于已形成实际冷量；延迟及不可用处理待确认。",
+      "scope": "场景二基准温控/工况功能；AUTO需要显式选择",
+      "status": "沿用既有场景分析ID；与本次截图逐项核对，非新增已批准产品需求"
+    },
+    {
+      "record_id": "SC2-010",
+      "function_id": "S2-F10",
+      "name": "换热汇总与热状态反馈",
+      "description": "换热汇总与热状态反馈：输入环境/主动换热贡献、车辆与电池运行状态；输出电池/座舱热状态反馈。统一推进状态，避免两次积分。",
+      "scope": "场景二基准温控/工况功能；AUTO需要显式选择",
+      "status": "沿用既有场景分析ID；与本次截图逐项核对，非新增已批准产品需求"
+    },
+    {
+      "record_id": "SC3-001",
+      "function_id": "S3-F01",
+      "name": "座舱温度目标获取",
+      "description": "座舱温度目标获取：输入人员设定或场景目标；输出有效目标温度。默认目标温度未提供。",
+      "scope": "场景三座舱/电池冷却功能；AUTO和风窗为条件或扩展",
+      "status": "沿用既有场景分析ID；与本次截图逐项核对，非新增已批准产品需求"
+    },
+    {
+      "record_id": "SC3-002",
+      "function_id": "S3-F02",
+      "name": "座舱温度信息采集",
+      "description": "座舱温度信息采集：输入座舱温度信息；输出温度反馈。采样精度未规定。",
+      "scope": "场景三座舱/电池冷却功能；AUTO和风窗为条件或扩展",
+      "status": "沿用既有场景分析ID；与本次截图逐项核对，非新增已批准产品需求"
+    },
+    {
+      "record_id": "SC3-003",
+      "function_id": "S3-F03",
+      "name": "座舱偏差与制冷需求判断",
+      "description": "座舱偏差与制冷需求判断：输入目标温度、实测温度；输出座舱制冷需求。控制死区与算法待确认。",
+      "scope": "场景三座舱/电池冷却功能；AUTO和风窗为条件或扩展",
+      "status": "沿用既有场景分析ID；与本次截图逐项核对，非新增已批准产品需求"
+    },
+    {
+      "record_id": "SC3-004",
+      "function_id": "S3-F04",
+      "name": "座舱制冷能力调节",
+      "description": "座舱制冷能力调节：输入分配的制冷能力、制冷需求；输出制冷量调节请求。不用压缩机等硬件作功能名称。",
+      "scope": "场景三座舱/电池冷却功能；AUTO和风窗为条件或扩展",
+      "status": "沿用既有场景分析ID；与本次截图逐项核对，非新增已批准产品需求"
+    },
+    {
+      "record_id": "SC3-005",
+      "function_id": "S3-F05",
+      "name": "空气输送与送风调节",
+      "description": "空气输送与送风调节：输入制冷请求、空气输送需求；输出座舱空气换热效果。风量上下限未给出。",
+      "scope": "场景三座舱/电池冷却功能；AUTO和风窗为条件或扩展",
+      "status": "沿用既有场景分析ID；与本次截图逐项核对，非新增已批准产品需求"
+    },
+    {
+      "record_id": "SC3-006",
+      "function_id": "S3-F06",
+      "name": "电池温度及功率获取",
+      "description": "电池温度及功率获取：输入电池温度、充放电功率；输出有效温度/功率输入。不能将场景二35℃自动移用于本场景。",
+      "scope": "场景三座舱/电池冷却功能；AUTO和风窗为条件或扩展",
+      "status": "沿用既有场景分析ID；与本次截图逐项核对，非新增已批准产品需求"
+    },
+    {
+      "record_id": "SC3-007",
+      "function_id": "S3-F07",
+      "name": "电池辅助冷却需求判断",
+      "description": "电池辅助冷却需求判断：输入温度/功率输入；输出辅助冷却需求。温度偏高 OR 功率较大；阈值未给出。",
+      "scope": "场景三座舱/电池冷却功能；AUTO和风窗为条件或扩展",
+      "status": "沿用既有场景分析ID；与本次截图逐项核对，非新增已批准产品需求"
+    },
+    {
+      "record_id": "SC3-008",
+      "function_id": "S3-F08",
+      "name": "电池冷却能力需求计算",
+      "description": "电池冷却能力需求计算：输入辅助冷却需求、热状态；输出电池冷却能力请求。热模型参数及计算算法未给出。",
+      "scope": "场景三座舱/电池冷却功能；AUTO和风窗为条件或扩展",
+      "status": "沿用既有场景分析ID；与本次截图逐项核对，非新增已批准产品需求"
+    },
+    {
+      "record_id": "SC3-009",
+      "function_id": "S3-F09",
+      "name": "制冷能力需求分配",
+      "description": "制冷能力需求分配：输入座舱/电池请求、可用制冷能力；输出两个功能的能力分配。不足时优先级/互斥策略待确认。",
+      "scope": "场景三座舱/电池冷却功能；AUTO和风窗为条件或扩展",
+      "status": "沿用既有场景分析ID；与本次截图逐项核对，非新增已批准产品需求"
+    },
+    {
+      "record_id": "SC3-010",
+      "function_id": "S3-F10",
+      "name": "电池换热调节",
+      "description": "电池换热调节：输入电池分配能力、冷却液状态；输出电池热量交换响应。保留原场景冷却液路径，未改为供风。",
+      "scope": "场景三座舱/电池冷却功能；AUTO和风窗为条件或扩展",
+      "status": "沿用既有场景分析ID；与本次截图逐项核对，非新增已批准产品需求"
+    },
+    {
+      "record_id": "SC3-011",
+      "function_id": "S3-F11",
+      "name": "冷却效果反馈与需求更新",
+      "description": "冷却效果反馈与需求更新：输入座舱/电池温度与执行状态；输出需求重新评估信息。不得凭空填写安全/性能窗口上下限。",
+      "scope": "场景三座舱/电池冷却功能；AUTO和风窗为条件或扩展",
+      "status": "沿用既有场景分析ID；与本次截图逐项核对，非新增已批准产品需求"
+    }
+  ],
+  "relations": [
+    {
+      "scenario": 1,
+      "source": "S1-F01",
+      "target": "S1-F02",
+      "relation_type": "先后",
+      "condition": "驾驶输入已接收"
+    },
+    {
+      "scenario": 1,
+      "source": "S1-F02",
+      "target": "S1-F03",
+      "relation_type": "数据依赖",
+      "condition": "已形成动力/制动需求；结合能源状态"
+    },
+    {
+      "scenario": 1,
+      "source": "S1-F03",
+      "target": "S1-F04",
+      "relation_type": "条件分支",
+      "condition": "存在驱动需求且能源许可"
+    },
+    {
+      "scenario": 1,
+      "source": "S1-F03",
+      "target": "S1-F05",
+      "relation_type": "条件分支",
+      "condition": "存在制动需求"
+    },
+    {
+      "scenario": 1,
+      "source": "S1-F05",
+      "target": "S1-F06",
+      "relation_type": "条件分支",
+      "condition": "满足回收可用条件"
+    },
+    {
+      "scenario": 1,
+      "source": "S1-F03",
+      "target": "S1-F07",
+      "relation_type": "条件分支",
+      "condition": "已发出发动机发电/启动请求"
+    },
+    {
+      "scenario": 1,
+      "source": "S1-F07",
+      "target": "S1-F08",
+      "relation_type": "先后",
+      "condition": "发动机启动完成"
+    },
+    {
+      "scenario": 1,
+      "source": "S1-F04",
+      "target": "S1-F09",
+      "relation_type": "数据依赖",
+      "condition": "记录驱动电耗"
+    },
+    {
+      "scenario": 1,
+      "source": "S1-F06",
+      "target": "S1-F09",
+      "relation_type": "数据依赖",
+      "condition": "记录实际回收电能"
+    },
+    {
+      "scenario": 1,
+      "source": "S1-F08",
+      "target": "S1-F09",
+      "relation_type": "数据依赖",
+      "condition": "记录实际发电/充电电能"
+    },
+    {
+      "scenario": 1,
+      "source": "S1-F09",
+      "target": "S1-F10",
+      "relation_type": "反馈",
+      "condition": "结合车辆、电池及机组运行状态"
+    },
+    {
+      "scenario": 1,
+      "source": "S1-F10",
+      "target": "S1-F02",
+      "relation_type": "循环",
+      "condition": "下一次评估，不规定周期"
+    },
+    {
+      "scenario": 2,
+      "source": "S2-F01",
+      "target": "S2-F02",
+      "relation_type": "阶段先后",
+      "condition": "静置并启动座舱空调后开始计时"
+    },
+    {
+      "scenario": 2,
+      "source": "S2-F02",
+      "target": "S2-F03",
+      "relation_type": "条件转换",
+      "condition": "静置2分钟完成；再执行45 km/h、20分钟工况"
+    },
+    {
+      "scenario": 2,
+      "source": "S2-F01",
+      "target": "S2-F04",
+      "relation_type": "并行启动",
+      "condition": "开始处理座舱降温需求"
+    },
+    {
+      "scenario": 2,
+      "source": "S2-F04",
+      "target": "S2-F08",
+      "relation_type": "数据依赖",
+      "condition": "座舱制冷需求"
+    },
+    {
+      "scenario": 2,
+      "source": "S2-F05",
+      "target": "S2-F06",
+      "relation_type": "先后",
+      "condition": "电芯温度已获取；温度控制量定义待确认"
+    },
+    {
+      "scenario": 2,
+      "source": "S2-F06",
+      "target": "S2-F08",
+      "relation_type": "条件触发",
+      "condition": "电芯温度≥35℃时提出主动冷却请求"
+    },
+    {
+      "scenario": 2,
+      "source": "S2-F08",
+      "target": "S2-F09",
+      "relation_type": "先后",
+      "condition": "已确定可用能力及请求"
+    },
+    {
+      "scenario": 2,
+      "source": "S2-F07",
+      "target": "S2-F10",
+      "relation_type": "汇合",
+      "condition": "环境换热贡献，方向取决于温差"
+    },
+    {
+      "scenario": 2,
+      "source": "S2-F09",
+      "target": "S2-F10",
+      "relation_type": "汇合",
+      "condition": "实际主动冷却贡献，请求不等于实际冷量"
+    },
+    {
+      "scenario": 2,
+      "source": "S2-F03",
+      "target": "S2-F10",
+      "relation_type": "数据依赖",
+      "condition": "当前车辆运行状态"
+    },
+    {
+      "scenario": 2,
+      "source": "S2-F10",
+      "target": "S2-F05",
+      "relation_type": "反馈循环",
+      "condition": "更新电池温度后重新判断"
+    },
+    {
+      "scenario": 2,
+      "source": "S2-F10",
+      "target": "S2-F04",
+      "relation_type": "反馈循环",
+      "condition": "更新座舱热状态后重新评估"
+    },
+    {
+      "scenario": 3,
+      "source": "S3-F01",
+      "target": "S3-F03",
+      "relation_type": "数据汇合",
+      "condition": "目标温度已获取"
+    },
+    {
+      "scenario": 3,
+      "source": "S3-F02",
+      "target": "S3-F03",
+      "relation_type": "数据汇合",
+      "condition": "实际座舱温度已获取"
+    },
+    {
+      "scenario": 3,
+      "source": "S3-F03",
+      "target": "S3-F09",
+      "relation_type": "需求汇合",
+      "condition": "座舱制冷需求"
+    },
+    {
+      "scenario": 3,
+      "source": "S3-F06",
+      "target": "S3-F07",
+      "relation_type": "先后",
+      "condition": "电池温度及充放电功率已获取"
+    },
+    {
+      "scenario": 3,
+      "source": "S3-F07",
+      "target": "S3-F08",
+      "relation_type": "条件触发",
+      "condition": "温度偏高 OR 充放电功率较大；阈值未给"
+    },
+    {
+      "scenario": 3,
+      "source": "S3-F08",
+      "target": "S3-F09",
+      "relation_type": "需求汇合",
+      "condition": "电池辅助冷却能力请求"
+    },
+    {
+      "scenario": 3,
+      "source": "S3-F09",
+      "target": "S3-F04",
+      "relation_type": "能力协调",
+      "condition": "按可用能力形成总体/座舱制冷量调节请求"
+    },
+    {
+      "scenario": 3,
+      "source": "S3-F09",
+      "target": "S3-F10",
+      "relation_type": "能力协调",
+      "condition": "存在电池冷却需求且分配到能力"
+    },
+    {
+      "scenario": 3,
+      "source": "S3-F04",
+      "target": "S3-F05",
+      "relation_type": "协同执行",
+      "condition": "制冷量调节与空气输送共同形成座舱换热"
+    },
+    {
+      "scenario": 3,
+      "source": "S3-F05",
+      "target": "S3-F11",
+      "relation_type": "反馈",
+      "condition": "座舱实际换热及温度响应"
+    },
+    {
+      "scenario": 3,
+      "source": "S3-F10",
+      "target": "S3-F11",
+      "relation_type": "反馈",
+      "condition": "电池冷却液路径实际换热及温度响应"
+    },
+    {
+      "scenario": 3,
+      "source": "S3-F11",
+      "target": "S3-F02",
+      "relation_type": "反馈循环",
+      "condition": "重新采集座舱温度"
+    },
+    {
+      "scenario": 3,
+      "source": "S3-F11",
+      "target": "S3-F06",
+      "relation_type": "反馈循环",
+      "condition": "重新获取电池温度及功率"
+    }
+  ],
+  "scope": "基于本次截图及已上传需求JSON的功能分析；本文件作为独立附录，不替代或改写原需求清单和模型。"
+}
