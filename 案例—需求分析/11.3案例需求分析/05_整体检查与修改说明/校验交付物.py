@@ -48,7 +48,7 @@ def run():
   for row,r in zip(values,selected):
    x=r['extras'];n=int(r['req_id'].split('-')[1])
    owner=x['analysis_function_name'] if name=='指标分析表' else x['component_function_name']
-   assert list(row)==[n,owner,x['indicator_type'],r['name'],x['measurement_unit'] or '未提供',x['measurement_range'],x['default_value'],r['description']],r['req_id']
+   assert list(row)==[n,owner,'属性',r['name'],'-' if x['measurement_unit'] in [None,'','未提供'] else x['measurement_unit'],x['measurement_range'],'-' if x['default_value'] in [None,''] else x['default_value'],r['description']],r['req_id']
    assert x['parent_requirement'] in {r['req_id'] for r in old}
    assert r['category'] in ['功能性','非功能性','性能','安全性','可靠性']
   tables.append(values)

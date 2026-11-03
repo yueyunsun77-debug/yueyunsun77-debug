@@ -24,7 +24,7 @@ def run():
   for row,r in zip(rows,selected):
    x=r['extras'];expected_owner=x['analysis_function_name'] if name=='指标分析表' else x['component_function_name']
    assert row[0]==int(r['req_id'].split('-')[1]) and row[1]==expected_owner
-   assert list(row[2:])==[x['indicator_type'],r['name'],x['measurement_unit'] or '未提供',x['measurement_range'],x['default_value'],r['description']]
+   assert list(row[2:])==['属性',r['name'],'-' if x['measurement_unit'] in [None,'','未提供'] else x['measurement_unit'],x['measurement_range'],'-' if x['default_value'] in [None,''] else x['default_value'],r['description']]
    assert x['parent_requirement'] in scope['selected_requirement_ids']
    assert set(x['applicable_requirement_ids'])<=set(scope['selected_requirement_ids'])
  for a,b in zip(*main):assert a[0]==b[0] and a[2:]==b[2:]

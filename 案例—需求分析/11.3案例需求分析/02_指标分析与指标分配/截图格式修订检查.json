@@ -1,0 +1,48 @@
+{
+  "files": [
+    {
+      "file": "指标分析表.xlsx",
+      "input_file": "指标分析表 (1).xlsx",
+      "input_sha256": "5585a3e1e693ba5dc252d761c451959fec336c4b296af325ba0ff56528f71d73",
+      "output_sha256": "83346ba766a8abfa451b70e68e3c264209008e76f4e6a1da1843ec65e9827752",
+      "rows": 36,
+      "columns": 8,
+      "attribute_rows": 36,
+      "missing_unit_display": "-",
+      "missing_default_display": "-",
+      "unchanged_columns": [
+        1,
+        2,
+        4,
+        6,
+        8
+      ],
+      "original_business_categories_preserved_in_comments": true,
+      "source_locations_in_description_comments": true
+    },
+    {
+      "file": "指标分配表.xlsx",
+      "input_file": "指标分配表 (1).xlsx",
+      "input_sha256": "3aec2e5e7fe9122d001ec75b83801fc21f2614b8f3a5c0aebfd24af54feae52a",
+      "output_sha256": "c56e7463ee428c08b3832966c12c131c17694d64595f89b07beb7d554f968be7",
+      "rows": 36,
+      "columns": 8,
+      "attribute_rows": 36,
+      "missing_unit_display": "-",
+      "missing_default_display": "-",
+      "unchanged_columns": [
+        1,
+        2,
+        4,
+        6,
+        8
+      ],
+      "original_business_categories_preserved_in_comments": true,
+      "source_locations_in_description_comments": true
+    }
+  ],
+  "analysis_owner": "原选定需求/功能",
+  "allocation_owner": "承接指标的逻辑功能",
+  "known_thresholds_and_conditions_unchanged": true,
+  "new_defaults_invented": false
+}
