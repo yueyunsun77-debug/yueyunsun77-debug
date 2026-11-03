@@ -1,0 +1,29 @@
+--- c47d5f3/3.3.1.9-需求活动图.sysml
++++ 原生校验修正版/3.3.1.9-需求活动图.sysml
+@@ -2,0 +3,3 @@
++    private import ScalarValues::*;
++    enum def WindscreenRequestKind { frontDefrost; frontDemist; rearUnspecified; unresolved; }
++
+@@ -7 +10 @@
+-       建模方式参照已验证的需求层活动图ACT：通过场景包、需求层活动、嵌套action、doc注释及ActionFlowView生成活动视图。
++       建模方式采用需求层活动图ACT：通过场景包、需求层活动、嵌套action、doc注释及ActionFlowView生成活动视图。
+@@ -13,0 +17,4 @@
++                doc /* 本活动为一次评估快照。条件与互斥路径由显式决策/守卫/合并建模；抽象动作不代表控制算法或实车仿真。 */
++                in requestKind : WindscreenRequestKind;
++                // 内部分析级请求分类，不新增对外报文。冲突/未知请求由上下文标为unresolved，不编造仲裁优先级。
++
+@@ -25 +32 @@
+-                       本图保留原高层阶段链，后续动作仅适用于已识别且有依据的前风窗请求；流程渲染图按此doc条件展开。
++                       本轮增加supportedFrontRequest守卫；后风窗和其他依据不足请求不会进入前风窗配置链。
+@@ -55,0 +63,4 @@
++                action '后风窗等依据不足请求待确认' {
++                    doc /* 该路径不执行前风窗配置；不定义未经规范支持的后风窗控制、拒绝或故障策略。 */
++                }
++                decide supportedFrontRequest;
+@@ -58 +69,3 @@
+-                first '识别前除霜、前除雾或后风窗请求' then '配置风口、风量与循环状态';
++                first '识别前除霜、前除雾或后风窗请求' then supportedFrontRequest;
++                first supportedFrontRequest if requestKind == WindscreenRequestKind::frontDefrost or requestKind == WindscreenRequestKind::frontDemist then '配置风口、风量与循环状态';
++                first supportedFrontRequest if requestKind == WindscreenRequestKind::rearUnspecified or requestKind == WindscreenRequestKind::unresolved then '后风窗等依据不足请求待确认';
+@@ -62,0 +76 @@
++                first '后风窗等依据不足请求待确认' then done;

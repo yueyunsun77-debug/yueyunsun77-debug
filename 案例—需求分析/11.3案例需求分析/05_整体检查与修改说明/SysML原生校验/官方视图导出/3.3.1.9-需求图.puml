@@ -1,0 +1,47 @@
+@startuml
+skin sysmlbw
+skinparam monochrome true
+skinparam wrapWidth 300
+hide circle
+
+comp def "~<3.3.1.9> FrontRearDefrostDemist" as E1  <<(T,blue) requirement  def>>  {
+}
+comp usage "~<3.3.1.9-01> defrostRequestFeedback  " as E2  <<(T,blue) requirement>>  {
+##//doc//##
+CCU经CAN接收IVI发出的前除霜<U+002F>前除雾请求，并向IVI反馈状态
+}
+comp usage "~<3.3.1.9-02> frontDefrostConfiguration  " as E3  <<(T,blue) requirement>>  {
+##//doc//##
+前除霜<U+002F>除雾位置、最大风量、外循环90%待定；温度保持
+}
+comp usage "~<3.3.1.9-03> actuatorStatusFeedback  " as E4  <<(T,blue) requirement>>  {
+##//doc//##
+反馈风量、温度、AC、循环与前风窗模式状态
+}
+comp usage "~<3.3.1.9-04> modePersistenceAndExit  " as E5  <<(T,blue) requirement>>  {
+##//doc//##
+按规范保持、退出、返回此前非OFF模式；后风窗逻辑不可由前风窗外推
+}
+comp usage "~<3.3.1.9-05> compressorDehumidificationPriority  " as E6  <<(T,blue) requirement>>  {
+##//doc//##
+除湿转速接口最低1000 r<U+002F>min待标定；优先级参SL29 4.1.3.3，阈值XX未定
+}
+comp usage "~<3.3.1.9-06> lowSocDefrostException  " as E7  <<(T,blue) requirement>>  {
+##//doc//##
+SOC<U+003C>10%且前除霜关闭则禁止制冷输出，开启则允许；SOC<U+003D>10%边界未规定
+--
+##//attributes//##
+frontDefrostActive: Boolean
+lowSocGateAllowsCompressor: Boolean
+stateOfCharge: Real
+--
+##//constraints//##
+<b>require</b> { stateOfCharge ><U+003D> 10 or (lowSocGateAllowsCompressor <U+003D><U+003D> frontDefrostActive) }
+}
+E1 *-- E2
+E1 *-- E3
+E1 *-- E4
+E1 *-- E5
+E1 *-- E6
+E1 *-- E7
+@enduml

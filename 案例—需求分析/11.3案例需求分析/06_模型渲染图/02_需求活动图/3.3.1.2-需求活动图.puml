@@ -1,39 +1,75 @@
 @startdot
 digraph G {
-graph [bgcolor="white", fontname="Noto Sans CJK SC", fontsize=20, labelloc=t, label="3.3.1.2 空调制热 · 需求活动图", pad=0.45, nodesep=0.65, ranksep=1.0, splines=ortho, dpi=150, rankdir=TB, ranksep=0.65, dpi=130];
+graph [bgcolor="white", fontname="Noto Sans CJK SC", fontsize=20, labelloc=t, label="3.3.1.2 空调制热 · 需求活动图", pad=0.45, nodesep=0.65, ranksep=1.0, splines=ortho, dpi=150, rankdir=TB, ranksep=0.6, dpi=130, splines=polyline];
 node [shape=box, style="rounded,filled", fillcolor="white", color="#858585", penwidth=1.1, fontname="Noto Sans CJK SC", fontsize=14, margin="0.18,0.14"];
 edge [color="#666666", penwidth=1.0, fontname="Noto Sans CJK SC", fontsize=11, arrowsize=0.7];
-{rank=same; ON; OFF;}
-{rank=same; REC; STOP; KEEP;}
-{rank=same; UNLOCK; HOLD;}
-A0 [width=2.4, height=0.65, label=<<FONT COLOR="#8070AC">▣</FONT> «action»<BR/>接收制热请求并读取目标温<BR/>度>];
-A1 [width=2.4, height=0.65, label=<<FONT COLOR="#8070AC">▣</FONT> «action»<BR/>检查电加热使能条件>];
-A2 [width=2.4, height=0.65, label=<<FONT COLOR="#8070AC">▣</FONT> «action»<BR/>根据使能条件控制电加热通<BR/>断>];
-A3 [width=2.4, height=0.65, label=<<FONT COLOR="#8070AC">▣</FONT> «action»<BR/>监测电加热温度并执行过温<BR/>保护>];
-A4 [width=2.4, height=0.65, label=<<FONT COLOR="#8070AC">▣</FONT> «action»<BR/>反馈电加热状态与功率信息>];
-ON [width=2.4, height=0.65, label=<<FONT COLOR="#8070AC">▣</FONT> «action»<BR/>允许电加热输出>];
-OFF [width=2.4, height=0.65, label=<<FONT COLOR="#8070AC">▣</FONT> «action»<BR/>禁止或保持关闭加热>];
-REC [width=2.4, height=0.65, label=<<FONT COLOR="#8070AC">▣</FONT> «action»<BR/>判断保护恢复条件>];
-UNLOCK [width=2.4, height=0.65, label=<<FONT COLOR="#8070AC">▣</FONT> «action»<BR/>重新允许加热<BR/>仍须满足全部使能条件>];
-HOLD [width=2.4, height=0.65, label=<<FONT COLOR="#8070AC">▣</FONT> «action»<BR/>保持保护禁止状态>];
-STOP [width=2.4, height=0.65, label=<<FONT COLOR="#8070AC">▣</FONT> «action»<BR/>停止加热并进入保护>];
-KEEP [width=2.4, height=0.65, label=<<FONT COLOR="#8070AC">▣</FONT> «action»<BR/>按当前许可调节输出>];
-A0 -> A1 [style=dashed, arrowhead=vee];
-A1 -> A2 [style=dashed, arrowhead=vee, xlabel="使能条件判断结果"];
-A2 -> ON [style=dashed, arrowhead=vee, xlabel="全部条件满足"];
-A2 -> OFF [style=dashed, arrowhead=vee, xlabel="任一条件不满足"];
-ON -> A3 [style=dashed, arrowhead=vee];
-OFF -> A3 [style=dashed, arrowhead=vee];
-A3 -> REC [style=dashed, arrowhead=vee, xlabel="已触发且未解除保护"];
-A3 -> STOP [style=dashed, arrowhead=vee, xlabel="未处于保护且温度≥上限X\nXX℃"];
-A3 -> KEEP [style=dashed, arrowhead=vee, xlabel="未处于保护且未达上限"];
-REC -> UNLOCK [style=dashed, arrowhead=vee, xlabel="温度≤恢复XXX℃"];
-REC -> HOLD [style=dashed, arrowhead=vee, xlabel="尚未满足恢复条件"];
-UNLOCK -> A4 [style=dashed, arrowhead=vee];
-HOLD -> A4 [style=dashed, arrowhead=vee];
-STOP -> A4 [style=dashed, arrowhead=vee];
-KEEP -> A4 [style=dashed, arrowhead=vee];
-NOTE [shape=note, style=filled, fillcolor="white", fontsize=11, label="使能：送风开启、目标温度>舱温、高压可用、无整车故障、SOC>10%。\n电加热温度检测50 ms；上限/恢复阈值XXX待标定。\n保留原阶段和doc规则；一次评估片段不代表持续监测停止。"];
-A4 -> NOTE [style=invis];
+N0 [shape=circle, width=0.16, height=0.16, fixedsize=true, style=filled, fillcolor="#666666", peripheries=1, label=""];
+N1 [width=2.4, height=0.65, label=<<FONT COLOR="#8070AC">▣</FONT> «action»<BR/>接收制热请求并读取目标温<BR/>度>];
+N2 [width=2.4, height=0.65, label=<<FONT COLOR="#8070AC">▣</FONT> «action»<BR/>检查电加热使能条件>];
+N3 [width=2.4, height=0.65, label=<<FONT COLOR="#8070AC">▣</FONT> «action»<BR/>根据使能条件控制电加热通<BR/>断>];
+N4 [width=2.4, height=0.65, label=<<FONT COLOR="#8070AC">▣</FONT> «action»<BR/>监测电加热温度并执行过温<BR/>保护>];
+N5 [width=2.4, height=0.65, label=<<FONT COLOR="#8070AC">▣</FONT> «action»<BR/>反馈电加热状态与功率信息>];
+N6 [width=2.4, height=0.65, label=<<FONT COLOR="#8070AC">▣</FONT> «action»<BR/>允许电加热输出>];
+N7 [width=2.4, height=0.65, label=<<FONT COLOR="#8070AC">▣</FONT> «action»<BR/>禁止或保持关闭加热>];
+N8 [width=2.4, height=0.65, label=<<FONT COLOR="#8070AC">▣</FONT> «action»<BR/>判断保护恢复条件>];
+N9 [width=2.4, height=0.65, label=<<FONT COLOR="#8070AC">▣</FONT> «action»<BR/>重新允许加热>];
+N10 [width=2.4, height=0.65, label=<<FONT COLOR="#8070AC">▣</FONT> «action»<BR/>保持保护禁止状态>];
+N11 [width=2.4, height=0.65, label=<<FONT COLOR="#8070AC">▣</FONT> «action»<BR/>停止加热并进入保护>];
+N12 [width=2.4, height=0.65, label=<<FONT COLOR="#8070AC">▣</FONT> «action»<BR/>按当前许可调节输出>];
+N13 [shape=diamond, style=filled, width=1.8, height=0.6, fontsize=11, label="使能条件判断"];
+N14 [shape=diamond, style=filled, width=1.8, height=0.6, fontsize=11, label="是否达到过温上限"];
+N15 [shape=diamond, style=filled, width=1.8, height=0.6, fontsize=11, label="原保护是否激活"];
+N16 [shape=diamond, style=filled, width=1.8, height=0.6, fontsize=11, label="是否达到恢复条件"];
+N17 [shape=diamond, style=filled, width=1.8, height=0.6, fontsize=11, label="使能分支合并"];
+N18 [shape=diamond, style=filled, width=1.8, height=0.6, fontsize=11, label="保护分支合并"];
+N19 [shape=circle, width=0.16, height=0.16, fixedsize=true, style=filled, fillcolor="white", peripheries=2, label=""];
+N0 -> N1 [arrowhead=vee];
+// successions: start -> 接收制热请求并读取目标温度 []
+N5 -> N19 [arrowhead=vee];
+// successions: 反馈电加热状态与功率信息 -> done []
+N1 -> N2 [arrowhead=vee];
+// successions: 接收制热请求并读取目标温度 -> 检查电加热使能条件 []
+N2 -> N3 [arrowhead=vee];
+// successions: 检查电加热使能条件 -> 根据使能条件控制电加热通断 []
+N3 -> N13 [arrowhead=vee];
+// successions: 根据使能条件控制电加热通断 -> heatingEnableChoice []
+N13 -> N6 [arrowhead=vee, label="全部加热使能条件满足"];
+// successions: heatingEnableChoice -> 允许电加热输出 [heatingAllowed]
+N13 -> N7 [arrowhead=vee, label="任一加热使能条件不满足"];
+// successions: heatingEnableChoice -> 禁止或保持关闭加热 [not heatingAllowed]
+N6 -> N17 [arrowhead=vee];
+// successions: 允许电加热输出 -> enableMerged []
+N7 -> N17 [arrowhead=vee];
+// successions: 禁止或保持关闭加热 -> enableMerged []
+N17 -> N4 [arrowhead=vee];
+// successions: enableMerged -> 监测电加热温度并执行过温保护 []
+N4 -> N14 [arrowhead=vee];
+// successions: 监测电加热温度并执行过温保护 -> overtemperatureChoice []
+N14 -> N11 [arrowhead=vee, label="加热温度 ≥ 待标定上限"];
+// successions: overtemperatureChoice -> 停止加热并进入保护 [heaterTemperature >= cutOffTemperature]
+N14 -> N15 [arrowhead=vee, label="加热温度 < 待标定上限"];
+// successions: overtemperatureChoice -> protectionMemoryChoice [heaterTemperature < cutOffTemperature]
+N15 -> N8 [arrowhead=vee, label="原保护已激活"];
+// successions: protectionMemoryChoice -> 判断保护恢复条件 [protectionWasActive]
+N15 -> N12 [arrowhead=vee, label="原保护未激活"];
+// successions: protectionMemoryChoice -> 按当前许可调节输出 [not protectionWasActive]
+N8 -> N16 [arrowhead=vee];
+// successions: 判断保护恢复条件 -> recoveryChoice []
+N16 -> N9 [arrowhead=vee, label="加热温度 ≤ 待标定恢复温度"];
+// successions: recoveryChoice -> 重新允许加热 [heaterTemperature <= recoveryTemperature]
+N16 -> N10 [arrowhead=vee, label="加热温度 > 待标定恢复温度"];
+// successions: recoveryChoice -> 保持保护禁止状态 [heaterTemperature > recoveryTemperature]
+N11 -> N18 [arrowhead=vee];
+// successions: 停止加热并进入保护 -> protectionMerged []
+N12 -> N18 [arrowhead=vee];
+// successions: 按当前许可调节输出 -> protectionMerged []
+N9 -> N18 [arrowhead=vee];
+// successions: 重新允许加热 -> protectionMerged []
+N10 -> N18 [arrowhead=vee];
+// successions: 保持保护禁止状态 -> protectionMerged []
+N18 -> N5 [arrowhead=vee];
+// successions: protectionMerged -> 反馈电加热状态与功率信息 []
+NOTE [shape=note, fontsize=11, label="一次评估快照；抽象动作不代表实车仿真。\n全部使能：送风开启、目标温度>舱温、高压可用、无整车故障、SOC>10%。\n保护状态由调用方输入，阈值XXX待标定；最终许可受使能与保护共同约束。"];
+N19 -> NOTE [style=invis];
 }
 @enddot

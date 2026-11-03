@@ -1,0 +1,36 @@
+{
+  "native_files": 11,
+  "errors": 0,
+  "warnings": 0,
+  "original_requirement_ids": 23,
+  "activities": [
+    {
+      "requirement": "3.3.1.2",
+      "original_phases": 5,
+      "actions": 12,
+      "decisions": 4,
+      "merges": 2,
+      "successions": 23,
+      "unintended_action_joins": 0
+    },
+    {
+      "requirement": "3.3.1.6",
+      "original_phases": 6,
+      "actions": 13,
+      "decisions": 2,
+      "merges": 2,
+      "successions": 24,
+      "unintended_action_joins": 0
+    },
+    {
+      "requirement": "3.3.1.9",
+      "original_phases": 6,
+      "actions": 7,
+      "decisions": 1,
+      "merges": 0,
+      "successions": 10,
+      "unintended_action_joins": 0
+    }
+  ],
+  "scope": "原生静态检查及结构/关系复核；非模型执行或实车仿真"
+}

@@ -1,0 +1,158 @@
+@startuml
+skin sysmlbw
+skinparam monochrome true
+skinparam wrapWidth 300
+hide circle
+skinparam ranksep 10
+skinparam rectangle {
+ backgroundColor<<block>> LightGreen
+}
+
+rec usage "需求活动执行流程" as E1  <<(T,blue) action>>  {
+portin "airflowEnabled" as E3
+portin "targetTemperature" as E4
+portin "cabinTemperature" as E5
+portin "highVoltageAvailable" as E6
+portin "vehicleFaultActive" as E7
+portin "stateOfCharge" as E8
+portin "heaterTemperature" as E9
+portin "cutOffTemperature" as E10
+portin "recoveryTemperature" as E11
+portin "protectionWasActive" as E12
+portout "heatingAllowed" as E13
+portout "protectionRequiredNext" as E14
+portout "heatingPermitted" as E15
+rec usage "接收制热请求并读取目标温度" as E16  <<(T,blue) action>>  {
+}
+
+rec usage "检查电加热使能条件" as E18  <<(T,blue) action>>  {
+}
+
+rec usage "根据使能条件控制电加热通断" as E20  <<(T,blue) action>>  {
+}
+
+rec usage "监测电加热温度并执行过温保护" as E22  <<(T,blue) action>>  {
+}
+
+rec usage "反馈电加热状态与功率信息" as E24  <<(T,blue) action>>  {
+}
+
+rec usage "允许电加热输出" as E26  <<(T,blue) action>>  {
+}
+
+rec usage "禁止或保持关闭加热" as E28  <<(T,blue) action>>  {
+}
+
+rec usage "判断保护恢复条件" as E30  <<(T,blue) action>>  {
+}
+
+rec usage "重新允许加热" as E32  <<(T,blue) action>>  {
+}
+
+rec usage "保持保护禁止状态" as E34  <<(T,blue) action>>  {
+}
+
+rec usage "停止加热并进入保护" as E36  <<(T,blue) action>>  {
+}
+
+rec usage "按当前许可调节输出" as E38  <<(T,blue) action>>  {
+}
+
+choice "heatingEnableChoice" as E40
+choice "overtemperatureChoice" as E41
+choice "protectionMemoryChoice" as E42
+choice "recoveryChoice" as E43
+choice "enableMerged" as E44
+choice "protectionMerged" as E45
+[*] --> E16
+E24 --> [*]
+}
+
+note as E2
+本活动为一次评估快照。条件与互斥路径由显式决策/守卫/合并建模；抽象动作不代表控制算法或实车仿真。
+end note
+note as E17
+对应设计需求：SL30-LC05-SF01 手动电加热控制。
+用户通过IVI发起制热请求并设置目标温度；IVI将请求和相关参数发送给CCU。
+Excel还提到物理控制输入，其具体输入路径需进一步确认。
+
+end note
+note as E19
+电加热允许加热的条件包括：空气输送功能开启、目标温度高于室内温度、车辆处于高压状态、
+整车无故障且SOC大于10%。条件不满足时不得请求电加热。
+对应设计需求：SL30-LC05-SF01。
+
+end note
+note as E21
+使能条件满足时，CCU控制电加热通断实施加热；条件不满足时保持电加热关闭。
+本轮将使能结果落实为显式守卫；条件不满足时走禁止加热分支。
+
+end note
+note as E23
+电加热接通后持续监测电加热温度。达到温度上限时停止电加热输出；
+温度下降至恢复阈值后才允许恢复电加热输出。上限与恢复阈值在PDF中为XXX℃，待标定。
+补充依据：SL29 4.6.3.5，CCU初始化后通过硬线每隔50 ms检测电加热温度。
+
+end note
+note as E25
+向总线反馈电加热通断状态、电加热当前温度、工作状态、实际功率和最大工作功率。
+持续监测与加热控制属于本活动内部的持续行为。
+待确认：电池热负荷如何参与乘员舱制热输出优化，当前设计依据未给出明确仲裁逻辑。
+
+end note
+note as E27
+全部使能条件满足后的许可；仍受后续过温保护约束。
+end note
+note as E29
+任一使能条件不满足时不得请求电加热。
+end note
+note as E31
+依据已触发保护状态和原待标定恢复温度判断；不假设初始保护状态。
+end note
+note as E33
+温度满足恢复条件后才允许恢复，仍须满足全部使能条件及未达过温上限。
+end note
+note as E35
+已触发保护而尚未满足恢复条件时继续禁止输出。
+end note
+note as E37
+温度达到过温上限时必须停止加热；上限保留为外部待标定参数。
+end note
+note as E39
+未达到过温上限且未保持过温保护时按当前使能许可控制。
+end note
+E2 .. E1
+E17 .. E16
+E19 .. E18
+E21 .. E20
+E23 .. E22
+E25 .. E24
+E27 .. E26
+E29 .. E28
+E31 .. E30
+E33 .. E32
+E35 .. E34
+E37 .. E36
+E39 .. E38
+E16 --> E18
+E18 --> E20
+E20 --> E40
+E40  --> E26  : [heatingAllowed]
+E40  --> E28  : [not heatingAllowed]
+E26 --> E44
+E28 --> E44
+E44 --> E22
+E22 --> E41
+E41  --> E36  : [heaterTemperature >= cutOffTemperature]
+E41  --> E42  : [heaterTemperature < cutOffTemperature]
+E42  --> E30  : [protectionWasActive]
+E42  --> E38  : [not protectionWasActive]
+E30 --> E43
+E43  --> E32  : [heaterTemperature <= recoveryTemperature]
+E43  --> E34  : [heaterTemperature > recoveryTemperature]
+E36 --> E45
+E38 --> E45
+E32 --> E45
+E34 --> E45
+E45 --> E24
+@enduml

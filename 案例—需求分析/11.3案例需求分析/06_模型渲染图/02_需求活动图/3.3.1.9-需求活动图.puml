@@ -1,23 +1,39 @@
 @startdot
 digraph G {
-graph [bgcolor="white", fontname="Noto Sans CJK SC", fontsize=20, labelloc=t, label="3.3.1.9 前后风窗除霜/除雾 · 需求活动图", pad=0.45, nodesep=0.65, ranksep=1.0, splines=ortho, dpi=150, rankdir=TB, ranksep=0.65, dpi=130];
+graph [bgcolor="white", fontname="Noto Sans CJK SC", fontsize=20, labelloc=t, label="3.3.1.9 前后风窗除霜/除雾 · 需求活动图", pad=0.45, nodesep=0.65, ranksep=1.0, splines=ortho, dpi=150, rankdir=TB, ranksep=0.6, dpi=130, splines=polyline];
 node [shape=box, style="rounded,filled", fillcolor="white", color="#858585", penwidth=1.1, fontname="Noto Sans CJK SC", fontsize=14, margin="0.18,0.14"];
 edge [color="#666666", penwidth=1.0, fontname="Noto Sans CJK SC", fontsize=11, arrowsize=0.7];
-{rank=same; A2; PENDING;}
-A0 [width=2.4, height=0.65, label=<<FONT COLOR="#8070AC">▣</FONT> «action»<BR/>接收风窗除霜或除雾请求>];
-A1 [width=2.4, height=0.65, label=<<FONT COLOR="#8070AC">▣</FONT> «action»<BR/>识别前除霜、前除雾或后风<BR/>窗请求>];
-A2 [width=2.4, height=0.65, label=<<FONT COLOR="#8070AC">▣</FONT> «action»<BR/>配置风口、风量与循环状态>];
-A3 [width=2.4, height=0.65, label=<<FONT COLOR="#8070AC">▣</FONT> «action»<BR/>确定AC与制冷能力请求>];
-A4 [width=2.4, height=0.65, label=<<FONT COLOR="#8070AC">▣</FONT> «action»<BR/>实施热量与空气调节>];
-A5 [width=2.4, height=0.65, label=<<FONT COLOR="#8070AC">▣</FONT> «action»<BR/>反馈模式与空调状态>];
-PENDING [width=2.4, height=0.65, label=<<FONT COLOR="#8070AC">▣</FONT> «action»<BR/>后风窗请求保持待确认<BR/>不套用前风窗控制配置>];
-A0 -> A1 [style=dashed, arrowhead=vee];
-A1 -> A2 [style=dashed, arrowhead=vee, xlabel="有依据的前除霜/前除雾请\n求"];
-A1 -> PENDING [style=dashed, arrowhead=vee, xlabel="后风窗等缺少依据"];
-A2 -> A3 [style=dashed, arrowhead=vee];
-A3 -> A4 [style=dashed, arrowhead=vee];
-A4 -> A5 [style=dashed, arrowhead=vee];
-NOTE [shape=note, style=filled, fillcolor="white", fontsize=11, label="对应风口、最大风量、外循环90%待定、温度保持。\nAC请求依据环境温度；除湿最低1000 r/min待标定；仲裁XX阈值未定。\n保留原阶段和doc规则；一次评估片段不代表持续监测停止。"];
-A5 -> NOTE [style=invis];
+N0 [shape=circle, width=0.16, height=0.16, fixedsize=true, style=filled, fillcolor="#666666", peripheries=1, label=""];
+N1 [width=2.4, height=0.65, label=<<FONT COLOR="#8070AC">▣</FONT> «action»<BR/>接收风窗除霜或除雾请求>];
+N2 [width=2.4, height=0.65, label=<<FONT COLOR="#8070AC">▣</FONT> «action»<BR/>识别前除霜、前除雾或后风<BR/>窗请求>];
+N3 [width=2.4, height=0.65, label=<<FONT COLOR="#8070AC">▣</FONT> «action»<BR/>配置风口、风量与循环状态>];
+N4 [width=2.4, height=0.65, label=<<FONT COLOR="#8070AC">▣</FONT> «action»<BR/>确定AC与制冷能力请求>];
+N5 [width=2.4, height=0.65, label=<<FONT COLOR="#8070AC">▣</FONT> «action»<BR/>实施热量与空气调节>];
+N6 [width=2.4, height=0.65, label=<<FONT COLOR="#8070AC">▣</FONT> «action»<BR/>反馈模式与空调状态>];
+N7 [width=2.4, height=0.65, label=<<FONT COLOR="#8070AC">▣</FONT> «action»<BR/>后风窗等依据不足请求待确<BR/>认>];
+N8 [shape=diamond, style=filled, width=1.8, height=0.6, fontsize=11, label="请求是否有前风窗依据"];
+N9 [shape=circle, width=0.16, height=0.16, fixedsize=true, style=filled, fillcolor="white", peripheries=2, label=""];
+N0 -> N1 [arrowhead=vee];
+// successions: start -> 接收风窗除霜或除雾请求 []
+N6 -> N9 [arrowhead=vee];
+// successions: 反馈模式与空调状态 -> done []
+N7 -> N9 [arrowhead=vee];
+// successions: 后风窗等依据不足请求待确认 -> done []
+N1 -> N2 [arrowhead=vee];
+// successions: 接收风窗除霜或除雾请求 -> 识别前除霜、前除雾或后风窗请求 []
+N2 -> N8 [arrowhead=vee];
+// successions: 识别前除霜、前除雾或后风窗请求 -> supportedFrontRequest []
+N8 -> N3 [arrowhead=vee, label="有依据的前除霜或前除雾请求"];
+// successions: supportedFrontRequest -> 配置风口、风量与循环状态 [requestKind == WindscreenRequestKind::frontDefrost or requestKind == WindscreenRequestKind::frontDemist]
+N8 -> N7 [arrowhead=vee, label="后风窗或依据不足请求"];
+// successions: supportedFrontRequest -> 后风窗等依据不足请求待确认 [requestKind == WindscreenRequestKind::rearUnspecified or requestKind == WindscreenRequestKind::unresolved]
+N3 -> N4 [arrowhead=vee];
+// successions: 配置风口、风量与循环状态 -> 确定AC与制冷能力请求 []
+N4 -> N5 [arrowhead=vee];
+// successions: 确定AC与制冷能力请求 -> 实施热量与空气调节 []
+N5 -> N6 [arrowhead=vee];
+// successions: 实施热量与空气调节 -> 反馈模式与空调状态 []
+NOTE [shape=note, fontsize=11, label="一次评估快照；抽象动作不代表实车仿真。\n后风窗等依据不足请求单独待确认，不进入前风窗配置链。"];
+N9 -> NOTE [style=invis];
 }
 @enddot

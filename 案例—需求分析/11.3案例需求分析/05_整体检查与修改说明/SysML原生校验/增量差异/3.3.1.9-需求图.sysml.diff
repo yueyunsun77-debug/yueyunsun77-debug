@@ -1,0 +1,12 @@
+--- c47d5f3/3.3.1.9-需求图.sysml
++++ 原生校验修正版/3.3.1.9-需求图.sysml
+@@ -2,0 +3,2 @@
++    private import ScalarValues::*;
++
+@@ -22,0 +25,6 @@
++
++            attribute stateOfCharge : Real;
++            attribute frontDefrostActive : Boolean;
++            attribute lowSocGateAllowsCompressor : Boolean;
++            require constraint { stateOfCharge >= 10 or (lowSocGateAllowsCompressor == frontDefrostActive) }
++            // 该约束仅约束SOC<10%的低电量许可条件，不替代其他许可；SOC=10%及以上不由此补造控制策略。

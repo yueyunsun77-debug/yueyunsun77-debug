@@ -1,0 +1,51 @@
+@startuml
+skin sysmlbw
+skinparam monochrome true
+skinparam wrapWidth 300
+hide circle
+skinparam ranksep 10
+skinparam rectangle {
+ backgroundColor<<block>> LightGreen
+}
+
+rec def "热管理控制外部环境" as E1  <<(T,blue) part  def>>  {
+rec usage "SYS: 热管理逻辑控制服务" as E2  {
+portout "^statusOut: ThermalStatusPort  " as E3  <<(T,blue) port>>
+portout "^cabinEffectOut: CabinEffectPort  " as E4  <<(T,blue) port>>
+portout "^actuatorCommandOut: ActuatorCommandPort  " as E5  <<(T,blue) port>>
+portin "^vehicleStateIn: ~VehicleStatePort  " as E6  <<(T,blue) port>>
+portin "^requestIn: ~ThermalRequestPort  " as E7  <<(T,blue) port>>
+portin "^sensorDataIn: ~SensorDataPort  " as E8  <<(T,blue) port>>
+}
+rec usage "IVI: IVI中控交互系统" as E9  {
+portout "^requestOut: ThermalRequestPort  " as E10  <<(T,blue) port>>
+portin "^statusIn: ~ThermalStatusPort  " as E11  <<(T,blue) port>>
+}
+rec usage "CAN: 车载CAN通信网络" as E12  {
+portout "^statusOut: ThermalStatusPort  " as E13  <<(T,blue) port>>
+portout "^requestOut: ThermalRequestPort  " as E14  <<(T,blue) port>>
+portin "^statusIn: ~ThermalStatusPort  " as E15  <<(T,blue) port>>
+portin "^requestIn: ~ThermalRequestPort  " as E16  <<(T,blue) port>>
+}
+rec usage "VEHICLE: 整车状态与电源管理系统" as E17  {
+portout "^stateOut: VehicleStatePort  " as E18  <<(T,blue) port>>
+}
+rec usage "SENSORS: 温度与环境信息提供服务" as E19  {
+portout "^dataOut: SensorDataPort  " as E20  <<(T,blue) port>>
+}
+rec usage "ACTUATORS: 热量与空气调节执行服务" as E21  {
+portin "^commandIn: ~ActuatorCommandPort  " as E22  <<(T,blue) port>>
+}
+rec usage "CABIN_WINDSCREEN: 乘员舱与前风窗环境" as E23  {
+portin "^effectIn: ~CabinEffectPort  " as E24  <<(T,blue) port>>
+}
+}
+E10 -[thickness=3]- E16
+E14 -[thickness=3]- E7
+E3 -[thickness=3]- E15
+E13 -[thickness=3]- E11
+E18 -[thickness=3]- E6
+E20 -[thickness=3]- E8
+E5 -[thickness=3]- E22
+E4 -[thickness=3]- E24
+@enduml

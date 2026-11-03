@@ -1,0 +1,365 @@
+[
+  {
+    "req_id": "3.3.1.2",
+    "model_file": "01_系统边界与逻辑化表达/修改后的SysML模型/3.3.1.2-需求活动图.sysml",
+    "actions": {
+      "接收制热请求并读取目标温度": "对应设计需求：SL30-LC05-SF01 手动电加热控制。 用户通过IVI发起制热请求并设置目标温度；IVI将请求和相关参数发送给CCU。 Excel还提到物理控制输入，其具体输入路径需进一步确认。",
+      "检查电加热使能条件": "电加热允许加热的条件包括：空气输送功能开启、目标温度高于室内温度、车辆处于高压状态、 整车无故障且SOC大于10%。条件不满足时不得请求电加热。 对应设计需求：SL30-LC05-SF01。",
+      "根据使能条件控制电加热通断": "使能条件满足时，CCU控制电加热通断实施加热；条件不满足时保持电加热关闭。 当前SysML活动以高层动作表达控制结果；渲染图按上述已有条件展开，使能不满足时不请求加热。",
+      "监测电加热温度并执行过温保护": "电加热接通后持续监测电加热温度。达到温度上限时停止电加热输出； 温度下降至恢复阈值后才允许恢复电加热输出。上限与恢复阈值在PDF中为XXX℃，待标定。 补充依据：SL29 4.6.3.5，CCU初始化后通过硬线每隔50 ms检测电加热温度。",
+      "反馈电加热状态与功率信息": "向总线反馈电加热通断状态、电加热当前温度、工作状态、实际功率和最大工作功率。 持续监测与加热控制属于本活动内部的持续行为。 待确认：电池热负荷如何参与乘员舱制热输出优化，当前设计依据未给出明确仲裁逻辑。",
+      "允许电加热输出": "全部使能条件满足后的许可；仍受后续过温保护约束。",
+      "禁止或保持关闭加热": "任一使能条件不满足时不得请求电加热。",
+      "判断保护恢复条件": "依据已触发保护状态和原待标定恢复温度判断；不假设初始保护状态。",
+      "重新允许加热": "温度满足恢复条件后才允许恢复，仍须满足全部使能条件及未达过温上限。",
+      "保持保护禁止状态": "已触发保护而尚未满足恢复条件时继续禁止输出。",
+      "停止加热并进入保护": "温度达到过温上限时必须停止加热；上限保留为外部待标定参数。",
+      "按当前许可调节输出": "未达到过温上限且未保持过温保护时按当前使能许可控制。"
+    },
+    "decision_nodes": [
+      "heatingEnableChoice",
+      "overtemperatureChoice",
+      "protectionMemoryChoice",
+      "recoveryChoice"
+    ],
+    "merge_nodes": [
+      "enableMerged",
+      "protectionMerged"
+    ],
+    "successions": [
+      {
+        "source": "start",
+        "target": "接收制热请求并读取目标温度",
+        "guard": ""
+      },
+      {
+        "source": "接收制热请求并读取目标温度",
+        "target": "检查电加热使能条件",
+        "guard": ""
+      },
+      {
+        "source": "检查电加热使能条件",
+        "target": "根据使能条件控制电加热通断",
+        "guard": ""
+      },
+      {
+        "source": "根据使能条件控制电加热通断",
+        "target": "heatingEnableChoice",
+        "guard": ""
+      },
+      {
+        "source": "heatingEnableChoice",
+        "target": "允许电加热输出",
+        "guard": "heatingAllowed"
+      },
+      {
+        "source": "heatingEnableChoice",
+        "target": "禁止或保持关闭加热",
+        "guard": "not heatingAllowed"
+      },
+      {
+        "source": "允许电加热输出",
+        "target": "enableMerged",
+        "guard": ""
+      },
+      {
+        "source": "禁止或保持关闭加热",
+        "target": "enableMerged",
+        "guard": ""
+      },
+      {
+        "source": "enableMerged",
+        "target": "监测电加热温度并执行过温保护",
+        "guard": ""
+      },
+      {
+        "source": "监测电加热温度并执行过温保护",
+        "target": "overtemperatureChoice",
+        "guard": ""
+      },
+      {
+        "source": "overtemperatureChoice",
+        "target": "停止加热并进入保护",
+        "guard": "heaterTemperature >= cutOffTemperature"
+      },
+      {
+        "source": "overtemperatureChoice",
+        "target": "protectionMemoryChoice",
+        "guard": "heaterTemperature < cutOffTemperature"
+      },
+      {
+        "source": "protectionMemoryChoice",
+        "target": "判断保护恢复条件",
+        "guard": "protectionWasActive"
+      },
+      {
+        "source": "protectionMemoryChoice",
+        "target": "按当前许可调节输出",
+        "guard": "not protectionWasActive"
+      },
+      {
+        "source": "判断保护恢复条件",
+        "target": "recoveryChoice",
+        "guard": ""
+      },
+      {
+        "source": "recoveryChoice",
+        "target": "重新允许加热",
+        "guard": "heaterTemperature <= recoveryTemperature"
+      },
+      {
+        "source": "recoveryChoice",
+        "target": "保持保护禁止状态",
+        "guard": "heaterTemperature > recoveryTemperature"
+      },
+      {
+        "source": "停止加热并进入保护",
+        "target": "protectionMerged",
+        "guard": ""
+      },
+      {
+        "source": "按当前许可调节输出",
+        "target": "protectionMerged",
+        "guard": ""
+      },
+      {
+        "source": "重新允许加热",
+        "target": "protectionMerged",
+        "guard": ""
+      },
+      {
+        "source": "保持保护禁止状态",
+        "target": "protectionMerged",
+        "guard": ""
+      },
+      {
+        "source": "protectionMerged",
+        "target": "反馈电加热状态与功率信息",
+        "guard": ""
+      },
+      {
+        "source": "反馈电加热状态与功率信息",
+        "target": "done",
+        "guard": ""
+      }
+    ]
+  },
+  {
+    "req_id": "3.3.1.6",
+    "model_file": "01_系统边界与逻辑化表达/修改后的SysML模型/3.3.1.6-需求活动图.sysml",
+    "actions": {
+      "接收AUTO模式请求": "对应设计需求：SL30-LC07-SF01 自动空调控制。 CCU接收用户通过IVI的AUTO按键发出的自动模式开启或关闭请求。",
+      "处理请求并反馈AUTO状态": "CCU响应AUTO模式开启/关闭请求，并将自动模式状态反馈给IVI显示。 AUTO状态下再次操作AUTO按键的处理在来源中标记为invalid，具体策略需按设计定义确认。",
+      "采集环境与温度信号": "获取室内温度、室外温度、日照负荷信息，以及供热入口温度/电加热源温度等控制输入。 补充依据：SL29 4.6.3.4–4.6.3.5描述相关温度信号检测。",
+      "协调热量与空气调节服务": "CCU依据环境和温度信号，自动协调空气输送能力、送风温度调节、送风模式调节、循环方式调节、 制冷执行能力请求（转速接口）及电加热功率，使乘员舱温度趋近用户设定的目标温度。 对应设计需求：SL30-LC07-SF01、SL30-LC07-SF02。",
+      "处理用户操作与模式切换": "温度设置或循环设置变化时保持AUTO；操作风量或吹风模式按钮时退出AUTO； 操作前除霜按钮时切换至前除霜状态；操作AC按钮时关闭制冷执行功能请求，其他自动控制项继续工作；按CCU PDF第68页，AUTO状态反馈为Close。 各按钮行为依据SL30-LC07-SF01。",
+      "更新控制输出并持续反馈状态": "按当前AUTO状态及用户操作更新控制输出和模式状态，持续执行自动调节。 待确认：制冷执行功能、空气输送功能与电加热功率之间的匹配关系，以及温度LO/HI边界的具体控制和标定策略。",
+      "保持AUTO并更新设置": "温度或循环操作保持AUTO，仅更新对应设置。",
+      "退出AUTO且其余指定项仍自动": "风量或吹风模式操作退出AUTO，但除操作项外其他状态仍自动控制。",
+      "进入前除霜状态": "前除霜操作进入前除霜模式。",
+      "关闭制冷请求且转速请求为零": "AUTO内AC操作关闭制冷请求且转速请求为0。",
+      "AUTO反馈Close且局部功能仍自动": "AC操作时AUTO反馈Close；风量、温度、模式、循环仍保持自动控制。",
+      "重复AUTO操作待确认": "原文为invalid，不自行解释为切换、忽略或报错。",
+      "无新操作保持当前调节": "表示一次控制评估中没有新增按键；不新增产品功能。"
+    },
+    "decision_nodes": [
+      "autoActiveChoice",
+      "userOperationChoice"
+    ],
+    "merge_nodes": [
+      "operationMerged",
+      "feedbackMerged"
+    ],
+    "successions": [
+      {
+        "source": "start",
+        "target": "接收AUTO模式请求",
+        "guard": ""
+      },
+      {
+        "source": "接收AUTO模式请求",
+        "target": "处理请求并反馈AUTO状态",
+        "guard": ""
+      },
+      {
+        "source": "处理请求并反馈AUTO状态",
+        "target": "autoActiveChoice",
+        "guard": ""
+      },
+      {
+        "source": "autoActiveChoice",
+        "target": "采集环境与温度信号",
+        "guard": "'处理请求并反馈AUTO状态'.autoModeActive"
+      },
+      {
+        "source": "autoActiveChoice",
+        "target": "feedbackMerged",
+        "guard": "not '处理请求并反馈AUTO状态'.autoModeActive"
+      },
+      {
+        "source": "采集环境与温度信号",
+        "target": "协调热量与空气调节服务",
+        "guard": ""
+      },
+      {
+        "source": "协调热量与空气调节服务",
+        "target": "处理用户操作与模式切换",
+        "guard": ""
+      },
+      {
+        "source": "处理用户操作与模式切换",
+        "target": "userOperationChoice",
+        "guard": ""
+      },
+      {
+        "source": "userOperationChoice",
+        "target": "保持AUTO并更新设置",
+        "guard": "operation == AutoOperation::temperature or operation == AutoOperation::circulation"
+      },
+      {
+        "source": "userOperationChoice",
+        "target": "退出AUTO且其余指定项仍自动",
+        "guard": "operation == AutoOperation::airflow or operation == AutoOperation::distribution"
+      },
+      {
+        "source": "userOperationChoice",
+        "target": "进入前除霜状态",
+        "guard": "operation == AutoOperation::frontDefrost"
+      },
+      {
+        "source": "userOperationChoice",
+        "target": "关闭制冷请求且转速请求为零",
+        "guard": "operation == AutoOperation::ac"
+      },
+      {
+        "source": "userOperationChoice",
+        "target": "重复AUTO操作待确认",
+        "guard": "operation == AutoOperation::autoRepeat"
+      },
+      {
+        "source": "userOperationChoice",
+        "target": "无新操作保持当前调节",
+        "guard": "operation == AutoOperation::noChange"
+      },
+      {
+        "source": "关闭制冷请求且转速请求为零",
+        "target": "AUTO反馈Close且局部功能仍自动",
+        "guard": ""
+      },
+      {
+        "source": "保持AUTO并更新设置",
+        "target": "operationMerged",
+        "guard": ""
+      },
+      {
+        "source": "退出AUTO且其余指定项仍自动",
+        "target": "operationMerged",
+        "guard": ""
+      },
+      {
+        "source": "进入前除霜状态",
+        "target": "operationMerged",
+        "guard": ""
+      },
+      {
+        "source": "AUTO反馈Close且局部功能仍自动",
+        "target": "operationMerged",
+        "guard": ""
+      },
+      {
+        "source": "重复AUTO操作待确认",
+        "target": "operationMerged",
+        "guard": ""
+      },
+      {
+        "source": "无新操作保持当前调节",
+        "target": "operationMerged",
+        "guard": ""
+      },
+      {
+        "source": "operationMerged",
+        "target": "feedbackMerged",
+        "guard": ""
+      },
+      {
+        "source": "feedbackMerged",
+        "target": "更新控制输出并持续反馈状态",
+        "guard": ""
+      },
+      {
+        "source": "更新控制输出并持续反馈状态",
+        "target": "done",
+        "guard": ""
+      }
+    ]
+  },
+  {
+    "req_id": "3.3.1.9",
+    "model_file": "01_系统边界与逻辑化表达/修改后的SysML模型/3.3.1.9-需求活动图.sysml",
+    "actions": {
+      "接收风窗除霜或除雾请求": "对应设计需求：SL30-LC06-SF01 前除霜控制、SL30-LC06-SF02 前除雾控制。 用户通过IVI发起请求，并经CAN发送给CCU。",
+      "识别前除霜、前除雾或后风窗请求": "前除霜与前除雾按对应设计需求处理。 Excel标题同时覆盖后风窗，但当前两份PDF没有给出后风窗除霜/加热的完整控制逻辑， 因此不能直接将前风窗控制行为套用于后风窗；后风窗请求停留在待确认处理，不执行后续前风窗配置。 本图保留原高层阶段链，后续动作仅适用于已识别且有依据的前风窗请求；流程渲染图按此doc条件展开。",
+      "配置风口、风量与循环状态": "前除霜：风口切换至除霜位置、空气输送功能请求最大风量、切换外循环。 前除雾：风口切换至除雾位置、最大风量、切换外循环。 外循环开度约90%在PDF中属于待定值。",
+      "确定AC与制冷能力请求": "根据环境温度条件确定AC请求及制冷执行能力请求（转速接口）。 PDF说明制冷执行功能用于除湿时最低转速约1000 rpm，具体数值需标定。 系统级优先级参考SSTS-SL29-LC01-SF03：前除霜优先级高于电池包降温和乘员舱制冷， 完整仲裁阈值仍有待确认。",
+      "实施热量与空气调节": "CCU控制相关空气分配调节、空气输送功能及热量与空气调节服务，落实前除霜或前除雾模式的控制请求。 模式内温度、风量、循环以及AUTO/AC/模式按钮的交互应遵循对应PDF设计要求。",
+      "反馈模式与空调状态": "将前除霜/前除雾状态及相关风量、温度、AC、循环等空调信号反馈给IVI显示。 后风窗是否采用独立电加热丝、由哪个控制器驱动以及对应反馈信号，仍需补充确认。",
+      "后风窗等依据不足请求待确认": "该路径不执行前风窗配置；不定义未经规范支持的后风窗控制、拒绝或故障策略。"
+    },
+    "decision_nodes": [
+      "supportedFrontRequest"
+    ],
+    "merge_nodes": [],
+    "successions": [
+      {
+        "source": "start",
+        "target": "接收风窗除霜或除雾请求",
+        "guard": ""
+      },
+      {
+        "source": "接收风窗除霜或除雾请求",
+        "target": "识别前除霜、前除雾或后风窗请求",
+        "guard": ""
+      },
+      {
+        "source": "识别前除霜、前除雾或后风窗请求",
+        "target": "supportedFrontRequest",
+        "guard": ""
+      },
+      {
+        "source": "supportedFrontRequest",
+        "target": "配置风口、风量与循环状态",
+        "guard": "requestKind == WindscreenRequestKind::frontDefrost or requestKind == WindscreenRequestKind::frontDemist"
+      },
+      {
+        "source": "supportedFrontRequest",
+        "target": "后风窗等依据不足请求待确认",
+        "guard": "requestKind == WindscreenRequestKind::rearUnspecified or requestKind == WindscreenRequestKind::unresolved"
+      },
+      {
+        "source": "配置风口、风量与循环状态",
+        "target": "确定AC与制冷能力请求",
+        "guard": ""
+      },
+      {
+        "source": "确定AC与制冷能力请求",
+        "target": "实施热量与空气调节",
+        "guard": ""
+      },
+      {
+        "source": "实施热量与空气调节",
+        "target": "反馈模式与空调状态",
+        "guard": ""
+      },
+      {
+        "source": "反馈模式与空调状态",
+        "target": "done",
+        "guard": ""
+      },
+      {
+        "source": "后风窗等依据不足请求待确认",
+        "target": "done",
+        "guard": ""
+      }
+    ]
+  }
+]

@@ -1,37 +1,76 @@
 @startdot
 digraph G {
-graph [bgcolor="white", fontname="Noto Sans CJK SC", fontsize=20, labelloc=t, label="3.3.1.6 自动空调模式 · 需求活动图", pad=0.45, nodesep=0.65, ranksep=1.0, splines=ortho, dpi=150, rankdir=TB, ranksep=0.65, dpi=130];
+graph [bgcolor="white", fontname="Noto Sans CJK SC", fontsize=20, labelloc=t, label="3.3.1.6 自动空调模式 · 需求活动图", pad=0.45, nodesep=0.65, ranksep=1.0, splines=ortho, dpi=150, rankdir=TB, ranksep=0.6, dpi=130, splines=polyline];
 node [shape=box, style="rounded,filled", fillcolor="white", color="#858585", penwidth=1.1, fontname="Noto Sans CJK SC", fontsize=14, margin="0.18,0.14"];
 edge [color="#666666", penwidth=1.0, fontname="Noto Sans CJK SC", fontsize=11, arrowsize=0.7];
-{rank=same; TEMP; MANUAL; DEF; AC; INVALID;}
-A0 [width=2.4, height=0.65, label=<<FONT COLOR="#8070AC">▣</FONT> «action»<BR/>接收AUTO模式请求>];
-A1 [width=2.4, height=0.65, label=<<FONT COLOR="#8070AC">▣</FONT> «action»<BR/>处理请求并反馈AUTO状<BR/>态>];
-A2 [width=2.4, height=0.65, label=<<FONT COLOR="#8070AC">▣</FONT> «action»<BR/>采集环境与温度信号>];
-A3 [width=2.4, height=0.65, label=<<FONT COLOR="#8070AC">▣</FONT> «action»<BR/>协调热量与空气调节服务>];
-A4 [width=2.4, height=0.65, label=<<FONT COLOR="#8070AC">▣</FONT> «action»<BR/>处理用户操作与模式切换>];
-A5 [width=2.4, height=0.65, label=<<FONT COLOR="#8070AC">▣</FONT> «action»<BR/>更新控制输出并持续反馈状<BR/>态>];
-TEMP [width=2.4, height=0.65, label=<<FONT COLOR="#8070AC">▣</FONT> «action»<BR/>保持AUTO并更新设置>];
-MANUAL [width=2.4, height=0.65, label=<<FONT COLOR="#8070AC">▣</FONT> «action»<BR/>退出AUTO<BR/>其余指定项仍自动>];
-DEF [width=2.4, height=0.65, label=<<FONT COLOR="#8070AC">▣</FONT> «action»<BR/>进入前除霜状态>];
-AC [width=2.4, height=0.65, label=<<FONT COLOR="#8070AC">▣</FONT> «action»<BR/>关闭制冷请求<BR/>转速请求=0>];
-CLOSE [width=2.4, height=0.65, label=<<FONT COLOR="#8070AC">▣</FONT> «action»<BR/>AUTO反馈Close <BR/>风量/温度/模式/循环仍<BR/>自动>];
-INVALID [width=2.4, height=0.65, label=<<FONT COLOR="#8070AC">▣</FONT> «action»<BR/>重复AUTO操作：inv<BR/>alid 具体交互待确认>];
-A0 -> A1 [style=dashed, arrowhead=vee];
-A1 -> A2 [style=dashed, arrowhead=vee];
-A2 -> A3 [style=dashed, arrowhead=vee];
-A3 -> A4 [style=dashed, arrowhead=vee];
-A4 -> TEMP [style=dashed, arrowhead=vee, xlabel="温度/循环操作"];
-A4 -> MANUAL [style=dashed, arrowhead=vee, xlabel="风量/吹风模式操作"];
-A4 -> DEF [style=dashed, arrowhead=vee, xlabel="前除霜操作"];
-A4 -> AC [style=dashed, arrowhead=vee, xlabel="AC操作"];
-A4 -> INVALID [style=dashed, arrowhead=vee, xlabel="再次AUTO操作"];
-AC -> CLOSE [style=dashed, arrowhead=vee];
-TEMP -> A5 [style=dashed, arrowhead=vee];
-MANUAL -> A5 [style=dashed, arrowhead=vee];
-DEF -> A5 [style=dashed, arrowhead=vee];
-CLOSE -> A5 [style=dashed, arrowhead=vee];
-INVALID -> A5 [style=dashed, arrowhead=vee];
-NOTE [shape=note, style=filled, fillcolor="white", fontsize=11, label="温度<16℃为LO，>30℃为HI；每次调节0.5℃。\nAUTO反馈状态与各局部自动控制行为分别表达。\n保留原阶段和doc规则；一次评估片段不代表持续监测停止。"];
-A5 -> NOTE [style=invis];
+N0 [shape=circle, width=0.16, height=0.16, fixedsize=true, style=filled, fillcolor="#666666", peripheries=1, label=""];
+N1 [width=2.4, height=0.65, label=<<FONT COLOR="#8070AC">▣</FONT> «action»<BR/>接收AUTO模式请求>];
+N2 [width=2.4, height=0.65, label=<<FONT COLOR="#8070AC">▣</FONT> «action»<BR/>处理请求并反馈AUTO状<BR/>态>];
+N3 [width=2.4, height=0.65, label=<<FONT COLOR="#8070AC">▣</FONT> «action»<BR/>采集环境与温度信号>];
+N4 [width=2.4, height=0.65, label=<<FONT COLOR="#8070AC">▣</FONT> «action»<BR/>协调热量与空气调节服务>];
+N5 [width=2.4, height=0.65, label=<<FONT COLOR="#8070AC">▣</FONT> «action»<BR/>处理用户操作与模式切换>];
+N6 [width=2.4, height=0.65, label=<<FONT COLOR="#8070AC">▣</FONT> «action»<BR/>更新控制输出并持续反馈状<BR/>态>];
+N7 [width=2.4, height=0.65, label=<<FONT COLOR="#8070AC">▣</FONT> «action»<BR/>保持AUTO并更新设置>];
+N8 [width=2.4, height=0.65, label=<<FONT COLOR="#8070AC">▣</FONT> «action»<BR/>退出AUTO且其余指定项<BR/>仍自动>];
+N9 [width=2.4, height=0.65, label=<<FONT COLOR="#8070AC">▣</FONT> «action»<BR/>进入前除霜状态>];
+N10 [width=2.4, height=0.65, label=<<FONT COLOR="#8070AC">▣</FONT> «action»<BR/>关闭制冷请求且转速请求为<BR/>零>];
+N11 [width=2.4, height=0.65, label=<<FONT COLOR="#8070AC">▣</FONT> «action»<BR/>AUTO反馈Close且<BR/>局部功能仍自动>];
+N12 [width=2.4, height=0.65, label=<<FONT COLOR="#8070AC">▣</FONT> «action»<BR/>重复AUTO操作待确认>];
+N13 [width=2.4, height=0.65, label=<<FONT COLOR="#8070AC">▣</FONT> «action»<BR/>无新操作保持当前调节>];
+N14 [shape=diamond, style=filled, width=1.8, height=0.6, fontsize=11, label="AUTO是否激活"];
+N15 [shape=diamond, style=filled, width=1.8, height=0.6, fontsize=11, label="用户操作分类"];
+N16 [shape=diamond, style=filled, width=1.8, height=0.6, fontsize=11, label="操作分支合并"];
+N17 [shape=diamond, style=filled, width=1.8, height=0.6, fontsize=11, label="状态反馈路径合并"];
+N18 [shape=circle, width=0.16, height=0.16, fixedsize=true, style=filled, fillcolor="white", peripheries=2, label=""];
+N0 -> N1 [arrowhead=vee];
+// successions: start -> 接收AUTO模式请求 []
+N6 -> N18 [arrowhead=vee];
+// successions: 更新控制输出并持续反馈状态 -> done []
+N1 -> N2 [arrowhead=vee];
+// successions: 接收AUTO模式请求 -> 处理请求并反馈AUTO状态 []
+N2 -> N14 [arrowhead=vee];
+// successions: 处理请求并反馈AUTO状态 -> autoActiveChoice []
+N14 -> N3 [arrowhead=vee, label="AUTO已激活"];
+// successions: autoActiveChoice -> 采集环境与温度信号 ['处理请求并反馈AUTO状态'.autoModeActive]
+N14 -> N17 [arrowhead=vee, label="AUTO未激活"];
+// successions: autoActiveChoice -> feedbackMerged [not '处理请求并反馈AUTO状态'.autoModeActive]
+N3 -> N4 [arrowhead=vee];
+// successions: 采集环境与温度信号 -> 协调热量与空气调节服务 []
+N4 -> N5 [arrowhead=vee];
+// successions: 协调热量与空气调节服务 -> 处理用户操作与模式切换 []
+N5 -> N15 [arrowhead=vee];
+// successions: 处理用户操作与模式切换 -> userOperationChoice []
+N15 -> N7 [arrowhead=vee, label="温度或循环操作"];
+// successions: userOperationChoice -> 保持AUTO并更新设置 [operation == AutoOperation::temperature or operation == AutoOperation::circulation]
+N15 -> N8 [arrowhead=vee, label="风量或吹风模式操作"];
+// successions: userOperationChoice -> 退出AUTO且其余指定项仍自动 [operation == AutoOperation::airflow or operation == AutoOperation::distribution]
+N15 -> N9 [arrowhead=vee, label="前除霜操作"];
+// successions: userOperationChoice -> 进入前除霜状态 [operation == AutoOperation::frontDefrost]
+N15 -> N10 [arrowhead=vee, label="AC操作"];
+// successions: userOperationChoice -> 关闭制冷请求且转速请求为零 [operation == AutoOperation::ac]
+N15 -> N12 [arrowhead=vee, label="再次AUTO操作"];
+// successions: userOperationChoice -> 重复AUTO操作待确认 [operation == AutoOperation::autoRepeat]
+N15 -> N13 [arrowhead=vee, label="无新增操作"];
+// successions: userOperationChoice -> 无新操作保持当前调节 [operation == AutoOperation::noChange]
+N10 -> N11 [arrowhead=vee];
+// successions: 关闭制冷请求且转速请求为零 -> AUTO反馈Close且局部功能仍自动 []
+N7 -> N16 [arrowhead=vee];
+// successions: 保持AUTO并更新设置 -> operationMerged []
+N8 -> N16 [arrowhead=vee];
+// successions: 退出AUTO且其余指定项仍自动 -> operationMerged []
+N9 -> N16 [arrowhead=vee];
+// successions: 进入前除霜状态 -> operationMerged []
+N11 -> N16 [arrowhead=vee];
+// successions: AUTO反馈Close且局部功能仍自动 -> operationMerged []
+N12 -> N16 [arrowhead=vee];
+// successions: 重复AUTO操作待确认 -> operationMerged []
+N13 -> N16 [arrowhead=vee];
+// successions: 无新操作保持当前调节 -> operationMerged []
+N16 -> N17 [arrowhead=vee];
+// successions: operationMerged -> feedbackMerged []
+N17 -> N6 [arrowhead=vee];
+// successions: feedbackMerged -> 更新控制输出并持续反馈状态 []
+NOTE [shape=note, fontsize=11, label="一次评估快照；抽象动作不代表实车仿真。\n请求处理动作输出AUTO激活状态；重复AUTO操作策略待确认。"];
+N18 -> NOTE [style=invis];
 }
 @enddot

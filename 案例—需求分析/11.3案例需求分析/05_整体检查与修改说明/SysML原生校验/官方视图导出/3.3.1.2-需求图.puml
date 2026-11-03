@@ -1,0 +1,67 @@
+@startuml
+skin sysmlbw
+skinparam monochrome true
+skinparam wrapWidth 300
+hide circle
+
+comp def "~<3.3.1.2> AirConditioningHeating" as E1  <<(T,blue) requirement  def>>  {
+}
+comp usage "~<3.3.1.2-01> heatingRequestInput  " as E2  <<(T,blue) requirement>>  {
+##//doc//##
+接收用户制热请求与目标温度；物理输入路径待确认
+}
+comp usage "~<3.3.1.2-02> environmentLoadAdaptation  " as E3  <<(T,blue) requirement>>  {
+##//doc//##
+环境温度与电池热负荷对输出优化方式待明确
+}
+comp usage "~<3.3.1.2-03> ptcEnableConditions  " as E4  <<(T,blue) requirement>>  {
+##//doc//##
+空气输送开启、目标温度高于室内、高压可用、整车无故障、SOC>10%全部满足后允许加热
+--
+##//attributes//##
+airflowEnabled: Boolean
+cabinTemperature: Real
+highVoltageAvailable: Boolean
+requestHeating: Boolean
+stateOfCharge: Real
+targetTemperature: Real
+vehicleFaultActive: Boolean
+--
+##//constraints//##
+<b>require</b> { not requestHeating or (airflowEnabled and targetTemperature > cabinTemperature and highVoltageAvailable and not vehicleFaultActive and stateOfCharge > 10) }
+}
+comp usage "~<3.3.1.2-04> ptcRelayControl  " as E5  <<(T,blue) requirement>>  {
+##//doc//##
+按使能条件控制电加热通断；不设计具体继电器硬件
+}
+comp usage "~<3.3.1.2-05> ptcOvertemperatureProtection  " as E6  <<(T,blue) requirement>>  {
+##//doc//##
+温度><U+003D>XXX℃停止加热，<U+003C><U+003D>XXX℃允许恢复；阈值待标定
+--
+##//attributes//##
+cutOffTemperature: Real
+heaterTemperature: Real
+protectionWasActive: Boolean
+recoveryTemperature: Real
+requestHeating: Boolean
+--
+##//constraints//##
+<b>require</b> { heaterTemperature <U+003C> cutOffTemperature or not requestHeating }
+<b>require</b> { not protectionWasActive or heaterTemperature <U+003C><U+003D> recoveryTemperature or not requestHeating }
+}
+comp usage "~<3.3.1.2-06> ptcStatusFeedback  " as E7  <<(T,blue) requirement>>  {
+##//doc//##
+反馈电加热通断、温度、状态及实际<U+002F>最大功率
+}
+comp usage "~<3.3.1.2-07> cabinOutdoorTemperatureCheck  " as E8  <<(T,blue) requirement>>  {
+##//doc//##
+获取室内和室外温度，保留来源采集<U+002F>通信接口
+}
+E1 *-- E2
+E1 *-- E3
+E1 *-- E4
+E1 *-- E5
+E1 *-- E6
+E1 *-- E7
+E1 *-- E8
+@enduml

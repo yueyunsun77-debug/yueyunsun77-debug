@@ -1,13 +1,13 @@
 {
   "tool": "PlantUML 1.2026.9",
   "jar_sha256": "96ace11f947a04a4320a413a0a2c6bad8b87daaac1869fe51e82622d812fe13c",
-  "source_type": "当前SysML投影视图；参考样式采用PlantUML @startdot；UC原样保留；未运行SysML编译",
+  "source_type": "SysML v2 Pilot 0.63.1原生检查通过；ACT原生视图关系核对；参考布局投影；UC原样保留",
   "views": [
     {
       "view_type": "01_需求图",
       "stem": "06_模型渲染图/01_需求图/3.3.1.2-需求图",
       "model_file": "01_系统边界与逻辑化表达/修改后的SysML模型/3.3.1.2-需求图.sysml",
-      "model_sha256": "dfe602f4aa5c80697b6c1d8342673d81961f194810e26c50bcfc8e85caf25a9f",
+      "model_sha256": "af2743374c0111995d812caf4d38acaf04789b33f853ab4675a072e4be2cfd31",
       "requirement_ids": [
         "3.3.1.2",
         "3.3.1.2-01",
@@ -32,8 +32,8 @@
         },
         "svg": {
           "file": "06_模型渲染图/01_需求图/3.3.1.2-需求图.svg",
-          "bytes": 340,
-          "sha256": "815061a1bd5a955d66d08d6743456892c8d446b2cf60a501683f59dabcc470c0"
+          "bytes": 11941,
+          "sha256": "2997fb1d678f9dcba39edf221157f320b2101b45f7cc44644e388543d2a74edd"
         }
       },
       "png_dimensions": [
@@ -55,7 +55,7 @@
       "view_type": "01_需求图",
       "stem": "06_模型渲染图/01_需求图/3.3.1.6-需求图",
       "model_file": "01_系统边界与逻辑化表达/修改后的SysML模型/3.3.1.6-需求图.sysml",
-      "model_sha256": "2c5be1c0ec41267618b2d3c7abd036204d961d9c40bcbe4c61a4e87d37f8fe4c",
+      "model_sha256": "4796e610e7bfb6d2e7be8673886c0be9839460973df203da78088c919471970b",
       "requirement_ids": [
         "3.3.1.6",
         "3.3.1.6-01",
@@ -80,8 +80,8 @@
         },
         "svg": {
           "file": "06_模型渲染图/01_需求图/3.3.1.6-需求图.svg",
-          "bytes": 340,
-          "sha256": "815061a1bd5a955d66d08d6743456892c8d446b2cf60a501683f59dabcc470c0"
+          "bytes": 11936,
+          "sha256": "68a36bc456934b0042a4cfadb3f97d202bf886f878a216988ef785113c33e922"
         }
       },
       "png_dimensions": [
@@ -103,7 +103,7 @@
       "view_type": "01_需求图",
       "stem": "06_模型渲染图/01_需求图/3.3.1.9-需求图",
       "model_file": "01_系统边界与逻辑化表达/修改后的SysML模型/3.3.1.9-需求图.sysml",
-      "model_sha256": "1a05ec6b9736dc0ea4fe543110b0bd63bca2cfb105529386dfb64c28109d0f53",
+      "model_sha256": "851497841f4bd1fa101b039a78dd3dc7cacef05ac01b8d7ebe102436a5311ece",
       "requirement_ids": [
         "3.3.1.9",
         "3.3.1.9-01",
@@ -127,8 +127,8 @@
         },
         "svg": {
           "file": "06_模型渲染图/01_需求图/3.3.1.9-需求图.svg",
-          "bytes": 340,
-          "sha256": "815061a1bd5a955d66d08d6743456892c8d446b2cf60a501683f59dabcc470c0"
+          "bytes": 10427,
+          "sha256": "60d95dd98baaa8eb42141f1310edf89fce53fde5422ba4efd2195f21c342c005"
         }
       },
       "png_dimensions": [
@@ -149,340 +149,484 @@
       "view_type": "02_需求活动图",
       "stem": "06_模型渲染图/02_需求活动图/3.3.1.2-需求活动图",
       "model_file": "01_系统边界与逻辑化表达/修改后的SysML模型/3.3.1.2-需求活动图.sysml",
-      "model_sha256": "feecbbbdf933776023471fbb5fbb782f805ceaa535f6c2661e70c10166e26227",
+      "model_sha256": "135655034926dbb615152452bf49ce7bd3802ace600a95a41333d9920ccab9d0",
       "phase_names": [
         "接收制热请求并读取目标温度",
         "检查电加热使能条件",
         "根据使能条件控制电加热通断",
         "监测电加热温度并执行过温保护",
-        "反馈电加热状态与功率信息"
+        "反馈电加热状态与功率信息",
+        "允许电加热输出",
+        "禁止或保持关闭加热",
+        "判断保护恢复条件",
+        "重新允许加热",
+        "保持保护禁止状态",
+        "停止加热并进入保护",
+        "按当前许可调节输出"
       ],
-      "projection": "原阶段主链＋动作doc明示规则展开；不是原平台执行仿真",
+      "projection": "官方SysML v2 Pilot原生导出的successions与guard逐条交叉核对；参考样式重排",
       "artifacts": {
         "puml": {
           "file": "06_模型渲染图/02_需求活动图/3.3.1.2-需求活动图.puml",
-          "bytes": 3295,
-          "sha256": "c4900888630f55781332c9049660378e7f480ed51a301b9b456bb5050b9ef676"
+          "bytes": 5882,
+          "sha256": "955c146d462a75f025a85624dcf2fa9ea33100b96f53ef485259f60b8b0ee768"
         },
         "png": {
           "file": "06_模型渲染图/02_需求活动图/3.3.1.2-需求活动图.png",
-          "bytes": 268458,
-          "sha256": "b3390a1a66037ea7bd4e63e62f648a98c960f9c81e1d8645148e47c52fa8f4de"
+          "bytes": 374871,
+          "sha256": "d5618781639b57844a8f0ee878600f708ae51b392ae245bb04b0384ab26314ee"
         },
         "svg": {
           "file": "06_模型渲染图/02_需求活动图/3.3.1.2-需求活动图.svg",
-          "bytes": 340,
-          "sha256": "815061a1bd5a955d66d08d6743456892c8d446b2cf60a501683f59dabcc470c0"
+          "bytes": 23548,
+          "sha256": "20e257da76a98ae7fe00bcbb97bd82c85ad53b3e7d90111cc987ecdce0598bbf"
         }
       },
       "png_dimensions": [
-        1451,
-        1746
+        1336,
+        3322
       ],
       "action_network": {
         "nodes": {
-          "A0": "接收制热请求并读取目标温度",
-          "A1": "检查电加热使能条件",
-          "A2": "根据使能条件控制电加热通断",
-          "A3": "监测电加热温度并执行过温保护",
-          "A4": "反馈电加热状态与功率信息",
-          "ON": "允许电加热输出",
-          "OFF": "禁止或保持关闭加热",
-          "REC": "判断保护恢复条件",
-          "UNLOCK": "重新允许加热\n仍须满足全部使能条件",
-          "HOLD": "保持保护禁止状态",
-          "STOP": "停止加热并进入保护",
-          "KEEP": "按当前许可调节输出"
+          "start": "N0",
+          "接收制热请求并读取目标温度": "N1",
+          "检查电加热使能条件": "N2",
+          "根据使能条件控制电加热通断": "N3",
+          "监测电加热温度并执行过温保护": "N4",
+          "反馈电加热状态与功率信息": "N5",
+          "允许电加热输出": "N6",
+          "禁止或保持关闭加热": "N7",
+          "判断保护恢复条件": "N8",
+          "重新允许加热": "N9",
+          "保持保护禁止状态": "N10",
+          "停止加热并进入保护": "N11",
+          "按当前许可调节输出": "N12",
+          "heatingEnableChoice": "N13",
+          "overtemperatureChoice": "N14",
+          "protectionMemoryChoice": "N15",
+          "recoveryChoice": "N16",
+          "enableMerged": "N17",
+          "protectionMerged": "N18",
+          "done": "N19"
         },
         "edges": [
           {
-            "source": "A0",
-            "target": "A1",
-            "condition": ""
+            "source": "start",
+            "target": "接收制热请求并读取目标温度",
+            "guard": ""
           },
           {
-            "source": "A1",
-            "target": "A2",
-            "condition": "使能条件判断结果"
+            "source": "反馈电加热状态与功率信息",
+            "target": "done",
+            "guard": ""
           },
           {
-            "source": "A2",
-            "target": "ON",
-            "condition": "全部条件满足"
+            "source": "接收制热请求并读取目标温度",
+            "target": "检查电加热使能条件",
+            "guard": ""
           },
           {
-            "source": "A2",
-            "target": "OFF",
-            "condition": "任一条件不满足"
+            "source": "检查电加热使能条件",
+            "target": "根据使能条件控制电加热通断",
+            "guard": ""
           },
           {
-            "source": "ON",
-            "target": "A3",
-            "condition": ""
+            "source": "根据使能条件控制电加热通断",
+            "target": "heatingEnableChoice",
+            "guard": ""
           },
           {
-            "source": "OFF",
-            "target": "A3",
-            "condition": ""
+            "source": "heatingEnableChoice",
+            "target": "允许电加热输出",
+            "guard": "heatingAllowed"
           },
           {
-            "source": "A3",
-            "target": "REC",
-            "condition": "已触发且未解除保护"
+            "source": "heatingEnableChoice",
+            "target": "禁止或保持关闭加热",
+            "guard": "not heatingAllowed"
           },
           {
-            "source": "A3",
-            "target": "STOP",
-            "condition": "未处于保护且温度≥上限XXX℃"
+            "source": "允许电加热输出",
+            "target": "enableMerged",
+            "guard": ""
           },
           {
-            "source": "A3",
-            "target": "KEEP",
-            "condition": "未处于保护且未达上限"
+            "source": "禁止或保持关闭加热",
+            "target": "enableMerged",
+            "guard": ""
           },
           {
-            "source": "REC",
-            "target": "UNLOCK",
-            "condition": "温度≤恢复XXX℃"
+            "source": "enableMerged",
+            "target": "监测电加热温度并执行过温保护",
+            "guard": ""
           },
           {
-            "source": "REC",
-            "target": "HOLD",
-            "condition": "尚未满足恢复条件"
+            "source": "监测电加热温度并执行过温保护",
+            "target": "overtemperatureChoice",
+            "guard": ""
           },
           {
-            "source": "UNLOCK",
-            "target": "A4",
-            "condition": ""
+            "source": "overtemperatureChoice",
+            "target": "停止加热并进入保护",
+            "guard": "heaterTemperature >= cutOffTemperature"
           },
           {
-            "source": "HOLD",
-            "target": "A4",
-            "condition": ""
+            "source": "overtemperatureChoice",
+            "target": "protectionMemoryChoice",
+            "guard": "heaterTemperature < cutOffTemperature"
           },
           {
-            "source": "STOP",
-            "target": "A4",
-            "condition": ""
+            "source": "protectionMemoryChoice",
+            "target": "判断保护恢复条件",
+            "guard": "protectionWasActive"
           },
           {
-            "source": "KEEP",
-            "target": "A4",
-            "condition": ""
+            "source": "protectionMemoryChoice",
+            "target": "按当前许可调节输出",
+            "guard": "not protectionWasActive"
+          },
+          {
+            "source": "判断保护恢复条件",
+            "target": "recoveryChoice",
+            "guard": ""
+          },
+          {
+            "source": "recoveryChoice",
+            "target": "重新允许加热",
+            "guard": "heaterTemperature <= recoveryTemperature"
+          },
+          {
+            "source": "recoveryChoice",
+            "target": "保持保护禁止状态",
+            "guard": "heaterTemperature > recoveryTemperature"
+          },
+          {
+            "source": "停止加热并进入保护",
+            "target": "protectionMerged",
+            "guard": ""
+          },
+          {
+            "source": "按当前许可调节输出",
+            "target": "protectionMerged",
+            "guard": ""
+          },
+          {
+            "source": "重新允许加热",
+            "target": "protectionMerged",
+            "guard": ""
+          },
+          {
+            "source": "保持保护禁止状态",
+            "target": "protectionMerged",
+            "guard": ""
+          },
+          {
+            "source": "protectionMerged",
+            "target": "反馈电加热状态与功率信息",
+            "guard": ""
           }
         ]
       },
-      "visual_style": "按用户参考：白底圆角细灰线、紫色小图标；保留原语义，PlantUML @startdot投影"
+      "visual_style": "按用户参考：白底圆角细灰线、紫色小图标；保留原语义，PlantUML @startdot投影",
+      "native_export_file": "05_整体检查与修改说明/SysML原生校验/官方视图导出/3.3.1.2-需求活动图.puml",
+      "native_export_sha256": "4097b7a740125b112e54c7e2f373c447f56e0eebf2430c72b8135ca315280cbf"
     },
     {
       "view_type": "02_需求活动图",
       "stem": "06_模型渲染图/02_需求活动图/3.3.1.6-需求活动图",
       "model_file": "01_系统边界与逻辑化表达/修改后的SysML模型/3.3.1.6-需求活动图.sysml",
-      "model_sha256": "fc3fc0c045ef350b7946c2d12e654a88776e8f8b24e0844af5d1d3d5ab3cbbcd",
+      "model_sha256": "e67d027bc30bc458fa6978d61f48d6cc67eac65aea6df287b11600fe8686b879",
       "phase_names": [
         "接收AUTO模式请求",
         "处理请求并反馈AUTO状态",
         "采集环境与温度信号",
         "协调热量与空气调节服务",
         "处理用户操作与模式切换",
-        "更新控制输出并持续反馈状态"
+        "更新控制输出并持续反馈状态",
+        "保持AUTO并更新设置",
+        "退出AUTO且其余指定项仍自动",
+        "进入前除霜状态",
+        "关闭制冷请求且转速请求为零",
+        "AUTO反馈Close且局部功能仍自动",
+        "重复AUTO操作待确认",
+        "无新操作保持当前调节"
       ],
-      "projection": "原阶段主链＋动作doc明示规则展开；不是原平台执行仿真",
+      "projection": "官方SysML v2 Pilot原生导出的successions与guard逐条交叉核对；参考样式重排",
       "artifacts": {
         "puml": {
           "file": "06_模型渲染图/02_需求活动图/3.3.1.6-需求活动图.puml",
-          "bytes": 3114,
-          "sha256": "82513eecf89b61d6f9e550a254c44df9af0db7afe60cbe3693f72b6ac881baa9"
+          "bytes": 5914,
+          "sha256": "d09250f6da268b951899ebb313d07e492dee5f20f05d369b9db35f4bbb66581c"
         },
         "png": {
           "file": "06_模型渲染图/02_需求活动图/3.3.1.6-需求活动图.png",
-          "bytes": 266158,
-          "sha256": "2a9bd88d53d5a1a1d4033ef31eb6ed236806e91ec36db7f6de8b1a899274c90c"
+          "bytes": 408007,
+          "sha256": "0d548671ca4e61ec351cf2bbd8c0d95783a9b11438d59383750e1c97c1f18c12"
         },
         "svg": {
           "file": "06_模型渲染图/02_需求活动图/3.3.1.6-需求活动图.svg",
-          "bytes": 340,
-          "sha256": "815061a1bd5a955d66d08d6743456892c8d446b2cf60a501683f59dabcc470c0"
+          "bytes": 24114,
+          "sha256": "b9ec2baf56a48a8b1e7ea65308a9c1cc96785534ac00a2c5bb702d3b3d406121"
         }
       },
       "png_dimensions": [
-        2018,
-        1771
+        2182,
+        2852
       ],
       "action_network": {
         "nodes": {
-          "A0": "接收AUTO模式请求",
-          "A1": "处理请求并反馈AUTO状态",
-          "A2": "采集环境与温度信号",
-          "A3": "协调热量与空气调节服务",
-          "A4": "处理用户操作与模式切换",
-          "A5": "更新控制输出并持续反馈状态",
-          "TEMP": "保持AUTO并更新设置",
-          "MANUAL": "退出AUTO\n其余指定项仍自动",
-          "DEF": "进入前除霜状态",
-          "AC": "关闭制冷请求\n转速请求=0",
-          "CLOSE": "AUTO反馈Close\n风量/温度/模式/循环仍自动",
-          "INVALID": "重复AUTO操作：invalid\n具体交互待确认"
+          "start": "N0",
+          "接收AUTO模式请求": "N1",
+          "处理请求并反馈AUTO状态": "N2",
+          "采集环境与温度信号": "N3",
+          "协调热量与空气调节服务": "N4",
+          "处理用户操作与模式切换": "N5",
+          "更新控制输出并持续反馈状态": "N6",
+          "保持AUTO并更新设置": "N7",
+          "退出AUTO且其余指定项仍自动": "N8",
+          "进入前除霜状态": "N9",
+          "关闭制冷请求且转速请求为零": "N10",
+          "AUTO反馈Close且局部功能仍自动": "N11",
+          "重复AUTO操作待确认": "N12",
+          "无新操作保持当前调节": "N13",
+          "autoActiveChoice": "N14",
+          "userOperationChoice": "N15",
+          "operationMerged": "N16",
+          "feedbackMerged": "N17",
+          "done": "N18"
         },
         "edges": [
           {
-            "source": "A0",
-            "target": "A1",
-            "condition": ""
+            "source": "start",
+            "target": "接收AUTO模式请求",
+            "guard": ""
           },
           {
-            "source": "A1",
-            "target": "A2",
-            "condition": ""
+            "source": "更新控制输出并持续反馈状态",
+            "target": "done",
+            "guard": ""
           },
           {
-            "source": "A2",
-            "target": "A3",
-            "condition": ""
+            "source": "接收AUTO模式请求",
+            "target": "处理请求并反馈AUTO状态",
+            "guard": ""
           },
           {
-            "source": "A3",
-            "target": "A4",
-            "condition": ""
+            "source": "处理请求并反馈AUTO状态",
+            "target": "autoActiveChoice",
+            "guard": ""
           },
           {
-            "source": "A4",
-            "target": "TEMP",
-            "condition": "温度/循环操作"
+            "source": "autoActiveChoice",
+            "target": "采集环境与温度信号",
+            "guard": "'处理请求并反馈AUTO状态'.autoModeActive"
           },
           {
-            "source": "A4",
-            "target": "MANUAL",
-            "condition": "风量/吹风模式操作"
+            "source": "autoActiveChoice",
+            "target": "feedbackMerged",
+            "guard": "not '处理请求并反馈AUTO状态'.autoModeActive"
           },
           {
-            "source": "A4",
-            "target": "DEF",
-            "condition": "前除霜操作"
+            "source": "采集环境与温度信号",
+            "target": "协调热量与空气调节服务",
+            "guard": ""
           },
           {
-            "source": "A4",
-            "target": "AC",
-            "condition": "AC操作"
+            "source": "协调热量与空气调节服务",
+            "target": "处理用户操作与模式切换",
+            "guard": ""
           },
           {
-            "source": "A4",
-            "target": "INVALID",
-            "condition": "再次AUTO操作"
+            "source": "处理用户操作与模式切换",
+            "target": "userOperationChoice",
+            "guard": ""
           },
           {
-            "source": "AC",
-            "target": "CLOSE",
-            "condition": ""
+            "source": "userOperationChoice",
+            "target": "保持AUTO并更新设置",
+            "guard": "operation == AutoOperation::temperature or operation == AutoOperation::circulation"
           },
           {
-            "source": "TEMP",
-            "target": "A5",
-            "condition": ""
+            "source": "userOperationChoice",
+            "target": "退出AUTO且其余指定项仍自动",
+            "guard": "operation == AutoOperation::airflow or operation == AutoOperation::distribution"
           },
           {
-            "source": "MANUAL",
-            "target": "A5",
-            "condition": ""
+            "source": "userOperationChoice",
+            "target": "进入前除霜状态",
+            "guard": "operation == AutoOperation::frontDefrost"
           },
           {
-            "source": "DEF",
-            "target": "A5",
-            "condition": ""
+            "source": "userOperationChoice",
+            "target": "关闭制冷请求且转速请求为零",
+            "guard": "operation == AutoOperation::ac"
           },
           {
-            "source": "CLOSE",
-            "target": "A5",
-            "condition": ""
+            "source": "userOperationChoice",
+            "target": "重复AUTO操作待确认",
+            "guard": "operation == AutoOperation::autoRepeat"
           },
           {
-            "source": "INVALID",
-            "target": "A5",
-            "condition": ""
+            "source": "userOperationChoice",
+            "target": "无新操作保持当前调节",
+            "guard": "operation == AutoOperation::noChange"
+          },
+          {
+            "source": "关闭制冷请求且转速请求为零",
+            "target": "AUTO反馈Close且局部功能仍自动",
+            "guard": ""
+          },
+          {
+            "source": "保持AUTO并更新设置",
+            "target": "operationMerged",
+            "guard": ""
+          },
+          {
+            "source": "退出AUTO且其余指定项仍自动",
+            "target": "operationMerged",
+            "guard": ""
+          },
+          {
+            "source": "进入前除霜状态",
+            "target": "operationMerged",
+            "guard": ""
+          },
+          {
+            "source": "AUTO反馈Close且局部功能仍自动",
+            "target": "operationMerged",
+            "guard": ""
+          },
+          {
+            "source": "重复AUTO操作待确认",
+            "target": "operationMerged",
+            "guard": ""
+          },
+          {
+            "source": "无新操作保持当前调节",
+            "target": "operationMerged",
+            "guard": ""
+          },
+          {
+            "source": "operationMerged",
+            "target": "feedbackMerged",
+            "guard": ""
+          },
+          {
+            "source": "feedbackMerged",
+            "target": "更新控制输出并持续反馈状态",
+            "guard": ""
           }
         ]
       },
-      "visual_style": "按用户参考：白底圆角细灰线、紫色小图标；保留原语义，PlantUML @startdot投影"
+      "visual_style": "按用户参考：白底圆角细灰线、紫色小图标；保留原语义，PlantUML @startdot投影",
+      "native_export_file": "05_整体检查与修改说明/SysML原生校验/官方视图导出/3.3.1.6-需求活动图.puml",
+      "native_export_sha256": "f381d13a06176644a5287b91a8105c089461fd37ea2a147364c9f9106eef003a"
     },
     {
       "view_type": "02_需求活动图",
       "stem": "06_模型渲染图/02_需求活动图/3.3.1.9-需求活动图",
       "model_file": "01_系统边界与逻辑化表达/修改后的SysML模型/3.3.1.9-需求活动图.sysml",
-      "model_sha256": "2417d4d9681a9f1f3f4216edd62aa3f7be8eeec3b08e22730109da1fcc16722f",
+      "model_sha256": "33afb2eec9b70881d885e6a3b0f212e7aaaa2e5faf04e4cd909f8b8aad28212c",
       "phase_names": [
         "接收风窗除霜或除雾请求",
         "识别前除霜、前除雾或后风窗请求",
         "配置风口、风量与循环状态",
         "确定AC与制冷能力请求",
         "实施热量与空气调节",
-        "反馈模式与空调状态"
+        "反馈模式与空调状态",
+        "后风窗等依据不足请求待确认"
       ],
-      "projection": "原阶段主链＋动作doc明示规则展开；不是原平台执行仿真",
+      "projection": "官方SysML v2 Pilot原生导出的successions与guard逐条交叉核对；参考样式重排",
       "artifacts": {
         "puml": {
           "file": "06_模型渲染图/02_需求活动图/3.3.1.9-需求活动图.puml",
-          "bytes": 2090,
-          "sha256": "7492e2d9f0dbb6389c86f742401a3e1692de6c8295c115e9b44f311d342db59a"
+          "bytes": 3288,
+          "sha256": "e7e05fcdd9fae74bce685dd4c8854230c6bdc8d24711df59719a59b58d2ccf82"
         },
         "png": {
           "file": "06_模型渲染图/02_需求活动图/3.3.1.9-需求活动图.png",
-          "bytes": 161340,
-          "sha256": "b0ad4d51a3acde49560a387371e4b525896aed9766769a2e57ee81e5a95e6e8d"
+          "bytes": 186081,
+          "sha256": "4b43d08ff458cd2665419327a6f039e1ca0b4094d789b8c95cdb8cfa31bf245d"
         },
         "svg": {
           "file": "06_模型渲染图/02_需求活动图/3.3.1.9-需求活动图.svg",
-          "bytes": 340,
-          "sha256": "815061a1bd5a955d66d08d6743456892c8d446b2cf60a501683f59dabcc470c0"
+          "bytes": 11780,
+          "sha256": "83313e357c2d92ee12604e43e32f0c613a187ced4b8e02ee0709de77ea7689a2"
         }
       },
       "png_dimensions": [
-        1034,
-        1352
+        807,
+        1830
       ],
       "action_network": {
         "nodes": {
-          "A0": "接收风窗除霜或除雾请求",
-          "A1": "识别前除霜、前除雾或后风窗请求",
-          "A2": "配置风口、风量与循环状态",
-          "A3": "确定AC与制冷能力请求",
-          "A4": "实施热量与空气调节",
-          "A5": "反馈模式与空调状态",
-          "PENDING": "后风窗请求保持待确认\n不套用前风窗控制配置"
+          "start": "N0",
+          "接收风窗除霜或除雾请求": "N1",
+          "识别前除霜、前除雾或后风窗请求": "N2",
+          "配置风口、风量与循环状态": "N3",
+          "确定AC与制冷能力请求": "N4",
+          "实施热量与空气调节": "N5",
+          "反馈模式与空调状态": "N6",
+          "后风窗等依据不足请求待确认": "N7",
+          "supportedFrontRequest": "N8",
+          "done": "N9"
         },
         "edges": [
           {
-            "source": "A0",
-            "target": "A1",
-            "condition": ""
+            "source": "start",
+            "target": "接收风窗除霜或除雾请求",
+            "guard": ""
           },
           {
-            "source": "A1",
-            "target": "A2",
-            "condition": "有依据的前除霜/前除雾请求"
+            "source": "反馈模式与空调状态",
+            "target": "done",
+            "guard": ""
           },
           {
-            "source": "A1",
-            "target": "PENDING",
-            "condition": "后风窗等缺少依据"
+            "source": "后风窗等依据不足请求待确认",
+            "target": "done",
+            "guard": ""
           },
           {
-            "source": "A2",
-            "target": "A3",
-            "condition": ""
+            "source": "接收风窗除霜或除雾请求",
+            "target": "识别前除霜、前除雾或后风窗请求",
+            "guard": ""
           },
           {
-            "source": "A3",
-            "target": "A4",
-            "condition": ""
+            "source": "识别前除霜、前除雾或后风窗请求",
+            "target": "supportedFrontRequest",
+            "guard": ""
           },
           {
-            "source": "A4",
-            "target": "A5",
-            "condition": ""
+            "source": "supportedFrontRequest",
+            "target": "配置风口、风量与循环状态",
+            "guard": "requestKind == WindscreenRequestKind::frontDefrost or requestKind == WindscreenRequestKind::frontDemist"
+          },
+          {
+            "source": "supportedFrontRequest",
+            "target": "后风窗等依据不足请求待确认",
+            "guard": "requestKind == WindscreenRequestKind::rearUnspecified or requestKind == WindscreenRequestKind::unresolved"
+          },
+          {
+            "source": "配置风口、风量与循环状态",
+            "target": "确定AC与制冷能力请求",
+            "guard": ""
+          },
+          {
+            "source": "确定AC与制冷能力请求",
+            "target": "实施热量与空气调节",
+            "guard": ""
+          },
+          {
+            "source": "实施热量与空气调节",
+            "target": "反馈模式与空调状态",
+            "guard": ""
           }
         ]
       },
-      "visual_style": "按用户参考：白底圆角细灰线、紫色小图标；保留原语义，PlantUML @startdot投影"
+      "visual_style": "按用户参考：白底圆角细灰线、紫色小图标；保留原语义，PlantUML @startdot投影",
+      "native_export_file": "05_整体检查与修改说明/SysML原生校验/官方视图导出/3.3.1.9-需求活动图.puml",
+      "native_export_sha256": "2ef41f7bcad263f98dac458a2f51d5b90795ea7dca5cccaa9a18733c5f54ceb1"
     },
     {
       "view_type": "03_需求用例图",
@@ -529,7 +673,7 @@
       "view_type": "04_需求外部环境BDD图",
       "stem": "06_模型渲染图/04_需求外部环境BDD图/综合-需求外部环境BDD图",
       "model_file": "01_系统边界与逻辑化表达/修改后的SysML模型/3.3.1.2、3.3.1.6、3.3.1.9-BDD图.sysml",
-      "model_sha256": "49731f64c8ba4007180d2f917982fd164dbd5c929f43ccadca7c3e47548c5242",
+      "model_sha256": "ee559eebe692a84656151c897af150892c09e5d35a01f3c1328a90c5adcadbe3",
       "parts": [
         [
           "SYS",
@@ -737,8 +881,8 @@
         },
         "svg": {
           "file": "06_模型渲染图/04_需求外部环境BDD图/综合-需求外部环境BDD图.svg",
-          "bytes": 340,
-          "sha256": "815061a1bd5a955d66d08d6743456892c8d446b2cf60a501683f59dabcc470c0"
+          "bytes": 25058,
+          "sha256": "33d245a426ef74e51f44d98df11b03bf265b4a047752acdd4b475807a80944c7"
         }
       },
       "png_dimensions": [
@@ -756,5 +900,7 @@
       "06_模型渲染图/03_需求用例图/综合-需求用例图.png": "3ae179c47090f6e173a060e11c39cad8e0b8c92184cc01653b13c20c021bd157",
       "06_模型渲染图/03_需求用例图/综合-需求用例图.svg": "c3b696d100b4bdc5e24203fe4ea3da11417ec27764f45b5e5724f64d80f29767"
     }
-  }
+  },
+  "renderer": "Graphviz dot 2.42.4直接渲染@startdot中的DOT，避免PlantUML对SVG的功能提示占位",
+  "native_report": "05_整体检查与修改说明/SysML原生校验/修改后原生诊断.json"
 }

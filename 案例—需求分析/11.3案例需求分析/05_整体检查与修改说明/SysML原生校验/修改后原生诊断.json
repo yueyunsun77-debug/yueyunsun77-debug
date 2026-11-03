@@ -1,0 +1,89 @@
+{
+  "engine": "OMG SysML v2 Pilot Implementation / Xtext IResourceValidator CheckMode.ALL",
+  "distribution": "jupyter-sysml-kernel 0.63.1 (conda-forge)",
+  "jar_sha256": "67c914092f4520ba98548b285c5a9a8bc08f92a0aeec7b763e12a574e91f9ff7",
+  "normative_library_files": 95,
+  "validation_kind": "local native parser, linking, types and implemented static semantic rules; not vehicle simulation",
+  "files": [
+    {
+      "file": "3.3.1.2-需求图.sysml",
+      "sha256": "af2743374c0111995d812caf4d38acaf04789b33f853ab4675a072e4be2cfd31",
+      "errors": 0,
+      "warnings": 0,
+      "issues": []
+    },
+    {
+      "file": "3.3.1.2-需求活动图.sysml",
+      "sha256": "135655034926dbb615152452bf49ce7bd3802ace600a95a41333d9920ccab9d0",
+      "errors": 0,
+      "warnings": 0,
+      "issues": []
+    },
+    {
+      "file": "3.3.1.2、3.3.1.6、3.3.1.9-BDD图.sysml",
+      "sha256": "ee559eebe692a84656151c897af150892c09e5d35a01f3c1328a90c5adcadbe3",
+      "errors": 0,
+      "warnings": 0,
+      "issues": []
+    },
+    {
+      "file": "3.3.1.2、3.3.1.6、3.3.1.9-需求用例图.sysml",
+      "sha256": "b240d6764adaa6131a49f7a44af4f5060a65f85085967099eb98ff39eb8a0c2f",
+      "errors": 0,
+      "warnings": 0,
+      "issues": []
+    },
+    {
+      "file": "3.3.1.6-需求图.sysml",
+      "sha256": "4796e610e7bfb6d2e7be8673886c0be9839460973df203da78088c919471970b",
+      "errors": 0,
+      "warnings": 0,
+      "issues": []
+    },
+    {
+      "file": "3.3.1.6-需求活动图.sysml",
+      "sha256": "e67d027bc30bc458fa6978d61f48d6cc67eac65aea6df287b11600fe8686b879",
+      "errors": 0,
+      "warnings": 0,
+      "issues": []
+    },
+    {
+      "file": "3.3.1.9-需求图.sysml",
+      "sha256": "851497841f4bd1fa101b039a78dd3dc7cacef05ac01b8d7ebe102436a5311ece",
+      "errors": 0,
+      "warnings": 0,
+      "issues": []
+    },
+    {
+      "file": "3.3.1.9-需求活动图.sysml",
+      "sha256": "33afb2eec9b70881d885e6a3b0f212e7aaaa2e5faf04e4cd909f8b8aad28212c",
+      "errors": 0,
+      "warnings": 0,
+      "issues": []
+    },
+    {
+      "file": "指标承接逻辑功能.sysml",
+      "sha256": "8470d31c2433546c6a4be4ebe05ea65480f7d520033c1ef9291ae00cdad99d75",
+      "errors": 0,
+      "warnings": 0,
+      "issues": []
+    },
+    {
+      "file": "独立指标需求.sysml",
+      "sha256": "42041328b3733a966387bb70801404fefaa71239b263e9acf8eb5d5bc319ae41",
+      "errors": 0,
+      "warnings": 0,
+      "issues": []
+    },
+    {
+      "file": "逻辑功能架构.sysml",
+      "sha256": "8f2b403caecca2cd145628f961358c2c8afa817b75153119c5d4e830dda0b0da",
+      "errors": 0,
+      "warnings": 0,
+      "issues": []
+    }
+  ],
+  "total_files": 11,
+  "errors": 0,
+  "warnings": 0
+}

@@ -1,0 +1,25 @@
+--- c47d5f3/3.3.1.2-需求图.sysml
++++ 原生校验修正版/3.3.1.2-需求图.sysml
+@@ -2,0 +3,2 @@
++    private import ScalarValues::*;
++
+@@ -13,0 +16,9 @@
++
++            attribute requestHeating : Boolean;
++            attribute airflowEnabled : Boolean;
++            attribute targetTemperature : Real;
++            attribute cabinTemperature : Real;
++            attribute highVoltageAvailable : Boolean;
++            attribute vehicleFaultActive : Boolean;
++            attribute stateOfCharge : Real;
++            require constraint { not requestHeating or (airflowEnabled and targetTemperature > cabinTemperature and highVoltageAvailable and not vehicleFaultActive and stateOfCharge > 10) }
+@@ -19,0 +31,9 @@
++
++            attribute protectionWasActive : Boolean;
++            attribute heaterTemperature : Real;
++            attribute cutOffTemperature : Real;
++            attribute recoveryTemperature : Real;
++            attribute requestHeating : Boolean;
++            require constraint { heaterTemperature < cutOffTemperature or not requestHeating }
++            require constraint { not protectionWasActive or heaterTemperature <= recoveryTemperature or not requestHeating }
++            // 两个阈值保留为外部待标定参数；不规定未提供的阈值数值或回差。

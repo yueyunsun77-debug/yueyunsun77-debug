@@ -1,16 +1,23 @@
 // 修改说明：以逻辑功能表达内部职责；原技术信号与需求短ID保留，物理组件映射见Excel。
 package '需求活动图_3319_前后风窗除霜_除雾' {
+    private import ScalarValues::*;
+    enum def WindscreenRequestKind { frontDefrost; frontDemist; rearUnspecified; unresolved; }
+
     doc /*
        需求编号：3.3.1.9 前后风窗除霜/除雾。
        主要设计依据：CCU Component Technical Specification 6.12.1.3（印刷页62–63）及6.12.1.4（印刷页63–64）。
        系统级优先级补充依据：SL29 Subsystem Technical Specification 4.1.3.3（实际PDF页13–14）。
-       建模方式参照已验证的需求层活动图ACT：通过场景包、需求层活动、嵌套action、doc注释及ActionFlowView生成活动视图。
+       建模方式采用需求层活动图ACT：通过场景包、需求层活动、嵌套action、doc注释及ActionFlowView生成活动视图。
        当前PDF只提供前除霜/前除雾详细逻辑；后风窗控制不由前风窗行为推定。
     */
 
     package 'REQ_3319_前后风窗除霜_除雾' {
         package '需求层活动' {
             action '需求活动执行流程' {
+                doc /* 本活动为一次评估快照。条件与互斥路径由显式决策/守卫/合并建模；抽象动作不代表控制算法或实车仿真。 */
+                in requestKind : WindscreenRequestKind;
+                // 内部分析级请求分类，不新增对外报文。冲突/未知请求由上下文标为unresolved，不编造仲裁优先级。
+
                 action '接收风窗除霜或除雾请求' {
                     doc /*
                        对应设计需求：SL30-LC06-SF01 前除霜控制、SL30-LC06-SF02 前除雾控制。
@@ -22,7 +29,7 @@ package '需求活动图_3319_前后风窗除霜_除雾' {
                        前除霜与前除雾按对应设计需求处理。
                        Excel标题同时覆盖后风窗，但当前两份PDF没有给出后风窗除霜/加热的完整控制逻辑，
                        因此不能直接将前风窗控制行为套用于后风窗；后风窗请求停留在待确认处理，不执行后续前风窗配置。
-                       本图保留原高层阶段链，后续动作仅适用于已识别且有依据的前风窗请求；流程渲染图按此doc条件展开。
+                       本轮增加supportedFrontRequest守卫；后风窗和其他依据不足请求不会进入前风窗配置链。
                     */
                 }
                 action '配置风口、风量与循环状态' {
@@ -53,13 +60,20 @@ package '需求活动图_3319_前后风窗除霜_除雾' {
                     */
                 }
 
+                action '后风窗等依据不足请求待确认' {
+                    doc /* 该路径不执行前风窗配置；不定义未经规范支持的后风窗控制、拒绝或故障策略。 */
+                }
+                decide supportedFrontRequest;
                 first start then '接收风窗除霜或除雾请求';
                 first '接收风窗除霜或除雾请求' then '识别前除霜、前除雾或后风窗请求';
-                first '识别前除霜、前除雾或后风窗请求' then '配置风口、风量与循环状态';
+                first '识别前除霜、前除雾或后风窗请求' then supportedFrontRequest;
+                first supportedFrontRequest if requestKind == WindscreenRequestKind::frontDefrost or requestKind == WindscreenRequestKind::frontDemist then '配置风口、风量与循环状态';
+                first supportedFrontRequest if requestKind == WindscreenRequestKind::rearUnspecified or requestKind == WindscreenRequestKind::unresolved then '后风窗等依据不足请求待确认';
                 first '配置风口、风量与循环状态' then '确定AC与制冷能力请求';
                 first '确定AC与制冷能力请求' then '实施热量与空气调节';
                 first '实施热量与空气调节' then '反馈模式与空调状态';
                 first '反馈模式与空调状态' then done;
+                first '后风窗等依据不足请求待确认' then done;
             }
         }
     }

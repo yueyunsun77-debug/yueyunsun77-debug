@@ -23,7 +23,8 @@ def run():
      assert list(im.size)==v['png_dimensions'];assert min(im.size)>100;im.verify()
    if ext=='svg':
     tree=ET.parse(p);text=''.join(tree.getroot().itertext())
-    assert not any(x in text for x in ['Syntax Error','Error line','An error has occurred'])
+    assert not any(x in text for x in ['Syntax Error','Error line','An error has occurred','This feature has been suppressed'])
+    assert len(tree.findall('.//{http://www.w3.org/2000/svg}g'))>10,'SVG应含真实图形'
   puml=(ROOT/v['artifacts']['puml']['file']).read_text()
   assert (puml.startswith('@startuml') and puml.rstrip().endswith('@enduml')) or (puml.startswith('@startdot') and puml.rstrip().endswith('@enddot'))
   if v['view_type']=='01_需求图':
@@ -33,6 +34,8 @@ def run():
    acts=re.findall(r"\baction '([^']+)'",source)[1:]
    assert acts==v['phase_names'];flat=html.unescape(puml.replace('<BR/>','').replace('\\n',''))
    assert all(x in flat for x in acts)
+   exported=ROOT/v['native_export_file'];assert hashlib.sha256(exported.read_bytes()).hexdigest()==v['native_export_sha256']
+   network=v['action_network'];assert len(network['edges'])>=10
   elif v['view_type']=='03_需求用例图':
    assert re.findall(r"use case def '([^']+)'",source)==v['use_cases']
    assert re.findall(r'\brequire (\w+);',source)==v['require_aliases']
@@ -44,6 +47,10 @@ def run():
    assert all(x[0] in puml for x in connections)
    for typ,fields in v['port_type_features'].items():
     assert typ in puml and all(field in puml for field,_ in fields)
+ report=json.loads((ROOT/manifest['native_report']).read_text());assert report['errors']==0 and report['warnings']==0
+ for entry in report['files']:
+  model=ROOT/'01_系统边界与逻辑化表达/修改后的SysML模型'/entry['file']
+  assert hashlib.sha256(model.read_bytes()).hexdigest()==entry['sha256']
  assert len(rd_ids)==23,'应保留3个主需求+20个原子需求短ID'
- print(json.dumps(dict(views=8,puml=8,png=8,svg=8,verified_artifact_hashes=hashes,retained_rd_ids=23,bdd_roles=7,bdd_interfaces=8,sysml_compiler_executed=False),ensure_ascii=False,indent=2))
+ print(json.dumps(dict(views=8,puml=8,png=8,svg=8,verified_artifact_hashes=hashes,retained_rd_ids=23,bdd_roles=7,bdd_interfaces=8,sysml_native_validator_executed=True),ensure_ascii=False,indent=2))
 if __name__=='__main__':run()

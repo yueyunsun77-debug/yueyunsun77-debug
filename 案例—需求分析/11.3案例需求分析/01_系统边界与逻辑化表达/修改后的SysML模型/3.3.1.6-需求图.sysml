@@ -1,5 +1,7 @@
 // 修改说明：以逻辑功能表达内部职责；原技术信号与需求短ID保留，物理组件映射见Excel。
 package RequirementModel_02 {
+    private import ScalarValues::*;
+
     // 来源：Excel Function list 3.3.1.6；CCU CTS 第67–68页（自动空调控制、自动空调温度控制）。
     // SysML v2 建模：以 requirement def 定义所选需求，以嵌套 requirement usage 表达细化需求。
     requirement def <'3.3.1.6'> AutomaticClimateMode {
@@ -14,6 +16,14 @@ package RequirementModel_02 {
         }
         requirement <'3.3.1.6-04'> targetTemperatureAdjustment {
             doc /* LO<16℃、HI>30℃，每次温度调节0.5℃；保持当前模式 */
+
+            attribute targetTemperature : Real;
+            attribute display : String;
+            attribute temperatureButtonPressed : Boolean;
+            attribute adjustmentDelta : Real;
+            require constraint { (display == "LO") == (targetTemperature < 16) }
+            require constraint { (display == "HI") == (targetTemperature > 30) }
+            require constraint { not temperatureButtonPressed or adjustmentDelta == 0.5 or adjustmentDelta == -0.5 }
         }
         requirement <'3.3.1.6-05'> circulationKeepsAuto {
             doc /* 循环操作保持AUTO */
@@ -23,6 +33,12 @@ package RequirementModel_02 {
         }
         requirement <'3.3.1.6-07'> acButtonBehavior {
             doc /* AC操作关闭制冷，转速请求=0，AUTO反馈Close，其余指定项保持自动 */
+
+            attribute acButtonOperatedInAuto : Boolean;
+            attribute compressorSpeedRequest : Real;
+            attribute autoFeedback : String;
+            attribute specifiedOtherFunctionsRemainAutomatic : Boolean;
+            require constraint { not acButtonOperatedInAuto or (compressorSpeedRequest == 0 and autoFeedback == "Close" and specifiedOtherFunctionsRemainAutomatic) }
         }
     }
 }

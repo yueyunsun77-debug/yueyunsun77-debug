@@ -1,0 +1,153 @@
+@startuml
+skin sysmlbw
+skinparam monochrome true
+skinparam wrapWidth 300
+hide circle
+skinparam ranksep 10
+skinparam rectangle {
+ backgroundColor<<block>> LightGreen
+}
+
+rec usage "需求活动执行流程" as E1  <<(T,blue) action>>  {
+portin "operation" as E3
+rec usage "接收AUTO模式请求" as E4  <<(T,blue) action>>  {
+}
+
+rec usage "处理请求并反馈AUTO状态" as E6  <<(T,blue) action>>  {
+portout "autoModeActive" as E8
+}
+
+rec usage "采集环境与温度信号" as E9  <<(T,blue) action>>  {
+}
+
+rec usage "协调热量与空气调节服务" as E11  <<(T,blue) action>>  {
+}
+
+rec usage "处理用户操作与模式切换" as E13  <<(T,blue) action>>  {
+}
+
+rec usage "更新控制输出并持续反馈状态" as E15  <<(T,blue) action>>  {
+}
+
+rec usage "保持AUTO并更新设置" as E17  <<(T,blue) action>>  {
+}
+
+rec usage "退出AUTO且其余指定项仍自动" as E19  <<(T,blue) action>>  {
+}
+
+rec usage "进入前除霜状态" as E21  <<(T,blue) action>>  {
+}
+
+rec usage "关闭制冷请求且转速请求为零" as E23  <<(T,blue) action>>  {
+}
+
+rec usage "AUTO反馈Close且局部功能仍自动" as E25  <<(T,blue) action>>  {
+}
+
+rec usage "重复AUTO操作待确认" as E27  <<(T,blue) action>>  {
+}
+
+rec usage "无新操作保持当前调节" as E29  <<(T,blue) action>>  {
+}
+
+choice "autoActiveChoice" as E31
+choice "userOperationChoice" as E32
+choice "operationMerged" as E33
+choice "feedbackMerged" as E34
+[*] --> E4
+E15 --> [*]
+}
+
+note as E2
+本活动为一次评估快照。条件与互斥路径由显式决策/守卫/合并建模；抽象动作不代表控制算法或实车仿真。
+end note
+note as E5
+对应设计需求：SL30-LC07-SF01 自动空调控制。
+CCU接收用户通过IVI的AUTO按键发出的自动模式开启或关闭请求。
+
+end note
+note as E7
+CCU响应AUTO模式开启/关闭请求，并将自动模式状态反馈给IVI显示。
+AUTO状态下再次操作AUTO按键的处理在来源中标记为invalid，具体策略需按设计定义确认。
+
+end note
+note as E10
+获取室内温度、室外温度、日照负荷信息，以及供热入口温度/电加热源温度等控制输入。
+补充依据：SL29 4.6.3.4–4.6.3.5描述相关温度信号检测。
+
+end note
+note as E12
+CCU依据环境和温度信号，自动协调空气输送能力、送风温度调节、送风模式调节、循环方式调节、
+制冷执行能力请求（转速接口）及电加热功率，使乘员舱温度趋近用户设定的目标温度。
+对应设计需求：SL30-LC07-SF01、SL30-LC07-SF02。
+
+end note
+note as E14
+温度设置或循环设置变化时保持AUTO；操作风量或吹风模式按钮时退出AUTO；
+操作前除霜按钮时切换至前除霜状态；操作AC按钮时关闭制冷执行功能请求，其他自动控制项继续工作；按CCU PDF第68页，AUTO状态反馈为Close。
+各按钮行为依据SL30-LC07-SF01。
+
+end note
+note as E16
+按当前AUTO状态及用户操作更新控制输出和模式状态，持续执行自动调节。
+待确认：制冷执行功能、空气输送功能与电加热功率之间的匹配关系，以及温度LO/HI边界的具体控制和标定策略。
+
+end note
+note as E18
+温度或循环操作保持AUTO，仅更新对应设置。
+end note
+note as E20
+风量或吹风模式操作退出AUTO，但除操作项外其他状态仍自动控制。
+end note
+note as E22
+前除霜操作进入前除霜模式。
+end note
+note as E24
+AUTO内AC操作关闭制冷请求且转速请求为0。
+end note
+note as E26
+AC操作时AUTO反馈Close；风量、温度、模式、循环仍保持自动控制。
+end note
+note as E28
+原文为invalid，不自行解释为切换、忽略或报错。
+end note
+note as E30
+表示一次控制评估中没有新增按键；不新增产品功能。
+end note
+E2 .. E1
+E5 .. E4
+E7 .. E6
+E10 .. E9
+E12 .. E11
+E14 .. E13
+E16 .. E15
+E18 .. E17
+E20 .. E19
+E22 .. E21
+E24 .. E23
+E26 .. E25
+E28 .. E27
+E30 .. E29
+E4 --> E6
+E6 --> E31
+E31  --> E9  : ['处理请求并反馈AUTO状态'.autoModeActive]
+E31  --> E34  : [not '处理请求并反馈AUTO状态'.autoModeActive]
+E9 --> E11
+E11 --> E13
+E13 --> E32
+E32  --> E17  : [operation == AutoOperation::temperature or operation == AutoOperation::circulation]
+E32  --> E19  : [operation == AutoOperation::airflow or operation == AutoOperation::distribution]
+E32  --> E21  : [operation == AutoOperation::frontDefrost]
+E32  --> E23  : [operation == AutoOperation::ac]
+E32  --> E27  : [operation == AutoOperation::autoRepeat]
+E32  --> E29  : [operation == AutoOperation::noChange]
+E23 --> E25
+E17 --> E33
+E19 --> E33
+E21 --> E33
+E25 --> E33
+E27 --> E33
+E29 --> E33
+E33 --> E34
+E34 --> E15
+@enduml

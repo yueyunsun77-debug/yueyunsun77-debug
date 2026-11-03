@@ -1,0 +1,64 @@
+@startuml
+skin sysmlbw
+skinparam monochrome true
+skinparam wrapWidth 300
+hide circle
+
+comp def "~<3.3.1.6> AutomaticClimateMode" as E1  <<(T,blue) requirement  def>>  {
+}
+comp usage "~<3.3.1.6-01> autoButtonStatus  " as E2  <<(T,blue) requirement>>  {
+##//doc//##
+处理AUTO请求并反馈状态；AUTO内重复AUTO为invalid，语义待确认
+}
+comp usage "~<3.3.1.6-02> sensorInputs  " as E3  <<(T,blue) requirement>>  {
+##//doc//##
+获取室内、室外、日照及供热入口<U+002F>加热温度信息
+}
+comp usage "~<3.3.1.6-03> automaticActuatorControl  " as E4  <<(T,blue) requirement>>  {
+##//doc//##
+协调空气输送、温度<U+002F>模式<U+002F>循环调节、制冷与电加热能力
+}
+comp usage "~<3.3.1.6-04> targetTemperatureAdjustment  " as E5  <<(T,blue) requirement>>  {
+##//doc//##
+LO<U+003C>16℃、HI>30℃，每次温度调节0.5℃；保持当前模式
+--
+##//attributes//##
+adjustmentDelta: Real
+display: String
+targetTemperature: Real
+temperatureButtonPressed: Boolean
+--
+##//constraints//##
+<b>require</b> { (display <U+003D><U+003D> "LO") <U+003D><U+003D> (targetTemperature <U+003C> 16) }
+<b>require</b> { (display <U+003D><U+003D> "HI") <U+003D><U+003D> (targetTemperature > 30) }
+<b>require</b> { not temperatureButtonPressed or adjustmentDelta <U+003D><U+003D> 0.5 or adjustmentDelta <U+003D><U+003D> <U+002D>0.5 }
+}
+comp usage "~<3.3.1.6-05> circulationKeepsAuto  " as E6  <<(T,blue) requirement>>  {
+##//doc//##
+循环操作保持AUTO
+}
+comp usage "~<3.3.1.6-06> modeExitAndTransition  " as E7  <<(T,blue) requirement>>  {
+##//doc//##
+风量<U+002F>模式操作退出AUTO但其他项仍自动；前除霜操作进入前除霜
+}
+comp usage "~<3.3.1.6-07> acButtonBehavior  " as E8  <<(T,blue) requirement>>  {
+##//doc//##
+AC操作关闭制冷，转速请求<U+003D>0，AUTO反馈Close，其余指定项保持自动
+--
+##//attributes//##
+acButtonOperatedInAuto: Boolean
+autoFeedback: String
+compressorSpeedRequest: Real
+specifiedOtherFunctionsRemainAutomatic: Boolean
+--
+##//constraints//##
+<b>require</b> { not acButtonOperatedInAuto or (compressorSpeedRequest <U+003D><U+003D> 0 and autoFeedback <U+003D><U+003D> "Close" and specifiedOtherFunctionsRemainAutomatic) }
+}
+E1 *-- E2
+E1 *-- E3
+E1 *-- E4
+E1 *-- E5
+E1 *-- E6
+E1 *-- E7
+E1 *-- E8
+@enduml

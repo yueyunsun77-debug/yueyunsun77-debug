@@ -1,5 +1,7 @@
 // 修改说明：以逻辑功能表达内部职责；原技术信号与需求短ID保留，物理组件映射见Excel。
 package RequirementModel_03 {
+    private import ScalarValues::*;
+
     // 来源：Excel Function list 3.3.1.9；CCU CTS 第62–65页（前除霜/前除雾控制）；SL29 SSTS 第13–14页（压缩机请求与前除霜优先级）。
     // SysML v2 建模：以 requirement def 定义所选需求，以嵌套 requirement usage 表达细化需求。
     requirement def <'3.3.1.9'> FrontRearDefrostDemist {
@@ -20,6 +22,12 @@ package RequirementModel_03 {
         }
         requirement <'3.3.1.9-06'> lowSocDefrostException {
             doc /* SOC<10%且前除霜关闭则禁止制冷输出，开启则允许；SOC=10%边界未规定 */
+
+            attribute stateOfCharge : Real;
+            attribute frontDefrostActive : Boolean;
+            attribute lowSocGateAllowsCompressor : Boolean;
+            require constraint { stateOfCharge >= 10 or (lowSocGateAllowsCompressor == frontDefrostActive) }
+            // 该约束仅约束SOC<10%的低电量许可条件，不替代其他许可；SOC=10%及以上不由此补造控制策略。
         }
         // 资料缺口：所给PDF仅描述前除霜/前除雾，未给出后风窗控制逻辑；
         // 因此不将后风窗控制细节虚构为正式子需求。

@@ -5,6 +5,8 @@
 // 说明：本模型明确端口特征及跨端口的信息流；CAN 内部协议/报文转发实现不在本 BDD 中展开。
 
 package '热管理三条需求外部环境图BDD' {
+    private import ScalarValues::*;
+    // 显式引入Boolean/Real标准类型；端口和接口身份保持不变。
 
     // ---------- 端口类型：用户请求 ----------
     port def ThermalRequestPort {

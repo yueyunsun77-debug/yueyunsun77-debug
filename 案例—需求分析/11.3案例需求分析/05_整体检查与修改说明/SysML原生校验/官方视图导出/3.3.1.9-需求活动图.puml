@@ -1,0 +1,96 @@
+@startuml
+skin sysmlbw
+skinparam monochrome true
+skinparam wrapWidth 300
+hide circle
+skinparam ranksep 10
+skinparam rectangle {
+ backgroundColor<<block>> LightGreen
+}
+
+rec usage "需求活动执行流程" as E1  <<(T,blue) action>>  {
+portin "requestKind" as E3
+rec usage "接收风窗除霜或除雾请求" as E4  <<(T,blue) action>>  {
+}
+
+rec usage "识别前除霜、前除雾或后风窗请求" as E6  <<(T,blue) action>>  {
+}
+
+rec usage "配置风口、风量与循环状态" as E8  <<(T,blue) action>>  {
+}
+
+rec usage "确定AC与制冷能力请求" as E10  <<(T,blue) action>>  {
+}
+
+rec usage "实施热量与空气调节" as E12  <<(T,blue) action>>  {
+}
+
+rec usage "反馈模式与空调状态" as E14  <<(T,blue) action>>  {
+}
+
+rec usage "后风窗等依据不足请求待确认" as E16  <<(T,blue) action>>  {
+}
+
+choice "supportedFrontRequest" as E18
+[*] --> E4
+E14 --> [*]
+E16 --> [*]
+}
+
+note as E2
+本活动为一次评估快照。条件与互斥路径由显式决策/守卫/合并建模；抽象动作不代表控制算法或实车仿真。
+end note
+note as E5
+对应设计需求：SL30-LC06-SF01 前除霜控制、SL30-LC06-SF02 前除雾控制。
+用户通过IVI发起请求，并经CAN发送给CCU。
+
+end note
+note as E7
+前除霜与前除雾按对应设计需求处理。
+Excel标题同时覆盖后风窗，但当前两份PDF没有给出后风窗除霜/加热的完整控制逻辑，
+因此不能直接将前风窗控制行为套用于后风窗；后风窗请求停留在待确认处理，不执行后续前风窗配置。
+本轮增加supportedFrontRequest守卫；后风窗和其他依据不足请求不会进入前风窗配置链。
+
+end note
+note as E9
+前除霜：风口切换至除霜位置、空气输送功能请求最大风量、切换外循环。
+前除雾：风口切换至除雾位置、最大风量、切换外循环。
+外循环开度约90%在PDF中属于待定值。
+
+end note
+note as E11
+根据环境温度条件确定AC请求及制冷执行能力请求（转速接口）。
+PDF说明制冷执行功能用于除湿时最低转速约1000 rpm，具体数值需标定。
+系统级优先级参考SSTS-SL29-LC01-SF03：前除霜优先级高于电池包降温和乘员舱制冷，
+完整仲裁阈值仍有待确认。
+
+end note
+note as E13
+CCU控制相关空气分配调节、空气输送功能及热量与空气调节服务，落实前除霜或前除雾模式的控制请求。
+模式内温度、风量、循环以及AUTO/AC/模式按钮的交互应遵循对应PDF设计要求。
+
+end note
+note as E15
+将前除霜/前除雾状态及相关风量、温度、AC、循环等空调信号反馈给IVI显示。
+后风窗是否采用独立电加热丝、由哪个控制器驱动以及对应反馈信号，仍需补充确认。
+
+end note
+note as E17
+该路径不执行前风窗配置；不定义未经规范支持的后风窗控制、拒绝或故障策略。
+end note
+E2 .. E1
+E5 .. E4
+E7 .. E6
+E9 .. E8
+E11 .. E10
+E13 .. E12
+E15 .. E14
+E17 .. E16
+E4 --> E6
+E6 --> E18
+E18  --> E8  : [requestKind == WindscreenRequestKind::frontDefrost or requestKind == WindscreenRequestKind::frontDemist]
+E18  --> E16  : [requestKind == WindscreenRequestKind::rearUnspecified or requestKind == WindscreenRequestKind::unresolved]
+E8 --> E10
+E10 --> E12
+E12 --> E14
+@enduml

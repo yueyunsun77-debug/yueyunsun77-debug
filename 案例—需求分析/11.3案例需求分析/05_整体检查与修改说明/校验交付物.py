@@ -80,7 +80,8 @@ def run():
    acts=re.findall(r"\baction\s+'([^']+)'",new)
    refs=re.findall(r"(?:first|then)\s+'([^']+)'",new)
    assert set(refs)<=set(acts),p.name
-   assert len(acts)==len(re.findall(r"\baction\s+'([^']+)'",old))
+   assert len(acts)>=len(re.findall(r"\baction\s+'([^']+)'",old))
+   # 原主阶段保留检查在原生语义复核中；允许新增显式决策分支动作。
  for p in md.glob('*.sysml'):
   s=re.sub(r'/\*.*?\*/|//[^\n]*','',p.read_text(),flags=re.S)
   assert s.count('{')==s.count('}'),p.name

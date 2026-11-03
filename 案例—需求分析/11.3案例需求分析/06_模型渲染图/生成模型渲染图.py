@@ -33,7 +33,7 @@ data={r['req_id']:r for r in json.loads((ROOT/'03_结构化需求清单/结构�
 for v in manifest['views']:
  if v['view_type']!='01_需求图':continue
  source=ROOT/v['model_file'];s=source.read_text();rid=re.search(r"requirement def <'([^']+)'>",s)[1]
- leaves=re.findall(r"requirement <'([^']+)'> (\w+) \{\s*doc /\*(.*?)\*/\s*}",s,re.S)
+ leaves=re.findall(r"requirement <'([^']+)'> (\w+) \{\s*doc /\*(.*?)\*/",s,re.S)
  b=start(rid+' '+data[rid]['name']+' · 需求图',', layout=neato, overlap=false, notranslate=true')
  title=f'<FONT COLOR="#8070AC">▣</FONT> «requirement def»<BR/><B>{esc(data[rid]["name"])}</B><BR/>{rid} · 系统需求'
  b+='MAIN [pos="0,0!", shape=plain, label=<<TABLE BORDER="1" COLOR="#858585" CELLBORDER="0" CELLSPACING="0" CELLPADDING="10" STYLE="ROUNDED"><TR><TD>'+title+'</TD></TR><TR><TD BORDER="1" SIDES="T"><I>doc</I><BR/>原需求层次保留</TD></TR></TABLE>>];\n'
@@ -47,35 +47,56 @@ for v in manifest['views']:
  b+=comment('连线保留原SysML嵌套包含含义；中心端菱形不表示新增deriveReqt/satisfy。详细doc见需求条目明细。')
  v['display_names']=dict(zip([x[0] for x in leaves],rdnames[rid]));save(v,b)
 
-# 带«action»的虚线动作网络；阶段来自模型，分支条件沿用上版已核对doc规则。
+# 从官方原生解析后的视图导出读取动作、决策节点和实际successions。
+AUDIT=ROOT/'05_整体检查与修改说明/SysML原生校验'
+native_report=json.loads((AUDIT/'修改后原生诊断.json').read_text())
+assert native_report['errors']==0 and native_report['warnings']==0
+validated={r['file']:r['sha256'] for r in native_report['files']}
+for model in MODEL.glob('*.sysml'):
+ assert hashlib.sha256(model.read_bytes()).hexdigest()==validated[model.name],('模型已改动，先运行原生校验与导出',model.name)
+graphs={g['req_id']:g for g in json.loads((AUDIT/'显式动作关系索引.json').read_text())}
+norm=lambda x: re.sub(r"[\s']+",'',html.unescape(x))
+labels={'heatingEnableChoice':'使能条件判断','overtemperatureChoice':'是否达到过温上限','protectionMemoryChoice':'原保护是否激活','recoveryChoice':'是否达到恢复条件','enableMerged':'使能分支合并','protectionMerged':'保护分支合并','autoActiveChoice':'AUTO是否激活','userOperationChoice':'用户操作分类','operationMerged':'操作分支合并','feedbackMerged':'状态反馈路径合并','supportedFrontRequest':'请求是否有前风窗依据'}
+translations={'heatingAllowed':'全部加热使能条件满足','not heatingAllowed':'任一加热使能条件不满足','heaterTemperature >= cutOffTemperature':'加热温度 ≥ 待标定上限','heaterTemperature < cutOffTemperature':'加热温度 < 待标定上限','protectionWasActive':'原保护已激活','not protectionWasActive':'原保护未激活','heaterTemperature <= recoveryTemperature':'加热温度 ≤ 待标定恢复温度','heaterTemperature > recoveryTemperature':'加热温度 > 待标定恢复温度',"'处理请求并反馈AUTO状态'.autoModeActive":'AUTO已激活',"not '处理请求并反馈AUTO状态'.autoModeActive":'AUTO未激活','operation == AutoOperation::temperature or operation == AutoOperation::circulation':'温度或循环操作','operation == AutoOperation::airflow or operation == AutoOperation::distribution':'风量或吹风模式操作','operation == AutoOperation::frontDefrost':'前除霜操作','operation == AutoOperation::ac':'AC操作','operation == AutoOperation::autoRepeat':'再次AUTO操作','operation == AutoOperation::noChange':'无新增操作','requestKind == WindscreenRequestKind::frontDefrost or requestKind == WindscreenRequestKind::frontDemist':'有依据的前除霜或前除雾请求','requestKind == WindscreenRequestKind::rearUnspecified or requestKind == WindscreenRequestKind::unresolved':'后风窗或依据不足请求'}
+translations={norm(k):v for k,v in translations.items()}
 for v in manifest['views']:
  if v['view_type']!='02_需求活动图':continue
- rid=Path(v['model_file']).name.split('-')[0];s=(ROOT/v['model_file']).read_text()
- phases=re.findall(r"\baction '([^']+)'",s)[1:];nodes={f'A{i}':x for i,x in enumerate(phases)};edges=[]
- b=start(rid+' '+data[rid]['name']+' · 需求活动图',', rankdir=TB, ranksep=0.65, dpi=130')
- if rid=='3.3.1.2':
-  nodes.update(ON='允许电加热输出',OFF='禁止或保持关闭加热',REC='判断保护恢复条件',UNLOCK='重新允许加热\n仍须满足全部使能条件',HOLD='保持保护禁止状态',STOP='停止加热并进入保护',KEEP='按当前许可调节输出')
-  edges=[('A0','A1',''),('A1','A2','使能条件判断结果'),('A2','ON','全部条件满足'),('A2','OFF','任一条件不满足'),('ON','A3',''),('OFF','A3',''),('A3','REC','已触发且未解除保护'),('A3','STOP','未处于保护且温度≥上限XXX℃'),('A3','KEEP','未处于保护且未达上限'),('REC','UNLOCK','温度≤恢复XXX℃'),('REC','HOLD','尚未满足恢复条件'),('UNLOCK','A4',''),('HOLD','A4',''),('STOP','A4',''),('KEEP','A4','')]
-  b+='{rank=same; ON; OFF;}\n{rank=same; REC; STOP; KEEP;}\n{rank=same; UNLOCK; HOLD;}\n'
-  note='使能：送风开启、目标温度>舱温、高压可用、无整车故障、SOC>10%。\n电加热温度检测50 ms；上限/恢复阈值XXX待标定。'
- elif rid=='3.3.1.6':
-  nodes.update(TEMP='保持AUTO并更新设置',MANUAL='退出AUTO\n其余指定项仍自动',DEF='进入前除霜状态',AC='关闭制冷请求\n转速请求=0',CLOSE='AUTO反馈Close\n风量/温度/模式/循环仍自动',INVALID='重复AUTO操作：invalid\n具体交互待确认')
-  edges=[('A0','A1',''),('A1','A2',''),('A2','A3',''),('A3','A4',''),('A4','TEMP','温度/循环操作'),('A4','MANUAL','风量/吹风模式操作'),('A4','DEF','前除霜操作'),('A4','AC','AC操作'),('A4','INVALID','再次AUTO操作'),('AC','CLOSE',''),('TEMP','A5',''),('MANUAL','A5',''),('DEF','A5',''),('CLOSE','A5',''),('INVALID','A5','')]
-  b+='{rank=same; TEMP; MANUAL; DEF; AC; INVALID;}\n'
-  note='温度<16℃为LO，>30℃为HI；每次调节0.5℃。\nAUTO反馈状态与各局部自动控制行为分别表达。'
- else:
-  nodes.update(PENDING='后风窗请求保持待确认\n不套用前风窗控制配置')
-  edges=[('A0','A1',''),('A1','A2','有依据的前除霜/前除雾请求'),('A1','PENDING','后风窗等缺少依据'),('A2','A3',''),('A3','A4',''),('A4','A5','')]
-  b+='{rank=same; A2; PENDING;}\n'
-  note='对应风口、最大风量、外循环90%待定、温度保持。\nAC请求依据环境温度；除湿最低1000 r/min待标定；仲裁XX阈值未定。'
- for alias,name in nodes.items():
-  b+=alias+' [width=2.4, height=0.65, label=<<FONT COLOR="#8070AC">▣</FONT> «action»<BR/>'+lines(name,12)+'>];\n'
- for a,c,condition in edges:
-  b+=a+' -> '+c+' [style=dashed, arrowhead=vee'+(', xlabel='+q('\n'.join(textwrap.wrap(condition,12))) if condition else '')+'];\n'
- # 使用独立说明框承载标定信息，避免把说明当控制节点。
- b+='NOTE [shape=note, style=filled, fillcolor="white", fontsize=11, label='+q(note+'\n保留原阶段和doc规则；一次评估片段不代表持续监测停止。')+'];\n'
- b+=f'A{len(phases)-1} -> NOTE [style=invis];\n'
- v['phase_names']=phases;v['action_network']=dict(nodes=nodes,edges=[dict(source=a,target=c,condition=d) for a,c,d in edges]);save(v,b)
+ rid=Path(v['model_file']).name.split('-')[0];source=(ROOT/v['model_file']).read_text();g=graphs[rid]
+ native_path=AUDIT/'官方视图导出'/(Path(v['model_file']).stem+'.puml');native=native_path.read_text()
+ pairs=re.findall(r'^rec usage "([^"\n]+)" as (E\d+).*?action',native,re.M)
+ actions={alias:name for name,alias in pairs if name!='需求活动执行流程'}
+ choices={alias:name for name,alias in re.findall(r'^choice "([^"\n]+)" as (E\d+)',native,re.M)}
+ aliases={**actions,**choices};network=[]
+ for src,dst,guard in re.findall(r'^(E\d+|\[\*\])\s+-->\s+(E\d+|\[\*\])[^\n:]*?(?: : \[(.*)\])? *$',native,re.M):
+  network.append(dict(source=('start' if src=='[*]' else aliases[src]),target=('done' if dst=='[*]' else aliases[dst]),guard=guard or ''))
+ assert set(actions.values())==set(g['actions'])
+ assert set(choices.values())==set(g['decision_nodes']+g['merge_nodes'])
+ expected={(e['source'],e['target'],norm(e['guard'])) for e in g['successions']}
+ actual={(e['source'],e['target'],norm(e['guard'])) for e in network}
+ assert actual==expected,(rid,actual^expected)
+ ids={name:'N'+str(i) for i,name in enumerate(['start']+list(actions.values())+list(choices.values())+['done'])}
+ b=start(rid+' '+data[rid]['name']+' · 需求活动图',', rankdir=TB, ranksep=0.6, dpi=130, splines=polyline')
+ for name,ident in ids.items():
+  if name in ['start','done']:
+   b+=ident+' [shape=circle, width=0.16, height=0.16, fixedsize=true, style=filled, fillcolor="'+('#666666' if name=='start' else 'white')+'", peripheries='+('1' if name=='start' else '2')+', label=""];\n'
+  elif name in choices.values():
+   b+=ident+' [shape=diamond, style=filled, width=1.8, height=0.6, fontsize=11, label='+q(labels[name])+'];\n'
+  else:
+   b+=ident+' [width=2.4, height=0.65, label=<<FONT COLOR="#8070AC">▣</FONT> «action»<BR/>'+lines(name,12)+'>];\n'
+ for e in network:
+  guard=e['guard'];display=translations.get(norm(guard),guard)
+  b+=ids[e['source']]+' -> '+ids[e['target']]+' [arrowhead=vee'+(', label='+q('\n'.join(textwrap.wrap(display,14))) if guard else '')+'];\n'
+  b+=comment('successions: '+e['source']+' -> '+e['target']+' ['+guard+']')
+ note='一次评估快照；抽象动作不代表实车仿真。'
+ if rid=='3.3.1.2':note+='\n全部使能：送风开启、目标温度>舱温、高压可用、无整车故障、SOC>10%。\n保护状态由调用方输入，阈值XXX待标定；最终许可受使能与保护共同约束。'
+ if rid=='3.3.1.6':note+='\n请求处理动作输出AUTO激活状态；重复AUTO操作策略待确认。'
+ if rid=='3.3.1.9':note+='\n后风窗等依据不足请求单独待确认，不进入前风窗配置链。'
+ b+='NOTE [shape=note, fontsize=11, label='+q(note)+'];\n'+ids['done']+' -> NOTE [style=invis];\n'
+ v['phase_names']=re.findall(r"\baction '([^']+)'",source)[1:]
+ v['projection']='官方SysML v2 Pilot原生导出的successions与guard逐条交叉核对；参考样式重排'
+ v['action_network']=dict(nodes=ids,edges=network)
+ v['native_export_file']=str(native_path.relative_to(ROOT));v['native_export_sha256']=hashlib.sha256(native_path.read_bytes()).hexdigest()
+ save(v,b)
 
 # BDD方形端口：每个原端口是真实可连接的HTML table PORT，而不是新增物理实体。
 v=next(x for x in manifest['views'] if x['view_type']=='04_需求外部环境BDD图')
@@ -136,12 +157,15 @@ records.append(original_uc);records.sort(key=lambda r:(r['view_type'],r['stem'])
 env={**os.environ,'PLANTUML_LIMIT_SIZE':'16384','XDG_CACHE_HOME':'/workspace/.cache'}
 targets=[str(ROOT/(v['stem']+'.puml')) for v in records if v['view_type']!='03_需求用例图']
 for target in targets:
+ content=Path(target).read_text();dot=content.split('@startdot',1)[1].rsplit('@enddot',1)[0]
  for ext in ['png','svg']:
-  subprocess.run(['java','-Djava.awt.headless=true','-jar',str(args.jar),'-charset','UTF-8','-failfast2','-t'+ext,target],check=True,env=env)
   artifact=Path(target).with_suffix('.'+ext)
+  result=subprocess.run(['dot','-T'+ext,'-o',str(artifact)],input=dot,text=True,capture_output=True)
+  assert result.returncode==0,result.stderr
   if ext=='png':
    with Image.open(artifact) as check:check.verify()
-  else:ET.parse(artifact)
+  else:
+   tree=ET.parse(artifact);assert len(tree.findall('.//{http://www.w3.org/2000/svg}g'))>10,'空SVG或工具提示占位'
 for view in records:
  if view['view_type']=='03_需求用例图':continue
  for ext in ['puml','png','svg']:
@@ -153,7 +177,9 @@ for view in records:
    tree=ET.parse(p);assert 'Syntax Error' not in ''.join(tree.getroot().itertext())
 assert all(hashlib.sha256((ROOT/original_uc['artifacts'][e]['file']).read_bytes()).hexdigest()==h for e,h in uc_before.items())
 manifest['views']=records;manifest['visual_revision']='按用户三张参考图调整RD/ACT/BDD；UC字节不变；2026-11-03'
-manifest['source_type']='当前SysML投影视图；参考样式采用PlantUML @startdot；UC原样保留；未运行SysML编译'
+manifest['source_type']='SysML v2 Pilot 0.63.1原生检查通过；ACT原生视图关系核对；参考布局投影；UC原样保留'
+manifest['renderer']='Graphviz dot 2.42.4直接渲染@startdot中的DOT，避免PlantUML对SVG的功能提示占位'
+manifest['native_report']='05_整体检查与修改说明/SysML原生校验/修改后原生诊断.json'
 (OUT/'渲染与模型对应清单.json').write_text(json.dumps(manifest,ensure_ascii=False,indent=2)+'\n')
 (OUT/'需求条目明细.json').write_text(json.dumps(details,ensure_ascii=False,indent=2)+'\n')
 md='# 需求条目明细\n\n需求图改为参考图的简洁卡片；原doc正文完整保留在本表及SysML中，不因图形精简而删除要求。\n\n|需求ID|图中名称|原模型标识|原doc|\n|---|---|---|---|\n'
