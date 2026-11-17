@@ -1,0 +1,25 @@
+digraph G {
+graph [rankdir=LR,bgcolor="white",pad="0.3"];
+node [shape=box,style="rounded,filled",fillcolor="#EFF5FA",fontname="Noto Sans CJK SC",fontsize=11];
+edge [fontname="Noto Sans CJK SC",fontsize=9,color="#52728C"];
+"LF-016" [label="LF-016\n接收风窗除霜除雾请求"];
+"LF-017" [label="LF-017\n调节送风模式"];
+"LF-018" [label="LF-018\n调节送风量"];
+"LF-019" [label="LF-019\n调节空气循环方式"];
+"LF-020" [label="LF-020\n调节制冷能力"];
+"LF-021" [label="LF-021\n保持座舱温度设定"];
+"LF-022" [label="LF-022\n反馈风窗与空调状态"];
+"LF-023" [label="LF-023\n仲裁热管理能力请求"];
+"LF-024" [label="LF-024\n判定低电量制冷许可"];
+"LF-026" [label="LF-026\n控制前风窗除霜除雾模式"];
+"LF-016" -> "LF-026" [label="sequence",style="solid"];
+"LF-026" -> "LF-017" [label="invokes",style="solid"];
+"LF-026" -> "LF-018" [label="invokes",style="solid"];
+"LF-026" -> "LF-019" [label="invokes",style="solid"];
+"LF-026" -> "LF-021" [label="invokes",style="solid"];
+"LF-017" -> "LF-018" [label="parallel",style="solid"];
+"LF-018" -> "LF-019" [label="parallel",style="solid"];
+"LF-024" -> "LF-020" [label="enables",style="solid"];
+"LF-023" -> "LF-020" [label="information_flow",style="solid"];
+"LF-022" -> "LF-026" [label="feedback",style="solid"];
+}

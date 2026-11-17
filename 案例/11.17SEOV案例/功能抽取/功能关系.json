@@ -1,0 +1,2804 @@
+[
+  {
+    "relation_id": "D-ACT-14",
+    "type": "decomposition",
+    "source": "3.3.1.9",
+    "target": "ACT-14",
+    "condition": null,
+    "basis": "沿用原输入活动名作为父节点；非执行顺序",
+    "source_refs": [
+      {
+        "file": "需求活动图/3.3.1.9-需求活动图.sysml",
+        "element_name": "执行风窗温控请求"
+      }
+    ]
+  },
+  {
+    "relation_id": "D-ACT-13",
+    "type": "decomposition",
+    "source": "3.3.1.9",
+    "target": "ACT-13",
+    "condition": null,
+    "basis": "沿用原输入活动名作为父节点；非执行顺序",
+    "source_refs": [
+      {
+        "file": "需求活动图/3.3.1.9-需求活动图.sysml",
+        "element_name": "反馈风窗运行信息"
+      }
+    ]
+  },
+  {
+    "relation_id": "D-ACT-12",
+    "type": "decomposition",
+    "source": "3.3.1.9",
+    "target": "ACT-12",
+    "condition": null,
+    "basis": "沿用原输入活动名作为父节点；非执行顺序",
+    "source_refs": [
+      {
+        "file": "需求活动图/3.3.1.9-需求活动图.sysml",
+        "element_name": "确定制冷除湿请求"
+      }
+    ]
+  },
+  {
+    "relation_id": "D-ACT-11",
+    "type": "decomposition",
+    "source": "3.3.1.9",
+    "target": "ACT-11",
+    "condition": null,
+    "basis": "沿用原输入活动名作为父节点；非执行顺序",
+    "source_refs": [
+      {
+        "file": "需求活动图/3.3.1.9-需求活动图.sysml",
+        "element_name": "配置风窗模式参数"
+      }
+    ]
+  },
+  {
+    "relation_id": "D-ACT-10",
+    "type": "decomposition",
+    "source": "3.3.1.9",
+    "target": "ACT-10",
+    "condition": null,
+    "basis": "沿用原输入活动名作为父节点；非执行顺序",
+    "source_refs": [
+      {
+        "file": "需求活动图/3.3.1.9-需求活动图.sysml",
+        "element_name": "接收风窗除霜或除雾请求"
+      }
+    ]
+  },
+  {
+    "relation_id": "D-ACT-09",
+    "type": "decomposition",
+    "source": "3.3.1.6",
+    "target": "ACT-09",
+    "condition": null,
+    "basis": "沿用原输入活动名作为父节点；非执行顺序",
+    "source_refs": [
+      {
+        "file": "需求活动图/3.3.1.6-需求活动图.sysml",
+        "element_name": "更新自动温控运行信息"
+      }
+    ]
+  },
+  {
+    "relation_id": "D-ACT-08",
+    "type": "decomposition",
+    "source": "3.3.1.6",
+    "target": "ACT-08",
+    "condition": null,
+    "basis": "沿用原输入活动名作为父节点；非执行顺序",
+    "source_refs": [
+      {
+        "file": "需求活动图/3.3.1.6-需求活动图.sysml",
+        "element_name": "处理AUTO模式请求"
+      }
+    ]
+  },
+  {
+    "relation_id": "D-ACT-07",
+    "type": "decomposition",
+    "source": "3.3.1.6",
+    "target": "ACT-07",
+    "condition": null,
+    "basis": "沿用原输入活动名作为父节点；非执行顺序",
+    "source_refs": [
+      {
+        "file": "需求活动图/3.3.1.6-需求活动图.sysml",
+        "element_name": "协调自动温控请求"
+      }
+    ]
+  },
+  {
+    "relation_id": "D-ACT-06",
+    "type": "decomposition",
+    "source": "3.3.1.6",
+    "target": "ACT-06",
+    "condition": null,
+    "basis": "沿用原输入活动名作为父节点；非执行顺序",
+    "source_refs": [
+      {
+        "file": "需求活动图/3.3.1.6-需求活动图.sysml",
+        "element_name": "获取温度与环境信息"
+      }
+    ]
+  },
+  {
+    "relation_id": "D-ACT-05",
+    "type": "decomposition",
+    "source": "3.3.1.6",
+    "target": "ACT-05",
+    "condition": null,
+    "basis": "沿用原输入活动名作为父节点；非执行顺序",
+    "source_refs": [
+      {
+        "file": "需求活动图/3.3.1.6-需求活动图.sysml",
+        "element_name": "处理用户模式操作"
+      }
+    ]
+  },
+  {
+    "relation_id": "D-ACT-04",
+    "type": "decomposition",
+    "source": "3.3.1.2",
+    "target": "ACT-04",
+    "condition": null,
+    "basis": "沿用原输入活动名作为父节点；非执行顺序",
+    "source_refs": [
+      {
+        "file": "需求活动图/3.3.1.2-需求活动图.sysml",
+        "element_name": "反馈电加热运行信息"
+      }
+    ]
+  },
+  {
+    "relation_id": "D-ACT-03",
+    "type": "decomposition",
+    "source": "3.3.1.2",
+    "target": "ACT-03",
+    "condition": null,
+    "basis": "沿用原输入活动名作为父节点；非执行顺序",
+    "source_refs": [
+      {
+        "file": "需求活动图/3.3.1.2-需求活动图.sysml",
+        "element_name": "保护电加热运行"
+      }
+    ]
+  },
+  {
+    "relation_id": "D-ACT-02",
+    "type": "decomposition",
+    "source": "3.3.1.2",
+    "target": "ACT-02",
+    "condition": null,
+    "basis": "沿用原输入活动名作为父节点；非执行顺序",
+    "source_refs": [
+      {
+        "file": "需求活动图/3.3.1.2-需求活动图.sysml",
+        "element_name": "控制电加热通断"
+      }
+    ]
+  },
+  {
+    "relation_id": "D-ACT-01",
+    "type": "decomposition",
+    "source": "3.3.1.2",
+    "target": "ACT-01",
+    "condition": null,
+    "basis": "沿用原输入活动名作为父节点；非执行顺序",
+    "source_refs": [
+      {
+        "file": "需求活动图/3.3.1.2-需求活动图.sysml",
+        "element_name": "检查电加热使能条件"
+      }
+    ]
+  },
+  {
+    "relation_id": "D-LF-001",
+    "type": "decomposition",
+    "source": "ACT-01",
+    "target": "LF-001",
+    "condition": null,
+    "basis": "本次分析分组；需求功能树与场景树分开",
+    "source_refs": [
+      {
+        "file": "00_修改依据/11.3日案例—孙月芸.zip",
+        "entry": "11.3日案例—孙月芸/逻辑功能—物理组件/逻辑功能目录.xlsx",
+        "sheet": "数据",
+        "row": 2,
+        "original_function_id": "LF-001",
+        "original_name": "加热使能判断"
+      }
+    ]
+  },
+  {
+    "relation_id": "D-LF-002",
+    "type": "decomposition",
+    "source": "ACT-01",
+    "target": "LF-002",
+    "condition": null,
+    "basis": "本次分析分组；需求功能树与场景树分开",
+    "source_refs": [
+      {
+        "file": "00_修改依据/11.3日案例—孙月芸.zip",
+        "entry": "11.3日案例—孙月芸/逻辑功能—物理组件/逻辑功能目录.xlsx",
+        "sheet": "数据",
+        "row": 3,
+        "original_function_id": "LF-002",
+        "original_name": "故障状态与加热许可判断"
+      }
+    ]
+  },
+  {
+    "relation_id": "D-LF-003",
+    "type": "decomposition",
+    "source": "ACT-01",
+    "target": "LF-003",
+    "condition": null,
+    "basis": "本次分析分组；需求功能树与场景树分开",
+    "source_refs": [
+      {
+        "file": "00_修改依据/11.3日案例—孙月芸.zip",
+        "entry": "11.3日案例—孙月芸/逻辑功能—物理组件/逻辑功能目录.xlsx",
+        "sheet": "数据",
+        "row": 4,
+        "original_function_id": "LF-003",
+        "original_name": "电量与加热许可判断"
+      }
+    ]
+  },
+  {
+    "relation_id": "D-LF-004",
+    "type": "decomposition",
+    "source": "ACT-02",
+    "target": "LF-004",
+    "condition": null,
+    "basis": "本次分析分组；需求功能树与场景树分开",
+    "source_refs": [
+      {
+        "file": "00_修改依据/11.3日案例—孙月芸.zip",
+        "entry": "11.3日案例—孙月芸/逻辑功能—物理组件/逻辑功能目录.xlsx",
+        "sheet": "数据",
+        "row": 5,
+        "original_function_id": "LF-004",
+        "original_name": "电加热通断控制"
+      }
+    ]
+  },
+  {
+    "relation_id": "D-LF-005",
+    "type": "decomposition",
+    "source": "ACT-03",
+    "target": "LF-005",
+    "condition": null,
+    "basis": "本次分析分组；需求功能树与场景树分开",
+    "source_refs": [
+      {
+        "file": "00_修改依据/11.3日案例—孙月芸.zip",
+        "entry": "11.3日案例—孙月芸/逻辑功能—物理组件/逻辑功能目录.xlsx",
+        "sheet": "数据",
+        "row": 6,
+        "original_function_id": "LF-005",
+        "original_name": "电加热过温保护"
+      }
+    ]
+  },
+  {
+    "relation_id": "D-LF-006",
+    "type": "decomposition",
+    "source": "ACT-03",
+    "target": "LF-006",
+    "condition": null,
+    "basis": "本次分析分组；需求功能树与场景树分开",
+    "source_refs": [
+      {
+        "file": "00_修改依据/11.3日案例—孙月芸.zip",
+        "entry": "11.3日案例—孙月芸/逻辑功能—物理组件/逻辑功能目录.xlsx",
+        "sheet": "数据",
+        "row": 7,
+        "original_function_id": "LF-006",
+        "original_name": "电加热恢复许可控制"
+      }
+    ]
+  },
+  {
+    "relation_id": "D-LF-007",
+    "type": "decomposition",
+    "source": "ACT-04",
+    "target": "LF-007",
+    "condition": null,
+    "basis": "本次分析分组；需求功能树与场景树分开",
+    "source_refs": [
+      {
+        "file": "00_修改依据/11.3日案例—孙月芸.zip",
+        "entry": "11.3日案例—孙月芸/逻辑功能—物理组件/逻辑功能目录.xlsx",
+        "sheet": "数据",
+        "row": 8,
+        "original_function_id": "LF-007",
+        "original_name": "加热状态反馈"
+      }
+    ]
+  },
+  {
+    "relation_id": "D-LF-008",
+    "type": "decomposition",
+    "source": "ACT-05",
+    "target": "LF-008",
+    "condition": null,
+    "basis": "本次分析分组；需求功能树与场景树分开",
+    "source_refs": [
+      {
+        "file": "00_修改依据/11.3日案例—孙月芸.zip",
+        "entry": "11.3日案例—孙月芸/逻辑功能—物理组件/逻辑功能目录.xlsx",
+        "sheet": "数据",
+        "row": 9,
+        "original_function_id": "LF-008",
+        "original_name": "目标温度边界判定"
+      }
+    ]
+  },
+  {
+    "relation_id": "D-LF-009",
+    "type": "decomposition",
+    "source": "ACT-05",
+    "target": "LF-009",
+    "condition": null,
+    "basis": "本次分析分组；需求功能树与场景树分开",
+    "source_refs": [
+      {
+        "file": "00_修改依据/11.3日案例—孙月芸.zip",
+        "entry": "11.3日案例—孙月芸/逻辑功能—物理组件/逻辑功能目录.xlsx",
+        "sheet": "数据",
+        "row": 10,
+        "original_function_id": "LF-009",
+        "original_name": "目标温度更新"
+      }
+    ]
+  },
+  {
+    "relation_id": "D-LF-010",
+    "type": "decomposition",
+    "source": "ACT-06",
+    "target": "LF-010",
+    "condition": null,
+    "basis": "本次分析分组；需求功能树与场景树分开",
+    "source_refs": [
+      {
+        "file": "00_修改依据/11.3日案例—孙月芸.zip",
+        "entry": "11.3日案例—孙月芸/逻辑功能—物理组件/逻辑功能目录.xlsx",
+        "sheet": "数据",
+        "row": 11,
+        "original_function_id": "LF-010",
+        "original_name": "温度与环境信息采集"
+      }
+    ]
+  },
+  {
+    "relation_id": "D-LF-011",
+    "type": "decomposition",
+    "source": "ACT-07",
+    "target": "LF-011",
+    "condition": null,
+    "basis": "本次分析分组；需求功能树与场景树分开",
+    "source_refs": [
+      {
+        "file": "00_修改依据/11.3日案例—孙月芸.zip",
+        "entry": "11.3日案例—孙月芸/逻辑功能—物理组件/逻辑功能目录.xlsx",
+        "sheet": "数据",
+        "row": 12,
+        "original_function_id": "LF-011",
+        "original_name": "自动温控协调"
+      }
+    ]
+  },
+  {
+    "relation_id": "D-LF-012",
+    "type": "decomposition",
+    "source": "ACT-08",
+    "target": "LF-012",
+    "condition": null,
+    "basis": "本次分析分组；需求功能树与场景树分开",
+    "source_refs": [
+      {
+        "file": "00_修改依据/11.3日案例—孙月芸.zip",
+        "entry": "11.3日案例—孙月芸/逻辑功能—物理组件/逻辑功能目录.xlsx",
+        "sheet": "数据",
+        "row": 13,
+        "original_function_id": "LF-012",
+        "original_name": "自动模式状态反馈"
+      }
+    ]
+  },
+  {
+    "relation_id": "D-LF-013",
+    "type": "decomposition",
+    "source": "ACT-09",
+    "target": "LF-013",
+    "condition": null,
+    "basis": "本次分析分组；需求功能树与场景树分开",
+    "source_refs": [
+      {
+        "file": "00_修改依据/11.3日案例—孙月芸.zip",
+        "entry": "11.3日案例—孙月芸/逻辑功能—物理组件/逻辑功能目录.xlsx",
+        "sheet": "数据",
+        "row": 14,
+        "original_function_id": "LF-013",
+        "original_name": "空调状态反馈"
+      }
+    ]
+  },
+  {
+    "relation_id": "D-LF-014",
+    "type": "decomposition",
+    "source": "ACT-05",
+    "target": "LF-014",
+    "condition": null,
+    "basis": "本次分析分组；需求功能树与场景树分开",
+    "source_refs": [
+      {
+        "file": "00_修改依据/11.3日案例—孙月芸.zip",
+        "entry": "11.3日案例—孙月芸/逻辑功能—物理组件/逻辑功能目录.xlsx",
+        "sheet": "数据",
+        "row": 15,
+        "original_function_id": "LF-014",
+        "original_name": "自动模式保持与切换"
+      }
+    ]
+  },
+  {
+    "relation_id": "D-LF-015",
+    "type": "decomposition",
+    "source": "ACT-07",
+    "target": "LF-015",
+    "condition": null,
+    "basis": "本次分析分组；需求功能树与场景树分开",
+    "source_refs": [
+      {
+        "file": "00_修改依据/11.3日案例—孙月芸.zip",
+        "entry": "11.3日案例—孙月芸/逻辑功能—物理组件/逻辑功能目录.xlsx",
+        "sheet": "数据",
+        "row": 16,
+        "original_function_id": "LF-015",
+        "original_name": "座舱温度闭环调节"
+      }
+    ]
+  },
+  {
+    "relation_id": "D-LF-016",
+    "type": "decomposition",
+    "source": "ACT-10",
+    "target": "LF-016",
+    "condition": null,
+    "basis": "本次分析分组；需求功能树与场景树分开",
+    "source_refs": [
+      {
+        "file": "00_修改依据/11.3日案例—孙月芸.zip",
+        "entry": "11.3日案例—孙月芸/逻辑功能—物理组件/逻辑功能目录.xlsx",
+        "sheet": "数据",
+        "row": 17,
+        "original_function_id": "LF-016",
+        "original_name": "风窗请求接收"
+      }
+    ]
+  },
+  {
+    "relation_id": "D-LF-017",
+    "type": "decomposition",
+    "source": "ACT-11",
+    "target": "LF-017",
+    "condition": null,
+    "basis": "本次分析分组；需求功能树与场景树分开",
+    "source_refs": [
+      {
+        "file": "00_修改依据/11.3日案例—孙月芸.zip",
+        "entry": "11.3日案例—孙月芸/逻辑功能—物理组件/逻辑功能目录.xlsx",
+        "sheet": "数据",
+        "row": 18,
+        "original_function_id": "LF-017",
+        "original_name": "送风模式调节"
+      }
+    ]
+  },
+  {
+    "relation_id": "D-LF-018",
+    "type": "decomposition",
+    "source": "ACT-11",
+    "target": "LF-018",
+    "condition": null,
+    "basis": "本次分析分组；需求功能树与场景树分开",
+    "source_refs": [
+      {
+        "file": "00_修改依据/11.3日案例—孙月芸.zip",
+        "entry": "11.3日案例—孙月芸/逻辑功能—物理组件/逻辑功能目录.xlsx",
+        "sheet": "数据",
+        "row": 19,
+        "original_function_id": "LF-018",
+        "original_name": "空气输送与风量调节"
+      }
+    ]
+  },
+  {
+    "relation_id": "D-LF-019",
+    "type": "decomposition",
+    "source": "ACT-11",
+    "target": "LF-019",
+    "condition": null,
+    "basis": "本次分析分组；需求功能树与场景树分开",
+    "source_refs": [
+      {
+        "file": "00_修改依据/11.3日案例—孙月芸.zip",
+        "entry": "11.3日案例—孙月芸/逻辑功能—物理组件/逻辑功能目录.xlsx",
+        "sheet": "数据",
+        "row": 20,
+        "original_function_id": "LF-019",
+        "original_name": "循环方式调节"
+      }
+    ]
+  },
+  {
+    "relation_id": "D-LF-020",
+    "type": "decomposition",
+    "source": "ACT-12",
+    "target": "LF-020",
+    "condition": null,
+    "basis": "本次分析分组；需求功能树与场景树分开",
+    "source_refs": [
+      {
+        "file": "00_修改依据/11.3日案例—孙月芸.zip",
+        "entry": "11.3日案例—孙月芸/逻辑功能—物理组件/逻辑功能目录.xlsx",
+        "sheet": "数据",
+        "row": 21,
+        "original_function_id": "LF-020",
+        "original_name": "制冷能力调节"
+      }
+    ]
+  },
+  {
+    "relation_id": "D-LF-021",
+    "type": "decomposition",
+    "source": "ACT-11",
+    "target": "LF-021",
+    "condition": null,
+    "basis": "本次分析分组；需求功能树与场景树分开",
+    "source_refs": [
+      {
+        "file": "00_修改依据/11.3日案例—孙月芸.zip",
+        "entry": "11.3日案例—孙月芸/逻辑功能—物理组件/逻辑功能目录.xlsx",
+        "sheet": "数据",
+        "row": 22,
+        "original_function_id": "LF-021",
+        "original_name": "目标温度保持"
+      }
+    ]
+  },
+  {
+    "relation_id": "D-LF-022",
+    "type": "decomposition",
+    "source": "ACT-13",
+    "target": "LF-022",
+    "condition": null,
+    "basis": "本次分析分组；需求功能树与场景树分开",
+    "source_refs": [
+      {
+        "file": "00_修改依据/11.3日案例—孙月芸.zip",
+        "entry": "11.3日案例—孙月芸/逻辑功能—物理组件/逻辑功能目录.xlsx",
+        "sheet": "数据",
+        "row": 23,
+        "original_function_id": "LF-022",
+        "original_name": "风窗与空调状态反馈"
+      }
+    ]
+  },
+  {
+    "relation_id": "D-LF-023",
+    "type": "decomposition",
+    "source": "ACT-12",
+    "target": "LF-023",
+    "condition": null,
+    "basis": "本次分析分组；需求功能树与场景树分开",
+    "source_refs": [
+      {
+        "file": "00_修改依据/11.3日案例—孙月芸.zip",
+        "entry": "11.3日案例—孙月芸/逻辑功能—物理组件/逻辑功能目录.xlsx",
+        "sheet": "数据",
+        "row": 24,
+        "original_function_id": "LF-023",
+        "original_name": "热管理能力仲裁"
+      }
+    ]
+  },
+  {
+    "relation_id": "D-LF-024",
+    "type": "decomposition",
+    "source": "ACT-12",
+    "target": "LF-024",
+    "condition": null,
+    "basis": "本次分析分组；需求功能树与场景树分开",
+    "source_refs": [
+      {
+        "file": "00_修改依据/11.3日案例—孙月芸.zip",
+        "entry": "11.3日案例—孙月芸/逻辑功能—物理组件/逻辑功能目录.xlsx",
+        "sheet": "数据",
+        "row": 25,
+        "original_function_id": "LF-024",
+        "original_name": "低电量制冷许可判断"
+      }
+    ]
+  },
+  {
+    "relation_id": "D-LF-026",
+    "type": "decomposition",
+    "source": "ACT-14",
+    "target": "LF-026",
+    "condition": null,
+    "basis": "本次分析分组；需求功能树与场景树分开",
+    "source_refs": [
+      {
+        "file": "00_修改依据/11.3日案例—孙月芸.zip",
+        "entry": "11.3日案例—孙月芸/逻辑功能—物理组件/逻辑功能目录.xlsx",
+        "sheet": "数据",
+        "row": 27,
+        "original_function_id": "LF-026",
+        "original_name": "风窗除霜除雾控制"
+      }
+    ]
+  },
+  {
+    "relation_id": "D-LF-027",
+    "type": "decomposition",
+    "source": "ACT-03",
+    "target": "LF-027",
+    "condition": null,
+    "basis": "本次分析分组；需求功能树与场景树分开",
+    "source_refs": [
+      {
+        "file": "00_修改依据/11.3日案例—孙月芸.zip",
+        "entry": "11.3日案例—孙月芸/逻辑功能—物理组件/逻辑功能目录.xlsx",
+        "sheet": "数据",
+        "row": 28,
+        "original_function_id": "LF-027",
+        "original_name": "电加热温度信息采集"
+      }
+    ]
+  },
+  {
+    "relation_id": "D-LF-028",
+    "type": "decomposition",
+    "source": "ACT-05",
+    "target": "LF-028",
+    "condition": null,
+    "basis": "本次分析分组；需求功能树与场景树分开",
+    "source_refs": [
+      {
+        "file": "00_修改依据/11.3日案例—孙月芸.zip",
+        "entry": "11.3日案例—孙月芸/逻辑功能—物理组件/逻辑功能目录.xlsx",
+        "sheet": "数据",
+        "row": 29,
+        "original_function_id": "LF-028",
+        "original_name": "AUTO下AC操作处理"
+      }
+    ]
+  },
+  {
+    "relation_id": "D-LF-029",
+    "type": "decomposition",
+    "source": "SC1",
+    "target": "LF-029",
+    "condition": null,
+    "basis": "本次分析分组；需求功能树与场景树分开",
+    "source_refs": [
+      {
+        "file": "00_修改依据/11.3日案例—孙月芸.zip",
+        "entry": "11.3日案例—孙月芸/逻辑功能—物理组件/逻辑功能目录.xlsx",
+        "sheet": "数据",
+        "row": 30,
+        "original_function_id": "LF-029",
+        "original_name": "高效发电运行调节"
+      }
+    ]
+  },
+  {
+    "relation_id": "D-LF-030",
+    "type": "decomposition",
+    "source": "SC2",
+    "target": "LF-030",
+    "condition": null,
+    "basis": "本次分析分组；需求功能树与场景树分开",
+    "source_refs": [
+      {
+        "file": "00_修改依据/11.3日案例—孙月芸.zip",
+        "entry": "11.3日案例—孙月芸/逻辑功能—物理组件/逻辑功能目录.xlsx",
+        "sheet": "数据",
+        "row": 31,
+        "original_function_id": "LF-030",
+        "original_name": "静置预冷计时"
+      }
+    ]
+  },
+  {
+    "relation_id": "D-LF-031",
+    "type": "decomposition",
+    "source": "SC2",
+    "target": "LF-031",
+    "condition": null,
+    "basis": "本次分析分组；需求功能树与场景树分开",
+    "source_refs": [
+      {
+        "file": "00_修改依据/11.3日案例—孙月芸.zip",
+        "entry": "11.3日案例—孙月芸/逻辑功能—物理组件/逻辑功能目录.xlsx",
+        "sheet": "数据",
+        "row": 32,
+        "original_function_id": "LF-031",
+        "original_name": "匀速行驶工况控制"
+      }
+    ]
+  },
+  {
+    "relation_id": "D-LF-032",
+    "type": "decomposition",
+    "source": "SC2",
+    "target": "LF-032",
+    "condition": null,
+    "basis": "本次分析分组；需求功能树与场景树分开",
+    "source_refs": [
+      {
+        "file": "00_修改依据/11.3日案例—孙月芸.zip",
+        "entry": "11.3日案例—孙月芸/逻辑功能—物理组件/逻辑功能目录.xlsx",
+        "sheet": "数据",
+        "row": 33,
+        "original_function_id": "LF-032",
+        "original_name": "电池主动冷却触发判断"
+      }
+    ]
+  },
+  {
+    "relation_id": "D-S1-F01",
+    "type": "decomposition",
+    "source": "SC1",
+    "target": "S1-F01",
+    "condition": null,
+    "basis": "本次分析分组；需求功能树与场景树分开",
+    "source_refs": [
+      {
+        "file": "00_修改依据/11.3日案例—孙月芸.zip",
+        "entry": "11.3日案例—孙月芸/结构化需求条目/结构化需求清单.json",
+        "req_id": "SC1-001",
+        "original_name": "驾驶指令接收"
+      }
+    ]
+  },
+  {
+    "relation_id": "D-S1-F02",
+    "type": "decomposition",
+    "source": "SC1",
+    "target": "S1-F02",
+    "condition": null,
+    "basis": "本次分析分组；需求功能树与场景树分开",
+    "source_refs": [
+      {
+        "file": "00_修改依据/11.3日案例—孙月芸.zip",
+        "entry": "11.3日案例—孙月芸/结构化需求条目/结构化需求清单.json",
+        "req_id": "SC1-002",
+        "original_name": "动力需求分析"
+      }
+    ]
+  },
+  {
+    "relation_id": "D-S1-F03",
+    "type": "decomposition",
+    "source": "SC1",
+    "target": "S1-F03",
+    "condition": null,
+    "basis": "本次分析分组；需求功能树与场景树分开",
+    "source_refs": [
+      {
+        "file": "00_修改依据/11.3日案例—孙月芸.zip",
+        "entry": "11.3日案例—孙月芸/结构化需求条目/结构化需求清单.json",
+        "req_id": "SC1-003",
+        "original_name": "工作模式选择"
+      }
+    ]
+  },
+  {
+    "relation_id": "D-S1-F04",
+    "type": "decomposition",
+    "source": "SC1",
+    "target": "S1-F04",
+    "condition": null,
+    "basis": "本次分析分组；需求功能树与场景树分开",
+    "source_refs": [
+      {
+        "file": "00_修改依据/11.3日案例—孙月芸.zip",
+        "entry": "11.3日案例—孙月芸/结构化需求条目/结构化需求清单.json",
+        "req_id": "SC1-004",
+        "original_name": "电驱动能量转换控制"
+      }
+    ]
+  },
+  {
+    "relation_id": "D-S1-F05",
+    "type": "decomposition",
+    "source": "SC1",
+    "target": "S1-F05",
+    "condition": null,
+    "basis": "本次分析分组；需求功能树与场景树分开",
+    "source_refs": [
+      {
+        "file": "00_修改依据/11.3日案例—孙月芸.zip",
+        "entry": "11.3日案例—孙月芸/结构化需求条目/结构化需求清单.json",
+        "req_id": "SC1-005",
+        "original_name": "再生制动触发判断"
+      }
+    ]
+  },
+  {
+    "relation_id": "D-S1-F06",
+    "type": "decomposition",
+    "source": "SC1",
+    "target": "S1-F06",
+    "condition": null,
+    "basis": "本次分析分组；需求功能树与场景树分开",
+    "source_refs": [
+      {
+        "file": "00_修改依据/11.3日案例—孙月芸.zip",
+        "entry": "11.3日案例—孙月芸/结构化需求条目/结构化需求清单.json",
+        "req_id": "SC1-006",
+        "original_name": "再生能量转换与充电协调"
+      }
+    ]
+  },
+  {
+    "relation_id": "D-S1-F07",
+    "type": "decomposition",
+    "source": "SC1",
+    "target": "S1-F07",
+    "condition": null,
+    "basis": "本次分析分组；需求功能树与场景树分开",
+    "source_refs": [
+      {
+        "file": "00_修改依据/11.3日案例—孙月芸.zip",
+        "entry": "11.3日案例—孙月芸/结构化需求条目/结构化需求清单.json",
+        "req_id": "SC1-007",
+        "original_name": "发动机启动协调"
+      }
+    ]
+  },
+  {
+    "relation_id": "D-S1-F08",
+    "type": "decomposition",
+    "source": "SC1",
+    "target": "S1-F08",
+    "condition": null,
+    "basis": "本次分析分组；需求功能树与场景树分开",
+    "source_refs": [
+      {
+        "file": "00_修改依据/11.3日案例—孙月芸.zip",
+        "entry": "11.3日案例—孙月芸/结构化需求条目/结构化需求清单.json",
+        "req_id": "SC1-008",
+        "original_name": "高效发电运行调节"
+      }
+    ]
+  },
+  {
+    "relation_id": "D-S1-F09",
+    "type": "decomposition",
+    "source": "SC1",
+    "target": "S1-F09",
+    "condition": null,
+    "basis": "本次分析分组；需求功能树与场景树分开",
+    "source_refs": [
+      {
+        "file": "00_修改依据/11.3日案例—孙月芸.zip",
+        "entry": "11.3日案例—孙月芸/结构化需求条目/结构化需求清单.json",
+        "req_id": "SC1-009",
+        "original_name": "充电与能量收支管理"
+      }
+    ]
+  },
+  {
+    "relation_id": "D-S1-F10",
+    "type": "decomposition",
+    "source": "SC1",
+    "target": "S1-F10",
+    "condition": null,
+    "basis": "本次分析分组；需求功能树与场景树分开",
+    "source_refs": [
+      {
+        "file": "00_修改依据/11.3日案例—孙月芸.zip",
+        "entry": "11.3日案例—孙月芸/结构化需求条目/结构化需求清单.json",
+        "req_id": "SC1-010",
+        "original_name": "运行反馈与模式更新"
+      }
+    ]
+  },
+  {
+    "relation_id": "D-S2-F01",
+    "type": "decomposition",
+    "source": "SC2",
+    "target": "S2-F01",
+    "condition": null,
+    "basis": "本次分析分组；需求功能树与场景树分开",
+    "source_refs": [
+      {
+        "file": "00_修改依据/11.3日案例—孙月芸.zip",
+        "entry": "11.3日案例—孙月芸/结构化需求条目/结构化需求清单.json",
+        "req_id": "SC2-001",
+        "original_name": "驾驶循环初始化"
+      }
+    ]
+  },
+  {
+    "relation_id": "D-S2-F02",
+    "type": "decomposition",
+    "source": "SC2",
+    "target": "S2-F02",
+    "condition": null,
+    "basis": "本次分析分组；需求功能树与场景树分开",
+    "source_refs": [
+      {
+        "file": "00_修改依据/11.3日案例—孙月芸.zip",
+        "entry": "11.3日案例—孙月芸/结构化需求条目/结构化需求清单.json",
+        "req_id": "SC2-002",
+        "original_name": "静置预冷计时"
+      }
+    ]
+  },
+  {
+    "relation_id": "D-S2-F03",
+    "type": "decomposition",
+    "source": "SC2",
+    "target": "S2-F03",
+    "condition": null,
+    "basis": "本次分析分组；需求功能树与场景树分开",
+    "source_refs": [
+      {
+        "file": "00_修改依据/11.3日案例—孙月芸.zip",
+        "entry": "11.3日案例—孙月芸/结构化需求条目/结构化需求清单.json",
+        "req_id": "SC2-003",
+        "original_name": "匀速行驶工况控制"
+      }
+    ]
+  },
+  {
+    "relation_id": "D-S2-F04",
+    "type": "decomposition",
+    "source": "SC2",
+    "target": "S2-F04",
+    "condition": null,
+    "basis": "本次分析分组；需求功能树与场景树分开",
+    "source_refs": [
+      {
+        "file": "00_修改依据/11.3日案例—孙月芸.zip",
+        "entry": "11.3日案例—孙月芸/结构化需求条目/结构化需求清单.json",
+        "req_id": "SC2-004",
+        "original_name": "座舱降温需求处理"
+      }
+    ]
+  },
+  {
+    "relation_id": "D-S2-F05",
+    "type": "decomposition",
+    "source": "SC2",
+    "target": "S2-F05",
+    "condition": null,
+    "basis": "本次分析分组；需求功能树与场景树分开",
+    "source_refs": [
+      {
+        "file": "00_修改依据/11.3日案例—孙月芸.zip",
+        "entry": "11.3日案例—孙月芸/结构化需求条目/结构化需求清单.json",
+        "req_id": "SC2-005",
+        "original_name": "电池温度信息获取"
+      }
+    ]
+  },
+  {
+    "relation_id": "D-S2-F06",
+    "type": "decomposition",
+    "source": "SC2",
+    "target": "S2-F06",
+    "condition": null,
+    "basis": "本次分析分组；需求功能树与场景树分开",
+    "source_refs": [
+      {
+        "file": "00_修改依据/11.3日案例—孙月芸.zip",
+        "entry": "11.3日案例—孙月芸/结构化需求条目/结构化需求清单.json",
+        "req_id": "SC2-006",
+        "original_name": "电池主动冷却触发判断"
+      }
+    ]
+  },
+  {
+    "relation_id": "D-S2-F07",
+    "type": "decomposition",
+    "source": "SC2",
+    "target": "S2-F07",
+    "condition": null,
+    "basis": "本次分析分组；需求功能树与场景树分开",
+    "source_refs": [
+      {
+        "file": "00_修改依据/11.3日案例—孙月芸.zip",
+        "entry": "11.3日案例—孙月芸/结构化需求条目/结构化需求清单.json",
+        "req_id": "SC2-007",
+        "original_name": "环境空气对流换热评估"
+      }
+    ]
+  },
+  {
+    "relation_id": "D-S2-F08",
+    "type": "decomposition",
+    "source": "SC2",
+    "target": "S2-F08",
+    "condition": null,
+    "basis": "本次分析分组；需求功能树与场景树分开",
+    "source_refs": [
+      {
+        "file": "00_修改依据/11.3日案例—孙月芸.zip",
+        "entry": "11.3日案例—孙月芸/结构化需求条目/结构化需求清单.json",
+        "req_id": "SC2-008",
+        "original_name": "座舱与电池冷却能力协调"
+      }
+    ]
+  },
+  {
+    "relation_id": "D-S2-F09",
+    "type": "decomposition",
+    "source": "SC2",
+    "target": "S2-F09",
+    "condition": null,
+    "basis": "本次分析分组；需求功能树与场景树分开",
+    "source_refs": [
+      {
+        "file": "00_修改依据/11.3日案例—孙月芸.zip",
+        "entry": "11.3日案例—孙月芸/结构化需求条目/结构化需求清单.json",
+        "req_id": "SC2-009",
+        "original_name": "主动冷却执行状态评估"
+      }
+    ]
+  },
+  {
+    "relation_id": "D-S2-F10",
+    "type": "decomposition",
+    "source": "SC2",
+    "target": "S2-F10",
+    "condition": null,
+    "basis": "本次分析分组；需求功能树与场景树分开",
+    "source_refs": [
+      {
+        "file": "00_修改依据/11.3日案例—孙月芸.zip",
+        "entry": "11.3日案例—孙月芸/结构化需求条目/结构化需求清单.json",
+        "req_id": "SC2-010",
+        "original_name": "换热汇总与热状态反馈"
+      }
+    ]
+  },
+  {
+    "relation_id": "D-S3-F01",
+    "type": "decomposition",
+    "source": "SC3",
+    "target": "S3-F01",
+    "condition": null,
+    "basis": "本次分析分组；需求功能树与场景树分开",
+    "source_refs": [
+      {
+        "file": "00_修改依据/11.3日案例—孙月芸.zip",
+        "entry": "11.3日案例—孙月芸/结构化需求条目/结构化需求清单.json",
+        "req_id": "SC3-001",
+        "original_name": "座舱温度目标获取"
+      }
+    ]
+  },
+  {
+    "relation_id": "D-S3-F02",
+    "type": "decomposition",
+    "source": "SC3",
+    "target": "S3-F02",
+    "condition": null,
+    "basis": "本次分析分组；需求功能树与场景树分开",
+    "source_refs": [
+      {
+        "file": "00_修改依据/11.3日案例—孙月芸.zip",
+        "entry": "11.3日案例—孙月芸/结构化需求条目/结构化需求清单.json",
+        "req_id": "SC3-002",
+        "original_name": "座舱温度信息采集"
+      }
+    ]
+  },
+  {
+    "relation_id": "D-S3-F03",
+    "type": "decomposition",
+    "source": "SC3",
+    "target": "S3-F03",
+    "condition": null,
+    "basis": "本次分析分组；需求功能树与场景树分开",
+    "source_refs": [
+      {
+        "file": "00_修改依据/11.3日案例—孙月芸.zip",
+        "entry": "11.3日案例—孙月芸/结构化需求条目/结构化需求清单.json",
+        "req_id": "SC3-003",
+        "original_name": "座舱偏差与制冷需求判断"
+      }
+    ]
+  },
+  {
+    "relation_id": "D-S3-F04",
+    "type": "decomposition",
+    "source": "SC3",
+    "target": "S3-F04",
+    "condition": null,
+    "basis": "本次分析分组；需求功能树与场景树分开",
+    "source_refs": [
+      {
+        "file": "00_修改依据/11.3日案例—孙月芸.zip",
+        "entry": "11.3日案例—孙月芸/结构化需求条目/结构化需求清单.json",
+        "req_id": "SC3-004",
+        "original_name": "座舱制冷能力调节"
+      }
+    ]
+  },
+  {
+    "relation_id": "D-S3-F05",
+    "type": "decomposition",
+    "source": "SC3",
+    "target": "S3-F05",
+    "condition": null,
+    "basis": "本次分析分组；需求功能树与场景树分开",
+    "source_refs": [
+      {
+        "file": "00_修改依据/11.3日案例—孙月芸.zip",
+        "entry": "11.3日案例—孙月芸/结构化需求条目/结构化需求清单.json",
+        "req_id": "SC3-005",
+        "original_name": "空气输送与送风调节"
+      }
+    ]
+  },
+  {
+    "relation_id": "D-S3-F06",
+    "type": "decomposition",
+    "source": "SC3",
+    "target": "S3-F06",
+    "condition": null,
+    "basis": "本次分析分组；需求功能树与场景树分开",
+    "source_refs": [
+      {
+        "file": "00_修改依据/11.3日案例—孙月芸.zip",
+        "entry": "11.3日案例—孙月芸/结构化需求条目/结构化需求清单.json",
+        "req_id": "SC3-006",
+        "original_name": "电池温度及功率获取"
+      }
+    ]
+  },
+  {
+    "relation_id": "D-S3-F07",
+    "type": "decomposition",
+    "source": "SC3",
+    "target": "S3-F07",
+    "condition": null,
+    "basis": "本次分析分组；需求功能树与场景树分开",
+    "source_refs": [
+      {
+        "file": "00_修改依据/11.3日案例—孙月芸.zip",
+        "entry": "11.3日案例—孙月芸/结构化需求条目/结构化需求清单.json",
+        "req_id": "SC3-007",
+        "original_name": "电池辅助冷却需求判断"
+      }
+    ]
+  },
+  {
+    "relation_id": "D-S3-F08",
+    "type": "decomposition",
+    "source": "SC3",
+    "target": "S3-F08",
+    "condition": null,
+    "basis": "本次分析分组；需求功能树与场景树分开",
+    "source_refs": [
+      {
+        "file": "00_修改依据/11.3日案例—孙月芸.zip",
+        "entry": "11.3日案例—孙月芸/结构化需求条目/结构化需求清单.json",
+        "req_id": "SC3-008",
+        "original_name": "电池冷却能力需求计算"
+      }
+    ]
+  },
+  {
+    "relation_id": "D-S3-F09",
+    "type": "decomposition",
+    "source": "SC3",
+    "target": "S3-F09",
+    "condition": null,
+    "basis": "本次分析分组；需求功能树与场景树分开",
+    "source_refs": [
+      {
+        "file": "00_修改依据/11.3日案例—孙月芸.zip",
+        "entry": "11.3日案例—孙月芸/结构化需求条目/结构化需求清单.json",
+        "req_id": "SC3-009",
+        "original_name": "制冷能力需求分配"
+      }
+    ]
+  },
+  {
+    "relation_id": "D-S3-F10",
+    "type": "decomposition",
+    "source": "SC3",
+    "target": "S3-F10",
+    "condition": null,
+    "basis": "本次分析分组；需求功能树与场景树分开",
+    "source_refs": [
+      {
+        "file": "00_修改依据/11.3日案例—孙月芸.zip",
+        "entry": "11.3日案例—孙月芸/结构化需求条目/结构化需求清单.json",
+        "req_id": "SC3-010",
+        "original_name": "电池换热调节"
+      }
+    ]
+  },
+  {
+    "relation_id": "D-S3-F11",
+    "type": "decomposition",
+    "source": "SC3",
+    "target": "S3-F11",
+    "condition": null,
+    "basis": "本次分析分组；需求功能树与场景树分开",
+    "source_refs": [
+      {
+        "file": "00_修改依据/11.3日案例—孙月芸.zip",
+        "entry": "11.3日案例—孙月芸/结构化需求条目/结构化需求清单.json",
+        "req_id": "SC3-011",
+        "original_name": "冷却效果反馈与需求更新"
+      }
+    ]
+  },
+  {
+    "relation_id": "D-LF-025",
+    "type": "decomposition",
+    "source": "3.3.1.9",
+    "target": "LF-025",
+    "condition": null,
+    "basis": "本次分析分组；需求功能树与场景树分开",
+    "source_refs": [
+      {
+        "file": "00_修改依据/11.3日案例—孙月芸.zip",
+        "entry": "11.3日案例—孙月芸/逻辑功能—物理组件/逻辑功能目录.xlsx",
+        "sheet": "数据",
+        "row": 26
+      }
+    ]
+  },
+  {
+    "relation_id": "R-001",
+    "type": "enables",
+    "source": "LF-001",
+    "target": "LF-004",
+    "condition": "全部基础、故障及电量许可按AND合并；其他许可不被替代",
+    "basis": "基于原案例描述的功能逻辑分析；不新增具体控制算法",
+    "source_refs": [
+      {
+        "file": "00_修改依据/11.3日案例—孙月芸.zip",
+        "entry": "11.3日案例—孙月芸/逻辑功能—物理组件/逻辑功能目录.xlsx",
+        "sheet": "数据",
+        "row": 2,
+        "original_function_id": "LF-001",
+        "original_name": "加热使能判断"
+      },
+      {
+        "file": "00_修改依据/11.3日案例—孙月芸.zip",
+        "entry": "11.3日案例—孙月芸/逻辑功能—物理组件/逻辑功能目录.xlsx",
+        "sheet": "数据",
+        "row": 5,
+        "original_function_id": "LF-004",
+        "original_name": "电加热通断控制"
+      }
+    ]
+  },
+  {
+    "relation_id": "R-002",
+    "type": "enables",
+    "source": "LF-002",
+    "target": "LF-004",
+    "condition": "全部基础、故障及电量许可按AND合并；其他许可不被替代",
+    "basis": "基于原案例描述的功能逻辑分析；不新增具体控制算法",
+    "source_refs": [
+      {
+        "file": "00_修改依据/11.3日案例—孙月芸.zip",
+        "entry": "11.3日案例—孙月芸/逻辑功能—物理组件/逻辑功能目录.xlsx",
+        "sheet": "数据",
+        "row": 3,
+        "original_function_id": "LF-002",
+        "original_name": "故障状态与加热许可判断"
+      },
+      {
+        "file": "00_修改依据/11.3日案例—孙月芸.zip",
+        "entry": "11.3日案例—孙月芸/逻辑功能—物理组件/逻辑功能目录.xlsx",
+        "sheet": "数据",
+        "row": 5,
+        "original_function_id": "LF-004",
+        "original_name": "电加热通断控制"
+      }
+    ]
+  },
+  {
+    "relation_id": "R-003",
+    "type": "enables",
+    "source": "LF-003",
+    "target": "LF-004",
+    "condition": "全部基础、故障及电量许可按AND合并；其他许可不被替代",
+    "basis": "基于原案例描述的功能逻辑分析；不新增具体控制算法",
+    "source_refs": [
+      {
+        "file": "00_修改依据/11.3日案例—孙月芸.zip",
+        "entry": "11.3日案例—孙月芸/逻辑功能—物理组件/逻辑功能目录.xlsx",
+        "sheet": "数据",
+        "row": 4,
+        "original_function_id": "LF-003",
+        "original_name": "电量与加热许可判断"
+      },
+      {
+        "file": "00_修改依据/11.3日案例—孙月芸.zip",
+        "entry": "11.3日案例—孙月芸/逻辑功能—物理组件/逻辑功能目录.xlsx",
+        "sheet": "数据",
+        "row": 5,
+        "original_function_id": "LF-004",
+        "original_name": "电加热通断控制"
+      }
+    ]
+  },
+  {
+    "relation_id": "R-004",
+    "type": "inhibits",
+    "source": "LF-005",
+    "target": "LF-004",
+    "condition": "达到待标定过温上限时切断请求",
+    "basis": "基于原案例描述的功能逻辑分析；不新增具体控制算法",
+    "source_refs": [
+      {
+        "file": "00_修改依据/11.3日案例—孙月芸.zip",
+        "entry": "11.3日案例—孙月芸/逻辑功能—物理组件/逻辑功能目录.xlsx",
+        "sheet": "数据",
+        "row": 6,
+        "original_function_id": "LF-005",
+        "original_name": "电加热过温保护"
+      },
+      {
+        "file": "00_修改依据/11.3日案例—孙月芸.zip",
+        "entry": "11.3日案例—孙月芸/逻辑功能—物理组件/逻辑功能目录.xlsx",
+        "sheet": "数据",
+        "row": 5,
+        "original_function_id": "LF-004",
+        "original_name": "电加热通断控制"
+      }
+    ]
+  },
+  {
+    "relation_id": "R-005",
+    "type": "enables",
+    "source": "LF-006",
+    "target": "LF-004",
+    "condition": "降至待标定恢复阈值后允许重新判断全部使能条件；不自动强制加热",
+    "basis": "基于原案例描述的功能逻辑分析；不新增具体控制算法",
+    "source_refs": [
+      {
+        "file": "00_修改依据/11.3日案例—孙月芸.zip",
+        "entry": "11.3日案例—孙月芸/逻辑功能—物理组件/逻辑功能目录.xlsx",
+        "sheet": "数据",
+        "row": 7,
+        "original_function_id": "LF-006",
+        "original_name": "电加热恢复许可控制"
+      },
+      {
+        "file": "00_修改依据/11.3日案例—孙月芸.zip",
+        "entry": "11.3日案例—孙月芸/逻辑功能—物理组件/逻辑功能目录.xlsx",
+        "sheet": "数据",
+        "row": 5,
+        "original_function_id": "LF-004",
+        "original_name": "电加热通断控制"
+      }
+    ]
+  },
+  {
+    "relation_id": "R-006",
+    "type": "information_flow",
+    "source": "LF-027",
+    "target": "LF-005",
+    "condition": "温度输入用于过温判断；50 ms为检测周期",
+    "basis": "基于原案例描述的功能逻辑分析；不新增具体控制算法",
+    "source_refs": [
+      {
+        "file": "00_修改依据/11.3日案例—孙月芸.zip",
+        "entry": "11.3日案例—孙月芸/逻辑功能—物理组件/逻辑功能目录.xlsx",
+        "sheet": "数据",
+        "row": 28,
+        "original_function_id": "LF-027",
+        "original_name": "电加热温度信息采集"
+      },
+      {
+        "file": "00_修改依据/11.3日案例—孙月芸.zip",
+        "entry": "11.3日案例—孙月芸/逻辑功能—物理组件/逻辑功能目录.xlsx",
+        "sheet": "数据",
+        "row": 6,
+        "original_function_id": "LF-005",
+        "original_name": "电加热过温保护"
+      }
+    ]
+  },
+  {
+    "relation_id": "R-007",
+    "type": "information_flow",
+    "source": "LF-027",
+    "target": "LF-006",
+    "condition": "温度输入用于恢复许可判断",
+    "basis": "基于原案例描述的功能逻辑分析；不新增具体控制算法",
+    "source_refs": [
+      {
+        "file": "00_修改依据/11.3日案例—孙月芸.zip",
+        "entry": "11.3日案例—孙月芸/逻辑功能—物理组件/逻辑功能目录.xlsx",
+        "sheet": "数据",
+        "row": 28,
+        "original_function_id": "LF-027",
+        "original_name": "电加热温度信息采集"
+      },
+      {
+        "file": "00_修改依据/11.3日案例—孙月芸.zip",
+        "entry": "11.3日案例—孙月芸/逻辑功能—物理组件/逻辑功能目录.xlsx",
+        "sheet": "数据",
+        "row": 7,
+        "original_function_id": "LF-006",
+        "original_name": "电加热恢复许可控制"
+      }
+    ]
+  },
+  {
+    "relation_id": "R-008",
+    "type": "feedback",
+    "source": "LF-007",
+    "target": "LF-004",
+    "condition": "加热控制与状态监测持续运行；反馈不是一次性终点",
+    "basis": "基于原案例描述的功能逻辑分析；不新增具体控制算法",
+    "source_refs": [
+      {
+        "file": "00_修改依据/11.3日案例—孙月芸.zip",
+        "entry": "11.3日案例—孙月芸/逻辑功能—物理组件/逻辑功能目录.xlsx",
+        "sheet": "数据",
+        "row": 8,
+        "original_function_id": "LF-007",
+        "original_name": "加热状态反馈"
+      },
+      {
+        "file": "00_修改依据/11.3日案例—孙月芸.zip",
+        "entry": "11.3日案例—孙月芸/逻辑功能—物理组件/逻辑功能目录.xlsx",
+        "sheet": "数据",
+        "row": 5,
+        "original_function_id": "LF-004",
+        "original_name": "电加热通断控制"
+      }
+    ]
+  },
+  {
+    "relation_id": "R-009",
+    "type": "information_flow",
+    "source": "LF-009",
+    "target": "LF-008",
+    "condition": "温度设定变化后校核LO/HI边界；边界等值未外推",
+    "basis": "基于原案例描述的功能逻辑分析；不新增具体控制算法",
+    "source_refs": [
+      {
+        "file": "00_修改依据/11.3日案例—孙月芸.zip",
+        "entry": "11.3日案例—孙月芸/逻辑功能—物理组件/逻辑功能目录.xlsx",
+        "sheet": "数据",
+        "row": 10,
+        "original_function_id": "LF-009",
+        "original_name": "目标温度更新"
+      },
+      {
+        "file": "00_修改依据/11.3日案例—孙月芸.zip",
+        "entry": "11.3日案例—孙月芸/逻辑功能—物理组件/逻辑功能目录.xlsx",
+        "sheet": "数据",
+        "row": 9,
+        "original_function_id": "LF-008",
+        "original_name": "目标温度边界判定"
+      }
+    ]
+  },
+  {
+    "relation_id": "R-010",
+    "type": "information_flow",
+    "source": "LF-010",
+    "target": "LF-015",
+    "condition": "温度和环境反馈用于调节",
+    "basis": "基于原案例描述的功能逻辑分析；不新增具体控制算法",
+    "source_refs": [
+      {
+        "file": "00_修改依据/11.3日案例—孙月芸.zip",
+        "entry": "11.3日案例—孙月芸/逻辑功能—物理组件/逻辑功能目录.xlsx",
+        "sheet": "数据",
+        "row": 11,
+        "original_function_id": "LF-010",
+        "original_name": "温度与环境信息采集"
+      },
+      {
+        "file": "00_修改依据/11.3日案例—孙月芸.zip",
+        "entry": "11.3日案例—孙月芸/逻辑功能—物理组件/逻辑功能目录.xlsx",
+        "sheet": "数据",
+        "row": 16,
+        "original_function_id": "LF-015",
+        "original_name": "座舱温度闭环调节"
+      }
+    ]
+  },
+  {
+    "relation_id": "R-011",
+    "type": "information_flow",
+    "source": "LF-015",
+    "target": "LF-011",
+    "condition": "温控请求供自动协调",
+    "basis": "基于原案例描述的功能逻辑分析；不新增具体控制算法",
+    "source_refs": [
+      {
+        "file": "00_修改依据/11.3日案例—孙月芸.zip",
+        "entry": "11.3日案例—孙月芸/逻辑功能—物理组件/逻辑功能目录.xlsx",
+        "sheet": "数据",
+        "row": 16,
+        "original_function_id": "LF-015",
+        "original_name": "座舱温度闭环调节"
+      },
+      {
+        "file": "00_修改依据/11.3日案例—孙月芸.zip",
+        "entry": "11.3日案例—孙月芸/逻辑功能—物理组件/逻辑功能目录.xlsx",
+        "sheet": "数据",
+        "row": 12,
+        "original_function_id": "LF-011",
+        "original_name": "自动温控协调"
+      }
+    ]
+  },
+  {
+    "relation_id": "R-012",
+    "type": "feedback",
+    "source": "LF-013",
+    "target": "LF-015",
+    "condition": "控制输出与实际状态需区分；控制算法待确认",
+    "basis": "基于原案例描述的功能逻辑分析；不新增具体控制算法",
+    "source_refs": [
+      {
+        "file": "00_修改依据/11.3日案例—孙月芸.zip",
+        "entry": "11.3日案例—孙月芸/逻辑功能—物理组件/逻辑功能目录.xlsx",
+        "sheet": "数据",
+        "row": 14,
+        "original_function_id": "LF-013",
+        "original_name": "空调状态反馈"
+      },
+      {
+        "file": "00_修改依据/11.3日案例—孙月芸.zip",
+        "entry": "11.3日案例—孙月芸/逻辑功能—物理组件/逻辑功能目录.xlsx",
+        "sheet": "数据",
+        "row": 16,
+        "original_function_id": "LF-015",
+        "original_name": "座舱温度闭环调节"
+      }
+    ]
+  },
+  {
+    "relation_id": "R-013",
+    "type": "condition",
+    "source": "LF-014",
+    "target": "LF-012",
+    "condition": "温度/循环操作保持AUTO；风量/模式操作退出AUTO；前除霜操作切至前除霜",
+    "basis": "基于原案例描述的功能逻辑分析；不新增具体控制算法",
+    "source_refs": [
+      {
+        "file": "00_修改依据/11.3日案例—孙月芸.zip",
+        "entry": "11.3日案例—孙月芸/逻辑功能—物理组件/逻辑功能目录.xlsx",
+        "sheet": "数据",
+        "row": 15,
+        "original_function_id": "LF-014",
+        "original_name": "自动模式保持与切换"
+      },
+      {
+        "file": "00_修改依据/11.3日案例—孙月芸.zip",
+        "entry": "11.3日案例—孙月芸/逻辑功能—物理组件/逻辑功能目录.xlsx",
+        "sheet": "数据",
+        "row": 13,
+        "original_function_id": "LF-012",
+        "original_name": "自动模式状态反馈"
+      }
+    ]
+  },
+  {
+    "relation_id": "R-014",
+    "type": "condition",
+    "source": "LF-028",
+    "target": "LF-020",
+    "condition": "AUTO下AC操作关闭制冷请求，转速请求0",
+    "basis": "基于原案例描述的功能逻辑分析；不新增具体控制算法",
+    "source_refs": [
+      {
+        "file": "00_修改依据/11.3日案例—孙月芸.zip",
+        "entry": "11.3日案例—孙月芸/逻辑功能—物理组件/逻辑功能目录.xlsx",
+        "sheet": "数据",
+        "row": 29,
+        "original_function_id": "LF-028",
+        "original_name": "AUTO下AC操作处理"
+      },
+      {
+        "file": "00_修改依据/11.3日案例—孙月芸.zip",
+        "entry": "11.3日案例—孙月芸/逻辑功能—物理组件/逻辑功能目录.xlsx",
+        "sheet": "数据",
+        "row": 21,
+        "original_function_id": "LF-020",
+        "original_name": "制冷能力调节"
+      }
+    ]
+  },
+  {
+    "relation_id": "R-015",
+    "type": "condition",
+    "source": "LF-028",
+    "target": "LF-012",
+    "condition": "AUTO下AC操作反馈Close；其他指定项仍自动",
+    "basis": "基于原案例描述的功能逻辑分析；不新增具体控制算法",
+    "source_refs": [
+      {
+        "file": "00_修改依据/11.3日案例—孙月芸.zip",
+        "entry": "11.3日案例—孙月芸/逻辑功能—物理组件/逻辑功能目录.xlsx",
+        "sheet": "数据",
+        "row": 29,
+        "original_function_id": "LF-028",
+        "original_name": "AUTO下AC操作处理"
+      },
+      {
+        "file": "00_修改依据/11.3日案例—孙月芸.zip",
+        "entry": "11.3日案例—孙月芸/逻辑功能—物理组件/逻辑功能目录.xlsx",
+        "sheet": "数据",
+        "row": 13,
+        "original_function_id": "LF-012",
+        "original_name": "自动模式状态反馈"
+      }
+    ]
+  },
+  {
+    "relation_id": "R-016",
+    "type": "sequence",
+    "source": "LF-016",
+    "target": "LF-026",
+    "condition": "接收到前风窗请求后处理模式；后风窗进入待确认项，不沿此前风窗链执行",
+    "basis": "基于原案例描述的功能逻辑分析；不新增具体控制算法",
+    "source_refs": [
+      {
+        "file": "00_修改依据/11.3日案例—孙月芸.zip",
+        "entry": "11.3日案例—孙月芸/逻辑功能—物理组件/逻辑功能目录.xlsx",
+        "sheet": "数据",
+        "row": 17,
+        "original_function_id": "LF-016",
+        "original_name": "风窗请求接收"
+      },
+      {
+        "file": "00_修改依据/11.3日案例—孙月芸.zip",
+        "entry": "11.3日案例—孙月芸/逻辑功能—物理组件/逻辑功能目录.xlsx",
+        "sheet": "数据",
+        "row": 27,
+        "original_function_id": "LF-026",
+        "original_name": "风窗除霜除雾控制"
+      }
+    ]
+  },
+  {
+    "relation_id": "R-017",
+    "type": "invokes",
+    "source": "LF-026",
+    "target": "LF-017",
+    "condition": "进入对应前风窗模式；各请求无来源指定的严格总顺序",
+    "basis": "基于原案例描述的功能逻辑分析；不新增具体控制算法",
+    "source_refs": [
+      {
+        "file": "00_修改依据/11.3日案例—孙月芸.zip",
+        "entry": "11.3日案例—孙月芸/逻辑功能—物理组件/逻辑功能目录.xlsx",
+        "sheet": "数据",
+        "row": 27,
+        "original_function_id": "LF-026",
+        "original_name": "风窗除霜除雾控制"
+      },
+      {
+        "file": "00_修改依据/11.3日案例—孙月芸.zip",
+        "entry": "11.3日案例—孙月芸/逻辑功能—物理组件/逻辑功能目录.xlsx",
+        "sheet": "数据",
+        "row": 18,
+        "original_function_id": "LF-017",
+        "original_name": "送风模式调节"
+      }
+    ]
+  },
+  {
+    "relation_id": "R-018",
+    "type": "invokes",
+    "source": "LF-026",
+    "target": "LF-018",
+    "condition": "进入对应前风窗模式；各请求无来源指定的严格总顺序",
+    "basis": "基于原案例描述的功能逻辑分析；不新增具体控制算法",
+    "source_refs": [
+      {
+        "file": "00_修改依据/11.3日案例—孙月芸.zip",
+        "entry": "11.3日案例—孙月芸/逻辑功能—物理组件/逻辑功能目录.xlsx",
+        "sheet": "数据",
+        "row": 27,
+        "original_function_id": "LF-026",
+        "original_name": "风窗除霜除雾控制"
+      },
+      {
+        "file": "00_修改依据/11.3日案例—孙月芸.zip",
+        "entry": "11.3日案例—孙月芸/逻辑功能—物理组件/逻辑功能目录.xlsx",
+        "sheet": "数据",
+        "row": 19,
+        "original_function_id": "LF-018",
+        "original_name": "空气输送与风量调节"
+      }
+    ]
+  },
+  {
+    "relation_id": "R-019",
+    "type": "invokes",
+    "source": "LF-026",
+    "target": "LF-019",
+    "condition": "进入对应前风窗模式；各请求无来源指定的严格总顺序",
+    "basis": "基于原案例描述的功能逻辑分析；不新增具体控制算法",
+    "source_refs": [
+      {
+        "file": "00_修改依据/11.3日案例—孙月芸.zip",
+        "entry": "11.3日案例—孙月芸/逻辑功能—物理组件/逻辑功能目录.xlsx",
+        "sheet": "数据",
+        "row": 27,
+        "original_function_id": "LF-026",
+        "original_name": "风窗除霜除雾控制"
+      },
+      {
+        "file": "00_修改依据/11.3日案例—孙月芸.zip",
+        "entry": "11.3日案例—孙月芸/逻辑功能—物理组件/逻辑功能目录.xlsx",
+        "sheet": "数据",
+        "row": 20,
+        "original_function_id": "LF-019",
+        "original_name": "循环方式调节"
+      }
+    ]
+  },
+  {
+    "relation_id": "R-020",
+    "type": "invokes",
+    "source": "LF-026",
+    "target": "LF-021",
+    "condition": "进入对应前风窗模式；各请求无来源指定的严格总顺序",
+    "basis": "基于原案例描述的功能逻辑分析；不新增具体控制算法",
+    "source_refs": [
+      {
+        "file": "00_修改依据/11.3日案例—孙月芸.zip",
+        "entry": "11.3日案例—孙月芸/逻辑功能—物理组件/逻辑功能目录.xlsx",
+        "sheet": "数据",
+        "row": 27,
+        "original_function_id": "LF-026",
+        "original_name": "风窗除霜除雾控制"
+      },
+      {
+        "file": "00_修改依据/11.3日案例—孙月芸.zip",
+        "entry": "11.3日案例—孙月芸/逻辑功能—物理组件/逻辑功能目录.xlsx",
+        "sheet": "数据",
+        "row": 22,
+        "original_function_id": "LF-021",
+        "original_name": "目标温度保持"
+      }
+    ]
+  },
+  {
+    "relation_id": "R-021",
+    "type": "parallel",
+    "source": "LF-017",
+    "target": "LF-018",
+    "condition": "同一模式下送风模式和风量协调，分析级可并行；调度待设计",
+    "basis": "基于原案例描述的功能逻辑分析；不新增具体控制算法",
+    "source_refs": [
+      {
+        "file": "00_修改依据/11.3日案例—孙月芸.zip",
+        "entry": "11.3日案例—孙月芸/逻辑功能—物理组件/逻辑功能目录.xlsx",
+        "sheet": "数据",
+        "row": 18,
+        "original_function_id": "LF-017",
+        "original_name": "送风模式调节"
+      },
+      {
+        "file": "00_修改依据/11.3日案例—孙月芸.zip",
+        "entry": "11.3日案例—孙月芸/逻辑功能—物理组件/逻辑功能目录.xlsx",
+        "sheet": "数据",
+        "row": 19,
+        "original_function_id": "LF-018",
+        "original_name": "空气输送与风量调节"
+      }
+    ]
+  },
+  {
+    "relation_id": "R-022",
+    "type": "parallel",
+    "source": "LF-018",
+    "target": "LF-019",
+    "condition": "同一模式下风量和循环协调，分析级可并行；调度待设计",
+    "basis": "基于原案例描述的功能逻辑分析；不新增具体控制算法",
+    "source_refs": [
+      {
+        "file": "00_修改依据/11.3日案例—孙月芸.zip",
+        "entry": "11.3日案例—孙月芸/逻辑功能—物理组件/逻辑功能目录.xlsx",
+        "sheet": "数据",
+        "row": 19,
+        "original_function_id": "LF-018",
+        "original_name": "空气输送与风量调节"
+      },
+      {
+        "file": "00_修改依据/11.3日案例—孙月芸.zip",
+        "entry": "11.3日案例—孙月芸/逻辑功能—物理组件/逻辑功能目录.xlsx",
+        "sheet": "数据",
+        "row": 20,
+        "original_function_id": "LF-019",
+        "original_name": "循环方式调节"
+      }
+    ]
+  },
+  {
+    "relation_id": "R-023",
+    "type": "enables",
+    "source": "LF-024",
+    "target": "LF-020",
+    "condition": "SOC<10%且前除霜关闭则禁止；前除霜开启则允许；SOC=10%未定义",
+    "basis": "基于原案例描述的功能逻辑分析；不新增具体控制算法",
+    "source_refs": [
+      {
+        "file": "00_修改依据/11.3日案例—孙月芸.zip",
+        "entry": "11.3日案例—孙月芸/逻辑功能—物理组件/逻辑功能目录.xlsx",
+        "sheet": "数据",
+        "row": 25,
+        "original_function_id": "LF-024",
+        "original_name": "低电量制冷许可判断"
+      },
+      {
+        "file": "00_修改依据/11.3日案例—孙月芸.zip",
+        "entry": "11.3日案例—孙月芸/逻辑功能—物理组件/逻辑功能目录.xlsx",
+        "sheet": "数据",
+        "row": 21,
+        "original_function_id": "LF-020",
+        "original_name": "制冷能力调节"
+      }
+    ]
+  },
+  {
+    "relation_id": "R-024",
+    "type": "information_flow",
+    "source": "LF-023",
+    "target": "LF-020",
+    "condition": "按SL29继承优先级处理；电池阈值XX不得以35℃替代",
+    "basis": "基于原案例描述的功能逻辑分析；不新增具体控制算法",
+    "source_refs": [
+      {
+        "file": "00_修改依据/11.3日案例—孙月芸.zip",
+        "entry": "11.3日案例—孙月芸/逻辑功能—物理组件/逻辑功能目录.xlsx",
+        "sheet": "数据",
+        "row": 24,
+        "original_function_id": "LF-023",
+        "original_name": "热管理能力仲裁"
+      },
+      {
+        "file": "00_修改依据/11.3日案例—孙月芸.zip",
+        "entry": "11.3日案例—孙月芸/逻辑功能—物理组件/逻辑功能目录.xlsx",
+        "sheet": "数据",
+        "row": 21,
+        "original_function_id": "LF-020",
+        "original_name": "制冷能力调节"
+      }
+    ]
+  },
+  {
+    "relation_id": "R-025",
+    "type": "feedback",
+    "source": "LF-022",
+    "target": "LF-026",
+    "condition": "模式及空调状态持续反馈",
+    "basis": "基于原案例描述的功能逻辑分析；不新增具体控制算法",
+    "source_refs": [
+      {
+        "file": "00_修改依据/11.3日案例—孙月芸.zip",
+        "entry": "11.3日案例—孙月芸/逻辑功能—物理组件/逻辑功能目录.xlsx",
+        "sheet": "数据",
+        "row": 23,
+        "original_function_id": "LF-022",
+        "original_name": "风窗与空调状态反馈"
+      },
+      {
+        "file": "00_修改依据/11.3日案例—孙月芸.zip",
+        "entry": "11.3日案例—孙月芸/逻辑功能—物理组件/逻辑功能目录.xlsx",
+        "sheet": "数据",
+        "row": 27,
+        "original_function_id": "LF-026",
+        "original_name": "风窗除霜除雾控制"
+      }
+    ]
+  },
+  {
+    "relation_id": "R-026",
+    "type": "sequence",
+    "source": "S1-F01",
+    "target": "S1-F02",
+    "condition": "接收驾驶指令后分析需求",
+    "basis": "基于原案例描述的功能逻辑分析；不新增具体控制算法",
+    "source_refs": [
+      {
+        "file": "00_修改依据/11.3日案例—孙月芸.zip",
+        "entry": "11.3日案例—孙月芸/结构化需求条目/结构化需求清单.json",
+        "req_id": "SC1-001",
+        "original_name": "驾驶指令接收"
+      },
+      {
+        "file": "00_修改依据/11.3日案例—孙月芸.zip",
+        "entry": "11.3日案例—孙月芸/结构化需求条目/结构化需求清单.json",
+        "req_id": "SC1-002",
+        "original_name": "动力需求分析"
+      }
+    ]
+  },
+  {
+    "relation_id": "R-027",
+    "type": "sequence",
+    "source": "S1-F02",
+    "target": "S1-F03",
+    "condition": "需求分析先于工作模式选择",
+    "basis": "基于原案例描述的功能逻辑分析；不新增具体控制算法",
+    "source_refs": [
+      {
+        "file": "00_修改依据/11.3日案例—孙月芸.zip",
+        "entry": "11.3日案例—孙月芸/结构化需求条目/结构化需求清单.json",
+        "req_id": "SC1-002",
+        "original_name": "动力需求分析"
+      },
+      {
+        "file": "00_修改依据/11.3日案例—孙月芸.zip",
+        "entry": "11.3日案例—孙月芸/结构化需求条目/结构化需求清单.json",
+        "req_id": "SC1-003",
+        "original_name": "工作模式选择"
+      }
+    ]
+  },
+  {
+    "relation_id": "R-028",
+    "type": "branch",
+    "source": "S1-F03",
+    "target": "S1-F04",
+    "condition": "驱动需求有效；加速/制动同时有效的仲裁待确认",
+    "basis": "基于原案例描述的功能逻辑分析；不新增具体控制算法",
+    "source_refs": [
+      {
+        "file": "00_修改依据/11.3日案例—孙月芸.zip",
+        "entry": "11.3日案例—孙月芸/结构化需求条目/结构化需求清单.json",
+        "req_id": "SC1-003",
+        "original_name": "工作模式选择"
+      },
+      {
+        "file": "00_修改依据/11.3日案例—孙月芸.zip",
+        "entry": "11.3日案例—孙月芸/结构化需求条目/结构化需求清单.json",
+        "req_id": "SC1-004",
+        "original_name": "电驱动能量转换控制"
+      }
+    ]
+  },
+  {
+    "relation_id": "R-029",
+    "type": "branch",
+    "source": "S1-F03",
+    "target": "S1-F05",
+    "condition": "制动需求有效；再生可用条件待确认",
+    "basis": "基于原案例描述的功能逻辑分析；不新增具体控制算法",
+    "source_refs": [
+      {
+        "file": "00_修改依据/11.3日案例—孙月芸.zip",
+        "entry": "11.3日案例—孙月芸/结构化需求条目/结构化需求清单.json",
+        "req_id": "SC1-003",
+        "original_name": "工作模式选择"
+      },
+      {
+        "file": "00_修改依据/11.3日案例—孙月芸.zip",
+        "entry": "11.3日案例—孙月芸/结构化需求条目/结构化需求清单.json",
+        "req_id": "SC1-005",
+        "original_name": "再生制动触发判断"
+      }
+    ]
+  },
+  {
+    "relation_id": "R-030",
+    "type": "mutual_exclusion",
+    "source": "S1-F04",
+    "target": "S1-F06",
+    "condition": "同一牵引电机的驱动与再生制动模式；过渡及制动融合策略待确认",
+    "basis": "基于原案例描述的功能逻辑分析；不新增具体控制算法",
+    "source_refs": [
+      {
+        "file": "00_修改依据/11.3日案例—孙月芸.zip",
+        "entry": "11.3日案例—孙月芸/结构化需求条目/结构化需求清单.json",
+        "req_id": "SC1-004",
+        "original_name": "电驱动能量转换控制"
+      },
+      {
+        "file": "00_修改依据/11.3日案例—孙月芸.zip",
+        "entry": "11.3日案例—孙月芸/结构化需求条目/结构化需求清单.json",
+        "req_id": "SC1-006",
+        "original_name": "再生能量转换与充电协调"
+      }
+    ]
+  },
+  {
+    "relation_id": "R-031",
+    "type": "sequence",
+    "source": "S1-F05",
+    "target": "S1-F06",
+    "condition": "制动触发且回收可用时请求再生充电",
+    "basis": "基于原案例描述的功能逻辑分析；不新增具体控制算法",
+    "source_refs": [
+      {
+        "file": "00_修改依据/11.3日案例—孙月芸.zip",
+        "entry": "11.3日案例—孙月芸/结构化需求条目/结构化需求清单.json",
+        "req_id": "SC1-005",
+        "original_name": "再生制动触发判断"
+      },
+      {
+        "file": "00_修改依据/11.3日案例—孙月芸.zip",
+        "entry": "11.3日案例—孙月芸/结构化需求条目/结构化需求清单.json",
+        "req_id": "SC1-006",
+        "original_name": "再生能量转换与充电协调"
+      }
+    ]
+  },
+  {
+    "relation_id": "R-032",
+    "type": "branch",
+    "source": "S1-F03",
+    "target": "S1-F07",
+    "condition": "存在发电需求时请求启动；具体启动阈值未提供",
+    "basis": "基于原案例描述的功能逻辑分析；不新增具体控制算法",
+    "source_refs": [
+      {
+        "file": "00_修改依据/11.3日案例—孙月芸.zip",
+        "entry": "11.3日案例—孙月芸/结构化需求条目/结构化需求清单.json",
+        "req_id": "SC1-003",
+        "original_name": "工作模式选择"
+      },
+      {
+        "file": "00_修改依据/11.3日案例—孙月芸.zip",
+        "entry": "11.3日案例—孙月芸/结构化需求条目/结构化需求清单.json",
+        "req_id": "SC1-007",
+        "original_name": "发动机启动协调"
+      }
+    ]
+  },
+  {
+    "relation_id": "R-033",
+    "type": "sequence",
+    "source": "S1-F07",
+    "target": "S1-F08",
+    "condition": "发动机启动完成后调节发电工作点",
+    "basis": "基于原案例描述的功能逻辑分析；不新增具体控制算法",
+    "source_refs": [
+      {
+        "file": "00_修改依据/11.3日案例—孙月芸.zip",
+        "entry": "11.3日案例—孙月芸/结构化需求条目/结构化需求清单.json",
+        "req_id": "SC1-007",
+        "original_name": "发动机启动协调"
+      },
+      {
+        "file": "00_修改依据/11.3日案例—孙月芸.zip",
+        "entry": "11.3日案例—孙月芸/结构化需求条目/结构化需求清单.json",
+        "req_id": "SC1-008",
+        "original_name": "高效发电运行调节"
+      }
+    ]
+  },
+  {
+    "relation_id": "R-034",
+    "type": "information_flow",
+    "source": "S1-F08",
+    "target": "S1-F09",
+    "condition": "发电能量纳入收支管理",
+    "basis": "基于原案例描述的功能逻辑分析；不新增具体控制算法",
+    "source_refs": [
+      {
+        "file": "00_修改依据/11.3日案例—孙月芸.zip",
+        "entry": "11.3日案例—孙月芸/结构化需求条目/结构化需求清单.json",
+        "req_id": "SC1-008",
+        "original_name": "高效发电运行调节"
+      },
+      {
+        "file": "00_修改依据/11.3日案例—孙月芸.zip",
+        "entry": "11.3日案例—孙月芸/结构化需求条目/结构化需求清单.json",
+        "req_id": "SC1-009",
+        "original_name": "充电与能量收支管理"
+      }
+    ]
+  },
+  {
+    "relation_id": "R-035",
+    "type": "information_flow",
+    "source": "S1-F06",
+    "target": "S1-F09",
+    "condition": "回收能量纳入收支管理；避免重复记账",
+    "basis": "基于原案例描述的功能逻辑分析；不新增具体控制算法",
+    "source_refs": [
+      {
+        "file": "00_修改依据/11.3日案例—孙月芸.zip",
+        "entry": "11.3日案例—孙月芸/结构化需求条目/结构化需求清单.json",
+        "req_id": "SC1-006",
+        "original_name": "再生能量转换与充电协调"
+      },
+      {
+        "file": "00_修改依据/11.3日案例—孙月芸.zip",
+        "entry": "11.3日案例—孙月芸/结构化需求条目/结构化需求清单.json",
+        "req_id": "SC1-009",
+        "original_name": "充电与能量收支管理"
+      }
+    ]
+  },
+  {
+    "relation_id": "R-036",
+    "type": "feedback",
+    "source": "S1-F10",
+    "target": "S1-F03",
+    "condition": "运行状态反馈用于下一周期模式评估",
+    "basis": "基于原案例描述的功能逻辑分析；不新增具体控制算法",
+    "source_refs": [
+      {
+        "file": "00_修改依据/11.3日案例—孙月芸.zip",
+        "entry": "11.3日案例—孙月芸/结构化需求条目/结构化需求清单.json",
+        "req_id": "SC1-010",
+        "original_name": "运行反馈与模式更新"
+      },
+      {
+        "file": "00_修改依据/11.3日案例—孙月芸.zip",
+        "entry": "11.3日案例—孙月芸/结构化需求条目/结构化需求清单.json",
+        "req_id": "SC1-003",
+        "original_name": "工作模式选择"
+      }
+    ]
+  },
+  {
+    "relation_id": "R-037",
+    "type": "sequence",
+    "source": "S2-F01",
+    "target": "S2-F02",
+    "condition": "仿真初始化并启动空调后进入静置预冷",
+    "basis": "基于原案例描述的功能逻辑分析；不新增具体控制算法",
+    "source_refs": [
+      {
+        "file": "00_修改依据/11.3日案例—孙月芸.zip",
+        "entry": "11.3日案例—孙月芸/结构化需求条目/结构化需求清单.json",
+        "req_id": "SC2-001",
+        "original_name": "驾驶循环初始化"
+      },
+      {
+        "file": "00_修改依据/11.3日案例—孙月芸.zip",
+        "entry": "11.3日案例—孙月芸/结构化需求条目/结构化需求清单.json",
+        "req_id": "SC2-002",
+        "original_name": "静置预冷计时"
+      }
+    ]
+  },
+  {
+    "relation_id": "R-038",
+    "type": "sequence",
+    "source": "S2-F02",
+    "target": "S2-F03",
+    "condition": "静置2分钟完成后，以45 km/h行驶20分钟",
+    "basis": "基于原案例描述的功能逻辑分析；不新增具体控制算法",
+    "source_refs": [
+      {
+        "file": "00_修改依据/11.3日案例—孙月芸.zip",
+        "entry": "11.3日案例—孙月芸/结构化需求条目/结构化需求清单.json",
+        "req_id": "SC2-002",
+        "original_name": "静置预冷计时"
+      },
+      {
+        "file": "00_修改依据/11.3日案例—孙月芸.zip",
+        "entry": "11.3日案例—孙月芸/结构化需求条目/结构化需求清单.json",
+        "req_id": "SC2-003",
+        "original_name": "匀速行驶工况控制"
+      }
+    ]
+  },
+  {
+    "relation_id": "R-039",
+    "type": "parallel",
+    "source": "S2-F04",
+    "target": "S2-F05",
+    "condition": "座舱温控和电池监测在静置/行驶两阶段均可持续运行",
+    "basis": "基于原案例描述的功能逻辑分析；不新增具体控制算法",
+    "source_refs": [
+      {
+        "file": "00_修改依据/11.3日案例—孙月芸.zip",
+        "entry": "11.3日案例—孙月芸/结构化需求条目/结构化需求清单.json",
+        "req_id": "SC2-004",
+        "original_name": "座舱降温需求处理"
+      },
+      {
+        "file": "00_修改依据/11.3日案例—孙月芸.zip",
+        "entry": "11.3日案例—孙月芸/结构化需求条目/结构化需求清单.json",
+        "req_id": "SC2-005",
+        "original_name": "电池温度信息获取"
+      }
+    ]
+  },
+  {
+    "relation_id": "R-040",
+    "type": "information_flow",
+    "source": "S2-F05",
+    "target": "S2-F06",
+    "condition": "按清单C01参考细化，取最高有效电芯控制温度；无有效值处置待确认",
+    "basis": "基于原案例描述的功能逻辑分析；不新增具体控制算法",
+    "source_refs": [
+      {
+        "file": "00_修改依据/11.3日案例—孙月芸.zip",
+        "entry": "11.3日案例—孙月芸/结构化需求条目/结构化需求清单.json",
+        "req_id": "SC2-005",
+        "original_name": "电池温度信息获取"
+      },
+      {
+        "file": "00_修改依据/11.3日案例—孙月芸.zip",
+        "entry": "11.3日案例—孙月芸/结构化需求条目/结构化需求清单.json",
+        "req_id": "SC2-006",
+        "original_name": "电池主动冷却触发判断"
+      }
+    ]
+  },
+  {
+    "relation_id": "R-041",
+    "type": "branch",
+    "source": "S2-F06",
+    "target": "S2-F08",
+    "condition": "最高有效电芯温度>=35℃提出主动供风请求；按清单C02/A06参考细化，<35℃撤销请求，不关闭座舱空调，不新增滞回",
+    "basis": "基于原案例描述的功能逻辑分析；不新增具体控制算法",
+    "source_refs": [
+      {
+        "file": "00_修改依据/11.3日案例—孙月芸.zip",
+        "entry": "11.3日案例—孙月芸/结构化需求条目/结构化需求清单.json",
+        "req_id": "SC2-006",
+        "original_name": "电池主动冷却触发判断"
+      },
+      {
+        "file": "00_修改依据/11.3日案例—孙月芸.zip",
+        "entry": "11.3日案例—孙月芸/结构化需求条目/结构化需求清单.json",
+        "req_id": "SC2-008",
+        "original_name": "座舱与电池冷却能力协调"
+      }
+    ]
+  },
+  {
+    "relation_id": "R-042",
+    "type": "information_flow",
+    "source": "S2-F04",
+    "target": "S2-F08",
+    "condition": "座舱冷却请求参与冷量协调；不足时优先级待确认",
+    "basis": "基于原案例描述的功能逻辑分析；不新增具体控制算法",
+    "source_refs": [
+      {
+        "file": "00_修改依据/11.3日案例—孙月芸.zip",
+        "entry": "11.3日案例—孙月芸/结构化需求条目/结构化需求清单.json",
+        "req_id": "SC2-004",
+        "original_name": "座舱降温需求处理"
+      },
+      {
+        "file": "00_修改依据/11.3日案例—孙月芸.zip",
+        "entry": "11.3日案例—孙月芸/结构化需求条目/结构化需求清单.json",
+        "req_id": "SC2-008",
+        "original_name": "座舱与电池冷却能力协调"
+      }
+    ]
+  },
+  {
+    "relation_id": "R-043",
+    "type": "enables",
+    "source": "S2-F08",
+    "target": "S2-F09",
+    "condition": "有冷却请求且存在实际可用供风能力；请求不等于执行",
+    "basis": "基于原案例描述的功能逻辑分析；不新增具体控制算法",
+    "source_refs": [
+      {
+        "file": "00_修改依据/11.3日案例—孙月芸.zip",
+        "entry": "11.3日案例—孙月芸/结构化需求条目/结构化需求清单.json",
+        "req_id": "SC2-008",
+        "original_name": "座舱与电池冷却能力协调"
+      },
+      {
+        "file": "00_修改依据/11.3日案例—孙月芸.zip",
+        "entry": "11.3日案例—孙月芸/结构化需求条目/结构化需求清单.json",
+        "req_id": "SC2-009",
+        "original_name": "主动冷却执行状态评估"
+      }
+    ]
+  },
+  {
+    "relation_id": "R-044",
+    "type": "parallel",
+    "source": "S2-F07",
+    "target": "S2-F09",
+    "condition": "环境对流不由35℃阈值启停；仅在热边界独立时与主动路径并行，若同一表面边界被替换，不重复叠加",
+    "basis": "基于原案例描述的功能逻辑分析；不新增具体控制算法",
+    "source_refs": [
+      {
+        "file": "00_修改依据/11.3日案例—孙月芸.zip",
+        "entry": "11.3日案例—孙月芸/结构化需求条目/结构化需求清单.json",
+        "req_id": "SC2-007",
+        "original_name": "环境空气对流换热评估"
+      },
+      {
+        "file": "00_修改依据/11.3日案例—孙月芸.zip",
+        "entry": "11.3日案例—孙月芸/结构化需求条目/结构化需求清单.json",
+        "req_id": "SC2-009",
+        "original_name": "主动冷却执行状态评估"
+      }
+    ]
+  },
+  {
+    "relation_id": "R-045",
+    "type": "information_flow",
+    "source": "S2-F07",
+    "target": "S2-F10",
+    "condition": "汇入有符号环境换热量；温差反向时可能向电池传热；仅对独立且无重复计数的热边界求和",
+    "basis": "基于原案例描述的功能逻辑分析；不新增具体控制算法",
+    "source_refs": [
+      {
+        "file": "00_修改依据/11.3日案例—孙月芸.zip",
+        "entry": "11.3日案例—孙月芸/结构化需求条目/结构化需求清单.json",
+        "req_id": "SC2-007",
+        "original_name": "环境空气对流换热评估"
+      },
+      {
+        "file": "00_修改依据/11.3日案例—孙月芸.zip",
+        "entry": "11.3日案例—孙月芸/结构化需求条目/结构化需求清单.json",
+        "req_id": "SC2-010",
+        "original_name": "换热汇总与热状态反馈"
+      }
+    ]
+  },
+  {
+    "relation_id": "R-046",
+    "type": "information_flow",
+    "source": "S2-F09",
+    "target": "S2-F10",
+    "condition": "仅汇入实际供风贡献，不能按请求直接记热；仅对独立且无重复计数的热边界求和",
+    "basis": "基于原案例描述的功能逻辑分析；不新增具体控制算法",
+    "source_refs": [
+      {
+        "file": "00_修改依据/11.3日案例—孙月芸.zip",
+        "entry": "11.3日案例—孙月芸/结构化需求条目/结构化需求清单.json",
+        "req_id": "SC2-009",
+        "original_name": "主动冷却执行状态评估"
+      },
+      {
+        "file": "00_修改依据/11.3日案例—孙月芸.zip",
+        "entry": "11.3日案例—孙月芸/结构化需求条目/结构化需求清单.json",
+        "req_id": "SC2-010",
+        "original_name": "换热汇总与热状态反馈"
+      }
+    ]
+  },
+  {
+    "relation_id": "R-047",
+    "type": "feedback",
+    "source": "S2-F10",
+    "target": "S2-F05",
+    "condition": "统一推进热状态；避免对同一热节点重复积分",
+    "basis": "基于原案例描述的功能逻辑分析；不新增具体控制算法",
+    "source_refs": [
+      {
+        "file": "00_修改依据/11.3日案例—孙月芸.zip",
+        "entry": "11.3日案例—孙月芸/结构化需求条目/结构化需求清单.json",
+        "req_id": "SC2-010",
+        "original_name": "换热汇总与热状态反馈"
+      },
+      {
+        "file": "00_修改依据/11.3日案例—孙月芸.zip",
+        "entry": "11.3日案例—孙月芸/结构化需求条目/结构化需求清单.json",
+        "req_id": "SC2-005",
+        "original_name": "电池温度信息获取"
+      }
+    ]
+  },
+  {
+    "relation_id": "R-048",
+    "type": "information_flow",
+    "source": "S3-F01",
+    "target": "S3-F03",
+    "condition": "目标温度参与制冷需求判断",
+    "basis": "基于原案例描述的功能逻辑分析；不新增具体控制算法",
+    "source_refs": [
+      {
+        "file": "00_修改依据/11.3日案例—孙月芸.zip",
+        "entry": "11.3日案例—孙月芸/结构化需求条目/结构化需求清单.json",
+        "req_id": "SC3-001",
+        "original_name": "座舱温度目标获取"
+      },
+      {
+        "file": "00_修改依据/11.3日案例—孙月芸.zip",
+        "entry": "11.3日案例—孙月芸/结构化需求条目/结构化需求清单.json",
+        "req_id": "SC3-003",
+        "original_name": "座舱偏差与制冷需求判断"
+      }
+    ]
+  },
+  {
+    "relation_id": "R-049",
+    "type": "information_flow",
+    "source": "S3-F02",
+    "target": "S3-F03",
+    "condition": "实际温度参与制冷需求判断；控制死区未给出",
+    "basis": "基于原案例描述的功能逻辑分析；不新增具体控制算法",
+    "source_refs": [
+      {
+        "file": "00_修改依据/11.3日案例—孙月芸.zip",
+        "entry": "11.3日案例—孙月芸/结构化需求条目/结构化需求清单.json",
+        "req_id": "SC3-002",
+        "original_name": "座舱温度信息采集"
+      },
+      {
+        "file": "00_修改依据/11.3日案例—孙月芸.zip",
+        "entry": "11.3日案例—孙月芸/结构化需求条目/结构化需求清单.json",
+        "req_id": "SC3-003",
+        "original_name": "座舱偏差与制冷需求判断"
+      }
+    ]
+  },
+  {
+    "relation_id": "R-050",
+    "type": "information_flow",
+    "source": "S3-F03",
+    "target": "S3-F09",
+    "condition": "座舱制冷请求参与分配",
+    "basis": "基于原案例描述的功能逻辑分析；不新增具体控制算法",
+    "source_refs": [
+      {
+        "file": "00_修改依据/11.3日案例—孙月芸.zip",
+        "entry": "11.3日案例—孙月芸/结构化需求条目/结构化需求清单.json",
+        "req_id": "SC3-003",
+        "original_name": "座舱偏差与制冷需求判断"
+      },
+      {
+        "file": "00_修改依据/11.3日案例—孙月芸.zip",
+        "entry": "11.3日案例—孙月芸/结构化需求条目/结构化需求清单.json",
+        "req_id": "SC3-009",
+        "original_name": "制冷能力需求分配"
+      }
+    ]
+  },
+  {
+    "relation_id": "R-051",
+    "type": "parallel",
+    "source": "S3-F02",
+    "target": "S3-F06",
+    "condition": "座舱温度与电池温度/功率监测可并行",
+    "basis": "基于原案例描述的功能逻辑分析；不新增具体控制算法",
+    "source_refs": [
+      {
+        "file": "00_修改依据/11.3日案例—孙月芸.zip",
+        "entry": "11.3日案例—孙月芸/结构化需求条目/结构化需求清单.json",
+        "req_id": "SC3-002",
+        "original_name": "座舱温度信息采集"
+      },
+      {
+        "file": "00_修改依据/11.3日案例—孙月芸.zip",
+        "entry": "11.3日案例—孙月芸/结构化需求条目/结构化需求清单.json",
+        "req_id": "SC3-006",
+        "original_name": "电池温度及功率获取"
+      }
+    ]
+  },
+  {
+    "relation_id": "R-052",
+    "type": "sequence",
+    "source": "S3-F06",
+    "target": "S3-F07",
+    "condition": "温度偏高OR充放电功率较大；具体阈值待确认",
+    "basis": "基于原案例描述的功能逻辑分析；不新增具体控制算法",
+    "source_refs": [
+      {
+        "file": "00_修改依据/11.3日案例—孙月芸.zip",
+        "entry": "11.3日案例—孙月芸/结构化需求条目/结构化需求清单.json",
+        "req_id": "SC3-006",
+        "original_name": "电池温度及功率获取"
+      },
+      {
+        "file": "00_修改依据/11.3日案例—孙月芸.zip",
+        "entry": "11.3日案例—孙月芸/结构化需求条目/结构化需求清单.json",
+        "req_id": "SC3-007",
+        "original_name": "电池辅助冷却需求判断"
+      }
+    ]
+  },
+  {
+    "relation_id": "R-053",
+    "type": "sequence",
+    "source": "S3-F07",
+    "target": "S3-F08",
+    "condition": "辅助冷却需求成立时计算冷量请求",
+    "basis": "基于原案例描述的功能逻辑分析；不新增具体控制算法",
+    "source_refs": [
+      {
+        "file": "00_修改依据/11.3日案例—孙月芸.zip",
+        "entry": "11.3日案例—孙月芸/结构化需求条目/结构化需求清单.json",
+        "req_id": "SC3-007",
+        "original_name": "电池辅助冷却需求判断"
+      },
+      {
+        "file": "00_修改依据/11.3日案例—孙月芸.zip",
+        "entry": "11.3日案例—孙月芸/结构化需求条目/结构化需求清单.json",
+        "req_id": "SC3-008",
+        "original_name": "电池冷却能力需求计算"
+      }
+    ]
+  },
+  {
+    "relation_id": "R-054",
+    "type": "information_flow",
+    "source": "S3-F08",
+    "target": "S3-F09",
+    "condition": "电池冷却请求参与分配；不得套用场景二35℃",
+    "basis": "基于原案例描述的功能逻辑分析；不新增具体控制算法",
+    "source_refs": [
+      {
+        "file": "00_修改依据/11.3日案例—孙月芸.zip",
+        "entry": "11.3日案例—孙月芸/结构化需求条目/结构化需求清单.json",
+        "req_id": "SC3-008",
+        "original_name": "电池冷却能力需求计算"
+      },
+      {
+        "file": "00_修改依据/11.3日案例—孙月芸.zip",
+        "entry": "11.3日案例—孙月芸/结构化需求条目/结构化需求清单.json",
+        "req_id": "SC3-009",
+        "original_name": "制冷能力需求分配"
+      }
+    ]
+  },
+  {
+    "relation_id": "R-055",
+    "type": "information_flow",
+    "source": "S3-F09",
+    "target": "S3-F04",
+    "condition": "按座舱分配能力调节，能力不足策略待确认",
+    "basis": "基于原案例描述的功能逻辑分析；不新增具体控制算法",
+    "source_refs": [
+      {
+        "file": "00_修改依据/11.3日案例—孙月芸.zip",
+        "entry": "11.3日案例—孙月芸/结构化需求条目/结构化需求清单.json",
+        "req_id": "SC3-009",
+        "original_name": "制冷能力需求分配"
+      },
+      {
+        "file": "00_修改依据/11.3日案例—孙月芸.zip",
+        "entry": "11.3日案例—孙月芸/结构化需求条目/结构化需求清单.json",
+        "req_id": "SC3-004",
+        "original_name": "座舱制冷能力调节"
+      }
+    ]
+  },
+  {
+    "relation_id": "R-056",
+    "type": "information_flow",
+    "source": "S3-F09",
+    "target": "S3-F10",
+    "condition": "按电池分配能力调节冷却液—Chiller路径，不改为风冷或直冷",
+    "basis": "基于原案例描述的功能逻辑分析；不新增具体控制算法",
+    "source_refs": [
+      {
+        "file": "00_修改依据/11.3日案例—孙月芸.zip",
+        "entry": "11.3日案例—孙月芸/结构化需求条目/结构化需求清单.json",
+        "req_id": "SC3-009",
+        "original_name": "制冷能力需求分配"
+      },
+      {
+        "file": "00_修改依据/11.3日案例—孙月芸.zip",
+        "entry": "11.3日案例—孙月芸/结构化需求条目/结构化需求清单.json",
+        "req_id": "SC3-010",
+        "original_name": "电池换热调节"
+      }
+    ]
+  },
+  {
+    "relation_id": "R-057",
+    "type": "parallel",
+    "source": "S3-F04",
+    "target": "S3-F10",
+    "condition": "能力足够且两路均有需求时可同时运行；互斥策略未规定",
+    "basis": "基于原案例描述的功能逻辑分析；不新增具体控制算法",
+    "source_refs": [
+      {
+        "file": "00_修改依据/11.3日案例—孙月芸.zip",
+        "entry": "11.3日案例—孙月芸/结构化需求条目/结构化需求清单.json",
+        "req_id": "SC3-004",
+        "original_name": "座舱制冷能力调节"
+      },
+      {
+        "file": "00_修改依据/11.3日案例—孙月芸.zip",
+        "entry": "11.3日案例—孙月芸/结构化需求条目/结构化需求清单.json",
+        "req_id": "SC3-010",
+        "original_name": "电池换热调节"
+      }
+    ]
+  },
+  {
+    "relation_id": "R-058",
+    "type": "information_flow",
+    "source": "S3-F04",
+    "target": "S3-F05",
+    "condition": "制冷与送风共同形成座舱空气换热条件",
+    "basis": "基于原案例描述的功能逻辑分析；不新增具体控制算法",
+    "source_refs": [
+      {
+        "file": "00_修改依据/11.3日案例—孙月芸.zip",
+        "entry": "11.3日案例—孙月芸/结构化需求条目/结构化需求清单.json",
+        "req_id": "SC3-004",
+        "original_name": "座舱制冷能力调节"
+      },
+      {
+        "file": "00_修改依据/11.3日案例—孙月芸.zip",
+        "entry": "11.3日案例—孙月芸/结构化需求条目/结构化需求清单.json",
+        "req_id": "SC3-005",
+        "original_name": "空气输送与送风调节"
+      }
+    ]
+  },
+  {
+    "relation_id": "R-059",
+    "type": "information_flow",
+    "source": "S3-F05",
+    "target": "S3-F11",
+    "condition": "实际座舱温控状态参与反馈",
+    "basis": "基于原案例描述的功能逻辑分析；不新增具体控制算法",
+    "source_refs": [
+      {
+        "file": "00_修改依据/11.3日案例—孙月芸.zip",
+        "entry": "11.3日案例—孙月芸/结构化需求条目/结构化需求清单.json",
+        "req_id": "SC3-005",
+        "original_name": "空气输送与送风调节"
+      },
+      {
+        "file": "00_修改依据/11.3日案例—孙月芸.zip",
+        "entry": "11.3日案例—孙月芸/结构化需求条目/结构化需求清单.json",
+        "req_id": "SC3-011",
+        "original_name": "冷却效果反馈与需求更新"
+      }
+    ]
+  },
+  {
+    "relation_id": "R-060",
+    "type": "information_flow",
+    "source": "S3-F10",
+    "target": "S3-F11",
+    "condition": "实际液冷状态参与反馈",
+    "basis": "基于原案例描述的功能逻辑分析；不新增具体控制算法",
+    "source_refs": [
+      {
+        "file": "00_修改依据/11.3日案例—孙月芸.zip",
+        "entry": "11.3日案例—孙月芸/结构化需求条目/结构化需求清单.json",
+        "req_id": "SC3-010",
+        "original_name": "电池换热调节"
+      },
+      {
+        "file": "00_修改依据/11.3日案例—孙月芸.zip",
+        "entry": "11.3日案例—孙月芸/结构化需求条目/结构化需求清单.json",
+        "req_id": "SC3-011",
+        "original_name": "冷却效果反馈与需求更新"
+      }
+    ]
+  },
+  {
+    "relation_id": "R-061",
+    "type": "feedback",
+    "source": "S3-F11",
+    "target": "S3-F03",
+    "condition": "反馈更新座舱冷却需求",
+    "basis": "基于原案例描述的功能逻辑分析；不新增具体控制算法",
+    "source_refs": [
+      {
+        "file": "00_修改依据/11.3日案例—孙月芸.zip",
+        "entry": "11.3日案例—孙月芸/结构化需求条目/结构化需求清单.json",
+        "req_id": "SC3-011",
+        "original_name": "冷却效果反馈与需求更新"
+      },
+      {
+        "file": "00_修改依据/11.3日案例—孙月芸.zip",
+        "entry": "11.3日案例—孙月芸/结构化需求条目/结构化需求清单.json",
+        "req_id": "SC3-003",
+        "original_name": "座舱偏差与制冷需求判断"
+      }
+    ]
+  },
+  {
+    "relation_id": "R-062",
+    "type": "feedback",
+    "source": "S3-F11",
+    "target": "S3-F07",
+    "condition": "反馈更新电池冷却需求",
+    "basis": "基于原案例描述的功能逻辑分析；不新增具体控制算法",
+    "source_refs": [
+      {
+        "file": "00_修改依据/11.3日案例—孙月芸.zip",
+        "entry": "11.3日案例—孙月芸/结构化需求条目/结构化需求清单.json",
+        "req_id": "SC3-011",
+        "original_name": "冷却效果反馈与需求更新"
+      },
+      {
+        "file": "00_修改依据/11.3日案例—孙月芸.zip",
+        "entry": "11.3日案例—孙月芸/结构化需求条目/结构化需求清单.json",
+        "req_id": "SC3-007",
+        "original_name": "电池辅助冷却需求判断"
+      }
+    ]
+  },
+  {
+    "relation_id": "A-LF-029",
+    "type": "alias",
+    "source": "LF-029",
+    "target": "S1-F08",
+    "condition": "旧指标分配ID与规范场景功能同义引用，不额外执行一次",
+    "basis": "对原案例重复功能进行对应分析",
+    "source_refs": [
+      {
+        "file": "00_修改依据/11.3日案例—孙月芸.zip",
+        "entry": "11.3日案例—孙月芸/逻辑功能—物理组件/逻辑功能目录.xlsx",
+        "sheet": "数据",
+        "row": 30,
+        "original_function_id": "LF-029",
+        "original_name": "高效发电运行调节"
+      }
+    ]
+  },
+  {
+    "relation_id": "A-LF-030",
+    "type": "alias",
+    "source": "LF-030",
+    "target": "S2-F02",
+    "condition": "旧指标分配ID与规范场景功能同义引用，不额外执行一次",
+    "basis": "对原案例重复功能进行对应分析",
+    "source_refs": [
+      {
+        "file": "00_修改依据/11.3日案例—孙月芸.zip",
+        "entry": "11.3日案例—孙月芸/逻辑功能—物理组件/逻辑功能目录.xlsx",
+        "sheet": "数据",
+        "row": 31,
+        "original_function_id": "LF-030",
+        "original_name": "静置预冷计时"
+      }
+    ]
+  },
+  {
+    "relation_id": "A-LF-031",
+    "type": "alias",
+    "source": "LF-031",
+    "target": "S2-F03",
+    "condition": "旧指标分配ID与规范场景功能同义引用，不额外执行一次",
+    "basis": "对原案例重复功能进行对应分析",
+    "source_refs": [
+      {
+        "file": "00_修改依据/11.3日案例—孙月芸.zip",
+        "entry": "11.3日案例—孙月芸/逻辑功能—物理组件/逻辑功能目录.xlsx",
+        "sheet": "数据",
+        "row": 32,
+        "original_function_id": "LF-031",
+        "original_name": "匀速行驶工况控制"
+      }
+    ]
+  },
+  {
+    "relation_id": "A-LF-032",
+    "type": "alias",
+    "source": "LF-032",
+    "target": "S2-F06",
+    "condition": "旧指标分配ID与规范场景功能同义引用，不额外执行一次",
+    "basis": "对原案例重复功能进行对应分析",
+    "source_refs": [
+      {
+        "file": "00_修改依据/11.3日案例—孙月芸.zip",
+        "entry": "11.3日案例—孙月芸/逻辑功能—物理组件/逻辑功能目录.xlsx",
+        "sheet": "数据",
+        "row": 33,
+        "original_function_id": "LF-032",
+        "original_name": "电池主动冷却触发判断"
+      }
+    ]
+  }
+]

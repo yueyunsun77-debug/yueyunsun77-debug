@@ -1,0 +1,2028 @@
+{
+  "date": "2026-11-17",
+  "baseline": "用户上传11.3日案例—孙月芸.zip",
+  "counts": {
+    "requirements": 75,
+    "indicators": 41,
+    "function_records": 62,
+    "canonical_functions": 58,
+    "pending_functions": 1,
+    "source_parent_activities": 14,
+    "candidate_pool": 201,
+    "relations": 143,
+    "sysml_models": 15
+  },
+  "passed": true,
+  "checks": [
+    {
+      "name": "需求ID完整及唯一",
+      "passed": true,
+      "detail": "原75条ID全部保留，无新增伪需求"
+    },
+    {
+      "name": "需求顶层结构",
+      "passed": true,
+      "detail": "每条严格七个顶层字段"
+    },
+    {
+      "name": "需求字段类型",
+      "passed": true,
+      "detail": "字符串、列表、字典类型符合原TypedDict"
+    },
+    {
+      "name": "41项指标独立且无遗漏",
+      "passed": true,
+      "detail": "IND-001至IND-041"
+    },
+    {
+      "name": "IND-001指标数据保留",
+      "passed": true,
+      "detail": "只修改功能名称/补充分析信息，不改指标值、比较符、单位、缺失值、分类和原来源"
+    },
+    {
+      "name": "IND-002指标数据保留",
+      "passed": true,
+      "detail": "只修改功能名称/补充分析信息，不改指标值、比较符、单位、缺失值、分类和原来源"
+    },
+    {
+      "name": "IND-003指标数据保留",
+      "passed": true,
+      "detail": "只修改功能名称/补充分析信息，不改指标值、比较符、单位、缺失值、分类和原来源"
+    },
+    {
+      "name": "IND-004指标数据保留",
+      "passed": true,
+      "detail": "只修改功能名称/补充分析信息，不改指标值、比较符、单位、缺失值、分类和原来源"
+    },
+    {
+      "name": "IND-005指标数据保留",
+      "passed": true,
+      "detail": "只修改功能名称/补充分析信息，不改指标值、比较符、单位、缺失值、分类和原来源"
+    },
+    {
+      "name": "IND-006指标数据保留",
+      "passed": true,
+      "detail": "只修改功能名称/补充分析信息，不改指标值、比较符、单位、缺失值、分类和原来源"
+    },
+    {
+      "name": "IND-007指标数据保留",
+      "passed": true,
+      "detail": "只修改功能名称/补充分析信息，不改指标值、比较符、单位、缺失值、分类和原来源"
+    },
+    {
+      "name": "IND-008指标数据保留",
+      "passed": true,
+      "detail": "只修改功能名称/补充分析信息，不改指标值、比较符、单位、缺失值、分类和原来源"
+    },
+    {
+      "name": "IND-009指标数据保留",
+      "passed": true,
+      "detail": "只修改功能名称/补充分析信息，不改指标值、比较符、单位、缺失值、分类和原来源"
+    },
+    {
+      "name": "IND-010指标数据保留",
+      "passed": true,
+      "detail": "只修改功能名称/补充分析信息，不改指标值、比较符、单位、缺失值、分类和原来源"
+    },
+    {
+      "name": "IND-011指标数据保留",
+      "passed": true,
+      "detail": "只修改功能名称/补充分析信息，不改指标值、比较符、单位、缺失值、分类和原来源"
+    },
+    {
+      "name": "IND-012指标数据保留",
+      "passed": true,
+      "detail": "只修改功能名称/补充分析信息，不改指标值、比较符、单位、缺失值、分类和原来源"
+    },
+    {
+      "name": "IND-013指标数据保留",
+      "passed": true,
+      "detail": "只修改功能名称/补充分析信息，不改指标值、比较符、单位、缺失值、分类和原来源"
+    },
+    {
+      "name": "IND-014指标数据保留",
+      "passed": true,
+      "detail": "只修改功能名称/补充分析信息，不改指标值、比较符、单位、缺失值、分类和原来源"
+    },
+    {
+      "name": "IND-015指标数据保留",
+      "passed": true,
+      "detail": "只修改功能名称/补充分析信息，不改指标值、比较符、单位、缺失值、分类和原来源"
+    },
+    {
+      "name": "IND-016指标数据保留",
+      "passed": true,
+      "detail": "只修改功能名称/补充分析信息，不改指标值、比较符、单位、缺失值、分类和原来源"
+    },
+    {
+      "name": "IND-017指标数据保留",
+      "passed": true,
+      "detail": "只修改功能名称/补充分析信息，不改指标值、比较符、单位、缺失值、分类和原来源"
+    },
+    {
+      "name": "IND-018指标数据保留",
+      "passed": true,
+      "detail": "只修改功能名称/补充分析信息，不改指标值、比较符、单位、缺失值、分类和原来源"
+    },
+    {
+      "name": "IND-019指标数据保留",
+      "passed": true,
+      "detail": "只修改功能名称/补充分析信息，不改指标值、比较符、单位、缺失值、分类和原来源"
+    },
+    {
+      "name": "IND-020指标数据保留",
+      "passed": true,
+      "detail": "只修改功能名称/补充分析信息，不改指标值、比较符、单位、缺失值、分类和原来源"
+    },
+    {
+      "name": "IND-021指标数据保留",
+      "passed": true,
+      "detail": "只修改功能名称/补充分析信息，不改指标值、比较符、单位、缺失值、分类和原来源"
+    },
+    {
+      "name": "IND-022指标数据保留",
+      "passed": true,
+      "detail": "只修改功能名称/补充分析信息，不改指标值、比较符、单位、缺失值、分类和原来源"
+    },
+    {
+      "name": "IND-023指标数据保留",
+      "passed": true,
+      "detail": "只修改功能名称/补充分析信息，不改指标值、比较符、单位、缺失值、分类和原来源"
+    },
+    {
+      "name": "IND-024指标数据保留",
+      "passed": true,
+      "detail": "只修改功能名称/补充分析信息，不改指标值、比较符、单位、缺失值、分类和原来源"
+    },
+    {
+      "name": "IND-025指标数据保留",
+      "passed": true,
+      "detail": "只修改功能名称/补充分析信息，不改指标值、比较符、单位、缺失值、分类和原来源"
+    },
+    {
+      "name": "IND-026指标数据保留",
+      "passed": true,
+      "detail": "只修改功能名称/补充分析信息，不改指标值、比较符、单位、缺失值、分类和原来源"
+    },
+    {
+      "name": "IND-027指标数据保留",
+      "passed": true,
+      "detail": "只修改功能名称/补充分析信息，不改指标值、比较符、单位、缺失值、分类和原来源"
+    },
+    {
+      "name": "IND-028指标数据保留",
+      "passed": true,
+      "detail": "只修改功能名称/补充分析信息，不改指标值、比较符、单位、缺失值、分类和原来源"
+    },
+    {
+      "name": "IND-029指标数据保留",
+      "passed": true,
+      "detail": "只修改功能名称/补充分析信息，不改指标值、比较符、单位、缺失值、分类和原来源"
+    },
+    {
+      "name": "IND-030指标数据保留",
+      "passed": true,
+      "detail": "只修改功能名称/补充分析信息，不改指标值、比较符、单位、缺失值、分类和原来源"
+    },
+    {
+      "name": "IND-031指标数据保留",
+      "passed": true,
+      "detail": "只修改功能名称/补充分析信息，不改指标值、比较符、单位、缺失值、分类和原来源"
+    },
+    {
+      "name": "IND-032指标数据保留",
+      "passed": true,
+      "detail": "只修改功能名称/补充分析信息，不改指标值、比较符、单位、缺失值、分类和原来源"
+    },
+    {
+      "name": "IND-033指标数据保留",
+      "passed": true,
+      "detail": "只修改功能名称/补充分析信息，不改指标值、比较符、单位、缺失值、分类和原来源"
+    },
+    {
+      "name": "IND-034指标数据保留",
+      "passed": true,
+      "detail": "只修改功能名称/补充分析信息，不改指标值、比较符、单位、缺失值、分类和原来源"
+    },
+    {
+      "name": "IND-035指标数据保留",
+      "passed": true,
+      "detail": "只修改功能名称/补充分析信息，不改指标值、比较符、单位、缺失值、分类和原来源"
+    },
+    {
+      "name": "IND-036指标数据保留",
+      "passed": true,
+      "detail": "只修改功能名称/补充分析信息，不改指标值、比较符、单位、缺失值、分类和原来源"
+    },
+    {
+      "name": "IND-037指标数据保留",
+      "passed": true,
+      "detail": "只修改功能名称/补充分析信息，不改指标值、比较符、单位、缺失值、分类和原来源"
+    },
+    {
+      "name": "IND-038指标数据保留",
+      "passed": true,
+      "detail": "只修改功能名称/补充分析信息，不改指标值、比较符、单位、缺失值、分类和原来源"
+    },
+    {
+      "name": "IND-039指标数据保留",
+      "passed": true,
+      "detail": "只修改功能名称/补充分析信息，不改指标值、比较符、单位、缺失值、分类和原来源"
+    },
+    {
+      "name": "IND-040指标数据保留",
+      "passed": true,
+      "detail": "只修改功能名称/补充分析信息，不改指标值、比较符、单位、缺失值、分类和原来源"
+    },
+    {
+      "name": "IND-041指标数据保留",
+      "passed": true,
+      "detail": "只修改功能名称/补充分析信息，不改指标值、比较符、单位、缺失值、分类和原来源"
+    },
+    {
+      "name": "指标表字段顺序",
+      "passed": true,
+      "detail": "两表八字段完全一致"
+    },
+    {
+      "name": "两张表相同指标集合",
+      "passed": true,
+      "detail": "当前每个指标单一分配，识别归属与分配归属一致"
+    },
+    {
+      "name": "指标分析表.xlsx原指标单元格保留",
+      "passed": true,
+      "detail": "仅第2列部件/功能名称更新"
+    },
+    {
+      "name": "指标分配表.xlsx原指标单元格保留",
+      "passed": true,
+      "detail": "仅第2列部件/功能名称更新"
+    },
+    {
+      "name": "IND-001表格与JSON一致",
+      "passed": true,
+      "detail": "名称、类型、单位、范围、默认值、描述逐字段对应；未提供单位在JSON为null"
+    },
+    {
+      "name": "IND-002表格与JSON一致",
+      "passed": true,
+      "detail": "名称、类型、单位、范围、默认值、描述逐字段对应；未提供单位在JSON为null"
+    },
+    {
+      "name": "IND-003表格与JSON一致",
+      "passed": true,
+      "detail": "名称、类型、单位、范围、默认值、描述逐字段对应；未提供单位在JSON为null"
+    },
+    {
+      "name": "IND-004表格与JSON一致",
+      "passed": true,
+      "detail": "名称、类型、单位、范围、默认值、描述逐字段对应；未提供单位在JSON为null"
+    },
+    {
+      "name": "IND-005表格与JSON一致",
+      "passed": true,
+      "detail": "名称、类型、单位、范围、默认值、描述逐字段对应；未提供单位在JSON为null"
+    },
+    {
+      "name": "IND-006表格与JSON一致",
+      "passed": true,
+      "detail": "名称、类型、单位、范围、默认值、描述逐字段对应；未提供单位在JSON为null"
+    },
+    {
+      "name": "IND-007表格与JSON一致",
+      "passed": true,
+      "detail": "名称、类型、单位、范围、默认值、描述逐字段对应；未提供单位在JSON为null"
+    },
+    {
+      "name": "IND-008表格与JSON一致",
+      "passed": true,
+      "detail": "名称、类型、单位、范围、默认值、描述逐字段对应；未提供单位在JSON为null"
+    },
+    {
+      "name": "IND-009表格与JSON一致",
+      "passed": true,
+      "detail": "名称、类型、单位、范围、默认值、描述逐字段对应；未提供单位在JSON为null"
+    },
+    {
+      "name": "IND-010表格与JSON一致",
+      "passed": true,
+      "detail": "名称、类型、单位、范围、默认值、描述逐字段对应；未提供单位在JSON为null"
+    },
+    {
+      "name": "IND-011表格与JSON一致",
+      "passed": true,
+      "detail": "名称、类型、单位、范围、默认值、描述逐字段对应；未提供单位在JSON为null"
+    },
+    {
+      "name": "IND-012表格与JSON一致",
+      "passed": true,
+      "detail": "名称、类型、单位、范围、默认值、描述逐字段对应；未提供单位在JSON为null"
+    },
+    {
+      "name": "IND-013表格与JSON一致",
+      "passed": true,
+      "detail": "名称、类型、单位、范围、默认值、描述逐字段对应；未提供单位在JSON为null"
+    },
+    {
+      "name": "IND-014表格与JSON一致",
+      "passed": true,
+      "detail": "名称、类型、单位、范围、默认值、描述逐字段对应；未提供单位在JSON为null"
+    },
+    {
+      "name": "IND-015表格与JSON一致",
+      "passed": true,
+      "detail": "名称、类型、单位、范围、默认值、描述逐字段对应；未提供单位在JSON为null"
+    },
+    {
+      "name": "IND-016表格与JSON一致",
+      "passed": true,
+      "detail": "名称、类型、单位、范围、默认值、描述逐字段对应；未提供单位在JSON为null"
+    },
+    {
+      "name": "IND-017表格与JSON一致",
+      "passed": true,
+      "detail": "名称、类型、单位、范围、默认值、描述逐字段对应；未提供单位在JSON为null"
+    },
+    {
+      "name": "IND-018表格与JSON一致",
+      "passed": true,
+      "detail": "名称、类型、单位、范围、默认值、描述逐字段对应；未提供单位在JSON为null"
+    },
+    {
+      "name": "IND-019表格与JSON一致",
+      "passed": true,
+      "detail": "名称、类型、单位、范围、默认值、描述逐字段对应；未提供单位在JSON为null"
+    },
+    {
+      "name": "IND-020表格与JSON一致",
+      "passed": true,
+      "detail": "名称、类型、单位、范围、默认值、描述逐字段对应；未提供单位在JSON为null"
+    },
+    {
+      "name": "IND-021表格与JSON一致",
+      "passed": true,
+      "detail": "名称、类型、单位、范围、默认值、描述逐字段对应；未提供单位在JSON为null"
+    },
+    {
+      "name": "IND-022表格与JSON一致",
+      "passed": true,
+      "detail": "名称、类型、单位、范围、默认值、描述逐字段对应；未提供单位在JSON为null"
+    },
+    {
+      "name": "IND-023表格与JSON一致",
+      "passed": true,
+      "detail": "名称、类型、单位、范围、默认值、描述逐字段对应；未提供单位在JSON为null"
+    },
+    {
+      "name": "IND-024表格与JSON一致",
+      "passed": true,
+      "detail": "名称、类型、单位、范围、默认值、描述逐字段对应；未提供单位在JSON为null"
+    },
+    {
+      "name": "IND-025表格与JSON一致",
+      "passed": true,
+      "detail": "名称、类型、单位、范围、默认值、描述逐字段对应；未提供单位在JSON为null"
+    },
+    {
+      "name": "IND-026表格与JSON一致",
+      "passed": true,
+      "detail": "名称、类型、单位、范围、默认值、描述逐字段对应；未提供单位在JSON为null"
+    },
+    {
+      "name": "IND-027表格与JSON一致",
+      "passed": true,
+      "detail": "名称、类型、单位、范围、默认值、描述逐字段对应；未提供单位在JSON为null"
+    },
+    {
+      "name": "IND-028表格与JSON一致",
+      "passed": true,
+      "detail": "名称、类型、单位、范围、默认值、描述逐字段对应；未提供单位在JSON为null"
+    },
+    {
+      "name": "IND-029表格与JSON一致",
+      "passed": true,
+      "detail": "名称、类型、单位、范围、默认值、描述逐字段对应；未提供单位在JSON为null"
+    },
+    {
+      "name": "IND-030表格与JSON一致",
+      "passed": true,
+      "detail": "名称、类型、单位、范围、默认值、描述逐字段对应；未提供单位在JSON为null"
+    },
+    {
+      "name": "IND-031表格与JSON一致",
+      "passed": true,
+      "detail": "名称、类型、单位、范围、默认值、描述逐字段对应；未提供单位在JSON为null"
+    },
+    {
+      "name": "IND-032表格与JSON一致",
+      "passed": true,
+      "detail": "名称、类型、单位、范围、默认值、描述逐字段对应；未提供单位在JSON为null"
+    },
+    {
+      "name": "IND-033表格与JSON一致",
+      "passed": true,
+      "detail": "名称、类型、单位、范围、默认值、描述逐字段对应；未提供单位在JSON为null"
+    },
+    {
+      "name": "IND-034表格与JSON一致",
+      "passed": true,
+      "detail": "名称、类型、单位、范围、默认值、描述逐字段对应；未提供单位在JSON为null"
+    },
+    {
+      "name": "IND-035表格与JSON一致",
+      "passed": true,
+      "detail": "名称、类型、单位、范围、默认值、描述逐字段对应；未提供单位在JSON为null"
+    },
+    {
+      "name": "IND-036表格与JSON一致",
+      "passed": true,
+      "detail": "名称、类型、单位、范围、默认值、描述逐字段对应；未提供单位在JSON为null"
+    },
+    {
+      "name": "IND-037表格与JSON一致",
+      "passed": true,
+      "detail": "名称、类型、单位、范围、默认值、描述逐字段对应；未提供单位在JSON为null"
+    },
+    {
+      "name": "IND-038表格与JSON一致",
+      "passed": true,
+      "detail": "名称、类型、单位、范围、默认值、描述逐字段对应；未提供单位在JSON为null"
+    },
+    {
+      "name": "IND-039表格与JSON一致",
+      "passed": true,
+      "detail": "名称、类型、单位、范围、默认值、描述逐字段对应；未提供单位在JSON为null"
+    },
+    {
+      "name": "IND-040表格与JSON一致",
+      "passed": true,
+      "detail": "名称、类型、单位、范围、默认值、描述逐字段对应；未提供单位在JSON为null"
+    },
+    {
+      "name": "IND-041表格与JSON一致",
+      "passed": true,
+      "detail": "名称、类型、单位、范围、默认值、描述逐字段对应；未提供单位在JSON为null"
+    },
+    {
+      "name": "功能ID及规范ID",
+      "passed": true,
+      "detail": "62条活动功能记录，58项规范功能，4个兼容引用"
+    },
+    {
+      "name": "V+O规范",
+      "passed": true,
+      "detail": "所有活动功能显式动词、对象，S省略并继承边界"
+    },
+    {
+      "name": "效果与能力字段",
+      "passed": true,
+      "detail": "缺证据的效果为空；required_capability未臆造"
+    },
+    {
+      "name": "输入输出契约",
+      "passed": true,
+      "detail": "每项功能有概念级输入输出，具体变量槽位可空"
+    },
+    {
+      "name": "后风窗占位",
+      "passed": true,
+      "detail": "占位不混入活动功能；IND-030保留TBD"
+    },
+    {
+      "name": "关系端点与ID",
+      "passed": true,
+      "detail": "所有关系端点存在，关系ID唯一"
+    },
+    {
+      "name": "分解与行为关系分开",
+      "passed": true,
+      "detail": "分解、时序、条件、并行、互斥、反馈、兼容引用分别表达"
+    },
+    {
+      "name": "来源父活动保留",
+      "passed": true,
+      "detail": "三条需求功能绑定14个原概要活动名"
+    },
+    {
+      "name": "LF-001直接来源存在",
+      "passed": true,
+      "detail": "压缩包成员路径真实存在"
+    },
+    {
+      "name": "LF-002直接来源存在",
+      "passed": true,
+      "detail": "压缩包成员路径真实存在"
+    },
+    {
+      "name": "LF-003直接来源存在",
+      "passed": true,
+      "detail": "压缩包成员路径真实存在"
+    },
+    {
+      "name": "LF-004直接来源存在",
+      "passed": true,
+      "detail": "压缩包成员路径真实存在"
+    },
+    {
+      "name": "LF-005直接来源存在",
+      "passed": true,
+      "detail": "压缩包成员路径真实存在"
+    },
+    {
+      "name": "LF-006直接来源存在",
+      "passed": true,
+      "detail": "压缩包成员路径真实存在"
+    },
+    {
+      "name": "LF-007直接来源存在",
+      "passed": true,
+      "detail": "压缩包成员路径真实存在"
+    },
+    {
+      "name": "LF-008直接来源存在",
+      "passed": true,
+      "detail": "压缩包成员路径真实存在"
+    },
+    {
+      "name": "LF-009直接来源存在",
+      "passed": true,
+      "detail": "压缩包成员路径真实存在"
+    },
+    {
+      "name": "LF-010直接来源存在",
+      "passed": true,
+      "detail": "压缩包成员路径真实存在"
+    },
+    {
+      "name": "LF-011直接来源存在",
+      "passed": true,
+      "detail": "压缩包成员路径真实存在"
+    },
+    {
+      "name": "LF-012直接来源存在",
+      "passed": true,
+      "detail": "压缩包成员路径真实存在"
+    },
+    {
+      "name": "LF-013直接来源存在",
+      "passed": true,
+      "detail": "压缩包成员路径真实存在"
+    },
+    {
+      "name": "LF-014直接来源存在",
+      "passed": true,
+      "detail": "压缩包成员路径真实存在"
+    },
+    {
+      "name": "LF-015直接来源存在",
+      "passed": true,
+      "detail": "压缩包成员路径真实存在"
+    },
+    {
+      "name": "LF-016直接来源存在",
+      "passed": true,
+      "detail": "压缩包成员路径真实存在"
+    },
+    {
+      "name": "LF-017直接来源存在",
+      "passed": true,
+      "detail": "压缩包成员路径真实存在"
+    },
+    {
+      "name": "LF-018直接来源存在",
+      "passed": true,
+      "detail": "压缩包成员路径真实存在"
+    },
+    {
+      "name": "LF-019直接来源存在",
+      "passed": true,
+      "detail": "压缩包成员路径真实存在"
+    },
+    {
+      "name": "LF-020直接来源存在",
+      "passed": true,
+      "detail": "压缩包成员路径真实存在"
+    },
+    {
+      "name": "LF-021直接来源存在",
+      "passed": true,
+      "detail": "压缩包成员路径真实存在"
+    },
+    {
+      "name": "LF-022直接来源存在",
+      "passed": true,
+      "detail": "压缩包成员路径真实存在"
+    },
+    {
+      "name": "LF-023直接来源存在",
+      "passed": true,
+      "detail": "压缩包成员路径真实存在"
+    },
+    {
+      "name": "LF-024直接来源存在",
+      "passed": true,
+      "detail": "压缩包成员路径真实存在"
+    },
+    {
+      "name": "LF-026直接来源存在",
+      "passed": true,
+      "detail": "压缩包成员路径真实存在"
+    },
+    {
+      "name": "LF-027直接来源存在",
+      "passed": true,
+      "detail": "压缩包成员路径真实存在"
+    },
+    {
+      "name": "LF-028直接来源存在",
+      "passed": true,
+      "detail": "压缩包成员路径真实存在"
+    },
+    {
+      "name": "LF-029直接来源存在",
+      "passed": true,
+      "detail": "压缩包成员路径真实存在"
+    },
+    {
+      "name": "LF-030直接来源存在",
+      "passed": true,
+      "detail": "压缩包成员路径真实存在"
+    },
+    {
+      "name": "LF-031直接来源存在",
+      "passed": true,
+      "detail": "压缩包成员路径真实存在"
+    },
+    {
+      "name": "LF-032直接来源存在",
+      "passed": true,
+      "detail": "压缩包成员路径真实存在"
+    },
+    {
+      "name": "S1-F01直接来源存在",
+      "passed": true,
+      "detail": "压缩包成员路径真实存在"
+    },
+    {
+      "name": "S1-F02直接来源存在",
+      "passed": true,
+      "detail": "压缩包成员路径真实存在"
+    },
+    {
+      "name": "S1-F03直接来源存在",
+      "passed": true,
+      "detail": "压缩包成员路径真实存在"
+    },
+    {
+      "name": "S1-F04直接来源存在",
+      "passed": true,
+      "detail": "压缩包成员路径真实存在"
+    },
+    {
+      "name": "S1-F05直接来源存在",
+      "passed": true,
+      "detail": "压缩包成员路径真实存在"
+    },
+    {
+      "name": "S1-F06直接来源存在",
+      "passed": true,
+      "detail": "压缩包成员路径真实存在"
+    },
+    {
+      "name": "S1-F07直接来源存在",
+      "passed": true,
+      "detail": "压缩包成员路径真实存在"
+    },
+    {
+      "name": "S1-F08直接来源存在",
+      "passed": true,
+      "detail": "压缩包成员路径真实存在"
+    },
+    {
+      "name": "S1-F09直接来源存在",
+      "passed": true,
+      "detail": "压缩包成员路径真实存在"
+    },
+    {
+      "name": "S1-F10直接来源存在",
+      "passed": true,
+      "detail": "压缩包成员路径真实存在"
+    },
+    {
+      "name": "S2-F01直接来源存在",
+      "passed": true,
+      "detail": "压缩包成员路径真实存在"
+    },
+    {
+      "name": "S2-F02直接来源存在",
+      "passed": true,
+      "detail": "压缩包成员路径真实存在"
+    },
+    {
+      "name": "S2-F03直接来源存在",
+      "passed": true,
+      "detail": "压缩包成员路径真实存在"
+    },
+    {
+      "name": "S2-F04直接来源存在",
+      "passed": true,
+      "detail": "压缩包成员路径真实存在"
+    },
+    {
+      "name": "S2-F05直接来源存在",
+      "passed": true,
+      "detail": "压缩包成员路径真实存在"
+    },
+    {
+      "name": "S2-F06直接来源存在",
+      "passed": true,
+      "detail": "压缩包成员路径真实存在"
+    },
+    {
+      "name": "S2-F07直接来源存在",
+      "passed": true,
+      "detail": "压缩包成员路径真实存在"
+    },
+    {
+      "name": "S2-F08直接来源存在",
+      "passed": true,
+      "detail": "压缩包成员路径真实存在"
+    },
+    {
+      "name": "S2-F09直接来源存在",
+      "passed": true,
+      "detail": "压缩包成员路径真实存在"
+    },
+    {
+      "name": "S2-F10直接来源存在",
+      "passed": true,
+      "detail": "压缩包成员路径真实存在"
+    },
+    {
+      "name": "S3-F01直接来源存在",
+      "passed": true,
+      "detail": "压缩包成员路径真实存在"
+    },
+    {
+      "name": "S3-F02直接来源存在",
+      "passed": true,
+      "detail": "压缩包成员路径真实存在"
+    },
+    {
+      "name": "S3-F03直接来源存在",
+      "passed": true,
+      "detail": "压缩包成员路径真实存在"
+    },
+    {
+      "name": "S3-F04直接来源存在",
+      "passed": true,
+      "detail": "压缩包成员路径真实存在"
+    },
+    {
+      "name": "S3-F05直接来源存在",
+      "passed": true,
+      "detail": "压缩包成员路径真实存在"
+    },
+    {
+      "name": "S3-F06直接来源存在",
+      "passed": true,
+      "detail": "压缩包成员路径真实存在"
+    },
+    {
+      "name": "S3-F07直接来源存在",
+      "passed": true,
+      "detail": "压缩包成员路径真实存在"
+    },
+    {
+      "name": "S3-F08直接来源存在",
+      "passed": true,
+      "detail": "压缩包成员路径真实存在"
+    },
+    {
+      "name": "S3-F09直接来源存在",
+      "passed": true,
+      "detail": "压缩包成员路径真实存在"
+    },
+    {
+      "name": "S3-F10直接来源存在",
+      "passed": true,
+      "detail": "压缩包成员路径真实存在"
+    },
+    {
+      "name": "S3-F11直接来源存在",
+      "passed": true,
+      "detail": "压缩包成员路径真实存在"
+    },
+    {
+      "name": "LF-025直接来源存在",
+      "passed": true,
+      "detail": "压缩包成员路径真实存在"
+    },
+    {
+      "name": "LF-001来源元素定位",
+      "passed": true,
+      "detail": "来源父活动路径可以在输入SysML中定位"
+    },
+    {
+      "name": "LF-002来源元素定位",
+      "passed": true,
+      "detail": "来源父活动路径可以在输入SysML中定位"
+    },
+    {
+      "name": "LF-003来源元素定位",
+      "passed": true,
+      "detail": "来源父活动路径可以在输入SysML中定位"
+    },
+    {
+      "name": "LF-004来源元素定位",
+      "passed": true,
+      "detail": "来源父活动路径可以在输入SysML中定位"
+    },
+    {
+      "name": "LF-005来源元素定位",
+      "passed": true,
+      "detail": "来源父活动路径可以在输入SysML中定位"
+    },
+    {
+      "name": "LF-006来源元素定位",
+      "passed": true,
+      "detail": "来源父活动路径可以在输入SysML中定位"
+    },
+    {
+      "name": "LF-007来源元素定位",
+      "passed": true,
+      "detail": "来源父活动路径可以在输入SysML中定位"
+    },
+    {
+      "name": "LF-008来源元素定位",
+      "passed": true,
+      "detail": "来源父活动路径可以在输入SysML中定位"
+    },
+    {
+      "name": "LF-009来源元素定位",
+      "passed": true,
+      "detail": "来源父活动路径可以在输入SysML中定位"
+    },
+    {
+      "name": "LF-010来源元素定位",
+      "passed": true,
+      "detail": "来源父活动路径可以在输入SysML中定位"
+    },
+    {
+      "name": "LF-011来源元素定位",
+      "passed": true,
+      "detail": "来源父活动路径可以在输入SysML中定位"
+    },
+    {
+      "name": "LF-012来源元素定位",
+      "passed": true,
+      "detail": "来源父活动路径可以在输入SysML中定位"
+    },
+    {
+      "name": "LF-013来源元素定位",
+      "passed": true,
+      "detail": "来源父活动路径可以在输入SysML中定位"
+    },
+    {
+      "name": "LF-014来源元素定位",
+      "passed": true,
+      "detail": "来源父活动路径可以在输入SysML中定位"
+    },
+    {
+      "name": "LF-015来源元素定位",
+      "passed": true,
+      "detail": "来源父活动路径可以在输入SysML中定位"
+    },
+    {
+      "name": "LF-016来源元素定位",
+      "passed": true,
+      "detail": "来源父活动路径可以在输入SysML中定位"
+    },
+    {
+      "name": "LF-017来源元素定位",
+      "passed": true,
+      "detail": "来源父活动路径可以在输入SysML中定位"
+    },
+    {
+      "name": "LF-018来源元素定位",
+      "passed": true,
+      "detail": "来源父活动路径可以在输入SysML中定位"
+    },
+    {
+      "name": "LF-019来源元素定位",
+      "passed": true,
+      "detail": "来源父活动路径可以在输入SysML中定位"
+    },
+    {
+      "name": "LF-020来源元素定位",
+      "passed": true,
+      "detail": "来源父活动路径可以在输入SysML中定位"
+    },
+    {
+      "name": "LF-021来源元素定位",
+      "passed": true,
+      "detail": "来源父活动路径可以在输入SysML中定位"
+    },
+    {
+      "name": "LF-022来源元素定位",
+      "passed": true,
+      "detail": "来源父活动路径可以在输入SysML中定位"
+    },
+    {
+      "name": "LF-023来源元素定位",
+      "passed": true,
+      "detail": "来源父活动路径可以在输入SysML中定位"
+    },
+    {
+      "name": "LF-024来源元素定位",
+      "passed": true,
+      "detail": "来源父活动路径可以在输入SysML中定位"
+    },
+    {
+      "name": "LF-026来源元素定位",
+      "passed": true,
+      "detail": "来源父活动路径可以在输入SysML中定位"
+    },
+    {
+      "name": "LF-027来源元素定位",
+      "passed": true,
+      "detail": "来源父活动路径可以在输入SysML中定位"
+    },
+    {
+      "name": "LF-028来源元素定位",
+      "passed": true,
+      "detail": "来源父活动路径可以在输入SysML中定位"
+    },
+    {
+      "name": "201项候选池完整",
+      "passed": true,
+      "detail": "原72项+新增129项，细化说明与来源声明保留"
+    },
+    {
+      "name": "C01候选原槽位保留",
+      "passed": true,
+      "detail": "ID/V/O/E逐条对应原清单行"
+    },
+    {
+      "name": "C02候选原槽位保留",
+      "passed": true,
+      "detail": "ID/V/O/E逐条对应原清单行"
+    },
+    {
+      "name": "C03候选原槽位保留",
+      "passed": true,
+      "detail": "ID/V/O/E逐条对应原清单行"
+    },
+    {
+      "name": "C04候选原槽位保留",
+      "passed": true,
+      "detail": "ID/V/O/E逐条对应原清单行"
+    },
+    {
+      "name": "C05候选原槽位保留",
+      "passed": true,
+      "detail": "ID/V/O/E逐条对应原清单行"
+    },
+    {
+      "name": "H01候选原槽位保留",
+      "passed": true,
+      "detail": "ID/V/O/E逐条对应原清单行"
+    },
+    {
+      "name": "H02候选原槽位保留",
+      "passed": true,
+      "detail": "ID/V/O/E逐条对应原清单行"
+    },
+    {
+      "name": "H03候选原槽位保留",
+      "passed": true,
+      "detail": "ID/V/O/E逐条对应原清单行"
+    },
+    {
+      "name": "H04候选原槽位保留",
+      "passed": true,
+      "detail": "ID/V/O/E逐条对应原清单行"
+    },
+    {
+      "name": "H05候选原槽位保留",
+      "passed": true,
+      "detail": "ID/V/O/E逐条对应原清单行"
+    },
+    {
+      "name": "H06候选原槽位保留",
+      "passed": true,
+      "detail": "ID/V/O/E逐条对应原清单行"
+    },
+    {
+      "name": "H07候选原槽位保留",
+      "passed": true,
+      "detail": "ID/V/O/E逐条对应原清单行"
+    },
+    {
+      "name": "H08候选原槽位保留",
+      "passed": true,
+      "detail": "ID/V/O/E逐条对应原清单行"
+    },
+    {
+      "name": "H09候选原槽位保留",
+      "passed": true,
+      "detail": "ID/V/O/E逐条对应原清单行"
+    },
+    {
+      "name": "H10候选原槽位保留",
+      "passed": true,
+      "detail": "ID/V/O/E逐条对应原清单行"
+    },
+    {
+      "name": "H11候选原槽位保留",
+      "passed": true,
+      "detail": "ID/V/O/E逐条对应原清单行"
+    },
+    {
+      "name": "H12候选原槽位保留",
+      "passed": true,
+      "detail": "ID/V/O/E逐条对应原清单行"
+    },
+    {
+      "name": "H13候选原槽位保留",
+      "passed": true,
+      "detail": "ID/V/O/E逐条对应原清单行"
+    },
+    {
+      "name": "H14候选原槽位保留",
+      "passed": true,
+      "detail": "ID/V/O/E逐条对应原清单行"
+    },
+    {
+      "name": "H15候选原槽位保留",
+      "passed": true,
+      "detail": "ID/V/O/E逐条对应原清单行"
+    },
+    {
+      "name": "H16候选原槽位保留",
+      "passed": true,
+      "detail": "ID/V/O/E逐条对应原清单行"
+    },
+    {
+      "name": "K01候选原槽位保留",
+      "passed": true,
+      "detail": "ID/V/O/E逐条对应原清单行"
+    },
+    {
+      "name": "K02候选原槽位保留",
+      "passed": true,
+      "detail": "ID/V/O/E逐条对应原清单行"
+    },
+    {
+      "name": "K03候选原槽位保留",
+      "passed": true,
+      "detail": "ID/V/O/E逐条对应原清单行"
+    },
+    {
+      "name": "K04候选原槽位保留",
+      "passed": true,
+      "detail": "ID/V/O/E逐条对应原清单行"
+    },
+    {
+      "name": "K05候选原槽位保留",
+      "passed": true,
+      "detail": "ID/V/O/E逐条对应原清单行"
+    },
+    {
+      "name": "K06候选原槽位保留",
+      "passed": true,
+      "detail": "ID/V/O/E逐条对应原清单行"
+    },
+    {
+      "name": "K07候选原槽位保留",
+      "passed": true,
+      "detail": "ID/V/O/E逐条对应原清单行"
+    },
+    {
+      "name": "K08候选原槽位保留",
+      "passed": true,
+      "detail": "ID/V/O/E逐条对应原清单行"
+    },
+    {
+      "name": "K09候选原槽位保留",
+      "passed": true,
+      "detail": "ID/V/O/E逐条对应原清单行"
+    },
+    {
+      "name": "K10候选原槽位保留",
+      "passed": true,
+      "detail": "ID/V/O/E逐条对应原清单行"
+    },
+    {
+      "name": "A01候选原槽位保留",
+      "passed": true,
+      "detail": "ID/V/O/E逐条对应原清单行"
+    },
+    {
+      "name": "A02候选原槽位保留",
+      "passed": true,
+      "detail": "ID/V/O/E逐条对应原清单行"
+    },
+    {
+      "name": "A03候选原槽位保留",
+      "passed": true,
+      "detail": "ID/V/O/E逐条对应原清单行"
+    },
+    {
+      "name": "A04候选原槽位保留",
+      "passed": true,
+      "detail": "ID/V/O/E逐条对应原清单行"
+    },
+    {
+      "name": "A05候选原槽位保留",
+      "passed": true,
+      "detail": "ID/V/O/E逐条对应原清单行"
+    },
+    {
+      "name": "A06候选原槽位保留",
+      "passed": true,
+      "detail": "ID/V/O/E逐条对应原清单行"
+    },
+    {
+      "name": "A07候选原槽位保留",
+      "passed": true,
+      "detail": "ID/V/O/E逐条对应原清单行"
+    },
+    {
+      "name": "A08候选原槽位保留",
+      "passed": true,
+      "detail": "ID/V/O/E逐条对应原清单行"
+    },
+    {
+      "name": "A09候选原槽位保留",
+      "passed": true,
+      "detail": "ID/V/O/E逐条对应原清单行"
+    },
+    {
+      "name": "A10候选原槽位保留",
+      "passed": true,
+      "detail": "ID/V/O/E逐条对应原清单行"
+    },
+    {
+      "name": "A11候选原槽位保留",
+      "passed": true,
+      "detail": "ID/V/O/E逐条对应原清单行"
+    },
+    {
+      "name": "A12候选原槽位保留",
+      "passed": true,
+      "detail": "ID/V/O/E逐条对应原清单行"
+    },
+    {
+      "name": "A13候选原槽位保留",
+      "passed": true,
+      "detail": "ID/V/O/E逐条对应原清单行"
+    },
+    {
+      "name": "L01候选原槽位保留",
+      "passed": true,
+      "detail": "ID/V/O/E逐条对应原清单行"
+    },
+    {
+      "name": "L02候选原槽位保留",
+      "passed": true,
+      "detail": "ID/V/O/E逐条对应原清单行"
+    },
+    {
+      "name": "L03候选原槽位保留",
+      "passed": true,
+      "detail": "ID/V/O/E逐条对应原清单行"
+    },
+    {
+      "name": "L04候选原槽位保留",
+      "passed": true,
+      "detail": "ID/V/O/E逐条对应原清单行"
+    },
+    {
+      "name": "L05候选原槽位保留",
+      "passed": true,
+      "detail": "ID/V/O/E逐条对应原清单行"
+    },
+    {
+      "name": "L06候选原槽位保留",
+      "passed": true,
+      "detail": "ID/V/O/E逐条对应原清单行"
+    },
+    {
+      "name": "L07候选原槽位保留",
+      "passed": true,
+      "detail": "ID/V/O/E逐条对应原清单行"
+    },
+    {
+      "name": "L08候选原槽位保留",
+      "passed": true,
+      "detail": "ID/V/O/E逐条对应原清单行"
+    },
+    {
+      "name": "L09候选原槽位保留",
+      "passed": true,
+      "detail": "ID/V/O/E逐条对应原清单行"
+    },
+    {
+      "name": "L10候选原槽位保留",
+      "passed": true,
+      "detail": "ID/V/O/E逐条对应原清单行"
+    },
+    {
+      "name": "L11候选原槽位保留",
+      "passed": true,
+      "detail": "ID/V/O/E逐条对应原清单行"
+    },
+    {
+      "name": "L12候选原槽位保留",
+      "passed": true,
+      "detail": "ID/V/O/E逐条对应原清单行"
+    },
+    {
+      "name": "L13候选原槽位保留",
+      "passed": true,
+      "detail": "ID/V/O/E逐条对应原清单行"
+    },
+    {
+      "name": "L14候选原槽位保留",
+      "passed": true,
+      "detail": "ID/V/O/E逐条对应原清单行"
+    },
+    {
+      "name": "P01候选原槽位保留",
+      "passed": true,
+      "detail": "ID/V/O/E逐条对应原清单行"
+    },
+    {
+      "name": "P02候选原槽位保留",
+      "passed": true,
+      "detail": "ID/V/O/E逐条对应原清单行"
+    },
+    {
+      "name": "P03候选原槽位保留",
+      "passed": true,
+      "detail": "ID/V/O/E逐条对应原清单行"
+    },
+    {
+      "name": "P04候选原槽位保留",
+      "passed": true,
+      "detail": "ID/V/O/E逐条对应原清单行"
+    },
+    {
+      "name": "P05候选原槽位保留",
+      "passed": true,
+      "detail": "ID/V/O/E逐条对应原清单行"
+    },
+    {
+      "name": "P06候选原槽位保留",
+      "passed": true,
+      "detail": "ID/V/O/E逐条对应原清单行"
+    },
+    {
+      "name": "P07候选原槽位保留",
+      "passed": true,
+      "detail": "ID/V/O/E逐条对应原清单行"
+    },
+    {
+      "name": "P08候选原槽位保留",
+      "passed": true,
+      "detail": "ID/V/O/E逐条对应原清单行"
+    },
+    {
+      "name": "P09候选原槽位保留",
+      "passed": true,
+      "detail": "ID/V/O/E逐条对应原清单行"
+    },
+    {
+      "name": "P10候选原槽位保留",
+      "passed": true,
+      "detail": "ID/V/O/E逐条对应原清单行"
+    },
+    {
+      "name": "E01候选原槽位保留",
+      "passed": true,
+      "detail": "ID/V/O/E逐条对应原清单行"
+    },
+    {
+      "name": "E02候选原槽位保留",
+      "passed": true,
+      "detail": "ID/V/O/E逐条对应原清单行"
+    },
+    {
+      "name": "E03候选原槽位保留",
+      "passed": true,
+      "detail": "ID/V/O/E逐条对应原清单行"
+    },
+    {
+      "name": "E04候选原槽位保留",
+      "passed": true,
+      "detail": "ID/V/O/E逐条对应原清单行"
+    },
+    {
+      "name": "N-R01候选原槽位保留",
+      "passed": true,
+      "detail": "ID/V/O/E逐条对应原清单行"
+    },
+    {
+      "name": "N-R02候选原槽位保留",
+      "passed": true,
+      "detail": "ID/V/O/E逐条对应原清单行"
+    },
+    {
+      "name": "N-R03候选原槽位保留",
+      "passed": true,
+      "detail": "ID/V/O/E逐条对应原清单行"
+    },
+    {
+      "name": "N-R04候选原槽位保留",
+      "passed": true,
+      "detail": "ID/V/O/E逐条对应原清单行"
+    },
+    {
+      "name": "N-R05候选原槽位保留",
+      "passed": true,
+      "detail": "ID/V/O/E逐条对应原清单行"
+    },
+    {
+      "name": "N-R06候选原槽位保留",
+      "passed": true,
+      "detail": "ID/V/O/E逐条对应原清单行"
+    },
+    {
+      "name": "N-R07候选原槽位保留",
+      "passed": true,
+      "detail": "ID/V/O/E逐条对应原清单行"
+    },
+    {
+      "name": "N-R08候选原槽位保留",
+      "passed": true,
+      "detail": "ID/V/O/E逐条对应原清单行"
+    },
+    {
+      "name": "N-R09候选原槽位保留",
+      "passed": true,
+      "detail": "ID/V/O/E逐条对应原清单行"
+    },
+    {
+      "name": "N-R10候选原槽位保留",
+      "passed": true,
+      "detail": "ID/V/O/E逐条对应原清单行"
+    },
+    {
+      "name": "N-R11候选原槽位保留",
+      "passed": true,
+      "detail": "ID/V/O/E逐条对应原清单行"
+    },
+    {
+      "name": "N-R12候选原槽位保留",
+      "passed": true,
+      "detail": "ID/V/O/E逐条对应原清单行"
+    },
+    {
+      "name": "N-R13候选原槽位保留",
+      "passed": true,
+      "detail": "ID/V/O/E逐条对应原清单行"
+    },
+    {
+      "name": "N-R14候选原槽位保留",
+      "passed": true,
+      "detail": "ID/V/O/E逐条对应原清单行"
+    },
+    {
+      "name": "N-R15候选原槽位保留",
+      "passed": true,
+      "detail": "ID/V/O/E逐条对应原清单行"
+    },
+    {
+      "name": "N-R16候选原槽位保留",
+      "passed": true,
+      "detail": "ID/V/O/E逐条对应原清单行"
+    },
+    {
+      "name": "N-Y01候选原槽位保留",
+      "passed": true,
+      "detail": "ID/V/O/E逐条对应原清单行"
+    },
+    {
+      "name": "N-Y02候选原槽位保留",
+      "passed": true,
+      "detail": "ID/V/O/E逐条对应原清单行"
+    },
+    {
+      "name": "N-Y03候选原槽位保留",
+      "passed": true,
+      "detail": "ID/V/O/E逐条对应原清单行"
+    },
+    {
+      "name": "N-Y04候选原槽位保留",
+      "passed": true,
+      "detail": "ID/V/O/E逐条对应原清单行"
+    },
+    {
+      "name": "N-Y05候选原槽位保留",
+      "passed": true,
+      "detail": "ID/V/O/E逐条对应原清单行"
+    },
+    {
+      "name": "N-Y06候选原槽位保留",
+      "passed": true,
+      "detail": "ID/V/O/E逐条对应原清单行"
+    },
+    {
+      "name": "N-Y07候选原槽位保留",
+      "passed": true,
+      "detail": "ID/V/O/E逐条对应原清单行"
+    },
+    {
+      "name": "N-Y08候选原槽位保留",
+      "passed": true,
+      "detail": "ID/V/O/E逐条对应原清单行"
+    },
+    {
+      "name": "N-Y09候选原槽位保留",
+      "passed": true,
+      "detail": "ID/V/O/E逐条对应原清单行"
+    },
+    {
+      "name": "N-Y10候选原槽位保留",
+      "passed": true,
+      "detail": "ID/V/O/E逐条对应原清单行"
+    },
+    {
+      "name": "N-Y11候选原槽位保留",
+      "passed": true,
+      "detail": "ID/V/O/E逐条对应原清单行"
+    },
+    {
+      "name": "N-Y12候选原槽位保留",
+      "passed": true,
+      "detail": "ID/V/O/E逐条对应原清单行"
+    },
+    {
+      "name": "N-B01候选原槽位保留",
+      "passed": true,
+      "detail": "ID/V/O/E逐条对应原清单行"
+    },
+    {
+      "name": "N-B02候选原槽位保留",
+      "passed": true,
+      "detail": "ID/V/O/E逐条对应原清单行"
+    },
+    {
+      "name": "N-B03候选原槽位保留",
+      "passed": true,
+      "detail": "ID/V/O/E逐条对应原清单行"
+    },
+    {
+      "name": "N-B04候选原槽位保留",
+      "passed": true,
+      "detail": "ID/V/O/E逐条对应原清单行"
+    },
+    {
+      "name": "N-B05候选原槽位保留",
+      "passed": true,
+      "detail": "ID/V/O/E逐条对应原清单行"
+    },
+    {
+      "name": "N-B06候选原槽位保留",
+      "passed": true,
+      "detail": "ID/V/O/E逐条对应原清单行"
+    },
+    {
+      "name": "N-B07候选原槽位保留",
+      "passed": true,
+      "detail": "ID/V/O/E逐条对应原清单行"
+    },
+    {
+      "name": "N-B08候选原槽位保留",
+      "passed": true,
+      "detail": "ID/V/O/E逐条对应原清单行"
+    },
+    {
+      "name": "N-B09候选原槽位保留",
+      "passed": true,
+      "detail": "ID/V/O/E逐条对应原清单行"
+    },
+    {
+      "name": "N-B10候选原槽位保留",
+      "passed": true,
+      "detail": "ID/V/O/E逐条对应原清单行"
+    },
+    {
+      "name": "N-B11候选原槽位保留",
+      "passed": true,
+      "detail": "ID/V/O/E逐条对应原清单行"
+    },
+    {
+      "name": "N-B12候选原槽位保留",
+      "passed": true,
+      "detail": "ID/V/O/E逐条对应原清单行"
+    },
+    {
+      "name": "N-B13候选原槽位保留",
+      "passed": true,
+      "detail": "ID/V/O/E逐条对应原清单行"
+    },
+    {
+      "name": "N-B14候选原槽位保留",
+      "passed": true,
+      "detail": "ID/V/O/E逐条对应原清单行"
+    },
+    {
+      "name": "N-B15候选原槽位保留",
+      "passed": true,
+      "detail": "ID/V/O/E逐条对应原清单行"
+    },
+    {
+      "name": "N-B16候选原槽位保留",
+      "passed": true,
+      "detail": "ID/V/O/E逐条对应原清单行"
+    },
+    {
+      "name": "N-B17候选原槽位保留",
+      "passed": true,
+      "detail": "ID/V/O/E逐条对应原清单行"
+    },
+    {
+      "name": "N-B18候选原槽位保留",
+      "passed": true,
+      "detail": "ID/V/O/E逐条对应原清单行"
+    },
+    {
+      "name": "N-N01候选原槽位保留",
+      "passed": true,
+      "detail": "ID/V/O/E逐条对应原清单行"
+    },
+    {
+      "name": "N-N02候选原槽位保留",
+      "passed": true,
+      "detail": "ID/V/O/E逐条对应原清单行"
+    },
+    {
+      "name": "N-N03候选原槽位保留",
+      "passed": true,
+      "detail": "ID/V/O/E逐条对应原清单行"
+    },
+    {
+      "name": "N-N04候选原槽位保留",
+      "passed": true,
+      "detail": "ID/V/O/E逐条对应原清单行"
+    },
+    {
+      "name": "N-N05候选原槽位保留",
+      "passed": true,
+      "detail": "ID/V/O/E逐条对应原清单行"
+    },
+    {
+      "name": "N-N06候选原槽位保留",
+      "passed": true,
+      "detail": "ID/V/O/E逐条对应原清单行"
+    },
+    {
+      "name": "N-N07候选原槽位保留",
+      "passed": true,
+      "detail": "ID/V/O/E逐条对应原清单行"
+    },
+    {
+      "name": "N-N08候选原槽位保留",
+      "passed": true,
+      "detail": "ID/V/O/E逐条对应原清单行"
+    },
+    {
+      "name": "N-N09候选原槽位保留",
+      "passed": true,
+      "detail": "ID/V/O/E逐条对应原清单行"
+    },
+    {
+      "name": "N-N10候选原槽位保留",
+      "passed": true,
+      "detail": "ID/V/O/E逐条对应原清单行"
+    },
+    {
+      "name": "N-N11候选原槽位保留",
+      "passed": true,
+      "detail": "ID/V/O/E逐条对应原清单行"
+    },
+    {
+      "name": "N-N12候选原槽位保留",
+      "passed": true,
+      "detail": "ID/V/O/E逐条对应原清单行"
+    },
+    {
+      "name": "N-N13候选原槽位保留",
+      "passed": true,
+      "detail": "ID/V/O/E逐条对应原清单行"
+    },
+    {
+      "name": "N-N14候选原槽位保留",
+      "passed": true,
+      "detail": "ID/V/O/E逐条对应原清单行"
+    },
+    {
+      "name": "N-D01候选原槽位保留",
+      "passed": true,
+      "detail": "ID/V/O/E逐条对应原清单行"
+    },
+    {
+      "name": "N-D02候选原槽位保留",
+      "passed": true,
+      "detail": "ID/V/O/E逐条对应原清单行"
+    },
+    {
+      "name": "N-D03候选原槽位保留",
+      "passed": true,
+      "detail": "ID/V/O/E逐条对应原清单行"
+    },
+    {
+      "name": "N-D04候选原槽位保留",
+      "passed": true,
+      "detail": "ID/V/O/E逐条对应原清单行"
+    },
+    {
+      "name": "N-D05候选原槽位保留",
+      "passed": true,
+      "detail": "ID/V/O/E逐条对应原清单行"
+    },
+    {
+      "name": "N-D06候选原槽位保留",
+      "passed": true,
+      "detail": "ID/V/O/E逐条对应原清单行"
+    },
+    {
+      "name": "N-D07候选原槽位保留",
+      "passed": true,
+      "detail": "ID/V/O/E逐条对应原清单行"
+    },
+    {
+      "name": "N-D08候选原槽位保留",
+      "passed": true,
+      "detail": "ID/V/O/E逐条对应原清单行"
+    },
+    {
+      "name": "N-W01候选原槽位保留",
+      "passed": true,
+      "detail": "ID/V/O/E逐条对应原清单行"
+    },
+    {
+      "name": "N-W02候选原槽位保留",
+      "passed": true,
+      "detail": "ID/V/O/E逐条对应原清单行"
+    },
+    {
+      "name": "N-W03候选原槽位保留",
+      "passed": true,
+      "detail": "ID/V/O/E逐条对应原清单行"
+    },
+    {
+      "name": "N-W04候选原槽位保留",
+      "passed": true,
+      "detail": "ID/V/O/E逐条对应原清单行"
+    },
+    {
+      "name": "N-W05候选原槽位保留",
+      "passed": true,
+      "detail": "ID/V/O/E逐条对应原清单行"
+    },
+    {
+      "name": "N-W06候选原槽位保留",
+      "passed": true,
+      "detail": "ID/V/O/E逐条对应原清单行"
+    },
+    {
+      "name": "N-W07候选原槽位保留",
+      "passed": true,
+      "detail": "ID/V/O/E逐条对应原清单行"
+    },
+    {
+      "name": "N-W08候选原槽位保留",
+      "passed": true,
+      "detail": "ID/V/O/E逐条对应原清单行"
+    },
+    {
+      "name": "N-W09候选原槽位保留",
+      "passed": true,
+      "detail": "ID/V/O/E逐条对应原清单行"
+    },
+    {
+      "name": "N-W10候选原槽位保留",
+      "passed": true,
+      "detail": "ID/V/O/E逐条对应原清单行"
+    },
+    {
+      "name": "N-W11候选原槽位保留",
+      "passed": true,
+      "detail": "ID/V/O/E逐条对应原清单行"
+    },
+    {
+      "name": "N-W12候选原槽位保留",
+      "passed": true,
+      "detail": "ID/V/O/E逐条对应原清单行"
+    },
+    {
+      "name": "N-W13候选原槽位保留",
+      "passed": true,
+      "detail": "ID/V/O/E逐条对应原清单行"
+    },
+    {
+      "name": "N-W14候选原槽位保留",
+      "passed": true,
+      "detail": "ID/V/O/E逐条对应原清单行"
+    },
+    {
+      "name": "N-W15候选原槽位保留",
+      "passed": true,
+      "detail": "ID/V/O/E逐条对应原清单行"
+    },
+    {
+      "name": "N-W16候选原槽位保留",
+      "passed": true,
+      "detail": "ID/V/O/E逐条对应原清单行"
+    },
+    {
+      "name": "N-W17候选原槽位保留",
+      "passed": true,
+      "detail": "ID/V/O/E逐条对应原清单行"
+    },
+    {
+      "name": "N-G01候选原槽位保留",
+      "passed": true,
+      "detail": "ID/V/O/E逐条对应原清单行"
+    },
+    {
+      "name": "N-G02候选原槽位保留",
+      "passed": true,
+      "detail": "ID/V/O/E逐条对应原清单行"
+    },
+    {
+      "name": "N-G03候选原槽位保留",
+      "passed": true,
+      "detail": "ID/V/O/E逐条对应原清单行"
+    },
+    {
+      "name": "N-G04候选原槽位保留",
+      "passed": true,
+      "detail": "ID/V/O/E逐条对应原清单行"
+    },
+    {
+      "name": "N-G05候选原槽位保留",
+      "passed": true,
+      "detail": "ID/V/O/E逐条对应原清单行"
+    },
+    {
+      "name": "N-G06候选原槽位保留",
+      "passed": true,
+      "detail": "ID/V/O/E逐条对应原清单行"
+    },
+    {
+      "name": "N-G07候选原槽位保留",
+      "passed": true,
+      "detail": "ID/V/O/E逐条对应原清单行"
+    },
+    {
+      "name": "N-G08候选原槽位保留",
+      "passed": true,
+      "detail": "ID/V/O/E逐条对应原清单行"
+    },
+    {
+      "name": "N-G09候选原槽位保留",
+      "passed": true,
+      "detail": "ID/V/O/E逐条对应原清单行"
+    },
+    {
+      "name": "N-G10候选原槽位保留",
+      "passed": true,
+      "detail": "ID/V/O/E逐条对应原清单行"
+    },
+    {
+      "name": "N-Q01候选原槽位保留",
+      "passed": true,
+      "detail": "ID/V/O/E逐条对应原清单行"
+    },
+    {
+      "name": "N-Q02候选原槽位保留",
+      "passed": true,
+      "detail": "ID/V/O/E逐条对应原清单行"
+    },
+    {
+      "name": "N-Q03候选原槽位保留",
+      "passed": true,
+      "detail": "ID/V/O/E逐条对应原清单行"
+    },
+    {
+      "name": "N-Q04候选原槽位保留",
+      "passed": true,
+      "detail": "ID/V/O/E逐条对应原清单行"
+    },
+    {
+      "name": "N-Q05候选原槽位保留",
+      "passed": true,
+      "detail": "ID/V/O/E逐条对应原清单行"
+    },
+    {
+      "name": "N-Q06候选原槽位保留",
+      "passed": true,
+      "detail": "ID/V/O/E逐条对应原清单行"
+    },
+    {
+      "name": "N-Q07候选原槽位保留",
+      "passed": true,
+      "detail": "ID/V/O/E逐条对应原清单行"
+    },
+    {
+      "name": "N-Q08候选原槽位保留",
+      "passed": true,
+      "detail": "ID/V/O/E逐条对应原清单行"
+    },
+    {
+      "name": "N-Q09候选原槽位保留",
+      "passed": true,
+      "detail": "ID/V/O/E逐条对应原清单行"
+    },
+    {
+      "name": "N-Q10候选原槽位保留",
+      "passed": true,
+      "detail": "ID/V/O/E逐条对应原清单行"
+    },
+    {
+      "name": "N-Q11候选原槽位保留",
+      "passed": true,
+      "detail": "ID/V/O/E逐条对应原清单行"
+    },
+    {
+      "name": "N-Q12候选原槽位保留",
+      "passed": true,
+      "detail": "ID/V/O/E逐条对应原清单行"
+    },
+    {
+      "name": "N-Q13候选原槽位保留",
+      "passed": true,
+      "detail": "ID/V/O/E逐条对应原清单行"
+    },
+    {
+      "name": "N-Q14候选原槽位保留",
+      "passed": true,
+      "detail": "ID/V/O/E逐条对应原清单行"
+    },
+    {
+      "name": "N-Q15候选原槽位保留",
+      "passed": true,
+      "detail": "ID/V/O/E逐条对应原清单行"
+    },
+    {
+      "name": "N-Q16候选原槽位保留",
+      "passed": true,
+      "detail": "ID/V/O/E逐条对应原清单行"
+    },
+    {
+      "name": "N-F01候选原槽位保留",
+      "passed": true,
+      "detail": "ID/V/O/E逐条对应原清单行"
+    },
+    {
+      "name": "N-F02候选原槽位保留",
+      "passed": true,
+      "detail": "ID/V/O/E逐条对应原清单行"
+    },
+    {
+      "name": "N-F03候选原槽位保留",
+      "passed": true,
+      "detail": "ID/V/O/E逐条对应原清单行"
+    },
+    {
+      "name": "N-F04候选原槽位保留",
+      "passed": true,
+      "detail": "ID/V/O/E逐条对应原清单行"
+    },
+    {
+      "name": "N-F05候选原槽位保留",
+      "passed": true,
+      "detail": "ID/V/O/E逐条对应原清单行"
+    },
+    {
+      "name": "N-S01候选原槽位保留",
+      "passed": true,
+      "detail": "ID/V/O/E逐条对应原清单行"
+    },
+    {
+      "name": "N-S02候选原槽位保留",
+      "passed": true,
+      "detail": "ID/V/O/E逐条对应原清单行"
+    },
+    {
+      "name": "N-S03候选原槽位保留",
+      "passed": true,
+      "detail": "ID/V/O/E逐条对应原清单行"
+    },
+    {
+      "name": "N-S04候选原槽位保留",
+      "passed": true,
+      "detail": "ID/V/O/E逐条对应原清单行"
+    },
+    {
+      "name": "N-S05候选原槽位保留",
+      "passed": true,
+      "detail": "ID/V/O/E逐条对应原清单行"
+    },
+    {
+      "name": "N-S06候选原槽位保留",
+      "passed": true,
+      "detail": "ID/V/O/E逐条对应原清单行"
+    },
+    {
+      "name": "N-S07候选原槽位保留",
+      "passed": true,
+      "detail": "ID/V/O/E逐条对应原清单行"
+    },
+    {
+      "name": "N-M01候选原槽位保留",
+      "passed": true,
+      "detail": "ID/V/O/E逐条对应原清单行"
+    },
+    {
+      "name": "N-M02候选原槽位保留",
+      "passed": true,
+      "detail": "ID/V/O/E逐条对应原清单行"
+    },
+    {
+      "name": "N-M03候选原槽位保留",
+      "passed": true,
+      "detail": "ID/V/O/E逐条对应原清单行"
+    },
+    {
+      "name": "N-M04候选原槽位保留",
+      "passed": true,
+      "detail": "ID/V/O/E逐条对应原清单行"
+    },
+    {
+      "name": "N-M05候选原槽位保留",
+      "passed": true,
+      "detail": "ID/V/O/E逐条对应原清单行"
+    },
+    {
+      "name": "N-M06候选原槽位保留",
+      "passed": true,
+      "detail": "ID/V/O/E逐条对应原清单行"
+    },
+    {
+      "name": "候选映射有效",
+      "passed": true,
+      "detail": "不将语义关联自动转为分解/时序"
+    },
+    {
+      "name": "指标分配对象一致",
+      "passed": true,
+      "detail": "IND与保留的LF目录逐项对应"
+    },
+    {
+      "name": "指标映射表一致",
+      "passed": true,
+      "detail": "映射表ID与更新名称一致"
+    },
+    {
+      "name": "逐字稿.txt来源资产校验",
+      "passed": true,
+      "detail": "随版保存供复核"
+    },
+    {
+      "name": "会议纪要.txt来源资产校验",
+      "passed": true,
+      "detail": "随版保存供复核"
+    },
+    {
+      "name": "11.3日案例—孙月芸.zip来源资产校验",
+      "passed": true,
+      "detail": "随版保存供复核"
+    },
+    {
+      "name": "难题预研会议纪要-20261110.docx来源资产校验",
+      "passed": true,
+      "detail": "随版保存供复核"
+    },
+    {
+      "name": "汽车热管理_SVOE功能清单_扩充版.md来源资产校验",
+      "passed": true,
+      "detail": "随版保存供复核"
+    },
+    {
+      "name": "修改文档内部链接",
+      "passed": true,
+      "detail": []
+    },
+    {
+      "name": "场景二供风撤销与热边界",
+      "passed": true,
+      "detail": "<35℃撤销为清单引用的参考细化，热流仅独立路径求和"
+    },
+    {
+      "name": "后风窗守卫路径",
+      "passed": true,
+      "detail": "后风窗/未知请求不会无条件进入前风窗配置"
+    }
+  ],
+  "limitations": [
+    "结构和静态语义检查不构成车辆仿真或源理工具验收",
+    "原案例和候选池所引PDF等外部原文未随附件提供，仅继承出处声明",
+    "统一动词库、required capability和未定标定项仍需业务/专家确认"
+  ]
+}

@@ -1,0 +1,32 @@
+digraph G {
+graph [rankdir=LR,bgcolor="white",pad="0.3"];
+node [shape=box,style="rounded,filled",fillcolor="#EFF5FA",fontname="Noto Sans CJK SC",fontsize=11];
+edge [fontname="Noto Sans CJK SC",fontsize=9,color="#52728C"];
+"LF-030" [label="LF-030\n记录静置预冷时长"];
+"LF-031" [label="LF-031\n控制匀速行驶工况"];
+"LF-032" [label="LF-032\n判定电池主动冷却需求"];
+"S2-F01" [label="S2-F01\n初始化驾驶循环"];
+"S2-F02" [label="S2-F02\n记录静置预冷时长"];
+"S2-F03" [label="S2-F03\n控制匀速行驶工况"];
+"S2-F04" [label="S2-F04\n处理座舱降温请求"];
+"S2-F05" [label="S2-F05\n获取电池温度"];
+"S2-F06" [label="S2-F06\n判定电池主动冷却需求"];
+"S2-F07" [label="S2-F07\n评估环境空气换热量"];
+"S2-F08" [label="S2-F08\n协调座舱与电池冷却能力"];
+"S2-F09" [label="S2-F09\n评估主动冷却执行状态"];
+"S2-F10" [label="S2-F10\n汇总空气侧换热量"];
+"S2-F01" -> "S2-F02" [label="sequence",style="solid"];
+"S2-F02" -> "S2-F03" [label="sequence",style="solid"];
+"S2-F04" -> "S2-F05" [label="parallel",style="solid"];
+"S2-F05" -> "S2-F06" [label="information_flow",style="solid"];
+"S2-F06" -> "S2-F08" [label="branch",style="solid"];
+"S2-F04" -> "S2-F08" [label="information_flow",style="solid"];
+"S2-F08" -> "S2-F09" [label="enables",style="solid"];
+"S2-F07" -> "S2-F09" [label="parallel",style="solid"];
+"S2-F07" -> "S2-F10" [label="information_flow",style="solid"];
+"S2-F09" -> "S2-F10" [label="information_flow",style="solid"];
+"S2-F10" -> "S2-F05" [label="feedback",style="solid"];
+"LF-030" -> "S2-F02" [label="alias",style="dashed"];
+"LF-031" -> "S2-F03" [label="alias",style="dashed"];
+"LF-032" -> "S2-F06" [label="alias",style="dashed"];
+}

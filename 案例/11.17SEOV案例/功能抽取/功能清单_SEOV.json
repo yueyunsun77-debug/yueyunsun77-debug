@@ -1,0 +1,4184 @@
+[
+  {
+    "function_id": "LF-001",
+    "name": "判定电加热使能条件",
+    "s": null,
+    "v": "判定",
+    "o": "电加热使能条件",
+    "e": "明确加热基础条件是否满足",
+    "action": "判定电加热使能条件",
+    "domain_action": "判定电加热使能条件",
+    "inputs": [
+      {
+        "concept": "空气输送状态",
+        "variables": []
+      },
+      {
+        "concept": "目标温度",
+        "variables": []
+      },
+      {
+        "concept": "室内温度",
+        "variables": []
+      },
+      {
+        "concept": "高压可用状态",
+        "variables": []
+      }
+    ],
+    "outputs": [
+      {
+        "concept": "电加热基础许可",
+        "variables": []
+      }
+    ],
+    "preconditions": [
+      "空气输送已开启",
+      "目标温度高于室内温度",
+      "高压可用"
+    ],
+    "required_capability": null,
+    "required_capability_status": "待业务方确认；不由action或effect臆造",
+    "parent_id": "ACT-01",
+    "hierarchy_path": [
+      "11.17SEOV案例",
+      "3.3.1.2",
+      "检查电加热使能条件",
+      "LF-001 判定电加热使能条件"
+    ],
+    "boundary": "功能层：热管理逻辑控制服务",
+    "status": "来源支持的逻辑功能；名称与接口概念为本次规范化分析",
+    "source_refs": [
+      {
+        "file": "00_修改依据/11.3日案例—孙月芸.zip",
+        "entry": "11.3日案例—孙月芸/需求活动图/3.3.1.2-需求活动图.sysml",
+        "element_path": [
+          "需求层活动",
+          "需求活动执行流程",
+          "检查电加热使能条件"
+        ],
+        "binding_status": "本次分析绑定：来源父活动名与功能分解对应，非原模型显式LF标注"
+      },
+      {
+        "file": "00_修改依据/11.3日案例—孙月芸.zip",
+        "entry": "11.3日案例—孙月芸/逻辑功能—物理组件/逻辑功能目录.xlsx",
+        "sheet": "数据",
+        "row": 2,
+        "original_function_id": "LF-001",
+        "original_name": "加热使能判断"
+      },
+      {
+        "file": "原始文件备份/3.3.1.2、3.3.1.6、3.3.1.9-指标分配表.xlsx",
+        "sheet": "指标分配表",
+        "row": 2,
+        "cell_range": "A2:E2"
+      },
+      {
+        "file": "原始文件备份/LCATC-DS-04-XX-27-B0-(CCU)Component Technical Specification.pdf",
+        "section": "6.11.1.3",
+        "pdf_pages": [
+          60
+        ]
+      },
+      {
+        "file": "原始文件备份/3.3.1.2、3.3.1.6、3.3.1.9-指标分配表.xlsx",
+        "sheet": "指标分配表",
+        "row": 3,
+        "cell_range": "A3:E3"
+      },
+      {
+        "file": "原始文件备份/LCATC-DS-04-XX-27-B0-(CCU)Component Technical Specification.pdf",
+        "section": "6.11.1.3",
+        "pdf_pages": [
+          60
+        ]
+      },
+      {
+        "file": "原始文件备份/3.3.1.2、3.3.1.6、3.3.1.9-指标分配表.xlsx",
+        "sheet": "指标分配表",
+        "row": 4,
+        "cell_range": "A4:E4"
+      },
+      {
+        "file": "原始文件备份/LCATC-DS-04-XX-27-B0-(CCU)Component Technical Specification.pdf",
+        "section": "6.11.1.3",
+        "pdf_pages": [
+          60
+        ]
+      }
+    ],
+    "root_id": "3.3.1.2",
+    "canonical_function_id": "LF-001",
+    "record_role": "功能定义",
+    "source_model_path": [
+      "需求活动图/3.3.1.2-需求活动图.sysml",
+      "需求层活动",
+      "需求活动执行流程",
+      "检查电加热使能条件"
+    ]
+  },
+  {
+    "function_id": "LF-002",
+    "name": "判定整车故障下的加热许可",
+    "s": null,
+    "v": "判定",
+    "o": "整车故障下的加热许可",
+    "e": "阻止故障条件下的不允许加热",
+    "action": "判定整车故障下的加热许可",
+    "domain_action": "判定整车故障下的加热许可",
+    "inputs": [
+      {
+        "concept": "整车故障状态",
+        "variables": []
+      }
+    ],
+    "outputs": [
+      {
+        "concept": "故障约束下的加热许可",
+        "variables": []
+      }
+    ],
+    "preconditions": [
+      "整车无故障"
+    ],
+    "required_capability": null,
+    "required_capability_status": "待业务方确认；不由action或effect臆造",
+    "parent_id": "ACT-01",
+    "hierarchy_path": [
+      "11.17SEOV案例",
+      "3.3.1.2",
+      "检查电加热使能条件",
+      "LF-002 判定整车故障下的加热许可"
+    ],
+    "boundary": "功能层：热管理逻辑控制服务",
+    "status": "来源支持的逻辑功能；名称与接口概念为本次规范化分析",
+    "source_refs": [
+      {
+        "file": "00_修改依据/11.3日案例—孙月芸.zip",
+        "entry": "11.3日案例—孙月芸/需求活动图/3.3.1.2-需求活动图.sysml",
+        "element_path": [
+          "需求层活动",
+          "需求活动执行流程",
+          "检查电加热使能条件"
+        ],
+        "binding_status": "本次分析绑定：来源父活动名与功能分解对应，非原模型显式LF标注"
+      },
+      {
+        "file": "00_修改依据/11.3日案例—孙月芸.zip",
+        "entry": "11.3日案例—孙月芸/逻辑功能—物理组件/逻辑功能目录.xlsx",
+        "sheet": "数据",
+        "row": 3,
+        "original_function_id": "LF-002",
+        "original_name": "故障状态与加热许可判断"
+      },
+      {
+        "file": "原始文件备份/3.3.1.2、3.3.1.6、3.3.1.9-指标分配表.xlsx",
+        "sheet": "指标分配表",
+        "row": 5,
+        "cell_range": "A5:E5"
+      },
+      {
+        "file": "原始文件备份/LCATC-DS-04-XX-27-B0-(CCU)Component Technical Specification.pdf",
+        "section": "6.11.1.3",
+        "pdf_pages": [
+          60
+        ]
+      }
+    ],
+    "root_id": "3.3.1.2",
+    "canonical_function_id": "LF-002",
+    "record_role": "功能定义",
+    "source_model_path": [
+      "需求活动图/3.3.1.2-需求活动图.sysml",
+      "需求层活动",
+      "需求活动执行流程",
+      "检查电加热使能条件"
+    ]
+  },
+  {
+    "function_id": "LF-003",
+    "name": "判定电量约束下的加热许可",
+    "s": null,
+    "v": "判定",
+    "o": "电量约束下的加热许可",
+    "e": "落实SOC大于10%的使能条件",
+    "action": "判定电量约束下的加热许可",
+    "domain_action": "判定电量约束下的加热许可",
+    "inputs": [
+      {
+        "concept": "动力电池荷电状态",
+        "variables": []
+      }
+    ],
+    "outputs": [
+      {
+        "concept": "电量约束下的加热许可",
+        "variables": []
+      }
+    ],
+    "preconditions": [
+      "SOC > 10%"
+    ],
+    "required_capability": null,
+    "required_capability_status": "待业务方确认；不由action或effect臆造",
+    "parent_id": "ACT-01",
+    "hierarchy_path": [
+      "11.17SEOV案例",
+      "3.3.1.2",
+      "检查电加热使能条件",
+      "LF-003 判定电量约束下的加热许可"
+    ],
+    "boundary": "功能层：热管理逻辑控制服务",
+    "status": "来源支持的逻辑功能；名称与接口概念为本次规范化分析",
+    "source_refs": [
+      {
+        "file": "00_修改依据/11.3日案例—孙月芸.zip",
+        "entry": "11.3日案例—孙月芸/需求活动图/3.3.1.2-需求活动图.sysml",
+        "element_path": [
+          "需求层活动",
+          "需求活动执行流程",
+          "检查电加热使能条件"
+        ],
+        "binding_status": "本次分析绑定：来源父活动名与功能分解对应，非原模型显式LF标注"
+      },
+      {
+        "file": "00_修改依据/11.3日案例—孙月芸.zip",
+        "entry": "11.3日案例—孙月芸/逻辑功能—物理组件/逻辑功能目录.xlsx",
+        "sheet": "数据",
+        "row": 4,
+        "original_function_id": "LF-003",
+        "original_name": "电量与加热许可判断"
+      },
+      {
+        "file": "原始文件备份/3.3.1.2、3.3.1.6、3.3.1.9-指标分配表.xlsx",
+        "sheet": "指标分配表",
+        "row": 6,
+        "cell_range": "A6:E6"
+      },
+      {
+        "file": "原始文件备份/LCATC-DS-04-XX-27-B0-(CCU)Component Technical Specification.pdf",
+        "section": "6.11.1.3",
+        "pdf_pages": [
+          60
+        ]
+      }
+    ],
+    "root_id": "3.3.1.2",
+    "canonical_function_id": "LF-003",
+    "record_role": "功能定义",
+    "source_model_path": [
+      "需求活动图/3.3.1.2-需求活动图.sysml",
+      "需求层活动",
+      "需求活动执行流程",
+      "检查电加热使能条件"
+    ]
+  },
+  {
+    "function_id": "LF-004",
+    "name": "控制电加热通断",
+    "s": null,
+    "v": "控制",
+    "o": "电加热通断",
+    "e": "按许可及保护状态执行加热请求",
+    "action": "控制电加热通断",
+    "domain_action": "控制电加热通断",
+    "inputs": [
+      {
+        "concept": "制热请求",
+        "variables": []
+      },
+      {
+        "concept": "各项加热许可",
+        "variables": []
+      },
+      {
+        "concept": "过温保护状态",
+        "variables": []
+      },
+      {
+        "concept": "恢复许可",
+        "variables": []
+      }
+    ],
+    "outputs": [
+      {
+        "concept": "电加热通断请求",
+        "variables": []
+      }
+    ],
+    "preconditions": [
+      "全部使能许可满足",
+      "未触发过温切断；恢复时需重新满足其他使能条件"
+    ],
+    "required_capability": null,
+    "required_capability_status": "待业务方确认；不由action或effect臆造",
+    "parent_id": "ACT-02",
+    "hierarchy_path": [
+      "11.17SEOV案例",
+      "3.3.1.2",
+      "控制电加热通断",
+      "LF-004 控制电加热通断"
+    ],
+    "boundary": "功能层：热管理逻辑控制服务",
+    "status": "来源支持的逻辑功能；名称与接口概念为本次规范化分析",
+    "source_refs": [
+      {
+        "file": "00_修改依据/11.3日案例—孙月芸.zip",
+        "entry": "11.3日案例—孙月芸/需求活动图/3.3.1.2-需求活动图.sysml",
+        "element_path": [
+          "需求层活动",
+          "需求活动执行流程",
+          "根据使能条件控制电加热通断"
+        ],
+        "binding_status": "本次分析绑定：来源父活动名与功能分解对应，非原模型显式LF标注"
+      },
+      {
+        "file": "00_修改依据/11.3日案例—孙月芸.zip",
+        "entry": "11.3日案例—孙月芸/逻辑功能—物理组件/逻辑功能目录.xlsx",
+        "sheet": "数据",
+        "row": 5,
+        "original_function_id": "LF-004",
+        "original_name": "电加热通断控制"
+      },
+      {
+        "file": "原始文件备份/3.3.1.2、3.3.1.6、3.3.1.9-指标分配表.xlsx",
+        "sheet": "指标分配表",
+        "row": 7,
+        "cell_range": "A7:E7"
+      },
+      {
+        "file": "原始文件备份/LCATC-DS-04-XX-27-B0-(CCU)Component Technical Specification.pdf",
+        "section": "6.11.1.3",
+        "pdf_pages": [
+          60
+        ]
+      },
+      {
+        "file": "原始文件备份/3.3.1.2、3.3.1.6、3.3.1.9-指标分配表.xlsx",
+        "sheet": "指标分配表",
+        "row": 11,
+        "cell_range": "A11:E11"
+      }
+    ],
+    "root_id": "3.3.1.2",
+    "canonical_function_id": "LF-004",
+    "record_role": "功能定义",
+    "source_model_path": [
+      "需求活动图/3.3.1.2-需求活动图.sysml",
+      "需求层活动",
+      "需求活动执行流程",
+      "控制电加热通断"
+    ]
+  },
+  {
+    "function_id": "LF-005",
+    "name": "切断过温电加热请求",
+    "s": null,
+    "v": "切断",
+    "o": "过温电加热请求",
+    "e": "达到待标定上限时停止电加热",
+    "action": "切断过温电加热请求",
+    "domain_action": "切断过温电加热请求",
+    "inputs": [
+      {
+        "concept": "电加热温度",
+        "variables": []
+      },
+      {
+        "concept": "过温上限",
+        "variables": []
+      }
+    ],
+    "outputs": [
+      {
+        "concept": "过温停热请求",
+        "variables": []
+      }
+    ],
+    "preconditions": [
+      "电加热温度 >= XXX℃；阈值待标定"
+    ],
+    "required_capability": null,
+    "required_capability_status": "待业务方确认；不由action或effect臆造",
+    "parent_id": "ACT-03",
+    "hierarchy_path": [
+      "11.17SEOV案例",
+      "3.3.1.2",
+      "保护电加热运行",
+      "LF-005 切断过温电加热请求"
+    ],
+    "boundary": "功能层：热管理逻辑控制服务",
+    "status": "来源支持的逻辑功能；名称与接口概念为本次规范化分析",
+    "source_refs": [
+      {
+        "file": "00_修改依据/11.3日案例—孙月芸.zip",
+        "entry": "11.3日案例—孙月芸/需求活动图/3.3.1.2-需求活动图.sysml",
+        "element_path": [
+          "需求层活动",
+          "需求活动执行流程",
+          "监测电加热温度并执行过温保护"
+        ],
+        "binding_status": "本次分析绑定：来源父活动名与功能分解对应，非原模型显式LF标注"
+      },
+      {
+        "file": "00_修改依据/11.3日案例—孙月芸.zip",
+        "entry": "11.3日案例—孙月芸/逻辑功能—物理组件/逻辑功能目录.xlsx",
+        "sheet": "数据",
+        "row": 6,
+        "original_function_id": "LF-005",
+        "original_name": "电加热过温保护"
+      },
+      {
+        "file": "原始文件备份/3.3.1.2、3.3.1.6、3.3.1.9-指标分配表.xlsx",
+        "sheet": "指标分配表",
+        "row": 8,
+        "cell_range": "A8:E8"
+      },
+      {
+        "file": "原始文件备份/LCATC-DS-04-XX-27-B0-(CCU)Component Technical Specification.pdf",
+        "section": "6.11.1.3",
+        "pdf_pages": [
+          60
+        ]
+      }
+    ],
+    "root_id": "3.3.1.2",
+    "canonical_function_id": "LF-005",
+    "record_role": "功能定义",
+    "source_model_path": [
+      "需求活动图/3.3.1.2-需求活动图.sysml",
+      "需求层活动",
+      "需求活动执行流程",
+      "保护电加热运行"
+    ]
+  },
+  {
+    "function_id": "LF-006",
+    "name": "判定电加热恢复许可",
+    "s": null,
+    "v": "判定",
+    "o": "电加热恢复许可",
+    "e": "降至待标定恢复阈值后允许重新评估加热",
+    "action": "判定电加热恢复许可",
+    "domain_action": "判定电加热恢复许可",
+    "inputs": [
+      {
+        "concept": "电加热温度",
+        "variables": []
+      },
+      {
+        "concept": "恢复阈值",
+        "variables": []
+      },
+      {
+        "concept": "其他使能条件",
+        "variables": []
+      }
+    ],
+    "outputs": [
+      {
+        "concept": "恢复加热许可",
+        "variables": []
+      }
+    ],
+    "preconditions": [
+      "电加热温度 <= XXX℃；阈值待标定"
+    ],
+    "required_capability": null,
+    "required_capability_status": "待业务方确认；不由action或effect臆造",
+    "parent_id": "ACT-03",
+    "hierarchy_path": [
+      "11.17SEOV案例",
+      "3.3.1.2",
+      "保护电加热运行",
+      "LF-006 判定电加热恢复许可"
+    ],
+    "boundary": "功能层：热管理逻辑控制服务",
+    "status": "来源支持的逻辑功能；名称与接口概念为本次规范化分析",
+    "source_refs": [
+      {
+        "file": "00_修改依据/11.3日案例—孙月芸.zip",
+        "entry": "11.3日案例—孙月芸/需求活动图/3.3.1.2-需求活动图.sysml",
+        "element_path": [
+          "需求层活动",
+          "需求活动执行流程",
+          "监测电加热温度并执行过温保护"
+        ],
+        "binding_status": "本次分析绑定：来源父活动名与功能分解对应，非原模型显式LF标注"
+      },
+      {
+        "file": "00_修改依据/11.3日案例—孙月芸.zip",
+        "entry": "11.3日案例—孙月芸/逻辑功能—物理组件/逻辑功能目录.xlsx",
+        "sheet": "数据",
+        "row": 7,
+        "original_function_id": "LF-006",
+        "original_name": "电加热恢复许可控制"
+      },
+      {
+        "file": "原始文件备份/3.3.1.2、3.3.1.6、3.3.1.9-指标分配表.xlsx",
+        "sheet": "指标分配表",
+        "row": 9,
+        "cell_range": "A9:E9"
+      },
+      {
+        "file": "原始文件备份/LCATC-DS-04-XX-27-B0-(CCU)Component Technical Specification.pdf",
+        "section": "6.11.1.3",
+        "pdf_pages": [
+          60
+        ]
+      }
+    ],
+    "root_id": "3.3.1.2",
+    "canonical_function_id": "LF-006",
+    "record_role": "功能定义",
+    "source_model_path": [
+      "需求活动图/3.3.1.2-需求活动图.sysml",
+      "需求层活动",
+      "需求活动执行流程",
+      "保护电加热运行"
+    ]
+  },
+  {
+    "function_id": "LF-007",
+    "name": "反馈电加热状态",
+    "s": null,
+    "v": "反馈",
+    "o": "电加热状态",
+    "e": "向外部接口提供加热状态及功率",
+    "action": "反馈电加热状态",
+    "domain_action": "反馈电加热状态",
+    "inputs": [
+      {
+        "concept": "电加热通断状态",
+        "variables": []
+      },
+      {
+        "concept": "电加热温度",
+        "variables": []
+      },
+      {
+        "concept": "工作状态",
+        "variables": []
+      },
+      {
+        "concept": "实际功率",
+        "variables": []
+      },
+      {
+        "concept": "最大功率",
+        "variables": []
+      }
+    ],
+    "outputs": [
+      {
+        "concept": "电加热状态信息",
+        "variables": []
+      }
+    ],
+    "preconditions": [],
+    "required_capability": null,
+    "required_capability_status": "待业务方确认；不由action或effect臆造",
+    "parent_id": "ACT-04",
+    "hierarchy_path": [
+      "11.17SEOV案例",
+      "3.3.1.2",
+      "反馈电加热运行信息",
+      "LF-007 反馈电加热状态"
+    ],
+    "boundary": "功能层：热管理逻辑控制服务",
+    "status": "来源支持的逻辑功能；名称与接口概念为本次规范化分析",
+    "source_refs": [
+      {
+        "file": "00_修改依据/11.3日案例—孙月芸.zip",
+        "entry": "11.3日案例—孙月芸/需求活动图/3.3.1.2-需求活动图.sysml",
+        "element_path": [
+          "需求层活动",
+          "需求活动执行流程",
+          "反馈电加热状态与功率信息"
+        ],
+        "binding_status": "本次分析绑定：来源父活动名与功能分解对应，非原模型显式LF标注"
+      },
+      {
+        "file": "00_修改依据/11.3日案例—孙月芸.zip",
+        "entry": "11.3日案例—孙月芸/逻辑功能—物理组件/逻辑功能目录.xlsx",
+        "sheet": "数据",
+        "row": 8,
+        "original_function_id": "LF-007",
+        "original_name": "加热状态反馈"
+      },
+      {
+        "file": "原始文件备份/3.3.1.2、3.3.1.6、3.3.1.9-指标分配表.xlsx",
+        "sheet": "指标分配表",
+        "row": 10,
+        "cell_range": "A10:E10"
+      },
+      {
+        "file": "原始文件备份/LCATC-DS-04-XX-27-B0-(CCU)Component Technical Specification.pdf",
+        "section": "6.11.1.3",
+        "pdf_pages": [
+          60
+        ]
+      }
+    ],
+    "root_id": "3.3.1.2",
+    "canonical_function_id": "LF-007",
+    "record_role": "功能定义",
+    "source_model_path": [
+      "需求活动图/3.3.1.2-需求活动图.sysml",
+      "需求层活动",
+      "需求活动执行流程",
+      "反馈电加热运行信息"
+    ]
+  },
+  {
+    "function_id": "LF-008",
+    "name": "判定目标温度边界",
+    "s": null,
+    "v": "判定",
+    "o": "目标温度边界",
+    "e": "保留小于16℃为LO及大于30℃为HI的边界",
+    "action": "判定目标温度边界",
+    "domain_action": "判定目标温度边界",
+    "inputs": [
+      {
+        "concept": "用户设定温度",
+        "variables": []
+      }
+    ],
+    "outputs": [
+      {
+        "concept": "目标温度边界状态",
+        "variables": []
+      }
+    ],
+    "preconditions": [],
+    "required_capability": null,
+    "required_capability_status": "待业务方确认；不由action或effect臆造",
+    "parent_id": "ACT-05",
+    "hierarchy_path": [
+      "11.17SEOV案例",
+      "3.3.1.6",
+      "处理用户模式操作",
+      "LF-008 判定目标温度边界"
+    ],
+    "boundary": "功能层：热管理逻辑控制服务",
+    "status": "来源支持的逻辑功能；名称与接口概念为本次规范化分析",
+    "source_refs": [
+      {
+        "file": "00_修改依据/11.3日案例—孙月芸.zip",
+        "entry": "11.3日案例—孙月芸/需求活动图/3.3.1.6-需求活动图.sysml",
+        "element_path": [
+          "需求层活动",
+          "需求活动执行流程",
+          "处理用户操作与模式切换"
+        ],
+        "binding_status": "本次分析绑定：来源父活动名与功能分解对应，非原模型显式LF标注"
+      },
+      {
+        "file": "00_修改依据/11.3日案例—孙月芸.zip",
+        "entry": "11.3日案例—孙月芸/逻辑功能—物理组件/逻辑功能目录.xlsx",
+        "sheet": "数据",
+        "row": 9,
+        "original_function_id": "LF-008",
+        "original_name": "目标温度边界判定"
+      },
+      {
+        "file": "原始文件备份/3.3.1.2、3.3.1.6、3.3.1.9-指标分配表.xlsx",
+        "sheet": "指标分配表",
+        "row": 12,
+        "cell_range": "A12:E12"
+      },
+      {
+        "file": "原始文件备份/LCATC-DS-04-XX-27-B0-(CCU)Component Technical Specification.pdf",
+        "section": "6.13.1.3–6.13.1.4",
+        "pdf_pages": [
+          67,
+          68
+        ]
+      },
+      {
+        "file": "原始文件备份/3.3.1.2、3.3.1.6、3.3.1.9-指标分配表.xlsx",
+        "sheet": "指标分配表",
+        "row": 13,
+        "cell_range": "A13:E13"
+      },
+      {
+        "file": "原始文件备份/LCATC-DS-04-XX-27-B0-(CCU)Component Technical Specification.pdf",
+        "section": "6.13.1.3–6.13.1.4",
+        "pdf_pages": [
+          67,
+          68
+        ]
+      }
+    ],
+    "root_id": "3.3.1.6",
+    "canonical_function_id": "LF-008",
+    "record_role": "功能定义",
+    "source_model_path": [
+      "需求活动图/3.3.1.6-需求活动图.sysml",
+      "需求层活动",
+      "需求活动执行流程",
+      "处理用户模式操作"
+    ]
+  },
+  {
+    "function_id": "LF-009",
+    "name": "更新座舱目标温度",
+    "s": null,
+    "v": "更新",
+    "o": "座舱目标温度",
+    "e": "按原0.5℃步长更新温度设定",
+    "action": "更新座舱目标温度",
+    "domain_action": "更新座舱目标温度",
+    "inputs": [
+      {
+        "concept": "温度调节操作",
+        "variables": []
+      },
+      {
+        "concept": "当前目标温度",
+        "variables": []
+      }
+    ],
+    "outputs": [
+      {
+        "concept": "更新后的座舱目标温度",
+        "variables": []
+      }
+    ],
+    "preconditions": [],
+    "required_capability": null,
+    "required_capability_status": "待业务方确认；不由action或effect臆造",
+    "parent_id": "ACT-05",
+    "hierarchy_path": [
+      "11.17SEOV案例",
+      "3.3.1.6",
+      "处理用户模式操作",
+      "LF-009 更新座舱目标温度"
+    ],
+    "boundary": "功能层：热管理逻辑控制服务",
+    "status": "来源支持的逻辑功能；名称与接口概念为本次规范化分析",
+    "source_refs": [
+      {
+        "file": "00_修改依据/11.3日案例—孙月芸.zip",
+        "entry": "11.3日案例—孙月芸/需求活动图/3.3.1.6-需求活动图.sysml",
+        "element_path": [
+          "需求层活动",
+          "需求活动执行流程",
+          "处理用户操作与模式切换"
+        ],
+        "binding_status": "本次分析绑定：来源父活动名与功能分解对应，非原模型显式LF标注"
+      },
+      {
+        "file": "00_修改依据/11.3日案例—孙月芸.zip",
+        "entry": "11.3日案例—孙月芸/逻辑功能—物理组件/逻辑功能目录.xlsx",
+        "sheet": "数据",
+        "row": 10,
+        "original_function_id": "LF-009",
+        "original_name": "目标温度更新"
+      },
+      {
+        "file": "原始文件备份/3.3.1.2、3.3.1.6、3.3.1.9-指标分配表.xlsx",
+        "sheet": "指标分配表",
+        "row": 14,
+        "cell_range": "A14:E14"
+      },
+      {
+        "file": "原始文件备份/LCATC-DS-04-XX-27-B0-(CCU)Component Technical Specification.pdf",
+        "section": "6.13.1.3–6.13.1.4",
+        "pdf_pages": [
+          67,
+          68
+        ]
+      }
+    ],
+    "root_id": "3.3.1.6",
+    "canonical_function_id": "LF-009",
+    "record_role": "功能定义",
+    "source_model_path": [
+      "需求活动图/3.3.1.6-需求活动图.sysml",
+      "需求层活动",
+      "需求活动执行流程",
+      "处理用户模式操作"
+    ]
+  },
+  {
+    "function_id": "LF-010",
+    "name": "获取温度与环境信息",
+    "s": null,
+    "v": "获取",
+    "o": "温度与环境信息",
+    "e": "提供自动温控输入",
+    "action": "获取温度与环境信息",
+    "domain_action": "获取温度与环境信息",
+    "inputs": [
+      {
+        "concept": "室内温度信息",
+        "variables": []
+      },
+      {
+        "concept": "室外温度信息",
+        "variables": []
+      },
+      {
+        "concept": "日照负荷信息",
+        "variables": []
+      },
+      {
+        "concept": "供热入口温度信息",
+        "variables": []
+      }
+    ],
+    "outputs": [
+      {
+        "concept": "温控所需温度与环境信息",
+        "variables": []
+      }
+    ],
+    "preconditions": [],
+    "required_capability": null,
+    "required_capability_status": "待业务方确认；不由action或effect臆造",
+    "parent_id": "ACT-06",
+    "hierarchy_path": [
+      "11.17SEOV案例",
+      "3.3.1.6",
+      "获取温度与环境信息",
+      "LF-010 获取温度与环境信息"
+    ],
+    "boundary": "功能层：热管理逻辑控制服务",
+    "status": "来源支持的逻辑功能；名称与接口概念为本次规范化分析",
+    "source_refs": [
+      {
+        "file": "00_修改依据/11.3日案例—孙月芸.zip",
+        "entry": "11.3日案例—孙月芸/需求活动图/3.3.1.6-需求活动图.sysml",
+        "element_path": [
+          "需求层活动",
+          "需求活动执行流程",
+          "采集环境与温度信号"
+        ],
+        "binding_status": "本次分析绑定：来源父活动名与功能分解对应，非原模型显式LF标注"
+      },
+      {
+        "file": "00_修改依据/11.3日案例—孙月芸.zip",
+        "entry": "11.3日案例—孙月芸/逻辑功能—物理组件/逻辑功能目录.xlsx",
+        "sheet": "数据",
+        "row": 11,
+        "original_function_id": "LF-010",
+        "original_name": "温度与环境信息采集"
+      },
+      {
+        "file": "原始文件备份/3.3.1.2、3.3.1.6、3.3.1.9-指标分配表.xlsx",
+        "sheet": "指标分配表",
+        "row": 15,
+        "cell_range": "A15:E15"
+      },
+      {
+        "file": "原始文件备份/LCATC-DS-04-XX-27-B0-(CCU)Component Technical Specification.pdf",
+        "section": "6.13.1.3–6.13.1.4",
+        "pdf_pages": [
+          67,
+          68
+        ]
+      },
+      {
+        "file": "原始文件备份/LCATC-DS-04-29-XX-B0-SL29_热管理子系统功能规范.pdf",
+        "section": "4.6.3.4",
+        "pdf_pages": [
+          30
+        ]
+      }
+    ],
+    "root_id": "3.3.1.6",
+    "canonical_function_id": "LF-010",
+    "record_role": "功能定义",
+    "source_model_path": [
+      "需求活动图/3.3.1.6-需求活动图.sysml",
+      "需求层活动",
+      "需求活动执行流程",
+      "获取温度与环境信息"
+    ]
+  },
+  {
+    "function_id": "LF-011",
+    "name": "协调自动温控请求",
+    "s": null,
+    "v": "协调",
+    "o": "自动温控请求",
+    "e": "协调来源规定的自动调节对象",
+    "action": "协调自动温控请求",
+    "domain_action": "协调自动温控请求",
+    "inputs": [
+      {
+        "concept": "自动模式状态",
+        "variables": []
+      },
+      {
+        "concept": "目标温度",
+        "variables": []
+      },
+      {
+        "concept": "温度与环境信息",
+        "variables": []
+      },
+      {
+        "concept": "可用调节能力",
+        "variables": []
+      }
+    ],
+    "outputs": [
+      {
+        "concept": "送风量请求",
+        "variables": []
+      },
+      {
+        "concept": "送风温度请求",
+        "variables": []
+      },
+      {
+        "concept": "送风模式请求",
+        "variables": []
+      },
+      {
+        "concept": "循环请求",
+        "variables": []
+      },
+      {
+        "concept": "制冷能力请求",
+        "variables": []
+      },
+      {
+        "concept": "电加热功率请求",
+        "variables": []
+      }
+    ],
+    "preconditions": [],
+    "required_capability": null,
+    "required_capability_status": "待业务方确认；不由action或effect臆造",
+    "parent_id": "ACT-07",
+    "hierarchy_path": [
+      "11.17SEOV案例",
+      "3.3.1.6",
+      "协调自动温控请求",
+      "LF-011 协调自动温控请求"
+    ],
+    "boundary": "功能层：热管理逻辑控制服务",
+    "status": "来源支持的逻辑功能；名称与接口概念为本次规范化分析",
+    "source_refs": [
+      {
+        "file": "00_修改依据/11.3日案例—孙月芸.zip",
+        "entry": "11.3日案例—孙月芸/需求活动图/3.3.1.6-需求活动图.sysml",
+        "element_path": [
+          "需求层活动",
+          "需求活动执行流程",
+          "协调热量与空气调节服务"
+        ],
+        "binding_status": "本次分析绑定：来源父活动名与功能分解对应，非原模型显式LF标注"
+      },
+      {
+        "file": "00_修改依据/11.3日案例—孙月芸.zip",
+        "entry": "11.3日案例—孙月芸/逻辑功能—物理组件/逻辑功能目录.xlsx",
+        "sheet": "数据",
+        "row": 12,
+        "original_function_id": "LF-011",
+        "original_name": "自动温控协调"
+      },
+      {
+        "file": "原始文件备份/3.3.1.2、3.3.1.6、3.3.1.9-指标分配表.xlsx",
+        "sheet": "指标分配表",
+        "row": 16,
+        "cell_range": "A16:E16"
+      },
+      {
+        "file": "原始文件备份/LCATC-DS-04-XX-27-B0-(CCU)Component Technical Specification.pdf",
+        "section": "6.13.1.3–6.13.1.4",
+        "pdf_pages": [
+          67,
+          68
+        ]
+      }
+    ],
+    "root_id": "3.3.1.6",
+    "canonical_function_id": "LF-011",
+    "record_role": "功能定义",
+    "source_model_path": [
+      "需求活动图/3.3.1.6-需求活动图.sysml",
+      "需求层活动",
+      "需求活动执行流程",
+      "协调自动温控请求"
+    ]
+  },
+  {
+    "function_id": "LF-012",
+    "name": "反馈自动模式状态",
+    "s": null,
+    "v": "反馈",
+    "o": "自动模式状态",
+    "e": "供IVI显示自动模式状态",
+    "action": "反馈自动模式状态",
+    "domain_action": "反馈自动模式状态",
+    "inputs": [
+      {
+        "concept": "当前自动模式状态",
+        "variables": []
+      }
+    ],
+    "outputs": [
+      {
+        "concept": "自动模式状态信息",
+        "variables": []
+      }
+    ],
+    "preconditions": [],
+    "required_capability": null,
+    "required_capability_status": "待业务方确认；不由action或effect臆造",
+    "parent_id": "ACT-08",
+    "hierarchy_path": [
+      "11.17SEOV案例",
+      "3.3.1.6",
+      "处理AUTO模式请求",
+      "LF-012 反馈自动模式状态"
+    ],
+    "boundary": "功能层：热管理逻辑控制服务",
+    "status": "来源支持的逻辑功能；名称与接口概念为本次规范化分析",
+    "source_refs": [
+      {
+        "file": "00_修改依据/11.3日案例—孙月芸.zip",
+        "entry": "11.3日案例—孙月芸/需求活动图/3.3.1.6-需求活动图.sysml",
+        "element_path": [
+          "需求层活动",
+          "需求活动执行流程",
+          "处理请求并反馈AUTO状态"
+        ],
+        "binding_status": "本次分析绑定：来源父活动名与功能分解对应，非原模型显式LF标注"
+      },
+      {
+        "file": "00_修改依据/11.3日案例—孙月芸.zip",
+        "entry": "11.3日案例—孙月芸/逻辑功能—物理组件/逻辑功能目录.xlsx",
+        "sheet": "数据",
+        "row": 13,
+        "original_function_id": "LF-012",
+        "original_name": "自动模式状态反馈"
+      },
+      {
+        "file": "原始文件备份/3.3.1.2、3.3.1.6、3.3.1.9-指标分配表.xlsx",
+        "sheet": "指标分配表",
+        "row": 17,
+        "cell_range": "A17:E17"
+      },
+      {
+        "file": "原始文件备份/LCATC-DS-04-XX-27-B0-(CCU)Component Technical Specification.pdf",
+        "section": "6.13.1.3–6.13.1.4",
+        "pdf_pages": [
+          67,
+          68
+        ]
+      }
+    ],
+    "root_id": "3.3.1.6",
+    "canonical_function_id": "LF-012",
+    "record_role": "功能定义",
+    "source_model_path": [
+      "需求活动图/3.3.1.6-需求活动图.sysml",
+      "需求层活动",
+      "需求活动执行流程",
+      "处理AUTO模式请求"
+    ]
+  },
+  {
+    "function_id": "LF-013",
+    "name": "反馈空调运行状态",
+    "s": null,
+    "v": "反馈",
+    "o": "空调运行状态",
+    "e": "供用户识别空调运行状态",
+    "action": "反馈空调运行状态",
+    "domain_action": "反馈空调运行状态",
+    "inputs": [
+      {
+        "concept": "风量状态",
+        "variables": []
+      },
+      {
+        "concept": "温度状态",
+        "variables": []
+      },
+      {
+        "concept": "制冷状态",
+        "variables": []
+      },
+      {
+        "concept": "循环状态",
+        "variables": []
+      },
+      {
+        "concept": "送风模式状态",
+        "variables": []
+      },
+      {
+        "concept": "自动模式状态",
+        "variables": []
+      }
+    ],
+    "outputs": [
+      {
+        "concept": "空调运行状态信息",
+        "variables": []
+      }
+    ],
+    "preconditions": [],
+    "required_capability": null,
+    "required_capability_status": "待业务方确认；不由action或effect臆造",
+    "parent_id": "ACT-09",
+    "hierarchy_path": [
+      "11.17SEOV案例",
+      "3.3.1.6",
+      "更新自动温控运行信息",
+      "LF-013 反馈空调运行状态"
+    ],
+    "boundary": "功能层：热管理逻辑控制服务",
+    "status": "来源支持的逻辑功能；名称与接口概念为本次规范化分析",
+    "source_refs": [
+      {
+        "file": "00_修改依据/11.3日案例—孙月芸.zip",
+        "entry": "11.3日案例—孙月芸/需求活动图/3.3.1.6-需求活动图.sysml",
+        "element_path": [
+          "需求层活动",
+          "需求活动执行流程",
+          "更新控制输出并持续反馈状态"
+        ],
+        "binding_status": "本次分析绑定：来源父活动名与功能分解对应，非原模型显式LF标注"
+      },
+      {
+        "file": "00_修改依据/11.3日案例—孙月芸.zip",
+        "entry": "11.3日案例—孙月芸/逻辑功能—物理组件/逻辑功能目录.xlsx",
+        "sheet": "数据",
+        "row": 14,
+        "original_function_id": "LF-013",
+        "original_name": "空调状态反馈"
+      },
+      {
+        "file": "原始文件备份/3.3.1.2、3.3.1.6、3.3.1.9-指标分配表.xlsx",
+        "sheet": "指标分配表",
+        "row": 18,
+        "cell_range": "A18:E18"
+      },
+      {
+        "file": "原始文件备份/LCATC-DS-04-XX-27-B0-(CCU)Component Technical Specification.pdf",
+        "section": "6.13.1.3–6.13.1.4",
+        "pdf_pages": [
+          67,
+          68
+        ]
+      }
+    ],
+    "root_id": "3.3.1.6",
+    "canonical_function_id": "LF-013",
+    "record_role": "功能定义",
+    "source_model_path": [
+      "需求活动图/3.3.1.6-需求活动图.sysml",
+      "需求层活动",
+      "需求活动执行流程",
+      "更新自动温控运行信息"
+    ]
+  },
+  {
+    "function_id": "LF-014",
+    "name": "切换自动模式状态",
+    "s": null,
+    "v": "切换",
+    "o": "自动模式状态",
+    "e": "执行不同按键的保持或切换规则",
+    "action": "切换自动模式状态",
+    "domain_action": "切换自动模式状态",
+    "inputs": [
+      {
+        "concept": "当前模式",
+        "variables": []
+      },
+      {
+        "concept": "用户温度、循环、风量、模式或前除霜操作",
+        "variables": []
+      }
+    ],
+    "outputs": [
+      {
+        "concept": "更新后的模式状态",
+        "variables": []
+      }
+    ],
+    "preconditions": [],
+    "required_capability": null,
+    "required_capability_status": "待业务方确认；不由action或effect臆造",
+    "parent_id": "ACT-05",
+    "hierarchy_path": [
+      "11.17SEOV案例",
+      "3.3.1.6",
+      "处理用户模式操作",
+      "LF-014 切换自动模式状态"
+    ],
+    "boundary": "功能层：热管理逻辑控制服务",
+    "status": "来源支持的逻辑功能；名称与接口概念为本次规范化分析",
+    "source_refs": [
+      {
+        "file": "00_修改依据/11.3日案例—孙月芸.zip",
+        "entry": "11.3日案例—孙月芸/需求活动图/3.3.1.6-需求活动图.sysml",
+        "element_path": [
+          "需求层活动",
+          "需求活动执行流程",
+          "处理用户操作与模式切换"
+        ],
+        "binding_status": "本次分析绑定：来源父活动名与功能分解对应，非原模型显式LF标注"
+      },
+      {
+        "file": "00_修改依据/11.3日案例—孙月芸.zip",
+        "entry": "11.3日案例—孙月芸/逻辑功能—物理组件/逻辑功能目录.xlsx",
+        "sheet": "数据",
+        "row": 15,
+        "original_function_id": "LF-014",
+        "original_name": "自动模式保持与切换"
+      },
+      {
+        "file": "原始文件备份/3.3.1.2、3.3.1.6、3.3.1.9-指标分配表.xlsx",
+        "sheet": "指标分配表",
+        "row": 19,
+        "cell_range": "A19:E19"
+      },
+      {
+        "file": "原始文件备份/LCATC-DS-04-XX-27-B0-(CCU)Component Technical Specification.pdf",
+        "section": "6.13.1.3–6.13.1.4",
+        "pdf_pages": [
+          67,
+          68
+        ]
+      }
+    ],
+    "root_id": "3.3.1.6",
+    "canonical_function_id": "LF-014",
+    "record_role": "功能定义",
+    "source_model_path": [
+      "需求活动图/3.3.1.6-需求活动图.sysml",
+      "需求层活动",
+      "需求活动执行流程",
+      "处理用户模式操作"
+    ]
+  },
+  {
+    "function_id": "LF-015",
+    "name": "调节座舱温度",
+    "s": null,
+    "v": "调节",
+    "o": "座舱温度",
+    "e": "使座舱温度趋近目标；算法及性能窗口待确认",
+    "action": "调节座舱温度",
+    "domain_action": "调节座舱温度",
+    "inputs": [
+      {
+        "concept": "目标温度",
+        "variables": []
+      },
+      {
+        "concept": "实际温度",
+        "variables": []
+      },
+      {
+        "concept": "可用温控能力",
+        "variables": []
+      }
+    ],
+    "outputs": [
+      {
+        "concept": "座舱温控请求",
+        "variables": []
+      }
+    ],
+    "preconditions": [],
+    "required_capability": null,
+    "required_capability_status": "待业务方确认；不由action或effect臆造",
+    "parent_id": "ACT-07",
+    "hierarchy_path": [
+      "11.17SEOV案例",
+      "3.3.1.6",
+      "协调自动温控请求",
+      "LF-015 调节座舱温度"
+    ],
+    "boundary": "功能层：热管理逻辑控制服务",
+    "status": "来源支持的逻辑功能；名称与接口概念为本次规范化分析",
+    "source_refs": [
+      {
+        "file": "00_修改依据/11.3日案例—孙月芸.zip",
+        "entry": "11.3日案例—孙月芸/需求活动图/3.3.1.6-需求活动图.sysml",
+        "element_path": [
+          "需求层活动",
+          "需求活动执行流程",
+          "协调热量与空气调节服务"
+        ],
+        "binding_status": "本次分析绑定：来源父活动名与功能分解对应，非原模型显式LF标注"
+      },
+      {
+        "file": "00_修改依据/11.3日案例—孙月芸.zip",
+        "entry": "11.3日案例—孙月芸/逻辑功能—物理组件/逻辑功能目录.xlsx",
+        "sheet": "数据",
+        "row": 16,
+        "original_function_id": "LF-015",
+        "original_name": "座舱温度闭环调节"
+      },
+      {
+        "file": "原始文件备份/3.3.1.2、3.3.1.6、3.3.1.9-指标分配表.xlsx",
+        "sheet": "指标分配表",
+        "row": 20,
+        "cell_range": "A20:E20"
+      },
+      {
+        "file": "原始文件备份/3.3.1.2、3.3.1.6、3.3.1.9-指标分配表.xlsx",
+        "sheet": "指标分配表",
+        "row": 20,
+        "cell_range": "A20:E20"
+      }
+    ],
+    "root_id": "3.3.1.6",
+    "canonical_function_id": "LF-015",
+    "record_role": "功能定义",
+    "source_model_path": [
+      "需求活动图/3.3.1.6-需求活动图.sysml",
+      "需求层活动",
+      "需求活动执行流程",
+      "协调自动温控请求"
+    ]
+  },
+  {
+    "function_id": "LF-016",
+    "name": "接收风窗除霜除雾请求",
+    "s": null,
+    "v": "接收",
+    "o": "风窗除霜除雾请求",
+    "e": "获得外部风窗模式意图",
+    "action": "接收风窗除霜除雾请求",
+    "domain_action": "接收风窗除霜除雾请求",
+    "inputs": [
+      {
+        "concept": "用户风窗除霜除雾请求",
+        "variables": []
+      }
+    ],
+    "outputs": [
+      {
+        "concept": "已接收的风窗请求",
+        "variables": []
+      }
+    ],
+    "preconditions": [],
+    "required_capability": null,
+    "required_capability_status": "待业务方确认；不由action或effect臆造",
+    "parent_id": "ACT-10",
+    "hierarchy_path": [
+      "11.17SEOV案例",
+      "3.3.1.9",
+      "接收风窗除霜或除雾请求",
+      "LF-016 接收风窗除霜除雾请求"
+    ],
+    "boundary": "功能层：热管理逻辑控制服务",
+    "status": "来源支持的逻辑功能；名称与接口概念为本次规范化分析",
+    "source_refs": [
+      {
+        "file": "00_修改依据/11.3日案例—孙月芸.zip",
+        "entry": "11.3日案例—孙月芸/需求活动图/3.3.1.9-需求活动图.sysml",
+        "element_path": [
+          "需求层活动",
+          "需求活动执行流程",
+          "接收风窗除霜或除雾请求"
+        ],
+        "binding_status": "本次分析绑定：来源父活动名与功能分解对应，非原模型显式LF标注"
+      },
+      {
+        "file": "00_修改依据/11.3日案例—孙月芸.zip",
+        "entry": "11.3日案例—孙月芸/逻辑功能—物理组件/逻辑功能目录.xlsx",
+        "sheet": "数据",
+        "row": 17,
+        "original_function_id": "LF-016",
+        "original_name": "风窗请求接收"
+      },
+      {
+        "file": "原始文件备份/3.3.1.2、3.3.1.6、3.3.1.9-指标分配表.xlsx",
+        "sheet": "指标分配表",
+        "row": 21,
+        "cell_range": "A21:E21"
+      },
+      {
+        "file": "原始文件备份/LCATC-DS-04-XX-27-B0-(CCU)Component Technical Specification.pdf",
+        "section": "6.12.1.3–6.12.1.4",
+        "pdf_pages": [
+          63,
+          64
+        ]
+      }
+    ],
+    "root_id": "3.3.1.9",
+    "canonical_function_id": "LF-016",
+    "record_role": "功能定义",
+    "source_model_path": [
+      "需求活动图/3.3.1.9-需求活动图.sysml",
+      "需求层活动",
+      "需求活动执行流程",
+      "接收风窗除霜或除雾请求"
+    ]
+  },
+  {
+    "function_id": "LF-017",
+    "name": "调节送风模式",
+    "s": null,
+    "v": "调节",
+    "o": "送风模式",
+    "e": "请求切换到来源规定的除霜或除雾位置",
+    "action": "调节送风模式",
+    "domain_action": "调节送风模式",
+    "inputs": [
+      {
+        "concept": "风窗模式请求",
+        "variables": []
+      },
+      {
+        "concept": "当前送风模式",
+        "variables": []
+      }
+    ],
+    "outputs": [
+      {
+        "concept": "送风模式请求",
+        "variables": []
+      }
+    ],
+    "preconditions": [],
+    "required_capability": null,
+    "required_capability_status": "待业务方确认；不由action或effect臆造",
+    "parent_id": "ACT-11",
+    "hierarchy_path": [
+      "11.17SEOV案例",
+      "3.3.1.9",
+      "配置风窗模式参数",
+      "LF-017 调节送风模式"
+    ],
+    "boundary": "功能层：热管理逻辑控制服务",
+    "status": "来源支持的逻辑功能；名称与接口概念为本次规范化分析",
+    "source_refs": [
+      {
+        "file": "00_修改依据/11.3日案例—孙月芸.zip",
+        "entry": "11.3日案例—孙月芸/需求活动图/3.3.1.9-需求活动图.sysml",
+        "element_path": [
+          "需求层活动",
+          "需求活动执行流程",
+          "配置风口、风量与循环状态"
+        ],
+        "binding_status": "本次分析绑定：来源父活动名与功能分解对应，非原模型显式LF标注"
+      },
+      {
+        "file": "00_修改依据/11.3日案例—孙月芸.zip",
+        "entry": "11.3日案例—孙月芸/逻辑功能—物理组件/逻辑功能目录.xlsx",
+        "sheet": "数据",
+        "row": 18,
+        "original_function_id": "LF-017",
+        "original_name": "送风模式调节"
+      },
+      {
+        "file": "原始文件备份/3.3.1.2、3.3.1.6、3.3.1.9-指标分配表.xlsx",
+        "sheet": "指标分配表",
+        "row": 22,
+        "cell_range": "A22:E22"
+      },
+      {
+        "file": "原始文件备份/LCATC-DS-04-XX-27-B0-(CCU)Component Technical Specification.pdf",
+        "section": "6.12.1.3–6.12.1.4",
+        "pdf_pages": [
+          63,
+          64
+        ]
+      }
+    ],
+    "root_id": "3.3.1.9",
+    "canonical_function_id": "LF-017",
+    "record_role": "功能定义",
+    "source_model_path": [
+      "需求活动图/3.3.1.9-需求活动图.sysml",
+      "需求层活动",
+      "需求活动执行流程",
+      "配置风窗模式参数"
+    ]
+  },
+  {
+    "function_id": "LF-018",
+    "name": "调节送风量",
+    "s": null,
+    "v": "调节",
+    "o": "送风量",
+    "e": "进入前除霜或除雾时请求最大风量",
+    "action": "调节送风量",
+    "domain_action": "调节送风量",
+    "inputs": [
+      {
+        "concept": "风窗模式请求",
+        "variables": []
+      },
+      {
+        "concept": "可用送风能力",
+        "variables": []
+      }
+    ],
+    "outputs": [
+      {
+        "concept": "送风量请求",
+        "variables": []
+      }
+    ],
+    "preconditions": [],
+    "required_capability": null,
+    "required_capability_status": "待业务方确认；不由action或effect臆造",
+    "parent_id": "ACT-11",
+    "hierarchy_path": [
+      "11.17SEOV案例",
+      "3.3.1.9",
+      "配置风窗模式参数",
+      "LF-018 调节送风量"
+    ],
+    "boundary": "功能层：热管理逻辑控制服务",
+    "status": "来源支持的逻辑功能；名称与接口概念为本次规范化分析",
+    "source_refs": [
+      {
+        "file": "00_修改依据/11.3日案例—孙月芸.zip",
+        "entry": "11.3日案例—孙月芸/需求活动图/3.3.1.9-需求活动图.sysml",
+        "element_path": [
+          "需求层活动",
+          "需求活动执行流程",
+          "配置风口、风量与循环状态"
+        ],
+        "binding_status": "本次分析绑定：来源父活动名与功能分解对应，非原模型显式LF标注"
+      },
+      {
+        "file": "00_修改依据/11.3日案例—孙月芸.zip",
+        "entry": "11.3日案例—孙月芸/逻辑功能—物理组件/逻辑功能目录.xlsx",
+        "sheet": "数据",
+        "row": 19,
+        "original_function_id": "LF-018",
+        "original_name": "空气输送与风量调节"
+      },
+      {
+        "file": "原始文件备份/3.3.1.2、3.3.1.6、3.3.1.9-指标分配表.xlsx",
+        "sheet": "指标分配表",
+        "row": 23,
+        "cell_range": "A23:E23"
+      },
+      {
+        "file": "原始文件备份/LCATC-DS-04-XX-27-B0-(CCU)Component Technical Specification.pdf",
+        "section": "6.12.1.3–6.12.1.4",
+        "pdf_pages": [
+          63,
+          64
+        ]
+      }
+    ],
+    "root_id": "3.3.1.9",
+    "canonical_function_id": "LF-018",
+    "record_role": "功能定义",
+    "source_model_path": [
+      "需求活动图/3.3.1.9-需求活动图.sysml",
+      "需求层活动",
+      "需求活动执行流程",
+      "配置风窗模式参数"
+    ]
+  },
+  {
+    "function_id": "LF-019",
+    "name": "调节空气循环方式",
+    "s": null,
+    "v": "调节",
+    "o": "空气循环方式",
+    "e": "请求外循环；90%开度仍为待定",
+    "action": "调节空气循环方式",
+    "domain_action": "调节空气循环方式",
+    "inputs": [
+      {
+        "concept": "风窗模式请求",
+        "variables": []
+      },
+      {
+        "concept": "循环设定",
+        "variables": []
+      }
+    ],
+    "outputs": [
+      {
+        "concept": "空气循环请求",
+        "variables": []
+      }
+    ],
+    "preconditions": [],
+    "required_capability": null,
+    "required_capability_status": "待业务方确认；不由action或effect臆造",
+    "parent_id": "ACT-11",
+    "hierarchy_path": [
+      "11.17SEOV案例",
+      "3.3.1.9",
+      "配置风窗模式参数",
+      "LF-019 调节空气循环方式"
+    ],
+    "boundary": "功能层：热管理逻辑控制服务",
+    "status": "来源支持的逻辑功能；名称与接口概念为本次规范化分析",
+    "source_refs": [
+      {
+        "file": "00_修改依据/11.3日案例—孙月芸.zip",
+        "entry": "11.3日案例—孙月芸/需求活动图/3.3.1.9-需求活动图.sysml",
+        "element_path": [
+          "需求层活动",
+          "需求活动执行流程",
+          "配置风口、风量与循环状态"
+        ],
+        "binding_status": "本次分析绑定：来源父活动名与功能分解对应，非原模型显式LF标注"
+      },
+      {
+        "file": "00_修改依据/11.3日案例—孙月芸.zip",
+        "entry": "11.3日案例—孙月芸/逻辑功能—物理组件/逻辑功能目录.xlsx",
+        "sheet": "数据",
+        "row": 20,
+        "original_function_id": "LF-019",
+        "original_name": "循环方式调节"
+      },
+      {
+        "file": "原始文件备份/3.3.1.2、3.3.1.6、3.3.1.9-指标分配表.xlsx",
+        "sheet": "指标分配表",
+        "row": 24,
+        "cell_range": "A24:E24"
+      },
+      {
+        "file": "原始文件备份/LCATC-DS-04-XX-27-B0-(CCU)Component Technical Specification.pdf",
+        "section": "6.12.1.3–6.12.1.4",
+        "pdf_pages": [
+          63,
+          64
+        ]
+      }
+    ],
+    "root_id": "3.3.1.9",
+    "canonical_function_id": "LF-019",
+    "record_role": "功能定义",
+    "source_model_path": [
+      "需求活动图/3.3.1.9-需求活动图.sysml",
+      "需求层活动",
+      "需求活动执行流程",
+      "配置风窗模式参数"
+    ]
+  },
+  {
+    "function_id": "LF-020",
+    "name": "调节制冷能力",
+    "s": null,
+    "v": "调节",
+    "o": "制冷能力",
+    "e": "按来源条件请求制冷除湿；转速接口仅为实现信息",
+    "action": "调节制冷能力",
+    "domain_action": "调节制冷能力",
+    "inputs": [
+      {
+        "concept": "环境温度条件",
+        "variables": []
+      },
+      {
+        "concept": "除湿需求",
+        "variables": []
+      },
+      {
+        "concept": "制冷许可",
+        "variables": []
+      },
+      {
+        "concept": "能力分配",
+        "variables": []
+      }
+    ],
+    "outputs": [
+      {
+        "concept": "制冷能力请求",
+        "variables": []
+      }
+    ],
+    "preconditions": [],
+    "required_capability": null,
+    "required_capability_status": "待业务方确认；不由action或effect臆造",
+    "parent_id": "ACT-12",
+    "hierarchy_path": [
+      "11.17SEOV案例",
+      "3.3.1.9",
+      "确定制冷除湿请求",
+      "LF-020 调节制冷能力"
+    ],
+    "boundary": "功能层：热管理逻辑控制服务",
+    "status": "来源支持的逻辑功能；名称与接口概念为本次规范化分析",
+    "source_refs": [
+      {
+        "file": "00_修改依据/11.3日案例—孙月芸.zip",
+        "entry": "11.3日案例—孙月芸/需求活动图/3.3.1.9-需求活动图.sysml",
+        "element_path": [
+          "需求层活动",
+          "需求活动执行流程",
+          "确定AC与压缩机请求"
+        ],
+        "binding_status": "本次分析绑定：来源父活动名与功能分解对应，非原模型显式LF标注"
+      },
+      {
+        "file": "00_修改依据/11.3日案例—孙月芸.zip",
+        "entry": "11.3日案例—孙月芸/逻辑功能—物理组件/逻辑功能目录.xlsx",
+        "sheet": "数据",
+        "row": 21,
+        "original_function_id": "LF-020",
+        "original_name": "制冷能力调节"
+      },
+      {
+        "file": "原始文件备份/3.3.1.2、3.3.1.6、3.3.1.9-指标分配表.xlsx",
+        "sheet": "指标分配表",
+        "row": 25,
+        "cell_range": "A25:E25"
+      },
+      {
+        "file": "原始文件备份/LCATC-DS-04-XX-27-B0-(CCU)Component Technical Specification.pdf",
+        "section": "6.12.1.3–6.12.1.4",
+        "pdf_pages": [
+          63,
+          64
+        ]
+      }
+    ],
+    "root_id": "3.3.1.9",
+    "canonical_function_id": "LF-020",
+    "record_role": "功能定义",
+    "source_model_path": [
+      "需求活动图/3.3.1.9-需求活动图.sysml",
+      "需求层活动",
+      "需求活动执行流程",
+      "确定制冷除湿请求"
+    ]
+  },
+  {
+    "function_id": "LF-021",
+    "name": "保持座舱温度设定",
+    "s": null,
+    "v": "保持",
+    "o": "座舱温度设定",
+    "e": "进入风窗模式时保持设定，温度操作按规范处理",
+    "action": "保持座舱温度设定",
+    "domain_action": "保持座舱温度设定",
+    "inputs": [
+      {
+        "concept": "进入模式前的温度设定",
+        "variables": []
+      },
+      {
+        "concept": "用户温度操作",
+        "variables": []
+      }
+    ],
+    "outputs": [
+      {
+        "concept": "当前座舱温度设定",
+        "variables": []
+      }
+    ],
+    "preconditions": [],
+    "required_capability": null,
+    "required_capability_status": "待业务方确认；不由action或effect臆造",
+    "parent_id": "ACT-11",
+    "hierarchy_path": [
+      "11.17SEOV案例",
+      "3.3.1.9",
+      "配置风窗模式参数",
+      "LF-021 保持座舱温度设定"
+    ],
+    "boundary": "功能层：热管理逻辑控制服务",
+    "status": "来源支持的逻辑功能；名称与接口概念为本次规范化分析",
+    "source_refs": [
+      {
+        "file": "00_修改依据/11.3日案例—孙月芸.zip",
+        "entry": "11.3日案例—孙月芸/需求活动图/3.3.1.9-需求活动图.sysml",
+        "element_path": [
+          "需求层活动",
+          "需求活动执行流程",
+          "配置风口、风量与循环状态"
+        ],
+        "binding_status": "本次分析绑定：来源父活动名与功能分解对应，非原模型显式LF标注"
+      },
+      {
+        "file": "00_修改依据/11.3日案例—孙月芸.zip",
+        "entry": "11.3日案例—孙月芸/逻辑功能—物理组件/逻辑功能目录.xlsx",
+        "sheet": "数据",
+        "row": 22,
+        "original_function_id": "LF-021",
+        "original_name": "目标温度保持"
+      },
+      {
+        "file": "原始文件备份/3.3.1.2、3.3.1.6、3.3.1.9-指标分配表.xlsx",
+        "sheet": "指标分配表",
+        "row": 26,
+        "cell_range": "A26:E26"
+      },
+      {
+        "file": "原始文件备份/LCATC-DS-04-XX-27-B0-(CCU)Component Technical Specification.pdf",
+        "section": "6.12.1.3–6.12.1.4",
+        "pdf_pages": [
+          63,
+          64
+        ]
+      }
+    ],
+    "root_id": "3.3.1.9",
+    "canonical_function_id": "LF-021",
+    "record_role": "功能定义",
+    "source_model_path": [
+      "需求活动图/3.3.1.9-需求活动图.sysml",
+      "需求层活动",
+      "需求活动执行流程",
+      "配置风窗模式参数"
+    ]
+  },
+  {
+    "function_id": "LF-022",
+    "name": "反馈风窗与空调状态",
+    "s": null,
+    "v": "反馈",
+    "o": "风窗与空调状态",
+    "e": "将前除霜除雾及相关空调状态提供给IVI",
+    "action": "反馈风窗与空调状态",
+    "domain_action": "反馈风窗与空调状态",
+    "inputs": [
+      {
+        "concept": "风窗模式状态",
+        "variables": []
+      },
+      {
+        "concept": "风量状态",
+        "variables": []
+      },
+      {
+        "concept": "温度状态",
+        "variables": []
+      },
+      {
+        "concept": "制冷状态",
+        "variables": []
+      },
+      {
+        "concept": "循环状态",
+        "variables": []
+      }
+    ],
+    "outputs": [
+      {
+        "concept": "风窗与空调状态信息",
+        "variables": []
+      }
+    ],
+    "preconditions": [],
+    "required_capability": null,
+    "required_capability_status": "待业务方确认；不由action或effect臆造",
+    "parent_id": "ACT-13",
+    "hierarchy_path": [
+      "11.17SEOV案例",
+      "3.3.1.9",
+      "反馈风窗运行信息",
+      "LF-022 反馈风窗与空调状态"
+    ],
+    "boundary": "功能层：热管理逻辑控制服务",
+    "status": "来源支持的逻辑功能；名称与接口概念为本次规范化分析",
+    "source_refs": [
+      {
+        "file": "00_修改依据/11.3日案例—孙月芸.zip",
+        "entry": "11.3日案例—孙月芸/需求活动图/3.3.1.9-需求活动图.sysml",
+        "element_path": [
+          "需求层活动",
+          "需求活动执行流程",
+          "反馈模式与空调状态"
+        ],
+        "binding_status": "本次分析绑定：来源父活动名与功能分解对应，非原模型显式LF标注"
+      },
+      {
+        "file": "00_修改依据/11.3日案例—孙月芸.zip",
+        "entry": "11.3日案例—孙月芸/逻辑功能—物理组件/逻辑功能目录.xlsx",
+        "sheet": "数据",
+        "row": 23,
+        "original_function_id": "LF-022",
+        "original_name": "风窗与空调状态反馈"
+      },
+      {
+        "file": "原始文件备份/3.3.1.2、3.3.1.6、3.3.1.9-指标分配表.xlsx",
+        "sheet": "指标分配表",
+        "row": 27,
+        "cell_range": "A27:E27"
+      },
+      {
+        "file": "原始文件备份/LCATC-DS-04-XX-27-B0-(CCU)Component Technical Specification.pdf",
+        "section": "6.12.1.3–6.12.1.4",
+        "pdf_pages": [
+          63,
+          64
+        ]
+      }
+    ],
+    "root_id": "3.3.1.9",
+    "canonical_function_id": "LF-022",
+    "record_role": "功能定义",
+    "source_model_path": [
+      "需求活动图/3.3.1.9-需求活动图.sysml",
+      "需求层活动",
+      "需求活动执行流程",
+      "反馈风窗运行信息"
+    ]
+  },
+  {
+    "function_id": "LF-023",
+    "name": "仲裁热管理能力请求",
+    "s": null,
+    "v": "仲裁",
+    "o": "热管理能力请求",
+    "e": "按原SL29优先级分配；XX阈值待确认",
+    "action": "仲裁热管理能力请求",
+    "domain_action": "仲裁热管理能力请求",
+    "inputs": [
+      {
+        "concept": "前除霜请求",
+        "variables": []
+      },
+      {
+        "concept": "电池冷却请求",
+        "variables": []
+      },
+      {
+        "concept": "座舱制冷请求",
+        "variables": []
+      },
+      {
+        "concept": "可用能力",
+        "variables": []
+      }
+    ],
+    "outputs": [
+      {
+        "concept": "热管理能力分配",
+        "variables": []
+      }
+    ],
+    "preconditions": [],
+    "required_capability": null,
+    "required_capability_status": "待业务方确认；不由action或effect臆造",
+    "parent_id": "ACT-12",
+    "hierarchy_path": [
+      "11.17SEOV案例",
+      "3.3.1.9",
+      "确定制冷除湿请求",
+      "LF-023 仲裁热管理能力请求"
+    ],
+    "boundary": "功能层：热管理逻辑控制服务",
+    "status": "来源支持的逻辑功能；名称与接口概念为本次规范化分析",
+    "source_refs": [
+      {
+        "file": "00_修改依据/11.3日案例—孙月芸.zip",
+        "entry": "11.3日案例—孙月芸/需求活动图/3.3.1.9-需求活动图.sysml",
+        "element_path": [
+          "需求层活动",
+          "需求活动执行流程",
+          "确定AC与压缩机请求"
+        ],
+        "binding_status": "本次分析绑定：来源父活动名与功能分解对应，非原模型显式LF标注"
+      },
+      {
+        "file": "00_修改依据/11.3日案例—孙月芸.zip",
+        "entry": "11.3日案例—孙月芸/逻辑功能—物理组件/逻辑功能目录.xlsx",
+        "sheet": "数据",
+        "row": 24,
+        "original_function_id": "LF-023",
+        "original_name": "热管理能力仲裁"
+      },
+      {
+        "file": "原始文件备份/3.3.1.2、3.3.1.6、3.3.1.9-指标分配表.xlsx",
+        "sheet": "指标分配表",
+        "row": 28,
+        "cell_range": "A28:E28"
+      },
+      {
+        "file": "原始文件备份/LCATC-DS-04-29-XX-B0-SL29_热管理子系统功能规范.pdf",
+        "section": "4.1.3.3",
+        "pdf_pages": [
+          13,
+          14
+        ]
+      }
+    ],
+    "root_id": "3.3.1.9",
+    "canonical_function_id": "LF-023",
+    "record_role": "功能定义",
+    "source_model_path": [
+      "需求活动图/3.3.1.9-需求活动图.sysml",
+      "需求层活动",
+      "需求活动执行流程",
+      "确定制冷除湿请求"
+    ]
+  },
+  {
+    "function_id": "LF-024",
+    "name": "判定低电量制冷许可",
+    "s": null,
+    "v": "判定",
+    "o": "低电量制冷许可",
+    "e": "保留SOC小于10%时前除霜例外；等于10%未规定",
+    "action": "判定低电量制冷许可",
+    "domain_action": "判定低电量制冷许可",
+    "inputs": [
+      {
+        "concept": "动力电池荷电状态",
+        "variables": []
+      },
+      {
+        "concept": "前除霜状态",
+        "variables": []
+      }
+    ],
+    "outputs": [
+      {
+        "concept": "低电量条件下的制冷许可",
+        "variables": []
+      }
+    ],
+    "preconditions": [],
+    "required_capability": null,
+    "required_capability_status": "待业务方确认；不由action或effect臆造",
+    "parent_id": "ACT-12",
+    "hierarchy_path": [
+      "11.17SEOV案例",
+      "3.3.1.9",
+      "确定制冷除湿请求",
+      "LF-024 判定低电量制冷许可"
+    ],
+    "boundary": "功能层：热管理逻辑控制服务",
+    "status": "来源支持的逻辑功能；名称与接口概念为本次规范化分析",
+    "source_refs": [
+      {
+        "file": "00_修改依据/11.3日案例—孙月芸.zip",
+        "entry": "11.3日案例—孙月芸/需求活动图/3.3.1.9-需求活动图.sysml",
+        "element_path": [
+          "需求层活动",
+          "需求活动执行流程",
+          "确定AC与压缩机请求"
+        ],
+        "binding_status": "本次分析绑定：来源父活动名与功能分解对应，非原模型显式LF标注"
+      },
+      {
+        "file": "00_修改依据/11.3日案例—孙月芸.zip",
+        "entry": "11.3日案例—孙月芸/逻辑功能—物理组件/逻辑功能目录.xlsx",
+        "sheet": "数据",
+        "row": 25,
+        "original_function_id": "LF-024",
+        "original_name": "低电量制冷许可判断"
+      },
+      {
+        "file": "原始文件备份/3.3.1.2、3.3.1.6、3.3.1.9-指标分配表.xlsx",
+        "sheet": "指标分配表",
+        "row": 29,
+        "cell_range": "A29:E29"
+      },
+      {
+        "file": "原始文件备份/LCATC-DS-04-29-XX-B0-SL29_热管理子系统功能规范.pdf",
+        "section": "4.1.3.3",
+        "pdf_pages": [
+          13,
+          14
+        ]
+      }
+    ],
+    "root_id": "3.3.1.9",
+    "canonical_function_id": "LF-024",
+    "record_role": "功能定义",
+    "source_model_path": [
+      "需求活动图/3.3.1.9-需求活动图.sysml",
+      "需求层活动",
+      "需求活动执行流程",
+      "确定制冷除湿请求"
+    ]
+  },
+  {
+    "function_id": "LF-026",
+    "name": "控制前风窗除霜除雾模式",
+    "s": null,
+    "v": "控制",
+    "o": "前风窗除霜除雾模式",
+    "e": "支持有来源依据的前风窗模式；后风窗不外推",
+    "action": "控制前风窗除霜除雾模式",
+    "domain_action": "控制前风窗除霜除雾模式",
+    "inputs": [
+      {
+        "concept": "前除霜除雾请求",
+        "variables": []
+      },
+      {
+        "concept": "当前模式",
+        "variables": []
+      },
+      {
+        "concept": "模式退出操作",
+        "variables": []
+      }
+    ],
+    "outputs": [
+      {
+        "concept": "前风窗除霜除雾控制请求",
+        "variables": []
+      }
+    ],
+    "preconditions": [],
+    "required_capability": null,
+    "required_capability_status": "待业务方确认；不由action或effect臆造",
+    "parent_id": "ACT-14",
+    "hierarchy_path": [
+      "11.17SEOV案例",
+      "3.3.1.9",
+      "执行风窗温控请求",
+      "LF-026 控制前风窗除霜除雾模式"
+    ],
+    "boundary": "功能层：热管理逻辑控制服务",
+    "status": "来源支持的逻辑功能；名称与接口概念为本次规范化分析",
+    "source_refs": [
+      {
+        "file": "00_修改依据/11.3日案例—孙月芸.zip",
+        "entry": "11.3日案例—孙月芸/需求活动图/3.3.1.9-需求活动图.sysml",
+        "element_path": [
+          "需求层活动",
+          "需求活动执行流程",
+          "实施热量与空气调节"
+        ],
+        "binding_status": "本次分析绑定：来源父活动名与功能分解对应，非原模型显式LF标注"
+      },
+      {
+        "file": "00_修改依据/11.3日案例—孙月芸.zip",
+        "entry": "11.3日案例—孙月芸/逻辑功能—物理组件/逻辑功能目录.xlsx",
+        "sheet": "数据",
+        "row": 27,
+        "original_function_id": "LF-026",
+        "original_name": "风窗除霜除雾控制"
+      },
+      {
+        "file": "原始文件备份/3.3.1.2、3.3.1.6、3.3.1.9-指标分配表.xlsx",
+        "sheet": "指标分配表",
+        "row": 31,
+        "cell_range": "A31:E31"
+      },
+      {
+        "file": "原始文件备份/3.3.1.2、3.3.1.6、3.3.1.9-指标分配表.xlsx",
+        "sheet": "指标分配表",
+        "row": 31,
+        "cell_range": "A31:E31"
+      }
+    ],
+    "root_id": "3.3.1.9",
+    "canonical_function_id": "LF-026",
+    "record_role": "功能定义",
+    "source_model_path": [
+      "需求活动图/3.3.1.9-需求活动图.sysml",
+      "需求层活动",
+      "需求活动执行流程",
+      "执行风窗温控请求"
+    ]
+  },
+  {
+    "function_id": "LF-027",
+    "name": "获取电加热温度",
+    "s": null,
+    "v": "获取",
+    "o": "电加热温度",
+    "e": "提供来源规定的50 ms周期温度输入",
+    "action": "获取电加热温度",
+    "domain_action": "获取电加热温度",
+    "inputs": [
+      {
+        "concept": "电加热温度信息",
+        "variables": []
+      }
+    ],
+    "outputs": [
+      {
+        "concept": "电加热温度反馈",
+        "variables": []
+      }
+    ],
+    "preconditions": [],
+    "required_capability": null,
+    "required_capability_status": "待业务方确认；不由action或effect臆造",
+    "parent_id": "ACT-03",
+    "hierarchy_path": [
+      "11.17SEOV案例",
+      "3.3.1.2",
+      "保护电加热运行",
+      "LF-027 获取电加热温度"
+    ],
+    "boundary": "功能层：热管理逻辑控制服务",
+    "status": "来源支持的逻辑功能；名称与接口概念为本次规范化分析",
+    "source_refs": [
+      {
+        "file": "00_修改依据/11.3日案例—孙月芸.zip",
+        "entry": "11.3日案例—孙月芸/需求活动图/3.3.1.2-需求活动图.sysml",
+        "element_path": [
+          "需求层活动",
+          "需求活动执行流程",
+          "监测电加热温度并执行过温保护"
+        ],
+        "binding_status": "本次分析绑定：来源父活动名与功能分解对应，非原模型显式LF标注"
+      },
+      {
+        "file": "00_修改依据/11.3日案例—孙月芸.zip",
+        "entry": "11.3日案例—孙月芸/逻辑功能—物理组件/逻辑功能目录.xlsx",
+        "sheet": "数据",
+        "row": 28,
+        "original_function_id": "LF-027",
+        "original_name": "电加热温度信息采集"
+      },
+      {
+        "file": "原始文件备份/LCATC-DS-04-29-XX-B0-SL29_热管理子系统功能规范.pdf",
+        "section": "4.6.3.5",
+        "pdf_pages": [
+          30
+        ]
+      }
+    ],
+    "root_id": "3.3.1.2",
+    "canonical_function_id": "LF-027",
+    "record_role": "功能定义",
+    "source_model_path": [
+      "需求活动图/3.3.1.2-需求活动图.sysml",
+      "需求层活动",
+      "需求活动执行流程",
+      "保护电加热运行"
+    ]
+  },
+  {
+    "function_id": "LF-028",
+    "name": "处理AUTO下的AC操作",
+    "s": null,
+    "v": "处理",
+    "o": "AUTO下的AC操作",
+    "e": "制冷转速请求为0，其他指定调节项仍自动",
+    "action": "处理AUTO下的AC操作",
+    "domain_action": "处理AUTO下的AC操作",
+    "inputs": [
+      {
+        "concept": "AUTO运行状态",
+        "variables": []
+      },
+      {
+        "concept": "AC按键操作",
+        "variables": []
+      }
+    ],
+    "outputs": [
+      {
+        "concept": "制冷关闭请求",
+        "variables": []
+      },
+      {
+        "concept": "自动模式Close反馈",
+        "variables": []
+      }
+    ],
+    "preconditions": [
+      "AUTO运行中收到AC按键操作"
+    ],
+    "required_capability": null,
+    "required_capability_status": "待业务方确认；不由action或effect臆造",
+    "parent_id": "ACT-05",
+    "hierarchy_path": [
+      "11.17SEOV案例",
+      "3.3.1.6",
+      "处理用户模式操作",
+      "LF-028 处理AUTO下的AC操作"
+    ],
+    "boundary": "功能层：热管理逻辑控制服务",
+    "status": "来源支持的逻辑功能；名称与接口概念为本次规范化分析",
+    "source_refs": [
+      {
+        "file": "00_修改依据/11.3日案例—孙月芸.zip",
+        "entry": "11.3日案例—孙月芸/需求活动图/3.3.1.6-需求活动图.sysml",
+        "element_path": [
+          "需求层活动",
+          "需求活动执行流程",
+          "处理用户操作与模式切换"
+        ],
+        "binding_status": "本次分析绑定：来源父活动名与功能分解对应，非原模型显式LF标注"
+      },
+      {
+        "file": "00_修改依据/11.3日案例—孙月芸.zip",
+        "entry": "11.3日案例—孙月芸/逻辑功能—物理组件/逻辑功能目录.xlsx",
+        "sheet": "数据",
+        "row": 29,
+        "original_function_id": "LF-028",
+        "original_name": "AUTO下AC操作处理"
+      },
+      {
+        "file": "原始文件备份/LCATC-DS-04-XX-27-B0-(CCU)Component Technical Specification.pdf",
+        "section": "6.13.1.3",
+        "pdf_pages": [
+          68
+        ]
+      },
+      {
+        "file": "原始文件备份/LCATC-DS-04-XX-27-B0-(CCU)Component Technical Specification.pdf",
+        "section": "6.13.1.3",
+        "pdf_pages": [
+          68
+        ]
+      }
+    ],
+    "root_id": "3.3.1.6",
+    "canonical_function_id": "LF-028",
+    "record_role": "功能定义",
+    "source_model_path": [
+      "需求活动图/3.3.1.6-需求活动图.sysml",
+      "需求层活动",
+      "需求活动执行流程",
+      "处理用户模式操作"
+    ]
+  },
+  {
+    "function_id": "LF-029",
+    "name": "调节发动机发电工作点",
+    "s": null,
+    "v": "调节",
+    "o": "发动机发电工作点",
+    "e": "优先维持50%以上负载；最优转速区间未给出",
+    "action": "调节发动机发电工作点",
+    "domain_action": "调节发动机发电工作点",
+    "inputs": [
+      {
+        "concept": "发动机启动状态",
+        "variables": []
+      },
+      {
+        "concept": "负载反馈",
+        "variables": []
+      },
+      {
+        "concept": "转速反馈",
+        "variables": []
+      },
+      {
+        "concept": "发电需求",
+        "variables": []
+      }
+    ],
+    "outputs": [
+      {
+        "concept": "发动机转速目标",
+        "variables": []
+      },
+      {
+        "concept": "发动机负载目标",
+        "variables": []
+      }
+    ],
+    "preconditions": [],
+    "required_capability": null,
+    "required_capability_status": "待业务方确认；不由action或effect臆造",
+    "parent_id": "SC1",
+    "hierarchy_path": [
+      "11.17SEOV案例",
+      "SC1",
+      "S1-F08 调节发动机发电工作点",
+      "LF-029（指标分配引用）"
+    ],
+    "boundary": "场景模型边界",
+    "status": "来源支持的逻辑功能；名称与接口概念为本次规范化分析",
+    "source_refs": [
+      {
+        "file": "00_修改依据/11.3日案例—孙月芸.zip",
+        "entry": "11.3日案例—孙月芸/逻辑功能—物理组件/逻辑功能目录.xlsx",
+        "sheet": "数据",
+        "row": 30,
+        "original_function_id": "LF-029",
+        "original_name": "高效发电运行调节"
+      },
+      {
+        "file": "原始文件备份/热管理系统需求分析与建模修改任务书.txt",
+        "section": "5.2"
+      }
+    ],
+    "root_id": "SC1",
+    "canonical_function_id": "S1-F08",
+    "record_role": "指标分配兼容引用；与canonical_function_id同一功能，不重复执行",
+    "source_model_path": [
+      "功能模型/SC1-功能分解.sysml",
+      "S1-F08 调节发动机发电工作点"
+    ]
+  },
+  {
+    "function_id": "LF-030",
+    "name": "记录静置预冷时长",
+    "s": null,
+    "v": "记录",
+    "o": "静置预冷时长",
+    "e": "满足静置预冷2分钟的场景条件",
+    "action": "记录静置预冷时长",
+    "domain_action": "记录静置预冷时长",
+    "inputs": [
+      {
+        "concept": "预冷起点",
+        "variables": []
+      },
+      {
+        "concept": "经过时间",
+        "variables": []
+      }
+    ],
+    "outputs": [
+      {
+        "concept": "静置预冷完成事件",
+        "variables": []
+      }
+    ],
+    "preconditions": [],
+    "required_capability": null,
+    "required_capability_status": "待业务方确认；不由action或effect臆造",
+    "parent_id": "SC2",
+    "hierarchy_path": [
+      "11.17SEOV案例",
+      "SC2",
+      "S2-F02 记录静置预冷时长",
+      "LF-030（指标分配引用）"
+    ],
+    "boundary": "场景模型边界",
+    "status": "来源支持的逻辑功能；名称与接口概念为本次规范化分析",
+    "source_refs": [
+      {
+        "file": "00_修改依据/11.3日案例—孙月芸.zip",
+        "entry": "11.3日案例—孙月芸/逻辑功能—物理组件/逻辑功能目录.xlsx",
+        "sheet": "数据",
+        "row": 31,
+        "original_function_id": "LF-030",
+        "original_name": "静置预冷计时"
+      },
+      {
+        "file": "原始文件备份/热管理系统需求分析与建模修改任务书.txt",
+        "section": "5.3"
+      }
+    ],
+    "root_id": "SC2",
+    "canonical_function_id": "S2-F02",
+    "record_role": "指标分配兼容引用；与canonical_function_id同一功能，不重复执行",
+    "source_model_path": [
+      "功能模型/SC2-功能分解.sysml",
+      "S2-F02 记录静置预冷时长"
+    ]
+  },
+  {
+    "function_id": "LF-031",
+    "name": "控制匀速行驶工况",
+    "s": null,
+    "v": "控制",
+    "o": "匀速行驶工况",
+    "e": "执行45 km/h持续20分钟的场景工况",
+    "action": "控制匀速行驶工况",
+    "domain_action": "控制匀速行驶工况",
+    "inputs": [
+      {
+        "concept": "预冷完成事件",
+        "variables": []
+      },
+      {
+        "concept": "车速反馈",
+        "variables": []
+      },
+      {
+        "concept": "经过时间",
+        "variables": []
+      }
+    ],
+    "outputs": [
+      {
+        "concept": "车辆目标速度",
+        "variables": []
+      },
+      {
+        "concept": "行驶阶段完成事件",
+        "variables": []
+      }
+    ],
+    "preconditions": [],
+    "required_capability": null,
+    "required_capability_status": "待业务方确认；不由action或effect臆造",
+    "parent_id": "SC2",
+    "hierarchy_path": [
+      "11.17SEOV案例",
+      "SC2",
+      "S2-F03 控制匀速行驶工况",
+      "LF-031（指标分配引用）"
+    ],
+    "boundary": "场景模型边界",
+    "status": "来源支持的逻辑功能；名称与接口概念为本次规范化分析",
+    "source_refs": [
+      {
+        "file": "00_修改依据/11.3日案例—孙月芸.zip",
+        "entry": "11.3日案例—孙月芸/逻辑功能—物理组件/逻辑功能目录.xlsx",
+        "sheet": "数据",
+        "row": 32,
+        "original_function_id": "LF-031",
+        "original_name": "匀速行驶工况控制"
+      },
+      {
+        "file": "原始文件备份/热管理系统需求分析与建模修改任务书.txt",
+        "section": "5.3"
+      },
+      {
+        "file": "原始文件备份/热管理系统需求分析与建模修改任务书.txt",
+        "section": "5.3"
+      }
+    ],
+    "root_id": "SC2",
+    "canonical_function_id": "S2-F03",
+    "record_role": "指标分配兼容引用；与canonical_function_id同一功能，不重复执行",
+    "source_model_path": [
+      "功能模型/SC2-功能分解.sysml",
+      "S2-F03 控制匀速行驶工况"
+    ]
+  },
+  {
+    "function_id": "LF-032",
+    "name": "判定电池主动冷却需求",
+    "s": null,
+    "v": "判定",
+    "o": "电池主动冷却需求",
+    "e": "场景二温度达到或超过35℃时请求冷却",
+    "action": "判定电池主动冷却需求",
+    "domain_action": "判定电池主动冷却需求",
+    "inputs": [
+      {
+        "concept": "最高有效电芯控制温度",
+        "variables": []
+      }
+    ],
+    "outputs": [
+      {
+        "concept": "电池主动冷却请求",
+        "variables": []
+      }
+    ],
+    "preconditions": [
+      "场景二：最高有效电芯温度>=35℃提出供风请求；按扩充清单C02/A06参考基线，<35℃撤销该请求；不因此关闭仍有需求的座舱空调；未增加滞回阈值"
+    ],
+    "required_capability": null,
+    "required_capability_status": "待业务方确认；不由action或effect臆造",
+    "parent_id": "SC2",
+    "hierarchy_path": [
+      "11.17SEOV案例",
+      "SC2",
+      "S2-F06 判定电池主动冷却需求",
+      "LF-032（指标分配引用）"
+    ],
+    "boundary": "场景模型边界",
+    "status": "来源支持的逻辑功能；名称与接口概念为本次规范化分析",
+    "source_refs": [
+      {
+        "file": "00_修改依据/11.3日案例—孙月芸.zip",
+        "entry": "11.3日案例—孙月芸/逻辑功能—物理组件/逻辑功能目录.xlsx",
+        "sheet": "数据",
+        "row": 33,
+        "original_function_id": "LF-032",
+        "original_name": "电池主动冷却触发判断"
+      },
+      {
+        "file": "原始文件备份/热管理系统需求分析与建模修改任务书.txt",
+        "section": "5.3"
+      },
+      {
+        "file": "00_修改依据/汽车热管理_SVOE功能清单_扩充版.md",
+        "line": 36,
+        "section": "2. 完整SVOE清单 / 共用功能",
+        "function_id": "C02",
+        "evidence_status": "本次直接核对清单；清单所引外部原文未随附件提供，未独立复核",
+        "usage": "本次结合清单的参考细化；非原11.3条目自带约束"
+      },
+      {
+        "file": "00_修改依据/汽车热管理_SVOE功能清单_扩充版.md",
+        "line": 86,
+        "section": "2. 完整SVOE清单 / 场景二空气换热",
+        "function_id": "A06",
+        "evidence_status": "本次直接核对清单；清单所引外部原文未随附件提供，未独立复核",
+        "usage": "本次结合清单的参考细化；非原11.3条目自带约束"
+      }
+    ],
+    "root_id": "SC2",
+    "canonical_function_id": "S2-F06",
+    "record_role": "指标分配兼容引用；与canonical_function_id同一功能，不重复执行",
+    "source_model_path": [
+      "功能模型/SC2-功能分解.sysml",
+      "S2-F06 判定电池主动冷却需求"
+    ]
+  },
+  {
+    "function_id": "S1-F01",
+    "req_id": "SC1-001",
+    "name": "接收驾驶指令",
+    "s": null,
+    "v": "接收",
+    "o": "驾驶指令",
+    "e": null,
+    "action": "接收驾驶指令",
+    "domain_action": "接收驾驶指令",
+    "inputs": [
+      {
+        "concept": "加速/制动指令",
+        "variables": []
+      }
+    ],
+    "outputs": [
+      {
+        "concept": "驾驶意图",
+        "variables": []
+      }
+    ],
+    "preconditions": [],
+    "required_capability": null,
+    "required_capability_status": "待业务方确认",
+    "parent_id": "SC1",
+    "hierarchy_path": [
+      "11.17SEOV案例",
+      "SC1",
+      "S1-F01 接收驾驶指令"
+    ],
+    "boundary": "场景模型边界；与三条空调控制需求分别建树",
+    "status": "沿用原案例场景功能；输入输出为分析契约，算法未定义",
+    "source_refs": [
+      {
+        "file": "00_修改依据/11.3日案例—孙月芸.zip",
+        "entry": "11.3日案例—孙月芸/结构化需求条目/结构化需求清单.json",
+        "req_id": "SC1-001",
+        "original_name": "驾驶指令接收"
+      }
+    ],
+    "root_id": "SC1",
+    "canonical_function_id": "S1-F01",
+    "record_role": "功能定义"
+  },
+  {
+    "function_id": "S1-F02",
+    "req_id": "SC1-002",
+    "name": "分析动力需求",
+    "s": null,
+    "v": "分析",
+    "o": "动力需求",
+    "e": null,
+    "action": "分析动力需求",
+    "domain_action": "分析动力需求",
+    "inputs": [
+      {
+        "concept": "驾驶意图、工况",
+        "variables": []
+      }
+    ],
+    "outputs": [
+      {
+        "concept": "驱动/制动需求",
+        "variables": []
+      }
+    ],
+    "preconditions": [],
+    "required_capability": null,
+    "required_capability_status": "待业务方确认",
+    "parent_id": "SC1",
+    "hierarchy_path": [
+      "11.17SEOV案例",
+      "SC1",
+      "S1-F02 分析动力需求"
+    ],
+    "boundary": "场景模型边界；与三条空调控制需求分别建树",
+    "status": "沿用原案例场景功能；输入输出为分析契约，算法未定义",
+    "source_refs": [
+      {
+        "file": "00_修改依据/11.3日案例—孙月芸.zip",
+        "entry": "11.3日案例—孙月芸/结构化需求条目/结构化需求清单.json",
+        "req_id": "SC1-002",
+        "original_name": "动力需求分析"
+      }
+    ],
+    "root_id": "SC1",
+    "canonical_function_id": "S1-F02",
+    "record_role": "功能定义"
+  },
+  {
+    "function_id": "S1-F03",
+    "req_id": "SC1-003",
+    "name": "选择运行模式",
+    "s": null,
+    "v": "选择",
+    "o": "运行模式",
+    "e": null,
+    "action": "选择运行模式",
+    "domain_action": "选择运行模式",
+    "inputs": [
+      {
+        "concept": "动力需求、能源状态",
+        "variables": []
+      }
+    ],
+    "outputs": [
+      {
+        "concept": "驱动/回收/发电请求",
+        "variables": []
+      }
+    ],
+    "preconditions": [],
+    "required_capability": null,
+    "required_capability_status": "待业务方确认",
+    "parent_id": "SC1",
+    "hierarchy_path": [
+      "11.17SEOV案例",
+      "SC1",
+      "S1-F03 选择运行模式"
+    ],
+    "boundary": "场景模型边界；与三条空调控制需求分别建树",
+    "status": "沿用原案例场景功能；输入输出为分析契约，算法未定义",
+    "source_refs": [
+      {
+        "file": "00_修改依据/11.3日案例—孙月芸.zip",
+        "entry": "11.3日案例—孙月芸/结构化需求条目/结构化需求清单.json",
+        "req_id": "SC1-003",
+        "original_name": "工作模式选择"
+      }
+    ],
+    "root_id": "SC1",
+    "canonical_function_id": "S1-F03",
+    "record_role": "功能定义"
+  },
+  {
+    "function_id": "S1-F04",
+    "req_id": "SC1-004",
+    "name": "控制电驱动能量转换",
+    "s": null,
+    "v": "控制",
+    "o": "电驱动能量转换",
+    "e": null,
+    "action": "控制电驱动能量转换",
+    "domain_action": "控制电驱动能量转换",
+    "inputs": [
+      {
+        "concept": "驱动请求、可用电能",
+        "variables": []
+      }
+    ],
+    "outputs": [
+      {
+        "concept": "驱动力请求与用电反馈",
+        "variables": []
+      }
+    ],
+    "preconditions": [],
+    "required_capability": null,
+    "required_capability_status": "待业务方确认",
+    "parent_id": "SC1",
+    "hierarchy_path": [
+      "11.17SEOV案例",
+      "SC1",
+      "S1-F04 控制电驱动能量转换"
+    ],
+    "boundary": "场景模型边界；与三条空调控制需求分别建树",
+    "status": "沿用原案例场景功能；输入输出为分析契约，算法未定义",
+    "source_refs": [
+      {
+        "file": "00_修改依据/11.3日案例—孙月芸.zip",
+        "entry": "11.3日案例—孙月芸/结构化需求条目/结构化需求清单.json",
+        "req_id": "SC1-004",
+        "original_name": "电驱动能量转换控制"
+      }
+    ],
+    "root_id": "SC1",
+    "canonical_function_id": "S1-F04",
+    "record_role": "功能定义"
+  },
+  {
+    "function_id": "S1-F05",
+    "req_id": "SC1-005",
+    "name": "判定再生制动请求",
+    "s": null,
+    "v": "判定",
+    "o": "再生制动请求",
+    "e": null,
+    "action": "判定再生制动请求",
+    "domain_action": "判定再生制动请求",
+    "inputs": [
+      {
+        "concept": "制动请求、回收可用性",
+        "variables": []
+      }
+    ],
+    "outputs": [
+      {
+        "concept": "再生请求",
+        "variables": []
+      }
+    ],
+    "preconditions": [],
+    "required_capability": null,
+    "required_capability_status": "待业务方确认",
+    "parent_id": "SC1",
+    "hierarchy_path": [
+      "11.17SEOV案例",
+      "SC1",
+      "S1-F05 判定再生制动请求"
+    ],
+    "boundary": "场景模型边界；与三条空调控制需求分别建树",
+    "status": "沿用原案例场景功能；输入输出为分析契约，算法未定义",
+    "source_refs": [
+      {
+        "file": "00_修改依据/11.3日案例—孙月芸.zip",
+        "entry": "11.3日案例—孙月芸/结构化需求条目/结构化需求清单.json",
+        "req_id": "SC1-005",
+        "original_name": "再生制动触发判断"
+      }
+    ],
+    "root_id": "SC1",
+    "canonical_function_id": "S1-F05",
+    "record_role": "功能定义"
+  },
+  {
+    "function_id": "S1-F06",
+    "req_id": "SC1-006",
+    "name": "协调再生充电",
+    "s": null,
+    "v": "协调",
+    "o": "再生充电",
+    "e": null,
+    "action": "协调再生充电",
+    "domain_action": "协调再生充电",
+    "inputs": [
+      {
+        "concept": "再生请求、电池充电状态",
+        "variables": []
+      }
+    ],
+    "outputs": [
+      {
+        "concept": "回收能量与充电请求",
+        "variables": []
+      }
+    ],
+    "preconditions": [],
+    "required_capability": null,
+    "required_capability_status": "待业务方确认",
+    "parent_id": "SC1",
+    "hierarchy_path": [
+      "11.17SEOV案例",
+      "SC1",
+      "S1-F06 协调再生充电"
+    ],
+    "boundary": "场景模型边界；与三条空调控制需求分别建树",
+    "status": "沿用原案例场景功能；输入输出为分析契约，算法未定义",
+    "source_refs": [
+      {
+        "file": "00_修改依据/11.3日案例—孙月芸.zip",
+        "entry": "11.3日案例—孙月芸/结构化需求条目/结构化需求清单.json",
+        "req_id": "SC1-006",
+        "original_name": "再生能量转换与充电协调"
+      }
+    ],
+    "root_id": "SC1",
+    "canonical_function_id": "S1-F06",
+    "record_role": "功能定义"
+  },
+  {
+    "function_id": "S1-F07",
+    "req_id": "SC1-007",
+    "name": "协调发动机启动",
+    "s": null,
+    "v": "协调",
+    "o": "发动机启动",
+    "e": null,
+    "action": "协调发动机启动",
+    "domain_action": "协调发动机启动",
+    "inputs": [
+      {
+        "concept": "发电请求、启动状态",
+        "variables": []
+      }
+    ],
+    "outputs": [
+      {
+        "concept": "发动机已启动状态",
+        "variables": []
+      }
+    ],
+    "preconditions": [],
+    "required_capability": null,
+    "required_capability_status": "待业务方确认",
+    "parent_id": "SC1",
+    "hierarchy_path": [
+      "11.17SEOV案例",
+      "SC1",
+      "S1-F07 协调发动机启动"
+    ],
+    "boundary": "场景模型边界；与三条空调控制需求分别建树",
+    "status": "沿用原案例场景功能；输入输出为分析契约，算法未定义",
+    "source_refs": [
+      {
+        "file": "00_修改依据/11.3日案例—孙月芸.zip",
+        "entry": "11.3日案例—孙月芸/结构化需求条目/结构化需求清单.json",
+        "req_id": "SC1-007",
+        "original_name": "发动机启动协调"
+      }
+    ],
+    "root_id": "SC1",
+    "canonical_function_id": "S1-F07",
+    "record_role": "功能定义"
+  },
+  {
+    "function_id": "S1-F08",
+    "req_id": "SC1-008",
+    "name": "调节发动机发电工作点",
+    "s": null,
+    "v": "调节",
+    "o": "发动机发电工作点",
+    "e": "优先维持50%以上负载，最优转速区间待确认",
+    "action": "调节发动机发电工作点",
+    "domain_action": "调节发动机发电工作点",
+    "inputs": [
+      {
+        "concept": "发动机已启动、负载转速反馈",
+        "variables": []
+      }
+    ],
+    "outputs": [
+      {
+        "concept": "发电电能、负载转速目标",
+        "variables": []
+      }
+    ],
+    "preconditions": [],
+    "required_capability": null,
+    "required_capability_status": "待业务方确认",
+    "parent_id": "SC1",
+    "hierarchy_path": [
+      "11.17SEOV案例",
+      "SC1",
+      "S1-F08 调节发动机发电工作点"
+    ],
+    "boundary": "场景模型边界；与三条空调控制需求分别建树",
+    "status": "沿用原案例场景功能；输入输出为分析契约，算法未定义",
+    "source_refs": [
+      {
+        "file": "00_修改依据/11.3日案例—孙月芸.zip",
+        "entry": "11.3日案例—孙月芸/结构化需求条目/结构化需求清单.json",
+        "req_id": "SC1-008",
+        "original_name": "高效发电运行调节"
+      }
+    ],
+    "root_id": "SC1",
+    "canonical_function_id": "S1-F08",
+    "record_role": "功能定义"
+  },
+  {
+    "function_id": "S1-F09",
+    "req_id": "SC1-009",
+    "name": "管理充电能量收支",
+    "s": null,
+    "v": "管理",
+    "o": "充电能量收支",
+    "e": null,
+    "action": "管理充电能量收支",
+    "domain_action": "管理充电能量收支",
+    "inputs": [
+      {
+        "concept": "发电/回收电能、电池状态、驱动消耗",
+        "variables": []
+      }
+    ],
+    "outputs": [
+      {
+        "concept": "充电调度与能耗记录",
+        "variables": []
+      }
+    ],
+    "preconditions": [],
+    "required_capability": null,
+    "required_capability_status": "待业务方确认",
+    "parent_id": "SC1",
+    "hierarchy_path": [
+      "11.17SEOV案例",
+      "SC1",
+      "S1-F09 管理充电能量收支"
+    ],
+    "boundary": "场景模型边界；与三条空调控制需求分别建树",
+    "status": "沿用原案例场景功能；输入输出为分析契约，算法未定义",
+    "source_refs": [
+      {
+        "file": "00_修改依据/11.3日案例—孙月芸.zip",
+        "entry": "11.3日案例—孙月芸/结构化需求条目/结构化需求清单.json",
+        "req_id": "SC1-009",
+        "original_name": "充电与能量收支管理"
+      }
+    ],
+    "root_id": "SC1",
+    "canonical_function_id": "S1-F09",
+    "record_role": "功能定义"
+  },
+  {
+    "function_id": "S1-F10",
+    "req_id": "SC1-010",
+    "name": "更新运行模式评估信息",
+    "s": null,
+    "v": "更新",
+    "o": "运行模式评估信息",
+    "e": null,
+    "action": "更新运行模式评估信息",
+    "domain_action": "更新运行模式评估信息",
+    "inputs": [
+      {
+        "concept": "转速、负载、电池及车辆响应",
+        "variables": []
+      }
+    ],
+    "outputs": [
+      {
+        "concept": "下一步模式评估信息",
+        "variables": []
+      }
+    ],
+    "preconditions": [],
+    "required_capability": null,
+    "required_capability_status": "待业务方确认",
+    "parent_id": "SC1",
+    "hierarchy_path": [
+      "11.17SEOV案例",
+      "SC1",
+      "S1-F10 更新运行模式评估信息"
+    ],
+    "boundary": "场景模型边界；与三条空调控制需求分别建树",
+    "status": "沿用原案例场景功能；输入输出为分析契约，算法未定义",
+    "source_refs": [
+      {
+        "file": "00_修改依据/11.3日案例—孙月芸.zip",
+        "entry": "11.3日案例—孙月芸/结构化需求条目/结构化需求清单.json",
+        "req_id": "SC1-010",
+        "original_name": "运行反馈与模式更新"
+      }
+    ],
+    "root_id": "SC1",
+    "canonical_function_id": "S1-F10",
+    "record_role": "功能定义"
+  },
+  {
+    "function_id": "S2-F01",
+    "req_id": "SC2-001",
+    "name": "初始化驾驶循环",
+    "s": null,
+    "v": "初始化",
+    "o": "驾驶循环",
+    "e": null,
+    "action": "初始化驾驶循环",
+    "domain_action": "初始化驾驶循环",
+    "inputs": [
+      {
+        "concept": "仿真开始、空调启动操作",
+        "variables": []
+      }
+    ],
+    "outputs": [
+      {
+        "concept": "静置阶段与座舱降温请求",
+        "variables": []
+      }
+    ],
+    "preconditions": [],
+    "required_capability": null,
+    "required_capability_status": "待业务方确认",
+    "parent_id": "SC2",
+    "hierarchy_path": [
+      "11.17SEOV案例",
+      "SC2",
+      "S2-F01 初始化驾驶循环"
+    ],
+    "boundary": "场景模型边界；与三条空调控制需求分别建树",
+    "status": "沿用原案例场景功能；输入输出为分析契约，算法未定义",
+    "source_refs": [
+      {
+        "file": "00_修改依据/11.3日案例—孙月芸.zip",
+        "entry": "11.3日案例—孙月芸/结构化需求条目/结构化需求清单.json",
+        "req_id": "SC2-001",
+        "original_name": "驾驶循环初始化"
+      }
+    ],
+    "root_id": "SC2",
+    "canonical_function_id": "S2-F01",
+    "record_role": "功能定义"
+  },
+  {
+    "function_id": "S2-F02",
+    "req_id": "SC2-002",
+    "name": "记录静置预冷时长",
+    "s": null,
+    "v": "记录",
+    "o": "静置预冷时长",
+    "e": "完成2分钟静置预冷",
+    "action": "记录静置预冷时长",
+    "domain_action": "记录静置预冷时长",
+    "inputs": [
+      {
+        "concept": "阶段起点、经过时间",
+        "variables": []
+      }
+    ],
+    "outputs": [
+      {
+        "concept": "静置2分钟完成事件",
+        "variables": []
+      }
+    ],
+    "preconditions": [],
+    "required_capability": null,
+    "required_capability_status": "待业务方确认",
+    "parent_id": "SC2",
+    "hierarchy_path": [
+      "11.17SEOV案例",
+      "SC2",
+      "S2-F02 记录静置预冷时长"
+    ],
+    "boundary": "场景模型边界；与三条空调控制需求分别建树",
+    "status": "沿用原案例场景功能；输入输出为分析契约，算法未定义",
+    "source_refs": [
+      {
+        "file": "00_修改依据/11.3日案例—孙月芸.zip",
+        "entry": "11.3日案例—孙月芸/结构化需求条目/结构化需求清单.json",
+        "req_id": "SC2-002",
+        "original_name": "静置预冷计时"
+      }
+    ],
+    "root_id": "SC2",
+    "canonical_function_id": "S2-F02",
+    "record_role": "功能定义"
+  },
+  {
+    "function_id": "S2-F03",
+    "req_id": "SC2-003",
+    "name": "控制匀速行驶工况",
+    "s": null,
+    "v": "控制",
+    "o": "匀速行驶工况",
+    "e": "完成45 km/h、20分钟的匀速行驶工况",
+    "action": "控制匀速行驶工况",
+    "domain_action": "控制匀速行驶工况",
+    "inputs": [
+      {
+        "concept": "预冷完成事件、车速反馈",
+        "variables": []
+      }
+    ],
+    "outputs": [
+      {
+        "concept": "45 km/h行驶20分钟工况",
+        "variables": []
+      }
+    ],
+    "preconditions": [],
+    "required_capability": null,
+    "required_capability_status": "待业务方确认",
+    "parent_id": "SC2",
+    "hierarchy_path": [
+      "11.17SEOV案例",
+      "SC2",
+      "S2-F03 控制匀速行驶工况"
+    ],
+    "boundary": "场景模型边界；与三条空调控制需求分别建树",
+    "status": "沿用原案例场景功能；输入输出为分析契约，算法未定义",
+    "source_refs": [
+      {
+        "file": "00_修改依据/11.3日案例—孙月芸.zip",
+        "entry": "11.3日案例—孙月芸/结构化需求条目/结构化需求清单.json",
+        "req_id": "SC2-003",
+        "original_name": "匀速行驶工况控制"
+      }
+    ],
+    "root_id": "SC2",
+    "canonical_function_id": "S2-F03",
+    "record_role": "功能定义"
+  },
+  {
+    "function_id": "S2-F04",
+    "req_id": "SC2-004",
+    "name": "处理座舱降温请求",
+    "s": null,
+    "v": "处理",
+    "o": "座舱降温请求",
+    "e": null,
+    "action": "处理座舱降温请求",
+    "domain_action": "处理座舱降温请求",
+    "inputs": [
+      {
+        "concept": "空调启动、座舱状态",
+        "variables": []
+      }
+    ],
+    "outputs": [
+      {
+        "concept": "座舱制冷需求与响应",
+        "variables": []
+      }
+    ],
+    "preconditions": [],
+    "required_capability": null,
+    "required_capability_status": "待业务方确认",
+    "parent_id": "SC2",
+    "hierarchy_path": [
+      "11.17SEOV案例",
+      "SC2",
+      "S2-F04 处理座舱降温请求"
+    ],
+    "boundary": "场景模型边界；与三条空调控制需求分别建树",
+    "status": "沿用原案例场景功能；输入输出为分析契约，算法未定义",
+    "source_refs": [
+      {
+        "file": "00_修改依据/11.3日案例—孙月芸.zip",
+        "entry": "11.3日案例—孙月芸/结构化需求条目/结构化需求清单.json",
+        "req_id": "SC2-004",
+        "original_name": "座舱降温需求处理"
+      }
+    ],
+    "root_id": "SC2",
+    "canonical_function_id": "S2-F04",
+    "record_role": "功能定义"
+  },
+  {
+    "function_id": "S2-F05",
+    "req_id": "SC2-005",
+    "name": "获取电池温度",
+    "s": null,
+    "v": "获取",
+    "o": "电池温度",
+    "e": null,
+    "action": "获取电池温度",
+    "domain_action": "获取电池温度",
+    "inputs": [
+      {
+        "concept": "电芯温度快照",
+        "variables": []
+      }
+    ],
+    "outputs": [
+      {
+        "concept": "最高有效电芯温度及有效性",
+        "variables": []
+      }
+    ],
+    "preconditions": [
+      "按扩充清单C01参考细化，先筛选有效电芯温度；无有效值时不得替换成0℃，处置策略待确认"
+    ],
+    "required_capability": null,
+    "required_capability_status": "待业务方确认",
+    "parent_id": "SC2",
+    "hierarchy_path": [
+      "11.17SEOV案例",
+      "SC2",
+      "S2-F05 获取电池温度"
+    ],
+    "boundary": "场景模型边界；与三条空调控制需求分别建树",
+    "status": "沿用原案例场景功能；输入输出为分析契约，算法未定义",
+    "source_refs": [
+      {
+        "file": "00_修改依据/11.3日案例—孙月芸.zip",
+        "entry": "11.3日案例—孙月芸/结构化需求条目/结构化需求清单.json",
+        "req_id": "SC2-005",
+        "original_name": "电池温度信息获取"
+      },
+      {
+        "file": "00_修改依据/汽车热管理_SVOE功能清单_扩充版.md",
+        "line": 35,
+        "section": "2. 完整SVOE清单 / 共用功能",
+        "function_id": "C01",
+        "evidence_status": "本次直接核对清单；清单所引外部原文未随附件提供，未独立复核",
+        "usage": "本次结合清单的参考细化；非原11.3条目自带约束"
+      }
+    ],
+    "root_id": "SC2",
+    "canonical_function_id": "S2-F05",
+    "record_role": "功能定义"
+  },
+  {
+    "function_id": "S2-F06",
+    "req_id": "SC2-006",
+    "name": "判定电池主动冷却需求",
+    "s": null,
+    "v": "判定",
+    "o": "电池主动冷却需求",
+    "e": "在电芯控制温度>=35℃时发出主动冷却请求",
+    "action": "判定电池主动冷却需求",
+    "domain_action": "判定电池主动冷却需求",
+    "inputs": [
+      {
+        "concept": "最高有效电芯控制温度",
+        "variables": []
+      }
+    ],
+    "outputs": [
+      {
+        "concept": "主动冷却请求",
+        "variables": []
+      }
+    ],
+    "preconditions": [
+      "场景二：最高有效电芯温度>=35℃提出供风请求；按扩充清单C02/A06参考基线，<35℃撤销该请求；不因此关闭仍有需求的座舱空调；未增加滞回阈值"
+    ],
+    "required_capability": null,
+    "required_capability_status": "待业务方确认",
+    "parent_id": "SC2",
+    "hierarchy_path": [
+      "11.17SEOV案例",
+      "SC2",
+      "S2-F06 判定电池主动冷却需求"
+    ],
+    "boundary": "场景模型边界；与三条空调控制需求分别建树",
+    "status": "沿用原案例场景功能；输入输出为分析契约，算法未定义",
+    "source_refs": [
+      {
+        "file": "00_修改依据/11.3日案例—孙月芸.zip",
+        "entry": "11.3日案例—孙月芸/结构化需求条目/结构化需求清单.json",
+        "req_id": "SC2-006",
+        "original_name": "电池主动冷却触发判断"
+      },
+      {
+        "file": "00_修改依据/汽车热管理_SVOE功能清单_扩充版.md",
+        "line": 36,
+        "section": "2. 完整SVOE清单 / 共用功能",
+        "function_id": "C02",
+        "evidence_status": "本次直接核对清单；清单所引外部原文未随附件提供，未独立复核",
+        "usage": "本次结合清单的参考细化；非原11.3条目自带约束"
+      },
+      {
+        "file": "00_修改依据/汽车热管理_SVOE功能清单_扩充版.md",
+        "line": 86,
+        "section": "2. 完整SVOE清单 / 场景二空气换热",
+        "function_id": "A06",
+        "evidence_status": "本次直接核对清单；清单所引外部原文未随附件提供，未独立复核",
+        "usage": "本次结合清单的参考细化；非原11.3条目自带约束"
+      }
+    ],
+    "root_id": "SC2",
+    "canonical_function_id": "S2-F06",
+    "record_role": "功能定义"
+  },
+  {
+    "function_id": "S2-F07",
+    "req_id": "SC2-007",
+    "name": "评估环境空气换热量",
+    "s": null,
+    "v": "评估",
+    "o": "环境空气换热量",
+    "e": null,
+    "action": "评估环境空气换热量",
+    "domain_action": "评估环境空气换热量",
+    "inputs": [
+      {
+        "concept": "电池热节点与前舱局部空气状态",
+        "variables": []
+      },
+      {
+        "concept": "独立环境换热边界与有效热导",
+        "variables": []
+      }
+    ],
+    "outputs": [
+      {
+        "concept": "有符号环境换热贡献",
+        "variables": []
+      }
+    ],
+    "preconditions": [],
+    "required_capability": null,
+    "required_capability_status": "待业务方确认",
+    "parent_id": "SC2",
+    "hierarchy_path": [
+      "11.17SEOV案例",
+      "SC2",
+      "S2-F07 评估环境空气换热量"
+    ],
+    "boundary": "场景模型边界；与三条空调控制需求分别建树",
+    "status": "沿用原案例场景功能；输入输出为分析契约，算法未定义",
+    "source_refs": [
+      {
+        "file": "00_修改依据/11.3日案例—孙月芸.zip",
+        "entry": "11.3日案例—孙月芸/结构化需求条目/结构化需求清单.json",
+        "req_id": "SC2-007",
+        "original_name": "环境空气对流换热评估"
+      },
+      {
+        "file": "00_修改依据/汽车热管理_SVOE功能清单_扩充版.md",
+        "line": 82,
+        "section": "2. 完整SVOE清单 / 场景二空气换热",
+        "function_id": "A02",
+        "evidence_status": "本次直接核对清单；清单所引外部原文未随附件提供，未独立复核",
+        "usage": "本次结合清单的参考细化；非原11.3条目自带约束"
+      },
+      {
+        "file": "00_修改依据/汽车热管理_SVOE功能清单_扩充版.md",
+        "line": 84,
+        "section": "2. 完整SVOE清单 / 场景二空气换热",
+        "function_id": "A04",
+        "evidence_status": "本次直接核对清单；清单所引外部原文未随附件提供，未独立复核",
+        "usage": "本次结合清单的参考细化；非原11.3条目自带约束"
+      }
+    ],
+    "root_id": "SC2",
+    "canonical_function_id": "S2-F07",
+    "record_role": "功能定义"
+  },
+  {
+    "function_id": "S2-F08",
+    "req_id": "SC2-008",
+    "name": "协调座舱与电池冷却能力",
+    "s": null,
+    "v": "协调",
+    "o": "座舱与电池冷却能力",
+    "e": null,
+    "action": "协调座舱与电池冷却能力",
+    "domain_action": "协调座舱与电池冷却能力",
+    "inputs": [
+      {
+        "concept": "两类冷却需求、可用能力",
+        "variables": []
+      }
+    ],
+    "outputs": [
+      {
+        "concept": "各路径能力分配",
+        "variables": []
+      }
+    ],
+    "preconditions": [],
+    "required_capability": null,
+    "required_capability_status": "待业务方确认",
+    "parent_id": "SC2",
+    "hierarchy_path": [
+      "11.17SEOV案例",
+      "SC2",
+      "S2-F08 协调座舱与电池冷却能力"
+    ],
+    "boundary": "场景模型边界；与三条空调控制需求分别建树",
+    "status": "沿用原案例场景功能；输入输出为分析契约，算法未定义",
+    "source_refs": [
+      {
+        "file": "00_修改依据/11.3日案例—孙月芸.zip",
+        "entry": "11.3日案例—孙月芸/结构化需求条目/结构化需求清单.json",
+        "req_id": "SC2-008",
+        "original_name": "座舱与电池冷却能力协调"
+      }
+    ],
+    "root_id": "SC2",
+    "canonical_function_id": "S2-F08",
+    "record_role": "功能定义"
+  },
+  {
+    "function_id": "S2-F09",
+    "req_id": "SC2-009",
+    "name": "评估主动冷却执行状态",
+    "s": null,
+    "v": "评估",
+    "o": "主动冷却执行状态",
+    "e": null,
+    "action": "评估主动冷却执行状态",
+    "domain_action": "评估主动冷却执行状态",
+    "inputs": [
+      {
+        "concept": "电池主动供风请求及供风可用状态",
+        "variables": []
+      },
+      {
+        "concept": "电池入口实际空气温度与流量",
+        "variables": []
+      },
+      {
+        "concept": "主动供风有效热导与独立换热边界",
+        "variables": []
+      }
+    ],
+    "outputs": [
+      {
+        "concept": "未请求、不可用、待供风或供风已建立的执行状态",
+        "variables": []
+      },
+      {
+        "concept": "主动供风的有符号换热贡献",
+        "variables": []
+      }
+    ],
+    "preconditions": [],
+    "required_capability": null,
+    "required_capability_status": "待业务方确认",
+    "parent_id": "SC2",
+    "hierarchy_path": [
+      "11.17SEOV案例",
+      "SC2",
+      "S2-F09 评估主动冷却执行状态"
+    ],
+    "boundary": "场景模型边界；与三条空调控制需求分别建树",
+    "status": "沿用原案例场景功能；输入输出为分析契约，算法未定义",
+    "source_refs": [
+      {
+        "file": "00_修改依据/11.3日案例—孙月芸.zip",
+        "entry": "11.3日案例—孙月芸/结构化需求条目/结构化需求清单.json",
+        "req_id": "SC2-009",
+        "original_name": "主动冷却执行状态评估"
+      },
+      {
+        "file": "00_修改依据/汽车热管理_SVOE功能清单_扩充版.md",
+        "line": 85,
+        "section": "2. 完整SVOE清单 / 场景二空气换热",
+        "function_id": "A05",
+        "evidence_status": "本次直接核对清单；清单所引外部原文未随附件提供，未独立复核",
+        "usage": "本次结合清单的参考细化；非原11.3条目自带约束"
+      },
+      {
+        "file": "00_修改依据/汽车热管理_SVOE功能清单_扩充版.md",
+        "line": 87,
+        "section": "2. 完整SVOE清单 / 场景二空气换热",
+        "function_id": "A07",
+        "evidence_status": "本次直接核对清单；清单所引外部原文未随附件提供，未独立复核",
+        "usage": "本次结合清单的参考细化；非原11.3条目自带约束"
+      },
+      {
+        "file": "00_修改依据/汽车热管理_SVOE功能清单_扩充版.md",
+        "line": 88,
+        "section": "2. 完整SVOE清单 / 场景二空气换热",
+        "function_id": "A08",
+        "evidence_status": "本次直接核对清单；清单所引外部原文未随附件提供，未独立复核",
+        "usage": "本次结合清单的参考细化；非原11.3条目自带约束"
+      },
+      {
+        "file": "00_修改依据/汽车热管理_SVOE功能清单_扩充版.md",
+        "line": 89,
+        "section": "2. 完整SVOE清单 / 场景二空气换热",
+        "function_id": "A09",
+        "evidence_status": "本次直接核对清单；清单所引外部原文未随附件提供，未独立复核",
+        "usage": "本次结合清单的参考细化；非原11.3条目自带约束"
+      },
+      {
+        "file": "00_修改依据/汽车热管理_SVOE功能清单_扩充版.md",
+        "line": 91,
+        "section": "2. 完整SVOE清单 / 场景二空气换热",
+        "function_id": "A11",
+        "evidence_status": "本次直接核对清单；清单所引外部原文未随附件提供，未独立复核",
+        "usage": "本次结合清单的参考细化；非原11.3条目自带约束"
+      }
+    ],
+    "root_id": "SC2",
+    "canonical_function_id": "S2-F09",
+    "record_role": "功能定义"
+  },
+  {
+    "function_id": "S2-F10",
+    "req_id": "SC2-010",
+    "name": "汇总空气侧换热量",
+    "s": null,
+    "v": "汇总",
+    "o": "空气侧换热量",
+    "e": null,
+    "action": "汇总空气侧换热量",
+    "domain_action": "汇总空气侧换热量",
+    "inputs": [
+      {
+        "concept": "环境/主动换热贡献、车辆与电池运行状态",
+        "variables": []
+      }
+    ],
+    "outputs": [
+      {
+        "concept": "电池/座舱热状态反馈",
+        "variables": []
+      }
+    ],
+    "preconditions": [
+      "仅汇总独立、无重复计数的换热路径；若空调风替换同一表面的环境空气，应更新边界，不能重复叠加"
+    ],
+    "required_capability": null,
+    "required_capability_status": "待业务方确认",
+    "parent_id": "SC2",
+    "hierarchy_path": [
+      "11.17SEOV案例",
+      "SC2",
+      "S2-F10 汇总空气侧换热量"
+    ],
+    "boundary": "场景模型边界；与三条空调控制需求分别建树",
+    "status": "沿用原案例场景功能；输入输出为分析契约，算法未定义",
+    "source_refs": [
+      {
+        "file": "00_修改依据/11.3日案例—孙月芸.zip",
+        "entry": "11.3日案例—孙月芸/结构化需求条目/结构化需求清单.json",
+        "req_id": "SC2-010",
+        "original_name": "换热汇总与热状态反馈"
+      },
+      {
+        "file": "00_修改依据/汽车热管理_SVOE功能清单_扩充版.md",
+        "line": 82,
+        "section": "2. 完整SVOE清单 / 场景二空气换热",
+        "function_id": "A02",
+        "evidence_status": "本次直接核对清单；清单所引外部原文未随附件提供，未独立复核",
+        "usage": "本次结合清单的参考细化；非原11.3条目自带约束"
+      },
+      {
+        "file": "00_修改依据/汽车热管理_SVOE功能清单_扩充版.md",
+        "line": 93,
+        "section": "2. 完整SVOE清单 / 场景二空气换热",
+        "function_id": "A13",
+        "evidence_status": "本次直接核对清单；清单所引外部原文未随附件提供，未独立复核",
+        "usage": "本次结合清单的参考细化；非原11.3条目自带约束"
+      }
+    ],
+    "root_id": "SC2",
+    "canonical_function_id": "S2-F10",
+    "record_role": "功能定义"
+  },
+  {
+    "function_id": "S3-F01",
+    "req_id": "SC3-001",
+    "name": "获取座舱目标温度",
+    "s": null,
+    "v": "获取",
+    "o": "座舱目标温度",
+    "e": null,
+    "action": "获取座舱目标温度",
+    "domain_action": "获取座舱目标温度",
+    "inputs": [
+      {
+        "concept": "人员设定或场景目标",
+        "variables": []
+      }
+    ],
+    "outputs": [
+      {
+        "concept": "有效目标温度",
+        "variables": []
+      }
+    ],
+    "preconditions": [],
+    "required_capability": null,
+    "required_capability_status": "待业务方确认",
+    "parent_id": "SC3",
+    "hierarchy_path": [
+      "11.17SEOV案例",
+      "SC3",
+      "S3-F01 获取座舱目标温度"
+    ],
+    "boundary": "场景模型边界；与三条空调控制需求分别建树",
+    "status": "沿用原案例场景功能；输入输出为分析契约，算法未定义",
+    "source_refs": [
+      {
+        "file": "00_修改依据/11.3日案例—孙月芸.zip",
+        "entry": "11.3日案例—孙月芸/结构化需求条目/结构化需求清单.json",
+        "req_id": "SC3-001",
+        "original_name": "座舱温度目标获取"
+      }
+    ],
+    "root_id": "SC3",
+    "canonical_function_id": "S3-F01",
+    "record_role": "功能定义"
+  },
+  {
+    "function_id": "S3-F02",
+    "req_id": "SC3-002",
+    "name": "获取座舱实际温度",
+    "s": null,
+    "v": "获取",
+    "o": "座舱实际温度",
+    "e": null,
+    "action": "获取座舱实际温度",
+    "domain_action": "获取座舱实际温度",
+    "inputs": [
+      {
+        "concept": "座舱温度信息",
+        "variables": []
+      }
+    ],
+    "outputs": [
+      {
+        "concept": "温度反馈",
+        "variables": []
+      }
+    ],
+    "preconditions": [],
+    "required_capability": null,
+    "required_capability_status": "待业务方确认",
+    "parent_id": "SC3",
+    "hierarchy_path": [
+      "11.17SEOV案例",
+      "SC3",
+      "S3-F02 获取座舱实际温度"
+    ],
+    "boundary": "场景模型边界；与三条空调控制需求分别建树",
+    "status": "沿用原案例场景功能；输入输出为分析契约，算法未定义",
+    "source_refs": [
+      {
+        "file": "00_修改依据/11.3日案例—孙月芸.zip",
+        "entry": "11.3日案例—孙月芸/结构化需求条目/结构化需求清单.json",
+        "req_id": "SC3-002",
+        "original_name": "座舱温度信息采集"
+      }
+    ],
+    "root_id": "SC3",
+    "canonical_function_id": "S3-F02",
+    "record_role": "功能定义"
+  },
+  {
+    "function_id": "S3-F03",
+    "req_id": "SC3-003",
+    "name": "判定座舱制冷需求",
+    "s": null,
+    "v": "判定",
+    "o": "座舱制冷需求",
+    "e": null,
+    "action": "判定座舱制冷需求",
+    "domain_action": "判定座舱制冷需求",
+    "inputs": [
+      {
+        "concept": "目标温度、实测温度",
+        "variables": []
+      }
+    ],
+    "outputs": [
+      {
+        "concept": "座舱制冷需求",
+        "variables": []
+      }
+    ],
+    "preconditions": [],
+    "required_capability": null,
+    "required_capability_status": "待业务方确认",
+    "parent_id": "SC3",
+    "hierarchy_path": [
+      "11.17SEOV案例",
+      "SC3",
+      "S3-F03 判定座舱制冷需求"
+    ],
+    "boundary": "场景模型边界；与三条空调控制需求分别建树",
+    "status": "沿用原案例场景功能；输入输出为分析契约，算法未定义",
+    "source_refs": [
+      {
+        "file": "00_修改依据/11.3日案例—孙月芸.zip",
+        "entry": "11.3日案例—孙月芸/结构化需求条目/结构化需求清单.json",
+        "req_id": "SC3-003",
+        "original_name": "座舱偏差与制冷需求判断"
+      }
+    ],
+    "root_id": "SC3",
+    "canonical_function_id": "S3-F03",
+    "record_role": "功能定义"
+  },
+  {
+    "function_id": "S3-F04",
+    "req_id": "SC3-004",
+    "name": "调节座舱制冷能力",
+    "s": null,
+    "v": "调节",
+    "o": "座舱制冷能力",
+    "e": "使座舱温度趋近目标；性能窗口未提供",
+    "action": "调节座舱制冷能力",
+    "domain_action": "调节座舱制冷能力",
+    "inputs": [
+      {
+        "concept": "分配的制冷能力、制冷需求",
+        "variables": []
+      }
+    ],
+    "outputs": [
+      {
+        "concept": "制冷量调节请求",
+        "variables": []
+      }
+    ],
+    "preconditions": [],
+    "required_capability": null,
+    "required_capability_status": "待业务方确认",
+    "parent_id": "SC3",
+    "hierarchy_path": [
+      "11.17SEOV案例",
+      "SC3",
+      "S3-F04 调节座舱制冷能力"
+    ],
+    "boundary": "场景模型边界；与三条空调控制需求分别建树",
+    "status": "沿用原案例场景功能；输入输出为分析契约，算法未定义",
+    "source_refs": [
+      {
+        "file": "00_修改依据/11.3日案例—孙月芸.zip",
+        "entry": "11.3日案例—孙月芸/结构化需求条目/结构化需求清单.json",
+        "req_id": "SC3-004",
+        "original_name": "座舱制冷能力调节"
+      }
+    ],
+    "root_id": "SC3",
+    "canonical_function_id": "S3-F04",
+    "record_role": "功能定义"
+  },
+  {
+    "function_id": "S3-F05",
+    "req_id": "SC3-005",
+    "name": "调节座舱送风量",
+    "s": null,
+    "v": "调节",
+    "o": "座舱送风量",
+    "e": null,
+    "action": "调节座舱送风量",
+    "domain_action": "调节座舱送风量",
+    "inputs": [
+      {
+        "concept": "制冷请求、空气输送需求",
+        "variables": []
+      }
+    ],
+    "outputs": [
+      {
+        "concept": "座舱空气换热效果",
+        "variables": []
+      }
+    ],
+    "preconditions": [],
+    "required_capability": null,
+    "required_capability_status": "待业务方确认",
+    "parent_id": "SC3",
+    "hierarchy_path": [
+      "11.17SEOV案例",
+      "SC3",
+      "S3-F05 调节座舱送风量"
+    ],
+    "boundary": "场景模型边界；与三条空调控制需求分别建树",
+    "status": "沿用原案例场景功能；输入输出为分析契约，算法未定义",
+    "source_refs": [
+      {
+        "file": "00_修改依据/11.3日案例—孙月芸.zip",
+        "entry": "11.3日案例—孙月芸/结构化需求条目/结构化需求清单.json",
+        "req_id": "SC3-005",
+        "original_name": "空气输送与送风调节"
+      }
+    ],
+    "root_id": "SC3",
+    "canonical_function_id": "S3-F05",
+    "record_role": "功能定义"
+  },
+  {
+    "function_id": "S3-F06",
+    "req_id": "SC3-006",
+    "name": "获取电池温度与功率",
+    "s": null,
+    "v": "获取",
+    "o": "电池温度与功率",
+    "e": null,
+    "action": "获取电池温度与功率",
+    "domain_action": "获取电池温度与功率",
+    "inputs": [
+      {
+        "concept": "电池温度、充放电功率",
+        "variables": []
+      }
+    ],
+    "outputs": [
+      {
+        "concept": "有效温度/功率输入",
+        "variables": []
+      }
+    ],
+    "preconditions": [],
+    "required_capability": null,
+    "required_capability_status": "待业务方确认",
+    "parent_id": "SC3",
+    "hierarchy_path": [
+      "11.17SEOV案例",
+      "SC3",
+      "S3-F06 获取电池温度与功率"
+    ],
+    "boundary": "场景模型边界；与三条空调控制需求分别建树",
+    "status": "沿用原案例场景功能；输入输出为分析契约，算法未定义",
+    "source_refs": [
+      {
+        "file": "00_修改依据/11.3日案例—孙月芸.zip",
+        "entry": "11.3日案例—孙月芸/结构化需求条目/结构化需求清单.json",
+        "req_id": "SC3-006",
+        "original_name": "电池温度及功率获取"
+      }
+    ],
+    "root_id": "SC3",
+    "canonical_function_id": "S3-F06",
+    "record_role": "功能定义"
+  },
+  {
+    "function_id": "S3-F07",
+    "req_id": "SC3-007",
+    "name": "判定电池辅助冷却需求",
+    "s": null,
+    "v": "判定",
+    "o": "电池辅助冷却需求",
+    "e": null,
+    "action": "判定电池辅助冷却需求",
+    "domain_action": "判定电池辅助冷却需求",
+    "inputs": [
+      {
+        "concept": "温度/功率输入",
+        "variables": []
+      }
+    ],
+    "outputs": [
+      {
+        "concept": "辅助冷却需求",
+        "variables": []
+      }
+    ],
+    "preconditions": [],
+    "required_capability": null,
+    "required_capability_status": "待业务方确认",
+    "parent_id": "SC3",
+    "hierarchy_path": [
+      "11.17SEOV案例",
+      "SC3",
+      "S3-F07 判定电池辅助冷却需求"
+    ],
+    "boundary": "场景模型边界；与三条空调控制需求分别建树",
+    "status": "沿用原案例场景功能；输入输出为分析契约，算法未定义",
+    "source_refs": [
+      {
+        "file": "00_修改依据/11.3日案例—孙月芸.zip",
+        "entry": "11.3日案例—孙月芸/结构化需求条目/结构化需求清单.json",
+        "req_id": "SC3-007",
+        "original_name": "电池辅助冷却需求判断"
+      }
+    ],
+    "root_id": "SC3",
+    "canonical_function_id": "S3-F07",
+    "record_role": "功能定义"
+  },
+  {
+    "function_id": "S3-F08",
+    "req_id": "SC3-008",
+    "name": "计算电池冷却能力需求",
+    "s": null,
+    "v": "计算",
+    "o": "电池冷却能力需求",
+    "e": null,
+    "action": "计算电池冷却能力需求",
+    "domain_action": "计算电池冷却能力需求",
+    "inputs": [
+      {
+        "concept": "辅助冷却需求、热状态",
+        "variables": []
+      }
+    ],
+    "outputs": [
+      {
+        "concept": "电池冷却能力请求",
+        "variables": []
+      }
+    ],
+    "preconditions": [],
+    "required_capability": null,
+    "required_capability_status": "待业务方确认",
+    "parent_id": "SC3",
+    "hierarchy_path": [
+      "11.17SEOV案例",
+      "SC3",
+      "S3-F08 计算电池冷却能力需求"
+    ],
+    "boundary": "场景模型边界；与三条空调控制需求分别建树",
+    "status": "沿用原案例场景功能；输入输出为分析契约，算法未定义",
+    "source_refs": [
+      {
+        "file": "00_修改依据/11.3日案例—孙月芸.zip",
+        "entry": "11.3日案例—孙月芸/结构化需求条目/结构化需求清单.json",
+        "req_id": "SC3-008",
+        "original_name": "电池冷却能力需求计算"
+      }
+    ],
+    "root_id": "SC3",
+    "canonical_function_id": "S3-F08",
+    "record_role": "功能定义"
+  },
+  {
+    "function_id": "S3-F09",
+    "req_id": "SC3-009",
+    "name": "分配座舱与电池制冷能力",
+    "s": null,
+    "v": "分配",
+    "o": "座舱与电池制冷能力",
+    "e": null,
+    "action": "分配座舱与电池制冷能力",
+    "domain_action": "分配座舱与电池制冷能力",
+    "inputs": [
+      {
+        "concept": "座舱/电池请求、可用制冷能力",
+        "variables": []
+      }
+    ],
+    "outputs": [
+      {
+        "concept": "两个功能的能力分配",
+        "variables": []
+      }
+    ],
+    "preconditions": [],
+    "required_capability": null,
+    "required_capability_status": "待业务方确认",
+    "parent_id": "SC3",
+    "hierarchy_path": [
+      "11.17SEOV案例",
+      "SC3",
+      "S3-F09 分配座舱与电池制冷能力"
+    ],
+    "boundary": "场景模型边界；与三条空调控制需求分别建树",
+    "status": "沿用原案例场景功能；输入输出为分析契约，算法未定义",
+    "source_refs": [
+      {
+        "file": "00_修改依据/11.3日案例—孙月芸.zip",
+        "entry": "11.3日案例—孙月芸/结构化需求条目/结构化需求清单.json",
+        "req_id": "SC3-009",
+        "original_name": "制冷能力需求分配"
+      },
+      {
+        "file": "00_修改依据/汽车热管理_SVOE功能清单_扩充版.md",
+        "line": 108,
+        "section": "2. 完整SVOE清单 / 场景三液冷",
+        "function_id": "L10",
+        "evidence_status": "本次直接核对清单；清单所引外部原文未随附件提供，未独立复核",
+        "usage": "本次结合清单的参考细化；非原11.3条目自带约束"
+      }
+    ],
+    "root_id": "SC3",
+    "canonical_function_id": "S3-F09",
+    "record_role": "功能定义"
+  },
+  {
+    "function_id": "S3-F10",
+    "req_id": "SC3-010",
+    "name": "调节电池液路换热量",
+    "s": null,
+    "v": "调节",
+    "o": "电池液路换热量",
+    "e": "通过冷却液及Chiller路径移除电池热量",
+    "action": "调节电池液路换热量",
+    "domain_action": "调节电池液路换热量",
+    "inputs": [
+      {
+        "concept": "电池分配能力、冷却液状态",
+        "variables": []
+      }
+    ],
+    "outputs": [
+      {
+        "concept": "电池热量交换响应",
+        "variables": []
+      }
+    ],
+    "preconditions": [],
+    "required_capability": null,
+    "required_capability_status": "待业务方确认",
+    "parent_id": "SC3",
+    "hierarchy_path": [
+      "11.17SEOV案例",
+      "SC3",
+      "S3-F10 调节电池液路换热量"
+    ],
+    "boundary": "场景模型边界；与三条空调控制需求分别建树",
+    "status": "沿用原案例场景功能；输入输出为分析契约，算法未定义",
+    "source_refs": [
+      {
+        "file": "00_修改依据/11.3日案例—孙月芸.zip",
+        "entry": "11.3日案例—孙月芸/结构化需求条目/结构化需求清单.json",
+        "req_id": "SC3-010",
+        "original_name": "电池换热调节"
+      },
+      {
+        "file": "00_修改依据/汽车热管理_SVOE功能清单_扩充版.md",
+        "line": 103,
+        "section": "2. 完整SVOE清单 / 场景三液冷",
+        "function_id": "L05",
+        "evidence_status": "本次直接核对清单；清单所引外部原文未随附件提供，未独立复核",
+        "usage": "本次结合清单的参考细化；非原11.3条目自带约束"
+      },
+      {
+        "file": "00_修改依据/汽车热管理_SVOE功能清单_扩充版.md",
+        "line": 104,
+        "section": "2. 完整SVOE清单 / 场景三液冷",
+        "function_id": "L06",
+        "evidence_status": "本次直接核对清单；清单所引外部原文未随附件提供，未独立复核",
+        "usage": "本次结合清单的参考细化；非原11.3条目自带约束"
+      },
+      {
+        "file": "00_修改依据/汽车热管理_SVOE功能清单_扩充版.md",
+        "line": 105,
+        "section": "2. 完整SVOE清单 / 场景三液冷",
+        "function_id": "L07",
+        "evidence_status": "本次直接核对清单；清单所引外部原文未随附件提供，未独立复核",
+        "usage": "本次结合清单的参考细化；非原11.3条目自带约束"
+      },
+      {
+        "file": "00_修改依据/汽车热管理_SVOE功能清单_扩充版.md",
+        "line": 107,
+        "section": "2. 完整SVOE清单 / 场景三液冷",
+        "function_id": "L09",
+        "evidence_status": "本次直接核对清单；清单所引外部原文未随附件提供，未独立复核",
+        "usage": "本次结合清单的参考细化；非原11.3条目自带约束"
+      }
+    ],
+    "root_id": "SC3",
+    "canonical_function_id": "S3-F10",
+    "record_role": "功能定义"
+  },
+  {
+    "function_id": "S3-F11",
+    "req_id": "SC3-011",
+    "name": "反馈座舱与电池冷却状态",
+    "s": null,
+    "v": "反馈",
+    "o": "座舱与电池冷却状态",
+    "e": null,
+    "action": "反馈座舱与电池冷却状态",
+    "domain_action": "反馈座舱与电池冷却状态",
+    "inputs": [
+      {
+        "concept": "座舱/电池温度与执行状态",
+        "variables": []
+      }
+    ],
+    "outputs": [
+      {
+        "concept": "需求重新评估信息",
+        "variables": []
+      }
+    ],
+    "preconditions": [],
+    "required_capability": null,
+    "required_capability_status": "待业务方确认",
+    "parent_id": "SC3",
+    "hierarchy_path": [
+      "11.17SEOV案例",
+      "SC3",
+      "S3-F11 反馈座舱与电池冷却状态"
+    ],
+    "boundary": "场景模型边界；与三条空调控制需求分别建树",
+    "status": "沿用原案例场景功能；输入输出为分析契约，算法未定义",
+    "source_refs": [
+      {
+        "file": "00_修改依据/11.3日案例—孙月芸.zip",
+        "entry": "11.3日案例—孙月芸/结构化需求条目/结构化需求清单.json",
+        "req_id": "SC3-011",
+        "original_name": "冷却效果反馈与需求更新"
+      },
+      {
+        "file": "00_修改依据/汽车热管理_SVOE功能清单_扩充版.md",
+        "line": 75,
+        "section": "2. 完整SVOE清单 / 座舱共用功能",
+        "function_id": "K10",
+        "evidence_status": "本次直接核对清单；清单所引外部原文未随附件提供，未独立复核",
+        "usage": "本次结合清单的参考细化；非原11.3条目自带约束"
+      },
+      {
+        "file": "00_修改依据/汽车热管理_SVOE功能清单_扩充版.md",
+        "line": 112,
+        "section": "2. 完整SVOE清单 / 场景三液冷",
+        "function_id": "L14",
+        "evidence_status": "本次直接核对清单；清单所引外部原文未随附件提供，未独立复核",
+        "usage": "本次结合清单的参考细化；非原11.3条目自带约束"
+      }
+    ],
+    "root_id": "SC3",
+    "canonical_function_id": "S3-F11",
+    "record_role": "功能定义"
+  }
+]

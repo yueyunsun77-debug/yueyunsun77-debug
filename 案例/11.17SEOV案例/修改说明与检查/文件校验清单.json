@@ -1,0 +1,482 @@
+[
+  {
+    "path": "00_修改依据/11.3日案例—孙月芸.zip",
+    "bytes": 195802,
+    "sha256": "25a1d9d8cf49077dde30a2b1c74aea39e0d7bc02198e32555b6f63a36e885321",
+    "git_blob_sha": "d4b20e98ee3fe73b01da95281edfd44f56529943"
+  },
+  {
+    "path": "00_修改依据/会议纪要.txt",
+    "bytes": 4662,
+    "sha256": "c0690d62b9994b9ab375eb7d2596081763ef1c8e095335b136c7141578930cc0",
+    "git_blob_sha": "e95050d42160b04e7c6fba2a951627510f6f0f21"
+  },
+  {
+    "path": "00_修改依据/汽车热管理_SVOE功能清单_扩充版.md",
+    "bytes": 166655,
+    "sha256": "6b6195e5c051b4797b97bbe0a64d6012a547e02e403152e63bdc42044073c662",
+    "git_blob_sha": "d844de5ff0e34d39da5943d3d884ab3bbf5891ca"
+  },
+  {
+    "path": "00_修改依据/逐字稿.txt",
+    "bytes": 2311,
+    "sha256": "75610f21d42923949823fba3cc3b6553e36c46a0d105021e0b73879f5743dbf5",
+    "git_blob_sha": "2a196ac5ca5157c6efee4abbc8f2d2fc74d51f4e"
+  },
+  {
+    "path": "00_修改依据/难题预研会议纪要-20261110.docx",
+    "bytes": 18741,
+    "sha256": "45160b44973c2abf6f4b52c33612ed344cf39348a855e31cfecd8fe9e5e0a551",
+    "git_blob_sha": "8251dfdf5bbbd43f8664c91c53eb3bbee2486279"
+  },
+  {
+    "path": "README.md",
+    "bytes": 2599,
+    "sha256": "2e1754215918099005fb97e52986d4c44f0f0e48b3339aaaea1741de4bb7c554",
+    "git_blob_sha": "828237bde18f39c0d89071e791d73befb344be1e"
+  },
+  {
+    "path": "修改说明与检查/SysML静态校验报告.json",
+    "bytes": 4729,
+    "sha256": "7bfa4f27da388b6be0886465604d3eca3635b89c6f86389dc7d9739c1ac02212",
+    "git_blob_sha": "6d8d9dc423a5a1fc37152a57f7bd98b4ebe9f906"
+  },
+  {
+    "path": "修改说明与检查/会议要求落实对照.md",
+    "bytes": 2349,
+    "sha256": "affedad5fdab83b9a22344d732171c5e7e516310fa11c867ed23dd87c2d40825",
+    "git_blob_sha": "6887e0bb6dd0830979b2cab7ef4a6344180416fe"
+  },
+  {
+    "path": "修改说明与检查/数据一致性检查报告.json",
+    "bytes": 59390,
+    "sha256": "d1af6aea4de263d3f9117cd9d0409e45274e30a0a5ab2dbab4f1c71d7ac20d71",
+    "git_blob_sha": "fc71ff2f29f7631ae42489143c145344324d9e84"
+  },
+  {
+    "path": "修改说明与检查/检查结论.md",
+    "bytes": 2143,
+    "sha256": "0da226bda20a2bcbb70727b609e397d42287dd39000d07ea1cf62ade9ec01c48",
+    "git_blob_sha": "378f30e3c9d42ed9e19de59042f2751160a82ba6"
+  },
+  {
+    "path": "修改说明与检查/系统边界与待确认项.md",
+    "bytes": 3121,
+    "sha256": "2657808911428495bc8c71872b5e5e7194b279212a569c3ec410bd4973ae6da8",
+    "git_blob_sha": "81b62cf433d81fe6c2eb435cba6579713ab62b9c"
+  },
+  {
+    "path": "功能抽取/兼容ID与规范功能映射.json",
+    "bytes": 807,
+    "sha256": "d72afb0c0f6d082ee7f34515ac618542a2ba1762fba851567c10835cd1dc7905",
+    "git_blob_sha": "012598e44767d8e6c202e2edae47e29f1d2f61fd"
+  },
+  {
+    "path": "功能抽取/功能关系.json",
+    "bytes": 95039,
+    "sha256": "d64c42618ecd4f03e61005deaf546ba7500ff980e1ceeb882f4c1bc394b6fab9",
+    "git_blob_sha": "dcc4ab1d3015812b598d9804eaed2fc52e4fff28"
+  },
+  {
+    "path": "功能抽取/功能关系.xlsx",
+    "bytes": 16865,
+    "sha256": "6f78d9d0887d2428a3f70e4c77576b0406f3bc862f8640864eb2b7b6601bb882",
+    "git_blob_sha": "38a66321c84ec931201ae2bed38653a83d86bdb1"
+  },
+  {
+    "path": "功能抽取/功能树.json",
+    "bytes": 21151,
+    "sha256": "8a553efd4b7d1bac8e225789a613a77b23901b70b572790371f5aa50c2305770",
+    "git_blob_sha": "c7fb9330595e0726a4ac6982e26b7831ac8840b8"
+  },
+  {
+    "path": "功能抽取/功能树.md",
+    "bytes": 3356,
+    "sha256": "e1273f192247ced43c52d2854131c4c62d36fd5eaba34850cf33844f28d95095",
+    "git_blob_sha": "4148a81d165525cefa9685b75a510b144ccf3416"
+  },
+  {
+    "path": "功能抽取/功能清单_SEOV.json",
+    "bytes": 130515,
+    "sha256": "04bb9ed33b4b857d61ee74450fc0f288b2e399290a4312892247069d6ad7424c",
+    "git_blob_sha": "b9d921569c3f5296c8c0c34b65ba38543ff7f48d"
+  },
+  {
+    "path": "功能抽取/功能清单_SEOV.xlsx",
+    "bytes": 14502,
+    "sha256": "e472f361db811ea577c787bdfa352f5f7f426ae2c1eb16cc234543284ddfc105",
+    "git_blob_sha": "0393ec36f06b5fb2d17de634ca46333823dd11d8"
+  },
+  {
+    "path": "功能抽取/名称修改对照.json",
+    "bytes": 5226,
+    "sha256": "f21fd6a1b0e144ac53211e9f01beee9f442bea9a460f85bd488b9523e75a84db",
+    "git_blob_sha": "a1e26f98d633cafbef918cbb98da2f3506b604f8"
+  },
+  {
+    "path": "功能抽取/名称修改对照.xlsx",
+    "bytes": 6753,
+    "sha256": "975ecc51464b8658e6ee666dba4bf0331efc5a8ff083511862b9be4f25aa55fb",
+    "git_blob_sha": "04ea1c423fc64a34e87fa40669282c30ba6553e3"
+  },
+  {
+    "path": "功能抽取/字段与命名规范.md",
+    "bytes": 2771,
+    "sha256": "e5de37f8c7da953943a6c12a86b038632e470a429e2227611f89397797219957",
+    "git_blob_sha": "fbc68e140c7affd03817cf3429c803e9d1a7dbda"
+  },
+  {
+    "path": "功能抽取/待确认功能占位.json",
+    "bytes": 696,
+    "sha256": "29d38c316eabf57c5a3a7bc732e472a30b6aa3dc817837ca93e9e5050dbab1dc",
+    "git_blob_sha": "26948678c64cb6ec31b30f60c5e151f1e716332b"
+  },
+  {
+    "path": "功能抽取/扩充候选功能池_201项.json",
+    "bytes": 328608,
+    "sha256": "e04958704d21c5b3da9964d57212170580018a99153da5febb877979beed88fe",
+    "git_blob_sha": "68b2b3aff294877444a87cd2fcbb90dc78ff33de"
+  },
+  {
+    "path": "功能抽取/扩充候选功能池_201项.xlsx",
+    "bytes": 57200,
+    "sha256": "a225a281ecb9ad1ff2460857a1a34db03ef508f1f8043aac5623eeed4b9a144d",
+    "git_blob_sha": "1f83dd4e4a24d1f10cca1c9e0e7b85441075bf27"
+  },
+  {
+    "path": "功能抽取/来源父活动节点.json",
+    "bytes": 2623,
+    "sha256": "597a4d2f416ea8af862ce4b9c882ddffa55dbfb951ef25d7f5b809a550268539",
+    "git_blob_sha": "1229249f3085ae4f6a0e1237cba595a6cc4828cd"
+  },
+  {
+    "path": "功能抽取/来源路径与证据状态.xlsx",
+    "bytes": 12681,
+    "sha256": "915200dd9df268aa64323ff82f5ae089db03e3d891719f2f51b06fa6cfd46312",
+    "git_blob_sha": "907e5567c196d3865a056dacddb4c87254636911"
+  },
+  {
+    "path": "功能抽取/案例功能与扩充清单映射.json",
+    "bytes": 5509,
+    "sha256": "9d6b3ef13ea283a5f0a4c94c75cea591252c18f5b2e8366ced65b5c7592c4565",
+    "git_blob_sha": "e5b24ec66e7b81f5e9ceeb7630dd5afd256c7cca"
+  },
+  {
+    "path": "功能抽取/案例推荐动词用法.xlsx",
+    "bytes": 7889,
+    "sha256": "716bb6f14d6290f616b9ab537d94d7baff2da18c149334b26e64c330fbfc54d4",
+    "git_blob_sha": "2ed54aeb878a3937a21b3a81055196a860bb48a8"
+  },
+  {
+    "path": "功能模型/3.3.1.2-功能分解.sysml",
+    "bytes": 968,
+    "sha256": "8090f329e32edd50c75154f32b1bb2a061b7fb5d17d1fb0344120943bd5fce6e",
+    "git_blob_sha": "4718cf930a5a6fe7cbc0dfb095da604d83a4134a"
+  },
+  {
+    "path": "功能模型/3.3.1.2-功能逻辑关系.dot",
+    "bytes": 1123,
+    "sha256": "cde6994c48e7b2a820d5079614b6936592d261f7963a08928b6f923a4a92f27f",
+    "git_blob_sha": "9ef45c7c8c99db4c5941ffe26d6b89436fe6ee17"
+  },
+  {
+    "path": "功能模型/3.3.1.2-功能逻辑关系.png",
+    "bytes": 73434,
+    "sha256": "233a68ca8a8d898795cdfb00b88b6021890f61359c727e53c69e3f28f263c421",
+    "git_blob_sha": "bd3d7d8f077b97d85c9c0f508f8530f52815048d"
+  },
+  {
+    "path": "功能模型/3.3.1.2-功能逻辑关系.svg",
+    "bytes": 8923,
+    "sha256": "757342e4d0c81d11e5708313e6a9cba8f934b98bed87c6a2db6a76c55d9bd4ae",
+    "git_blob_sha": "b050d7eacf0bd191fe71910de346c9eb9e71314c"
+  },
+  {
+    "path": "功能模型/3.3.1.6-功能分解.sysml",
+    "bytes": 1057,
+    "sha256": "214f49a7e5fdcbd2420500f75660ba98d38bc81c2f52daabae2de69329dcc692",
+    "git_blob_sha": "54487e7e58f7b6a60e50e843b326f32b6b70021f"
+  },
+  {
+    "path": "功能模型/3.3.1.6-功能逻辑关系.dot",
+    "bytes": 1053,
+    "sha256": "7ab25cb2dc0df262c691ad5501d58502928afc248cfbbb6ed39cf1a8c7fe5b09",
+    "git_blob_sha": "7cb5de2495c1cb6f3da0d9deb82c8d0cde6b794d"
+  },
+  {
+    "path": "功能模型/3.3.1.6-功能逻辑关系.png",
+    "bytes": 64119,
+    "sha256": "aeff775b1e4b4c80cd0956775123aa21c8a832fdf3e4468c360775652752f0e3",
+    "git_blob_sha": "a2f87273ac74c49dbce7dfebd2eeba4f2c0d7490"
+  },
+  {
+    "path": "功能模型/3.3.1.6-功能逻辑关系.svg",
+    "bytes": 8433,
+    "sha256": "e3cdf3255d2ecd14a10361d8d4b4070062b245ab583023c0d2fe43e921f2530a",
+    "git_blob_sha": "4fcf81b56cb0343e327be786695c58409abc8dce"
+  },
+  {
+    "path": "功能模型/3.3.1.9-功能分解.sysml",
+    "bytes": 1132,
+    "sha256": "85d6ccf0fae90a93c8458c0ebc9e421f0b5a1ee6a6ddfe7ad66ecf07ea100f31",
+    "git_blob_sha": "f5a597ab48f03c1baa36d4a710f6712245520914"
+  },
+  {
+    "path": "功能模型/3.3.1.9-功能逻辑关系.dot",
+    "bytes": 1309,
+    "sha256": "9051ff53de7f7590b4869d7ee161207c9507d562c8bc6128478e6bfb23bbd651",
+    "git_blob_sha": "a4a4b6443597e7a7c9047f9675f66a4226bb5a8d"
+  },
+  {
+    "path": "功能模型/3.3.1.9-功能逻辑关系.png",
+    "bytes": 84492,
+    "sha256": "e95aad81a85b1570665680b3be4b47a44e9df122252034480a8340bf4f8d5c2a",
+    "git_blob_sha": "c4f6d575f731856ce6eb005387d716ae6d005c32"
+  },
+  {
+    "path": "功能模型/3.3.1.9-功能逻辑关系.svg",
+    "bytes": 10936,
+    "sha256": "60371e9373b9e276cd22b185d211afeab2a8d5207e7cd02e2310a94a48b78f28",
+    "git_blob_sha": "0ff9a355a4db1535c136c2cf07d9876d576fcd72"
+  },
+  {
+    "path": "功能模型/SC1-功能分解.sysml",
+    "bytes": 794,
+    "sha256": "2a4b846c0db2e3bf202b3ecbb2d18a86269a3f8dd72915f60a4514bd23dc20d3",
+    "git_blob_sha": "881c78b957c034a581288c9946533bddb20f24be"
+  },
+  {
+    "path": "功能模型/SC1-功能逻辑关系.dot",
+    "bytes": 1476,
+    "sha256": "8cc43c111851b850cc2e7ac04751a451cea5e88404bd319daf99a6bb4cbe8e42",
+    "git_blob_sha": "4bf4b7ec5cbd73c47fd9e3135d282e18ecb70da3"
+  },
+  {
+    "path": "功能模型/SC1-功能逻辑关系.png",
+    "bytes": 87286,
+    "sha256": "d35a900b960d83b8c90e51cf14824892e07f6ca205e310238067c3215b6db259",
+    "git_blob_sha": "4e8bdb7eb0324e03a68422ddefc17858e4460c3e"
+  },
+  {
+    "path": "功能模型/SC1-功能逻辑关系.svg",
+    "bytes": 12297,
+    "sha256": "d3ab47a7563fdd40543e82bee2dbe431b6f8ce4cee5565ec11d5d49c744f9e84",
+    "git_blob_sha": "d7d841bb038bf4104e9d373bc64d49f7117642ab"
+  },
+  {
+    "path": "功能模型/SC2-功能分解.sysml",
+    "bytes": 830,
+    "sha256": "ad8d7eaf788dd0f3932c71af71bf7b82d9cb4f3977b70acc15e31d28500b04ab",
+    "git_blob_sha": "6b82fc3cfc48b701d2c9e1aaabf82047607cc68e"
+  },
+  {
+    "path": "功能模型/SC2-功能逻辑关系.dot",
+    "bytes": 1726,
+    "sha256": "fab7100254991e0f80f245876d42c70a5dbb11ff31c6fd894285992ca32dac28",
+    "git_blob_sha": "aebc7862a329d5d1ecf86e7b431aaa4acd1bfa86"
+  },
+  {
+    "path": "功能模型/SC2-功能逻辑关系.png",
+    "bytes": 116827,
+    "sha256": "b9a9ba5904f78c6a70a1f3aee9501a27b756482f5facf88a51209e8014a6c5c2",
+    "git_blob_sha": "c7200edb6a64a44d7160b5799ac94a56db2d6e0e"
+  },
+  {
+    "path": "功能模型/SC2-功能逻辑关系.svg",
+    "bytes": 14585,
+    "sha256": "116112556a2032ba3f8feb951e1b783a4fe575b2c152c39e01a65d6347728b6d",
+    "git_blob_sha": "0e094b805f605e068ab93e8acab8807a6ace17de"
+  },
+  {
+    "path": "功能模型/SC3-功能分解.sysml",
+    "bytes": 906,
+    "sha256": "284a6c6453320c982b0a01c3d73483ca6ff65bdc86a799047c6ba0adea879b50",
+    "git_blob_sha": "db00512ab915be21a74bf52ecc8850f3e3057702"
+  },
+  {
+    "path": "功能模型/SC3-功能逻辑关系.dot",
+    "bytes": 1736,
+    "sha256": "f2ca1aea463375441e082fe11a88e12a0fae4badf581bf97dc1d3f4b01b0f205",
+    "git_blob_sha": "a909111d5981d73325f1f032d7185ee7e3888a8f"
+  },
+  {
+    "path": "功能模型/SC3-功能逻辑关系.png",
+    "bytes": 121401,
+    "sha256": "bd0dc9307504582bacf8ba514595de38df7b8cfdc8187679dbad801845b1fd13",
+    "git_blob_sha": "5c6d50d2d85b9d5933ea0311437be4720b60b9fe"
+  },
+  {
+    "path": "功能模型/SC3-功能逻辑关系.svg",
+    "bytes": 13967,
+    "sha256": "6845f5172045793e7a214217f8fbb840d3dc0b63a2b19a18ede8334cf7413c5a",
+    "git_blob_sha": "a5f0772686ac0c236183ec7d7d84796f37ab613a"
+  },
+  {
+    "path": "功能模型/原子功能定义.sysml",
+    "bytes": 31441,
+    "sha256": "a0492bd7b3dd801cbeadf4b34e96aab767eabb6cfc9e0bbf441cc7d4f3c55b83",
+    "git_blob_sha": "3d2f8541b2eeba0a69603ed98dfbfa541c409b2c"
+  },
+  {
+    "path": "功能模型/导入与图示说明.md",
+    "bytes": 1043,
+    "sha256": "a2a39723900fe34beefe036a5bd53378c16ef2a8b723df3298032d0155338f03",
+    "git_blob_sha": "ab940d1165cf893bb65bcf19409ccaa593aad9c9"
+  },
+  {
+    "path": "功能模型/逻辑功能架构图.dot",
+    "bytes": 9471,
+    "sha256": "7001c1dc8453b20d41da65974068b4c84172b8893d9719199f413c5fcafc628b",
+    "git_blob_sha": "13437d2c1d186b009d62d69bd9bfc0264538ae0d"
+  },
+  {
+    "path": "功能模型/逻辑功能架构图.png",
+    "bytes": 868830,
+    "sha256": "5d07764edf6191680a3db00bea8398e64f174d41b9a46c9419f008a212d69f65",
+    "git_blob_sha": "c008d1c89eb215b7fd5b01018f571da4be8c2e5e"
+  },
+  {
+    "path": "功能模型/逻辑功能架构图.svg",
+    "bytes": 91251,
+    "sha256": "4e72861489c4014901a36cab1942c741a2e0aad37aef7a2c4db75fe9284246c3",
+    "git_blob_sha": "f8401ef8f45d91e9a37ecf55d064cd68fd8ab068"
+  },
+  {
+    "path": "场景与功能逻辑/3.3.1.2.md",
+    "bytes": 2120,
+    "sha256": "2033761873566bace7dfcb1b266d9876e518c51059438572e0150b8d2fe41f30",
+    "git_blob_sha": "ad0c53b75df8fe4cf13bc876b35bca921c8699d3"
+  },
+  {
+    "path": "场景与功能逻辑/3.3.1.6.md",
+    "bytes": 2184,
+    "sha256": "1efc422e958cde17d5c459cf32cd4edcf0082010651c104d97e72e50b977a9f3",
+    "git_blob_sha": "ac4543e1af4e8c2855dc3fe10edba4f156e5c2b3"
+  },
+  {
+    "path": "场景与功能逻辑/3.3.1.9.md",
+    "bytes": 2647,
+    "sha256": "4459f074a65151e06d6e2e508a152d3997c83d0af45a2ac1143ad1f0d9d897b7",
+    "git_blob_sha": "6022455f67c37ea831b83f9d51dc9cc45711e1f3"
+  },
+  {
+    "path": "场景与功能逻辑/SC1.md",
+    "bytes": 2584,
+    "sha256": "f1cc4f584eccc27df64c5500d8dbb948f415e2066bdbe499cb6c8749f481d1e3",
+    "git_blob_sha": "4738eb84eab02403989988d5095fddca7577d753"
+  },
+  {
+    "path": "场景与功能逻辑/SC2.md",
+    "bytes": 4031,
+    "sha256": "91385da8fffdacde6c370bc5c5cc17065d7217eb43bc5367a0f97769e848cc06",
+    "git_blob_sha": "258a7efff8a3d7fa769ee61caa6ddcaa13c46994"
+  },
+  {
+    "path": "场景与功能逻辑/SC3.md",
+    "bytes": 2800,
+    "sha256": "e037e8b83943235ea0f4816500cc34661db4a455e64fc22213ea0b9b1889d00b",
+    "git_blob_sha": "b2b51f2dd03f392ebc89635c1d811908c33301c1"
+  },
+  {
+    "path": "指标分析、分配表/指标与功能对应关系说明.md",
+    "bytes": 2889,
+    "sha256": "813fbb253504d04786d0992a3c1c350a3e76be4c371e1c62145279c95e7b30e8",
+    "git_blob_sha": "3af3fa174b4547e1ae4b6c2e16da372e5c98324d"
+  },
+  {
+    "path": "指标分析、分配表/指标分析表.xlsx",
+    "bytes": 9665,
+    "sha256": "7a5c693edfc15a3280e0e49177e29bbda2c43ef1406f2ca9129d6afacb6d8264",
+    "git_blob_sha": "4e52fa94b9e02e47bf6f9192d096c099d1cb1298"
+  },
+  {
+    "path": "指标分析、分配表/指标分配表.xlsx",
+    "bytes": 9665,
+    "sha256": "7a5c693edfc15a3280e0e49177e29bbda2c43ef1406f2ca9129d6afacb6d8264",
+    "git_blob_sha": "4e52fa94b9e02e47bf6f9192d096c099d1cb1298"
+  },
+  {
+    "path": "结构化需求条目/指标与JSON需求条目映射表.xlsx",
+    "bytes": 9274,
+    "sha256": "19f2707429cde41dc0520e532434a67da121b4e569a716ef04a898fbcebc6583",
+    "git_blob_sha": "615d25117e4e491f1edb0b675c8bebf34ab9b45f"
+  },
+  {
+    "path": "结构化需求条目/结构化需求清单.json",
+    "bytes": 109659,
+    "sha256": "bbb8f1f1e436bbc51e41ee7f149d17fb40dfe1618f5793296349843d2fb70539",
+    "git_blob_sha": "5358d7115b433f64fc28379ea2730824a163482d"
+  },
+  {
+    "path": "逻辑功能—物理组件/指标与功能对应关系说明.md",
+    "bytes": 2889,
+    "sha256": "813fbb253504d04786d0992a3c1c350a3e76be4c371e1c62145279c95e7b30e8",
+    "git_blob_sha": "3af3fa174b4547e1ae4b6c2e16da372e5c98324d"
+  },
+  {
+    "path": "逻辑功能—物理组件/物理组件与逻辑功能映射表.xlsx",
+    "bytes": 11714,
+    "sha256": "79cf51347b35c5e4c46237a51f726d1efebe289159c93ca11315af499af81a94",
+    "git_blob_sha": "11dbfca423a52810e23948e105de123607a94b97"
+  },
+  {
+    "path": "逻辑功能—物理组件/逻辑功能架构图.png",
+    "bytes": 868830,
+    "sha256": "5d07764edf6191680a3db00bea8398e64f174d41b9a46c9419f008a212d69f65",
+    "git_blob_sha": "c008d1c89eb215b7fd5b01018f571da4be8c2e5e"
+  },
+  {
+    "path": "逻辑功能—物理组件/逻辑功能目录.xlsx",
+    "bytes": 8198,
+    "sha256": "b15186aa4a4df21586184ffcb23204614ad82355be46785070c2d347fe4d58a9",
+    "git_blob_sha": "19b0772170014a2228db3a9cf076c0e626b4293f"
+  },
+  {
+    "path": "需求图/3.3.1.2-需求图.sysml",
+    "bytes": 1894,
+    "sha256": "d30026dfab72845cc12ce06153a84fb7cb8177679d7f63bdba1fcb466467e289",
+    "git_blob_sha": "59cdce2dbef757d8a46cd65dd2d06e26cc15f0d2"
+  },
+  {
+    "path": "需求图/3.3.1.6-需求图.sysml",
+    "bytes": 1871,
+    "sha256": "8faaaafa86fef79fd991511faaff68142fed2ca0ee2e62d2c917538d9f6118b2",
+    "git_blob_sha": "ad622649147b6a1c654b288ba5155e61afd3393e"
+  },
+  {
+    "path": "需求图/3.3.1.9-需求图.sysml",
+    "bytes": 2018,
+    "sha256": "36380c27b06783d878c11dd2377db4fa9c73dd53db0eaf99b624e08f5f322011",
+    "git_blob_sha": "ab4300245d049240395cea3c04477ef5cb60ad6e"
+  },
+  {
+    "path": "需求外部BDD图/3.3.1.2、3.3.1.6、3.3.1.9-BDD图.sysml",
+    "bytes": 8634,
+    "sha256": "4eb187a1b5914c392a508c508ec9fedf3e8fa5da214f518d8c4e3ec2994a55ef",
+    "git_blob_sha": "9885aedaba1ae9837fc6ca70b80af1528904a527"
+  },
+  {
+    "path": "需求活动图/3.3.1.2-需求活动图.sysml",
+    "bytes": 3884,
+    "sha256": "98c1fbaf27c81cff0990d98607b334f42af3a8ae3cd04f4a5db2795482ce455d",
+    "git_blob_sha": "d29de854ebc0e9a41fa1f76683ad44dd1f8c5788"
+  },
+  {
+    "path": "需求活动图/3.3.1.6-需求活动图.sysml",
+    "bytes": 4238,
+    "sha256": "bc780ef13eacfd84da40cd1ed14097c6ad01721e3e11496529fd2ec3af12f765",
+    "git_blob_sha": "1bbffedca82d62fb4f6acd370d5304c7b4ce4583"
+  },
+  {
+    "path": "需求活动图/3.3.1.9-需求活动图.sysml",
+    "bytes": 5345,
+    "sha256": "00c1858eb0aa0a3dbce6580e826829dd950428ea2a483a497267e86b0b32546d",
+    "git_blob_sha": "4a7c511ecbd5b86bbbffbf90a5557d5acb58f56e"
+  },
+  {
+    "path": "需求用例图/3.3.1.2、3.3.1.6、3.3.1.9-需求用例图.sysml",
+    "bytes": 3322,
+    "sha256": "66f3b9b1b763a8944744e91a1ad2771d324c3199620144a38def7b7390a9580e",
+    "git_blob_sha": "6c952369cf7b23669443b018bbad7dc80e514a47"
+  }
+]

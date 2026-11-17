@@ -1,0 +1,20 @@
+digraph G {
+graph [rankdir=LR,bgcolor="white",pad="0.3"];
+node [shape=box,style="rounded,filled",fillcolor="#EFF5FA",fontname="Noto Sans CJK SC",fontsize=11];
+edge [fontname="Noto Sans CJK SC",fontsize=9,color="#52728C"];
+"LF-008" [label="LF-008\n判定目标温度边界"];
+"LF-009" [label="LF-009\n更新座舱目标温度"];
+"LF-010" [label="LF-010\n获取温度与环境信息"];
+"LF-011" [label="LF-011\n协调自动温控请求"];
+"LF-012" [label="LF-012\n反馈自动模式状态"];
+"LF-013" [label="LF-013\n反馈空调运行状态"];
+"LF-014" [label="LF-014\n切换自动模式状态"];
+"LF-015" [label="LF-015\n调节座舱温度"];
+"LF-028" [label="LF-028\n处理AUTO下的AC操作"];
+"LF-009" -> "LF-008" [label="information_flow",style="solid"];
+"LF-010" -> "LF-015" [label="information_flow",style="solid"];
+"LF-015" -> "LF-011" [label="information_flow",style="solid"];
+"LF-013" -> "LF-015" [label="feedback",style="solid"];
+"LF-014" -> "LF-012" [label="condition",style="solid"];
+"LF-028" -> "LF-012" [label="condition",style="solid"];
+}

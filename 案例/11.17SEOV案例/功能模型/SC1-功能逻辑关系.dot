@@ -1,0 +1,28 @@
+digraph G {
+graph [rankdir=LR,bgcolor="white",pad="0.3"];
+node [shape=box,style="rounded,filled",fillcolor="#EFF5FA",fontname="Noto Sans CJK SC",fontsize=11];
+edge [fontname="Noto Sans CJK SC",fontsize=9,color="#52728C"];
+"LF-029" [label="LF-029\n调节发动机发电工作点"];
+"S1-F01" [label="S1-F01\n接收驾驶指令"];
+"S1-F02" [label="S1-F02\n分析动力需求"];
+"S1-F03" [label="S1-F03\n选择运行模式"];
+"S1-F04" [label="S1-F04\n控制电驱动能量转换"];
+"S1-F05" [label="S1-F05\n判定再生制动请求"];
+"S1-F06" [label="S1-F06\n协调再生充电"];
+"S1-F07" [label="S1-F07\n协调发动机启动"];
+"S1-F08" [label="S1-F08\n调节发动机发电工作点"];
+"S1-F09" [label="S1-F09\n管理充电能量收支"];
+"S1-F10" [label="S1-F10\n更新运行模式评估信息"];
+"S1-F01" -> "S1-F02" [label="sequence",style="solid"];
+"S1-F02" -> "S1-F03" [label="sequence",style="solid"];
+"S1-F03" -> "S1-F04" [label="branch",style="solid"];
+"S1-F03" -> "S1-F05" [label="branch",style="solid"];
+"S1-F04" -> "S1-F06" [label="mutual_exclusion",style="solid"];
+"S1-F05" -> "S1-F06" [label="sequence",style="solid"];
+"S1-F03" -> "S1-F07" [label="branch",style="solid"];
+"S1-F07" -> "S1-F08" [label="sequence",style="solid"];
+"S1-F08" -> "S1-F09" [label="information_flow",style="solid"];
+"S1-F06" -> "S1-F09" [label="information_flow",style="solid"];
+"S1-F10" -> "S1-F03" [label="feedback",style="solid"];
+"LF-029" -> "S1-F08" [label="alias",style="dashed"];
+}

@@ -1,0 +1,31 @@
+digraph G {
+graph [rankdir=LR,bgcolor="white",pad="0.3"];
+node [shape=box,style="rounded,filled",fillcolor="#EFF5FA",fontname="Noto Sans CJK SC",fontsize=11];
+edge [fontname="Noto Sans CJK SC",fontsize=9,color="#52728C"];
+"S3-F01" [label="S3-F01\n获取座舱目标温度"];
+"S3-F02" [label="S3-F02\n获取座舱实际温度"];
+"S3-F03" [label="S3-F03\n判定座舱制冷需求"];
+"S3-F04" [label="S3-F04\n调节座舱制冷能力"];
+"S3-F05" [label="S3-F05\n调节座舱送风量"];
+"S3-F06" [label="S3-F06\n获取电池温度与功率"];
+"S3-F07" [label="S3-F07\n判定电池辅助冷却需求"];
+"S3-F08" [label="S3-F08\n计算电池冷却能力需求"];
+"S3-F09" [label="S3-F09\n分配座舱与电池制冷能力"];
+"S3-F10" [label="S3-F10\n调节电池液路换热量"];
+"S3-F11" [label="S3-F11\n反馈座舱与电池冷却状态"];
+"S3-F01" -> "S3-F03" [label="information_flow",style="solid"];
+"S3-F02" -> "S3-F03" [label="information_flow",style="solid"];
+"S3-F03" -> "S3-F09" [label="information_flow",style="solid"];
+"S3-F02" -> "S3-F06" [label="parallel",style="solid"];
+"S3-F06" -> "S3-F07" [label="sequence",style="solid"];
+"S3-F07" -> "S3-F08" [label="sequence",style="solid"];
+"S3-F08" -> "S3-F09" [label="information_flow",style="solid"];
+"S3-F09" -> "S3-F04" [label="information_flow",style="solid"];
+"S3-F09" -> "S3-F10" [label="information_flow",style="solid"];
+"S3-F04" -> "S3-F10" [label="parallel",style="solid"];
+"S3-F04" -> "S3-F05" [label="information_flow",style="solid"];
+"S3-F05" -> "S3-F11" [label="information_flow",style="solid"];
+"S3-F10" -> "S3-F11" [label="information_flow",style="solid"];
+"S3-F11" -> "S3-F03" [label="feedback",style="solid"];
+"S3-F11" -> "S3-F07" [label="feedback",style="solid"];
+}

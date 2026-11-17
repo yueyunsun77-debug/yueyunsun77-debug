@@ -1,0 +1,132 @@
+{
+  "engine": "OMG SysML v2 Pilot Implementation / Xtext IResourceValidator CheckMode.ALL",
+  "distribution": "jupyter-sysml-kernel 0.63.1 (conda-forge)",
+  "jar_sha256": "67c914092f4520ba98548b285c5a9a8bc08f92a0aeec7b763e12a574e91f9ff7",
+  "normative_library_files": 95,
+  "validation_kind": "local native parser, linking, types and implemented static semantic rules; not vehicle simulation",
+  "files": [
+    {
+      "file": "功能模型__3.3.1.2-功能分解.sysml",
+      "sha256": "8090f329e32edd50c75154f32b1bb2a061b7fb5d17d1fb0344120943bd5fce6e",
+      "errors": 0,
+      "warnings": 0,
+      "issues": [],
+      "relative_path": "功能模型/3.3.1.2-功能分解.sysml"
+    },
+    {
+      "file": "功能模型__3.3.1.6-功能分解.sysml",
+      "sha256": "214f49a7e5fdcbd2420500f75660ba98d38bc81c2f52daabae2de69329dcc692",
+      "errors": 0,
+      "warnings": 0,
+      "issues": [],
+      "relative_path": "功能模型/3.3.1.6-功能分解.sysml"
+    },
+    {
+      "file": "功能模型__3.3.1.9-功能分解.sysml",
+      "sha256": "85d6ccf0fae90a93c8458c0ebc9e421f0b5a1ee6a6ddfe7ad66ecf07ea100f31",
+      "errors": 0,
+      "warnings": 0,
+      "issues": [],
+      "relative_path": "功能模型/3.3.1.9-功能分解.sysml"
+    },
+    {
+      "file": "功能模型__SC1-功能分解.sysml",
+      "sha256": "2a4b846c0db2e3bf202b3ecbb2d18a86269a3f8dd72915f60a4514bd23dc20d3",
+      "errors": 0,
+      "warnings": 0,
+      "issues": [],
+      "relative_path": "功能模型/SC1-功能分解.sysml"
+    },
+    {
+      "file": "功能模型__SC2-功能分解.sysml",
+      "sha256": "ad8d7eaf788dd0f3932c71af71bf7b82d9cb4f3977b70acc15e31d28500b04ab",
+      "errors": 0,
+      "warnings": 0,
+      "issues": [],
+      "relative_path": "功能模型/SC2-功能分解.sysml"
+    },
+    {
+      "file": "功能模型__SC3-功能分解.sysml",
+      "sha256": "284a6c6453320c982b0a01c3d73483ca6ff65bdc86a799047c6ba0adea879b50",
+      "errors": 0,
+      "warnings": 0,
+      "issues": [],
+      "relative_path": "功能模型/SC3-功能分解.sysml"
+    },
+    {
+      "file": "功能模型__原子功能定义.sysml",
+      "sha256": "a0492bd7b3dd801cbeadf4b34e96aab767eabb6cfc9e0bbf441cc7d4f3c55b83",
+      "errors": 0,
+      "warnings": 0,
+      "issues": [],
+      "relative_path": "功能模型/原子功能定义.sysml"
+    },
+    {
+      "file": "需求图__3.3.1.2-需求图.sysml",
+      "sha256": "d30026dfab72845cc12ce06153a84fb7cb8177679d7f63bdba1fcb466467e289",
+      "errors": 0,
+      "warnings": 0,
+      "issues": [],
+      "relative_path": "需求图/3.3.1.2-需求图.sysml"
+    },
+    {
+      "file": "需求图__3.3.1.6-需求图.sysml",
+      "sha256": "8faaaafa86fef79fd991511faaff68142fed2ca0ee2e62d2c917538d9f6118b2",
+      "errors": 0,
+      "warnings": 0,
+      "issues": [],
+      "relative_path": "需求图/3.3.1.6-需求图.sysml"
+    },
+    {
+      "file": "需求图__3.3.1.9-需求图.sysml",
+      "sha256": "36380c27b06783d878c11dd2377db4fa9c73dd53db0eaf99b624e08f5f322011",
+      "errors": 0,
+      "warnings": 0,
+      "issues": [],
+      "relative_path": "需求图/3.3.1.9-需求图.sysml"
+    },
+    {
+      "file": "需求外部BDD图__3.3.1.2、3.3.1.6、3.3.1.9-BDD图.sysml",
+      "sha256": "4eb187a1b5914c392a508c508ec9fedf3e8fa5da214f518d8c4e3ec2994a55ef",
+      "errors": 0,
+      "warnings": 0,
+      "issues": [],
+      "relative_path": "需求外部BDD图/3.3.1.2、3.3.1.6、3.3.1.9-BDD图.sysml"
+    },
+    {
+      "file": "需求活动图__3.3.1.2-需求活动图.sysml",
+      "sha256": "98c1fbaf27c81cff0990d98607b334f42af3a8ae3cd04f4a5db2795482ce455d",
+      "errors": 0,
+      "warnings": 0,
+      "issues": [],
+      "relative_path": "需求活动图/3.3.1.2-需求活动图.sysml"
+    },
+    {
+      "file": "需求活动图__3.3.1.6-需求活动图.sysml",
+      "sha256": "bc780ef13eacfd84da40cd1ed14097c6ad01721e3e11496529fd2ec3af12f765",
+      "errors": 0,
+      "warnings": 0,
+      "issues": [],
+      "relative_path": "需求活动图/3.3.1.6-需求活动图.sysml"
+    },
+    {
+      "file": "需求活动图__3.3.1.9-需求活动图.sysml",
+      "sha256": "00c1858eb0aa0a3dbce6580e826829dd950428ea2a483a497267e86b0b32546d",
+      "errors": 0,
+      "warnings": 0,
+      "issues": [],
+      "relative_path": "需求活动图/3.3.1.9-需求活动图.sysml"
+    },
+    {
+      "file": "需求用例图__3.3.1.2、3.3.1.6、3.3.1.9-需求用例图.sysml",
+      "sha256": "66f3b9b1b763a8944744e91a1ad2771d324c3199620144a38def7b7390a9580e",
+      "errors": 0,
+      "warnings": 0,
+      "issues": [],
+      "relative_path": "需求用例图/3.3.1.2、3.3.1.6、3.3.1.9-需求用例图.sysml"
+    }
+  ],
+  "total_files": 15,
+  "errors": 0,
+  "warnings": 0
+}

@@ -1,0 +1,21 @@
+digraph G {
+graph [rankdir=LR,bgcolor="white",pad="0.3"];
+node [shape=box,style="rounded,filled",fillcolor="#EFF5FA",fontname="Noto Sans CJK SC",fontsize=11];
+edge [fontname="Noto Sans CJK SC",fontsize=9,color="#52728C"];
+"LF-001" [label="LF-001\n判定电加热使能条件"];
+"LF-002" [label="LF-002\n判定整车故障下的加热许可"];
+"LF-003" [label="LF-003\n判定电量约束下的加热许可"];
+"LF-004" [label="LF-004\n控制电加热通断"];
+"LF-005" [label="LF-005\n切断过温电加热请求"];
+"LF-006" [label="LF-006\n判定电加热恢复许可"];
+"LF-007" [label="LF-007\n反馈电加热状态"];
+"LF-027" [label="LF-027\n获取电加热温度"];
+"LF-001" -> "LF-004" [label="enables",style="solid"];
+"LF-002" -> "LF-004" [label="enables",style="solid"];
+"LF-003" -> "LF-004" [label="enables",style="solid"];
+"LF-005" -> "LF-004" [label="inhibits",style="solid"];
+"LF-006" -> "LF-004" [label="enables",style="solid"];
+"LF-027" -> "LF-005" [label="information_flow",style="solid"];
+"LF-027" -> "LF-006" [label="information_flow",style="solid"];
+"LF-007" -> "LF-004" [label="feedback",style="solid"];
+}
