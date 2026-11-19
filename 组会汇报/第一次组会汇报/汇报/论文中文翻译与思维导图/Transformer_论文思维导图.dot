@@ -1,0 +1,80 @@
+digraph G {
+graph [rankdir=LR, bgcolor="white", pad="0.35", nodesep="0.17", ranksep="0.55", splines=polyline, outputorder=edgesfirst];
+node [shape=box, style="rounded,filled", fillcolor="#F7F9F8", color="#D5DEDB", fontname="Noto Sans CJK SC", fontsize=13, margin="0.16,0.10"];
+edge [color="#9DAEAA", penwidth=1.2, arrowhead=none];
+root [label="Attention Is All You Need
+Transformer · NIPS 2017
+用注意力建立序列交互骨干", fillcolor="#E2EEE9", color="#75998C", fontsize=18, margin="0.25,0.20"];
+b0 [label="研究问题｜§1—2", fillcolor="#ECF2EF", fontsize=15];
+b0 -> root;
+n0_0 [label="此前是什么？\nRNN/LSTM/GRU按位置递推\n卷积依赖局部处理与层间传播\n注意力机制此前已经存在"];
+n0_0 -> b0;
+n0_1 [label="遇到什么限制？\n样本内部顺序依赖限制并行\n远位置的信息传递路径较长"];
+n0_1 -> b0;
+n0_2 [label="本文改变什么？\n用注意力作为序列交互骨干\n取消循环与卷积\n保留编码器—解码器总体结构"];
+n0_2 -> b0;
+b1 [label="整体架构｜§3.1", fillcolor="#ECF2EF", fontsize=15];
+b1 -> root;
+n1_0 [label="编码器 ×6\n源词元 → 嵌入 + 位置编码\n自注意力 → FFN（均含Add & Norm）\n输出为源句各位置的表示Z"];
+n1_0 -> b1;
+n1_1 [label="解码器 ×6\n右移目标输入 + 位置编码\n掩码自注意力 → 交叉注意力 → FFN\n交叉注意力：Q来自解码器，K/V来自Z"];
+n1_1 -> b1;
+n1_2 [label="输入与输出\n训练：源句 + 右移真实目标 → 各位置预测\n推理：源句 + 已生成前缀 → 下一词分布\nLinear + 词表Softmax → 解码策略选词"];
+n1_2 -> b1;
+b2 [label="核心机制｜§3.2—3.5", fillcolor="#ECF2EF", fontsize=15];
+b2 -> root;
+n2_0 [label="缩放点积注意力\nsoftmax(QKᵀ / √dₖ)V\nQ/K决定权重，V提供汇总内容\n缩放缓解大维度点积导致的Softmax饱和"];
+n2_0 -> b2;
+n2_1 [label="多头与前馈\nbase：8头，每头64维，拼接后投影\nFFN：512 → 2048 → 512，含ReLU\n同层FFN跨位置共享，不同层参数独立"];
+n2_1 -> b2;
+n2_2 [label="顺序与稳定性\n正余弦位置编码与词嵌入相加\n右移 + 因果掩码防止目标泄漏\nPost-LN：残差相加后做LayerNorm"];
+n2_2 -> b2;
+b3 [label="为什么有效｜§4", fillcolor="#ECF2EF", fontsize=15];
+root -> b3;
+n3_0 [label="并行性与路径\n层内顺序操作：O(n)，降至O(1)\n自注意力最大路径：O(1)\n此处比较层类型，不是端到端推理速度"];
+b3 -> n3_0;
+n3_1 [label="计算条件与代价\n全局注意力核心复杂度O(n²d)\n与循环层O(nd²)的比较依赖n和d\n长序列可考虑局部/受限注意力"];
+b3 -> n3_1;
+n3_2 [label="解释性的边界\n作者观察到不同头的注意力模式\n权重可帮助观察模型行为\n理解提示：不能直接等同于因果解释"];
+b3 -> n3_2;
+b4 [label="如何训练｜§5", fillcolor="#ECF2EF", fontsize=15];
+root -> b4;
+n4_0 [label="数据与硬件\nWMT14：英德约450万句对\n英法约3600万句；BPE/word-piece\n8块P100；base约12小时，big约3.5天"];
+b4 -> n4_0;
+n4_1 [label="优化与正则化\nAdam：β₁=.9，β₂=.98，ε=10⁻⁹\n4000步warm-up，随后逆平方根衰减\nDropout与标签平滑（base均为.1）"];
+b4 -> n4_1;
+n4_2 [label="评测协议｜§6.1\nbeam=4，长度惩罚α=.6\nbase平均5个检查点，big平均20个\n表3变体实验不做检查点平均"];
+b4 -> n4_2;
+b5 [label="证据与边界｜§6—7", fillcolor="#ECF2EF", fontsize=15];
+root -> b5;
+n5_0 [label="测试集结果｜表2\nnewstest2014：big英德28.4 BLEU\n英法41.0 BLEU（会议版，单模型领先）\n训练FLOPs是跨论文估算，非同机速度实测"];
+b5 -> n5_0;
+n5_1 [label="开发集变体｜表3\nnewstest2013：单头24.9，8头25.8\n16头25.8，32头25.4：更多头未持续更好\n正余弦25.8，学习式25.7：结果接近"];
+b5 -> n5_1;
+n5_2 [label="局限与后续方向\n全局注意力有平方相关成本\n原始推理仍自回归，逐步生成\n原文展望：其他模态、局部注意力、减少串行生成"];
+b5 -> n5_2;
+{rank=same; n0_0; n0_1; n0_2; n1_0; n1_1; n1_2; n2_0; n2_1; n2_2;}
+n0_0 -> n0_1 [style=invis, weight=30];
+n0_1 -> n0_2 [style=invis, weight=30];
+n0_2 -> n1_0 [style=invis, weight=30];
+n1_0 -> n1_1 [style=invis, weight=30];
+n1_1 -> n1_2 [style=invis, weight=30];
+n1_2 -> n2_0 [style=invis, weight=30];
+n2_0 -> n2_1 [style=invis, weight=30];
+n2_1 -> n2_2 [style=invis, weight=30];
+{rank=same; b0; b1; b2;}
+b0 -> b1 [style=invis, weight=30];
+b1 -> b2 [style=invis, weight=30];
+{rank=same; b3; b4; b5;}
+b3 -> b4 [style=invis, weight=30];
+b4 -> b5 [style=invis, weight=30];
+{rank=same; n3_0; n3_1; n3_2; n4_0; n4_1; n4_2; n5_0; n5_1; n5_2;}
+n3_0 -> n3_1 [style=invis, weight=30];
+n3_1 -> n3_2 [style=invis, weight=30];
+n3_2 -> n4_0 [style=invis, weight=30];
+n4_0 -> n4_1 [style=invis, weight=30];
+n4_1 -> n4_2 [style=invis, weight=30];
+n4_2 -> n5_0 [style=invis, weight=30];
+n5_0 -> n5_1 [style=invis, weight=30];
+n5_1 -> n5_2 [style=invis, weight=30];
+}
