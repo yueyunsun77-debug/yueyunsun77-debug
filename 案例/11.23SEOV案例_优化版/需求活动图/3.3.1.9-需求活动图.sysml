@@ -104,4 +104,8 @@ package Behaviour_3_3_1_9 {
         first '合并风窗路径' then '反馈风窗与空调状态';
         first '反馈风窗与空调状态' then '获取本周期快照';
     }
+    view 'ACT_3319_需求活动图' : $::StandardViewDefinitions::ActionFlowView {
+        expose '行为评估流程';
+        render $::Views::asInterconnectionDiagram;
+    }
 }

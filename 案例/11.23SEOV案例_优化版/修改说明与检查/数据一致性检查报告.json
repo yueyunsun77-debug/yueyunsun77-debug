@@ -3321,21 +3321,6 @@
       "detail": ""
     },
     {
-      "name": "行为模型/3.3.1.2-行为模型.sysml导入副本及摘要一致",
-      "passed": true,
-      "detail": ""
-    },
-    {
-      "name": "行为模型/3.3.1.6-行为模型.sysml导入副本及摘要一致",
-      "passed": true,
-      "detail": ""
-    },
-    {
-      "name": "行为模型/3.3.1.9-行为模型.sysml导入副本及摘要一致",
-      "passed": true,
-      "detail": ""
-    },
-    {
       "name": "行为模型/SC1-行为模型.sysml导入副本及摘要一致",
       "passed": true,
       "detail": ""
@@ -3367,6 +3352,21 @@
     },
     {
       "name": "需求外部BDD图/3.3.1.2、3.3.1.6、3.3.1.9-BDD图.sysml导入副本及摘要一致",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "需求活动图/3.3.1.2-需求活动图.sysml导入副本及摘要一致",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "需求活动图/3.3.1.6-需求活动图.sysml导入副本及摘要一致",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "需求活动图/3.3.1.9-需求活动图.sysml导入副本及摘要一致",
       "passed": true,
       "detail": ""
     },
@@ -3421,21 +3421,6 @@
       "detail": ""
     },
     {
-      "name": "行为模型/3.3.1.2-行为模型.sysml与原生校验摘要一致",
-      "passed": true,
-      "detail": ""
-    },
-    {
-      "name": "行为模型/3.3.1.6-行为模型.sysml与原生校验摘要一致",
-      "passed": true,
-      "detail": ""
-    },
-    {
-      "name": "行为模型/3.3.1.9-行为模型.sysml与原生校验摘要一致",
-      "passed": true,
-      "detail": ""
-    },
-    {
       "name": "行为模型/SC1-行为模型.sysml与原生校验摘要一致",
       "passed": true,
       "detail": ""
@@ -3467,6 +3452,21 @@
     },
     {
       "name": "需求外部BDD图/3.3.1.2、3.3.1.6、3.3.1.9-BDD图.sysml与原生校验摘要一致",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "需求活动图/3.3.1.2-需求活动图.sysml与原生校验摘要一致",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "需求活动图/3.3.1.6-需求活动图.sysml与原生校验摘要一致",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "需求活动图/3.3.1.9-需求活动图.sysml与原生校验摘要一致",
       "passed": true,
       "detail": ""
     },

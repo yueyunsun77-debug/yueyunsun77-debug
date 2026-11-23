@@ -87,4 +87,8 @@ package Behaviour_3_3_1_2 {
         first '合并控制结果' then '反馈电加热运行状态';
         first '反馈电加热运行状态' then '获取本周期快照';
     }
+    view 'ACT_3312_需求活动图' : $::StandardViewDefinitions::ActionFlowView {
+        expose '行为评估流程';
+        render $::Views::asInterconnectionDiagram;
+    }
 }

@@ -40,21 +40,6 @@
     "sha256": "54a5bb410ce13860fe88a85b3c32a3660fcd99b9b6d60e7d8bfca3e63eab62d1"
   },
   {
-    "source": "行为模型/3.3.1.2-行为模型.sysml",
-    "bundle_file": "行为模型__3.3.1.2-行为模型.sysml",
-    "sha256": "1aa1d924e57a147ae5620cfe75a9c35c010c90e14a97396b53a920c6bb61e913"
-  },
-  {
-    "source": "行为模型/3.3.1.6-行为模型.sysml",
-    "bundle_file": "行为模型__3.3.1.6-行为模型.sysml",
-    "sha256": "6c7fa72ad31cf6138a035be555039a1fdfdfde28d85bf99751edd7c98d1298ef"
-  },
-  {
-    "source": "行为模型/3.3.1.9-行为模型.sysml",
-    "bundle_file": "行为模型__3.3.1.9-行为模型.sysml",
-    "sha256": "63ac9afa6f7b4c76ea13845d913feef8a8ddad88026bb0fe5886a3aac570775a"
-  },
-  {
     "source": "行为模型/SC1-行为模型.sysml",
     "bundle_file": "行为模型__SC1-行为模型.sysml",
     "sha256": "af92dc415c048ec8ce53c93441b48a99d331367bfd10e6734cb226b62e191827"
@@ -88,6 +73,21 @@
     "source": "需求外部BDD图/3.3.1.2、3.3.1.6、3.3.1.9-BDD图.sysml",
     "bundle_file": "需求外部BDD图__3.3.1.2、3.3.1.6、3.3.1.9-BDD图.sysml",
     "sha256": "4eb187a1b5914c392a508c508ec9fedf3e8fa5da214f518d8c4e3ec2994a55ef"
+  },
+  {
+    "source": "需求活动图/3.3.1.2-需求活动图.sysml",
+    "bundle_file": "需求活动图__3.3.1.2-需求活动图.sysml",
+    "sha256": "2c4303e72824ea28d35af5c9294bdf39b2c07a7bd84d3ac85da0296aae9c0652"
+  },
+  {
+    "source": "需求活动图/3.3.1.6-需求活动图.sysml",
+    "bundle_file": "需求活动图__3.3.1.6-需求活动图.sysml",
+    "sha256": "557ea824cfae80e609ae67014b92dc1020a5344ccd53b9a767f8d896b75d84ad"
+  },
+  {
+    "source": "需求活动图/3.3.1.9-需求活动图.sysml",
+    "bundle_file": "需求活动图__3.3.1.9-需求活动图.sysml",
+    "sha256": "45ecb011fe494876ab1683eaa1ac10c8fd354a750f1736cc80763f76c6980781"
   },
   {
     "source": "需求用例图/3.3.1.2、3.3.1.6、3.3.1.9-需求用例图.sysml",

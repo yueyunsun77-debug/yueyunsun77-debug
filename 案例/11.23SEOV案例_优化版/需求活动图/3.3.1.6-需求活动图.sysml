@@ -88,4 +88,8 @@ package Behaviour_3_3_1_6 {
         first '合并模式结果' then '反馈自动与空调状态';
         first '反馈自动与空调状态' then '获取本周期快照';
     }
+    view 'ACT_3316_需求活动图' : $::StandardViewDefinitions::ActionFlowView {
+        expose '行为评估流程';
+        render $::Views::asInterconnectionDiagram;
+    }
 }
