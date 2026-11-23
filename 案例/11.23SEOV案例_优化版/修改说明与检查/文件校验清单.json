@@ -1,0 +1,647 @@
+[
+  {
+    "path": "00_修改依据/11.17版本基线.zip",
+    "bytes": 2784883,
+    "sha256": "4cfdb9e6361c7b24e90dfaf02b8a1dae8008b134455d13b2b20626f5149911d6"
+  },
+  {
+    "path": "00_修改依据/11.3日案例—孙月芸.zip",
+    "bytes": 195802,
+    "sha256": "25a1d9d8cf49077dde30a2b1c74aea39e0d7bc02198e32555b6f63a36e885321"
+  },
+  {
+    "path": "00_修改依据/会议纪要.txt",
+    "bytes": 4662,
+    "sha256": "c0690d62b9994b9ab375eb7d2596081763ef1c8e095335b136c7141578930cc0"
+  },
+  {
+    "path": "00_修改依据/汽车热管理_SVOE功能清单_扩充版.md",
+    "bytes": 166655,
+    "sha256": "6b6195e5c051b4797b97bbe0a64d6012a547e02e403152e63bdc42044073c662"
+  },
+  {
+    "path": "00_修改依据/逐字稿.txt",
+    "bytes": 2311,
+    "sha256": "75610f21d42923949823fba3cc3b6553e36c46a0d105021e0b73879f5743dbf5"
+  },
+  {
+    "path": "00_修改依据/难题预研会议纪要-20261110.docx",
+    "bytes": 18741,
+    "sha256": "45160b44973c2abf6f4b52c33612ed344cf39348a855e31cfecd8fe9e5e0a551"
+  },
+  {
+    "path": "README.md",
+    "bytes": 2031,
+    "sha256": "6258e4c1186b7a62f44ea55577a0800564652e9c8790f5189832c3053817126d"
+  },
+  {
+    "path": "下游导入包/功能关系.json",
+    "bytes": 103035,
+    "sha256": "8e346842a2050246a29bbb588932ca8f238a9bfb2e101eb3b9527dfbdd38a083"
+  },
+  {
+    "path": "下游导入包/功能模型__00_概念接口类型.sysml",
+    "bytes": 27120,
+    "sha256": "6bdc17566f82bbec10dfcfe91e90e9d83151bd98de64e74de1f1580bf01ce39e"
+  },
+  {
+    "path": "下游导入包/功能模型__01_原子及组合功能定义.sysml",
+    "bytes": 23288,
+    "sha256": "4071b8ff601fb96df98f2b5b8395e13422ada534b51f7808736ad5406d5fd702"
+  },
+  {
+    "path": "下游导入包/功能模型__02_3.3.1.2-功能分解.sysml",
+    "bytes": 942,
+    "sha256": "b22c30e27b904b554c1f2d35480c4cc576c7cdb25aae3ec8e2b61bfed7572ebb"
+  },
+  {
+    "path": "下游导入包/功能模型__02_3.3.1.6-功能分解.sysml",
+    "bytes": 1031,
+    "sha256": "480b3d3ca74f90323d3bdf4311c8c2eebbf62dac532ee6b3bd4e5d8097403fcf"
+  },
+  {
+    "path": "下游导入包/功能模型__02_3.3.1.9-功能分解.sysml",
+    "bytes": 1106,
+    "sha256": "69ba265940fc0a1a1731b72762158d881dd8b82b8d54fb29cbc4454da69b3e5d"
+  },
+  {
+    "path": "下游导入包/功能模型__02_SC1-功能分解.sysml",
+    "bytes": 768,
+    "sha256": "0bb6fe2a4dfa1521e859cb2acca5fe038281297587127f888dc27e8e4f245181"
+  },
+  {
+    "path": "下游导入包/功能模型__02_SC2-功能分解.sysml",
+    "bytes": 798,
+    "sha256": "53f5425c50fbab9633e704f7faa259b56f71c1e0b77e240db3d8d429a519c2e9"
+  },
+  {
+    "path": "下游导入包/功能模型__02_SC3-功能分解.sysml",
+    "bytes": 880,
+    "sha256": "54a5bb410ce13860fe88a85b3c32a3660fcd99b9b6d60e7d8bfca3e63eab62d1"
+  },
+  {
+    "path": "下游导入包/功能清单.schema.json",
+    "bytes": 1687,
+    "sha256": "f98e5a69eadd11157a46af4df842b2344f1fcb0c8792a87087712fff4dda22b0"
+  },
+  {
+    "path": "下游导入包/功能清单_SEOV.json",
+    "bytes": 239196,
+    "sha256": "63b2f0e32cefa62141755d40cd6baa86d3ea15aeb4eef23dd6be8d25f5c1b46d"
+  },
+  {
+    "path": "下游导入包/导入与验收说明.md",
+    "bytes": 1198,
+    "sha256": "52ef7ead123264b850c9daad315660360500c4587d7d79b1cdd073acba5b0450"
+  },
+  {
+    "path": "下游导入包/工具验证状态.json",
+    "bytes": 508,
+    "sha256": "310ad5b6ea8130bdf730b065f435402a596a2f291fb9d89ae7ae54acdc6eb905"
+  },
+  {
+    "path": "下游导入包/概念接口类型字典.json",
+    "bytes": 53203,
+    "sha256": "45f2a89e34642dbc6c42ae6a8861195f7179f063d3953842b18138a11ce913b2"
+  },
+  {
+    "path": "下游导入包/模型导入清单.json",
+    "bytes": 4059,
+    "sha256": "227db4f3e7639ca4cade5ed6b12e9c166682bb6a9b88a023407868af0e3877e3"
+  },
+  {
+    "path": "下游导入包/结构化需求清单.json",
+    "bytes": 149783,
+    "sha256": "c1dd5e34a85053b864ddf7033203ef10e3fb1ece62858eca51a7bccc08b58009"
+  },
+  {
+    "path": "下游导入包/行为快照字段契约.json",
+    "bytes": 12176,
+    "sha256": "09c4779e468057f3a4e5c0bff0354e50535f242902ebd8d8b2fea49bfaa9e352"
+  },
+  {
+    "path": "下游导入包/行为快照字段契约.xlsx",
+    "bytes": 7456,
+    "sha256": "f7a30449e5243b57b0401bcfc84435a0b9ab45dbf2979e6bdf08dd243780e334"
+  },
+  {
+    "path": "下游导入包/行为模型__3.3.1.2-行为模型.sysml",
+    "bytes": 6114,
+    "sha256": "1aa1d924e57a147ae5620cfe75a9c35c010c90e14a97396b53a920c6bb61e913"
+  },
+  {
+    "path": "下游导入包/行为模型__3.3.1.6-行为模型.sysml",
+    "bytes": 5067,
+    "sha256": "6c7fa72ad31cf6138a035be555039a1fdfdfde28d85bf99751edd7c98d1298ef"
+  },
+  {
+    "path": "下游导入包/行为模型__3.3.1.9-行为模型.sysml",
+    "bytes": 5935,
+    "sha256": "63ac9afa6f7b4c76ea13845d913feef8a8ddad88026bb0fe5886a3aac570775a"
+  },
+  {
+    "path": "下游导入包/行为模型__SC1-行为模型.sysml",
+    "bytes": 6427,
+    "sha256": "af92dc415c048ec8ce53c93441b48a99d331367bfd10e6734cb226b62e191827"
+  },
+  {
+    "path": "下游导入包/行为模型__SC2-行为模型.sysml",
+    "bytes": 7449,
+    "sha256": "d3b27a75e34270c5668899167330081e839844ce6f409efc53b7eff5e825d0b5"
+  },
+  {
+    "path": "下游导入包/行为模型__SC3-行为模型.sysml",
+    "bytes": 7705,
+    "sha256": "303d91dbf94a0a587a6685a1970cce1513d15716a5f6c2bf2a1e1f524f828cc9"
+  },
+  {
+    "path": "下游导入包/行为节点与转移清单.json",
+    "bytes": 72775,
+    "sha256": "4958c9b64ad8d900e4c7daf9410359516cf3e13082986b9c21f42684058932ae"
+  },
+  {
+    "path": "下游导入包/需求图__3.3.1.2-需求图.sysml",
+    "bytes": 1894,
+    "sha256": "d30026dfab72845cc12ce06153a84fb7cb8177679d7f63bdba1fcb466467e289"
+  },
+  {
+    "path": "下游导入包/需求图__3.3.1.6-需求图.sysml",
+    "bytes": 1871,
+    "sha256": "8faaaafa86fef79fd991511faaff68142fed2ca0ee2e62d2c917538d9f6118b2"
+  },
+  {
+    "path": "下游导入包/需求图__3.3.1.9-需求图.sysml",
+    "bytes": 2018,
+    "sha256": "36380c27b06783d878c11dd2377db4fa9c73dd53db0eaf99b624e08f5f322011"
+  },
+  {
+    "path": "下游导入包/需求外部BDD图__3.3.1.2、3.3.1.6、3.3.1.9-BDD图.sysml",
+    "bytes": 8634,
+    "sha256": "4eb187a1b5914c392a508c508ec9fedf3e8fa5da214f518d8c4e3ec2994a55ef"
+  },
+  {
+    "path": "下游导入包/需求清单.schema.json",
+    "bytes": 875,
+    "sha256": "54f3b62d62957b4b25928089008585f30505cd461e05b1b3453f8b39dcdce971"
+  },
+  {
+    "path": "下游导入包/需求用例图__3.3.1.2、3.3.1.6、3.3.1.9-需求用例图.sysml",
+    "bytes": 3322,
+    "sha256": "66f3b9b1b763a8944744e91a1ad2771d324c3199620144a38def7b7390a9580e"
+  },
+  {
+    "path": "修改说明与检查/SysML静态校验报告.json",
+    "bytes": 4564,
+    "sha256": "52b152b7ec600c96180bc0595f689af006929e54a2d29822ae745d49bf381c10"
+  },
+  {
+    "path": "修改说明与检查/优化说明与版本差异.md",
+    "bytes": 2111,
+    "sha256": "306527ab1f67a022ddb0a8721a8541a793172a6e7f1a7b28694aa2a34a65d56c"
+  },
+  {
+    "path": "修改说明与检查/会议要求落实对照.md",
+    "bytes": 1312,
+    "sha256": "d775518f8eb92a796aeb0e60fbb9510e9f2ca182582b0e9d7b40cdcb0efa345c"
+  },
+  {
+    "path": "修改说明与检查/守卫与边界验证报告.json",
+    "bytes": 40854,
+    "sha256": "945871252dfeaaca367fe8b57ed75fd63906b77b6d42cb3ce7f119e9ab2a84fa"
+  },
+  {
+    "path": "修改说明与检查/待确认项与验证边界.md",
+    "bytes": 1885,
+    "sha256": "eb7d94cc4fb5ced8d6b84b135a63bf4e3add463bf2d88b164e1861d400bc8386"
+  },
+  {
+    "path": "修改说明与检查/数据一致性检查报告.json",
+    "bytes": 84092,
+    "sha256": "e9d1a20ddc502bc7591d21407204eeb74a3b3f7edf6677f5763ba6ff9ffc57f5"
+  },
+  {
+    "path": "修改说明与检查/检查结论.md",
+    "bytes": 2412,
+    "sha256": "7d71a1e9abf6e9b6a6f9322050c316df2cff03755407e5cc7f9e135d10030503"
+  },
+  {
+    "path": "功能抽取/201项候选功能筛选结论.json",
+    "bytes": 129415,
+    "sha256": "21397c1715b33567b89ebe990618dd0d3a35b3426d3eb32f9da56d1830c6e37b"
+  },
+  {
+    "path": "功能抽取/201项候选功能筛选结论.xlsx",
+    "bytes": 23830,
+    "sha256": "3ebc265302a6fd170816d9a1ba69eb817cfda492329bc3f354019b3c2b9e7a7d"
+  },
+  {
+    "path": "功能抽取/兼容ID与规范功能映射.json",
+    "bytes": 807,
+    "sha256": "d72afb0c0f6d082ee7f34515ac618542a2ba1762fba851567c10835cd1dc7905"
+  },
+  {
+    "path": "功能抽取/功能关系.json",
+    "bytes": 103035,
+    "sha256": "8e346842a2050246a29bbb588932ca8f238a9bfb2e101eb3b9527dfbdd38a083"
+  },
+  {
+    "path": "功能抽取/功能关系.xlsx",
+    "bytes": 17597,
+    "sha256": "f12ce69206956c65e828aa53d677775894872950f10f3076c3cb4cbe8e7afd00"
+  },
+  {
+    "path": "功能抽取/功能树.json",
+    "bytes": 14825,
+    "sha256": "f0f0435b9dbf01465176869be87653cfb54b52135d2725a9cd6fbbb7c1dd3491"
+  },
+  {
+    "path": "功能抽取/功能树.md",
+    "bytes": 3791,
+    "sha256": "305042a7b04293ad20a9322dd5a682ea348b873c644ce99d37adfe2335a292f4"
+  },
+  {
+    "path": "功能抽取/功能清单_SEOV.json",
+    "bytes": 239196,
+    "sha256": "63b2f0e32cefa62141755d40cd6baa86d3ea15aeb4eef23dd6be8d25f5c1b46d"
+  },
+  {
+    "path": "功能抽取/功能清单_SEOV.xlsx",
+    "bytes": 17499,
+    "sha256": "971651bf5e66fe71d4351473430282d80a72b71607951c28dc7abd726ae384c8"
+  },
+  {
+    "path": "功能抽取/功能粒度复核与细化.xlsx",
+    "bytes": 8932,
+    "sha256": "c48a3efeb73f60070fefafd30782e03bb9313a1639b2cf5f09bb6da467e2588f"
+  },
+  {
+    "path": "功能抽取/名称修改对照.json",
+    "bytes": 5226,
+    "sha256": "f21fd6a1b0e144ac53211e9f01beee9f442bea9a460f85bd488b9523e75a84db"
+  },
+  {
+    "path": "功能抽取/名称修改对照.xlsx",
+    "bytes": 6753,
+    "sha256": "975ecc51464b8658e6ee666dba4bf0331efc5a8ff083511862b9be4f25aa55fb"
+  },
+  {
+    "path": "功能抽取/字段与命名规范.md",
+    "bytes": 2248,
+    "sha256": "ab0aa9933e13b6e0e09c4eb3e38170e2e05d0c31bd80bf466dcc25cb99c50a23"
+  },
+  {
+    "path": "功能抽取/待确认功能占位.json",
+    "bytes": 706,
+    "sha256": "32823bb2c5a869770ef189fd8a9f7896b9604ae169571ebfbcda200c36343e84"
+  },
+  {
+    "path": "功能抽取/扩充候选功能池_201项.json",
+    "bytes": 328608,
+    "sha256": "e04958704d21c5b3da9964d57212170580018a99153da5febb877979beed88fe"
+  },
+  {
+    "path": "功能抽取/扩充候选功能池_201项.xlsx",
+    "bytes": 57200,
+    "sha256": "a225a281ecb9ad1ff2460857a1a34db03ef508f1f8043aac5623eeed4b9a144d"
+  },
+  {
+    "path": "功能抽取/来源父活动节点.json",
+    "bytes": 2623,
+    "sha256": "597a4d2f416ea8af862ce4b9c882ddffa55dbfb951ef25d7f5b809a550268539"
+  },
+  {
+    "path": "功能抽取/来源路径与证据状态.xlsx",
+    "bytes": 13594,
+    "sha256": "4a0d2853827b05c71c46fcf2da1d9a0736428fb4e9b24e17c6aeadcd7a891458"
+  },
+  {
+    "path": "功能抽取/案例功能与扩充清单映射.json",
+    "bytes": 5509,
+    "sha256": "9d6b3ef13ea283a5f0a4c94c75cea591252c18f5b2e8366ced65b5c7592c4565"
+  },
+  {
+    "path": "功能抽取/案例推荐动词用法.xlsx",
+    "bytes": 8596,
+    "sha256": "5a2f3cad5e6ef4fb8c1bf1d2770bb16a9343bbceb2bd5db21616e9ddc9d3bcdf"
+  },
+  {
+    "path": "功能抽取/概念接口契约.xlsx",
+    "bytes": 17824,
+    "sha256": "839961da33a21ece454ba1d452298d7e0adf359fcc7c862a04ec324490c872b4"
+  },
+  {
+    "path": "功能抽取/概念接口类型字典.json",
+    "bytes": 53203,
+    "sha256": "45f2a89e34642dbc6c42ae6a8861195f7179f063d3953842b18138a11ce913b2"
+  },
+  {
+    "path": "功能模型/00_概念接口类型.sysml",
+    "bytes": 27120,
+    "sha256": "6bdc17566f82bbec10dfcfe91e90e9d83151bd98de64e74de1f1580bf01ce39e"
+  },
+  {
+    "path": "功能模型/01_原子及组合功能定义.sysml",
+    "bytes": 23288,
+    "sha256": "4071b8ff601fb96df98f2b5b8395e13422ada534b51f7808736ad5406d5fd702"
+  },
+  {
+    "path": "功能模型/02_3.3.1.2-功能分解.sysml",
+    "bytes": 942,
+    "sha256": "b22c30e27b904b554c1f2d35480c4cc576c7cdb25aae3ec8e2b61bfed7572ebb"
+  },
+  {
+    "path": "功能模型/02_3.3.1.6-功能分解.sysml",
+    "bytes": 1031,
+    "sha256": "480b3d3ca74f90323d3bdf4311c8c2eebbf62dac532ee6b3bd4e5d8097403fcf"
+  },
+  {
+    "path": "功能模型/02_3.3.1.9-功能分解.sysml",
+    "bytes": 1106,
+    "sha256": "69ba265940fc0a1a1731b72762158d881dd8b82b8d54fb29cbc4454da69b3e5d"
+  },
+  {
+    "path": "功能模型/02_SC1-功能分解.sysml",
+    "bytes": 768,
+    "sha256": "0bb6fe2a4dfa1521e859cb2acca5fe038281297587127f888dc27e8e4f245181"
+  },
+  {
+    "path": "功能模型/02_SC2-功能分解.sysml",
+    "bytes": 798,
+    "sha256": "53f5425c50fbab9633e704f7faa259b56f71c1e0b77e240db3d8d429a519c2e9"
+  },
+  {
+    "path": "功能模型/02_SC3-功能分解.sysml",
+    "bytes": 880,
+    "sha256": "54a5bb410ce13860fe88a85b3c32a3660fcd99b9b6d60e7d8bfca3e63eab62d1"
+  },
+  {
+    "path": "功能模型/逻辑功能架构图.dot",
+    "bytes": 7262,
+    "sha256": "cf7c4a8c9d03a33d6670d74469d0dba0066d24025565de3d292df6430aa7658b"
+  },
+  {
+    "path": "功能模型/逻辑功能架构图.png",
+    "bytes": 694930,
+    "sha256": "bbd11bb0991c36ffd399a19128465eec95a384001c72fe78f9dc141f70bb5ac0"
+  },
+  {
+    "path": "功能模型/逻辑功能架构图.svg",
+    "bytes": 90163,
+    "sha256": "6326cdebbf6148ce46fa5ba1affd4bacb0d7a47e5a81567b3b1f493bc2e5697f"
+  },
+  {
+    "path": "指标分析、分配表/41条原指标性质复核.json",
+    "bytes": 23224,
+    "sha256": "73af5542ec2958f6da18745c612af289fed004c12cdec479295b10671c48196d"
+  },
+  {
+    "path": "指标分析、分配表/8项指标验收准备矩阵.xlsx",
+    "bytes": 6150,
+    "sha256": "a04f3d0d37737224ab773863a9e948f7dd304641d50fb108193a26b068d516ce"
+  },
+  {
+    "path": "指标分析、分配表/全部41条约束与指标分析表.xlsx",
+    "bytes": 9584,
+    "sha256": "35a88016d94bbbfd56d19b7a7a5b9098ddefbf33fff2d9f066f62259a0807d48"
+  },
+  {
+    "path": "指标分析、分配表/全部41条约束与指标分配表.xlsx",
+    "bytes": 9584,
+    "sha256": "35a88016d94bbbfd56d19b7a7a5b9098ddefbf33fff2d9f066f62259a0807d48"
+  },
+  {
+    "path": "指标分析、分配表/指标与功能对应关系说明.md",
+    "bytes": 1311,
+    "sha256": "48f9a658505f4a47aa51dcfdd1522de5bd9cfb3d4710ac9b6b5e3409fc9a4fff"
+  },
+  {
+    "path": "指标分析、分配表/指标分析表.xlsx",
+    "bytes": 6109,
+    "sha256": "c4bdfc3eeb163fd5dfcfbaf35701b83274b459f88f6802d6d5c423fb75887ad7"
+  },
+  {
+    "path": "指标分析、分配表/指标分配表.xlsx",
+    "bytes": 6109,
+    "sha256": "c4bdfc3eeb163fd5dfcfbaf35701b83274b459f88f6802d6d5c423fb75887ad7"
+  },
+  {
+    "path": "指标分析、分配表/指标性质与ID迁移对照.xlsx",
+    "bytes": 9293,
+    "sha256": "a539b46425cc0c0c1de4f096490e263296610df1f9d844a668b7501aa2e0cb0e"
+  },
+  {
+    "path": "检查工具/requirements.txt",
+    "bytes": 34,
+    "sha256": "623f0cfa031ad7df31b5e21ca7a0b9f5207fec374708c916d3e75eeb6f55026b"
+  },
+  {
+    "path": "检查工具/使用说明.md",
+    "bytes": 658,
+    "sha256": "926d8d6b54f4eb355459698d1a7d95832e88037688dd2660826830fbcd3c03d9"
+  },
+  {
+    "path": "检查工具/校验优化版.py",
+    "bytes": 13209,
+    "sha256": "061cb43307354b2b07bf6667f97659906f58c5bc27537d1019d08fb674e2298f"
+  },
+  {
+    "path": "结构化需求条目/指标与JSON需求条目映射表.xlsx",
+    "bytes": 9270,
+    "sha256": "e1efffb6456845cdeaecbe61d031a32958d7db27788617e2ac02701c1f9a5116"
+  },
+  {
+    "path": "结构化需求条目/结构化需求清单.json",
+    "bytes": 149783,
+    "sha256": "c1dd5e34a85053b864ddf7033203ef10e3fb1ece62858eca51a7bccc08b58009"
+  },
+  {
+    "path": "行为模型/3.3.1.2-行为图.dot",
+    "bytes": 4181,
+    "sha256": "e69cb26463c7bde0fec46a9d79fc95738e4531e2574f28895ffb7d39461981e8"
+  },
+  {
+    "path": "行为模型/3.3.1.2-行为图.png",
+    "bytes": 200336,
+    "sha256": "d25c2b1e98b0cf2120910e3c49b2115324646f2937c5d5fc0a9c95328fcfdd61"
+  },
+  {
+    "path": "行为模型/3.3.1.2-行为图.svg",
+    "bytes": 24957,
+    "sha256": "e0bb52ce3e1074d4a4ec835224a7ffce439631b30ba2bd354923e92c9b1dbdac"
+  },
+  {
+    "path": "行为模型/3.3.1.2-行为模型.sysml",
+    "bytes": 6114,
+    "sha256": "1aa1d924e57a147ae5620cfe75a9c35c010c90e14a97396b53a920c6bb61e913"
+  },
+  {
+    "path": "行为模型/3.3.1.6-行为图.dot",
+    "bytes": 4245,
+    "sha256": "117449ff21a2f13b617426853404840663f658e034f41abc9f56b60bdf1678c5"
+  },
+  {
+    "path": "行为模型/3.3.1.6-行为图.png",
+    "bytes": 200830,
+    "sha256": "17fc8e2f223dc5575c31d4815344350b328503e9dc661ba3f6271610049f4d8d"
+  },
+  {
+    "path": "行为模型/3.3.1.6-行为图.svg",
+    "bytes": 25195,
+    "sha256": "fa22d23aa6c67228a1227543503cfaec294adfc9e6eb5f1ecfd7d7b197dd7126"
+  },
+  {
+    "path": "行为模型/3.3.1.6-行为模型.sysml",
+    "bytes": 5067,
+    "sha256": "6c7fa72ad31cf6138a035be555039a1fdfdfde28d85bf99751edd7c98d1298ef"
+  },
+  {
+    "path": "行为模型/3.3.1.9-行为图.dot",
+    "bytes": 5286,
+    "sha256": "f68bc253945cccc0c41f6df9faba0e9f145de1e79eb2695b3dcb9336a87a6e33"
+  },
+  {
+    "path": "行为模型/3.3.1.9-行为图.png",
+    "bytes": 242318,
+    "sha256": "18f09aeee4e21f9f6a74d7e383d02b24d08a6af01b6b303d0dbee9db840455ac"
+  },
+  {
+    "path": "行为模型/3.3.1.9-行为图.svg",
+    "bytes": 31173,
+    "sha256": "72d84f2df3e617d54df7ccaae2ac77f8cefa840b45c2acb6aaa7647b6d94b575"
+  },
+  {
+    "path": "行为模型/3.3.1.9-行为模型.sysml",
+    "bytes": 5935,
+    "sha256": "63ac9afa6f7b4c76ea13845d913feef8a8ddad88026bb0fe5886a3aac570775a"
+  },
+  {
+    "path": "行为模型/SC1-行为图.dot",
+    "bytes": 5687,
+    "sha256": "5a7c49f4410db304e0b4c8c4aac180a32bb4e51c4afd33226d7ebcd53e32d41d"
+  },
+  {
+    "path": "行为模型/SC1-行为图.png",
+    "bytes": 282149,
+    "sha256": "d179b1ee9bf578f5fba7ccb592e9c4b18765828d7c13dd76ea2e3200bee3676d"
+  },
+  {
+    "path": "行为模型/SC1-行为图.svg",
+    "bytes": 35831,
+    "sha256": "524c01f354e9c28bf0f35a98012d2ae995cd77494ceaa29167bbce6717212d45"
+  },
+  {
+    "path": "行为模型/SC1-行为模型.sysml",
+    "bytes": 6427,
+    "sha256": "af92dc415c048ec8ce53c93441b48a99d331367bfd10e6734cb226b62e191827"
+  },
+  {
+    "path": "行为模型/SC2-行为图.dot",
+    "bytes": 6950,
+    "sha256": "279f8dc3bb21ff8649efe7f70e95acf20a8a9aba6cc000e86dcc807220deb04b"
+  },
+  {
+    "path": "行为模型/SC2-行为图.png",
+    "bytes": 352804,
+    "sha256": "1ed980f69f10c4fddc02e5c42b57de000e362b23ead058791c5b6976488101b9"
+  },
+  {
+    "path": "行为模型/SC2-行为图.svg",
+    "bytes": 43800,
+    "sha256": "398be883457b8be8fea7ee8104a670bf5535891239ac39c90b03e28b9f40eece"
+  },
+  {
+    "path": "行为模型/SC2-行为模型.sysml",
+    "bytes": 7449,
+    "sha256": "d3b27a75e34270c5668899167330081e839844ce6f409efc53b7eff5e825d0b5"
+  },
+  {
+    "path": "行为模型/SC3-行为图.dot",
+    "bytes": 7397,
+    "sha256": "372adc7ee248ae16fb3ab7e564cb86df6ba30d88ef071f29bd009976f2c16c2e"
+  },
+  {
+    "path": "行为模型/SC3-行为图.png",
+    "bytes": 303369,
+    "sha256": "ed13776c335393cf62ddcd65601ad8ca876a0d4e5a0d11ae541d94ccddfb843f"
+  },
+  {
+    "path": "行为模型/SC3-行为图.svg",
+    "bytes": 44332,
+    "sha256": "108187fd61fc29db8335dc459de82082366019ca97eec144e354c1f97f71aba7"
+  },
+  {
+    "path": "行为模型/SC3-行为模型.sysml",
+    "bytes": 7705,
+    "sha256": "303d91dbf94a0a587a6685a1970cce1513d15716a5f6c2bf2a1e1f524f828cc9"
+  },
+  {
+    "path": "行为模型/守卫边界验证用例.json",
+    "bytes": 29266,
+    "sha256": "488616279e6ab27ca40d8ab8f3adf7de79e769ba45ff20c4ff6ff6daa587031f"
+  },
+  {
+    "path": "行为模型/守卫边界验证用例.xlsx",
+    "bytes": 10198,
+    "sha256": "67e833c1aa22a01ebdc537dd391cc19a90631de548be2a4cb1a80d1cefa314ae"
+  },
+  {
+    "path": "行为模型/行为节点与转移清单.json",
+    "bytes": 72775,
+    "sha256": "4958c9b64ad8d900e4c7daf9410359516cf3e13082986b9c21f42684058932ae"
+  },
+  {
+    "path": "行为模型/行为转移与功能追溯.xlsx",
+    "bytes": 17135,
+    "sha256": "607d5e133b8a1823c6676e98a5dec2047d1080311c71d0f79054429c51eeffe7"
+  },
+  {
+    "path": "逻辑功能—物理组件/指标与功能对应关系说明.md",
+    "bytes": 1311,
+    "sha256": "48f9a658505f4a47aa51dcfdd1522de5bd9cfb3d4710ac9b6b5e3409fc9a4fff"
+  },
+  {
+    "path": "逻辑功能—物理组件/物理组件与逻辑功能映射表.xlsx",
+    "bytes": 11714,
+    "sha256": "79cf51347b35c5e4c46237a51f726d1efebe289159c93ca11315af499af81a94"
+  },
+  {
+    "path": "逻辑功能—物理组件/逻辑功能架构图.png",
+    "bytes": 694930,
+    "sha256": "bbd11bb0991c36ffd399a19128465eec95a384001c72fe78f9dc141f70bb5ac0"
+  },
+  {
+    "path": "逻辑功能—物理组件/逻辑功能目录.xlsx",
+    "bytes": 10678,
+    "sha256": "40f63b61106fe724796b9bb20f5cd4383e468116f7c2311eb9251a466669f100"
+  },
+  {
+    "path": "需求图/3.3.1.2-需求图.sysml",
+    "bytes": 1894,
+    "sha256": "d30026dfab72845cc12ce06153a84fb7cb8177679d7f63bdba1fcb466467e289"
+  },
+  {
+    "path": "需求图/3.3.1.6-需求图.sysml",
+    "bytes": 1871,
+    "sha256": "8faaaafa86fef79fd991511faaff68142fed2ca0ee2e62d2c917538d9f6118b2"
+  },
+  {
+    "path": "需求图/3.3.1.9-需求图.sysml",
+    "bytes": 2018,
+    "sha256": "36380c27b06783d878c11dd2377db4fa9c73dd53db0eaf99b624e08f5f322011"
+  },
+  {
+    "path": "需求外部BDD图/3.3.1.2、3.3.1.6、3.3.1.9-BDD图.sysml",
+    "bytes": 8634,
+    "sha256": "4eb187a1b5914c392a508c508ec9fedf3e8fa5da214f518d8c4e3ec2994a55ef"
+  },
+  {
+    "path": "需求活动图/阅读说明.md",
+    "bytes": 564,
+    "sha256": "258146aea76c51f8db8ba539d3506d2cfa761d319ef2f6f30cd88ee917c46a05"
+  },
+  {
+    "path": "需求用例图/3.3.1.2、3.3.1.6、3.3.1.9-需求用例图.sysml",
+    "bytes": 3322,
+    "sha256": "66f3b9b1b763a8944744e91a1ad2771d324c3199620144a38def7b7390a9580e"
+  }
+]

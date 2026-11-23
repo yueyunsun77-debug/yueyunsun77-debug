@@ -1,0 +1,97 @@
+[
+  {
+    "source": "功能模型/00_概念接口类型.sysml",
+    "bundle_file": "功能模型__00_概念接口类型.sysml",
+    "sha256": "6bdc17566f82bbec10dfcfe91e90e9d83151bd98de64e74de1f1580bf01ce39e"
+  },
+  {
+    "source": "功能模型/01_原子及组合功能定义.sysml",
+    "bundle_file": "功能模型__01_原子及组合功能定义.sysml",
+    "sha256": "4071b8ff601fb96df98f2b5b8395e13422ada534b51f7808736ad5406d5fd702"
+  },
+  {
+    "source": "功能模型/02_3.3.1.2-功能分解.sysml",
+    "bundle_file": "功能模型__02_3.3.1.2-功能分解.sysml",
+    "sha256": "b22c30e27b904b554c1f2d35480c4cc576c7cdb25aae3ec8e2b61bfed7572ebb"
+  },
+  {
+    "source": "功能模型/02_3.3.1.6-功能分解.sysml",
+    "bundle_file": "功能模型__02_3.3.1.6-功能分解.sysml",
+    "sha256": "480b3d3ca74f90323d3bdf4311c8c2eebbf62dac532ee6b3bd4e5d8097403fcf"
+  },
+  {
+    "source": "功能模型/02_3.3.1.9-功能分解.sysml",
+    "bundle_file": "功能模型__02_3.3.1.9-功能分解.sysml",
+    "sha256": "69ba265940fc0a1a1731b72762158d881dd8b82b8d54fb29cbc4454da69b3e5d"
+  },
+  {
+    "source": "功能模型/02_SC1-功能分解.sysml",
+    "bundle_file": "功能模型__02_SC1-功能分解.sysml",
+    "sha256": "0bb6fe2a4dfa1521e859cb2acca5fe038281297587127f888dc27e8e4f245181"
+  },
+  {
+    "source": "功能模型/02_SC2-功能分解.sysml",
+    "bundle_file": "功能模型__02_SC2-功能分解.sysml",
+    "sha256": "53f5425c50fbab9633e704f7faa259b56f71c1e0b77e240db3d8d429a519c2e9"
+  },
+  {
+    "source": "功能模型/02_SC3-功能分解.sysml",
+    "bundle_file": "功能模型__02_SC3-功能分解.sysml",
+    "sha256": "54a5bb410ce13860fe88a85b3c32a3660fcd99b9b6d60e7d8bfca3e63eab62d1"
+  },
+  {
+    "source": "行为模型/3.3.1.2-行为模型.sysml",
+    "bundle_file": "行为模型__3.3.1.2-行为模型.sysml",
+    "sha256": "1aa1d924e57a147ae5620cfe75a9c35c010c90e14a97396b53a920c6bb61e913"
+  },
+  {
+    "source": "行为模型/3.3.1.6-行为模型.sysml",
+    "bundle_file": "行为模型__3.3.1.6-行为模型.sysml",
+    "sha256": "6c7fa72ad31cf6138a035be555039a1fdfdfde28d85bf99751edd7c98d1298ef"
+  },
+  {
+    "source": "行为模型/3.3.1.9-行为模型.sysml",
+    "bundle_file": "行为模型__3.3.1.9-行为模型.sysml",
+    "sha256": "63ac9afa6f7b4c76ea13845d913feef8a8ddad88026bb0fe5886a3aac570775a"
+  },
+  {
+    "source": "行为模型/SC1-行为模型.sysml",
+    "bundle_file": "行为模型__SC1-行为模型.sysml",
+    "sha256": "af92dc415c048ec8ce53c93441b48a99d331367bfd10e6734cb226b62e191827"
+  },
+  {
+    "source": "行为模型/SC2-行为模型.sysml",
+    "bundle_file": "行为模型__SC2-行为模型.sysml",
+    "sha256": "d3b27a75e34270c5668899167330081e839844ce6f409efc53b7eff5e825d0b5"
+  },
+  {
+    "source": "行为模型/SC3-行为模型.sysml",
+    "bundle_file": "行为模型__SC3-行为模型.sysml",
+    "sha256": "303d91dbf94a0a587a6685a1970cce1513d15716a5f6c2bf2a1e1f524f828cc9"
+  },
+  {
+    "source": "需求图/3.3.1.2-需求图.sysml",
+    "bundle_file": "需求图__3.3.1.2-需求图.sysml",
+    "sha256": "d30026dfab72845cc12ce06153a84fb7cb8177679d7f63bdba1fcb466467e289"
+  },
+  {
+    "source": "需求图/3.3.1.6-需求图.sysml",
+    "bundle_file": "需求图__3.3.1.6-需求图.sysml",
+    "sha256": "8faaaafa86fef79fd991511faaff68142fed2ca0ee2e62d2c917538d9f6118b2"
+  },
+  {
+    "source": "需求图/3.3.1.9-需求图.sysml",
+    "bundle_file": "需求图__3.3.1.9-需求图.sysml",
+    "sha256": "36380c27b06783d878c11dd2377db4fa9c73dd53db0eaf99b624e08f5f322011"
+  },
+  {
+    "source": "需求外部BDD图/3.3.1.2、3.3.1.6、3.3.1.9-BDD图.sysml",
+    "bundle_file": "需求外部BDD图__3.3.1.2、3.3.1.6、3.3.1.9-BDD图.sysml",
+    "sha256": "4eb187a1b5914c392a508c508ec9fedf3e8fa5da214f518d8c4e3ec2994a55ef"
+  },
+  {
+    "source": "需求用例图/3.3.1.2、3.3.1.6、3.3.1.9-需求用例图.sysml",
+    "bundle_file": "需求用例图__3.3.1.2、3.3.1.6、3.3.1.9-需求用例图.sysml",
+    "sha256": "66f3b9b1b763a8944744e91a1ad2771d324c3199620144a38def7b7390a9580e"
+  }
+]

@@ -1,0 +1,1562 @@
+[
+  {
+    "type_id": "C001",
+    "concept": "45 km/h行驶20分钟工况",
+    "value_type": "结构化概念，字段待接口方细化",
+    "measurement_unit": null,
+    "role": "分析数据",
+    "status": "命名概念类型；不等同于已确定物理/通信接口"
+  },
+  {
+    "type_id": "C002",
+    "concept": "AC按键操作",
+    "value_type": "结构化概念，字段待接口方细化",
+    "measurement_unit": null,
+    "role": "分析数据",
+    "status": "命名概念类型；不等同于已确定物理/通信接口"
+  },
+  {
+    "type_id": "C003",
+    "concept": "AUTO运行状态",
+    "value_type": "结构化概念，字段待接口方细化",
+    "measurement_unit": null,
+    "role": "反馈/实际状态",
+    "status": "命名概念类型；不等同于已确定物理/通信接口"
+  },
+  {
+    "type_id": "C004",
+    "concept": "下一步模式评估信息",
+    "value_type": "结构化概念，字段待接口方细化",
+    "measurement_unit": null,
+    "role": "反馈/实际状态",
+    "status": "命名概念类型；不等同于已确定物理/通信接口"
+  },
+  {
+    "type_id": "C005",
+    "concept": "两个功能的能力分配",
+    "value_type": "结构化概念，字段待接口方细化",
+    "measurement_unit": null,
+    "role": "分析数据",
+    "status": "命名概念类型；不等同于已确定物理/通信接口"
+  },
+  {
+    "type_id": "C006",
+    "concept": "两类冷却需求、可用能力",
+    "value_type": "结构化概念，字段待接口方细化",
+    "measurement_unit": null,
+    "role": "分析数据",
+    "status": "命名概念类型；不等同于已确定物理/通信接口"
+  },
+  {
+    "type_id": "C007",
+    "concept": "主动供风有效热导",
+    "value_type": "Real",
+    "measurement_unit": null,
+    "role": "分析数据",
+    "status": "命名概念类型；不等同于已确定物理/通信接口"
+  },
+  {
+    "type_id": "C008",
+    "concept": "主动供风有效热导与独立换热边界",
+    "value_type": "结构化概念，字段待接口方细化",
+    "measurement_unit": null,
+    "role": "分析数据",
+    "status": "命名概念类型；不等同于已确定物理/通信接口"
+  },
+  {
+    "type_id": "C009",
+    "concept": "主动供风的有符号换热贡献",
+    "value_type": "Real",
+    "measurement_unit": null,
+    "role": "分析数据",
+    "status": "命名概念类型；不等同于已确定物理/通信接口"
+  },
+  {
+    "type_id": "C010",
+    "concept": "主动冷却请求",
+    "value_type": "结构化概念，字段待接口方细化",
+    "measurement_unit": null,
+    "role": "请求/命令",
+    "status": "命名概念类型；不等同于已确定物理/通信接口"
+  },
+  {
+    "type_id": "C011",
+    "concept": "人员设定或场景目标",
+    "value_type": "结构化概念，字段待接口方细化",
+    "measurement_unit": null,
+    "role": "目标/设定",
+    "status": "命名概念类型；不等同于已确定物理/通信接口"
+  },
+  {
+    "type_id": "C012",
+    "concept": "仿真开始、空调启动操作",
+    "value_type": "结构化概念，字段待接口方细化",
+    "measurement_unit": null,
+    "role": "分析数据",
+    "status": "命名概念类型；不等同于已确定物理/通信接口"
+  },
+  {
+    "type_id": "C013",
+    "concept": "低电量条件下的制冷许可",
+    "value_type": "结构化概念，字段待接口方细化",
+    "measurement_unit": null,
+    "role": "分析数据",
+    "status": "命名概念类型；不等同于已确定物理/通信接口"
+  },
+  {
+    "type_id": "C014",
+    "concept": "供热入口温度信息",
+    "value_type": "结构化概念，字段待接口方细化",
+    "measurement_unit": null,
+    "role": "反馈/实际状态",
+    "status": "命名概念类型；不等同于已确定物理/通信接口"
+  },
+  {
+    "type_id": "C015",
+    "concept": "供风反馈有效性",
+    "value_type": "Boolean",
+    "measurement_unit": null,
+    "role": "信息有效性",
+    "status": "命名概念类型；不等同于已确定物理/通信接口"
+  },
+  {
+    "type_id": "C016",
+    "concept": "供风能力可用状态",
+    "value_type": "Boolean",
+    "measurement_unit": null,
+    "role": "反馈/实际状态",
+    "status": "命名概念类型；不等同于已确定物理/通信接口"
+  },
+  {
+    "type_id": "C017",
+    "concept": "充电调度与能耗记录",
+    "value_type": "结构化概念，字段待接口方细化",
+    "measurement_unit": null,
+    "role": "分析数据",
+    "status": "命名概念类型；不等同于已确定物理/通信接口"
+  },
+  {
+    "type_id": "C018",
+    "concept": "其他使能条件",
+    "value_type": "结构化概念，字段待接口方细化",
+    "measurement_unit": null,
+    "role": "分析数据",
+    "status": "命名概念类型；不等同于已确定物理/通信接口"
+  },
+  {
+    "type_id": "C019",
+    "concept": "再生请求",
+    "value_type": "结构化概念，字段待接口方细化",
+    "measurement_unit": null,
+    "role": "请求/命令",
+    "status": "命名概念类型；不等同于已确定物理/通信接口"
+  },
+  {
+    "type_id": "C020",
+    "concept": "再生请求、电池充电状态",
+    "value_type": "结构化概念，字段待接口方细化",
+    "measurement_unit": null,
+    "role": "请求/命令",
+    "status": "命名概念类型；不等同于已确定物理/通信接口"
+  },
+  {
+    "type_id": "C021",
+    "concept": "分配的制冷能力、制冷需求",
+    "value_type": "结构化概念，字段待接口方细化",
+    "measurement_unit": null,
+    "role": "分析数据",
+    "status": "命名概念类型；不等同于已确定物理/通信接口"
+  },
+  {
+    "type_id": "C022",
+    "concept": "制冷关闭请求",
+    "value_type": "结构化概念，字段待接口方细化",
+    "measurement_unit": null,
+    "role": "请求/命令",
+    "status": "命名概念类型；不等同于已确定物理/通信接口"
+  },
+  {
+    "type_id": "C023",
+    "concept": "制冷状态",
+    "value_type": "结构化概念，字段待接口方细化",
+    "measurement_unit": null,
+    "role": "反馈/实际状态",
+    "status": "命名概念类型；不等同于已确定物理/通信接口"
+  },
+  {
+    "type_id": "C024",
+    "concept": "制冷能力控制请求",
+    "value_type": "结构化概念，字段待接口方细化",
+    "measurement_unit": null,
+    "role": "请求/命令",
+    "status": "命名概念类型；不等同于已确定物理/通信接口"
+  },
+  {
+    "type_id": "C025",
+    "concept": "制冷能力请求",
+    "value_type": "结构化概念，字段待接口方细化",
+    "measurement_unit": null,
+    "role": "请求/命令",
+    "status": "命名概念类型；不等同于已确定物理/通信接口"
+  },
+  {
+    "type_id": "C026",
+    "concept": "制冷许可",
+    "value_type": "结构化概念，字段待接口方细化",
+    "measurement_unit": null,
+    "role": "分析数据",
+    "status": "命名概念类型；不等同于已确定物理/通信接口"
+  },
+  {
+    "type_id": "C027",
+    "concept": "制冷请求、空气输送需求",
+    "value_type": "结构化概念，字段待接口方细化",
+    "measurement_unit": null,
+    "role": "请求/命令",
+    "status": "命名概念类型；不等同于已确定物理/通信接口"
+  },
+  {
+    "type_id": "C028",
+    "concept": "制冷运行许可",
+    "value_type": "Boolean",
+    "measurement_unit": null,
+    "role": "分析数据",
+    "status": "命名概念类型；不等同于已确定物理/通信接口"
+  },
+  {
+    "type_id": "C029",
+    "concept": "制冷量调节请求",
+    "value_type": "结构化概念，字段待接口方细化",
+    "measurement_unit": null,
+    "role": "请求/命令",
+    "status": "命名概念类型；不等同于已确定物理/通信接口"
+  },
+  {
+    "type_id": "C030",
+    "concept": "制动请求、回收可用性",
+    "value_type": "结构化概念，字段待接口方细化",
+    "measurement_unit": null,
+    "role": "请求/命令",
+    "status": "命名概念类型；不等同于已确定物理/通信接口"
+  },
+  {
+    "type_id": "C031",
+    "concept": "制热请求",
+    "value_type": "结构化概念，字段待接口方细化",
+    "measurement_unit": null,
+    "role": "请求/命令",
+    "status": "命名概念类型；不等同于已确定物理/通信接口"
+  },
+  {
+    "type_id": "C032",
+    "concept": "前除霜状态",
+    "value_type": "结构化概念，字段待接口方细化",
+    "measurement_unit": null,
+    "role": "反馈/实际状态",
+    "status": "命名概念类型；不等同于已确定物理/通信接口"
+  },
+  {
+    "type_id": "C033",
+    "concept": "前除霜请求",
+    "value_type": "结构化概念，字段待接口方细化",
+    "measurement_unit": null,
+    "role": "请求/命令",
+    "status": "命名概念类型；不等同于已确定物理/通信接口"
+  },
+  {
+    "type_id": "C034",
+    "concept": "前除霜除雾请求",
+    "value_type": "结构化概念，字段待接口方细化",
+    "measurement_unit": null,
+    "role": "请求/命令",
+    "status": "命名概念类型；不等同于已确定物理/通信接口"
+  },
+  {
+    "type_id": "C035",
+    "concept": "前风窗除霜除雾控制请求",
+    "value_type": "结构化概念，字段待接口方细化",
+    "measurement_unit": null,
+    "role": "请求/命令",
+    "status": "命名概念类型；不等同于已确定物理/通信接口"
+  },
+  {
+    "type_id": "C036",
+    "concept": "加速/制动指令",
+    "value_type": "结构化概念，字段待接口方细化",
+    "measurement_unit": null,
+    "role": "分析数据",
+    "status": "命名概念类型；不等同于已确定物理/通信接口"
+  },
+  {
+    "type_id": "C037",
+    "concept": "动力电池荷电状态",
+    "value_type": "结构化概念，字段待接口方细化",
+    "measurement_unit": null,
+    "role": "反馈/实际状态",
+    "status": "命名概念类型；不等同于已确定物理/通信接口"
+  },
+  {
+    "type_id": "C038",
+    "concept": "动力需求、能源状态",
+    "value_type": "结构化概念，字段待接口方细化",
+    "measurement_unit": null,
+    "role": "反馈/实际状态",
+    "status": "命名概念类型；不等同于已确定物理/通信接口"
+  },
+  {
+    "type_id": "C039",
+    "concept": "发动机启动状态",
+    "value_type": "结构化概念，字段待接口方细化",
+    "measurement_unit": null,
+    "role": "反馈/实际状态",
+    "status": "命名概念类型；不等同于已确定物理/通信接口"
+  },
+  {
+    "type_id": "C040",
+    "concept": "发动机已启动、负载转速反馈",
+    "value_type": "结构化概念，字段待接口方细化",
+    "measurement_unit": null,
+    "role": "反馈/实际状态",
+    "status": "命名概念类型；不等同于已确定物理/通信接口"
+  },
+  {
+    "type_id": "C041",
+    "concept": "发动机已启动状态",
+    "value_type": "结构化概念，字段待接口方细化",
+    "measurement_unit": null,
+    "role": "反馈/实际状态",
+    "status": "命名概念类型；不等同于已确定物理/通信接口"
+  },
+  {
+    "type_id": "C042",
+    "concept": "发动机负载目标",
+    "value_type": "结构化概念，字段待接口方细化",
+    "measurement_unit": null,
+    "role": "目标/设定",
+    "status": "命名概念类型；不等同于已确定物理/通信接口"
+  },
+  {
+    "type_id": "C043",
+    "concept": "发动机转速目标",
+    "value_type": "结构化概念，字段待接口方细化",
+    "measurement_unit": null,
+    "role": "目标/设定",
+    "status": "命名概念类型；不等同于已确定物理/通信接口"
+  },
+  {
+    "type_id": "C044",
+    "concept": "发电/回收电能、电池状态、驱动消耗",
+    "value_type": "结构化概念，字段待接口方细化",
+    "measurement_unit": null,
+    "role": "反馈/实际状态",
+    "status": "命名概念类型；不等同于已确定物理/通信接口"
+  },
+  {
+    "type_id": "C045",
+    "concept": "发电电能、负载转速目标",
+    "value_type": "结构化概念，字段待接口方细化",
+    "measurement_unit": null,
+    "role": "目标/设定",
+    "status": "命名概念类型；不等同于已确定物理/通信接口"
+  },
+  {
+    "type_id": "C046",
+    "concept": "发电请求、启动状态",
+    "value_type": "结构化概念，字段待接口方细化",
+    "measurement_unit": null,
+    "role": "请求/命令",
+    "status": "命名概念类型；不等同于已确定物理/通信接口"
+  },
+  {
+    "type_id": "C047",
+    "concept": "发电需求",
+    "value_type": "结构化概念，字段待接口方细化",
+    "measurement_unit": null,
+    "role": "分析数据",
+    "status": "命名概念类型；不等同于已确定物理/通信接口"
+  },
+  {
+    "type_id": "C048",
+    "concept": "可用循环调节能力",
+    "value_type": "结构化概念，字段待接口方细化",
+    "measurement_unit": null,
+    "role": "分析数据",
+    "status": "命名概念类型；不等同于已确定物理/通信接口"
+  },
+  {
+    "type_id": "C049",
+    "concept": "可用温度调节能力",
+    "value_type": "结构化概念，字段待接口方细化",
+    "measurement_unit": null,
+    "role": "分析数据",
+    "status": "命名概念类型；不等同于已确定物理/通信接口"
+  },
+  {
+    "type_id": "C050",
+    "concept": "可用温控能力",
+    "value_type": "结构化概念，字段待接口方细化",
+    "measurement_unit": null,
+    "role": "分析数据",
+    "status": "命名概念类型；不等同于已确定物理/通信接口"
+  },
+  {
+    "type_id": "C051",
+    "concept": "可用空气输送能力",
+    "value_type": "结构化概念，字段待接口方细化",
+    "measurement_unit": null,
+    "role": "分析数据",
+    "status": "命名概念类型；不等同于已确定物理/通信接口"
+  },
+  {
+    "type_id": "C052",
+    "concept": "可用能力",
+    "value_type": "结构化概念，字段待接口方细化",
+    "measurement_unit": null,
+    "role": "分析数据",
+    "status": "命名概念类型；不等同于已确定物理/通信接口"
+  },
+  {
+    "type_id": "C053",
+    "concept": "可用调节能力",
+    "value_type": "结构化概念，字段待接口方细化",
+    "measurement_unit": null,
+    "role": "分析数据",
+    "status": "命名概念类型；不等同于已确定物理/通信接口"
+  },
+  {
+    "type_id": "C054",
+    "concept": "可用送风模式",
+    "value_type": "结构化概念，字段待接口方细化",
+    "measurement_unit": null,
+    "role": "分析数据",
+    "status": "命名概念类型；不等同于已确定物理/通信接口"
+  },
+  {
+    "type_id": "C055",
+    "concept": "可用送风能力",
+    "value_type": "结构化概念，字段待接口方细化",
+    "measurement_unit": null,
+    "role": "分析数据",
+    "status": "命名概念类型；不等同于已确定物理/通信接口"
+  },
+  {
+    "type_id": "C056",
+    "concept": "各路径能力分配",
+    "value_type": "结构化概念，字段待接口方细化",
+    "measurement_unit": null,
+    "role": "分析数据",
+    "status": "命名概念类型；不等同于已确定物理/通信接口"
+  },
+  {
+    "type_id": "C057",
+    "concept": "各项加热许可",
+    "value_type": "结构化概念，字段待接口方细化",
+    "measurement_unit": null,
+    "role": "分析数据",
+    "status": "命名概念类型；不等同于已确定物理/通信接口"
+  },
+  {
+    "type_id": "C058",
+    "concept": "回收能量与充电请求",
+    "value_type": "结构化概念，字段待接口方细化",
+    "measurement_unit": null,
+    "role": "请求/命令",
+    "status": "命名概念类型；不等同于已确定物理/通信接口"
+  },
+  {
+    "type_id": "C059",
+    "concept": "实际供风反馈",
+    "value_type": "结构化概念，字段待接口方细化",
+    "measurement_unit": null,
+    "role": "反馈/实际状态",
+    "status": "命名概念类型；不等同于已确定物理/通信接口"
+  },
+  {
+    "type_id": "C060",
+    "concept": "实际功率",
+    "value_type": "Real",
+    "measurement_unit": null,
+    "role": "反馈/实际状态",
+    "status": "命名概念类型；不等同于已确定物理/通信接口"
+  },
+  {
+    "type_id": "C061",
+    "concept": "实际温度",
+    "value_type": "结构化概念，字段待接口方细化",
+    "measurement_unit": null,
+    "role": "反馈/实际状态",
+    "status": "命名概念类型；不等同于已确定物理/通信接口"
+  },
+  {
+    "type_id": "C062",
+    "concept": "室内温度",
+    "value_type": "Real",
+    "measurement_unit": "℃",
+    "role": "分析数据",
+    "status": "命名概念类型；不等同于已确定物理/通信接口"
+  },
+  {
+    "type_id": "C063",
+    "concept": "室内温度信息",
+    "value_type": "结构化概念，字段待接口方细化",
+    "measurement_unit": null,
+    "role": "反馈/实际状态",
+    "status": "命名概念类型；不等同于已确定物理/通信接口"
+  },
+  {
+    "type_id": "C064",
+    "concept": "室外温度信息",
+    "value_type": "结构化概念，字段待接口方细化",
+    "measurement_unit": null,
+    "role": "反馈/实际状态",
+    "status": "命名概念类型；不等同于已确定物理/通信接口"
+  },
+  {
+    "type_id": "C065",
+    "concept": "工作状态",
+    "value_type": "结构化概念，字段待接口方细化",
+    "measurement_unit": null,
+    "role": "反馈/实际状态",
+    "status": "命名概念类型；不等同于已确定物理/通信接口"
+  },
+  {
+    "type_id": "C066",
+    "concept": "已接收的风窗请求",
+    "value_type": "结构化概念，字段待接口方细化",
+    "measurement_unit": null,
+    "role": "请求/命令",
+    "status": "命名概念类型；不等同于已确定物理/通信接口"
+  },
+  {
+    "type_id": "C067",
+    "concept": "座舱/电池温度与执行状态",
+    "value_type": "结构化概念，字段待接口方细化",
+    "measurement_unit": null,
+    "role": "反馈/实际状态",
+    "status": "命名概念类型；不等同于已确定物理/通信接口"
+  },
+  {
+    "type_id": "C068",
+    "concept": "座舱/电池请求、可用制冷能力",
+    "value_type": "结构化概念，字段待接口方细化",
+    "measurement_unit": null,
+    "role": "请求/命令",
+    "status": "命名概念类型；不等同于已确定物理/通信接口"
+  },
+  {
+    "type_id": "C069",
+    "concept": "座舱制冷请求",
+    "value_type": "结构化概念，字段待接口方细化",
+    "measurement_unit": null,
+    "role": "请求/命令",
+    "status": "命名概念类型；不等同于已确定物理/通信接口"
+  },
+  {
+    "type_id": "C070",
+    "concept": "座舱制冷需求",
+    "value_type": "结构化概念，字段待接口方细化",
+    "measurement_unit": null,
+    "role": "分析数据",
+    "status": "命名概念类型；不等同于已确定物理/通信接口"
+  },
+  {
+    "type_id": "C071",
+    "concept": "座舱制冷需求与响应",
+    "value_type": "结构化概念，字段待接口方细化",
+    "measurement_unit": null,
+    "role": "分析数据",
+    "status": "命名概念类型；不等同于已确定物理/通信接口"
+  },
+  {
+    "type_id": "C072",
+    "concept": "座舱温度信息",
+    "value_type": "结构化概念，字段待接口方细化",
+    "measurement_unit": null,
+    "role": "反馈/实际状态",
+    "status": "命名概念类型；不等同于已确定物理/通信接口"
+  },
+  {
+    "type_id": "C073",
+    "concept": "座舱温控请求",
+    "value_type": "结构化概念，字段待接口方细化",
+    "measurement_unit": null,
+    "role": "请求/命令",
+    "status": "命名概念类型；不等同于已确定物理/通信接口"
+  },
+  {
+    "type_id": "C074",
+    "concept": "座舱空气换热效果",
+    "value_type": "结构化概念，字段待接口方细化",
+    "measurement_unit": null,
+    "role": "分析数据",
+    "status": "命名概念类型；不等同于已确定物理/通信接口"
+  },
+  {
+    "type_id": "C075",
+    "concept": "当前座舱温度设定",
+    "value_type": "结构化概念，字段待接口方细化",
+    "measurement_unit": null,
+    "role": "目标/设定",
+    "status": "命名概念类型；不等同于已确定物理/通信接口"
+  },
+  {
+    "type_id": "C076",
+    "concept": "当前模式",
+    "value_type": "结构化概念，字段待接口方细化",
+    "measurement_unit": null,
+    "role": "分析数据",
+    "status": "命名概念类型；不等同于已确定物理/通信接口"
+  },
+  {
+    "type_id": "C077",
+    "concept": "当前目标温度",
+    "value_type": "结构化概念，字段待接口方细化",
+    "measurement_unit": null,
+    "role": "目标/设定",
+    "status": "命名概念类型；不等同于已确定物理/通信接口"
+  },
+  {
+    "type_id": "C078",
+    "concept": "当前自动模式状态",
+    "value_type": "结构化概念，字段待接口方细化",
+    "measurement_unit": null,
+    "role": "反馈/实际状态",
+    "status": "命名概念类型；不等同于已确定物理/通信接口"
+  },
+  {
+    "type_id": "C079",
+    "concept": "当前送风模式",
+    "value_type": "结构化概念，字段待接口方细化",
+    "measurement_unit": null,
+    "role": "分析数据",
+    "status": "命名概念类型；不等同于已确定物理/通信接口"
+  },
+  {
+    "type_id": "C080",
+    "concept": "循环状态",
+    "value_type": "结构化概念，字段待接口方细化",
+    "measurement_unit": null,
+    "role": "反馈/实际状态",
+    "status": "命名概念类型；不等同于已确定物理/通信接口"
+  },
+  {
+    "type_id": "C081",
+    "concept": "循环设定",
+    "value_type": "结构化概念，字段待接口方细化",
+    "measurement_unit": null,
+    "role": "目标/设定",
+    "status": "命名概念类型；不等同于已确定物理/通信接口"
+  },
+  {
+    "type_id": "C082",
+    "concept": "循环请求",
+    "value_type": "结构化概念，字段待接口方细化",
+    "measurement_unit": null,
+    "role": "请求/命令",
+    "status": "命名概念类型；不等同于已确定物理/通信接口"
+  },
+  {
+    "type_id": "C083",
+    "concept": "恢复加热许可",
+    "value_type": "结构化概念，字段待接口方细化",
+    "measurement_unit": null,
+    "role": "分析数据",
+    "status": "命名概念类型；不等同于已确定物理/通信接口"
+  },
+  {
+    "type_id": "C084",
+    "concept": "恢复许可",
+    "value_type": "结构化概念，字段待接口方细化",
+    "measurement_unit": null,
+    "role": "分析数据",
+    "status": "命名概念类型；不等同于已确定物理/通信接口"
+  },
+  {
+    "type_id": "C085",
+    "concept": "恢复阈值",
+    "value_type": "结构化概念，字段待接口方细化",
+    "measurement_unit": null,
+    "role": "分析数据",
+    "status": "命名概念类型；不等同于已确定物理/通信接口"
+  },
+  {
+    "type_id": "C086",
+    "concept": "故障约束下的加热许可",
+    "value_type": "结构化概念，字段待接口方细化",
+    "measurement_unit": null,
+    "role": "分析数据",
+    "status": "命名概念类型；不等同于已确定物理/通信接口"
+  },
+  {
+    "type_id": "C087",
+    "concept": "整车故障状态",
+    "value_type": "结构化概念，字段待接口方细化",
+    "measurement_unit": null,
+    "role": "反馈/实际状态",
+    "status": "命名概念类型；不等同于已确定物理/通信接口"
+  },
+  {
+    "type_id": "C088",
+    "concept": "日照负荷信息",
+    "value_type": "结构化概念，字段待接口方细化",
+    "measurement_unit": null,
+    "role": "反馈/实际状态",
+    "status": "命名概念类型；不等同于已确定物理/通信接口"
+  },
+  {
+    "type_id": "C089",
+    "concept": "更新后的座舱目标温度",
+    "value_type": "结构化概念，字段待接口方细化",
+    "measurement_unit": null,
+    "role": "目标/设定",
+    "status": "命名概念类型；不等同于已确定物理/通信接口"
+  },
+  {
+    "type_id": "C090",
+    "concept": "更新后的模式状态",
+    "value_type": "结构化概念，字段待接口方细化",
+    "measurement_unit": null,
+    "role": "反馈/实际状态",
+    "status": "命名概念类型；不等同于已确定物理/通信接口"
+  },
+  {
+    "type_id": "C091",
+    "concept": "最大功率",
+    "value_type": "Real",
+    "measurement_unit": null,
+    "role": "分析数据",
+    "status": "命名概念类型；不等同于已确定物理/通信接口"
+  },
+  {
+    "type_id": "C092",
+    "concept": "最高有效电芯控制温度",
+    "value_type": "Real",
+    "measurement_unit": "℃",
+    "role": "分析数据",
+    "status": "命名概念类型；不等同于已确定物理/通信接口"
+  },
+  {
+    "type_id": "C093",
+    "concept": "最高有效电芯温度及有效性",
+    "value_type": "结构化概念，字段待接口方细化",
+    "measurement_unit": null,
+    "role": "信息有效性",
+    "status": "命名概念类型；不等同于已确定物理/通信接口"
+  },
+  {
+    "type_id": "C094",
+    "concept": "有效温度/功率输入",
+    "value_type": "结构化概念，字段待接口方细化",
+    "measurement_unit": null,
+    "role": "分析数据",
+    "status": "命名概念类型；不等同于已确定物理/通信接口"
+  },
+  {
+    "type_id": "C095",
+    "concept": "有效电池充放电功率",
+    "value_type": "Real",
+    "measurement_unit": null,
+    "role": "分析数据",
+    "status": "命名概念类型；不等同于已确定物理/通信接口"
+  },
+  {
+    "type_id": "C096",
+    "concept": "有效电池控制温度",
+    "value_type": "Real",
+    "measurement_unit": "℃",
+    "role": "分析数据",
+    "status": "命名概念类型；不等同于已确定物理/通信接口"
+  },
+  {
+    "type_id": "C097",
+    "concept": "有效目标温度",
+    "value_type": "结构化概念，字段待接口方细化",
+    "measurement_unit": null,
+    "role": "目标/设定",
+    "status": "命名概念类型；不等同于已确定物理/通信接口"
+  },
+  {
+    "type_id": "C098",
+    "concept": "有符号环境换热贡献",
+    "value_type": "结构化概念，字段待接口方细化",
+    "measurement_unit": null,
+    "role": "分析数据",
+    "status": "命名概念类型；不等同于已确定物理/通信接口"
+  },
+  {
+    "type_id": "C099",
+    "concept": "未请求、不可用、待供风或供风已建立的执行状态",
+    "value_type": "结构化概念，字段待接口方细化",
+    "measurement_unit": null,
+    "role": "请求/命令",
+    "status": "命名概念类型；不等同于已确定物理/通信接口"
+  },
+  {
+    "type_id": "C100",
+    "concept": "模式退出操作",
+    "value_type": "结构化概念，字段待接口方细化",
+    "measurement_unit": null,
+    "role": "分析数据",
+    "status": "命名概念类型；不等同于已确定物理/通信接口"
+  },
+  {
+    "type_id": "C101",
+    "concept": "温度/功率输入",
+    "value_type": "结构化概念，字段待接口方细化",
+    "measurement_unit": null,
+    "role": "分析数据",
+    "status": "命名概念类型；不等同于已确定物理/通信接口"
+  },
+  {
+    "type_id": "C102",
+    "concept": "温度与环境信息",
+    "value_type": "结构化概念，字段待接口方细化",
+    "measurement_unit": null,
+    "role": "反馈/实际状态",
+    "status": "命名概念类型；不等同于已确定物理/通信接口"
+  },
+  {
+    "type_id": "C103",
+    "concept": "温度反馈",
+    "value_type": "结构化概念，字段待接口方细化",
+    "measurement_unit": null,
+    "role": "反馈/实际状态",
+    "status": "命名概念类型；不等同于已确定物理/通信接口"
+  },
+  {
+    "type_id": "C104",
+    "concept": "温度状态",
+    "value_type": "结构化概念，字段待接口方细化",
+    "measurement_unit": null,
+    "role": "反馈/实际状态",
+    "status": "命名概念类型；不等同于已确定物理/通信接口"
+  },
+  {
+    "type_id": "C105",
+    "concept": "温度调节操作",
+    "value_type": "结构化概念，字段待接口方细化",
+    "measurement_unit": null,
+    "role": "分析数据",
+    "status": "命名概念类型；不等同于已确定物理/通信接口"
+  },
+  {
+    "type_id": "C106",
+    "concept": "温控所需温度与环境信息",
+    "value_type": "结构化概念，字段待接口方细化",
+    "measurement_unit": null,
+    "role": "反馈/实际状态",
+    "status": "命名概念类型；不等同于已确定物理/通信接口"
+  },
+  {
+    "type_id": "C107",
+    "concept": "热管理能力分配",
+    "value_type": "结构化概念，字段待接口方细化",
+    "measurement_unit": null,
+    "role": "分析数据",
+    "status": "命名概念类型；不等同于已确定物理/通信接口"
+  },
+  {
+    "type_id": "C108",
+    "concept": "独立环境换热边界与有效热导",
+    "value_type": "结构化概念，字段待接口方细化",
+    "measurement_unit": null,
+    "role": "分析数据",
+    "status": "命名概念类型；不等同于已确定物理/通信接口"
+  },
+  {
+    "type_id": "C109",
+    "concept": "环境/主动换热贡献、车辆与电池运行状态",
+    "value_type": "结构化概念，字段待接口方细化",
+    "measurement_unit": null,
+    "role": "反馈/实际状态",
+    "status": "命名概念类型；不等同于已确定物理/通信接口"
+  },
+  {
+    "type_id": "C110",
+    "concept": "环境温度条件",
+    "value_type": "结构化概念，字段待接口方细化",
+    "measurement_unit": null,
+    "role": "分析数据",
+    "status": "命名概念类型；不等同于已确定物理/通信接口"
+  },
+  {
+    "type_id": "C111",
+    "concept": "用户温度、循环、风量、模式或前除霜操作",
+    "value_type": "结构化概念，字段待接口方细化",
+    "measurement_unit": null,
+    "role": "分析数据",
+    "status": "命名概念类型；不等同于已确定物理/通信接口"
+  },
+  {
+    "type_id": "C112",
+    "concept": "用户温度操作",
+    "value_type": "结构化概念，字段待接口方细化",
+    "measurement_unit": null,
+    "role": "分析数据",
+    "status": "命名概念类型；不等同于已确定物理/通信接口"
+  },
+  {
+    "type_id": "C113",
+    "concept": "用户设定温度",
+    "value_type": "结构化概念，字段待接口方细化",
+    "measurement_unit": null,
+    "role": "目标/设定",
+    "status": "命名概念类型；不等同于已确定物理/通信接口"
+  },
+  {
+    "type_id": "C114",
+    "concept": "用户风窗除霜除雾请求",
+    "value_type": "结构化概念，字段待接口方细化",
+    "measurement_unit": null,
+    "role": "请求/命令",
+    "status": "命名概念类型；不等同于已确定物理/通信接口"
+  },
+  {
+    "type_id": "C115",
+    "concept": "电加热功率控制请求",
+    "value_type": "结构化概念，字段待接口方细化",
+    "measurement_unit": null,
+    "role": "请求/命令",
+    "status": "命名概念类型；不等同于已确定物理/通信接口"
+  },
+  {
+    "type_id": "C116",
+    "concept": "电加热功率请求",
+    "value_type": "结构化概念，字段待接口方细化",
+    "measurement_unit": null,
+    "role": "请求/命令",
+    "status": "命名概念类型；不等同于已确定物理/通信接口"
+  },
+  {
+    "type_id": "C117",
+    "concept": "电加热基础许可",
+    "value_type": "结构化概念，字段待接口方细化",
+    "measurement_unit": null,
+    "role": "分析数据",
+    "status": "命名概念类型；不等同于已确定物理/通信接口"
+  },
+  {
+    "type_id": "C118",
+    "concept": "电加热温度",
+    "value_type": "Real",
+    "measurement_unit": "℃",
+    "role": "分析数据",
+    "status": "命名概念类型；不等同于已确定物理/通信接口"
+  },
+  {
+    "type_id": "C119",
+    "concept": "电加热温度信息",
+    "value_type": "结构化概念，字段待接口方细化",
+    "measurement_unit": null,
+    "role": "反馈/实际状态",
+    "status": "命名概念类型；不等同于已确定物理/通信接口"
+  },
+  {
+    "type_id": "C120",
+    "concept": "电加热温度反馈",
+    "value_type": "结构化概念，字段待接口方细化",
+    "measurement_unit": null,
+    "role": "反馈/实际状态",
+    "status": "命名概念类型；不等同于已确定物理/通信接口"
+  },
+  {
+    "type_id": "C121",
+    "concept": "电加热状态信息",
+    "value_type": "结构化概念，字段待接口方细化",
+    "measurement_unit": null,
+    "role": "反馈/实际状态",
+    "status": "命名概念类型；不等同于已确定物理/通信接口"
+  },
+  {
+    "type_id": "C122",
+    "concept": "电加热运行许可",
+    "value_type": "Boolean",
+    "measurement_unit": null,
+    "role": "分析数据",
+    "status": "命名概念类型；不等同于已确定物理/通信接口"
+  },
+  {
+    "type_id": "C123",
+    "concept": "电加热通断状态",
+    "value_type": "结构化概念，字段待接口方细化",
+    "measurement_unit": null,
+    "role": "反馈/实际状态",
+    "status": "命名概念类型；不等同于已确定物理/通信接口"
+  },
+  {
+    "type_id": "C124",
+    "concept": "电加热通断请求",
+    "value_type": "结构化概念，字段待接口方细化",
+    "measurement_unit": null,
+    "role": "请求/命令",
+    "status": "命名概念类型；不等同于已确定物理/通信接口"
+  },
+  {
+    "type_id": "C125",
+    "concept": "电池/座舱热状态反馈",
+    "value_type": "结构化概念，字段待接口方细化",
+    "measurement_unit": null,
+    "role": "反馈/实际状态",
+    "status": "命名概念类型；不等同于已确定物理/通信接口"
+  },
+  {
+    "type_id": "C126",
+    "concept": "电池主动供风请求",
+    "value_type": "Boolean",
+    "measurement_unit": null,
+    "role": "请求/命令",
+    "status": "命名概念类型；不等同于已确定物理/通信接口"
+  },
+  {
+    "type_id": "C127",
+    "concept": "电池主动供风请求及供风可用状态",
+    "value_type": "结构化概念，字段待接口方细化",
+    "measurement_unit": null,
+    "role": "请求/命令",
+    "status": "命名概念类型；不等同于已确定物理/通信接口"
+  },
+  {
+    "type_id": "C128",
+    "concept": "电池主动冷却请求",
+    "value_type": "结构化概念，字段待接口方细化",
+    "measurement_unit": null,
+    "role": "请求/命令",
+    "status": "命名概念类型；不等同于已确定物理/通信接口"
+  },
+  {
+    "type_id": "C129",
+    "concept": "电池充放电功率反馈",
+    "value_type": "结构化概念，字段待接口方细化",
+    "measurement_unit": null,
+    "role": "反馈/实际状态",
+    "status": "命名概念类型；不等同于已确定物理/通信接口"
+  },
+  {
+    "type_id": "C130",
+    "concept": "电池入口实际空气流量",
+    "value_type": "Real",
+    "measurement_unit": null,
+    "role": "反馈/实际状态",
+    "status": "命名概念类型；不等同于已确定物理/通信接口"
+  },
+  {
+    "type_id": "C131",
+    "concept": "电池入口实际空气温度",
+    "value_type": "Real",
+    "measurement_unit": "℃",
+    "role": "反馈/实际状态",
+    "status": "命名概念类型；不等同于已确定物理/通信接口"
+  },
+  {
+    "type_id": "C132",
+    "concept": "电池入口实际空气温度与流量",
+    "value_type": "结构化概念，字段待接口方细化",
+    "measurement_unit": null,
+    "role": "反馈/实际状态",
+    "status": "命名概念类型；不等同于已确定物理/通信接口"
+  },
+  {
+    "type_id": "C133",
+    "concept": "电池冷却能力请求",
+    "value_type": "结构化概念，字段待接口方细化",
+    "measurement_unit": null,
+    "role": "请求/命令",
+    "status": "命名概念类型；不等同于已确定物理/通信接口"
+  },
+  {
+    "type_id": "C134",
+    "concept": "电池冷却请求",
+    "value_type": "结构化概念，字段待接口方细化",
+    "measurement_unit": null,
+    "role": "请求/命令",
+    "status": "命名概念类型；不等同于已确定物理/通信接口"
+  },
+  {
+    "type_id": "C135",
+    "concept": "电池分配能力、冷却液状态",
+    "value_type": "结构化概念，字段待接口方细化",
+    "measurement_unit": null,
+    "role": "反馈/实际状态",
+    "status": "命名概念类型；不等同于已确定物理/通信接口"
+  },
+  {
+    "type_id": "C136",
+    "concept": "电池实际供风状态",
+    "value_type": "结构化概念，字段待接口方细化",
+    "measurement_unit": null,
+    "role": "反馈/实际状态",
+    "status": "命名概念类型；不等同于已确定物理/通信接口"
+  },
+  {
+    "type_id": "C137",
+    "concept": "电池温度、充放电功率",
+    "value_type": "结构化概念，字段待接口方细化",
+    "measurement_unit": null,
+    "role": "分析数据",
+    "status": "命名概念类型；不等同于已确定物理/通信接口"
+  },
+  {
+    "type_id": "C138",
+    "concept": "电池温度反馈",
+    "value_type": "结构化概念，字段待接口方细化",
+    "measurement_unit": null,
+    "role": "反馈/实际状态",
+    "status": "命名概念类型；不等同于已确定物理/通信接口"
+  },
+  {
+    "type_id": "C139",
+    "concept": "电池热节点与前舱局部空气状态",
+    "value_type": "结构化概念，字段待接口方细化",
+    "measurement_unit": null,
+    "role": "反馈/实际状态",
+    "status": "命名概念类型；不等同于已确定物理/通信接口"
+  },
+  {
+    "type_id": "C140",
+    "concept": "电池热量交换响应",
+    "value_type": "结构化概念，字段待接口方细化",
+    "measurement_unit": null,
+    "role": "分析数据",
+    "status": "命名概念类型；不等同于已确定物理/通信接口"
+  },
+  {
+    "type_id": "C141",
+    "concept": "电芯温度",
+    "value_type": "Real",
+    "measurement_unit": "℃",
+    "role": "分析数据",
+    "status": "命名概念类型；不等同于已确定物理/通信接口"
+  },
+  {
+    "type_id": "C142",
+    "concept": "电芯温度快照",
+    "value_type": "结构化概念，字段待接口方细化",
+    "measurement_unit": null,
+    "role": "分析数据",
+    "status": "命名概念类型；不等同于已确定物理/通信接口"
+  },
+  {
+    "type_id": "C143",
+    "concept": "电量约束下的加热许可",
+    "value_type": "结构化概念，字段待接口方细化",
+    "measurement_unit": null,
+    "role": "分析数据",
+    "status": "命名概念类型；不等同于已确定物理/通信接口"
+  },
+  {
+    "type_id": "C144",
+    "concept": "目标温度",
+    "value_type": "Real",
+    "measurement_unit": "℃",
+    "role": "目标/设定",
+    "status": "命名概念类型；不等同于已确定物理/通信接口"
+  },
+  {
+    "type_id": "C145",
+    "concept": "目标温度、实测温度",
+    "value_type": "结构化概念，字段待接口方细化",
+    "measurement_unit": null,
+    "role": "目标/设定",
+    "status": "命名概念类型；不等同于已确定物理/通信接口"
+  },
+  {
+    "type_id": "C146",
+    "concept": "目标温度边界状态",
+    "value_type": "结构化概念，字段待接口方细化",
+    "measurement_unit": null,
+    "role": "目标/设定",
+    "status": "命名概念类型；不等同于已确定物理/通信接口"
+  },
+  {
+    "type_id": "C147",
+    "concept": "空气循环控制请求",
+    "value_type": "结构化概念，字段待接口方细化",
+    "measurement_unit": null,
+    "role": "请求/命令",
+    "status": "命名概念类型；不等同于已确定物理/通信接口"
+  },
+  {
+    "type_id": "C148",
+    "concept": "空气循环请求",
+    "value_type": "结构化概念，字段待接口方细化",
+    "measurement_unit": null,
+    "role": "请求/命令",
+    "status": "命名概念类型；不等同于已确定物理/通信接口"
+  },
+  {
+    "type_id": "C149",
+    "concept": "空气输送状态",
+    "value_type": "结构化概念，字段待接口方细化",
+    "measurement_unit": null,
+    "role": "反馈/实际状态",
+    "status": "命名概念类型；不等同于已确定物理/通信接口"
+  },
+  {
+    "type_id": "C150",
+    "concept": "空调启动、座舱状态",
+    "value_type": "结构化概念，字段待接口方细化",
+    "measurement_unit": null,
+    "role": "反馈/实际状态",
+    "status": "命名概念类型；不等同于已确定物理/通信接口"
+  },
+  {
+    "type_id": "C151",
+    "concept": "空调运行状态信息",
+    "value_type": "结构化概念，字段待接口方细化",
+    "measurement_unit": null,
+    "role": "反馈/实际状态",
+    "status": "命名概念类型；不等同于已确定物理/通信接口"
+  },
+  {
+    "type_id": "C152",
+    "concept": "经过时间",
+    "value_type": "结构化概念，字段待接口方细化",
+    "measurement_unit": null,
+    "role": "分析数据",
+    "status": "命名概念类型；不等同于已确定物理/通信接口"
+  },
+  {
+    "type_id": "C153",
+    "concept": "能力分配",
+    "value_type": "结构化概念，字段待接口方细化",
+    "measurement_unit": null,
+    "role": "分析数据",
+    "status": "命名概念类型；不等同于已确定物理/通信接口"
+  },
+  {
+    "type_id": "C154",
+    "concept": "自动模式Close反馈",
+    "value_type": "结构化概念，字段待接口方细化",
+    "measurement_unit": null,
+    "role": "反馈/实际状态",
+    "status": "命名概念类型；不等同于已确定物理/通信接口"
+  },
+  {
+    "type_id": "C155",
+    "concept": "自动模式状态",
+    "value_type": "结构化概念，字段待接口方细化",
+    "measurement_unit": null,
+    "role": "反馈/实际状态",
+    "status": "命名概念类型；不等同于已确定物理/通信接口"
+  },
+  {
+    "type_id": "C156",
+    "concept": "自动模式状态信息",
+    "value_type": "结构化概念，字段待接口方细化",
+    "measurement_unit": null,
+    "role": "反馈/实际状态",
+    "status": "命名概念类型；不等同于已确定物理/通信接口"
+  },
+  {
+    "type_id": "C157",
+    "concept": "行驶阶段完成事件",
+    "value_type": "结构化概念，字段待接口方细化",
+    "measurement_unit": null,
+    "role": "分析数据",
+    "status": "命名概念类型；不等同于已确定物理/通信接口"
+  },
+  {
+    "type_id": "C158",
+    "concept": "负载反馈",
+    "value_type": "结构化概念，字段待接口方细化",
+    "measurement_unit": null,
+    "role": "反馈/实际状态",
+    "status": "命名概念类型；不等同于已确定物理/通信接口"
+  },
+  {
+    "type_id": "C159",
+    "concept": "车辆目标速度",
+    "value_type": "结构化概念，字段待接口方细化",
+    "measurement_unit": null,
+    "role": "目标/设定",
+    "status": "命名概念类型；不等同于已确定物理/通信接口"
+  },
+  {
+    "type_id": "C160",
+    "concept": "车速反馈",
+    "value_type": "结构化概念，字段待接口方细化",
+    "measurement_unit": null,
+    "role": "反馈/实际状态",
+    "status": "命名概念类型；不等同于已确定物理/通信接口"
+  },
+  {
+    "type_id": "C161",
+    "concept": "转速、负载、电池及车辆响应",
+    "value_type": "结构化概念，字段待接口方细化",
+    "measurement_unit": null,
+    "role": "分析数据",
+    "status": "命名概念类型；不等同于已确定物理/通信接口"
+  },
+  {
+    "type_id": "C162",
+    "concept": "转速反馈",
+    "value_type": "结构化概念，字段待接口方细化",
+    "measurement_unit": null,
+    "role": "反馈/实际状态",
+    "status": "命名概念类型；不等同于已确定物理/通信接口"
+  },
+  {
+    "type_id": "C163",
+    "concept": "辅助冷却需求",
+    "value_type": "结构化概念，字段待接口方细化",
+    "measurement_unit": null,
+    "role": "分析数据",
+    "status": "命名概念类型；不等同于已确定物理/通信接口"
+  },
+  {
+    "type_id": "C164",
+    "concept": "辅助冷却需求、热状态",
+    "value_type": "结构化概念，字段待接口方细化",
+    "measurement_unit": null,
+    "role": "反馈/实际状态",
+    "status": "命名概念类型；不等同于已确定物理/通信接口"
+  },
+  {
+    "type_id": "C165",
+    "concept": "过温上限",
+    "value_type": "结构化概念，字段待接口方细化",
+    "measurement_unit": null,
+    "role": "分析数据",
+    "status": "命名概念类型；不等同于已确定物理/通信接口"
+  },
+  {
+    "type_id": "C166",
+    "concept": "过温保护状态",
+    "value_type": "结构化概念，字段待接口方细化",
+    "measurement_unit": null,
+    "role": "反馈/实际状态",
+    "status": "命名概念类型；不等同于已确定物理/通信接口"
+  },
+  {
+    "type_id": "C167",
+    "concept": "过温停热请求",
+    "value_type": "结构化概念，字段待接口方细化",
+    "measurement_unit": null,
+    "role": "请求/命令",
+    "status": "命名概念类型；不等同于已确定物理/通信接口"
+  },
+  {
+    "type_id": "C168",
+    "concept": "进入模式前的温度设定",
+    "value_type": "结构化概念，字段待接口方细化",
+    "measurement_unit": null,
+    "role": "目标/设定",
+    "status": "命名概念类型；不等同于已确定物理/通信接口"
+  },
+  {
+    "type_id": "C169",
+    "concept": "送风模式控制请求",
+    "value_type": "结构化概念，字段待接口方细化",
+    "measurement_unit": null,
+    "role": "请求/命令",
+    "status": "命名概念类型；不等同于已确定物理/通信接口"
+  },
+  {
+    "type_id": "C170",
+    "concept": "送风模式状态",
+    "value_type": "结构化概念，字段待接口方细化",
+    "measurement_unit": null,
+    "role": "反馈/实际状态",
+    "status": "命名概念类型；不等同于已确定物理/通信接口"
+  },
+  {
+    "type_id": "C171",
+    "concept": "送风模式请求",
+    "value_type": "结构化概念，字段待接口方细化",
+    "measurement_unit": null,
+    "role": "请求/命令",
+    "status": "命名概念类型；不等同于已确定物理/通信接口"
+  },
+  {
+    "type_id": "C172",
+    "concept": "送风温度控制请求",
+    "value_type": "结构化概念，字段待接口方细化",
+    "measurement_unit": null,
+    "role": "请求/命令",
+    "status": "命名概念类型；不等同于已确定物理/通信接口"
+  },
+  {
+    "type_id": "C173",
+    "concept": "送风温度请求",
+    "value_type": "结构化概念，字段待接口方细化",
+    "measurement_unit": null,
+    "role": "请求/命令",
+    "status": "命名概念类型；不等同于已确定物理/通信接口"
+  },
+  {
+    "type_id": "C174",
+    "concept": "送风量控制请求",
+    "value_type": "结构化概念，字段待接口方细化",
+    "measurement_unit": null,
+    "role": "请求/命令",
+    "status": "命名概念类型；不等同于已确定物理/通信接口"
+  },
+  {
+    "type_id": "C175",
+    "concept": "送风量请求",
+    "value_type": "结构化概念，字段待接口方细化",
+    "measurement_unit": null,
+    "role": "请求/命令",
+    "status": "命名概念类型；不等同于已确定物理/通信接口"
+  },
+  {
+    "type_id": "C176",
+    "concept": "阶段起点、经过时间",
+    "value_type": "结构化概念，字段待接口方细化",
+    "measurement_unit": null,
+    "role": "分析数据",
+    "status": "命名概念类型；不等同于已确定物理/通信接口"
+  },
+  {
+    "type_id": "C177",
+    "concept": "除湿需求",
+    "value_type": "结构化概念，字段待接口方细化",
+    "measurement_unit": null,
+    "role": "分析数据",
+    "status": "命名概念类型；不等同于已确定物理/通信接口"
+  },
+  {
+    "type_id": "C178",
+    "concept": "需求重新评估信息",
+    "value_type": "结构化概念，字段待接口方细化",
+    "measurement_unit": null,
+    "role": "反馈/实际状态",
+    "status": "命名概念类型；不等同于已确定物理/通信接口"
+  },
+  {
+    "type_id": "C179",
+    "concept": "静置2分钟完成事件",
+    "value_type": "结构化概念，字段待接口方细化",
+    "measurement_unit": null,
+    "role": "分析数据",
+    "status": "命名概念类型；不等同于已确定物理/通信接口"
+  },
+  {
+    "type_id": "C180",
+    "concept": "静置阶段与座舱降温请求",
+    "value_type": "结构化概念，字段待接口方细化",
+    "measurement_unit": null,
+    "role": "请求/命令",
+    "status": "命名概念类型；不等同于已确定物理/通信接口"
+  },
+  {
+    "type_id": "C181",
+    "concept": "静置预冷完成事件",
+    "value_type": "结构化概念，字段待接口方细化",
+    "measurement_unit": null,
+    "role": "分析数据",
+    "status": "命名概念类型；不等同于已确定物理/通信接口"
+  },
+  {
+    "type_id": "C182",
+    "concept": "预冷完成事件",
+    "value_type": "结构化概念，字段待接口方细化",
+    "measurement_unit": null,
+    "role": "分析数据",
+    "status": "命名概念类型；不等同于已确定物理/通信接口"
+  },
+  {
+    "type_id": "C183",
+    "concept": "预冷完成事件、车速反馈",
+    "value_type": "结构化概念，字段待接口方细化",
+    "measurement_unit": null,
+    "role": "反馈/实际状态",
+    "status": "命名概念类型；不等同于已确定物理/通信接口"
+  },
+  {
+    "type_id": "C184",
+    "concept": "预冷起点",
+    "value_type": "结构化概念，字段待接口方细化",
+    "measurement_unit": null,
+    "role": "分析数据",
+    "status": "命名概念类型；不等同于已确定物理/通信接口"
+  },
+  {
+    "type_id": "C185",
+    "concept": "风窗与空调状态信息",
+    "value_type": "结构化概念，字段待接口方细化",
+    "measurement_unit": null,
+    "role": "反馈/实际状态",
+    "status": "命名概念类型；不等同于已确定物理/通信接口"
+  },
+  {
+    "type_id": "C186",
+    "concept": "风窗模式状态",
+    "value_type": "结构化概念，字段待接口方细化",
+    "measurement_unit": null,
+    "role": "反馈/实际状态",
+    "status": "命名概念类型；不等同于已确定物理/通信接口"
+  },
+  {
+    "type_id": "C187",
+    "concept": "风窗模式请求",
+    "value_type": "结构化概念，字段待接口方细化",
+    "measurement_unit": null,
+    "role": "请求/命令",
+    "status": "命名概念类型；不等同于已确定物理/通信接口"
+  },
+  {
+    "type_id": "C188",
+    "concept": "风量状态",
+    "value_type": "结构化概念，字段待接口方细化",
+    "measurement_unit": null,
+    "role": "反馈/实际状态",
+    "status": "命名概念类型；不等同于已确定物理/通信接口"
+  },
+  {
+    "type_id": "C189",
+    "concept": "驱动/制动需求",
+    "value_type": "结构化概念，字段待接口方细化",
+    "measurement_unit": null,
+    "role": "分析数据",
+    "status": "命名概念类型；不等同于已确定物理/通信接口"
+  },
+  {
+    "type_id": "C190",
+    "concept": "驱动/回收/发电请求",
+    "value_type": "结构化概念，字段待接口方细化",
+    "measurement_unit": null,
+    "role": "请求/命令",
+    "status": "命名概念类型；不等同于已确定物理/通信接口"
+  },
+  {
+    "type_id": "C191",
+    "concept": "驱动力请求与用电反馈",
+    "value_type": "结构化概念，字段待接口方细化",
+    "measurement_unit": null,
+    "role": "请求/命令",
+    "status": "命名概念类型；不等同于已确定物理/通信接口"
+  },
+  {
+    "type_id": "C192",
+    "concept": "驱动请求、可用电能",
+    "value_type": "结构化概念，字段待接口方细化",
+    "measurement_unit": null,
+    "role": "请求/命令",
+    "status": "命名概念类型；不等同于已确定物理/通信接口"
+  },
+  {
+    "type_id": "C193",
+    "concept": "驾驶意图",
+    "value_type": "结构化概念，字段待接口方细化",
+    "measurement_unit": null,
+    "role": "分析数据",
+    "status": "命名概念类型；不等同于已确定物理/通信接口"
+  },
+  {
+    "type_id": "C194",
+    "concept": "驾驶意图、工况",
+    "value_type": "结构化概念，字段待接口方细化",
+    "measurement_unit": null,
+    "role": "分析数据",
+    "status": "命名概念类型；不等同于已确定物理/通信接口"
+  },
+  {
+    "type_id": "C195",
+    "concept": "高压可用状态",
+    "value_type": "Boolean",
+    "measurement_unit": null,
+    "role": "反馈/实际状态",
+    "status": "命名概念类型；不等同于已确定物理/通信接口"
+  }
+]

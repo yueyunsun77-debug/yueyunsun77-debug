@@ -1,0 +1,22 @@
+[
+  {
+    "compatibility_id": "LF-029",
+    "canonical_function_id": "S1-F08",
+    "reason": "原指标分配ID与原场景功能ID指向同一功能；保留旧ID，场景模型只实例化一次"
+  },
+  {
+    "compatibility_id": "LF-030",
+    "canonical_function_id": "S2-F02",
+    "reason": "原指标分配ID与原场景功能ID指向同一功能；保留旧ID，场景模型只实例化一次"
+  },
+  {
+    "compatibility_id": "LF-031",
+    "canonical_function_id": "S2-F03",
+    "reason": "原指标分配ID与原场景功能ID指向同一功能；保留旧ID，场景模型只实例化一次"
+  },
+  {
+    "compatibility_id": "LF-032",
+    "canonical_function_id": "S2-F06",
+    "reason": "原指标分配ID与原场景功能ID指向同一功能；保留旧ID，场景模型只实例化一次"
+  }
+]
