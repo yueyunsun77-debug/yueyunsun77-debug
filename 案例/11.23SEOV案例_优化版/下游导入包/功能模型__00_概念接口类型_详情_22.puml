@@ -1,0 +1,44 @@
+@startuml
+skinparam defaultFontName Noto Sans CJK SC
+skinparam defaultFontSize 12
+skinparam dpi 120
+scale max 2400*12000
+
+skin sysmlbw
+skinparam monochrome true
+skinparam wrapWidth 300
+hide circle
+
+comp def "C169" as E1  <<(T,blue) item  def>>  {
+##//doc//##
+送风模式控制请求；角色：请求<U+002F>命令；单位：来源未提供或不适用。
+}
+comp def "C170" as E2  <<(T,blue) item  def>>  {
+##//doc//##
+送风模式状态；角色：反馈<U+002F>实际状态；单位：来源未提供或不适用。
+}
+comp def "C171" as E3  <<(T,blue) item  def>>  {
+##//doc//##
+送风模式请求；角色：请求<U+002F>命令；单位：来源未提供或不适用。
+}
+comp def "C172" as E4  <<(T,blue) item  def>>  {
+##//doc//##
+送风温度控制请求；角色：请求<U+002F>命令；单位：来源未提供或不适用。
+}
+comp def "C173" as E5  <<(T,blue) item  def>>  {
+##//doc//##
+送风温度请求；角色：请求<U+002F>命令；单位：来源未提供或不适用。
+}
+comp def "C174" as E6  <<(T,blue) item  def>>  {
+##//doc//##
+送风量控制请求；角色：请求<U+002F>命令；单位：来源未提供或不适用。
+}
+comp def "C175" as E7  <<(T,blue) item  def>>  {
+##//doc//##
+送风量请求；角色：请求<U+002F>命令；单位：来源未提供或不适用。
+}
+comp def "C176" as E8  <<(T,blue) item  def>>  {
+##//doc//##
+阶段起点、经过时间；角色：分析数据；单位：来源未提供或不适用。
+}
+@enduml

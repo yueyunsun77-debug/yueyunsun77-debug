@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?><svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" contentStyleType="text/css" height="185px" preserveAspectRatio="none" style="width:981px;height:185px;background:#FFFFFF;" version="1.1" viewBox="0 0 981 185" width="981.25px" zoomAndPan="magnify"><defs/><g><!--MD5=[43c9051892ef23e1a46a86907403d788]
+class E1--><g id="elem_E1"><rect fill="#F1F1F1" height="123.0687" id="E1" rx="3.125" ry="3.125" style="stroke:#181818;stroke-width:0.625;" width="255" x="8.75" y="31.875"/><text fill="#000000" font-family="Noto Sans CJK SC" font-size="15" font-style="italic" lengthAdjust="spacing" textLength="77.5" x="97.5" y="55.5251">«item  def»</text><text fill="#000000" font-family="Noto Sans CJK SC" font-size="15" lengthAdjust="spacing" textLength="36.25" x="118.125" y="77.2453">C193</text><line style="stroke:#181818;stroke-width:0.625;" x1="10" x2="262.5" y1="87.8153" y2="87.8153"/><text fill="#000000" font-family="Noto Sans CJK SC" font-size="15" lengthAdjust="spacing" textLength="240" x="16.25" y="123.9035">驾驶意图；角色：分析数据；单位：</text><text fill="#000000" font-family="Noto Sans CJK SC" font-size="15" lengthAdjust="spacing" textLength="150" x="16.25" y="145.6236">来源未提供或不适用。</text><text fill="#000000" font-family="Noto Sans CJK SC" font-size="15" font-style="italic" lengthAdjust="spacing" textLength="25" x="123.75" y="103.7303">doc</text></g><!--MD5=[b4997ac47864f28c2f74865a473b2911]
+class E2--><g id="elem_E2"><rect fill="#F1F1F1" height="123.0687" id="E2" rx="3.125" ry="3.125" style="stroke:#181818;stroke-width:0.625;" width="300" x="307.5" y="31.875"/><text fill="#000000" font-family="Noto Sans CJK SC" font-size="15" font-style="italic" lengthAdjust="spacing" textLength="77.5" x="418.75" y="55.5251">«item  def»</text><text fill="#000000" font-family="Noto Sans CJK SC" font-size="15" lengthAdjust="spacing" textLength="36.25" x="439.375" y="77.2453">C194</text><line style="stroke:#181818;stroke-width:0.625;" x1="308.75" x2="606.25" y1="87.8153" y2="87.8153"/><text fill="#000000" font-family="Noto Sans CJK SC" font-size="15" lengthAdjust="spacing" textLength="285" x="315" y="123.9035">驾驶意图、工况；角色：分析数据；单位：</text><text fill="#000000" font-family="Noto Sans CJK SC" font-size="15" lengthAdjust="spacing" textLength="150" x="315" y="145.6236">来源未提供或不适用。</text><text fill="#000000" font-family="Noto Sans CJK SC" font-size="15" font-style="italic" lengthAdjust="spacing" textLength="25" x="445" y="103.7303">doc</text></g><!--MD5=[09b614a08d8cba4a07c9adeb5e0fee81]
+class E3--><g id="elem_E3"><rect fill="#F1F1F1" height="168.4769" id="E3" rx="3.125" ry="3.125" style="stroke:#181818;stroke-width:0.625;" width="321.25" x="651.875" y="8.75"/><text fill="#000000" font-family="Noto Sans CJK SC" font-size="15" font-style="italic" lengthAdjust="spacing" textLength="77.5" x="773.75" y="32.4001">«item  def»</text><text fill="#000000" font-family="Noto Sans CJK SC" font-size="15" lengthAdjust="spacing" textLength="36.25" x="794.375" y="54.1203">C195</text><line style="stroke:#181818;stroke-width:0.625;" x1="653.125" x2="971.875" y1="64.6903" y2="64.6903"/><text fill="#000000" font-family="Noto Sans CJK SC" font-size="15" lengthAdjust="spacing" textLength="306.25" x="659.375" y="100.7785">高压可用状态；角色：反馈/实际状态；单位：</text><text fill="#000000" font-family="Noto Sans CJK SC" font-size="15" lengthAdjust="spacing" textLength="150" x="659.375" y="122.4986">来源未提供或不适用。</text><text fill="#000000" font-family="Noto Sans CJK SC" font-size="15" font-style="italic" lengthAdjust="spacing" textLength="25" x="800" y="80.6053">doc</text><line style="stroke:#181818;stroke-width:1.25;" x1="653.125" x2="971.875" y1="131.8187" y2="131.8187"/><text fill="#000000" font-family="Noto Sans CJK SC" font-size="15" lengthAdjust="spacing" textLength="102.5" x="659.375" y="167.9069">value: Boolean</text><text fill="#000000" font-family="Noto Sans CJK SC" font-size="15" font-style="italic" lengthAdjust="spacing" textLength="71.25" x="776.875" y="147.7337">attributes</text></g><!--MD5=[bdfcbe1548195270cd93570f53df44b0]
+@startuml
+skinparam defaultFontName Noto Sans CJK SC
+skinparam defaultFontSize 12
+skinparam dpi 120
+scale max 2400*12000
+
+skin sysmlbw
+skinparam monochrome true
+skinparam wrapWidth 300
+hide circle
+
+comp def "C193" as E1  <<(T,blue) item  def>>  {
+##//doc//##
+驾驶意图；角色：分析数据；单位：来源未提供或不适用。
+}
+comp def "C194" as E2  <<(T,blue) item  def>>  {
+##//doc//##
+驾驶意图、工况；角色：分析数据；单位：来源未提供或不适用。
+}
+comp def "C195" as E3  <<(T,blue) item  def>>  {
+##//doc//##
+高压可用状态；角色：反馈<U+002F>实际状态；单位：来源未提供或不适用。
+- -
+##//attributes//##
+value: Boolean
+}
+@enduml
+
+PlantUML version 1.2022.7(Tue Aug 23 01:01:30 CST 2022)
+(EPL source distribution)
+Java Runtime: OpenJDK Runtime Environment
+JVM: OpenJDK 64-Bit Server VM
+Default Encoding: UTF-8
+Language: en
+Country: null
+--></g></svg>

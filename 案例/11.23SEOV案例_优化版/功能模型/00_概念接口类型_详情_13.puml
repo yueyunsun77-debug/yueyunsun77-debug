@@ -1,0 +1,44 @@
+@startuml
+skinparam defaultFontName Noto Sans CJK SC
+skinparam defaultFontSize 12
+skinparam dpi 120
+scale max 2400*12000
+
+skin sysmlbw
+skinparam monochrome true
+skinparam wrapWidth 300
+hide circle
+
+comp def "C097" as E1  <<(T,blue) item  def>>  {
+##//doc//##
+有效目标温度；角色：目标<U+002F>设定；单位：来源未提供或不适用。
+}
+comp def "C098" as E2  <<(T,blue) item  def>>  {
+##//doc//##
+有符号环境换热贡献；角色：分析数据；单位：来源未提供或不适用。
+}
+comp def "C099" as E3  <<(T,blue) item  def>>  {
+##//doc//##
+未请求、不可用、待供风或供风已建立的执行状态；角色：请求<U+002F>命令；单位：来源未提供或不适用。
+}
+comp def "C100" as E4  <<(T,blue) item  def>>  {
+##//doc//##
+模式退出操作；角色：分析数据；单位：来源未提供或不适用。
+}
+comp def "C101" as E5  <<(T,blue) item  def>>  {
+##//doc//##
+温度<U+002F>功率输入；角色：分析数据；单位：来源未提供或不适用。
+}
+comp def "C102" as E6  <<(T,blue) item  def>>  {
+##//doc//##
+温度与环境信息；角色：反馈<U+002F>实际状态；单位：来源未提供或不适用。
+}
+comp def "C103" as E7  <<(T,blue) item  def>>  {
+##//doc//##
+温度反馈；角色：反馈<U+002F>实际状态；单位：来源未提供或不适用。
+}
+comp def "C104" as E8  <<(T,blue) item  def>>  {
+##//doc//##
+温度状态；角色：反馈<U+002F>实际状态；单位：来源未提供或不适用。
+}
+@enduml

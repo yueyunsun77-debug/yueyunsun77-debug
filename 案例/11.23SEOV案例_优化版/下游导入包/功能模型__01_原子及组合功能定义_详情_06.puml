@@ -1,0 +1,95 @@
+@startuml
+skinparam defaultFontName Noto Sans CJK SC
+skinparam defaultFontSize 12
+skinparam dpi 120
+scale max 2400*12000
+
+skin sysmlbw
+skinparam monochrome true
+skinparam wrapWidth 300
+hide circle
+
+comp def "F_S1_F10" as E1  <<(T,blue) action  def>>  {
+##//doc//##
+更新运行模式评估信息；层级：叶级功能；来源：11.23SEOV案例<U+005F>优化版 <U+002F> SC1 <U+002F> S1<U+002D>F10 更新运行模式评估信息。
+}
+comp usage "inputs_1: C161  " as E2  <<(T,blue) item>>  {
+}
+comp usage "outputs_1: C004  " as E3  <<(T,blue) item>>  {
+}
+comp def "F_S2_F01" as E4  <<(T,blue) action  def>>  {
+##//doc//##
+初始化驾驶循环；层级：叶级功能；来源：11.23SEOV案例<U+005F>优化版 <U+002F> SC2 <U+002F> S2<U+002D>F01 初始化驾驶循环。
+}
+comp usage "inputs_1: C012  " as E5  <<(T,blue) item>>  {
+}
+comp usage "outputs_1: C180  " as E6  <<(T,blue) item>>  {
+}
+comp def "F_S2_F02" as E7  <<(T,blue) action  def>>  {
+##//doc//##
+记录静置预冷时长；层级：叶级功能；来源：11.23SEOV案例<U+005F>优化版 <U+002F> SC2 <U+002F> S2<U+002D>F02 记录静置预冷时长。
+}
+comp usage "inputs_1: C176  " as E8  <<(T,blue) item>>  {
+}
+comp usage "outputs_1: C179  " as E9  <<(T,blue) item>>  {
+}
+comp def "F_S2_F03" as E10  <<(T,blue) action  def>>  {
+##//doc//##
+控制匀速行驶工况；层级：叶级功能；来源：11.23SEOV案例<U+005F>优化版 <U+002F> SC2 <U+002F> S2<U+002D>F03 控制匀速行驶工况。
+}
+comp usage "inputs_1: C183  " as E11  <<(T,blue) item>>  {
+}
+comp usage "outputs_1: C001  " as E12  <<(T,blue) item>>  {
+}
+comp def "F_S2_F04" as E13  <<(T,blue) action  def>>  {
+##//doc//##
+处理座舱降温请求；层级：叶级功能；来源：11.23SEOV案例<U+005F>优化版 <U+002F> SC2 <U+002F> S2<U+002D>F04 处理座舱降温请求。
+}
+comp usage "inputs_1: C150  " as E14  <<(T,blue) item>>  {
+}
+comp usage "outputs_1: C071  " as E15  <<(T,blue) item>>  {
+}
+comp def "F_S2_F05" as E16  <<(T,blue) action  def>>  {
+##//doc//##
+获取电池温度；层级：叶级功能；来源：11.23SEOV案例<U+005F>优化版 <U+002F> SC2 <U+002F> S2<U+002D>F05 获取电池温度。
+}
+comp usage "inputs_1: C142  " as E17  <<(T,blue) item>>  {
+}
+comp usage "outputs_1: C093  " as E18  <<(T,blue) item>>  {
+}
+comp def "F_S2_F06" as E19  <<(T,blue) action  def>>  {
+##//doc//##
+判定电池主动冷却需求；层级：叶级功能；来源：11.23SEOV案例<U+005F>优化版 <U+002F> SC2 <U+002F> S2<U+002D>F06 判定电池主动冷却需求。
+}
+comp usage "inputs_1: C092  " as E20  <<(T,blue) item>>  {
+}
+comp usage "outputs_1: C010  " as E21  <<(T,blue) item>>  {
+}
+comp def "F_S2_F07" as E22  <<(T,blue) action  def>>  {
+##//doc//##
+评估环境空气换热量；层级：叶级功能；来源：11.23SEOV案例<U+005F>优化版 <U+002F> SC2 <U+002F> S2<U+002D>F07 评估环境空气换热量。
+}
+comp usage "inputs_1: C139  " as E23  <<(T,blue) item>>  {
+}
+comp usage "inputs_2: C108  " as E24  <<(T,blue) item>>  {
+}
+comp usage "outputs_1: C098  " as E25  <<(T,blue) item>>  {
+}
+E1 o-- E2  
+E1 o-- E3  
+E4 o-- E5  
+E4 o-- E6  
+E7 o-- E8  
+E7 o-- E9  
+E10 o-- E11  
+E10 o-- E12  
+E13 o-- E14  
+E13 o-- E15  
+E16 o-- E17  
+E16 o-- E18  
+E19 o-- E20  
+E19 o-- E21  
+E22 o-- E23  
+E22 o-- E24  
+E22 o-- E25  
+@enduml

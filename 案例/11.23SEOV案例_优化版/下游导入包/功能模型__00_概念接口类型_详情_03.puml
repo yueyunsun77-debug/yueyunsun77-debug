@@ -1,0 +1,44 @@
+@startuml
+skinparam defaultFontName Noto Sans CJK SC
+skinparam defaultFontSize 12
+skinparam dpi 120
+scale max 2400*12000
+
+skin sysmlbw
+skinparam monochrome true
+skinparam wrapWidth 300
+hide circle
+
+comp def "C017" as E1  <<(T,blue) item  def>>  {
+##//doc//##
+充电调度与能耗记录；角色：分析数据；单位：来源未提供或不适用。
+}
+comp def "C018" as E2  <<(T,blue) item  def>>  {
+##//doc//##
+其他使能条件；角色：分析数据；单位：来源未提供或不适用。
+}
+comp def "C019" as E3  <<(T,blue) item  def>>  {
+##//doc//##
+再生请求；角色：请求<U+002F>命令；单位：来源未提供或不适用。
+}
+comp def "C020" as E4  <<(T,blue) item  def>>  {
+##//doc//##
+再生请求、电池充电状态；角色：请求<U+002F>命令；单位：来源未提供或不适用。
+}
+comp def "C021" as E5  <<(T,blue) item  def>>  {
+##//doc//##
+分配的制冷能力、制冷需求；角色：分析数据；单位：来源未提供或不适用。
+}
+comp def "C022" as E6  <<(T,blue) item  def>>  {
+##//doc//##
+制冷关闭请求；角色：请求<U+002F>命令；单位：来源未提供或不适用。
+}
+comp def "C023" as E7  <<(T,blue) item  def>>  {
+##//doc//##
+制冷状态；角色：反馈<U+002F>实际状态；单位：来源未提供或不适用。
+}
+comp def "C024" as E8  <<(T,blue) item  def>>  {
+##//doc//##
+制冷能力控制请求；角色：请求<U+002F>命令；单位：来源未提供或不适用。
+}
+@enduml

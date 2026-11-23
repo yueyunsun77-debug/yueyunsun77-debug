@@ -1,0 +1,22 @@
+@startuml
+skinparam defaultFontName Noto Sans CJK SC
+skinparam defaultFontSize 12
+skinparam dpi 120
+scale max 2400*12000
+
+skin sysmlbw
+skinparam monochrome true
+skinparam wrapWidth 300
+hide circle
+
+comp def "F_S3_F06_02" as E1  <<(T,blue) action  def>>  {
+##//doc//##
+获取电池充放电功率；层级：叶级功能；来源：11.23SEOV案例<U+005F>优化版 <U+002F> SC3 <U+002F> S3<U+002D>F06 获取电池温度与功率 <U+002F> S3<U+002D>F06<U+002D>02 获取电池充放电功率。
+}
+comp usage "inputs_1: C129  " as E2  <<(T,blue) item>>  {
+}
+comp usage "outputs_1: C095  " as E3  <<(T,blue) item>>  {
+}
+E1 o-- E2  
+E1 o-- E3  
+@enduml

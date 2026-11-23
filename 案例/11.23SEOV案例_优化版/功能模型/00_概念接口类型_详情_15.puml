@@ -1,0 +1,47 @@
+@startuml
+skinparam defaultFontName Noto Sans CJK SC
+skinparam defaultFontSize 12
+skinparam dpi 120
+scale max 2400*12000
+
+skin sysmlbw
+skinparam monochrome true
+skinparam wrapWidth 300
+hide circle
+
+comp def "C113" as E1  <<(T,blue) item  def>>  {
+##//doc//##
+用户设定温度；角色：目标<U+002F>设定；单位：来源未提供或不适用。
+}
+comp def "C114" as E2  <<(T,blue) item  def>>  {
+##//doc//##
+用户风窗除霜除雾请求；角色：请求<U+002F>命令；单位：来源未提供或不适用。
+}
+comp def "C115" as E3  <<(T,blue) item  def>>  {
+##//doc//##
+电加热功率控制请求；角色：请求<U+002F>命令；单位：来源未提供或不适用。
+}
+comp def "C116" as E4  <<(T,blue) item  def>>  {
+##//doc//##
+电加热功率请求；角色：请求<U+002F>命令；单位：来源未提供或不适用。
+}
+comp def "C117" as E5  <<(T,blue) item  def>>  {
+##//doc//##
+电加热基础许可；角色：分析数据；单位：来源未提供或不适用。
+}
+comp def "C118" as E6  <<(T,blue) item  def>>  {
+##//doc//##
+电加热温度；角色：分析数据；单位：℃。
+--
+##//attributes//##
+value: Real
+}
+comp def "C119" as E7  <<(T,blue) item  def>>  {
+##//doc//##
+电加热温度信息；角色：反馈<U+002F>实际状态；单位：来源未提供或不适用。
+}
+comp def "C120" as E8  <<(T,blue) item  def>>  {
+##//doc//##
+电加热温度反馈；角色：反馈<U+002F>实际状态；单位：来源未提供或不适用。
+}
+@enduml

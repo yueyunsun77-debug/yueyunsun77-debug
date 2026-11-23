@@ -1,0 +1,92 @@
+@startuml
+skinparam defaultFontName Noto Sans CJK SC
+skinparam defaultFontSize 12
+skinparam dpi 120
+scale max 2400*12000
+
+skin sysmlbw
+skinparam monochrome true
+skinparam wrapWidth 300
+hide circle
+
+comp def "F_S1_F02" as E1  <<(T,blue) action  def>>  {
+##//doc//##
+分析动力需求；层级：叶级功能；来源：11.23SEOV案例<U+005F>优化版 <U+002F> SC1 <U+002F> S1<U+002D>F02 分析动力需求。
+}
+comp usage "inputs_1: C194  " as E2  <<(T,blue) item>>  {
+}
+comp usage "outputs_1: C189  " as E3  <<(T,blue) item>>  {
+}
+comp def "F_S1_F03" as E4  <<(T,blue) action  def>>  {
+##//doc//##
+选择运行模式；层级：叶级功能；来源：11.23SEOV案例<U+005F>优化版 <U+002F> SC1 <U+002F> S1<U+002D>F03 选择运行模式。
+}
+comp usage "inputs_1: C038  " as E5  <<(T,blue) item>>  {
+}
+comp usage "outputs_1: C190  " as E6  <<(T,blue) item>>  {
+}
+comp def "F_S1_F04" as E7  <<(T,blue) action  def>>  {
+##//doc//##
+控制电驱动能量转换；层级：叶级功能；来源：11.23SEOV案例<U+005F>优化版 <U+002F> SC1 <U+002F> S1<U+002D>F04 控制电驱动能量转换。
+}
+comp usage "inputs_1: C192  " as E8  <<(T,blue) item>>  {
+}
+comp usage "outputs_1: C191  " as E9  <<(T,blue) item>>  {
+}
+comp def "F_S1_F05" as E10  <<(T,blue) action  def>>  {
+##//doc//##
+判定再生制动请求；层级：叶级功能；来源：11.23SEOV案例<U+005F>优化版 <U+002F> SC1 <U+002F> S1<U+002D>F05 判定再生制动请求。
+}
+comp usage "inputs_1: C030  " as E11  <<(T,blue) item>>  {
+}
+comp usage "outputs_1: C019  " as E12  <<(T,blue) item>>  {
+}
+comp def "F_S1_F06" as E13  <<(T,blue) action  def>>  {
+##//doc//##
+协调再生充电；层级：叶级功能；来源：11.23SEOV案例<U+005F>优化版 <U+002F> SC1 <U+002F> S1<U+002D>F06 协调再生充电。
+}
+comp usage "inputs_1: C020  " as E14  <<(T,blue) item>>  {
+}
+comp usage "outputs_1: C058  " as E15  <<(T,blue) item>>  {
+}
+comp def "F_S1_F07" as E16  <<(T,blue) action  def>>  {
+##//doc//##
+协调发动机启动；层级：叶级功能；来源：11.23SEOV案例<U+005F>优化版 <U+002F> SC1 <U+002F> S1<U+002D>F07 协调发动机启动。
+}
+comp usage "inputs_1: C046  " as E17  <<(T,blue) item>>  {
+}
+comp usage "outputs_1: C041  " as E18  <<(T,blue) item>>  {
+}
+comp def "F_S1_F08" as E19  <<(T,blue) action  def>>  {
+##//doc//##
+调节发动机发电工作点；层级：叶级功能；来源：11.23SEOV案例<U+005F>优化版 <U+002F> SC1 <U+002F> S1<U+002D>F08 调节发动机发电工作点。
+}
+comp usage "inputs_1: C040  " as E20  <<(T,blue) item>>  {
+}
+comp usage "outputs_1: C045  " as E21  <<(T,blue) item>>  {
+}
+comp def "F_S1_F09" as E22  <<(T,blue) action  def>>  {
+##//doc//##
+管理充电能量收支；层级：叶级功能；来源：11.23SEOV案例<U+005F>优化版 <U+002F> SC1 <U+002F> S1<U+002D>F09 管理充电能量收支。
+}
+comp usage "inputs_1: C044  " as E23  <<(T,blue) item>>  {
+}
+comp usage "outputs_1: C017  " as E24  <<(T,blue) item>>  {
+}
+E1 o-- E2  
+E1 o-- E3  
+E4 o-- E5  
+E4 o-- E6  
+E7 o-- E8  
+E7 o-- E9  
+E10 o-- E11  
+E10 o-- E12  
+E13 o-- E14  
+E13 o-- E15  
+E16 o-- E17  
+E16 o-- E18  
+E19 o-- E20  
+E19 o-- E21  
+E22 o-- E23  
+E22 o-- E24  
+@enduml

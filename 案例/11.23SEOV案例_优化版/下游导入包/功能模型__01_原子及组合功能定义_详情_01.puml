@@ -1,0 +1,131 @@
+@startuml
+skinparam defaultFontName Noto Sans CJK SC
+skinparam defaultFontSize 12
+skinparam dpi 120
+scale max 2400*12000
+
+skin sysmlbw
+skinparam monochrome true
+skinparam wrapWidth 300
+hide circle
+
+comp def "F_LF_001" as E1  <<(T,blue) action  def>>  {
+##//doc//##
+判定电加热使能条件；层级：叶级功能；来源：11.23SEOV案例<U+005F>优化版 <U+002F> 3.3.1.2 <U+002F> 检查电加热使能条件 <U+002F> LF<U+002D>001 判定电加热使能条件。
+}
+comp usage "inputs_1: C149  " as E2  <<(T,blue) item>>  {
+}
+comp usage "inputs_2: C144  " as E3  <<(T,blue) item>>  {
+}
+comp usage "inputs_3: C062  " as E4  <<(T,blue) item>>  {
+}
+comp usage "inputs_4: C195  " as E5  <<(T,blue) item>>  {
+}
+comp usage "outputs_1: C117  " as E6  <<(T,blue) item>>  {
+}
+comp def "F_LF_002" as E7  <<(T,blue) action  def>>  {
+##//doc//##
+判定整车故障下的加热许可；层级：叶级功能；来源：11.23SEOV案例<U+005F>优化版 <U+002F> 3.3.1.2 <U+002F> 检查电加热使能条件 <U+002F> LF<U+002D>002 判定整车故障下的加热许可。
+}
+comp usage "inputs_1: C087  " as E8  <<(T,blue) item>>  {
+}
+comp usage "outputs_1: C086  " as E9  <<(T,blue) item>>  {
+}
+comp def "F_LF_003" as E10  <<(T,blue) action  def>>  {
+##//doc//##
+判定电量约束下的加热许可；层级：叶级功能；来源：11.23SEOV案例<U+005F>优化版 <U+002F> 3.3.1.2 <U+002F> 检查电加热使能条件 <U+002F> LF<U+002D>003 判定电量约束下的加热许可。
+}
+comp usage "inputs_1: C037  " as E11  <<(T,blue) item>>  {
+}
+comp usage "outputs_1: C143  " as E12  <<(T,blue) item>>  {
+}
+comp def "F_LF_004" as E13  <<(T,blue) action  def>>  {
+##//doc//##
+控制电加热通断；层级：叶级功能；来源：11.23SEOV案例<U+005F>优化版 <U+002F> 3.3.1.2 <U+002F> 控制电加热通断 <U+002F> LF<U+002D>004 控制电加热通断。
+}
+comp usage "inputs_1: C031  " as E14  <<(T,blue) item>>  {
+}
+comp usage "inputs_2: C057  " as E15  <<(T,blue) item>>  {
+}
+comp usage "inputs_3: C166  " as E16  <<(T,blue) item>>  {
+}
+comp usage "inputs_4: C084  " as E17  <<(T,blue) item>>  {
+}
+comp usage "outputs_1: C124  " as E18  <<(T,blue) item>>  {
+}
+comp def "F_LF_005" as E19  <<(T,blue) action  def>>  {
+##//doc//##
+切断过温电加热请求；层级：叶级功能；来源：11.23SEOV案例<U+005F>优化版 <U+002F> 3.3.1.2 <U+002F> 保护电加热运行 <U+002F> LF<U+002D>005 切断过温电加热请求。
+}
+comp usage "inputs_1: C118  " as E20  <<(T,blue) item>>  {
+}
+comp usage "inputs_2: C165  " as E21  <<(T,blue) item>>  {
+}
+comp usage "outputs_1: C167  " as E22  <<(T,blue) item>>  {
+}
+comp def "F_LF_006" as E23  <<(T,blue) action  def>>  {
+##//doc//##
+判定电加热恢复许可；层级：叶级功能；来源：11.23SEOV案例<U+005F>优化版 <U+002F> 3.3.1.2 <U+002F> 保护电加热运行 <U+002F> LF<U+002D>006 判定电加热恢复许可。
+}
+comp usage "inputs_1: C118  " as E24  <<(T,blue) item>>  {
+}
+comp usage "inputs_2: C085  " as E25  <<(T,blue) item>>  {
+}
+comp usage "inputs_3: C018  " as E26  <<(T,blue) item>>  {
+}
+comp usage "outputs_1: C083  " as E27  <<(T,blue) item>>  {
+}
+comp def "F_LF_007" as E28  <<(T,blue) action  def>>  {
+##//doc//##
+反馈电加热状态；层级：叶级功能；来源：11.23SEOV案例<U+005F>优化版 <U+002F> 3.3.1.2 <U+002F> 反馈电加热运行信息 <U+002F> LF<U+002D>007 反馈电加热状态。
+}
+comp usage "inputs_1: C123  " as E29  <<(T,blue) item>>  {
+}
+comp usage "inputs_2: C118  " as E30  <<(T,blue) item>>  {
+}
+comp usage "inputs_3: C065  " as E31  <<(T,blue) item>>  {
+}
+comp usage "inputs_4: C060  " as E32  <<(T,blue) item>>  {
+}
+comp usage "inputs_5: C091  " as E33  <<(T,blue) item>>  {
+}
+comp usage "outputs_1: C121  " as E34  <<(T,blue) item>>  {
+}
+comp def "F_LF_008" as E35  <<(T,blue) action  def>>  {
+##//doc//##
+判定目标温度边界；层级：叶级功能；来源：11.23SEOV案例<U+005F>优化版 <U+002F> 3.3.1.6 <U+002F> 处理用户模式操作 <U+002F> LF<U+002D>008 判定目标温度边界。
+}
+comp usage "inputs_1: C113  " as E36  <<(T,blue) item>>  {
+}
+comp usage "outputs_1: C146  " as E37  <<(T,blue) item>>  {
+}
+E1 o-- E2  
+E1 o-- E3  
+E1 o-- E4  
+E1 o-- E5  
+E1 o-- E6  
+E7 o-- E8  
+E7 o-- E9  
+E10 o-- E11  
+E10 o-- E12  
+E13 o-- E14  
+E13 o-- E15  
+E13 o-- E16  
+E13 o-- E17  
+E13 o-- E18  
+E19 o-- E20  
+E19 o-- E21  
+E19 o-- E22  
+E23 o-- E24  
+E23 o-- E25  
+E23 o-- E26  
+E23 o-- E27  
+E28 o-- E29  
+E28 o-- E30  
+E28 o-- E31  
+E28 o-- E32  
+E28 o-- E33  
+E28 o-- E34  
+E35 o-- E36  
+E35 o-- E37  
+@enduml

@@ -1,0 +1,110 @@
+@startuml
+skinparam defaultFontName Noto Sans CJK SC
+skinparam defaultFontSize 12
+skinparam dpi 120
+scale max 2400*12000
+
+skin sysmlbw
+skinparam monochrome true
+skinparam wrapWidth 300
+hide circle
+
+comp def "F_S2_F08" as E1  <<(T,blue) action  def>>  {
+##//doc//##
+协调座舱与电池冷却能力；层级：叶级功能；来源：11.23SEOV案例<U+005F>优化版 <U+002F> SC2 <U+002F> S2<U+002D>F08 协调座舱与电池冷却能力。
+}
+comp usage "inputs_1: C006  " as E2  <<(T,blue) item>>  {
+}
+comp usage "outputs_1: C056  " as E3  <<(T,blue) item>>  {
+}
+comp def "F_S2_F09" as E4  <<(T,blue) action  def>>  {
+##//doc//##
+评估主动供风响应；层级：组合功能；来源：11.23SEOV案例<U+005F>优化版 <U+002F> SC2 <U+002F> S2<U+002D>F09 评估主动冷却执行状态。
+}
+comp usage "inputs_1: C127  " as E5  <<(T,blue) item>>  {
+}
+comp usage "inputs_2: C132  " as E6  <<(T,blue) item>>  {
+}
+comp usage "inputs_3: C008  " as E7  <<(T,blue) item>>  {
+}
+comp usage "outputs_1: C099  " as E8  <<(T,blue) item>>  {
+}
+comp usage "outputs_2: C009  " as E9  <<(T,blue) item>>  {
+}
+comp usage "获取电池入口实际供风条件: F_S2_F09_01  " as E10  <<(T,blue) action>>  {
+}
+comp usage "判定电池实际供风状态: F_S2_F09_02  " as E11  <<(T,blue) action>>  {
+}
+comp usage "计算主动供风换热量: F_S2_F09_03  " as E12  <<(T,blue) action>>  {
+}
+comp def "F_S2_F10" as E13  <<(T,blue) action  def>>  {
+##//doc//##
+汇总空气侧换热量；层级：叶级功能；来源：11.23SEOV案例<U+005F>优化版 <U+002F> SC2 <U+002F> S2<U+002D>F10 汇总空气侧换热量。
+}
+comp usage "inputs_1: C109  " as E14  <<(T,blue) item>>  {
+}
+comp usage "outputs_1: C125  " as E15  <<(T,blue) item>>  {
+}
+comp def "F_S3_F01" as E16  <<(T,blue) action  def>>  {
+##//doc//##
+获取座舱目标温度；层级：叶级功能；来源：11.23SEOV案例<U+005F>优化版 <U+002F> SC3 <U+002F> S3<U+002D>F01 获取座舱目标温度。
+}
+comp usage "inputs_1: C011  " as E17  <<(T,blue) item>>  {
+}
+comp usage "outputs_1: C097  " as E18  <<(T,blue) item>>  {
+}
+comp def "F_S3_F02" as E19  <<(T,blue) action  def>>  {
+##//doc//##
+获取座舱实际温度；层级：叶级功能；来源：11.23SEOV案例<U+005F>优化版 <U+002F> SC3 <U+002F> S3<U+002D>F02 获取座舱实际温度。
+}
+comp usage "inputs_1: C072  " as E20  <<(T,blue) item>>  {
+}
+comp usage "outputs_1: C103  " as E21  <<(T,blue) item>>  {
+}
+comp def "F_S3_F03" as E22  <<(T,blue) action  def>>  {
+##//doc//##
+判定座舱制冷需求；层级：叶级功能；来源：11.23SEOV案例<U+005F>优化版 <U+002F> SC3 <U+002F> S3<U+002D>F03 判定座舱制冷需求。
+}
+comp usage "inputs_1: C145  " as E23  <<(T,blue) item>>  {
+}
+comp usage "outputs_1: C070  " as E24  <<(T,blue) item>>  {
+}
+comp def "F_S3_F04" as E25  <<(T,blue) action  def>>  {
+##//doc//##
+调节座舱制冷能力；层级：叶级功能；来源：11.23SEOV案例<U+005F>优化版 <U+002F> SC3 <U+002F> S3<U+002D>F04 调节座舱制冷能力。
+}
+comp usage "inputs_1: C021  " as E26  <<(T,blue) item>>  {
+}
+comp usage "outputs_1: C029  " as E27  <<(T,blue) item>>  {
+}
+comp def "F_S3_F05" as E28  <<(T,blue) action  def>>  {
+##//doc//##
+调节座舱送风量；层级：叶级功能；来源：11.23SEOV案例<U+005F>优化版 <U+002F> SC3 <U+002F> S3<U+002D>F05 调节座舱送风量。
+}
+comp usage "inputs_1: C027  " as E29  <<(T,blue) item>>  {
+}
+comp usage "outputs_1: C074  " as E30  <<(T,blue) item>>  {
+}
+E1 o-- E2  
+E1 o-- E3  
+E4 o-- E5  
+E4 o-- E6  
+E4 o-- E7  
+E4 o-- E8  
+E4 o-- E9  
+E4 *-- E10  
+E4 *-- E11  
+E4 *-- E12  
+E13 o-- E14  
+E13 o-- E15  
+E16 o-- E17  
+E16 o-- E18  
+E19 o-- E20  
+E19 o-- E21  
+E22 o-- E23  
+E22 o-- E24  
+E25 o-- E26  
+E25 o-- E27  
+E28 o-- E29  
+E28 o-- E30  
+@enduml

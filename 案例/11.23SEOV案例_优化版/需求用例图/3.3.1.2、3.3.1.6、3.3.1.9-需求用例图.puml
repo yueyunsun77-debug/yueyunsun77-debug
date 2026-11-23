@@ -1,0 +1,69 @@
+@startuml
+skinparam defaultFontName Noto Sans CJK SC
+skinparam defaultFontSize 12
+skinparam dpi 120
+scale max 2400*12000
+
+skin sysmlbw
+skinparam monochrome true
+skinparam wrapWidth 300
+hide circle
+
+comp def "获得乘员舱制热效果" as E1  <<(T,blue) use case  def>>  {
+}
+comp usage "ccu" as E2 <<subject>> {
+}
+comp usage "<size:30><&person></size> driver: 驾驶员  " as E3  <<(T,blue) part>>  {
+}
+comp usage "<size:30><&person></size> ivi: IVI中控交互系统  " as E4  <<(T,blue) part>>  {
+}
+comp usage "obj  " as E5  <<(T,blue) requirement>>  {
+##//doc//##
+对应需求 3.3.1.2：接收制热请求，在条件满足时实施受保护的 电加热 加热，并反馈状态。
+--
+##//constraints//##
+<b>require</b> req3312
+}
+comp def "获得自动温控服务" as E6  <<(T,blue) use case  def>>  {
+}
+comp usage "ccu" as E7 <<subject>> {
+}
+comp usage "<size:30><&person></size> driver: 驾驶员  " as E8  <<(T,blue) part>>  {
+}
+comp usage "<size:30><&person></size> ivi: IVI中控交互系统  " as E9  <<(T,blue) part>>  {
+}
+comp usage "obj  " as E10  <<(T,blue) requirement>>  {
+##//doc//##
+对应需求 3.3.1.6：响应 AUTO 请求，根据环境与温度信号协调空调控制，并处理用户操作引起的模式变化。
+--
+##//constraints//##
+<b>require</b> req3316
+}
+comp def "获得前风窗除霜除雾效果" as E11  <<(T,blue) use case  def>>  {
+}
+comp usage "ccu" as E12 <<subject>> {
+}
+comp usage "<size:30><&person></size> driver: 驾驶员  " as E13  <<(T,blue) part>>  {
+}
+comp usage "<size:30><&person></size> ivi: IVI中控交互系统  " as E14  <<(T,blue) part>>  {
+}
+comp usage "obj  " as E15  <<(T,blue) requirement>>  {
+##//doc//##
+对应需求 3.3.1.9：管理有设计依据支持的前除霜与前除雾请求。\n后风窗控制细节待补充设计依据。
+--
+##//constraints//##
+<b>require</b> req3319
+}
+E1 o-- E2  
+E1 -- E3  
+E1 -- E4  
+E1 -->> E5  : <<objective>>
+E6 o-- E7  
+E6 -- E8  
+E6 -- E9  
+E6 -->> E10  : <<objective>>
+E11 o-- E12  
+E11 -- E13  
+E11 -- E14  
+E11 -->> E15  : <<objective>>
+@enduml

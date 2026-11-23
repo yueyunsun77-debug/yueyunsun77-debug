@@ -1,0 +1,44 @@
+@startuml
+skinparam defaultFontName Noto Sans CJK SC
+skinparam defaultFontSize 12
+skinparam dpi 120
+scale max 2400*12000
+
+skin sysmlbw
+skinparam monochrome true
+skinparam wrapWidth 300
+hide circle
+
+comp def "C153" as E1  <<(T,blue) item  def>>  {
+##//doc//##
+能力分配；角色：分析数据；单位：来源未提供或不适用。
+}
+comp def "C154" as E2  <<(T,blue) item  def>>  {
+##//doc//##
+自动模式Close反馈；角色：反馈<U+002F>实际状态；单位：来源未提供或不适用。
+}
+comp def "C155" as E3  <<(T,blue) item  def>>  {
+##//doc//##
+自动模式状态；角色：反馈<U+002F>实际状态；单位：来源未提供或不适用。
+}
+comp def "C156" as E4  <<(T,blue) item  def>>  {
+##//doc//##
+自动模式状态信息；角色：反馈<U+002F>实际状态；单位：来源未提供或不适用。
+}
+comp def "C157" as E5  <<(T,blue) item  def>>  {
+##//doc//##
+行驶阶段完成事件；角色：分析数据；单位：来源未提供或不适用。
+}
+comp def "C158" as E6  <<(T,blue) item  def>>  {
+##//doc//##
+负载反馈；角色：反馈<U+002F>实际状态；单位：来源未提供或不适用。
+}
+comp def "C159" as E7  <<(T,blue) item  def>>  {
+##//doc//##
+车辆目标速度；角色：目标<U+002F>设定；单位：来源未提供或不适用。
+}
+comp def "C160" as E8  <<(T,blue) item  def>>  {
+##//doc//##
+车速反馈；角色：反馈<U+002F>实际状态；单位：来源未提供或不适用。
+}
+@enduml

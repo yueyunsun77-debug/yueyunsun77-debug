@@ -1,0 +1,145 @@
+@startuml
+skinparam defaultFontName Noto Sans CJK SC
+skinparam defaultFontSize 12
+skinparam dpi 120
+scale max 2400*12000
+
+skin sysmlbw
+skinparam monochrome true
+skinparam wrapWidth 300
+hide circle
+skinparam ranksep 10
+skinparam rectangle {
+ backgroundColor<<block>> LightGreen
+}
+
+rec usage "行为评估流程" as E1  <<(T,blue) action>>  {
+rec usage "获取本周期快照" as E2  <<(T,blue) action>>  {
+portout "stopRequested" as E4   
+portout "heatingRequested" as E5   
+portout "blowerActive" as E6   
+portout "targetTemperature" as E7   
+portout "cabinTemperature" as E8   
+portout "highVoltageAvailable" as E9   
+portout "vehicleFaultActive" as E10   
+portout "soc" as E11   
+portout "heaterTemperature" as E12   
+portout "cutOffTemperature" as E13   
+portout "recoveryTemperature" as E14   
+portout "calibrationValid" as E15   
+portout "protectionWasActive" as E16   
+}
+
+choice "是否继续评估" as E17   
+choice "使能条件判断" as E18   
+choice "标定有效性判断" as E19   
+choice "过温判断" as E20   
+choice "保护记忆判断" as E21   
+choice "恢复条件判断" as E22   
+choice "合并控制结果" as E23   
+rec usage "判定全部加热许可" as E24  <<(T,blue) action>>  {
+}
+
+rec usage "抑制电加热请求" as E26  <<(T,blue) action>>  {
+}
+
+rec usage "记录标定参数缺口" as E29  <<(T,blue) action>>  {
+}
+
+rec usage "切断过温加热请求" as E31  <<(T,blue) action>>  {
+}
+
+rec usage "维持保护禁止状态" as E34  <<(T,blue) action>>  {
+}
+
+rec usage "允许恢复后的加热请求" as E37  <<(T,blue) action>>  {
+}
+
+rec usage "允许正常加热请求" as E40  <<(T,blue) action>>  {
+}
+
+rec usage "反馈电加热运行状态" as E43  <<(T,blue) action>>  {
+}
+
+[*] --> E2  
+E17 --> [*]  : ['获取本周期快照'.stopRequested]
+}
+
+note as E3
+功能引用：LF-027。
+end note 
+note as E25
+功能引用：LF-001, LF-002, LF-003。
+end note 
+note as E27
+功能引用：LF-004。
+end note 
+note as E28
+本节点属性是行为决策所需的分析投影，不重新定义继承的概念级输出端口。
+end note 
+note as E30
+功能引用：LF-005, LF-006。
+end note 
+note as E32
+功能引用：LF-005。
+end note 
+note as E33
+本节点属性是行为决策所需的分析投影，不重新定义继承的概念级输出端口。
+end note 
+note as E35
+功能引用：LF-006。
+end note 
+note as E36
+本节点属性是行为决策所需的分析投影，不重新定义继承的概念级输出端口。
+end note 
+note as E38
+功能引用：LF-006, LF-004。
+end note 
+note as E39
+本节点属性是行为决策所需的分析投影，不重新定义继承的概念级输出端口。
+end note 
+note as E41
+功能引用：LF-004。
+end note 
+note as E42
+本节点属性是行为决策所需的分析投影，不重新定义继承的概念级输出端口。
+end note 
+note as E44
+功能引用：LF-007。
+end note 
+E3 .. E2  
+E25 .. E24  
+E27 .. E26  
+E28 .. E26  
+E30 .. E29  
+E32 .. E31  
+E33 .. E31  
+E35 .. E34  
+E36 .. E34  
+E38 .. E37  
+E39 .. E37  
+E41 .. E40  
+E42 .. E40  
+E44 .. E43  
+E2 --> E17  
+E17  --> E24  : [not '获取本周期快照'.stopRequested]
+E24 --> E18  
+E18  --> E19  : ['获取本周期快照'.heatingRequested and '获取本周期快照'.blowerActive and '获取本周期快照'.targetTemperature > '获取本周期快照'.cabinTemperature and '获取本周期快照'.highVoltageAvailable and not '获取本周期快照'.vehicleFaultActive and '获取本周期快照'.soc > 10.0]
+E18  --> E26  : [not ('获取本周期快照'.heatingRequested and '获取本周期快照'.blowerActive and '获取本周期快照'.targetTemperature > '获取本周期快照'.cabinTemperature and '获取本周期快照'.highVoltageAvailable and not '获取本周期快照'.vehicleFaultActive and '获取本周期快照'.soc > 10.0)]
+E19  --> E20  : ['获取本周期快照'.calibrationValid]
+E19  --> E29  : [not '获取本周期快照'.calibrationValid]
+E20  --> E31  : ['获取本周期快照'.heaterTemperature >= '获取本周期快照'.cutOffTemperature]
+E20  --> E21  : ['获取本周期快照'.heaterTemperature < '获取本周期快照'.cutOffTemperature]
+E21  --> E22  : ['获取本周期快照'.protectionWasActive]
+E21  --> E40  : [not '获取本周期快照'.protectionWasActive]
+E22  --> E37  : ['获取本周期快照'.heaterTemperature <= '获取本周期快照'.recoveryTemperature]
+E22  --> E34  : ['获取本周期快照'.heaterTemperature > '获取本周期快照'.recoveryTemperature]
+E26 --> E23  
+E29 --> E23  
+E31 --> E23  
+E34 --> E23  
+E37 --> E23  
+E40 --> E23  
+E23 --> E43  
+E43 --> E2  
+@enduml

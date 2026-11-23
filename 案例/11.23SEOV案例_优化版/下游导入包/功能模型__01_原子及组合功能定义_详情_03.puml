@@ -1,0 +1,137 @@
+@startuml
+skinparam defaultFontName Noto Sans CJK SC
+skinparam defaultFontSize 12
+skinparam dpi 120
+scale max 2400*12000
+
+skin sysmlbw
+skinparam monochrome true
+skinparam wrapWidth 300
+hide circle
+
+comp def "F_LF_017" as E1  <<(T,blue) action  def>>  {
+##//doc//##
+调节送风模式；层级：叶级功能；来源：11.23SEOV案例<U+005F>优化版 <U+002F> 3.3.1.9 <U+002F> 配置风窗模式参数 <U+002F> LF<U+002D>017 调节送风模式。
+}
+comp usage "inputs_1: C187  " as E2  <<(T,blue) item>>  {
+}
+comp usage "inputs_2: C079  " as E3  <<(T,blue) item>>  {
+}
+comp usage "outputs_1: C171  " as E4  <<(T,blue) item>>  {
+}
+comp def "F_LF_018" as E5  <<(T,blue) action  def>>  {
+##//doc//##
+调节送风量；层级：叶级功能；来源：11.23SEOV案例<U+005F>优化版 <U+002F> 3.3.1.9 <U+002F> 配置风窗模式参数 <U+002F> LF<U+002D>018 调节送风量。
+}
+comp usage "inputs_1: C187  " as E6  <<(T,blue) item>>  {
+}
+comp usage "inputs_2: C055  " as E7  <<(T,blue) item>>  {
+}
+comp usage "outputs_1: C175  " as E8  <<(T,blue) item>>  {
+}
+comp def "F_LF_019" as E9  <<(T,blue) action  def>>  {
+##//doc//##
+调节空气循环方式；层级：叶级功能；来源：11.23SEOV案例<U+005F>优化版 <U+002F> 3.3.1.9 <U+002F> 配置风窗模式参数 <U+002F> LF<U+002D>019 调节空气循环方式。
+}
+comp usage "inputs_1: C187  " as E10  <<(T,blue) item>>  {
+}
+comp usage "inputs_2: C081  " as E11  <<(T,blue) item>>  {
+}
+comp usage "outputs_1: C148  " as E12  <<(T,blue) item>>  {
+}
+comp def "F_LF_020" as E13  <<(T,blue) action  def>>  {
+##//doc//##
+调节制冷能力；层级：叶级功能；来源：11.23SEOV案例<U+005F>优化版 <U+002F> 3.3.1.9 <U+002F> 确定制冷除湿请求 <U+002F> LF<U+002D>020 调节制冷能力。
+}
+comp usage "inputs_1: C110  " as E14  <<(T,blue) item>>  {
+}
+comp usage "inputs_2: C177  " as E15  <<(T,blue) item>>  {
+}
+comp usage "inputs_3: C026  " as E16  <<(T,blue) item>>  {
+}
+comp usage "inputs_4: C153  " as E17  <<(T,blue) item>>  {
+}
+comp usage "outputs_1: C025  " as E18  <<(T,blue) item>>  {
+}
+comp def "F_LF_021" as E19  <<(T,blue) action  def>>  {
+##//doc//##
+保持座舱温度设定；层级：叶级功能；来源：11.23SEOV案例<U+005F>优化版 <U+002F> 3.3.1.9 <U+002F> 配置风窗模式参数 <U+002F> LF<U+002D>021 保持座舱温度设定。
+}
+comp usage "inputs_1: C168  " as E20  <<(T,blue) item>>  {
+}
+comp usage "inputs_2: C112  " as E21  <<(T,blue) item>>  {
+}
+comp usage "outputs_1: C075  " as E22  <<(T,blue) item>>  {
+}
+comp def "F_LF_022" as E23  <<(T,blue) action  def>>  {
+##//doc//##
+反馈风窗与空调状态；层级：叶级功能；来源：11.23SEOV案例<U+005F>优化版 <U+002F> 3.3.1.9 <U+002F> 反馈风窗运行信息 <U+002F> LF<U+002D>022 反馈风窗与空调状态。
+}
+comp usage "inputs_1: C186  " as E24  <<(T,blue) item>>  {
+}
+comp usage "inputs_2: C188  " as E25  <<(T,blue) item>>  {
+}
+comp usage "inputs_3: C104  " as E26  <<(T,blue) item>>  {
+}
+comp usage "inputs_4: C023  " as E27  <<(T,blue) item>>  {
+}
+comp usage "inputs_5: C080  " as E28  <<(T,blue) item>>  {
+}
+comp usage "outputs_1: C185  " as E29  <<(T,blue) item>>  {
+}
+comp def "F_LF_023" as E30  <<(T,blue) action  def>>  {
+##//doc//##
+仲裁热管理能力请求；层级：叶级功能；来源：11.23SEOV案例<U+005F>优化版 <U+002F> 3.3.1.9 <U+002F> 确定制冷除湿请求 <U+002F> LF<U+002D>023 仲裁热管理能力请求。
+}
+comp usage "inputs_1: C033  " as E31  <<(T,blue) item>>  {
+}
+comp usage "inputs_2: C134  " as E32  <<(T,blue) item>>  {
+}
+comp usage "inputs_3: C069  " as E33  <<(T,blue) item>>  {
+}
+comp usage "inputs_4: C052  " as E34  <<(T,blue) item>>  {
+}
+comp usage "outputs_1: C107  " as E35  <<(T,blue) item>>  {
+}
+comp def "F_LF_024" as E36  <<(T,blue) action  def>>  {
+##//doc//##
+判定低电量制冷许可；层级：叶级功能；来源：11.23SEOV案例<U+005F>优化版 <U+002F> 3.3.1.9 <U+002F> 确定制冷除湿请求 <U+002F> LF<U+002D>024 判定低电量制冷许可。
+}
+comp usage "inputs_1: C037  " as E37  <<(T,blue) item>>  {
+}
+comp usage "inputs_2: C032  " as E38  <<(T,blue) item>>  {
+}
+comp usage "outputs_1: C013  " as E39  <<(T,blue) item>>  {
+}
+E1 o-- E2  
+E1 o-- E3  
+E1 o-- E4  
+E5 o-- E6  
+E5 o-- E7  
+E5 o-- E8  
+E9 o-- E10  
+E9 o-- E11  
+E9 o-- E12  
+E13 o-- E14  
+E13 o-- E15  
+E13 o-- E16  
+E13 o-- E17  
+E13 o-- E18  
+E19 o-- E20  
+E19 o-- E21  
+E19 o-- E22  
+E23 o-- E24  
+E23 o-- E25  
+E23 o-- E26  
+E23 o-- E27  
+E23 o-- E28  
+E23 o-- E29  
+E30 o-- E31  
+E30 o-- E32  
+E30 o-- E33  
+E30 o-- E34  
+E30 o-- E35  
+E36 o-- E37  
+E36 o-- E38  
+E36 o-- E39  
+@enduml

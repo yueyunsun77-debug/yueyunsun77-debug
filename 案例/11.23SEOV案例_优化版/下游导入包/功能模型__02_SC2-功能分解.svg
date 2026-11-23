@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?><svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" contentStyleType="text/css" height="280px" preserveAspectRatio="none" style="width:2581px;height:280px;background:#FFFFFF;" version="1.1" viewBox="0 0 2581 280" width="2581.25px" zoomAndPan="magnify"><defs/><g><!--MD5=[43c9051892ef23e1a46a86907403d788]
+class E1--><g id="elem_E1"><rect fill="#F1F1F1" height="123.0687" id="E1" rx="3.125" ry="3.125" style="stroke:#181818;stroke-width:0.625;" width="405" x="1035" y="8.75"/><text fill="#000000" font-family="Noto Sans CJK SC" font-size="15" font-style="italic" lengthAdjust="spacing" textLength="88.75" x="1193.125" y="32.4001">«action  def»</text><text fill="#000000" font-family="Noto Sans CJK SC" font-size="15" lengthAdjust="spacing" textLength="180" x="1147.5" y="54.1203">空调供风辅助电池冷却场景</text><line style="stroke:#181818;stroke-width:0.625;" x1="1036.25" x2="1438.75" y1="64.6903" y2="64.6903"/><text fill="#000000" font-family="Noto Sans CJK SC" font-size="15" lengthAdjust="spacing" textLength="120" x="1042.5" y="100.7785">仅表达功能分解；</text><text fill="#000000" font-family="Noto Sans CJK SC" font-size="15" lengthAdjust="spacing" textLength="390" x="1042.5" y="122.4986">行为顺序、条件、并行与反馈见行为模型中的同名根模型。</text><text fill="#000000" font-family="Noto Sans CJK SC" font-size="15" font-style="italic" lengthAdjust="spacing" textLength="25" x="1225" y="80.6053">doc</text></g><!--MD5=[b4997ac47864f28c2f74865a473b2911]
+class E2--><g id="elem_E2"><rect fill="#F1F1F1" height="65.9403" id="E2" rx="12.5" ry="12.5" style="stroke:#181818;stroke-width:0.625;" width="197.5" x="8.75" y="206.25"/><text fill="#000000" font-family="Noto Sans CJK SC" font-size="15" font-style="italic" lengthAdjust="spacing" textLength="58.75" x="78.125" y="229.9001">«action»</text><text fill="#000000" font-family="Noto Sans CJK SC" font-size="15" lengthAdjust="spacing" textLength="182.5" x="12.5" y="251.6203">初始化驾驶循环: F_S2_F01</text><line style="stroke:#181818;stroke-width:0.625;" x1="10" x2="205" y1="262.1903" y2="262.1903"/></g><!--MD5=[09b614a08d8cba4a07c9adeb5e0fee81]
+class E3--><g id="elem_E3"><rect fill="#F1F1F1" height="65.9403" id="E3" rx="12.5" ry="12.5" style="stroke:#181818;stroke-width:0.625;" width="212.5" x="250" y="206.25"/><text fill="#000000" font-family="Noto Sans CJK SC" font-size="15" font-style="italic" lengthAdjust="spacing" textLength="58.75" x="326.875" y="229.9001">«action»</text><text fill="#000000" font-family="Noto Sans CJK SC" font-size="15" lengthAdjust="spacing" textLength="197.5" x="253.75" y="251.6203">记录静置预冷时长: F_S2_F02</text><line style="stroke:#181818;stroke-width:0.625;" x1="251.25" x2="461.25" y1="262.1903" y2="262.1903"/></g><!--MD5=[ebbe1d658d1005bcc118a6aa81145e00]
+class E4--><g id="elem_E4"><rect fill="#F1F1F1" height="65.9403" id="E4" rx="12.5" ry="12.5" style="stroke:#181818;stroke-width:0.625;" width="212.5" x="506.25" y="206.25"/><text fill="#000000" font-family="Noto Sans CJK SC" font-size="15" font-style="italic" lengthAdjust="spacing" textLength="58.75" x="583.125" y="229.9001">«action»</text><text fill="#000000" font-family="Noto Sans CJK SC" font-size="15" lengthAdjust="spacing" textLength="197.5" x="510" y="251.6203">控制匀速行驶工况: F_S2_F03</text><line style="stroke:#181818;stroke-width:0.625;" x1="507.5" x2="717.5" y1="262.1903" y2="262.1903"/></g><!--MD5=[270fce915f116d4de14055a7c1d9a0f3]
+class E5--><g id="elem_E5"><rect fill="#F1F1F1" height="65.9403" id="E5" rx="12.5" ry="12.5" style="stroke:#181818;stroke-width:0.625;" width="212.5" x="762.5" y="206.25"/><text fill="#000000" font-family="Noto Sans CJK SC" font-size="15" font-style="italic" lengthAdjust="spacing" textLength="58.75" x="839.375" y="229.9001">«action»</text><text fill="#000000" font-family="Noto Sans CJK SC" font-size="15" lengthAdjust="spacing" textLength="197.5" x="766.25" y="251.6203">处理座舱降温请求: F_S2_F04</text><line style="stroke:#181818;stroke-width:0.625;" x1="763.75" x2="973.75" y1="262.1903" y2="262.1903"/></g><!--MD5=[60a26617385b1d2d0262a64233df1f8d]
+class E6--><g id="elem_E6"><rect fill="#F1F1F1" height="65.9403" id="E6" rx="12.5" ry="12.5" style="stroke:#181818;stroke-width:0.625;" width="182.5" x="1018.75" y="206.25"/><text fill="#000000" font-family="Noto Sans CJK SC" font-size="15" font-style="italic" lengthAdjust="spacing" textLength="58.75" x="1080.625" y="229.9001">«action»</text><text fill="#000000" font-family="Noto Sans CJK SC" font-size="15" lengthAdjust="spacing" textLength="167.5" x="1022.5" y="251.6203">获取电池温度: F_S2_F05</text><line style="stroke:#181818;stroke-width:0.625;" x1="1020" x2="1200" y1="262.1903" y2="262.1903"/></g><!--MD5=[2156ba9850f5573cc1fc38a6a4b2f02b]
+class E7--><g id="elem_E7"><rect fill="#F1F1F1" height="65.9403" id="E7" rx="12.5" ry="12.5" style="stroke:#181818;stroke-width:0.625;" width="242.5" x="1245" y="206.25"/><text fill="#000000" font-family="Noto Sans CJK SC" font-size="15" font-style="italic" lengthAdjust="spacing" textLength="58.75" x="1336.875" y="229.9001">«action»</text><text fill="#000000" font-family="Noto Sans CJK SC" font-size="15" lengthAdjust="spacing" textLength="227.5" x="1248.75" y="251.6203">判定电池主动冷却需求: F_S2_F06</text><line style="stroke:#181818;stroke-width:0.625;" x1="1246.25" x2="1486.25" y1="262.1903" y2="262.1903"/></g><!--MD5=[b9389687b975829384b498ac4b7476b2]
+class E8--><g id="elem_E8"><rect fill="#F1F1F1" height="65.9403" id="E8" rx="12.5" ry="12.5" style="stroke:#181818;stroke-width:0.625;" width="227.5" x="1531.25" y="206.25"/><text fill="#000000" font-family="Noto Sans CJK SC" font-size="15" font-style="italic" lengthAdjust="spacing" textLength="58.75" x="1615.625" y="229.9001">«action»</text><text fill="#000000" font-family="Noto Sans CJK SC" font-size="15" lengthAdjust="spacing" textLength="212.5" x="1535" y="251.6203">评估环境空气换热量: F_S2_F07</text><line style="stroke:#181818;stroke-width:0.625;" x1="1532.5" x2="1757.5" y1="262.1903" y2="262.1903"/></g><!--MD5=[fd4143e9d270a159db93a4ea2a975926]
+class E9--><g id="elem_E9"><rect fill="#F1F1F1" height="65.9403" id="E9" rx="12.5" ry="12.5" style="stroke:#181818;stroke-width:0.625;" width="257.5" x="1802.5" y="206.25"/><text fill="#000000" font-family="Noto Sans CJK SC" font-size="15" font-style="italic" lengthAdjust="spacing" textLength="58.75" x="1901.875" y="229.9001">«action»</text><text fill="#000000" font-family="Noto Sans CJK SC" font-size="15" lengthAdjust="spacing" textLength="242.5" x="1806.25" y="251.6203">协调座舱与电池冷却能力: F_S2_F08</text><line style="stroke:#181818;stroke-width:0.625;" x1="1803.75" x2="2058.75" y1="262.1903" y2="262.1903"/></g><!--MD5=[96f4274e9e20536e775497830990834d]
+class E10--><g id="elem_E10"><rect fill="#F1F1F1" height="65.9403" id="E10" rx="12.5" ry="12.5" style="stroke:#181818;stroke-width:0.625;" width="212.5" x="2103.75" y="206.25"/><text fill="#000000" font-family="Noto Sans CJK SC" font-size="15" font-style="italic" lengthAdjust="spacing" textLength="58.75" x="2180.625" y="229.9001">«action»</text><text fill="#000000" font-family="Noto Sans CJK SC" font-size="15" lengthAdjust="spacing" textLength="197.5" x="2107.5" y="251.6203">评估主动供风响应: F_S2_F09</text><line style="stroke:#181818;stroke-width:0.625;" x1="2105" x2="2315" y1="262.1903" y2="262.1903"/></g><!--MD5=[1dd1bfd58a279cf63c5f349dbc8fc6a1]
+class E11--><g id="elem_E11"><rect fill="#F1F1F1" height="65.9403" id="E11" rx="12.5" ry="12.5" style="stroke:#181818;stroke-width:0.625;" width="212.5" x="2360" y="206.25"/><text fill="#000000" font-family="Noto Sans CJK SC" font-size="15" font-style="italic" lengthAdjust="spacing" textLength="58.75" x="2436.875" y="229.9001">«action»</text><text fill="#000000" font-family="Noto Sans CJK SC" font-size="15" lengthAdjust="spacing" textLength="197.5" x="2363.75" y="251.6203">汇总空气侧换热量: F_S2_F10</text><line style="stroke:#181818;stroke-width:0.625;" x1="2361.25" x2="2571.25" y1="262.1903" y2="262.1903"/></g><!--MD5=[a523cb2a0b79ecf9065ad8783f96c320]
+reverse link E1 to E2--><g id="link_E1_E2"><path d="M1018.125,92.4625 C812.6375,114.25 497.5875,152.55 227.5,206.25 C220.625,207.6125 213.5625,209.15 206.475,210.7875 " fill="none" id="E1-backto-E2" style="stroke:#181818;stroke-width:1.25;"/><polygon fill="#181818" points="1034.575,90.725,1026.594,86.5353,1019.657,92.291,1027.638,96.4807,1034.575,90.725" style="stroke:#181818;stroke-width:1.25;"/></g><!--MD5=[5d7b3810b1dd9b5164bea1151b29b665]
+reverse link E1 to E3--><g id="link_E1_E3"><path d="M1018.55,106.4375 C867.7125,131.6625 662.95,167.85 483.75,206.25 C476.8375,207.7375 469.725,209.325 462.5625,210.975 " fill="none" id="E1-backto-E3" style="stroke:#181818;stroke-width:1.25;"/><polygon fill="#181818" points="1034.825,103.725,1026.6071,100.0216,1020.0278,106.183,1028.2457,109.8864,1034.825,103.725" style="stroke:#181818;stroke-width:1.25;"/></g><!--MD5=[f2c5c03aa1e8c0ba21c10a05e6444b8e]
+reverse link E1 to E4--><g id="link_E1_E4"><path d="M1018.7375,129.6625 C917.1625,156.775 801.0375,187.7875 719.025,209.6875 " fill="none" id="E1-backto-E4" style="stroke:#181818;stroke-width:1.25;"/><polygon fill="#181818" points="1034.575,125.425,1026.0381,122.5317,1020.0839,129.2992,1028.6209,132.1924,1034.575,125.425" style="stroke:#181818;stroke-width:1.25;"/></g><!--MD5=[33238bef88d6431a141d8bc8fb12bca0]
+reverse link E1 to E5--><g id="link_E1_E5"><path d="M1090,138 C1038.0125,161.525 981.95,186.9 939.2625,206.2125 " fill="none" id="E1-backto-E5" style="stroke:#181818;stroke-width:1.25;"/><polygon fill="#181818" points="1104.9,131.2625,1096.0059,129.798,1091.2332,137.4447,1100.1273,138.9092,1104.9,131.2625" style="stroke:#181818;stroke-width:1.25;"/></g><!--MD5=[aca2ef284c2b1b90e17e73bf3f292c07]
+reverse link E1 to E6--><g id="link_E1_E6"><path d="M1181.375,144.7125 C1164.95,166.2125 1147.8375,188.6 1134.4875,206.075 " fill="none" id="E1-backto-E6" style="stroke:#181818;stroke-width:1.25;"/><polygon fill="#181818" points="1191.475,131.5,1182.947,134.4196,1182.362,143.4144,1190.89,140.4949,1191.475,131.5" style="stroke:#181818;stroke-width:1.25;"/></g><!--MD5=[fc9706a6b2cf8c0e423679d303750d3f]
+reverse link E1 to E7--><g id="link_E1_E7"><path d="M1294.175,144.7125 C1310.7625,166.2125 1328.0375,188.6 1341.525,206.075 " fill="none" id="E1-backto-E7" style="stroke:#181818;stroke-width:1.25;"/><polygon fill="#181818" points="1283.9875,131.5,1284.6081,140.4925,1293.1475,143.3783,1292.5269,134.3858,1283.9875,131.5" style="stroke:#181818;stroke-width:1.25;"/></g><!--MD5=[661cb7e25c535686a73d30316f0ecb18]
+reverse link E1 to E8--><g id="link_E1_E8"><path d="M1399.4,137.55 C1457.1625,161.2 1519.6,186.775 1567.075,206.2125 " fill="none" id="E1-backto-E8" style="stroke:#181818;stroke-width:1.25;"/><polygon fill="#181818" points="1384.0375,131.2625,1389.0849,138.7307,1397.9199,136.9439,1392.8725,129.4757,1384.0375,131.2625" style="stroke:#181818;stroke-width:1.25;"/></g><!--MD5=[12b85c4d420790db1e7d6becd0483003]
+reverse link E1 to E9--><g id="link_E1_E9"><path d="M1455.95,123.8 C1569.825,151.1875 1705.2125,183.75 1802.3125,207.1125 " fill="none" id="E1-backto-E9" style="stroke:#181818;stroke-width:1.25;"/><polygon fill="#181818" points="1440.025,119.9625,1446.1539,126.5721,1454.6123,123.4569,1448.4834,116.8472,1440.025,119.9625" style="stroke:#181818;stroke-width:1.25;"/></g><!--MD5=[ea7c523cf29368ef1946af14beed0adc]
+reverse link E1 to E10--><g id="link_E1_E10"><path d="M1456.6125,100.95 C1627.75,125.4125 1871.175,163.0375 2082.5,206.25 C2089.425,207.6625 2096.55,209.2125 2103.7125,210.825 " fill="none" id="E1-backto-E10" style="stroke:#181818;stroke-width:1.25;"/><polygon fill="#181818" points="1440.2875,98.6125,1447.0031,104.625,1455.1361,100.7384,1448.4204,94.7259,1440.2875,98.6125" style="stroke:#181818;stroke-width:1.25;"/></g><!--MD5=[8e96c71535e0933665e19d970df54d10]
+reverse link E1 to E11--><g id="link_E1_E11"><path d="M1456.5875,90.1 C1679.7,111.1625 2035.05,149.8875 2338.75,206.25 C2345.5875,207.525 2352.6125,208.9375 2359.675,210.45 " fill="none" id="E1-backto-E11" style="stroke:#181818;stroke-width:1.25;"/><polygon fill="#181818" points="1440.1,88.55,1447.1002,94.2287,1455.0344,89.9511,1448.0343,84.2724,1440.1,88.55" style="stroke:#181818;stroke-width:1.25;"/></g><!--MD5=[52a240fe26622fea4b0ea3c1f081a29b]
+@startuml
+skinparam defaultFontName Noto Sans CJK SC
+skinparam defaultFontSize 12
+skinparam dpi 120
+scale max 2400*12000
+
+skin sysmlbw
+skinparam monochrome true
+skinparam wrapWidth 300
+hide circle
+
+comp def "空调供风辅助电池冷却场景" as E1  <<(T,blue) action  def>>  {
+##//doc//##
+仅表达功能分解；行为顺序、条件、并行与反馈见行为模型中的同名根模型。
+}
+comp usage "初始化驾驶循环: F_S2_F01  " as E2  <<(T,blue) action>>  {
+}
+comp usage "记录静置预冷时长: F_S2_F02  " as E3  <<(T,blue) action>>  {
+}
+comp usage "控制匀速行驶工况: F_S2_F03  " as E4  <<(T,blue) action>>  {
+}
+comp usage "处理座舱降温请求: F_S2_F04  " as E5  <<(T,blue) action>>  {
+}
+comp usage "获取电池温度: F_S2_F05  " as E6  <<(T,blue) action>>  {
+}
+comp usage "判定电池主动冷却需求: F_S2_F06  " as E7  <<(T,blue) action>>  {
+}
+comp usage "评估环境空气换热量: F_S2_F07  " as E8  <<(T,blue) action>>  {
+}
+comp usage "协调座舱与电池冷却能力: F_S2_F08  " as E9  <<(T,blue) action>>  {
+}
+comp usage "评估主动供风响应: F_S2_F09  " as E10  <<(T,blue) action>>  {
+}
+comp usage "汇总空气侧换热量: F_S2_F10  " as E11  <<(T,blue) action>>  {
+}
+E1 *- - E2  
+E1 *- - E3  
+E1 *- - E4  
+E1 *- - E5  
+E1 *- - E6  
+E1 *- - E7  
+E1 *- - E8  
+E1 *- - E9  
+E1 *- - E10  
+E1 *- - E11  
+@enduml
+
+PlantUML version 1.2022.7(Tue Aug 23 01:01:30 CST 2022)
+(EPL source distribution)
+Java Runtime: OpenJDK Runtime Environment
+JVM: OpenJDK 64-Bit Server VM
+Default Encoding: UTF-8
+Language: en
+Country: null
+--></g></svg>

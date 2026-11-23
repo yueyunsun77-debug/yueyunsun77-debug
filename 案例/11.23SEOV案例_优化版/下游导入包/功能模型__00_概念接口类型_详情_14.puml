@@ -1,0 +1,44 @@
+@startuml
+skinparam defaultFontName Noto Sans CJK SC
+skinparam defaultFontSize 12
+skinparam dpi 120
+scale max 2400*12000
+
+skin sysmlbw
+skinparam monochrome true
+skinparam wrapWidth 300
+hide circle
+
+comp def "C105" as E1  <<(T,blue) item  def>>  {
+##//doc//##
+温度调节操作；角色：分析数据；单位：来源未提供或不适用。
+}
+comp def "C106" as E2  <<(T,blue) item  def>>  {
+##//doc//##
+温控所需温度与环境信息；角色：反馈<U+002F>实际状态；单位：来源未提供或不适用。
+}
+comp def "C107" as E3  <<(T,blue) item  def>>  {
+##//doc//##
+热管理能力分配；角色：分析数据；单位：来源未提供或不适用。
+}
+comp def "C108" as E4  <<(T,blue) item  def>>  {
+##//doc//##
+独立环境换热边界与有效热导；角色：分析数据；单位：来源未提供或不适用。
+}
+comp def "C109" as E5  <<(T,blue) item  def>>  {
+##//doc//##
+环境<U+002F>主动换热贡献、车辆与电池运行状态；角色：反馈<U+002F>实际状态；单位：来源未提供或不适用。
+}
+comp def "C110" as E6  <<(T,blue) item  def>>  {
+##//doc//##
+环境温度条件；角色：分析数据；单位：来源未提供或不适用。
+}
+comp def "C111" as E7  <<(T,blue) item  def>>  {
+##//doc//##
+用户温度、循环、风量、模式或前除霜操作；角色：分析数据；单位：来源未提供或不适用。
+}
+comp def "C112" as E8  <<(T,blue) item  def>>  {
+##//doc//##
+用户温度操作；角色：分析数据；单位：来源未提供或不适用。
+}
+@enduml

@@ -1,0 +1,56 @@
+@startuml
+skinparam defaultFontName Noto Sans CJK SC
+skinparam defaultFontSize 12
+skinparam dpi 120
+scale max 2400*12000
+
+skin sysmlbw
+skinparam monochrome true
+skinparam wrapWidth 300
+hide circle
+
+comp def "C089" as E1  <<(T,blue) item  def>>  {
+##//doc//##
+更新后的座舱目标温度；角色：目标<U+002F>设定；单位：来源未提供或不适用。
+}
+comp def "C090" as E2  <<(T,blue) item  def>>  {
+##//doc//##
+更新后的模式状态；角色：反馈<U+002F>实际状态；单位：来源未提供或不适用。
+}
+comp def "C091" as E3  <<(T,blue) item  def>>  {
+##//doc//##
+最大功率；角色：分析数据；单位：来源未提供或不适用。
+--
+##//attributes//##
+value: Real
+}
+comp def "C092" as E4  <<(T,blue) item  def>>  {
+##//doc//##
+最高有效电芯控制温度；角色：分析数据；单位：℃。
+--
+##//attributes//##
+value: Real
+}
+comp def "C093" as E5  <<(T,blue) item  def>>  {
+##//doc//##
+最高有效电芯温度及有效性；角色：信息有效性；单位：来源未提供或不适用。
+}
+comp def "C094" as E6  <<(T,blue) item  def>>  {
+##//doc//##
+有效温度<U+002F>功率输入；角色：分析数据；单位：来源未提供或不适用。
+}
+comp def "C095" as E7  <<(T,blue) item  def>>  {
+##//doc//##
+有效电池充放电功率；角色：分析数据；单位：来源未提供或不适用。
+--
+##//attributes//##
+value: Real
+}
+comp def "C096" as E8  <<(T,blue) item  def>>  {
+##//doc//##
+有效电池控制温度；角色：分析数据；单位：℃。
+--
+##//attributes//##
+value: Real
+}
+@enduml

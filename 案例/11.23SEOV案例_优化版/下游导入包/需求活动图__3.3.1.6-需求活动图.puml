@@ -1,0 +1,144 @@
+@startuml
+skinparam defaultFontName Noto Sans CJK SC
+skinparam defaultFontSize 12
+skinparam dpi 120
+scale max 2400*12000
+
+skin sysmlbw
+skinparam monochrome true
+skinparam wrapWidth 300
+hide circle
+skinparam ranksep 10
+skinparam rectangle {
+ backgroundColor<<block>> LightGreen
+}
+
+rec usage "行为评估流程" as E1  <<(T,blue) action>>  {
+rec usage "获取本周期快照" as E2  <<(T,blue) action>>  {
+portout "stopRequested" as E4   
+portout "autoModeActive" as E5   
+portout "operation" as E6   
+}
+
+choice "是否继续评估" as E7   
+choice "自动模式判断" as E8   
+choice "用户操作判断" as E9   
+choice "合并模式结果" as E10   
+rec usage "获取自动温控输入" as E11  <<(T,blue) action>>  {
+}
+
+rec usage "调节座舱温度请求" as E13  <<(T,blue) action>>  {
+}
+
+rec usage "协调自动温控请求" as E15  <<(T,blue) action>>  {
+}
+
+rec usage "更新温度并保持AUTO" as E17  <<(T,blue) action>>  {
+}
+
+rec usage "保持AUTO循环操作" as E19  <<(T,blue) action>>  {
+}
+
+rec usage "退出AUTO并保留其他自动项" as E21  <<(T,blue) action>>  {
+}
+
+rec usage "切换至前除霜模式" as E23  <<(T,blue) action>>  {
+}
+
+rec usage "处理AC关闭与Close反馈" as E25  <<(T,blue) action>>  {
+}
+
+rec usage "记录重复AUTO语义缺口" as E29  <<(T,blue) action>>  {
+}
+
+rec usage "保持当前自动控制" as E31  <<(T,blue) action>>  {
+}
+
+rec usage "反馈自动与空调状态" as E33  <<(T,blue) action>>  {
+}
+
+[*] --> E2  
+E7 --> [*]  : ['获取本周期快照'.stopRequested]
+}
+
+note as E3
+功能引用：行为适配/上下文。
+end note 
+note as E12
+功能引用：LF-010。
+end note 
+note as E14
+功能引用：LF-015。
+end note 
+note as E16
+功能引用：LF-011。
+end note 
+note as E18
+功能引用：LF-009, LF-008, LF-014。
+end note 
+note as E20
+功能引用：LF-014。
+end note 
+note as E22
+功能引用：LF-014。
+end note 
+note as E24
+功能引用：LF-014。
+end note 
+note as E26
+功能引用：LF-028。
+end note 
+note as E27
+风量、温度、送风模式及循环等来源指定项仍自动；Close反馈不等于全部自动调节终止。
+end note 
+note as E28
+本节点属性是行为决策所需的分析投影，不重新定义继承的概念级输出端口。
+end note 
+note as E30
+功能引用：LF-014。
+end note 
+note as E32
+功能引用：LF-014。
+end note 
+note as E34
+功能引用：LF-012, LF-013。
+end note 
+E3 .. E2  
+E12 .. E11  
+E14 .. E13  
+E16 .. E15  
+E18 .. E17  
+E20 .. E19  
+E22 .. E21  
+E24 .. E23  
+E26 .. E25  
+E27 .. E25  
+E28 .. E25  
+E30 .. E29  
+E32 .. E31  
+E34 .. E33  
+E2 --> E7  
+E7  --> E8  : [not '获取本周期快照'.stopRequested]
+E8  --> E11  : ['获取本周期快照'.autoModeActive]
+E8  --> E10  : [not '获取本周期快照'.autoModeActive]
+E11 --> E13  
+E13 --> E15  
+E15 --> E9  
+E9  --> E17  : ['获取本周期快照'.operation == AutoOperation::temperature]
+E9  --> E19  : ['获取本周期快照'.operation == AutoOperation::circulation]
+E9  --> E21  : ['获取本周期快照'.operation == AutoOperation::airflow]
+E9  --> E21  : ['获取本周期快照'.operation == AutoOperation::distribution]
+E9  --> E23  : ['获取本周期快照'.operation == AutoOperation::frontDefrost]
+E9  --> E25  : ['获取本周期快照'.operation == AutoOperation::ac]
+E9  --> E29  : ['获取本周期快照'.operation == AutoOperation::autoRepeat]
+E9  --> E31  : ['获取本周期快照'.operation == AutoOperation::noChange]
+E17 --> E10  
+E19 --> E10  
+E21 --> E10  
+E23 --> E10  
+E25 --> E10  
+E29 --> E10  
+E31 --> E10  
+E10 --> E33  
+E33 --> E2  
+@enduml

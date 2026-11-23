@@ -1,0 +1,50 @@
+@startuml
+skinparam defaultFontName Noto Sans CJK SC
+skinparam defaultFontSize 12
+skinparam dpi 120
+scale max 2400*12000
+
+skin sysmlbw
+skinparam monochrome true
+skinparam wrapWidth 300
+hide circle
+
+comp def "C121" as E1  <<(T,blue) item  def>>  {
+##//doc//##
+电加热状态信息；角色：反馈<U+002F>实际状态；单位：来源未提供或不适用。
+}
+comp def "C122" as E2  <<(T,blue) item  def>>  {
+##//doc//##
+电加热运行许可；角色：分析数据；单位：来源未提供或不适用。
+--
+##//attributes//##
+value: Boolean
+}
+comp def "C123" as E3  <<(T,blue) item  def>>  {
+##//doc//##
+电加热通断状态；角色：反馈<U+002F>实际状态；单位：来源未提供或不适用。
+}
+comp def "C124" as E4  <<(T,blue) item  def>>  {
+##//doc//##
+电加热通断请求；角色：请求<U+002F>命令；单位：来源未提供或不适用。
+}
+comp def "C125" as E5  <<(T,blue) item  def>>  {
+##//doc//##
+电池<U+002F>座舱热状态反馈；角色：反馈<U+002F>实际状态；单位：来源未提供或不适用。
+}
+comp def "C126" as E6  <<(T,blue) item  def>>  {
+##//doc//##
+电池主动供风请求；角色：请求<U+002F>命令；单位：来源未提供或不适用。
+--
+##//attributes//##
+value: Boolean
+}
+comp def "C127" as E7  <<(T,blue) item  def>>  {
+##//doc//##
+电池主动供风请求及供风可用状态；角色：请求<U+002F>命令；单位：来源未提供或不适用。
+}
+comp def "C128" as E8  <<(T,blue) item  def>>  {
+##//doc//##
+电池主动冷却请求；角色：请求<U+002F>命令；单位：来源未提供或不适用。
+}
+@enduml

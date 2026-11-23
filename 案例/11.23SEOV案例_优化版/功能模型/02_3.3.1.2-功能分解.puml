@@ -1,0 +1,52 @@
+@startuml
+skinparam defaultFontName Noto Sans CJK SC
+skinparam defaultFontSize 12
+skinparam dpi 120
+scale max 2400*12000
+
+skin sysmlbw
+skinparam monochrome true
+skinparam wrapWidth 300
+hide circle
+
+comp def "乘员舱制热控制" as E1  <<(T,blue) action  def>>  {
+##//doc//##
+仅表达功能分解；行为顺序、条件、并行与反馈见行为模型中的同名根模型。
+}
+comp usage "检查电加热使能条件  " as E2  <<(T,blue) action>>  {
+}
+comp usage "判定电加热使能条件: F_LF_001  " as E3  <<(T,blue) action>>  {
+}
+comp usage "判定整车故障下的加热许可: F_LF_002  " as E4  <<(T,blue) action>>  {
+}
+comp usage "判定电量约束下的加热许可: F_LF_003  " as E5  <<(T,blue) action>>  {
+}
+comp usage "控制电加热通断  " as E6  <<(T,blue) action>>  {
+}
+comp usage "控制电加热通断: F_LF_004  " as E7  <<(T,blue) action>>  {
+}
+comp usage "保护电加热运行  " as E8  <<(T,blue) action>>  {
+}
+comp usage "切断过温电加热请求: F_LF_005  " as E9  <<(T,blue) action>>  {
+}
+comp usage "判定电加热恢复许可: F_LF_006  " as E10  <<(T,blue) action>>  {
+}
+comp usage "获取电加热温度: F_LF_027  " as E11  <<(T,blue) action>>  {
+}
+comp usage "反馈电加热运行信息  " as E12  <<(T,blue) action>>  {
+}
+comp usage "反馈电加热状态: F_LF_007  " as E13  <<(T,blue) action>>  {
+}
+E1 *-- E2  
+E2 *-- E3  
+E2 *-- E4  
+E2 *-- E5  
+E1 *-- E6  
+E6 *-- E7  
+E1 *-- E8  
+E8 *-- E9  
+E8 *-- E10  
+E8 *-- E11  
+E1 *-- E12  
+E12 *-- E13  
+@enduml

@@ -1,0 +1,44 @@
+@startuml
+skinparam defaultFontName Noto Sans CJK SC
+skinparam defaultFontSize 12
+skinparam dpi 120
+scale max 2400*12000
+
+skin sysmlbw
+skinparam monochrome true
+skinparam wrapWidth 300
+hide circle
+
+comp def "C161" as E1  <<(T,blue) item  def>>  {
+##//doc//##
+转速、负载、电池及车辆响应；角色：分析数据；单位：来源未提供或不适用。
+}
+comp def "C162" as E2  <<(T,blue) item  def>>  {
+##//doc//##
+转速反馈；角色：反馈<U+002F>实际状态；单位：来源未提供或不适用。
+}
+comp def "C163" as E3  <<(T,blue) item  def>>  {
+##//doc//##
+辅助冷却需求；角色：分析数据；单位：来源未提供或不适用。
+}
+comp def "C164" as E4  <<(T,blue) item  def>>  {
+##//doc//##
+辅助冷却需求、热状态；角色：反馈<U+002F>实际状态；单位：来源未提供或不适用。
+}
+comp def "C165" as E5  <<(T,blue) item  def>>  {
+##//doc//##
+过温上限；角色：分析数据；单位：来源未提供或不适用。
+}
+comp def "C166" as E6  <<(T,blue) item  def>>  {
+##//doc//##
+过温保护状态；角色：反馈<U+002F>实际状态；单位：来源未提供或不适用。
+}
+comp def "C167" as E7  <<(T,blue) item  def>>  {
+##//doc//##
+过温停热请求；角色：请求<U+002F>命令；单位：来源未提供或不适用。
+}
+comp def "C168" as E8  <<(T,blue) item  def>>  {
+##//doc//##
+进入模式前的温度设定；角色：目标<U+002F>设定；单位：来源未提供或不适用。
+}
+@enduml

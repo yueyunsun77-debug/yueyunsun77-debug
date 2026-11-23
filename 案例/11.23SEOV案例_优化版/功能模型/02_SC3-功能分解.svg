@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?><svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" contentStyleType="text/css" height="280px" preserveAspectRatio="none" style="width:2957px;height:280px;background:#FFFFFF;" version="1.1" viewBox="0 0 2957 280" width="2957.5px" zoomAndPan="magnify"><defs/><g><!--MD5=[43c9051892ef23e1a46a86907403d788]
+class E1--><g id="elem_E1"><rect fill="#F1F1F1" height="123.0687" id="E1" rx="3.125" ry="3.125" style="stroke:#181818;stroke-width:0.625;" width="405" x="1186.25" y="8.75"/><text fill="#000000" font-family="Noto Sans CJK SC" font-size="15" font-style="italic" lengthAdjust="spacing" textLength="88.75" x="1344.375" y="32.4001">«action  def»</text><text fill="#000000" font-family="Noto Sans CJK SC" font-size="15" lengthAdjust="spacing" textLength="210" x="1283.75" y="54.1203">座舱空调与Chiller电池液冷场景</text><line style="stroke:#181818;stroke-width:0.625;" x1="1187.5" x2="1590" y1="64.6903" y2="64.6903"/><text fill="#000000" font-family="Noto Sans CJK SC" font-size="15" lengthAdjust="spacing" textLength="120" x="1193.75" y="100.7785">仅表达功能分解；</text><text fill="#000000" font-family="Noto Sans CJK SC" font-size="15" lengthAdjust="spacing" textLength="390" x="1193.75" y="122.4986">行为顺序、条件、并行与反馈见行为模型中的同名根模型。</text><text fill="#000000" font-family="Noto Sans CJK SC" font-size="15" font-style="italic" lengthAdjust="spacing" textLength="25" x="1376.25" y="80.6053">doc</text></g><!--MD5=[b4997ac47864f28c2f74865a473b2911]
+class E2--><g id="elem_E2"><rect fill="#F1F1F1" height="65.9403" id="E2" rx="12.5" ry="12.5" style="stroke:#181818;stroke-width:0.625;" width="212.5" x="8.75" y="206.25"/><text fill="#000000" font-family="Noto Sans CJK SC" font-size="15" font-style="italic" lengthAdjust="spacing" textLength="58.75" x="85.625" y="229.9001">«action»</text><text fill="#000000" font-family="Noto Sans CJK SC" font-size="15" lengthAdjust="spacing" textLength="197.5" x="12.5" y="251.6203">获取座舱目标温度: F_S3_F01</text><line style="stroke:#181818;stroke-width:0.625;" x1="10" x2="220" y1="262.1903" y2="262.1903"/></g><!--MD5=[09b614a08d8cba4a07c9adeb5e0fee81]
+class E3--><g id="elem_E3"><rect fill="#F1F1F1" height="65.9403" id="E3" rx="12.5" ry="12.5" style="stroke:#181818;stroke-width:0.625;" width="212.5" x="265" y="206.25"/><text fill="#000000" font-family="Noto Sans CJK SC" font-size="15" font-style="italic" lengthAdjust="spacing" textLength="58.75" x="341.875" y="229.9001">«action»</text><text fill="#000000" font-family="Noto Sans CJK SC" font-size="15" lengthAdjust="spacing" textLength="197.5" x="268.75" y="251.6203">获取座舱实际温度: F_S3_F02</text><line style="stroke:#181818;stroke-width:0.625;" x1="266.25" x2="476.25" y1="262.1903" y2="262.1903"/></g><!--MD5=[ebbe1d658d1005bcc118a6aa81145e00]
+class E4--><g id="elem_E4"><rect fill="#F1F1F1" height="65.9403" id="E4" rx="12.5" ry="12.5" style="stroke:#181818;stroke-width:0.625;" width="212.5" x="521.25" y="206.25"/><text fill="#000000" font-family="Noto Sans CJK SC" font-size="15" font-style="italic" lengthAdjust="spacing" textLength="58.75" x="598.125" y="229.9001">«action»</text><text fill="#000000" font-family="Noto Sans CJK SC" font-size="15" lengthAdjust="spacing" textLength="197.5" x="525" y="251.6203">判定座舱制冷需求: F_S3_F03</text><line style="stroke:#181818;stroke-width:0.625;" x1="522.5" x2="732.5" y1="262.1903" y2="262.1903"/></g><!--MD5=[270fce915f116d4de14055a7c1d9a0f3]
+class E5--><g id="elem_E5"><rect fill="#F1F1F1" height="65.9403" id="E5" rx="12.5" ry="12.5" style="stroke:#181818;stroke-width:0.625;" width="212.5" x="777.5" y="206.25"/><text fill="#000000" font-family="Noto Sans CJK SC" font-size="15" font-style="italic" lengthAdjust="spacing" textLength="58.75" x="854.375" y="229.9001">«action»</text><text fill="#000000" font-family="Noto Sans CJK SC" font-size="15" lengthAdjust="spacing" textLength="197.5" x="781.25" y="251.6203">调节座舱制冷能力: F_S3_F04</text><line style="stroke:#181818;stroke-width:0.625;" x1="778.75" x2="988.75" y1="262.1903" y2="262.1903"/></g><!--MD5=[60a26617385b1d2d0262a64233df1f8d]
+class E6--><g id="elem_E6"><rect fill="#F1F1F1" height="65.9403" id="E6" rx="12.5" ry="12.5" style="stroke:#181818;stroke-width:0.625;" width="197.5" x="1033.75" y="206.25"/><text fill="#000000" font-family="Noto Sans CJK SC" font-size="15" font-style="italic" lengthAdjust="spacing" textLength="58.75" x="1103.125" y="229.9001">«action»</text><text fill="#000000" font-family="Noto Sans CJK SC" font-size="15" lengthAdjust="spacing" textLength="182.5" x="1037.5" y="251.6203">调节座舱送风量: F_S3_F05</text><line style="stroke:#181818;stroke-width:0.625;" x1="1035" x2="1230" y1="262.1903" y2="262.1903"/></g><!--MD5=[2156ba9850f5573cc1fc38a6a4b2f02b]
+class E7--><g id="elem_E7"><rect fill="#F1F1F1" height="65.9403" id="E7" rx="12.5" ry="12.5" style="stroke:#181818;stroke-width:0.625;" width="227.5" x="1275" y="206.25"/><text fill="#000000" font-family="Noto Sans CJK SC" font-size="15" font-style="italic" lengthAdjust="spacing" textLength="58.75" x="1359.375" y="229.9001">«action»</text><text fill="#000000" font-family="Noto Sans CJK SC" font-size="15" lengthAdjust="spacing" textLength="212.5" x="1278.75" y="251.6203">获取电池温度与功率: F_S3_F06</text><line style="stroke:#181818;stroke-width:0.625;" x1="1276.25" x2="1501.25" y1="262.1903" y2="262.1903"/></g><!--MD5=[b9389687b975829384b498ac4b7476b2]
+class E8--><g id="elem_E8"><rect fill="#F1F1F1" height="65.9403" id="E8" rx="12.5" ry="12.5" style="stroke:#181818;stroke-width:0.625;" width="242.5" x="1546.25" y="206.25"/><text fill="#000000" font-family="Noto Sans CJK SC" font-size="15" font-style="italic" lengthAdjust="spacing" textLength="58.75" x="1638.125" y="229.9001">«action»</text><text fill="#000000" font-family="Noto Sans CJK SC" font-size="15" lengthAdjust="spacing" textLength="227.5" x="1550" y="251.6203">判定电池辅助冷却需求: F_S3_F07</text><line style="stroke:#181818;stroke-width:0.625;" x1="1547.5" x2="1787.5" y1="262.1903" y2="262.1903"/></g><!--MD5=[fd4143e9d270a159db93a4ea2a975926]
+class E9--><g id="elem_E9"><rect fill="#F1F1F1" height="65.9403" id="E9" rx="12.5" ry="12.5" style="stroke:#181818;stroke-width:0.625;" width="242.5" x="1832.5" y="206.25"/><text fill="#000000" font-family="Noto Sans CJK SC" font-size="15" font-style="italic" lengthAdjust="spacing" textLength="58.75" x="1924.375" y="229.9001">«action»</text><text fill="#000000" font-family="Noto Sans CJK SC" font-size="15" lengthAdjust="spacing" textLength="227.5" x="1836.25" y="251.6203">计算电池冷却能力需求: F_S3_F08</text><line style="stroke:#181818;stroke-width:0.625;" x1="1833.75" x2="2073.75" y1="262.1903" y2="262.1903"/></g><!--MD5=[96f4274e9e20536e775497830990834d]
+class E10--><g id="elem_E10"><rect fill="#F1F1F1" height="65.9403" id="E10" rx="12.5" ry="12.5" style="stroke:#181818;stroke-width:0.625;" width="257.5" x="2118.75" y="206.25"/><text fill="#000000" font-family="Noto Sans CJK SC" font-size="15" font-style="italic" lengthAdjust="spacing" textLength="58.75" x="2218.125" y="229.9001">«action»</text><text fill="#000000" font-family="Noto Sans CJK SC" font-size="15" lengthAdjust="spacing" textLength="242.5" x="2122.5" y="251.6203">分配座舱与电池制冷能力: F_S3_F09</text><line style="stroke:#181818;stroke-width:0.625;" x1="2120" x2="2375" y1="262.1903" y2="262.1903"/></g><!--MD5=[1dd1bfd58a279cf63c5f349dbc8fc6a1]
+class E11--><g id="elem_E11"><rect fill="#F1F1F1" height="65.9403" id="E11" rx="12.5" ry="12.5" style="stroke:#181818;stroke-width:0.625;" width="227.5" x="2420" y="206.25"/><text fill="#000000" font-family="Noto Sans CJK SC" font-size="15" font-style="italic" lengthAdjust="spacing" textLength="58.75" x="2504.375" y="229.9001">«action»</text><text fill="#000000" font-family="Noto Sans CJK SC" font-size="15" lengthAdjust="spacing" textLength="212.5" x="2423.75" y="251.6203">调节电池液路换热量: F_S3_F10</text><line style="stroke:#181818;stroke-width:0.625;" x1="2421.25" x2="2646.25" y1="262.1903" y2="262.1903"/></g><!--MD5=[49a0ec8f00dab7302a31f22d0f0fe584]
+class E12--><g id="elem_E12"><rect fill="#F1F1F1" height="65.9403" id="E12" rx="12.5" ry="12.5" style="stroke:#181818;stroke-width:0.625;" width="257.5" x="2691.25" y="206.25"/><text fill="#000000" font-family="Noto Sans CJK SC" font-size="15" font-style="italic" lengthAdjust="spacing" textLength="58.75" x="2790.625" y="229.9001">«action»</text><text fill="#000000" font-family="Noto Sans CJK SC" font-size="15" lengthAdjust="spacing" textLength="242.5" x="2695" y="251.6203">反馈座舱与电池冷却状态: F_S3_F11</text><line style="stroke:#181818;stroke-width:0.625;" x1="2692.5" x2="2947.5" y1="262.1903" y2="262.1903"/></g><!--MD5=[a523cb2a0b79ecf9065ad8783f96c320]
+reverse link E1 to E2--><g id="link_E1_E2"><path d="M1169.8,88.6625 C938.2,109.025 562.7375,147.6125 242.5,206.25 C235.65,207.5 228.625,208.9125 221.5625,210.4125 " fill="none" id="E1-backto-E2" style="stroke:#181818;stroke-width:1.25;"/><polygon fill="#181818" points="1186.225,87.225,1178.319,82.8954,1171.2817,88.528,1179.1877,92.8576,1186.225,87.225" style="stroke:#181818;stroke-width:1.25;"/></g><!--MD5=[5d7b3810b1dd9b5164bea1151b29b665]
+reverse link E1 to E3--><g id="link_E1_E3"><path d="M1169.7375,98.6 C988.975,122.5875 726.15,160.6875 498.75,206.25 C491.8125,207.6375 484.6875,209.1625 477.525,210.7625 " fill="none" id="E1-backto-E3" style="stroke:#181818;stroke-width:1.25;"/><polygon fill="#181818" points="1185.875,96.475,1177.7855,92.4989,1171.0039,98.4369,1179.0934,102.413,1185.875,96.475" style="stroke:#181818;stroke-width:1.25;"/></g><!--MD5=[f2c5c03aa1e8c0ba21c10a05e6444b8e]
+reverse link E1 to E4--><g id="link_E1_E4"><path d="M1169.7875,115.9125 C1047.5125,141.35 892.5375,174.425 755,206.25 C748.1125,207.85 741.0125,209.525 733.875,211.2375 " fill="none" id="E1-backto-E4" style="stroke:#181818;stroke-width:1.25;"/><polygon fill="#181818" points="1186.0625,112.5375,1177.7026,109.1666,1171.3757,115.5869,1179.7356,118.9578,1186.0625,112.5375" style="stroke:#181818;stroke-width:1.25;"/></g><!--MD5=[33238bef88d6431a141d8bc8fb12bca0]
+reverse link E1 to E5--><g id="link_E1_E5"><path d="M1191.3125,136.4875 C1118.85,160.4375 1040.025,186.4875 980.3125,206.2125 " fill="none" id="E1-backto-E5" style="stroke:#181818;stroke-width:1.25;"/><polygon fill="#181818" points="1207.15,131.2625,1198.4612,128.8636,1192.905,135.9614,1201.5938,138.3603,1207.15,131.2625" style="stroke:#181818;stroke-width:1.25;"/></g><!--MD5=[aca2ef284c2b1b90e17e73bf3f292c07]
+reverse link E1 to E6--><g id="link_E1_E6"><path d="M1282.7625,140.275 C1247.625,163.15 1210.2125,187.525 1181.5,206.2125 " fill="none" id="E1-backto-E6" style="stroke:#181818;stroke-width:1.25;"/><polygon fill="#181818" points="1296.6,131.2625,1287.5866,131.1718,1284.0362,139.457,1293.0496,139.5477,1296.6,131.2625" style="stroke:#181818;stroke-width:1.25;"/></g><!--MD5=[fc9706a6b2cf8c0e423679d303750d3f]
+reverse link E1 to E7--><g id="link_E1_E7"><path d="M1388.75,147.7625 C1388.75,168.3125 1388.75,189.425 1388.75,206.075 " fill="none" id="E1-backto-E7" style="stroke:#181818;stroke-width:1.25;"/><polygon fill="#181818" points="1388.75,131.5,1383.75,139,1388.75,146.5,1393.75,139,1388.75,131.5" style="stroke:#181818;stroke-width:1.25;"/></g><!--MD5=[661cb7e25c535686a73d30316f0ecb18]
+reverse link E1 to E8--><g id="link_E1_E8"><path d="M1503.0375,139.6625 C1541.5375,162.725 1582.6875,187.35 1614.2,206.2125 " fill="none" id="E1-backto-E8" style="stroke:#181818;stroke-width:1.25;"/><polygon fill="#181818" points="1488.9875,131.2625,1492.8585,139.4029,1501.8615,138.9605,1497.9905,130.8202,1488.9875,131.2625" style="stroke:#181818;stroke-width:1.25;"/></g><!--MD5=[12b85c4d420790db1e7d6becd0483003]
+reverse link E1 to E9--><g id="link_E1_E9"><path d="M1607.225,135.775 C1688.8875,159.9 1778.1,186.25 1845.55,206.1625 " fill="none" id="E1-backto-E9" style="stroke:#181818;stroke-width:1.25;"/><polygon fill="#181818" points="1591.525,131.1375,1597.3004,138.0581,1605.91,135.3887,1600.1346,128.4681,1591.525,131.1375" style="stroke:#181818;stroke-width:1.25;"/></g><!--MD5=[ea7c523cf29368ef1946af14beed0adc]
+reverse link E1 to E10--><g id="link_E1_E10"><path d="M1607.375,111.6625 C1747.5875,137.875 1933.45,173.2 2097.5,206.25 C2104.4125,207.6375 2111.5125,209.0875 2118.6625,210.5625 " fill="none" id="E1-backto-E10" style="stroke:#181818;stroke-width:1.25;"/><polygon fill="#181818" points="1591.3625,108.6625,1597.8169,114.9547,1606.1074,111.4169,1599.6531,105.1247,1591.3625,108.6625" style="stroke:#181818;stroke-width:1.25;"/></g><!--MD5=[8e96c71535e0933665e19d970df54d10]
+reverse link E1 to E11--><g id="link_E1_E11"><path d="M1607.8,94.2 C1813.05,117.1875 2127.95,156.3125 2398.75,206.25 C2405.6125,207.5125 2412.6625,208.9 2419.75,210.375 " fill="none" id="E1-backto-E11" style="stroke:#181818;stroke-width:1.25;"/><polygon fill="#181818" points="1591.3625,92.3625,1598.2609,98.1643,1606.2697,94.028,1599.3713,88.2262,1591.3625,92.3625" style="stroke:#181818;stroke-width:1.25;"/></g><!--MD5=[1ce714eca3dce10fc00333d7dcca796c]
+reverse link E1 to E12--><g id="link_E1_E12"><path d="M1607.75,87.325 C1863.575,107.725 2299.0875,147.4625 2670,206.25 C2676.8375,207.3375 2683.8375,208.525 2690.8875,209.7875 " fill="none" id="E1-backto-E12" style="stroke:#181818;stroke-width:1.25;"/><polygon fill="#181818" points="1591.55,86.0375,1598.6369,91.6076,1606.5043,87.2081,1599.4173,81.6381,1591.55,86.0375" style="stroke:#181818;stroke-width:1.25;"/></g><!--MD5=[69406ebf0d14264a2936e84ab0edb08b]
+@startuml
+skinparam defaultFontName Noto Sans CJK SC
+skinparam defaultFontSize 12
+skinparam dpi 120
+scale max 2400*12000
+
+skin sysmlbw
+skinparam monochrome true
+skinparam wrapWidth 300
+hide circle
+
+comp def "座舱空调与Chiller电池液冷场景" as E1  <<(T,blue) action  def>>  {
+##//doc//##
+仅表达功能分解；行为顺序、条件、并行与反馈见行为模型中的同名根模型。
+}
+comp usage "获取座舱目标温度: F_S3_F01  " as E2  <<(T,blue) action>>  {
+}
+comp usage "获取座舱实际温度: F_S3_F02  " as E3  <<(T,blue) action>>  {
+}
+comp usage "判定座舱制冷需求: F_S3_F03  " as E4  <<(T,blue) action>>  {
+}
+comp usage "调节座舱制冷能力: F_S3_F04  " as E5  <<(T,blue) action>>  {
+}
+comp usage "调节座舱送风量: F_S3_F05  " as E6  <<(T,blue) action>>  {
+}
+comp usage "获取电池温度与功率: F_S3_F06  " as E7  <<(T,blue) action>>  {
+}
+comp usage "判定电池辅助冷却需求: F_S3_F07  " as E8  <<(T,blue) action>>  {
+}
+comp usage "计算电池冷却能力需求: F_S3_F08  " as E9  <<(T,blue) action>>  {
+}
+comp usage "分配座舱与电池制冷能力: F_S3_F09  " as E10  <<(T,blue) action>>  {
+}
+comp usage "调节电池液路换热量: F_S3_F10  " as E11  <<(T,blue) action>>  {
+}
+comp usage "反馈座舱与电池冷却状态: F_S3_F11  " as E12  <<(T,blue) action>>  {
+}
+E1 *- - E2  
+E1 *- - E3  
+E1 *- - E4  
+E1 *- - E5  
+E1 *- - E6  
+E1 *- - E7  
+E1 *- - E8  
+E1 *- - E9  
+E1 *- - E10  
+E1 *- - E11  
+E1 *- - E12  
+@enduml
+
+PlantUML version 1.2022.7(Tue Aug 23 01:01:30 CST 2022)
+(EPL source distribution)
+Java Runtime: OpenJDK Runtime Environment
+JVM: OpenJDK 64-Bit Server VM
+Default Encoding: UTF-8
+Language: en
+Country: null
+--></g></svg>

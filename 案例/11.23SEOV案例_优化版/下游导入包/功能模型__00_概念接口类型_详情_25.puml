@@ -1,0 +1,27 @@
+@startuml
+skinparam defaultFontName Noto Sans CJK SC
+skinparam defaultFontSize 12
+skinparam dpi 120
+scale max 2400*12000
+
+skin sysmlbw
+skinparam monochrome true
+skinparam wrapWidth 300
+hide circle
+
+comp def "C193" as E1  <<(T,blue) item  def>>  {
+##//doc//##
+驾驶意图；角色：分析数据；单位：来源未提供或不适用。
+}
+comp def "C194" as E2  <<(T,blue) item  def>>  {
+##//doc//##
+驾驶意图、工况；角色：分析数据；单位：来源未提供或不适用。
+}
+comp def "C195" as E3  <<(T,blue) item  def>>  {
+##//doc//##
+高压可用状态；角色：反馈<U+002F>实际状态；单位：来源未提供或不适用。
+--
+##//attributes//##
+value: Boolean
+}
+@enduml

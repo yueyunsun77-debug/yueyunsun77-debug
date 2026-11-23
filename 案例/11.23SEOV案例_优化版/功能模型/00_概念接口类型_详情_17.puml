@@ -1,0 +1,50 @@
+@startuml
+skinparam defaultFontName Noto Sans CJK SC
+skinparam defaultFontSize 12
+skinparam dpi 120
+scale max 2400*12000
+
+skin sysmlbw
+skinparam monochrome true
+skinparam wrapWidth 300
+hide circle
+
+comp def "C129" as E1  <<(T,blue) item  def>>  {
+##//doc//##
+电池充放电功率反馈；角色：反馈<U+002F>实际状态；单位：来源未提供或不适用。
+}
+comp def "C130" as E2  <<(T,blue) item  def>>  {
+##//doc//##
+电池入口实际空气流量；角色：反馈<U+002F>实际状态；单位：来源未提供或不适用。
+--
+##//attributes//##
+value: Real
+}
+comp def "C131" as E3  <<(T,blue) item  def>>  {
+##//doc//##
+电池入口实际空气温度；角色：反馈<U+002F>实际状态；单位：℃。
+--
+##//attributes//##
+value: Real
+}
+comp def "C132" as E4  <<(T,blue) item  def>>  {
+##//doc//##
+电池入口实际空气温度与流量；角色：反馈<U+002F>实际状态；单位：来源未提供或不适用。
+}
+comp def "C133" as E5  <<(T,blue) item  def>>  {
+##//doc//##
+电池冷却能力请求；角色：请求<U+002F>命令；单位：来源未提供或不适用。
+}
+comp def "C134" as E6  <<(T,blue) item  def>>  {
+##//doc//##
+电池冷却请求；角色：请求<U+002F>命令；单位：来源未提供或不适用。
+}
+comp def "C135" as E7  <<(T,blue) item  def>>  {
+##//doc//##
+电池分配能力、冷却液状态；角色：反馈<U+002F>实际状态；单位：来源未提供或不适用。
+}
+comp def "C136" as E8  <<(T,blue) item  def>>  {
+##//doc//##
+电池实际供风状态；角色：反馈<U+002F>实际状态；单位：来源未提供或不适用。
+}
+@enduml

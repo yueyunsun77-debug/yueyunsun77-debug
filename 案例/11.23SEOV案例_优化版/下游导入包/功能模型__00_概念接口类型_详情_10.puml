@@ -1,0 +1,44 @@
+@startuml
+skinparam defaultFontName Noto Sans CJK SC
+skinparam defaultFontSize 12
+skinparam dpi 120
+scale max 2400*12000
+
+skin sysmlbw
+skinparam monochrome true
+skinparam wrapWidth 300
+hide circle
+
+comp def "C073" as E1  <<(T,blue) item  def>>  {
+##//doc//##
+座舱温控请求；角色：请求<U+002F>命令；单位：来源未提供或不适用。
+}
+comp def "C074" as E2  <<(T,blue) item  def>>  {
+##//doc//##
+座舱空气换热效果；角色：分析数据；单位：来源未提供或不适用。
+}
+comp def "C075" as E3  <<(T,blue) item  def>>  {
+##//doc//##
+当前座舱温度设定；角色：目标<U+002F>设定；单位：来源未提供或不适用。
+}
+comp def "C076" as E4  <<(T,blue) item  def>>  {
+##//doc//##
+当前模式；角色：分析数据；单位：来源未提供或不适用。
+}
+comp def "C077" as E5  <<(T,blue) item  def>>  {
+##//doc//##
+当前目标温度；角色：目标<U+002F>设定；单位：来源未提供或不适用。
+}
+comp def "C078" as E6  <<(T,blue) item  def>>  {
+##//doc//##
+当前自动模式状态；角色：反馈<U+002F>实际状态；单位：来源未提供或不适用。
+}
+comp def "C079" as E7  <<(T,blue) item  def>>  {
+##//doc//##
+当前送风模式；角色：分析数据；单位：来源未提供或不适用。
+}
+comp def "C080" as E8  <<(T,blue) item  def>>  {
+##//doc//##
+循环状态；角色：反馈<U+002F>实际状态；单位：来源未提供或不适用。
+}
+@enduml

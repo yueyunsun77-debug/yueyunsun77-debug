@@ -1,0 +1,44 @@
+@startuml
+skinparam defaultFontName Noto Sans CJK SC
+skinparam defaultFontSize 12
+skinparam dpi 120
+scale max 2400*12000
+
+skin sysmlbw
+skinparam monochrome true
+skinparam wrapWidth 300
+hide circle
+
+comp def "C081" as E1  <<(T,blue) item  def>>  {
+##//doc//##
+循环设定；角色：目标<U+002F>设定；单位：来源未提供或不适用。
+}
+comp def "C082" as E2  <<(T,blue) item  def>>  {
+##//doc//##
+循环请求；角色：请求<U+002F>命令；单位：来源未提供或不适用。
+}
+comp def "C083" as E3  <<(T,blue) item  def>>  {
+##//doc//##
+恢复加热许可；角色：分析数据；单位：来源未提供或不适用。
+}
+comp def "C084" as E4  <<(T,blue) item  def>>  {
+##//doc//##
+恢复许可；角色：分析数据；单位：来源未提供或不适用。
+}
+comp def "C085" as E5  <<(T,blue) item  def>>  {
+##//doc//##
+恢复阈值；角色：分析数据；单位：来源未提供或不适用。
+}
+comp def "C086" as E6  <<(T,blue) item  def>>  {
+##//doc//##
+故障约束下的加热许可；角色：分析数据；单位：来源未提供或不适用。
+}
+comp def "C087" as E7  <<(T,blue) item  def>>  {
+##//doc//##
+整车故障状态；角色：反馈<U+002F>实际状态；单位：来源未提供或不适用。
+}
+comp def "C088" as E8  <<(T,blue) item  def>>  {
+##//doc//##
+日照负荷信息；角色：反馈<U+002F>实际状态；单位：来源未提供或不适用。
+}
+@enduml

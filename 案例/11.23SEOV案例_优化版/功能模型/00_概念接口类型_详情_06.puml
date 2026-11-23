@@ -1,0 +1,44 @@
+@startuml
+skinparam defaultFontName Noto Sans CJK SC
+skinparam defaultFontSize 12
+skinparam dpi 120
+scale max 2400*12000
+
+skin sysmlbw
+skinparam monochrome true
+skinparam wrapWidth 300
+hide circle
+
+comp def "C041" as E1  <<(T,blue) item  def>>  {
+##//doc//##
+发动机已启动状态；角色：反馈<U+002F>实际状态；单位：来源未提供或不适用。
+}
+comp def "C042" as E2  <<(T,blue) item  def>>  {
+##//doc//##
+发动机负载目标；角色：目标<U+002F>设定；单位：来源未提供或不适用。
+}
+comp def "C043" as E3  <<(T,blue) item  def>>  {
+##//doc//##
+发动机转速目标；角色：目标<U+002F>设定；单位：来源未提供或不适用。
+}
+comp def "C044" as E4  <<(T,blue) item  def>>  {
+##//doc//##
+发电<U+002F>回收电能、电池状态、驱动消耗；角色：反馈<U+002F>实际状态；单位：来源未提供或不适用。
+}
+comp def "C045" as E5  <<(T,blue) item  def>>  {
+##//doc//##
+发电电能、负载转速目标；角色：目标<U+002F>设定；单位：来源未提供或不适用。
+}
+comp def "C046" as E6  <<(T,blue) item  def>>  {
+##//doc//##
+发电请求、启动状态；角色：请求<U+002F>命令；单位：来源未提供或不适用。
+}
+comp def "C047" as E7  <<(T,blue) item  def>>  {
+##//doc//##
+发电需求；角色：分析数据；单位：来源未提供或不适用。
+}
+comp def "C048" as E8  <<(T,blue) item  def>>  {
+##//doc//##
+可用循环调节能力；角色：分析数据；单位：来源未提供或不适用。
+}
+@enduml

@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?><svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" contentStyleType="text/css" height="360px" preserveAspectRatio="none" style="width:2258px;height:360px;background:#FFFFFF;" version="1.1" viewBox="0 0 2258 360" width="2258.75px" zoomAndPan="magnify"><defs/><g><!--MD5=[43c9051892ef23e1a46a86907403d788]
+class E1--><g id="elem_E1"><rect fill="#F1F1F1" height="144.7888" id="E1" rx="3.125" ry="3.125" style="stroke:#181818;stroke-width:0.625;" width="330" x="915" y="8.75"/><text fill="#000000" font-family="Noto Sans CJK SC" font-size="15" font-style="italic" lengthAdjust="spacing" textLength="133.75" x="1013.125" y="32.4001">«requirement  def»</text><text fill="#000000" font-family="Noto Sans CJK SC" font-size="15" lengthAdjust="spacing" textLength="242.5" x="958.75" y="54.1203">&lt;3.3.1.9&gt; FrontRearDefrostDemist</text><line style="stroke:#181818;stroke-width:0.625;" x1="916.25" x2="1243.75" y1="64.6903" y2="64.6903"/><text fill="#000000" font-family="Noto Sans CJK SC" font-size="15" lengthAdjust="spacing" textLength="208.75" x="922.5" y="100.7785">需求层O+E：前风窗可视状态：</text><text fill="#000000" font-family="Noto Sans CJK SC" font-size="15" lengthAdjust="spacing" textLength="315" x="922.5" y="122.4986">按有依据的前除霜或前除雾模式改善可视状态；</text><text fill="#000000" font-family="Noto Sans CJK SC" font-size="15" lengthAdjust="spacing" textLength="300" x="922.5" y="144.2188">后风窗细节待确认。详细约束沿用原子需求。</text><text fill="#000000" font-family="Noto Sans CJK SC" font-size="15" font-style="italic" lengthAdjust="spacing" textLength="25" x="1067.5" y="80.6053">doc</text></g><!--MD5=[b4997ac47864f28c2f74865a473b2911]
+class E2--><g id="elem_E2"><rect fill="#F1F1F1" height="101.3485" id="E2" rx="12.5" ry="12.5" style="stroke:#181818;stroke-width:0.625;" width="310" x="8.75" y="239.375"/><text fill="#000000" font-family="Noto Sans CJK SC" font-size="15" font-style="italic" lengthAdjust="spacing" textLength="103.75" x="111.875" y="263.0251">«requirement»</text><text fill="#000000" font-family="Noto Sans CJK SC" font-size="15" lengthAdjust="spacing" textLength="268.75" x="25.625" y="284.7453">&lt;3.3.1.9-01&gt; defrostRequestFeedback</text><line style="stroke:#181818;stroke-width:0.625;" x1="10" x2="317.5" y1="295.3153" y2="295.3153"/><text fill="#000000" font-family="Noto Sans CJK SC" font-size="15" lengthAdjust="spacing" textLength="295" x="16.25" y="331.4035">IVI经CAN接收前除霜/前除雾请求并反馈状态</text><text fill="#000000" font-family="Noto Sans CJK SC" font-size="15" font-style="italic" lengthAdjust="spacing" textLength="25" x="151.25" y="311.2303">doc</text></g><!--MD5=[09b614a08d8cba4a07c9adeb5e0fee81]
+class E3--><g id="elem_E3"><rect fill="#F1F1F1" height="123.0687" id="E3" rx="12.5" ry="12.5" style="stroke:#181818;stroke-width:0.625;" width="337.5" x="362.5" y="228.75"/><text fill="#000000" font-family="Noto Sans CJK SC" font-size="15" font-style="italic" lengthAdjust="spacing" textLength="103.75" x="479.375" y="252.4001">«requirement»</text><text fill="#000000" font-family="Noto Sans CJK SC" font-size="15" lengthAdjust="spacing" textLength="273.75" x="390.625" y="274.1203">&lt;3.3.1.9-02&gt; frontDefrostConfiguration</text><line style="stroke:#181818;stroke-width:0.625;" x1="363.75" x2="698.75" y1="284.6903" y2="284.6903"/><text fill="#000000" font-family="Noto Sans CJK SC" font-size="15" lengthAdjust="spacing" textLength="322.5" x="370" y="320.7785">前除霜/除雾位置、最大风量、外循环90%待定；</text><text fill="#000000" font-family="Noto Sans CJK SC" font-size="15" lengthAdjust="spacing" textLength="60" x="370" y="342.4986">温度保持</text><text fill="#000000" font-family="Noto Sans CJK SC" font-size="15" font-style="italic" lengthAdjust="spacing" textLength="25" x="518.75" y="300.6053">doc</text></g><!--MD5=[ebbe1d658d1005bcc118a6aa81145e00]
+class E4--><g id="elem_E4"><rect fill="#F1F1F1" height="101.3485" id="E4" rx="12.5" ry="12.5" style="stroke:#181818;stroke-width:0.625;" width="318.75" x="744.375" y="239.375"/><text fill="#000000" font-family="Noto Sans CJK SC" font-size="15" font-style="italic" lengthAdjust="spacing" textLength="103.75" x="851.875" y="263.0251">«requirement»</text><text fill="#000000" font-family="Noto Sans CJK SC" font-size="15" lengthAdjust="spacing" textLength="266.25" x="766.875" y="284.7453">&lt;3.3.1.9-03&gt; actuatorStatusFeedback</text><line style="stroke:#181818;stroke-width:0.625;" x1="745.625" x2="1061.875" y1="295.3153" y2="295.3153"/><text fill="#000000" font-family="Noto Sans CJK SC" font-size="15" lengthAdjust="spacing" textLength="303.75" x="751.875" y="331.4035">反馈风量、温度、AC、循环与前风窗模式状态</text><text fill="#000000" font-family="Noto Sans CJK SC" font-size="15" font-style="italic" lengthAdjust="spacing" textLength="25" x="891.25" y="311.2303">doc</text></g><!--MD5=[270fce915f116d4de14055a7c1d9a0f3]
+class E5--><g id="elem_E5"><rect fill="#F1F1F1" height="123.0687" id="E5" rx="12.5" ry="12.5" style="stroke:#181818;stroke-width:0.625;" width="298.75" x="1106.875" y="228.75"/><text fill="#000000" font-family="Noto Sans CJK SC" font-size="15" font-style="italic" lengthAdjust="spacing" textLength="103.75" x="1204.375" y="252.4001">«requirement»</text><text fill="#000000" font-family="Noto Sans CJK SC" font-size="15" lengthAdjust="spacing" textLength="266.25" x="1119.375" y="274.1203">&lt;3.3.1.9-04&gt; modePersistenceAndExit</text><line style="stroke:#181818;stroke-width:0.625;" x1="1108.125" x2="1404.375" y1="284.6903" y2="284.6903"/><text fill="#000000" font-family="Noto Sans CJK SC" font-size="15" lengthAdjust="spacing" textLength="283.75" x="1114.375" y="320.7785">按规范保持、退出、返回此前非OFF模式；</text><text fill="#000000" font-family="Noto Sans CJK SC" font-size="15" lengthAdjust="spacing" textLength="195" x="1114.375" y="342.4986">后风窗逻辑不可由前风窗外推</text><text fill="#000000" font-family="Noto Sans CJK SC" font-size="15" font-style="italic" lengthAdjust="spacing" textLength="25" x="1243.75" y="300.6053">doc</text></g><!--MD5=[60a26617385b1d2d0262a64233df1f8d]
+class E6--><g id="elem_E6"><rect fill="#F1F1F1" height="123.0687" id="E6" rx="12.5" ry="12.5" style="stroke:#181818;stroke-width:0.625;" width="371.25" x="1449.375" y="228.75"/><text fill="#000000" font-family="Noto Sans CJK SC" font-size="15" font-style="italic" lengthAdjust="spacing" textLength="103.75" x="1583.125" y="252.4001">«requirement»</text><text fill="#000000" font-family="Noto Sans CJK SC" font-size="15" lengthAdjust="spacing" textLength="345" x="1458.75" y="274.1203">&lt;3.3.1.9-05&gt; compressorDehumidificationPriority</text><line style="stroke:#181818;stroke-width:0.625;" x1="1450.625" x2="1819.375" y1="284.6903" y2="284.6903"/><text fill="#000000" font-family="Noto Sans CJK SC" font-size="15" lengthAdjust="spacing" textLength="352.5" x="1456.875" y="320.7785">除湿转速接口最低1000 r/min待标定；优先级参SL29</text><text fill="#000000" font-family="Noto Sans CJK SC" font-size="15" lengthAdjust="spacing" textLength="138.75" x="1456.875" y="342.4986">4.1.3.3，阈值XX未定</text><text fill="#000000" font-family="Noto Sans CJK SC" font-size="15" font-style="italic" lengthAdjust="spacing" textLength="25" x="1622.5" y="300.6053">doc</text></g><!--MD5=[2156ba9850f5573cc1fc38a6a4b2f02b]
+class E7--><g id="elem_E7"><rect fill="#F1F1F1" height="123.0687" id="E7" rx="12.5" ry="12.5" style="stroke:#181818;stroke-width:0.625;" width="385" x="1865" y="228.75"/><text fill="#000000" font-family="Noto Sans CJK SC" font-size="15" font-style="italic" lengthAdjust="spacing" textLength="103.75" x="2005.625" y="252.4001">«requirement»</text><text fill="#000000" font-family="Noto Sans CJK SC" font-size="15" lengthAdjust="spacing" textLength="261.25" x="1923.125" y="274.1203">&lt;3.3.1.9-06&gt; lowSocDefrostException</text><line style="stroke:#181818;stroke-width:0.625;" x1="1866.25" x2="2248.75" y1="284.6903" y2="284.6903"/><text fill="#000000" font-family="Noto Sans CJK SC" font-size="15" lengthAdjust="spacing" textLength="370" x="1872.5" y="320.7785">SOC&lt;10%且前除霜关闭则禁止制冷输出，开启则允许；</text><text fill="#000000" font-family="Noto Sans CJK SC" font-size="15" lengthAdjust="spacing" textLength="145" x="1872.5" y="342.4986">SOC=10%边界未规定</text><text fill="#000000" font-family="Noto Sans CJK SC" font-size="15" font-style="italic" lengthAdjust="spacing" textLength="25" x="2045" y="300.6053">doc</text></g><!--MD5=[a523cb2a0b79ecf9065ad8783f96c320]
+reverse link E1 to E2--><g id="link_E1_E2"><path d="M898.5,111.425 C747.7375,137.1125 528.2625,178.3375 340,228.75 C328.1375,231.925 315.9125,235.4875 303.6875,239.2375 " fill="none" id="E1-backto-E2" style="stroke:#181818;stroke-width:1.25;"/><polygon fill="#181818" points="914.7,108.6875,906.4707,105.0093,899.9104,111.1909,908.1396,114.8691,914.7,108.6875" style="stroke:#181818;stroke-width:1.25;"/></g><!--MD5=[5d7b3810b1dd9b5164bea1151b29b665]
+reverse link E1 to E3--><g id="link_E1_E3"><path d="M899.45,150.3625 C832.2625,175.6125 756.55,204.075 691.325,228.5875 " fill="none" id="E1-backto-E3" style="stroke:#181818;stroke-width:1.25;"/><polygon fill="#181818" points="914.9875,144.525,906.2084,142.4813,900.9453,149.7991,909.7244,151.8428,914.9875,144.525" style="stroke:#181818;stroke-width:1.25;"/></g><!--MD5=[f2c5c03aa1e8c0ba21c10a05e6444b8e]
+reverse link E1 to E4--><g id="link_E1_E4"><path d="M1008.2625,166.45 C987.0875,191.225 964.6125,217.5375 945.9375,239.375 " fill="none" id="E1-backto-E4" style="stroke:#181818;stroke-width:1.25;"/><polygon fill="#181818" points="1018.85,154.0625,1010.1754,156.5123,1009.1004,165.4618,1017.775,163.012,1018.85,154.0625" style="stroke:#181818;stroke-width:1.25;"/></g><!--MD5=[33238bef88d6431a141d8bc8fb12bca0]
+reverse link E1 to E5--><g id="link_E1_E5"><path d="M1152.0375,166.8 C1169.7375,187.5125 1188.35,209.2875 1204.8625,228.6125 " fill="none" id="E1-backto-E5" style="stroke:#181818;stroke-width:1.25;"/><polygon fill="#181818" points="1141.15,154.0625,1142.225,163.012,1150.8996,165.4618,1149.8246,156.5123,1141.15,154.0625" style="stroke:#181818;stroke-width:1.25;"/></g><!--MD5=[aca2ef284c2b1b90e17e73bf3f292c07]
+reverse link E1 to E6--><g id="link_E1_E6"><path d="M1260.425,149.55 C1329.0375,175.05 1406.725,203.9125 1473.4875,228.725 " fill="none" id="E1-backto-E6" style="stroke:#181818;stroke-width:1.25;"/><polygon fill="#181818" points="1245.0125,143.825,1250.301,151.1245,1259.073,149.0503,1253.7845,141.7508,1245.0125,143.825" style="stroke:#181818;stroke-width:1.25;"/></g><!--MD5=[fc9706a6b2cf8c0e423679d303750d3f]
+reverse link E1 to E7--><g id="link_E1_E7"><path d="M1261.375,112.9375 C1416.425,139.9875 1645.1125,182.3625 1842.5,228.75 C1849.8625,230.475 1857.3375,232.2875 1864.8875,234.1625 " fill="none" id="E1-backto-E7" style="stroke:#181818;stroke-width:1.25;"/><polygon fill="#181818" points="1245.1875,110.125,1251.7199,116.3361,1259.9657,112.6951,1253.4333,106.484,1245.1875,110.125" style="stroke:#181818;stroke-width:1.25;"/></g><!--MD5=[96fea6e41d427071064618506e906baa]
+@startuml
+skinparam defaultFontName Noto Sans CJK SC
+skinparam defaultFontSize 12
+skinparam dpi 120
+scale max 2400*12000
+
+skin sysmlbw
+skinparam monochrome true
+skinparam wrapWidth 300
+hide circle
+
+comp def "~<3.3.1.9> FrontRearDefrostDemist" as E1  <<(T,blue) requirement  def>>  {
+##//doc//##
+需求层O+E：前风窗可视状态：按有依据的前除霜或前除雾模式改善可视状态；后风窗细节待确认。详细约束沿用原子需求。
+}
+comp usage "~<3.3.1.9-01> defrostRequestFeedback  " as E2  <<(T,blue) requirement>>  {
+##//doc//##
+IVI经CAN接收前除霜<U+002F>前除雾请求并反馈状态
+}
+comp usage "~<3.3.1.9-02> frontDefrostConfiguration  " as E3  <<(T,blue) requirement>>  {
+##//doc//##
+前除霜<U+002F>除雾位置、最大风量、外循环90%待定；温度保持
+}
+comp usage "~<3.3.1.9-03> actuatorStatusFeedback  " as E4  <<(T,blue) requirement>>  {
+##//doc//##
+反馈风量、温度、AC、循环与前风窗模式状态
+}
+comp usage "~<3.3.1.9-04> modePersistenceAndExit  " as E5  <<(T,blue) requirement>>  {
+##//doc//##
+按规范保持、退出、返回此前非OFF模式；后风窗逻辑不可由前风窗外推
+}
+comp usage "~<3.3.1.9-05> compressorDehumidificationPriority  " as E6  <<(T,blue) requirement>>  {
+##//doc//##
+除湿转速接口最低1000 r<U+002F>min待标定；优先级参SL29 4.1.3.3，阈值XX未定
+}
+comp usage "~<3.3.1.9-06> lowSocDefrostException  " as E7  <<(T,blue) requirement>>  {
+##//doc//##
+SOC<U+003C>10%且前除霜关闭则禁止制冷输出，开启则允许；SOC<U+003D>10%边界未规定
+}
+E1 *- - E2  
+E1 *- - E3  
+E1 *- - E4  
+E1 *- - E5  
+E1 *- - E6  
+E1 *- - E7  
+@enduml
+
+PlantUML version 1.2022.7(Tue Aug 23 01:01:30 CST 2022)
+(EPL source distribution)
+Java Runtime: OpenJDK Runtime Environment
+JVM: OpenJDK 64-Bit Server VM
+Default Encoding: UTF-8
+Language: en
+Country: null
+--></g></svg>

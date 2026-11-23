@@ -1,0 +1,44 @@
+@startuml
+skinparam defaultFontName Noto Sans CJK SC
+skinparam defaultFontSize 12
+skinparam dpi 120
+scale max 2400*12000
+
+skin sysmlbw
+skinparam monochrome true
+skinparam wrapWidth 300
+hide circle
+
+comp def "C065" as E1  <<(T,blue) item  def>>  {
+##//doc//##
+工作状态；角色：反馈<U+002F>实际状态；单位：来源未提供或不适用。
+}
+comp def "C066" as E2  <<(T,blue) item  def>>  {
+##//doc//##
+已接收的风窗请求；角色：请求<U+002F>命令；单位：来源未提供或不适用。
+}
+comp def "C067" as E3  <<(T,blue) item  def>>  {
+##//doc//##
+座舱<U+002F>电池温度与执行状态；角色：反馈<U+002F>实际状态；单位：来源未提供或不适用。
+}
+comp def "C068" as E4  <<(T,blue) item  def>>  {
+##//doc//##
+座舱<U+002F>电池请求、可用制冷能力；角色：请求<U+002F>命令；单位：来源未提供或不适用。
+}
+comp def "C069" as E5  <<(T,blue) item  def>>  {
+##//doc//##
+座舱制冷请求；角色：请求<U+002F>命令；单位：来源未提供或不适用。
+}
+comp def "C070" as E6  <<(T,blue) item  def>>  {
+##//doc//##
+座舱制冷需求；角色：分析数据；单位：来源未提供或不适用。
+}
+comp def "C071" as E7  <<(T,blue) item  def>>  {
+##//doc//##
+座舱制冷需求与响应；角色：分析数据；单位：来源未提供或不适用。
+}
+comp def "C072" as E8  <<(T,blue) item  def>>  {
+##//doc//##
+座舱温度信息；角色：反馈<U+002F>实际状态；单位：来源未提供或不适用。
+}
+@enduml

@@ -1,0 +1,128 @@
+@startuml
+skinparam defaultFontName Noto Sans CJK SC
+skinparam defaultFontSize 12
+skinparam dpi 120
+scale max 2400*12000
+
+skin sysmlbw
+skinparam monochrome true
+skinparam wrapWidth 300
+hide circle
+
+comp def "F_LF_026" as E1  <<(T,blue) action  def>>  {
+##//doc//##
+控制前风窗除霜除雾模式；层级：叶级功能；来源：11.23SEOV案例<U+005F>优化版 <U+002F> 3.3.1.9 <U+002F> 执行风窗温控请求 <U+002F> LF<U+002D>026 控制前风窗除霜除雾模式。
+}
+comp usage "inputs_1: C034  " as E2  <<(T,blue) item>>  {
+}
+comp usage "inputs_2: C076  " as E3  <<(T,blue) item>>  {
+}
+comp usage "inputs_3: C100  " as E4  <<(T,blue) item>>  {
+}
+comp usage "outputs_1: C035  " as E5  <<(T,blue) item>>  {
+}
+comp def "F_LF_027" as E6  <<(T,blue) action  def>>  {
+##//doc//##
+获取电加热温度；层级：叶级功能；来源：11.23SEOV案例<U+005F>优化版 <U+002F> 3.3.1.2 <U+002F> 保护电加热运行 <U+002F> LF<U+002D>027 获取电加热温度。
+}
+comp usage "inputs_1: C119  " as E7  <<(T,blue) item>>  {
+}
+comp usage "outputs_1: C120  " as E8  <<(T,blue) item>>  {
+}
+comp def "F_LF_028" as E9  <<(T,blue) action  def>>  {
+##//doc//##
+处理AUTO下的AC操作；层级：叶级功能；来源：11.23SEOV案例<U+005F>优化版 <U+002F> 3.3.1.6 <U+002F> 处理用户模式操作 <U+002F> LF<U+002D>028 处理AUTO下的AC操作。
+}
+comp usage "inputs_1: C003  " as E10  <<(T,blue) item>>  {
+}
+comp usage "inputs_2: C002  " as E11  <<(T,blue) item>>  {
+}
+comp usage "outputs_1: C022  " as E12  <<(T,blue) item>>  {
+}
+comp usage "outputs_2: C154  " as E13  <<(T,blue) item>>  {
+}
+comp def "F_LF_029" as E14  <<(T,blue) action  def>>  {
+##//doc//##
+调节发动机发电工作点；层级：兼容ID引用；来源：11.23SEOV案例<U+005F>优化版 <U+002F> SC1 <U+002F> S1<U+002D>F08 调节发动机发电工作点 <U+002F> LF<U+002D>029（指标分配引用）。
+}
+comp usage "inputs_1: C039  " as E15  <<(T,blue) item>>  {
+}
+comp usage "inputs_2: C158  " as E16  <<(T,blue) item>>  {
+}
+comp usage "inputs_3: C162  " as E17  <<(T,blue) item>>  {
+}
+comp usage "inputs_4: C047  " as E18  <<(T,blue) item>>  {
+}
+comp usage "outputs_1: C043  " as E19  <<(T,blue) item>>  {
+}
+comp usage "outputs_2: C042  " as E20  <<(T,blue) item>>  {
+}
+comp def "F_LF_030" as E21  <<(T,blue) action  def>>  {
+##//doc//##
+记录静置预冷时长；层级：兼容ID引用；来源：11.23SEOV案例<U+005F>优化版 <U+002F> SC2 <U+002F> S2<U+002D>F02 记录静置预冷时长 <U+002F> LF<U+002D>030（指标分配引用）。
+}
+comp usage "inputs_1: C184  " as E22  <<(T,blue) item>>  {
+}
+comp usage "inputs_2: C152  " as E23  <<(T,blue) item>>  {
+}
+comp usage "outputs_1: C181  " as E24  <<(T,blue) item>>  {
+}
+comp def "F_LF_031" as E25  <<(T,blue) action  def>>  {
+##//doc//##
+控制匀速行驶工况；层级：兼容ID引用；来源：11.23SEOV案例<U+005F>优化版 <U+002F> SC2 <U+002F> S2<U+002D>F03 控制匀速行驶工况 <U+002F> LF<U+002D>031（指标分配引用）。
+}
+comp usage "inputs_1: C182  " as E26  <<(T,blue) item>>  {
+}
+comp usage "inputs_2: C160  " as E27  <<(T,blue) item>>  {
+}
+comp usage "inputs_3: C152  " as E28  <<(T,blue) item>>  {
+}
+comp usage "outputs_1: C159  " as E29  <<(T,blue) item>>  {
+}
+comp usage "outputs_2: C157  " as E30  <<(T,blue) item>>  {
+}
+comp def "F_LF_032" as E31  <<(T,blue) action  def>>  {
+##//doc//##
+判定电池主动冷却需求；层级：兼容ID引用；来源：11.23SEOV案例<U+005F>优化版 <U+002F> SC2 <U+002F> S2<U+002D>F06 判定电池主动冷却需求 <U+002F> LF<U+002D>032（指标分配引用）。
+}
+comp usage "inputs_1: C092  " as E32  <<(T,blue) item>>  {
+}
+comp usage "outputs_1: C128  " as E33  <<(T,blue) item>>  {
+}
+comp def "F_S1_F01" as E34  <<(T,blue) action  def>>  {
+##//doc//##
+接收驾驶指令；层级：叶级功能；来源：11.23SEOV案例<U+005F>优化版 <U+002F> SC1 <U+002F> S1<U+002D>F01 接收驾驶指令。
+}
+comp usage "inputs_1: C036  " as E35  <<(T,blue) item>>  {
+}
+comp usage "outputs_1: C193  " as E36  <<(T,blue) item>>  {
+}
+E1 o-- E2  
+E1 o-- E3  
+E1 o-- E4  
+E1 o-- E5  
+E6 o-- E7  
+E6 o-- E8  
+E9 o-- E10  
+E9 o-- E11  
+E9 o-- E12  
+E9 o-- E13  
+E14 o-- E15  
+E14 o-- E16  
+E14 o-- E17  
+E14 o-- E18  
+E14 o-- E19  
+E14 o-- E20  
+E21 o-- E22  
+E21 o-- E23  
+E21 o-- E24  
+E25 o-- E26  
+E25 o-- E27  
+E25 o-- E28  
+E25 o-- E29  
+E25 o-- E30  
+E31 o-- E32  
+E31 o-- E33  
+E34 o-- E35  
+E34 o-- E36  
+@enduml

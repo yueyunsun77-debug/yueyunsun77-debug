@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?><svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" contentStyleType="text/css" height="421.25px" preserveAspectRatio="none" style="width:2551px;height:421px;background:#FFFFFF;" version="1.1" viewBox="0 0 2551 421" width="2551.25px" zoomAndPan="magnify"><defs/><g><!--MD5=[43c9051892ef23e1a46a86907403d788]
+class E1--><g id="elem_E1"><rect fill="#F1F1F1" height="123.0687" id="E1" rx="3.125" ry="3.125" style="stroke:#181818;stroke-width:0.625;" width="405" x="1382.5" y="8.75"/><text fill="#000000" font-family="Noto Sans CJK SC" font-size="15" font-style="italic" lengthAdjust="spacing" textLength="88.75" x="1540.625" y="32.4001">«action  def»</text><text fill="#000000" font-family="Noto Sans CJK SC" font-size="15" lengthAdjust="spacing" textLength="135" x="1517.5" y="54.1203">前风窗除霜除雾控制</text><line style="stroke:#181818;stroke-width:0.625;" x1="1383.75" x2="1786.25" y1="64.6903" y2="64.6903"/><text fill="#000000" font-family="Noto Sans CJK SC" font-size="15" lengthAdjust="spacing" textLength="120" x="1390" y="100.7785">仅表达功能分解；</text><text fill="#000000" font-family="Noto Sans CJK SC" font-size="15" lengthAdjust="spacing" textLength="390" x="1390" y="122.4986">行为顺序、条件、并行与反馈见行为模型中的同名根模型。</text><text fill="#000000" font-family="Noto Sans CJK SC" font-size="15" font-style="italic" lengthAdjust="spacing" textLength="25" x="1572.5" y="80.6053">doc</text></g><!--MD5=[b4997ac47864f28c2f74865a473b2911]
+class E2--><g id="elem_E2"><rect fill="#F1F1F1" height="65.9403" id="E2" rx="12.5" ry="12.5" style="stroke:#181818;stroke-width:0.625;" width="180" x="293.75" y="206.25"/><text fill="#000000" font-family="Noto Sans CJK SC" font-size="15" font-style="italic" lengthAdjust="spacing" textLength="58.75" x="354.375" y="229.9001">«action»</text><text fill="#000000" font-family="Noto Sans CJK SC" font-size="15" lengthAdjust="spacing" textLength="165" x="297.5" y="251.6203">接收风窗除霜或除雾请求</text><line style="stroke:#181818;stroke-width:0.625;" x1="295" x2="472.5" y1="262.1903" y2="262.1903"/></g><!--MD5=[09b614a08d8cba4a07c9adeb5e0fee81]
+class E3--><g id="elem_E3"><rect fill="#F1F1F1" height="65.9403" id="E3" rx="12.5" ry="12.5" style="stroke:#181818;stroke-width:0.625;" width="242.5" x="8.75" y="347.5"/><text fill="#000000" font-family="Noto Sans CJK SC" font-size="15" font-style="italic" lengthAdjust="spacing" textLength="58.75" x="100.625" y="371.1501">«action»</text><text fill="#000000" font-family="Noto Sans CJK SC" font-size="15" lengthAdjust="spacing" textLength="227.5" x="12.5" y="392.8703">接收风窗除霜除雾请求: F_LF_016</text><line style="stroke:#181818;stroke-width:0.625;" x1="10" x2="250" y1="403.4403" y2="403.4403"/></g><!--MD5=[ebbe1d658d1005bcc118a6aa81145e00]
+class E4--><g id="elem_E4"><rect fill="#F1F1F1" height="65.9403" id="E4" rx="12.5" ry="12.5" style="stroke:#181818;stroke-width:0.625;" width="135" x="771.25" y="206.25"/><text fill="#000000" font-family="Noto Sans CJK SC" font-size="15" font-style="italic" lengthAdjust="spacing" textLength="58.75" x="809.375" y="229.9001">«action»</text><text fill="#000000" font-family="Noto Sans CJK SC" font-size="15" lengthAdjust="spacing" textLength="120" x="775" y="251.6203">配置风窗模式参数</text><line style="stroke:#181818;stroke-width:0.625;" x1="772.5" x2="905" y1="262.1903" y2="262.1903"/></g><!--MD5=[270fce915f116d4de14055a7c1d9a0f3]
+class E5--><g id="elem_E5"><rect fill="#F1F1F1" height="65.9403" id="E5" rx="12.5" ry="12.5" style="stroke:#181818;stroke-width:0.625;" width="182.5" x="295" y="347.5"/><text fill="#000000" font-family="Noto Sans CJK SC" font-size="15" font-style="italic" lengthAdjust="spacing" textLength="58.75" x="356.875" y="371.1501">«action»</text><text fill="#000000" font-family="Noto Sans CJK SC" font-size="15" lengthAdjust="spacing" textLength="167.5" x="298.75" y="392.8703">调节送风模式: F_LF_017</text><line style="stroke:#181818;stroke-width:0.625;" x1="296.25" x2="476.25" y1="403.4403" y2="403.4403"/></g><!--MD5=[60a26617385b1d2d0262a64233df1f8d]
+class E6--><g id="elem_E6"><rect fill="#F1F1F1" height="65.9403" id="E6" rx="12.5" ry="12.5" style="stroke:#181818;stroke-width:0.625;" width="167.5" x="521.25" y="347.5"/><text fill="#000000" font-family="Noto Sans CJK SC" font-size="15" font-style="italic" lengthAdjust="spacing" textLength="58.75" x="575.625" y="371.1501">«action»</text><text fill="#000000" font-family="Noto Sans CJK SC" font-size="15" lengthAdjust="spacing" textLength="152.5" x="525" y="392.8703">调节送风量: F_LF_018</text><line style="stroke:#181818;stroke-width:0.625;" x1="522.5" x2="687.5" y1="403.4403" y2="403.4403"/></g><!--MD5=[2156ba9850f5573cc1fc38a6a4b2f02b]
+class E7--><g id="elem_E7"><rect fill="#F1F1F1" height="65.9403" id="E7" rx="12.5" ry="12.5" style="stroke:#181818;stroke-width:0.625;" width="212.5" x="732.5" y="347.5"/><text fill="#000000" font-family="Noto Sans CJK SC" font-size="15" font-style="italic" lengthAdjust="spacing" textLength="58.75" x="809.375" y="371.1501">«action»</text><text fill="#000000" font-family="Noto Sans CJK SC" font-size="15" lengthAdjust="spacing" textLength="197.5" x="736.25" y="392.8703">调节空气循环方式: F_LF_019</text><line style="stroke:#181818;stroke-width:0.625;" x1="733.75" x2="943.75" y1="403.4403" y2="403.4403"/></g><!--MD5=[b9389687b975829384b498ac4b7476b2]
+class E8--><g id="elem_E8"><rect fill="#F1F1F1" height="65.9403" id="E8" rx="12.5" ry="12.5" style="stroke:#181818;stroke-width:0.625;" width="212.5" x="988.75" y="347.5"/><text fill="#000000" font-family="Noto Sans CJK SC" font-size="15" font-style="italic" lengthAdjust="spacing" textLength="58.75" x="1065.625" y="371.1501">«action»</text><text fill="#000000" font-family="Noto Sans CJK SC" font-size="15" lengthAdjust="spacing" textLength="197.5" x="992.5" y="392.8703">保持座舱温度设定: F_LF_021</text><line style="stroke:#181818;stroke-width:0.625;" x1="990" x2="1200" y1="403.4403" y2="403.4403"/></g><!--MD5=[fd4143e9d270a159db93a4ea2a975926]
+class E9--><g id="elem_E9"><rect fill="#F1F1F1" height="65.9403" id="E9" rx="12.5" ry="12.5" style="stroke:#181818;stroke-width:0.625;" width="135" x="1517.5" y="206.25"/><text fill="#000000" font-family="Noto Sans CJK SC" font-size="15" font-style="italic" lengthAdjust="spacing" textLength="58.75" x="1555.625" y="229.9001">«action»</text><text fill="#000000" font-family="Noto Sans CJK SC" font-size="15" lengthAdjust="spacing" textLength="120" x="1521.25" y="251.6203">确定制冷除湿请求</text><line style="stroke:#181818;stroke-width:0.625;" x1="1518.75" x2="1651.25" y1="262.1903" y2="262.1903"/></g><!--MD5=[96f4274e9e20536e775497830990834d]
+class E10--><g id="elem_E10"><rect fill="#F1F1F1" height="65.9403" id="E10" rx="12.5" ry="12.5" style="stroke:#181818;stroke-width:0.625;" width="182.5" x="1245" y="347.5"/><text fill="#000000" font-family="Noto Sans CJK SC" font-size="15" font-style="italic" lengthAdjust="spacing" textLength="58.75" x="1306.875" y="371.1501">«action»</text><text fill="#000000" font-family="Noto Sans CJK SC" font-size="15" lengthAdjust="spacing" textLength="167.5" x="1248.75" y="392.8703">调节制冷能力: F_LF_020</text><line style="stroke:#181818;stroke-width:0.625;" x1="1246.25" x2="1426.25" y1="403.4403" y2="403.4403"/></g><!--MD5=[1dd1bfd58a279cf63c5f349dbc8fc6a1]
+class E11--><g id="elem_E11"><rect fill="#F1F1F1" height="65.9403" id="E11" rx="12.5" ry="12.5" style="stroke:#181818;stroke-width:0.625;" width="227.5" x="1471.25" y="347.5"/><text fill="#000000" font-family="Noto Sans CJK SC" font-size="15" font-style="italic" lengthAdjust="spacing" textLength="58.75" x="1555.625" y="371.1501">«action»</text><text fill="#000000" font-family="Noto Sans CJK SC" font-size="15" lengthAdjust="spacing" textLength="212.5" x="1475" y="392.8703">仲裁热管理能力请求: F_LF_023</text><line style="stroke:#181818;stroke-width:0.625;" x1="1472.5" x2="1697.5" y1="403.4403" y2="403.4403"/></g><!--MD5=[49a0ec8f00dab7302a31f22d0f0fe584]
+class E12--><g id="elem_E12"><rect fill="#F1F1F1" height="65.9403" id="E12" rx="12.5" ry="12.5" style="stroke:#181818;stroke-width:0.625;" width="227.5" x="1742.5" y="347.5"/><text fill="#000000" font-family="Noto Sans CJK SC" font-size="15" font-style="italic" lengthAdjust="spacing" textLength="58.75" x="1826.875" y="371.1501">«action»</text><text fill="#000000" font-family="Noto Sans CJK SC" font-size="15" lengthAdjust="spacing" textLength="212.5" x="1746.25" y="392.8703">判定低电量制冷许可: F_LF_024</text><line style="stroke:#181818;stroke-width:0.625;" x1="1743.75" x2="1968.75" y1="403.4403" y2="403.4403"/></g><!--MD5=[ee3c913d1a06f366521f9ef512b67efe]
+class E13--><g id="elem_E13"><rect fill="#F1F1F1" height="65.9403" id="E13" rx="12.5" ry="12.5" style="stroke:#181818;stroke-width:0.625;" width="135" x="1813.75" y="206.25"/><text fill="#000000" font-family="Noto Sans CJK SC" font-size="15" font-style="italic" lengthAdjust="spacing" textLength="58.75" x="1851.875" y="229.9001">«action»</text><text fill="#000000" font-family="Noto Sans CJK SC" font-size="15" lengthAdjust="spacing" textLength="120" x="1817.5" y="251.6203">反馈风窗运行信息</text><line style="stroke:#181818;stroke-width:0.625;" x1="1815" x2="1947.5" y1="262.1903" y2="262.1903"/></g><!--MD5=[bee11217b2f71d958a27249dc326068c]
+class E14--><g id="elem_E14"><rect fill="#F1F1F1" height="65.9403" id="E14" rx="12.5" ry="12.5" style="stroke:#181818;stroke-width:0.625;" width="227.5" x="2013.75" y="347.5"/><text fill="#000000" font-family="Noto Sans CJK SC" font-size="15" font-style="italic" lengthAdjust="spacing" textLength="58.75" x="2098.125" y="371.1501">«action»</text><text fill="#000000" font-family="Noto Sans CJK SC" font-size="15" lengthAdjust="spacing" textLength="212.5" x="2017.5" y="392.8703">反馈风窗与空调状态: F_LF_022</text><line style="stroke:#181818;stroke-width:0.625;" x1="2015" x2="2240" y1="403.4403" y2="403.4403"/></g><!--MD5=[0c48fb7552dae8cbbef69381101a84c8]
+class E15--><g id="elem_E15"><rect fill="#F1F1F1" height="65.9403" id="E15" rx="12.5" ry="12.5" style="stroke:#181818;stroke-width:0.625;" width="135" x="2227.5" y="206.25"/><text fill="#000000" font-family="Noto Sans CJK SC" font-size="15" font-style="italic" lengthAdjust="spacing" textLength="58.75" x="2265.625" y="229.9001">«action»</text><text fill="#000000" font-family="Noto Sans CJK SC" font-size="15" lengthAdjust="spacing" textLength="120" x="2231.25" y="251.6203">执行风窗温控请求</text><line style="stroke:#181818;stroke-width:0.625;" x1="2228.75" x2="2361.25" y1="262.1903" y2="262.1903"/></g><!--MD5=[35f0587eaee8d5bb9a02e25b63afc23b]
+class E16--><g id="elem_E16"><rect fill="#F1F1F1" height="65.9403" id="E16" rx="12.5" ry="12.5" style="stroke:#181818;stroke-width:0.625;" width="257.5" x="2285" y="347.5"/><text fill="#000000" font-family="Noto Sans CJK SC" font-size="15" font-style="italic" lengthAdjust="spacing" textLength="58.75" x="2384.375" y="371.1501">«action»</text><text fill="#000000" font-family="Noto Sans CJK SC" font-size="15" lengthAdjust="spacing" textLength="242.5" x="2288.75" y="392.8703">控制前风窗除霜除雾模式: F_LF_026</text><line style="stroke:#181818;stroke-width:0.625;" x1="2286.25" x2="2541.25" y1="403.4403" y2="403.4403"/></g><!--MD5=[a523cb2a0b79ecf9065ad8783f96c320]
+reverse link E1 to E2--><g id="link_E1_E2"><path d="M1366.125,101.65 C1099.5625,138.6875 661.6625,199.5125 473.8625,225.6125 " fill="none" id="E1-backto-E2" style="stroke:#181818;stroke-width:1.25;"/><polygon fill="#181818" points="1382.2375,99.4125,1374.1216,95.4906,1367.3798,101.4738,1375.4957,105.3957,1382.2375,99.4125" style="stroke:#181818;stroke-width:1.25;"/></g><!--MD5=[209b3feb70ccb6233bfe1053d122c12c]
+reverse link E2 to E3--><g id="link_E2_E3"><path d="M310.8,280.5125 C272.05,301.7 225.05,327.4 188.675,347.2875 " fill="none" id="E2-backto-E3" style="stroke:#181818;stroke-width:1.25;"/><polygon fill="#181818" points="325.2125,272.6375,316.2327,271.8544,312.0561,279.8422,321.0359,280.6253,325.2125,272.6375" style="stroke:#181818;stroke-width:1.25;"/></g><!--MD5=[f2c5c03aa1e8c0ba21c10a05e6444b8e]
+reverse link E1 to E4--><g id="link_E1_E4"><path d="M1366.1,120.2 C1209.575,155.2 1009.0875,200.0375 906.25,223.025 " fill="none" id="E1-backto-E4" style="stroke:#181818;stroke-width:1.25;"/><polygon fill="#181818" points="1382.075,116.625,1373.6666,113.3771,1367.4345,119.8894,1375.8429,123.1374,1382.075,116.625" style="stroke:#181818;stroke-width:1.25;"/></g><!--MD5=[62aa6af11e70f752912c1cb0466f24f7]
+reverse link E4 to E5--><g id="link_E4_E5"><path d="M755.3125,266.2125 C676.575,290.35 558.7875,326.4625 477.575,351.375 " fill="none" id="E4-backto-E5" style="stroke:#181818;stroke-width:1.25;"/><polygon fill="#181818" points="771,261.4,762.3631,258.8205,756.6601,265.8009,765.297,268.3804,771,261.4" style="stroke:#181818;stroke-width:1.25;"/></g><!--MD5=[6db378b65e1aef66a01cb3103812b399]
+reverse link E4 to E6--><g id="link_E4_E6"><path d="M770.3125,281.25 C734.8125,302.325 692.05,327.7 658.925,347.3625 " fill="none" id="E4-backto-E6" style="stroke:#181818;stroke-width:1.25;"/><polygon fill="#181818" points="784.5375,272.8,775.536,272.3271,771.6374,280.4543,780.6389,280.9272,784.5375,272.8" style="stroke:#181818;stroke-width:1.25;"/></g><!--MD5=[722ff4eef345aa10242dad44df0e98c7]
+reverse link E4 to E7--><g id="link_E4_E7"><path d="M838.75,289.5875 C838.75,308.775 838.75,330.2375 838.75,347.3625 " fill="none" id="E4-backto-E7" style="stroke:#181818;stroke-width:1.25;"/><polygon fill="#181818" points="838.75,272.8,833.75,280.3,838.75,287.8,843.75,280.3,838.75,272.8" style="stroke:#181818;stroke-width:1.25;"/></g><!--MD5=[c6fc7cdb0cabde04948078cf183fa696]
+reverse link E4 to E8--><g id="link_E4_E8"><path d="M912.4125,280.5125 C951.55,301.7 999.0125,327.4 1035.7375,347.2875 " fill="none" id="E4-backto-E8" style="stroke:#181818;stroke-width:1.25;"/><polygon fill="#181818" points="897.8625,272.6375,902.0748,280.6066,911.051,279.7833,906.8387,271.8142,897.8625,272.6375" style="stroke:#181818;stroke-width:1.25;"/></g><!--MD5=[12b85c4d420790db1e7d6becd0483003]
+reverse link E1 to E9--><g id="link_E1_E9"><path d="M1585,147.7625 C1585,168.3125 1585,189.425 1585,206.075 " fill="none" id="E1-backto-E9" style="stroke:#181818;stroke-width:1.25;"/><polygon fill="#181818" points="1585,131.5,1580,139,1585,146.5,1590,139,1585,131.5" style="stroke:#181818;stroke-width:1.25;"/></g><!--MD5=[23ac544a70576c3e717098101004234c]
+reverse link E9 to E10--><g id="link_E9_E10"><path d="M1512.675,280.9625 C1474.7875,302.1 1429.05,327.6125 1393.625,347.3625 " fill="none" id="E9-backto-E10" style="stroke:#181818;stroke-width:1.25;"/><polygon fill="#181818" points="1527.3125,272.8,1518.3272,272.083,1514.2095,280.1014,1523.1948,280.8184,1527.3125,272.8" style="stroke:#181818;stroke-width:1.25;"/></g><!--MD5=[1fc04a95fd77ad5ce46c1a3027516051]
+reverse link E9 to E11--><g id="link_E9_E11"><path d="M1585,289.5875 C1585,308.775 1585,330.2375 1585,347.3625 " fill="none" id="E9-backto-E11" style="stroke:#181818;stroke-width:1.25;"/><polygon fill="#181818" points="1585,272.8,1580,280.3,1585,287.8,1590,280.3,1585,272.8" style="stroke:#181818;stroke-width:1.25;"/></g><!--MD5=[2591d619a76bc2302db56e10d9c35932]
+reverse link E9 to E12--><g id="link_E9_E12"><path d="M1662.425,280.225 C1703.9625,301.475 1754.475,327.3125 1793.525,347.2875 " fill="none" id="E9-backto-E12" style="stroke:#181818;stroke-width:1.25;"/><polygon fill="#181818" points="1647.575,272.6375,1651.9816,280.5008,1660.9349,279.4575,1656.5283,271.5942,1647.575,272.6375" style="stroke:#181818;stroke-width:1.25;"/></g><!--MD5=[3fee3ad5e5217acac16f70fff5ed2dd5]
+reverse link E1 to E13--><g id="link_E1_E13"><path d="M1705.925,139.3625 C1747,162.5 1790.975,187.275 1824.6,206.2125 " fill="none" id="E1-backto-E13" style="stroke:#181818;stroke-width:1.25;"/><polygon fill="#181818" points="1691.5375,131.2625,1695.6158,139.301,1704.6045,138.6282,1700.5262,130.5896,1691.5375,131.2625" style="stroke:#181818;stroke-width:1.25;"/></g><!--MD5=[01db00f33b28669d6d9febea71002831]
+reverse link E13 to E14--><g id="link_E13_E14"><path d="M1952.85,280.9625 C1990.35,302.1 2035.6375,327.6125 2070.7,347.3625 " fill="none" id="E13-backto-E14" style="stroke:#181818;stroke-width:1.25;"/><polygon fill="#181818" points="1938.3625,272.8,1942.4408,280.8385,1951.4295,280.1657,1947.3512,272.1271,1938.3625,272.8" style="stroke:#181818;stroke-width:1.25;"/></g><!--MD5=[9020803b2dafc83a4acce5299a394948]
+reverse link E1 to E15--><g id="link_E1_E15"><path d="M1803.7125,122.65 C1949.2,156.85 2130.7,199.5125 2227.225,222.2 " fill="none" id="E1-backto-E15" style="stroke:#181818;stroke-width:1.25;"/><polygon fill="#181818" points="1787.5125,118.85,1793.6712,125.4318,1802.1155,122.2782,1795.9567,115.6965,1787.5125,118.85" style="stroke:#181818;stroke-width:1.25;"/></g><!--MD5=[58e4cf537c4d67f6b3da95fd5b934e63]
+reverse link E15 to E16--><g id="link_E15_E16"><path d="M2333.425,285.5125 C2350.675,305.675 2370.65,329.0125 2386.3625,347.3625 " fill="none" id="E15-backto-E16" style="stroke:#181818;stroke-width:1.25;"/><polygon fill="#181818" points="2322.5375,272.8,2323.62,281.7486,2332.2967,284.1912,2331.2141,275.2425,2322.5375,272.8" style="stroke:#181818;stroke-width:1.25;"/></g><!--MD5=[02b6faee729792e70f9b9676dfa33f3c]
+@startuml
+skinparam defaultFontName Noto Sans CJK SC
+skinparam defaultFontSize 12
+skinparam dpi 120
+scale max 2400*12000
+
+skin sysmlbw
+skinparam monochrome true
+skinparam wrapWidth 300
+hide circle
+
+comp def "前风窗除霜除雾控制" as E1  <<(T,blue) action  def>>  {
+##//doc//##
+仅表达功能分解；行为顺序、条件、并行与反馈见行为模型中的同名根模型。
+}
+comp usage "接收风窗除霜或除雾请求  " as E2  <<(T,blue) action>>  {
+}
+comp usage "接收风窗除霜除雾请求: F_LF_016  " as E3  <<(T,blue) action>>  {
+}
+comp usage "配置风窗模式参数  " as E4  <<(T,blue) action>>  {
+}
+comp usage "调节送风模式: F_LF_017  " as E5  <<(T,blue) action>>  {
+}
+comp usage "调节送风量: F_LF_018  " as E6  <<(T,blue) action>>  {
+}
+comp usage "调节空气循环方式: F_LF_019  " as E7  <<(T,blue) action>>  {
+}
+comp usage "保持座舱温度设定: F_LF_021  " as E8  <<(T,blue) action>>  {
+}
+comp usage "确定制冷除湿请求  " as E9  <<(T,blue) action>>  {
+}
+comp usage "调节制冷能力: F_LF_020  " as E10  <<(T,blue) action>>  {
+}
+comp usage "仲裁热管理能力请求: F_LF_023  " as E11  <<(T,blue) action>>  {
+}
+comp usage "判定低电量制冷许可: F_LF_024  " as E12  <<(T,blue) action>>  {
+}
+comp usage "反馈风窗运行信息  " as E13  <<(T,blue) action>>  {
+}
+comp usage "反馈风窗与空调状态: F_LF_022  " as E14  <<(T,blue) action>>  {
+}
+comp usage "执行风窗温控请求  " as E15  <<(T,blue) action>>  {
+}
+comp usage "控制前风窗除霜除雾模式: F_LF_026  " as E16  <<(T,blue) action>>  {
+}
+E1 *- - E2  
+E2 *- - E3  
+E1 *- - E4  
+E4 *- - E5  
+E4 *- - E6  
+E4 *- - E7  
+E4 *- - E8  
+E1 *- - E9  
+E9 *- - E10  
+E9 *- - E11  
+E9 *- - E12  
+E1 *- - E13  
+E13 *- - E14  
+E1 *- - E15  
+E15 *- - E16  
+@enduml
+
+PlantUML version 1.2022.7(Tue Aug 23 01:01:30 CST 2022)
+(EPL source distribution)
+Java Runtime: OpenJDK Runtime Environment
+JVM: OpenJDK 64-Bit Server VM
+Default Encoding: UTF-8
+Language: en
+Country: null
+--></g></svg>

@@ -1,0 +1,61 @@
+@startuml
+skinparam defaultFontName Noto Sans CJK SC
+skinparam defaultFontSize 12
+skinparam dpi 120
+scale max 2400*12000
+
+skin sysmlbw
+skinparam monochrome true
+skinparam wrapWidth 300
+hide circle
+
+comp def "前风窗除霜除雾控制" as E1  <<(T,blue) action  def>>  {
+##//doc//##
+仅表达功能分解；行为顺序、条件、并行与反馈见行为模型中的同名根模型。
+}
+comp usage "接收风窗除霜或除雾请求  " as E2  <<(T,blue) action>>  {
+}
+comp usage "接收风窗除霜除雾请求: F_LF_016  " as E3  <<(T,blue) action>>  {
+}
+comp usage "配置风窗模式参数  " as E4  <<(T,blue) action>>  {
+}
+comp usage "调节送风模式: F_LF_017  " as E5  <<(T,blue) action>>  {
+}
+comp usage "调节送风量: F_LF_018  " as E6  <<(T,blue) action>>  {
+}
+comp usage "调节空气循环方式: F_LF_019  " as E7  <<(T,blue) action>>  {
+}
+comp usage "保持座舱温度设定: F_LF_021  " as E8  <<(T,blue) action>>  {
+}
+comp usage "确定制冷除湿请求  " as E9  <<(T,blue) action>>  {
+}
+comp usage "调节制冷能力: F_LF_020  " as E10  <<(T,blue) action>>  {
+}
+comp usage "仲裁热管理能力请求: F_LF_023  " as E11  <<(T,blue) action>>  {
+}
+comp usage "判定低电量制冷许可: F_LF_024  " as E12  <<(T,blue) action>>  {
+}
+comp usage "反馈风窗运行信息  " as E13  <<(T,blue) action>>  {
+}
+comp usage "反馈风窗与空调状态: F_LF_022  " as E14  <<(T,blue) action>>  {
+}
+comp usage "执行风窗温控请求  " as E15  <<(T,blue) action>>  {
+}
+comp usage "控制前风窗除霜除雾模式: F_LF_026  " as E16  <<(T,blue) action>>  {
+}
+E1 *-- E2  
+E2 *-- E3  
+E1 *-- E4  
+E4 *-- E5  
+E4 *-- E6  
+E4 *-- E7  
+E4 *-- E8  
+E1 *-- E9  
+E9 *-- E10  
+E9 *-- E11  
+E9 *-- E12  
+E1 *-- E13  
+E13 *-- E14  
+E1 *-- E15  
+E15 *-- E16  
+@enduml

@@ -1,0 +1,5246 @@
+{
+  "canonical_model_count": 19,
+  "model_file_count_with_import_copies": 38,
+  "canonical_view_count": 54,
+  "total_view_count_with_import_copies": 108,
+  "native_export_engine": "OMG SysML v2 Pilot 0.63.1",
+  "image_renderer": "SysML Pilot bundled PlantUML 1.2022.7",
+  "font": "Noto Sans CJK SC",
+  "source_changed": false,
+  "records": [
+    {
+      "model_file": "功能模型/00_概念接口类型.sysml",
+      "source_sha256": "6bdc17566f82bbec10dfcfe91e90e9d83151bd98de64e74de1f1580bf01ce39e",
+      "suffix": "",
+      "selectors": [
+        "SEOV_ConceptTypes::C001",
+        "SEOV_ConceptTypes::C002",
+        "SEOV_ConceptTypes::C003",
+        "SEOV_ConceptTypes::C004",
+        "SEOV_ConceptTypes::C005",
+        "SEOV_ConceptTypes::C006",
+        "SEOV_ConceptTypes::C007",
+        "SEOV_ConceptTypes::C008",
+        "SEOV_ConceptTypes::C009",
+        "SEOV_ConceptTypes::C010",
+        "SEOV_ConceptTypes::C011",
+        "SEOV_ConceptTypes::C012",
+        "SEOV_ConceptTypes::C013",
+        "SEOV_ConceptTypes::C014",
+        "SEOV_ConceptTypes::C015",
+        "SEOV_ConceptTypes::C016",
+        "SEOV_ConceptTypes::C017",
+        "SEOV_ConceptTypes::C018",
+        "SEOV_ConceptTypes::C019",
+        "SEOV_ConceptTypes::C020",
+        "SEOV_ConceptTypes::C021",
+        "SEOV_ConceptTypes::C022",
+        "SEOV_ConceptTypes::C023",
+        "SEOV_ConceptTypes::C024",
+        "SEOV_ConceptTypes::C025",
+        "SEOV_ConceptTypes::C026",
+        "SEOV_ConceptTypes::C027",
+        "SEOV_ConceptTypes::C028",
+        "SEOV_ConceptTypes::C029",
+        "SEOV_ConceptTypes::C030",
+        "SEOV_ConceptTypes::C031",
+        "SEOV_ConceptTypes::C032",
+        "SEOV_ConceptTypes::C033",
+        "SEOV_ConceptTypes::C034",
+        "SEOV_ConceptTypes::C035",
+        "SEOV_ConceptTypes::C036",
+        "SEOV_ConceptTypes::C037",
+        "SEOV_ConceptTypes::C038",
+        "SEOV_ConceptTypes::C039",
+        "SEOV_ConceptTypes::C040",
+        "SEOV_ConceptTypes::C041",
+        "SEOV_ConceptTypes::C042",
+        "SEOV_ConceptTypes::C043",
+        "SEOV_ConceptTypes::C044",
+        "SEOV_ConceptTypes::C045",
+        "SEOV_ConceptTypes::C046",
+        "SEOV_ConceptTypes::C047",
+        "SEOV_ConceptTypes::C048",
+        "SEOV_ConceptTypes::C049",
+        "SEOV_ConceptTypes::C050",
+        "SEOV_ConceptTypes::C051",
+        "SEOV_ConceptTypes::C052",
+        "SEOV_ConceptTypes::C053",
+        "SEOV_ConceptTypes::C054",
+        "SEOV_ConceptTypes::C055",
+        "SEOV_ConceptTypes::C056",
+        "SEOV_ConceptTypes::C057",
+        "SEOV_ConceptTypes::C058",
+        "SEOV_ConceptTypes::C059",
+        "SEOV_ConceptTypes::C060",
+        "SEOV_ConceptTypes::C061",
+        "SEOV_ConceptTypes::C062",
+        "SEOV_ConceptTypes::C063",
+        "SEOV_ConceptTypes::C064",
+        "SEOV_ConceptTypes::C065",
+        "SEOV_ConceptTypes::C066",
+        "SEOV_ConceptTypes::C067",
+        "SEOV_ConceptTypes::C068",
+        "SEOV_ConceptTypes::C069",
+        "SEOV_ConceptTypes::C070",
+        "SEOV_ConceptTypes::C071",
+        "SEOV_ConceptTypes::C072",
+        "SEOV_ConceptTypes::C073",
+        "SEOV_ConceptTypes::C074",
+        "SEOV_ConceptTypes::C075",
+        "SEOV_ConceptTypes::C076",
+        "SEOV_ConceptTypes::C077",
+        "SEOV_ConceptTypes::C078",
+        "SEOV_ConceptTypes::C079",
+        "SEOV_ConceptTypes::C080",
+        "SEOV_ConceptTypes::C081",
+        "SEOV_ConceptTypes::C082",
+        "SEOV_ConceptTypes::C083",
+        "SEOV_ConceptTypes::C084",
+        "SEOV_ConceptTypes::C085",
+        "SEOV_ConceptTypes::C086",
+        "SEOV_ConceptTypes::C087",
+        "SEOV_ConceptTypes::C088",
+        "SEOV_ConceptTypes::C089",
+        "SEOV_ConceptTypes::C090",
+        "SEOV_ConceptTypes::C091",
+        "SEOV_ConceptTypes::C092",
+        "SEOV_ConceptTypes::C093",
+        "SEOV_ConceptTypes::C094",
+        "SEOV_ConceptTypes::C095",
+        "SEOV_ConceptTypes::C096",
+        "SEOV_ConceptTypes::C097",
+        "SEOV_ConceptTypes::C098",
+        "SEOV_ConceptTypes::C099",
+        "SEOV_ConceptTypes::C100",
+        "SEOV_ConceptTypes::C101",
+        "SEOV_ConceptTypes::C102",
+        "SEOV_ConceptTypes::C103",
+        "SEOV_ConceptTypes::C104",
+        "SEOV_ConceptTypes::C105",
+        "SEOV_ConceptTypes::C106",
+        "SEOV_ConceptTypes::C107",
+        "SEOV_ConceptTypes::C108",
+        "SEOV_ConceptTypes::C109",
+        "SEOV_ConceptTypes::C110",
+        "SEOV_ConceptTypes::C111",
+        "SEOV_ConceptTypes::C112",
+        "SEOV_ConceptTypes::C113",
+        "SEOV_ConceptTypes::C114",
+        "SEOV_ConceptTypes::C115",
+        "SEOV_ConceptTypes::C116",
+        "SEOV_ConceptTypes::C117",
+        "SEOV_ConceptTypes::C118",
+        "SEOV_ConceptTypes::C119",
+        "SEOV_ConceptTypes::C120",
+        "SEOV_ConceptTypes::C121",
+        "SEOV_ConceptTypes::C122",
+        "SEOV_ConceptTypes::C123",
+        "SEOV_ConceptTypes::C124",
+        "SEOV_ConceptTypes::C125",
+        "SEOV_ConceptTypes::C126",
+        "SEOV_ConceptTypes::C127",
+        "SEOV_ConceptTypes::C128",
+        "SEOV_ConceptTypes::C129",
+        "SEOV_ConceptTypes::C130",
+        "SEOV_ConceptTypes::C131",
+        "SEOV_ConceptTypes::C132",
+        "SEOV_ConceptTypes::C133",
+        "SEOV_ConceptTypes::C134",
+        "SEOV_ConceptTypes::C135",
+        "SEOV_ConceptTypes::C136",
+        "SEOV_ConceptTypes::C137",
+        "SEOV_ConceptTypes::C138",
+        "SEOV_ConceptTypes::C139",
+        "SEOV_ConceptTypes::C140",
+        "SEOV_ConceptTypes::C141",
+        "SEOV_ConceptTypes::C142",
+        "SEOV_ConceptTypes::C143",
+        "SEOV_ConceptTypes::C144",
+        "SEOV_ConceptTypes::C145",
+        "SEOV_ConceptTypes::C146",
+        "SEOV_ConceptTypes::C147",
+        "SEOV_ConceptTypes::C148",
+        "SEOV_ConceptTypes::C149",
+        "SEOV_ConceptTypes::C150",
+        "SEOV_ConceptTypes::C151",
+        "SEOV_ConceptTypes::C152",
+        "SEOV_ConceptTypes::C153",
+        "SEOV_ConceptTypes::C154",
+        "SEOV_ConceptTypes::C155",
+        "SEOV_ConceptTypes::C156",
+        "SEOV_ConceptTypes::C157",
+        "SEOV_ConceptTypes::C158",
+        "SEOV_ConceptTypes::C159",
+        "SEOV_ConceptTypes::C160",
+        "SEOV_ConceptTypes::C161",
+        "SEOV_ConceptTypes::C162",
+        "SEOV_ConceptTypes::C163",
+        "SEOV_ConceptTypes::C164",
+        "SEOV_ConceptTypes::C165",
+        "SEOV_ConceptTypes::C166",
+        "SEOV_ConceptTypes::C167",
+        "SEOV_ConceptTypes::C168",
+        "SEOV_ConceptTypes::C169",
+        "SEOV_ConceptTypes::C170",
+        "SEOV_ConceptTypes::C171",
+        "SEOV_ConceptTypes::C172",
+        "SEOV_ConceptTypes::C173",
+        "SEOV_ConceptTypes::C174",
+        "SEOV_ConceptTypes::C175",
+        "SEOV_ConceptTypes::C176",
+        "SEOV_ConceptTypes::C177",
+        "SEOV_ConceptTypes::C178",
+        "SEOV_ConceptTypes::C179",
+        "SEOV_ConceptTypes::C180",
+        "SEOV_ConceptTypes::C181",
+        "SEOV_ConceptTypes::C182",
+        "SEOV_ConceptTypes::C183",
+        "SEOV_ConceptTypes::C184",
+        "SEOV_ConceptTypes::C185",
+        "SEOV_ConceptTypes::C186",
+        "SEOV_ConceptTypes::C187",
+        "SEOV_ConceptTypes::C188",
+        "SEOV_ConceptTypes::C189",
+        "SEOV_ConceptTypes::C190",
+        "SEOV_ConceptTypes::C191",
+        "SEOV_ConceptTypes::C192",
+        "SEOV_ConceptTypes::C193",
+        "SEOV_ConceptTypes::C194",
+        "SEOV_ConceptTypes::C195"
+      ],
+      "native_mode": "TREE",
+      "engine": "OMG SysML v2 Pilot 0.63.1 native visualization export",
+      "jar_sha256": "67c914092f4520ba98548b285c5a9a8bc08f92a0aeec7b763e12a574e91f9ff7",
+      "render_method": "完整源模型目录索引＋原生分页详图（未交付截断图）",
+      "output_stem": "功能模型/00_概念接口类型",
+      "is_index": true,
+      "artifacts": {
+        "puml": {
+          "file": "功能模型/00_概念接口类型.puml",
+          "sha256": "59f37e64e0f8c88d0418fece48b9eb5bea3dd6c05d354f3a8e5da00cfb3122cf",
+          "bytes": 8633
+        },
+        "svg": {
+          "file": "功能模型/00_概念接口类型.svg",
+          "sha256": "8c50d225bb4e626d15bd614abfd63d74e2f8845e73d7bb49f3f6518c3b0d17af",
+          "bytes": 54676
+        },
+        "png": {
+          "file": "功能模型/00_概念接口类型.png",
+          "sha256": "10578e89dc4ac067925e40716b205d27d1b46451ff655f69c63faaefa27d1b90",
+          "bytes": 741100
+        }
+      },
+      "png_dimensions": [
+        761,
+        7352
+      ]
+    },
+    {
+      "model_file": "功能模型/00_概念接口类型.sysml",
+      "source_sha256": "6bdc17566f82bbec10dfcfe91e90e9d83151bd98de64e74de1f1580bf01ce39e",
+      "suffix": "_详情_01",
+      "selectors": [
+        "SEOV_ConceptTypes::C001",
+        "SEOV_ConceptTypes::C002",
+        "SEOV_ConceptTypes::C003",
+        "SEOV_ConceptTypes::C004",
+        "SEOV_ConceptTypes::C005",
+        "SEOV_ConceptTypes::C006",
+        "SEOV_ConceptTypes::C007",
+        "SEOV_ConceptTypes::C008"
+      ],
+      "native_mode": "TREE",
+      "engine": "OMG SysML v2 Pilot 0.63.1 native visualization export",
+      "jar_sha256": "67c914092f4520ba98548b285c5a9a8bc08f92a0aeec7b763e12a574e91f9ff7",
+      "render_method": "OMG SysML v2 Pilot原生PlantUML导出 → PlantUML图像",
+      "output_stem": "功能模型/00_概念接口类型_详情_01",
+      "is_index": false,
+      "artifacts": {
+        "puml": {
+          "file": "功能模型/00_概念接口类型_详情_01.puml",
+          "sha256": "906dd0fb362dcde537430bad6647fc57a41585891aecf44d612656d45da6ab3f",
+          "bytes": 1528
+        },
+        "svg": {
+          "file": "功能模型/00_概念接口类型_详情_01.svg",
+          "sha256": "b6fcd17b6003a8750d048e04a1544172cc70154a39c99c5b90b9cdb1e0349bdc",
+          "bytes": 12708
+        },
+        "png": {
+          "file": "功能模型/00_概念接口类型_详情_01.png",
+          "sha256": "511e8c0128f0d5f6de0824d08484d8ef43de8a0a04eddb5472ba8481b491f67d",
+          "bytes": 81902
+        }
+      },
+      "png_dimensions": [
+        3000,
+        182
+      ]
+    },
+    {
+      "model_file": "功能模型/00_概念接口类型.sysml",
+      "source_sha256": "6bdc17566f82bbec10dfcfe91e90e9d83151bd98de64e74de1f1580bf01ce39e",
+      "suffix": "_详情_02",
+      "selectors": [
+        "SEOV_ConceptTypes::C009",
+        "SEOV_ConceptTypes::C010",
+        "SEOV_ConceptTypes::C011",
+        "SEOV_ConceptTypes::C012",
+        "SEOV_ConceptTypes::C013",
+        "SEOV_ConceptTypes::C014",
+        "SEOV_ConceptTypes::C015",
+        "SEOV_ConceptTypes::C016"
+      ],
+      "native_mode": "TREE",
+      "engine": "OMG SysML v2 Pilot 0.63.1 native visualization export",
+      "jar_sha256": "67c914092f4520ba98548b285c5a9a8bc08f92a0aeec7b763e12a574e91f9ff7",
+      "render_method": "OMG SysML v2 Pilot原生PlantUML导出 → PlantUML图像",
+      "output_stem": "功能模型/00_概念接口类型_详情_02",
+      "is_index": false,
+      "artifacts": {
+        "puml": {
+          "file": "功能模型/00_概念接口类型_详情_02.puml",
+          "sha256": "aca612e548400956e9f4b2e5548e86dbd316a6f67db5c870d3801a4106eccaa6",
+          "bytes": 1617
+        },
+        "svg": {
+          "file": "功能模型/00_概念接口类型_详情_02.svg",
+          "sha256": "1c188ea0cb9d470f103e03dccf612e8ff022a68f9548a4efe81dd699e9ca507a",
+          "bytes": 13766
+        },
+        "png": {
+          "file": "功能模型/00_概念接口类型_详情_02.png",
+          "sha256": "0e5ec9d9f8dbc7f538369353410b9ea5720a18e28550b0b829bb989ca5a5e852",
+          "bytes": 87827
+        }
+      },
+      "png_dimensions": [
+        3000,
+        180
+      ]
+    },
+    {
+      "model_file": "功能模型/00_概念接口类型.sysml",
+      "source_sha256": "6bdc17566f82bbec10dfcfe91e90e9d83151bd98de64e74de1f1580bf01ce39e",
+      "suffix": "_详情_03",
+      "selectors": [
+        "SEOV_ConceptTypes::C017",
+        "SEOV_ConceptTypes::C018",
+        "SEOV_ConceptTypes::C019",
+        "SEOV_ConceptTypes::C020",
+        "SEOV_ConceptTypes::C021",
+        "SEOV_ConceptTypes::C022",
+        "SEOV_ConceptTypes::C023",
+        "SEOV_ConceptTypes::C024"
+      ],
+      "native_mode": "TREE",
+      "engine": "OMG SysML v2 Pilot 0.63.1 native visualization export",
+      "jar_sha256": "67c914092f4520ba98548b285c5a9a8bc08f92a0aeec7b763e12a574e91f9ff7",
+      "render_method": "OMG SysML v2 Pilot原生PlantUML导出 → PlantUML图像",
+      "output_stem": "功能模型/00_概念接口类型_详情_03",
+      "is_index": false,
+      "artifacts": {
+        "puml": {
+          "file": "功能模型/00_概念接口类型_详情_03.puml",
+          "sha256": "d2706973e23b869c9469cef0890c0a00f2d012d3eee4c6ce5f87432fd8b476de",
+          "bytes": 1472
+        },
+        "svg": {
+          "file": "功能模型/00_概念接口类型_详情_03.svg",
+          "sha256": "91b883dc0df3e17f1a4be2cb0a5e7519551d10623a12ec7e0e8766a752d58df0",
+          "bytes": 11453
+        },
+        "png": {
+          "file": "功能模型/00_概念接口类型_详情_03.png",
+          "sha256": "9784df3d95fe54c2412677c331a6646f1aadf72cd7c1f94f7a88cc67b8c72105",
+          "bytes": 49063
+        }
+      },
+      "png_dimensions": [
+        2844,
+        139
+      ]
+    },
+    {
+      "model_file": "功能模型/00_概念接口类型.sysml",
+      "source_sha256": "6bdc17566f82bbec10dfcfe91e90e9d83151bd98de64e74de1f1580bf01ce39e",
+      "suffix": "_详情_04",
+      "selectors": [
+        "SEOV_ConceptTypes::C025",
+        "SEOV_ConceptTypes::C026",
+        "SEOV_ConceptTypes::C027",
+        "SEOV_ConceptTypes::C028",
+        "SEOV_ConceptTypes::C029",
+        "SEOV_ConceptTypes::C030",
+        "SEOV_ConceptTypes::C031",
+        "SEOV_ConceptTypes::C032"
+      ],
+      "native_mode": "TREE",
+      "engine": "OMG SysML v2 Pilot 0.63.1 native visualization export",
+      "jar_sha256": "67c914092f4520ba98548b285c5a9a8bc08f92a0aeec7b763e12a574e91f9ff7",
+      "render_method": "OMG SysML v2 Pilot原生PlantUML导出 → PlantUML图像",
+      "output_stem": "功能模型/00_概念接口类型_详情_04",
+      "is_index": false,
+      "artifacts": {
+        "puml": {
+          "file": "功能模型/00_概念接口类型_详情_04.puml",
+          "sha256": "378e41a56dca33e9c191600eb35166b71003639f8dfa33ffa29fb0d8b1afb153",
+          "bytes": 1496
+        },
+        "svg": {
+          "file": "功能模型/00_概念接口类型_详情_04.svg",
+          "sha256": "fe3b07a7f570c56d43cc4f0426476387db87ca3692c5ca2a8454a856d5bd9005",
+          "bytes": 11929
+        },
+        "png": {
+          "file": "功能模型/00_概念接口类型_详情_04.png",
+          "sha256": "a8fc69678c396c05eb5651267dc9b2893e30bcb28b6082404313ba3855dd8fd0",
+          "bytes": 46996
+        }
+      },
+      "png_dimensions": [
+        2747,
+        184
+      ]
+    },
+    {
+      "model_file": "功能模型/00_概念接口类型.sysml",
+      "source_sha256": "6bdc17566f82bbec10dfcfe91e90e9d83151bd98de64e74de1f1580bf01ce39e",
+      "suffix": "_详情_05",
+      "selectors": [
+        "SEOV_ConceptTypes::C033",
+        "SEOV_ConceptTypes::C034",
+        "SEOV_ConceptTypes::C035",
+        "SEOV_ConceptTypes::C036",
+        "SEOV_ConceptTypes::C037",
+        "SEOV_ConceptTypes::C038",
+        "SEOV_ConceptTypes::C039",
+        "SEOV_ConceptTypes::C040"
+      ],
+      "native_mode": "TREE",
+      "engine": "OMG SysML v2 Pilot 0.63.1 native visualization export",
+      "jar_sha256": "67c914092f4520ba98548b285c5a9a8bc08f92a0aeec7b763e12a574e91f9ff7",
+      "render_method": "OMG SysML v2 Pilot原生PlantUML导出 → PlantUML图像",
+      "output_stem": "功能模型/00_概念接口类型_详情_05",
+      "is_index": false,
+      "artifacts": {
+        "puml": {
+          "file": "功能模型/00_概念接口类型_详情_05.puml",
+          "sha256": "9ec41109e0a4dbb2de914a851f389e57632cf2bf0e18e70ec7d9a8f4cf1f6efd",
+          "bytes": 1532
+        },
+        "svg": {
+          "file": "功能模型/00_概念接口类型_详情_05.svg",
+          "sha256": "0b1026cef852fbdd2c2827b90fb2909ed0955c2d1cdf46f0e3729946e44acabe",
+          "bytes": 11563
+        },
+        "png": {
+          "file": "功能模型/00_概念接口类型_详情_05.png",
+          "sha256": "30ddb053e8d610ec427065693d12a4bcda6283ff8bde2addb79b39c90387c4f0",
+          "bytes": 33128
+        }
+      },
+      "png_dimensions": [
+        2997,
+        139
+      ]
+    },
+    {
+      "model_file": "功能模型/00_概念接口类型.sysml",
+      "source_sha256": "6bdc17566f82bbec10dfcfe91e90e9d83151bd98de64e74de1f1580bf01ce39e",
+      "suffix": "_详情_06",
+      "selectors": [
+        "SEOV_ConceptTypes::C041",
+        "SEOV_ConceptTypes::C042",
+        "SEOV_ConceptTypes::C043",
+        "SEOV_ConceptTypes::C044",
+        "SEOV_ConceptTypes::C045",
+        "SEOV_ConceptTypes::C046",
+        "SEOV_ConceptTypes::C047",
+        "SEOV_ConceptTypes::C048"
+      ],
+      "native_mode": "TREE",
+      "engine": "OMG SysML v2 Pilot 0.63.1 native visualization export",
+      "jar_sha256": "67c914092f4520ba98548b285c5a9a8bc08f92a0aeec7b763e12a574e91f9ff7",
+      "render_method": "OMG SysML v2 Pilot原生PlantUML导出 → PlantUML图像",
+      "output_stem": "功能模型/00_概念接口类型_详情_06",
+      "is_index": false,
+      "artifacts": {
+        "puml": {
+          "file": "功能模型/00_概念接口类型_详情_06.puml",
+          "sha256": "db73917f2c447f42c44216b074af2ffe9cb7d72a3649d456989a753c133abee7",
+          "bytes": 1524
+        },
+        "svg": {
+          "file": "功能模型/00_概念接口类型_详情_06.svg",
+          "sha256": "912c9161032e90a5e6fbd8b7d7eef46bcff3417066ae6305cd25ca080a5bd116",
+          "bytes": 11560
+        },
+        "png": {
+          "file": "功能模型/00_概念接口类型_详情_06.png",
+          "sha256": "f54dcf281217198bb923e1b3e8b1ce249b4e3ae3fd971bad51f1e95eacddf38f",
+          "bytes": 47155
+        }
+      },
+      "png_dimensions": [
+        2880,
+        139
+      ]
+    },
+    {
+      "model_file": "功能模型/00_概念接口类型.sysml",
+      "source_sha256": "6bdc17566f82bbec10dfcfe91e90e9d83151bd98de64e74de1f1580bf01ce39e",
+      "suffix": "_详情_07",
+      "selectors": [
+        "SEOV_ConceptTypes::C049",
+        "SEOV_ConceptTypes::C050",
+        "SEOV_ConceptTypes::C051",
+        "SEOV_ConceptTypes::C052",
+        "SEOV_ConceptTypes::C053",
+        "SEOV_ConceptTypes::C054",
+        "SEOV_ConceptTypes::C055",
+        "SEOV_ConceptTypes::C056"
+      ],
+      "native_mode": "TREE",
+      "engine": "OMG SysML v2 Pilot 0.63.1 native visualization export",
+      "jar_sha256": "67c914092f4520ba98548b285c5a9a8bc08f92a0aeec7b763e12a574e91f9ff7",
+      "render_method": "OMG SysML v2 Pilot原生PlantUML导出 → PlantUML图像",
+      "output_stem": "功能模型/00_概念接口类型_详情_07",
+      "is_index": false,
+      "artifacts": {
+        "puml": {
+          "file": "功能模型/00_概念接口类型_详情_07.puml",
+          "sha256": "1d83156158007efbcaa591b63171f87f101ecdb5d039e8d291e967ea6c89cd0d",
+          "bytes": 1399
+        },
+        "svg": {
+          "file": "功能模型/00_概念接口类型_详情_07.svg",
+          "sha256": "3a91d23b31129cf503ba39f24739fe3796611510b49d5808a65d28472b8900dc",
+          "bytes": 11267
+        },
+        "png": {
+          "file": "功能模型/00_概念接口类型_详情_07.png",
+          "sha256": "c45dd849b995c8df258201ed1bfcf4a4c55ea19d18a78b39041061885404aae2",
+          "bytes": 43244
+        }
+      },
+      "png_dimensions": [
+        2647,
+        139
+      ]
+    },
+    {
+      "model_file": "功能模型/00_概念接口类型.sysml",
+      "source_sha256": "6bdc17566f82bbec10dfcfe91e90e9d83151bd98de64e74de1f1580bf01ce39e",
+      "suffix": "_详情_08",
+      "selectors": [
+        "SEOV_ConceptTypes::C057",
+        "SEOV_ConceptTypes::C058",
+        "SEOV_ConceptTypes::C059",
+        "SEOV_ConceptTypes::C060",
+        "SEOV_ConceptTypes::C061",
+        "SEOV_ConceptTypes::C062",
+        "SEOV_ConceptTypes::C063",
+        "SEOV_ConceptTypes::C064"
+      ],
+      "native_mode": "TREE",
+      "engine": "OMG SysML v2 Pilot 0.63.1 native visualization export",
+      "jar_sha256": "67c914092f4520ba98548b285c5a9a8bc08f92a0aeec7b763e12a574e91f9ff7",
+      "render_method": "OMG SysML v2 Pilot原生PlantUML导出 → PlantUML图像",
+      "output_stem": "功能模型/00_概念接口类型_详情_08",
+      "is_index": false,
+      "artifacts": {
+        "puml": {
+          "file": "功能模型/00_概念接口类型_详情_08.puml",
+          "sha256": "2ae9205a1acb7da119a2ecb21f8ca105f78ac54fca19c8e98ba2c34e13bc9b4f",
+          "bytes": 1503
+        },
+        "svg": {
+          "file": "功能模型/00_概念接口类型_详情_08.svg",
+          "sha256": "7ddb9d62c191c50195c99bcc0664bd6c823bdd3520de7b9059bab8e03a4ac87c",
+          "bytes": 12196
+        },
+        "png": {
+          "file": "功能模型/00_概念接口类型_详情_08.png",
+          "sha256": "0ac03cded9c37382211777c900cb0bb231d0840128ec06125ffa7c771cff557a",
+          "bytes": 54705
+        }
+      },
+      "png_dimensions": [
+        2776,
+        184
+      ]
+    },
+    {
+      "model_file": "功能模型/00_概念接口类型.sysml",
+      "source_sha256": "6bdc17566f82bbec10dfcfe91e90e9d83151bd98de64e74de1f1580bf01ce39e",
+      "suffix": "_详情_09",
+      "selectors": [
+        "SEOV_ConceptTypes::C065",
+        "SEOV_ConceptTypes::C066",
+        "SEOV_ConceptTypes::C067",
+        "SEOV_ConceptTypes::C068",
+        "SEOV_ConceptTypes::C069",
+        "SEOV_ConceptTypes::C070",
+        "SEOV_ConceptTypes::C071",
+        "SEOV_ConceptTypes::C072"
+      ],
+      "native_mode": "TREE",
+      "engine": "OMG SysML v2 Pilot 0.63.1 native visualization export",
+      "jar_sha256": "67c914092f4520ba98548b285c5a9a8bc08f92a0aeec7b763e12a574e91f9ff7",
+      "render_method": "OMG SysML v2 Pilot原生PlantUML导出 → PlantUML图像",
+      "output_stem": "功能模型/00_概念接口类型_详情_09",
+      "is_index": false,
+      "artifacts": {
+        "puml": {
+          "file": "功能模型/00_概念接口类型_详情_09.puml",
+          "sha256": "68aa8a413cd6b6c59a9aa932df348cf8155922eef46672aea47574ec6b3173a5",
+          "bytes": 1517
+        },
+        "svg": {
+          "file": "功能模型/00_概念接口类型_详情_09.svg",
+          "sha256": "b30a4d3c05222ac9b64946867af467a16524814b4c11bc6ed4da9c6d5691b9f4",
+          "bytes": 11539
+        },
+        "png": {
+          "file": "功能模型/00_概念接口类型_详情_09.png",
+          "sha256": "bf2a5c7e0af039f29f957905d884f764c04ebc4b6f069c7b648bac01522d31c1",
+          "bytes": 64274
+        }
+      },
+      "png_dimensions": [
+        2880,
+        139
+      ]
+    },
+    {
+      "model_file": "功能模型/00_概念接口类型.sysml",
+      "source_sha256": "6bdc17566f82bbec10dfcfe91e90e9d83151bd98de64e74de1f1580bf01ce39e",
+      "suffix": "_详情_10",
+      "selectors": [
+        "SEOV_ConceptTypes::C073",
+        "SEOV_ConceptTypes::C074",
+        "SEOV_ConceptTypes::C075",
+        "SEOV_ConceptTypes::C076",
+        "SEOV_ConceptTypes::C077",
+        "SEOV_ConceptTypes::C078",
+        "SEOV_ConceptTypes::C079",
+        "SEOV_ConceptTypes::C080"
+      ],
+      "native_mode": "TREE",
+      "engine": "OMG SysML v2 Pilot 0.63.1 native visualization export",
+      "jar_sha256": "67c914092f4520ba98548b285c5a9a8bc08f92a0aeec7b763e12a574e91f9ff7",
+      "render_method": "OMG SysML v2 Pilot原生PlantUML导出 → PlantUML图像",
+      "output_stem": "功能模型/00_概念接口类型_详情_10",
+      "is_index": false,
+      "artifacts": {
+        "puml": {
+          "file": "功能模型/00_概念接口类型_详情_10.puml",
+          "sha256": "6f741c1051299aee80a10096760510f427d3fcdd2f12d15e6701830744e384de",
+          "bytes": 1448
+        },
+        "svg": {
+          "file": "功能模型/00_概念接口类型_详情_10.svg",
+          "sha256": "05071a666f159ad03aa24366b05dfd24b77ac42a05a8ca627b97c784c247bd64",
+          "bytes": 11422
+        },
+        "png": {
+          "file": "功能模型/00_概念接口类型_详情_10.png",
+          "sha256": "7ba2bda3ace27f15431b7ad65e434e3600572f1df77be504fbadf6f6488122cb",
+          "bytes": 35825
+        }
+      },
+      "png_dimensions": [
+        2727,
+        139
+      ]
+    },
+    {
+      "model_file": "功能模型/00_概念接口类型.sysml",
+      "source_sha256": "6bdc17566f82bbec10dfcfe91e90e9d83151bd98de64e74de1f1580bf01ce39e",
+      "suffix": "_详情_11",
+      "selectors": [
+        "SEOV_ConceptTypes::C081",
+        "SEOV_ConceptTypes::C082",
+        "SEOV_ConceptTypes::C083",
+        "SEOV_ConceptTypes::C084",
+        "SEOV_ConceptTypes::C085",
+        "SEOV_ConceptTypes::C086",
+        "SEOV_ConceptTypes::C087",
+        "SEOV_ConceptTypes::C088"
+      ],
+      "native_mode": "TREE",
+      "engine": "OMG SysML v2 Pilot 0.63.1 native visualization export",
+      "jar_sha256": "67c914092f4520ba98548b285c5a9a8bc08f92a0aeec7b763e12a574e91f9ff7",
+      "render_method": "OMG SysML v2 Pilot原生PlantUML导出 → PlantUML图像",
+      "output_stem": "功能模型/00_概念接口类型_详情_11",
+      "is_index": false,
+      "artifacts": {
+        "puml": {
+          "file": "功能模型/00_概念接口类型_详情_11.puml",
+          "sha256": "d767969b560482616e96208ceecef3b1c9f28ec3e28bcde938da82817b31e3ca",
+          "bytes": 1422
+        },
+        "svg": {
+          "file": "功能模型/00_概念接口类型_详情_11.svg",
+          "sha256": "f405d01ceab40d877e728b09fab403e5d1d79a83d60c98bd9695e696b8b00871",
+          "bytes": 11355
+        },
+        "png": {
+          "file": "功能模型/00_概念接口类型_详情_11.png",
+          "sha256": "9002d2a54793b3adde09880cda8f0c73d1e5f3f29a089da4963b2c6f2ec17b42",
+          "bytes": 55429
+        }
+      },
+      "png_dimensions": [
+        2628,
+        139
+      ]
+    },
+    {
+      "model_file": "功能模型/00_概念接口类型.sysml",
+      "source_sha256": "6bdc17566f82bbec10dfcfe91e90e9d83151bd98de64e74de1f1580bf01ce39e",
+      "suffix": "_详情_12",
+      "selectors": [
+        "SEOV_ConceptTypes::C089",
+        "SEOV_ConceptTypes::C090",
+        "SEOV_ConceptTypes::C091",
+        "SEOV_ConceptTypes::C092",
+        "SEOV_ConceptTypes::C093",
+        "SEOV_ConceptTypes::C094",
+        "SEOV_ConceptTypes::C095",
+        "SEOV_ConceptTypes::C096"
+      ],
+      "native_mode": "TREE",
+      "engine": "OMG SysML v2 Pilot 0.63.1 native visualization export",
+      "jar_sha256": "67c914092f4520ba98548b285c5a9a8bc08f92a0aeec7b763e12a574e91f9ff7",
+      "render_method": "OMG SysML v2 Pilot原生PlantUML导出 → PlantUML图像",
+      "output_stem": "功能模型/00_概念接口类型_详情_12",
+      "is_index": false,
+      "artifacts": {
+        "puml": {
+          "file": "功能模型/00_概念接口类型_详情_12.puml",
+          "sha256": "b3cdc272d33ef5894d6250e51cf6df865caa0425c4485b9918f51dada5658d34",
+          "bytes": 1574
+        },
+        "svg": {
+          "file": "功能模型/00_概念接口类型_详情_12.svg",
+          "sha256": "f200149c6a89dbc8f96f60ac4be8cad48334acd4b779193039c841ff5ae32e51",
+          "bytes": 13821
+        },
+        "png": {
+          "file": "功能模型/00_概念接口类型_详情_12.png",
+          "sha256": "b2b33b4b4dacf5848a321408db60d1d0ba9beff141ed4888c354c1cc566f2cca",
+          "bytes": 91614
+        }
+      },
+      "png_dimensions": [
+        2999,
+        182
+      ]
+    },
+    {
+      "model_file": "功能模型/00_概念接口类型.sysml",
+      "source_sha256": "6bdc17566f82bbec10dfcfe91e90e9d83151bd98de64e74de1f1580bf01ce39e",
+      "suffix": "_详情_13",
+      "selectors": [
+        "SEOV_ConceptTypes::C097",
+        "SEOV_ConceptTypes::C098",
+        "SEOV_ConceptTypes::C099",
+        "SEOV_ConceptTypes::C100",
+        "SEOV_ConceptTypes::C101",
+        "SEOV_ConceptTypes::C102",
+        "SEOV_ConceptTypes::C103",
+        "SEOV_ConceptTypes::C104"
+      ],
+      "native_mode": "TREE",
+      "engine": "OMG SysML v2 Pilot 0.63.1 native visualization export",
+      "jar_sha256": "67c914092f4520ba98548b285c5a9a8bc08f92a0aeec7b763e12a574e91f9ff7",
+      "render_method": "OMG SysML v2 Pilot原生PlantUML导出 → PlantUML图像",
+      "output_stem": "功能模型/00_概念接口类型_详情_13",
+      "is_index": false,
+      "artifacts": {
+        "puml": {
+          "file": "功能模型/00_概念接口类型_详情_13.puml",
+          "sha256": "675723e1df552f35a5c1cc4da175d0f5cf01366a65958b118f8ee443ef15bef3",
+          "bytes": 1504
+        },
+        "svg": {
+          "file": "功能模型/00_概念接口类型_详情_13.svg",
+          "sha256": "9b623df53410dbd1507419252cb7b89f9ae49fd00e786c0bdaedc23376203397",
+          "bytes": 11535
+        },
+        "png": {
+          "file": "功能模型/00_概念接口类型_详情_13.png",
+          "sha256": "929a6123f41bee29017a8f841402a8e7e1f70bb6a59d29f961644ad0d44e610e",
+          "bytes": 51240
+        }
+      },
+      "png_dimensions": [
+        2800,
+        139
+      ]
+    },
+    {
+      "model_file": "功能模型/00_概念接口类型.sysml",
+      "source_sha256": "6bdc17566f82bbec10dfcfe91e90e9d83151bd98de64e74de1f1580bf01ce39e",
+      "suffix": "_详情_14",
+      "selectors": [
+        "SEOV_ConceptTypes::C105",
+        "SEOV_ConceptTypes::C106",
+        "SEOV_ConceptTypes::C107",
+        "SEOV_ConceptTypes::C108",
+        "SEOV_ConceptTypes::C109",
+        "SEOV_ConceptTypes::C110",
+        "SEOV_ConceptTypes::C111",
+        "SEOV_ConceptTypes::C112"
+      ],
+      "native_mode": "TREE",
+      "engine": "OMG SysML v2 Pilot 0.63.1 native visualization export",
+      "jar_sha256": "67c914092f4520ba98548b285c5a9a8bc08f92a0aeec7b763e12a574e91f9ff7",
+      "render_method": "OMG SysML v2 Pilot原生PlantUML导出 → PlantUML图像",
+      "output_stem": "功能模型/00_概念接口类型_详情_14",
+      "is_index": false,
+      "artifacts": {
+        "puml": {
+          "file": "功能模型/00_概念接口类型_详情_14.puml",
+          "sha256": "1e2874a3d9323a060fd42243d042e474bca10a13443ac31a19828d288d89eace",
+          "bytes": 1540
+        },
+        "svg": {
+          "file": "功能模型/00_概念接口类型_详情_14.svg",
+          "sha256": "10b33ddd47efbba29be49c6353f3636ff3b175787caaaae7c957960b75dfbf38",
+          "bytes": 11558
+        },
+        "png": {
+          "file": "功能模型/00_概念接口类型_详情_14.png",
+          "sha256": "ea343a86832da29dd6d75bd75a1e59f004471e68d5fe7a09d04586da392954d5",
+          "bytes": 61321
+        }
+      },
+      "png_dimensions": [
+        2932,
+        139
+      ]
+    },
+    {
+      "model_file": "功能模型/00_概念接口类型.sysml",
+      "source_sha256": "6bdc17566f82bbec10dfcfe91e90e9d83151bd98de64e74de1f1580bf01ce39e",
+      "suffix": "_详情_15",
+      "selectors": [
+        "SEOV_ConceptTypes::C113",
+        "SEOV_ConceptTypes::C114",
+        "SEOV_ConceptTypes::C115",
+        "SEOV_ConceptTypes::C116",
+        "SEOV_ConceptTypes::C117",
+        "SEOV_ConceptTypes::C118",
+        "SEOV_ConceptTypes::C119",
+        "SEOV_ConceptTypes::C120"
+      ],
+      "native_mode": "TREE",
+      "engine": "OMG SysML v2 Pilot 0.63.1 native visualization export",
+      "jar_sha256": "67c914092f4520ba98548b285c5a9a8bc08f92a0aeec7b763e12a574e91f9ff7",
+      "render_method": "OMG SysML v2 Pilot原生PlantUML导出 → PlantUML图像",
+      "output_stem": "功能模型/00_概念接口类型_详情_15",
+      "is_index": false,
+      "artifacts": {
+        "puml": {
+          "file": "功能模型/00_概念接口类型_详情_15.puml",
+          "sha256": "069addb955159a2c07be61057df5438d33f48c4c471e87e5f073a8457a897ed5",
+          "bytes": 1490
+        },
+        "svg": {
+          "file": "功能模型/00_概念接口类型_详情_15.svg",
+          "sha256": "fd3831a7793f9f33e07c511946c6af8f2fd7b155375d2b5bf1d3fd13d494c029",
+          "bytes": 11756
+        },
+        "png": {
+          "file": "功能模型/00_概念接口类型_详情_15.png",
+          "sha256": "df7d0c7ff3d8d06130162337a966feac2abbac1b8a78fbe2cb519f7c57f6b67e",
+          "bytes": 50737
+        }
+      },
+      "png_dimensions": [
+        2881,
+        163
+      ]
+    },
+    {
+      "model_file": "功能模型/00_概念接口类型.sysml",
+      "source_sha256": "6bdc17566f82bbec10dfcfe91e90e9d83151bd98de64e74de1f1580bf01ce39e",
+      "suffix": "_详情_16",
+      "selectors": [
+        "SEOV_ConceptTypes::C121",
+        "SEOV_ConceptTypes::C122",
+        "SEOV_ConceptTypes::C123",
+        "SEOV_ConceptTypes::C124",
+        "SEOV_ConceptTypes::C125",
+        "SEOV_ConceptTypes::C126",
+        "SEOV_ConceptTypes::C127",
+        "SEOV_ConceptTypes::C128"
+      ],
+      "native_mode": "TREE",
+      "engine": "OMG SysML v2 Pilot 0.63.1 native visualization export",
+      "jar_sha256": "67c914092f4520ba98548b285c5a9a8bc08f92a0aeec7b763e12a574e91f9ff7",
+      "render_method": "OMG SysML v2 Pilot原生PlantUML导出 → PlantUML图像",
+      "output_stem": "功能模型/00_概念接口类型_详情_16",
+      "is_index": false,
+      "artifacts": {
+        "puml": {
+          "file": "功能模型/00_概念接口类型_详情_16.puml",
+          "sha256": "f00b0aa47d4c367ee7e62572b13e2eb70d16e0b2922f3269a11dd54b5623d534",
+          "bytes": 1606
+        },
+        "svg": {
+          "file": "功能模型/00_概念接口类型_详情_16.svg",
+          "sha256": "b818d0c9663afa49071418b01e594ea0a4556339462116a7a7bcbd338cfaef02",
+          "bytes": 12532
+        },
+        "png": {
+          "file": "功能模型/00_概念接口类型_详情_16.png",
+          "sha256": "48b19dff7741ac21bcb78dc6a3f5e821d771cca751ec4b0f4cf5ce5cff68fdbc",
+          "bytes": 64316
+        }
+      },
+      "png_dimensions": [
+        3000,
+        184
+      ]
+    },
+    {
+      "model_file": "功能模型/00_概念接口类型.sysml",
+      "source_sha256": "6bdc17566f82bbec10dfcfe91e90e9d83151bd98de64e74de1f1580bf01ce39e",
+      "suffix": "_详情_17",
+      "selectors": [
+        "SEOV_ConceptTypes::C129",
+        "SEOV_ConceptTypes::C130",
+        "SEOV_ConceptTypes::C131",
+        "SEOV_ConceptTypes::C132",
+        "SEOV_ConceptTypes::C133",
+        "SEOV_ConceptTypes::C134",
+        "SEOV_ConceptTypes::C135",
+        "SEOV_ConceptTypes::C136"
+      ],
+      "native_mode": "TREE",
+      "engine": "OMG SysML v2 Pilot 0.63.1 native visualization export",
+      "jar_sha256": "67c914092f4520ba98548b285c5a9a8bc08f92a0aeec7b763e12a574e91f9ff7",
+      "render_method": "OMG SysML v2 Pilot原生PlantUML导出 → PlantUML图像",
+      "output_stem": "功能模型/00_概念接口类型_详情_17",
+      "is_index": false,
+      "artifacts": {
+        "puml": {
+          "file": "功能模型/00_概念接口类型_详情_17.puml",
+          "sha256": "69ca135daff2b9b02180dddd92894e197ea10ee02c2cae1079d241486458f235",
+          "bytes": 1618
+        },
+        "svg": {
+          "file": "功能模型/00_概念接口类型_详情_17.svg",
+          "sha256": "edb673e1cedb5f2e3a6027a3d8f41c7add409b46464814d45faf29abd9998864",
+          "bytes": 13298
+        },
+        "png": {
+          "file": "功能模型/00_概念接口类型_详情_17.png",
+          "sha256": "8b66118fa0a579d20fd6a8b0e1ea5121881bc714669cf9a1a7e1d3ff98df207c",
+          "bytes": 82247
+        }
+      },
+      "png_dimensions": [
+        3000,
+        175
+      ]
+    },
+    {
+      "model_file": "功能模型/00_概念接口类型.sysml",
+      "source_sha256": "6bdc17566f82bbec10dfcfe91e90e9d83151bd98de64e74de1f1580bf01ce39e",
+      "suffix": "_详情_18",
+      "selectors": [
+        "SEOV_ConceptTypes::C137",
+        "SEOV_ConceptTypes::C138",
+        "SEOV_ConceptTypes::C139",
+        "SEOV_ConceptTypes::C140",
+        "SEOV_ConceptTypes::C141",
+        "SEOV_ConceptTypes::C142",
+        "SEOV_ConceptTypes::C143",
+        "SEOV_ConceptTypes::C144"
+      ],
+      "native_mode": "TREE",
+      "engine": "OMG SysML v2 Pilot 0.63.1 native visualization export",
+      "jar_sha256": "67c914092f4520ba98548b285c5a9a8bc08f92a0aeec7b763e12a574e91f9ff7",
+      "render_method": "OMG SysML v2 Pilot原生PlantUML导出 → PlantUML图像",
+      "output_stem": "功能模型/00_概念接口类型_详情_18",
+      "is_index": false,
+      "artifacts": {
+        "puml": {
+          "file": "功能模型/00_概念接口类型_详情_18.puml",
+          "sha256": "6435778d5146434df61d27d64750feaa8222358ea4f3ebb9663f9ede20aa349e",
+          "bytes": 1488
+        },
+        "svg": {
+          "file": "功能模型/00_概念接口类型_详情_18.svg",
+          "sha256": "841fb19b6849d7e3975f442b4cd77187ab8d73c2ab05e732b74e8e2ebea041c9",
+          "bytes": 12004
+        },
+        "png": {
+          "file": "功能模型/00_概念接口类型_详情_18.png",
+          "sha256": "416b8d5f0c578412c0592aa20d0fed0d4b95d03aa26f6ed4c52940e6c7384536",
+          "bytes": 65410
+        }
+      },
+      "png_dimensions": [
+        2833,
+        163
+      ]
+    },
+    {
+      "model_file": "功能模型/00_概念接口类型.sysml",
+      "source_sha256": "6bdc17566f82bbec10dfcfe91e90e9d83151bd98de64e74de1f1580bf01ce39e",
+      "suffix": "_详情_19",
+      "selectors": [
+        "SEOV_ConceptTypes::C145",
+        "SEOV_ConceptTypes::C146",
+        "SEOV_ConceptTypes::C147",
+        "SEOV_ConceptTypes::C148",
+        "SEOV_ConceptTypes::C149",
+        "SEOV_ConceptTypes::C150",
+        "SEOV_ConceptTypes::C151",
+        "SEOV_ConceptTypes::C152"
+      ],
+      "native_mode": "TREE",
+      "engine": "OMG SysML v2 Pilot 0.63.1 native visualization export",
+      "jar_sha256": "67c914092f4520ba98548b285c5a9a8bc08f92a0aeec7b763e12a574e91f9ff7",
+      "render_method": "OMG SysML v2 Pilot原生PlantUML导出 → PlantUML图像",
+      "output_stem": "功能模型/00_概念接口类型_详情_19",
+      "is_index": false,
+      "artifacts": {
+        "puml": {
+          "file": "功能模型/00_概念接口类型_详情_19.puml",
+          "sha256": "129a8f1cb82ff8390b72efaa34efb4eb8647044bb5f8f258d4dce85ab36d7434",
+          "bytes": 1494
+        },
+        "svg": {
+          "file": "功能模型/00_概念接口类型_详情_19.svg",
+          "sha256": "6bfd7cadf9e9bf2178a435165929ab21e5322abf0067c1058c69b0bf63e36a58",
+          "bytes": 11495
+        },
+        "png": {
+          "file": "功能模型/00_概念接口类型_详情_19.png",
+          "sha256": "d1bab3ce6c933d667dca568b95589388f781a1e5eb76f206a321271ff79faff5",
+          "bytes": 35121
+        }
+      },
+      "png_dimensions": [
+        2886,
+        139
+      ]
+    },
+    {
+      "model_file": "功能模型/00_概念接口类型.sysml",
+      "source_sha256": "6bdc17566f82bbec10dfcfe91e90e9d83151bd98de64e74de1f1580bf01ce39e",
+      "suffix": "_详情_20",
+      "selectors": [
+        "SEOV_ConceptTypes::C153",
+        "SEOV_ConceptTypes::C154",
+        "SEOV_ConceptTypes::C155",
+        "SEOV_ConceptTypes::C156",
+        "SEOV_ConceptTypes::C157",
+        "SEOV_ConceptTypes::C158",
+        "SEOV_ConceptTypes::C159",
+        "SEOV_ConceptTypes::C160"
+      ],
+      "native_mode": "TREE",
+      "engine": "OMG SysML v2 Pilot 0.63.1 native visualization export",
+      "jar_sha256": "67c914092f4520ba98548b285c5a9a8bc08f92a0aeec7b763e12a574e91f9ff7",
+      "render_method": "OMG SysML v2 Pilot原生PlantUML导出 → PlantUML图像",
+      "output_stem": "功能模型/00_概念接口类型_详情_20",
+      "is_index": false,
+      "artifacts": {
+        "puml": {
+          "file": "功能模型/00_概念接口类型_详情_20.puml",
+          "sha256": "aaaf14668796922f90ff9505ebce3a415e59b932fc9475236bbcc1cebcb5eb71",
+          "bytes": 1467
+        },
+        "svg": {
+          "file": "功能模型/00_概念接口类型_详情_20.svg",
+          "sha256": "639b92d2aa1c9943cc77e9e340fc79f7f0e9d345f2dcd7624ec2899edadfc10d",
+          "bytes": 11431
+        },
+        "png": {
+          "file": "功能模型/00_概念接口类型_详情_20.png",
+          "sha256": "f013cd2972ee701b3df81fd5aa1ba4b315880fb492b1843ad2cf5ce7086e536c",
+          "bytes": 43378
+        }
+      },
+      "png_dimensions": [
+        2800,
+        139
+      ]
+    },
+    {
+      "model_file": "功能模型/00_概念接口类型.sysml",
+      "source_sha256": "6bdc17566f82bbec10dfcfe91e90e9d83151bd98de64e74de1f1580bf01ce39e",
+      "suffix": "_详情_21",
+      "selectors": [
+        "SEOV_ConceptTypes::C161",
+        "SEOV_ConceptTypes::C162",
+        "SEOV_ConceptTypes::C163",
+        "SEOV_ConceptTypes::C164",
+        "SEOV_ConceptTypes::C165",
+        "SEOV_ConceptTypes::C166",
+        "SEOV_ConceptTypes::C167",
+        "SEOV_ConceptTypes::C168"
+      ],
+      "native_mode": "TREE",
+      "engine": "OMG SysML v2 Pilot 0.63.1 native visualization export",
+      "jar_sha256": "67c914092f4520ba98548b285c5a9a8bc08f92a0aeec7b763e12a574e91f9ff7",
+      "render_method": "OMG SysML v2 Pilot原生PlantUML导出 → PlantUML图像",
+      "output_stem": "功能模型/00_概念接口类型_详情_21",
+      "is_index": false,
+      "artifacts": {
+        "puml": {
+          "file": "功能模型/00_概念接口类型_详情_21.puml",
+          "sha256": "36f864459088656dd6e4733633497075cd163f8f6c036d5fb44cfe7f65fbbc2b",
+          "bytes": 1481
+        },
+        "svg": {
+          "file": "功能模型/00_概念接口类型_详情_21.svg",
+          "sha256": "10ed056e051f6229b0c2e87c9f837da40cc85d85dd3d5d8ea2cd352393ff4970",
+          "bytes": 11472
+        },
+        "png": {
+          "file": "功能模型/00_概念接口类型_详情_21.png",
+          "sha256": "0cc32a956a99accebbe04393e58cf3d92f84400b6cb4c5eef817309836d1c341",
+          "bytes": 38856
+        }
+      },
+      "png_dimensions": [
+        2891,
+        139
+      ]
+    },
+    {
+      "model_file": "功能模型/00_概念接口类型.sysml",
+      "source_sha256": "6bdc17566f82bbec10dfcfe91e90e9d83151bd98de64e74de1f1580bf01ce39e",
+      "suffix": "_详情_22",
+      "selectors": [
+        "SEOV_ConceptTypes::C169",
+        "SEOV_ConceptTypes::C170",
+        "SEOV_ConceptTypes::C171",
+        "SEOV_ConceptTypes::C172",
+        "SEOV_ConceptTypes::C173",
+        "SEOV_ConceptTypes::C174",
+        "SEOV_ConceptTypes::C175",
+        "SEOV_ConceptTypes::C176"
+      ],
+      "native_mode": "TREE",
+      "engine": "OMG SysML v2 Pilot 0.63.1 native visualization export",
+      "jar_sha256": "67c914092f4520ba98548b285c5a9a8bc08f92a0aeec7b763e12a574e91f9ff7",
+      "render_method": "OMG SysML v2 Pilot原生PlantUML导出 → PlantUML图像",
+      "output_stem": "功能模型/00_概念接口类型_详情_22",
+      "is_index": false,
+      "artifacts": {
+        "puml": {
+          "file": "功能模型/00_概念接口类型_详情_22.puml",
+          "sha256": "c95e0d781a3df6338f3fc38cfa4502e3044c1443f4e6eb531f67e7326a7f149c",
+          "bytes": 1473
+        },
+        "svg": {
+          "file": "功能模型/00_概念接口类型_详情_22.svg",
+          "sha256": "80bfd434c83e040d74fdc9546173098f68d547bc2a36aeb6fdf0bab58353bd9e",
+          "bytes": 11453
+        },
+        "png": {
+          "file": "功能模型/00_概念接口类型_详情_22.png",
+          "sha256": "486381b0b84b97180aec639c359363f3d6739f678405f6ee181a8e10a6c85bba",
+          "bytes": 31558
+        }
+      },
+      "png_dimensions": [
+        2781,
+        139
+      ]
+    },
+    {
+      "model_file": "功能模型/00_概念接口类型.sysml",
+      "source_sha256": "6bdc17566f82bbec10dfcfe91e90e9d83151bd98de64e74de1f1580bf01ce39e",
+      "suffix": "_详情_23",
+      "selectors": [
+        "SEOV_ConceptTypes::C177",
+        "SEOV_ConceptTypes::C178",
+        "SEOV_ConceptTypes::C179",
+        "SEOV_ConceptTypes::C180",
+        "SEOV_ConceptTypes::C181",
+        "SEOV_ConceptTypes::C182",
+        "SEOV_ConceptTypes::C183",
+        "SEOV_ConceptTypes::C184"
+      ],
+      "native_mode": "TREE",
+      "engine": "OMG SysML v2 Pilot 0.63.1 native visualization export",
+      "jar_sha256": "67c914092f4520ba98548b285c5a9a8bc08f92a0aeec7b763e12a574e91f9ff7",
+      "render_method": "OMG SysML v2 Pilot原生PlantUML导出 → PlantUML图像",
+      "output_stem": "功能模型/00_概念接口类型_详情_23",
+      "is_index": false,
+      "artifacts": {
+        "puml": {
+          "file": "功能模型/00_概念接口类型_详情_23.puml",
+          "sha256": "98bd66f588f7f49acfb346b85cc5f9760e409ea70476589a2c567c4e9428a15f",
+          "bytes": 1463
+        },
+        "svg": {
+          "file": "功能模型/00_概念接口类型_详情_23.svg",
+          "sha256": "23df80d828b724535f2afb5e5bf5fa2d51ee6b27654653f77ad2f6f1dc27c934",
+          "bytes": 11435
+        },
+        "png": {
+          "file": "功能模型/00_概念接口类型_详情_23.png",
+          "sha256": "3d0919cf3df9a821f5d016b770a13b2196638873382044dba4dd3b22b4eec80c",
+          "bytes": 59769
+        }
+      },
+      "png_dimensions": [
+        2827,
+        139
+      ]
+    },
+    {
+      "model_file": "功能模型/00_概念接口类型.sysml",
+      "source_sha256": "6bdc17566f82bbec10dfcfe91e90e9d83151bd98de64e74de1f1580bf01ce39e",
+      "suffix": "_详情_24",
+      "selectors": [
+        "SEOV_ConceptTypes::C185",
+        "SEOV_ConceptTypes::C186",
+        "SEOV_ConceptTypes::C187",
+        "SEOV_ConceptTypes::C188",
+        "SEOV_ConceptTypes::C189",
+        "SEOV_ConceptTypes::C190",
+        "SEOV_ConceptTypes::C191",
+        "SEOV_ConceptTypes::C192"
+      ],
+      "native_mode": "TREE",
+      "engine": "OMG SysML v2 Pilot 0.63.1 native visualization export",
+      "jar_sha256": "67c914092f4520ba98548b285c5a9a8bc08f92a0aeec7b763e12a574e91f9ff7",
+      "render_method": "OMG SysML v2 Pilot原生PlantUML导出 → PlantUML图像",
+      "output_stem": "功能模型/00_概念接口类型_详情_24",
+      "is_index": false,
+      "artifacts": {
+        "puml": {
+          "file": "功能模型/00_概念接口类型_详情_24.puml",
+          "sha256": "df558624f95b82c3103fb4df234631da3b36fd4b7c22a836e37cecd8528022cc",
+          "bytes": 1518
+        },
+        "svg": {
+          "file": "功能模型/00_概念接口类型_详情_24.svg",
+          "sha256": "d4ea66bc0d68bb5b6d5c657cfecc5dfefe5e2209911203df83c788271dc66248",
+          "bytes": 11524
+        },
+        "png": {
+          "file": "功能模型/00_概念接口类型_详情_24.png",
+          "sha256": "cf01f596041f1b558ffd720509a91ab4579808e9f2eada1fa2eb1fa7a1e49f32",
+          "bytes": 38534
+        }
+      },
+      "png_dimensions": [
+        2905,
+        139
+      ]
+    },
+    {
+      "model_file": "功能模型/00_概念接口类型.sysml",
+      "source_sha256": "6bdc17566f82bbec10dfcfe91e90e9d83151bd98de64e74de1f1580bf01ce39e",
+      "suffix": "_详情_25",
+      "selectors": [
+        "SEOV_ConceptTypes::C193",
+        "SEOV_ConceptTypes::C194",
+        "SEOV_ConceptTypes::C195"
+      ],
+      "native_mode": "TREE",
+      "engine": "OMG SysML v2 Pilot 0.63.1 native visualization export",
+      "jar_sha256": "67c914092f4520ba98548b285c5a9a8bc08f92a0aeec7b763e12a574e91f9ff7",
+      "render_method": "OMG SysML v2 Pilot原生PlantUML导出 → PlantUML图像",
+      "output_stem": "功能模型/00_概念接口类型_详情_25",
+      "is_index": false,
+      "artifacts": {
+        "puml": {
+          "file": "功能模型/00_概念接口类型_详情_25.puml",
+          "sha256": "2bf4bda3a3f38e89e3704f2bf84c4c7b9d3eac95dd98e25a43b501cd4ffe2538",
+          "bytes": 698
+        },
+        "svg": {
+          "file": "功能模型/00_概念接口类型_详情_25.svg",
+          "sha256": "1a4872b43b3904db3491a3114823cd69ab8f4ade2bc293ed2a51c64c2e9e3936",
+          "bytes": 5217
+        },
+        "png": {
+          "file": "功能模型/00_概念接口类型_详情_25.png",
+          "sha256": "1a07dd222a64b5197908e62496d5ee7d0c73783938c970bb211c2f23a4bb384b",
+          "bytes": 31130
+        }
+      },
+      "png_dimensions": [
+        980,
+        184
+      ]
+    },
+    {
+      "model_file": "功能模型/01_原子及组合功能定义.sysml",
+      "source_sha256": "4071b8ff601fb96df98f2b5b8395e13422ada534b51f7808736ad5406d5fd702",
+      "suffix": "",
+      "selectors": [
+        "SEOV_FunctionActions::F_LF_001",
+        "SEOV_FunctionActions::F_LF_002",
+        "SEOV_FunctionActions::F_LF_003",
+        "SEOV_FunctionActions::F_LF_004",
+        "SEOV_FunctionActions::F_LF_005",
+        "SEOV_FunctionActions::F_LF_006",
+        "SEOV_FunctionActions::F_LF_007",
+        "SEOV_FunctionActions::F_LF_008",
+        "SEOV_FunctionActions::F_LF_009",
+        "SEOV_FunctionActions::F_LF_010",
+        "SEOV_FunctionActions::F_LF_011",
+        "SEOV_FunctionActions::F_LF_012",
+        "SEOV_FunctionActions::F_LF_013",
+        "SEOV_FunctionActions::F_LF_014",
+        "SEOV_FunctionActions::F_LF_015",
+        "SEOV_FunctionActions::F_LF_016",
+        "SEOV_FunctionActions::F_LF_017",
+        "SEOV_FunctionActions::F_LF_018",
+        "SEOV_FunctionActions::F_LF_019",
+        "SEOV_FunctionActions::F_LF_020",
+        "SEOV_FunctionActions::F_LF_021",
+        "SEOV_FunctionActions::F_LF_022",
+        "SEOV_FunctionActions::F_LF_023",
+        "SEOV_FunctionActions::F_LF_024",
+        "SEOV_FunctionActions::F_LF_026",
+        "SEOV_FunctionActions::F_LF_027",
+        "SEOV_FunctionActions::F_LF_028",
+        "SEOV_FunctionActions::F_LF_029",
+        "SEOV_FunctionActions::F_LF_030",
+        "SEOV_FunctionActions::F_LF_031",
+        "SEOV_FunctionActions::F_LF_032",
+        "SEOV_FunctionActions::F_S1_F01",
+        "SEOV_FunctionActions::F_S1_F02",
+        "SEOV_FunctionActions::F_S1_F03",
+        "SEOV_FunctionActions::F_S1_F04",
+        "SEOV_FunctionActions::F_S1_F05",
+        "SEOV_FunctionActions::F_S1_F06",
+        "SEOV_FunctionActions::F_S1_F07",
+        "SEOV_FunctionActions::F_S1_F08",
+        "SEOV_FunctionActions::F_S1_F09",
+        "SEOV_FunctionActions::F_S1_F10",
+        "SEOV_FunctionActions::F_S2_F01",
+        "SEOV_FunctionActions::F_S2_F02",
+        "SEOV_FunctionActions::F_S2_F03",
+        "SEOV_FunctionActions::F_S2_F04",
+        "SEOV_FunctionActions::F_S2_F05",
+        "SEOV_FunctionActions::F_S2_F06",
+        "SEOV_FunctionActions::F_S2_F07",
+        "SEOV_FunctionActions::F_S2_F08",
+        "SEOV_FunctionActions::F_S2_F09",
+        "SEOV_FunctionActions::F_S2_F10",
+        "SEOV_FunctionActions::F_S3_F01",
+        "SEOV_FunctionActions::F_S3_F02",
+        "SEOV_FunctionActions::F_S3_F03",
+        "SEOV_FunctionActions::F_S3_F04",
+        "SEOV_FunctionActions::F_S3_F05",
+        "SEOV_FunctionActions::F_S3_F06",
+        "SEOV_FunctionActions::F_S3_F07",
+        "SEOV_FunctionActions::F_S3_F08",
+        "SEOV_FunctionActions::F_S3_F09",
+        "SEOV_FunctionActions::F_S3_F10",
+        "SEOV_FunctionActions::F_S3_F11",
+        "SEOV_FunctionActions::F_LF_011_01",
+        "SEOV_FunctionActions::F_LF_011_02",
+        "SEOV_FunctionActions::F_LF_011_03",
+        "SEOV_FunctionActions::F_LF_011_04",
+        "SEOV_FunctionActions::F_LF_011_05",
+        "SEOV_FunctionActions::F_LF_011_06",
+        "SEOV_FunctionActions::F_S2_F09_01",
+        "SEOV_FunctionActions::F_S2_F09_02",
+        "SEOV_FunctionActions::F_S2_F09_03",
+        "SEOV_FunctionActions::F_S3_F06_01",
+        "SEOV_FunctionActions::F_S3_F06_02"
+      ],
+      "native_mode": "TREE",
+      "engine": "OMG SysML v2 Pilot 0.63.1 native visualization export",
+      "jar_sha256": "67c914092f4520ba98548b285c5a9a8bc08f92a0aeec7b763e12a574e91f9ff7",
+      "render_method": "完整源模型目录索引＋原生分页详图（未交付截断图）",
+      "output_stem": "功能模型/01_原子及组合功能定义",
+      "is_index": true,
+      "artifacts": {
+        "puml": {
+          "file": "功能模型/01_原子及组合功能定义.puml",
+          "sha256": "6fca478da39745e9d15182feb74d70c003e8b22c6d15eaec4f6ac018c41580fc",
+          "bytes": 4051
+        },
+        "svg": {
+          "file": "功能模型/01_原子及组合功能定义.svg",
+          "sha256": "d3a215df68b1775227f71092117a15928a2dd4c3811148a7eaa81b16c77f57c4",
+          "bytes": 23142
+        },
+        "png": {
+          "file": "功能模型/01_原子及组合功能定义.png",
+          "sha256": "a10ffa925193fef1602706556844c2811916da9e151c3bfd56a264bad015a4fd",
+          "bytes": 330509
+        }
+      },
+      "png_dimensions": [
+        761,
+        2884
+      ]
+    },
+    {
+      "model_file": "功能模型/01_原子及组合功能定义.sysml",
+      "source_sha256": "4071b8ff601fb96df98f2b5b8395e13422ada534b51f7808736ad5406d5fd702",
+      "suffix": "_详情_01",
+      "selectors": [
+        "SEOV_FunctionActions::F_LF_001",
+        "SEOV_FunctionActions::F_LF_002",
+        "SEOV_FunctionActions::F_LF_003",
+        "SEOV_FunctionActions::F_LF_004",
+        "SEOV_FunctionActions::F_LF_005",
+        "SEOV_FunctionActions::F_LF_006",
+        "SEOV_FunctionActions::F_LF_007",
+        "SEOV_FunctionActions::F_LF_008"
+      ],
+      "native_mode": "TREE",
+      "engine": "OMG SysML v2 Pilot 0.63.1 native visualization export",
+      "jar_sha256": "67c914092f4520ba98548b285c5a9a8bc08f92a0aeec7b763e12a574e91f9ff7",
+      "render_method": "OMG SysML v2 Pilot原生PlantUML导出 → PlantUML图像",
+      "output_stem": "功能模型/01_原子及组合功能定义_详情_01",
+      "is_index": false,
+      "artifacts": {
+        "puml": {
+          "file": "功能模型/01_原子及组合功能定义_详情_01.puml",
+          "sha256": "0b05e03c5e62eabe0fb8324e7bfc3a7187354efcb778190a174fd7241b304625",
+          "bytes": 4543
+        },
+        "svg": {
+          "file": "功能模型/01_原子及组合功能定义_详情_01.svg",
+          "sha256": "ff9c29a07cd0fcb94da62a275276fa8783c42cc861ea4f4d04b19298528a963c",
+          "bytes": 50383
+        },
+        "png": {
+          "file": "功能模型/01_原子及组合功能定义_详情_01.png",
+          "sha256": "c7211d82e1bf4c69a67979290dc270a6cd011667ba89905e7b97e84b601b66d0",
+          "bytes": 111760
+        }
+      },
+      "png_dimensions": [
+        2999,
+        186
+      ]
+    },
+    {
+      "model_file": "功能模型/01_原子及组合功能定义.sysml",
+      "source_sha256": "4071b8ff601fb96df98f2b5b8395e13422ada534b51f7808736ad5406d5fd702",
+      "suffix": "_详情_02",
+      "selectors": [
+        "SEOV_FunctionActions::F_LF_009",
+        "SEOV_FunctionActions::F_LF_010",
+        "SEOV_FunctionActions::F_LF_011",
+        "SEOV_FunctionActions::F_LF_012",
+        "SEOV_FunctionActions::F_LF_013",
+        "SEOV_FunctionActions::F_LF_014",
+        "SEOV_FunctionActions::F_LF_015",
+        "SEOV_FunctionActions::F_LF_016"
+      ],
+      "native_mode": "TREE",
+      "engine": "OMG SysML v2 Pilot 0.63.1 native visualization export",
+      "jar_sha256": "67c914092f4520ba98548b285c5a9a8bc08f92a0aeec7b763e12a574e91f9ff7",
+      "render_method": "OMG SysML v2 Pilot原生PlantUML导出 → PlantUML图像",
+      "output_stem": "功能模型/01_原子及组合功能定义_详情_02",
+      "is_index": false,
+      "artifacts": {
+        "puml": {
+          "file": "功能模型/01_原子及组合功能定义_详情_02.puml",
+          "sha256": "0f89ca89f643cd1ed9aef0e585008b037cb78d552c7fae282e0887cb1a9354ed",
+          "bytes": 5673
+        },
+        "svg": {
+          "file": "功能模型/01_原子及组合功能定义_详情_02.svg",
+          "sha256": "5016cb7a8f4d4af033ec98704c7b690f51715edc562c7bd0c9945d8ceb5f9200",
+          "bytes": 67280
+        },
+        "png": {
+          "file": "功能模型/01_原子及组合功能定义_详情_02.png",
+          "sha256": "15e6cdd6dcef0c2c4b2f4276c7e6657086eff6acd0d7707a71856ee3dc5b3273",
+          "bytes": 80600
+        }
+      },
+      "png_dimensions": [
+        3000,
+        122
+      ]
+    },
+    {
+      "model_file": "功能模型/01_原子及组合功能定义.sysml",
+      "source_sha256": "4071b8ff601fb96df98f2b5b8395e13422ada534b51f7808736ad5406d5fd702",
+      "suffix": "_详情_03",
+      "selectors": [
+        "SEOV_FunctionActions::F_LF_017",
+        "SEOV_FunctionActions::F_LF_018",
+        "SEOV_FunctionActions::F_LF_019",
+        "SEOV_FunctionActions::F_LF_020",
+        "SEOV_FunctionActions::F_LF_021",
+        "SEOV_FunctionActions::F_LF_022",
+        "SEOV_FunctionActions::F_LF_023",
+        "SEOV_FunctionActions::F_LF_024"
+      ],
+      "native_mode": "TREE",
+      "engine": "OMG SysML v2 Pilot 0.63.1 native visualization export",
+      "jar_sha256": "67c914092f4520ba98548b285c5a9a8bc08f92a0aeec7b763e12a574e91f9ff7",
+      "render_method": "OMG SysML v2 Pilot原生PlantUML导出 → PlantUML图像",
+      "output_stem": "功能模型/01_原子及组合功能定义_详情_03",
+      "is_index": false,
+      "artifacts": {
+        "puml": {
+          "file": "功能模型/01_原子及组合功能定义_详情_03.puml",
+          "sha256": "45d5ce1344d08a51944c1d6c850c7479eb7bac6387aaa93fbb39ba160b3422d9",
+          "bytes": 4611
+        },
+        "svg": {
+          "file": "功能模型/01_原子及组合功能定义_详情_03.svg",
+          "sha256": "c6a20f4118cfcffd10ae10e6546b2a71b89c111f5c9be9be519c021199458412",
+          "bytes": 52507
+        },
+        "png": {
+          "file": "功能模型/01_原子及组合功能定义_详情_03.png",
+          "sha256": "f35cba4e2d28f254cc518c86778679d3adc96ea9b8bee311a9796fdc90fc1f02",
+          "bytes": 100085
+        }
+      },
+      "png_dimensions": [
+        3000,
+        176
+      ]
+    },
+    {
+      "model_file": "功能模型/01_原子及组合功能定义.sysml",
+      "source_sha256": "4071b8ff601fb96df98f2b5b8395e13422ada534b51f7808736ad5406d5fd702",
+      "suffix": "_详情_04",
+      "selectors": [
+        "SEOV_FunctionActions::F_LF_026",
+        "SEOV_FunctionActions::F_LF_027",
+        "SEOV_FunctionActions::F_LF_028",
+        "SEOV_FunctionActions::F_LF_029",
+        "SEOV_FunctionActions::F_LF_030",
+        "SEOV_FunctionActions::F_LF_031",
+        "SEOV_FunctionActions::F_LF_032",
+        "SEOV_FunctionActions::F_S1_F01"
+      ],
+      "native_mode": "TREE",
+      "engine": "OMG SysML v2 Pilot 0.63.1 native visualization export",
+      "jar_sha256": "67c914092f4520ba98548b285c5a9a8bc08f92a0aeec7b763e12a574e91f9ff7",
+      "render_method": "OMG SysML v2 Pilot原生PlantUML导出 → PlantUML图像",
+      "output_stem": "功能模型/01_原子及组合功能定义_详情_04",
+      "is_index": false,
+      "artifacts": {
+        "puml": {
+          "file": "功能模型/01_原子及组合功能定义_详情_04.puml",
+          "sha256": "89a29e36ddb44dd8bfca9acecc42e125a835c63441a8ceb640df9b6cdcf54262",
+          "bytes": 4439
+        },
+        "svg": {
+          "file": "功能模型/01_原子及组合功能定义_详情_04.svg",
+          "sha256": "7db721568f6456151f9485d31a5a3bc3c66e27a75f97825d730222a4a3765fea",
+          "bytes": 48866
+        },
+        "png": {
+          "file": "功能模型/01_原子及组合功能定义_详情_04.png",
+          "sha256": "d0f8d7e5e9d27f2f312471e9927e7c36efc9970685a745791c49f264188e990e",
+          "bytes": 107139
+        }
+      },
+      "png_dimensions": [
+        3000,
+        186
+      ]
+    },
+    {
+      "model_file": "功能模型/01_原子及组合功能定义.sysml",
+      "source_sha256": "4071b8ff601fb96df98f2b5b8395e13422ada534b51f7808736ad5406d5fd702",
+      "suffix": "_详情_05",
+      "selectors": [
+        "SEOV_FunctionActions::F_S1_F02",
+        "SEOV_FunctionActions::F_S1_F03",
+        "SEOV_FunctionActions::F_S1_F04",
+        "SEOV_FunctionActions::F_S1_F05",
+        "SEOV_FunctionActions::F_S1_F06",
+        "SEOV_FunctionActions::F_S1_F07",
+        "SEOV_FunctionActions::F_S1_F08",
+        "SEOV_FunctionActions::F_S1_F09"
+      ],
+      "native_mode": "TREE",
+      "engine": "OMG SysML v2 Pilot 0.63.1 native visualization export",
+      "jar_sha256": "67c914092f4520ba98548b285c5a9a8bc08f92a0aeec7b763e12a574e91f9ff7",
+      "render_method": "OMG SysML v2 Pilot原生PlantUML导出 → PlantUML图像",
+      "output_stem": "功能模型/01_原子及组合功能定义_详情_05",
+      "is_index": false,
+      "artifacts": {
+        "puml": {
+          "file": "功能模型/01_原子及组合功能定义_详情_05.puml",
+          "sha256": "74d843cae04ba99eba6f27a9288aec098d3d431a05f09f5aa9154e74ba3c7ec8",
+          "bytes": 3185
+        },
+        "svg": {
+          "file": "功能模型/01_原子及组合功能定义_详情_05.svg",
+          "sha256": "54185f94d6b678a5dbd1ec0340551580f7ff56ad56cd904e596e7dcc914db501",
+          "bytes": 33556
+        },
+        "png": {
+          "file": "功能模型/01_原子及组合功能定义_详情_05.png",
+          "sha256": "880654c8d40e27adf0277852d176305aa66f23c2171b539735de9ac1fddbe87c",
+          "bytes": 153083
+        }
+      },
+      "png_dimensions": [
+        2999,
+        283
+      ]
+    },
+    {
+      "model_file": "功能模型/01_原子及组合功能定义.sysml",
+      "source_sha256": "4071b8ff601fb96df98f2b5b8395e13422ada534b51f7808736ad5406d5fd702",
+      "suffix": "_详情_06",
+      "selectors": [
+        "SEOV_FunctionActions::F_S1_F10",
+        "SEOV_FunctionActions::F_S2_F01",
+        "SEOV_FunctionActions::F_S2_F02",
+        "SEOV_FunctionActions::F_S2_F03",
+        "SEOV_FunctionActions::F_S2_F04",
+        "SEOV_FunctionActions::F_S2_F05",
+        "SEOV_FunctionActions::F_S2_F06",
+        "SEOV_FunctionActions::F_S2_F07"
+      ],
+      "native_mode": "TREE",
+      "engine": "OMG SysML v2 Pilot 0.63.1 native visualization export",
+      "jar_sha256": "67c914092f4520ba98548b285c5a9a8bc08f92a0aeec7b763e12a574e91f9ff7",
+      "render_method": "OMG SysML v2 Pilot原生PlantUML导出 → PlantUML图像",
+      "output_stem": "功能模型/01_原子及组合功能定义_详情_06",
+      "is_index": false,
+      "artifacts": {
+        "puml": {
+          "file": "功能模型/01_原子及组合功能定义_详情_06.puml",
+          "sha256": "5d8caa9b241679377e19f95d250ee8905ba964d169827f97f60369311edc8218",
+          "bytes": 3296
+        },
+        "svg": {
+          "file": "功能模型/01_原子及组合功能定义_详情_06.svg",
+          "sha256": "f679ae7753bd697fc65ca88effbe7c119fb434d079ac15465c2188ef1415eab9",
+          "bytes": 35149
+        },
+        "png": {
+          "file": "功能模型/01_原子及组合功能定义_详情_06.png",
+          "sha256": "bb439d073acea4fa187840f1b091210f4f02b0cdbe735f1d8907502f8f1cfafa",
+          "bytes": 160362
+        }
+      },
+      "png_dimensions": [
+        3000,
+        292
+      ]
+    },
+    {
+      "model_file": "功能模型/01_原子及组合功能定义.sysml",
+      "source_sha256": "4071b8ff601fb96df98f2b5b8395e13422ada534b51f7808736ad5406d5fd702",
+      "suffix": "_详情_07",
+      "selectors": [
+        "SEOV_FunctionActions::F_S2_F08",
+        "SEOV_FunctionActions::F_S2_F09",
+        "SEOV_FunctionActions::F_S2_F10",
+        "SEOV_FunctionActions::F_S3_F01",
+        "SEOV_FunctionActions::F_S3_F02",
+        "SEOV_FunctionActions::F_S3_F03",
+        "SEOV_FunctionActions::F_S3_F04",
+        "SEOV_FunctionActions::F_S3_F05"
+      ],
+      "native_mode": "TREE",
+      "engine": "OMG SysML v2 Pilot 0.63.1 native visualization export",
+      "jar_sha256": "67c914092f4520ba98548b285c5a9a8bc08f92a0aeec7b763e12a574e91f9ff7",
+      "render_method": "OMG SysML v2 Pilot原生PlantUML导出 → PlantUML图像",
+      "output_stem": "功能模型/01_原子及组合功能定义_详情_07",
+      "is_index": false,
+      "artifacts": {
+        "puml": {
+          "file": "功能模型/01_原子及组合功能定义_详情_07.puml",
+          "sha256": "e886ff6abcb5a4d8b0708e9f5fcc1a1f9928104d3a8822a336117d9c17f77589",
+          "bytes": 3769
+        },
+        "svg": {
+          "file": "功能模型/01_原子及组合功能定义_详情_07.svg",
+          "sha256": "613288b8ad7fc07b4b739d6de1f4716b4b058358521e26a38e72e9c006c07a66",
+          "bytes": 41710
+        },
+        "png": {
+          "file": "功能模型/01_原子及组合功能定义_详情_07.png",
+          "sha256": "cd8e5f2d534de356d609d3168e97ba265a16fc8b33021a3c4c6d06ce04e48037",
+          "bytes": 120574
+        }
+      },
+      "png_dimensions": [
+        3000,
+        209
+      ]
+    },
+    {
+      "model_file": "功能模型/01_原子及组合功能定义.sysml",
+      "source_sha256": "4071b8ff601fb96df98f2b5b8395e13422ada534b51f7808736ad5406d5fd702",
+      "suffix": "_详情_08",
+      "selectors": [
+        "SEOV_FunctionActions::F_S3_F06",
+        "SEOV_FunctionActions::F_S3_F07",
+        "SEOV_FunctionActions::F_S3_F08",
+        "SEOV_FunctionActions::F_S3_F09",
+        "SEOV_FunctionActions::F_S3_F10",
+        "SEOV_FunctionActions::F_S3_F11",
+        "SEOV_FunctionActions::F_LF_011_01",
+        "SEOV_FunctionActions::F_LF_011_02"
+      ],
+      "native_mode": "TREE",
+      "engine": "OMG SysML v2 Pilot 0.63.1 native visualization export",
+      "jar_sha256": "67c914092f4520ba98548b285c5a9a8bc08f92a0aeec7b763e12a574e91f9ff7",
+      "render_method": "OMG SysML v2 Pilot原生PlantUML导出 → PlantUML图像",
+      "output_stem": "功能模型/01_原子及组合功能定义_详情_08",
+      "is_index": false,
+      "artifacts": {
+        "puml": {
+          "file": "功能模型/01_原子及组合功能定义_详情_08.puml",
+          "sha256": "7d68a1b621577f340234d924112c9b8a12006ab6f36b7bc3937c35ca1592e86d",
+          "bytes": 3848
+        },
+        "svg": {
+          "file": "功能模型/01_原子及组合功能定义_详情_08.svg",
+          "sha256": "caae816e66c3ac7f120ca6d9956b3aead9e63dc175a73f36c963e0ab11cbd368",
+          "bytes": 39862
+        },
+        "png": {
+          "file": "功能模型/01_原子及组合功能定义_详情_08.png",
+          "sha256": "14e8c02ad0e21d7b0d410483fba6f0fbcfb8a0b3518d2b80a49436f56f7bc0b4",
+          "bytes": 147156
+        }
+      },
+      "png_dimensions": [
+        3000,
+        253
+      ]
+    },
+    {
+      "model_file": "功能模型/01_原子及组合功能定义.sysml",
+      "source_sha256": "4071b8ff601fb96df98f2b5b8395e13422ada534b51f7808736ad5406d5fd702",
+      "suffix": "_详情_09",
+      "selectors": [
+        "SEOV_FunctionActions::F_LF_011_03",
+        "SEOV_FunctionActions::F_LF_011_04",
+        "SEOV_FunctionActions::F_LF_011_05",
+        "SEOV_FunctionActions::F_LF_011_06",
+        "SEOV_FunctionActions::F_S2_F09_01",
+        "SEOV_FunctionActions::F_S2_F09_02",
+        "SEOV_FunctionActions::F_S2_F09_03",
+        "SEOV_FunctionActions::F_S3_F06_01"
+      ],
+      "native_mode": "TREE",
+      "engine": "OMG SysML v2 Pilot 0.63.1 native visualization export",
+      "jar_sha256": "67c914092f4520ba98548b285c5a9a8bc08f92a0aeec7b763e12a574e91f9ff7",
+      "render_method": "OMG SysML v2 Pilot原生PlantUML导出 → PlantUML图像",
+      "output_stem": "功能模型/01_原子及组合功能定义_详情_09",
+      "is_index": false,
+      "artifacts": {
+        "puml": {
+          "file": "功能模型/01_原子及组合功能定义_详情_09.puml",
+          "sha256": "c853c95e9ec1a18a3a72c435ece9e1736eba34f11f79fae77bd8e17f74c546c1",
+          "bytes": 4865
+        },
+        "svg": {
+          "file": "功能模型/01_原子及组合功能定义_详情_09.svg",
+          "sha256": "73fd648ec6c15090600c3dfc24d6ed2f7847d7b6b4a3a688319abd6ced47b1d6",
+          "bytes": 50952
+        },
+        "png": {
+          "file": "功能模型/01_原子及组合功能定义_详情_09.png",
+          "sha256": "88ae18a076c02b0b97fe2b8b7a608469a427531ab8e6c6c663d28d4fdf28997c",
+          "bytes": 124857
+        }
+      },
+      "png_dimensions": [
+        3000,
+        205
+      ]
+    },
+    {
+      "model_file": "功能模型/01_原子及组合功能定义.sysml",
+      "source_sha256": "4071b8ff601fb96df98f2b5b8395e13422ada534b51f7808736ad5406d5fd702",
+      "suffix": "_详情_10",
+      "selectors": [
+        "SEOV_FunctionActions::F_S3_F06_02"
+      ],
+      "native_mode": "TREE",
+      "engine": "OMG SysML v2 Pilot 0.63.1 native visualization export",
+      "jar_sha256": "67c914092f4520ba98548b285c5a9a8bc08f92a0aeec7b763e12a574e91f9ff7",
+      "render_method": "OMG SysML v2 Pilot原生PlantUML导出 → PlantUML图像",
+      "output_stem": "功能模型/01_原子及组合功能定义_详情_10",
+      "is_index": false,
+      "artifacts": {
+        "puml": {
+          "file": "功能模型/01_原子及组合功能定义_详情_10.puml",
+          "sha256": "3b947910a12e5a3cae712acf26316aa21b8affae140e27182cf2097226b469f0",
+          "bytes": 647
+        },
+        "svg": {
+          "file": "功能模型/01_原子及组合功能定义_详情_10.svg",
+          "sha256": "29cfb65bdb429f70ef70390366899262f71d5134714dfe0289f4ebcba10c3ffd",
+          "bytes": 4748
+        },
+        "png": {
+          "file": "功能模型/01_原子及组合功能定义_详情_10.png",
+          "sha256": "6055206a912d6eaa08c093842faafdf8709958232891861fcc2c96fe7d573492",
+          "bytes": 25154
+        }
+      },
+      "png_dimensions": [
+        405,
+        302
+      ]
+    },
+    {
+      "model_file": "功能模型/02_3.3.1.2-功能分解.sysml",
+      "source_sha256": "b22c30e27b904b554c1f2d35480c4cc576c7cdb25aae3ec8e2b61bfed7572ebb",
+      "suffix": "",
+      "selectors": [
+        "Decomp_3_3_1_2::'乘员舱制热控制'"
+      ],
+      "native_mode": "TREE",
+      "engine": "OMG SysML v2 Pilot 0.63.1 native visualization export",
+      "jar_sha256": "67c914092f4520ba98548b285c5a9a8bc08f92a0aeec7b763e12a574e91f9ff7",
+      "render_method": "OMG SysML v2 Pilot原生PlantUML导出 → PlantUML图像",
+      "output_stem": "功能模型/02_3.3.1.2-功能分解",
+      "is_index": false,
+      "artifacts": {
+        "puml": {
+          "file": "功能模型/02_3.3.1.2-功能分解.puml",
+          "sha256": "35ca52c72d9dfad2223ad5b2d847375133f4964c2fb4bdabccc782bb878b7f38",
+          "bytes": 1512
+        },
+        "svg": {
+          "file": "功能模型/02_3.3.1.2-功能分解.svg",
+          "sha256": "48bad6f4d5cbf2507f0ff5bf301612e233ee7144cd878796afc4b23844455e33",
+          "bytes": 16210
+        },
+        "png": {
+          "file": "功能模型/02_3.3.1.2-功能分解.png",
+          "sha256": "f7395cd17c511de3aab7b9cd1d9105348584be1b1b8913c6e2d74c2f5eb03682",
+          "bytes": 76625
+        }
+      },
+      "png_dimensions": [
+        2142,
+        420
+      ]
+    },
+    {
+      "model_file": "功能模型/02_3.3.1.6-功能分解.sysml",
+      "source_sha256": "480b3d3ca74f90323d3bdf4311c8c2eebbf62dac532ee6b3bd4e5d8097403fcf",
+      "suffix": "",
+      "selectors": [
+        "Decomp_3_3_1_6::'自动空调控制'"
+      ],
+      "native_mode": "TREE",
+      "engine": "OMG SysML v2 Pilot 0.63.1 native visualization export",
+      "jar_sha256": "67c914092f4520ba98548b285c5a9a8bc08f92a0aeec7b763e12a574e91f9ff7",
+      "render_method": "OMG SysML v2 Pilot原生PlantUML导出 → PlantUML图像",
+      "output_stem": "功能模型/02_3.3.1.6-功能分解",
+      "is_index": false,
+      "artifacts": {
+        "puml": {
+          "file": "功能模型/02_3.3.1.6-功能分解.puml",
+          "sha256": "5a94da761a12e913007cf08c272a2704e7fc6b5b938a593b76b6e88b8314d863",
+          "bytes": 1672
+        },
+        "svg": {
+          "file": "功能模型/02_3.3.1.6-功能分解.svg",
+          "sha256": "d85cb2fc06bb4a81dec934d8964d3fb6184c4f054b83aa43905fbe5aa7cfb049",
+          "bytes": 18491
+        },
+        "png": {
+          "file": "功能模型/02_3.3.1.6-功能分解.png",
+          "sha256": "0bf66edd79dd589ba3d72e0ce8e2fadc3357f82244850602a575fb09dce901be",
+          "bytes": 85826
+        }
+      },
+      "png_dimensions": [
+        2293,
+        420
+      ]
+    },
+    {
+      "model_file": "功能模型/02_3.3.1.9-功能分解.sysml",
+      "source_sha256": "69ba265940fc0a1a1731b72762158d881dd8b82b8d54fb29cbc4454da69b3e5d",
+      "suffix": "",
+      "selectors": [
+        "Decomp_3_3_1_9::'前风窗除霜除雾控制'"
+      ],
+      "native_mode": "TREE",
+      "engine": "OMG SysML v2 Pilot 0.63.1 native visualization export",
+      "jar_sha256": "67c914092f4520ba98548b285c5a9a8bc08f92a0aeec7b763e12a574e91f9ff7",
+      "render_method": "OMG SysML v2 Pilot原生PlantUML导出 → PlantUML图像",
+      "output_stem": "功能模型/02_3.3.1.9-功能分解",
+      "is_index": false,
+      "artifacts": {
+        "puml": {
+          "file": "功能模型/02_3.3.1.9-功能分解.puml",
+          "sha256": "e0019136a2119ac8eb1d0a9d538bfe89f5dc6a2468bf39806023137d466200b1",
+          "bytes": 1785
+        },
+        "svg": {
+          "file": "功能模型/02_3.3.1.9-功能分解.svg",
+          "sha256": "336ffe037c73a67b204cf70c6218139c3240827ac1c66da181850ddbc92cdfdc",
+          "bytes": 19599
+        },
+        "png": {
+          "file": "功能模型/02_3.3.1.9-功能分解.png",
+          "sha256": "c67129751c5932d94a7f1f5d3b5e6aa19c2cc6eaa77a05d6d9c46064f10fc72e",
+          "bytes": 96501
+        }
+      },
+      "png_dimensions": [
+        2550,
+        420
+      ]
+    },
+    {
+      "model_file": "功能模型/02_SC1-功能分解.sysml",
+      "source_sha256": "0bb6fe2a4dfa1521e859cb2acca5fe038281297587127f888dc27e8e4f245181",
+      "suffix": "",
+      "selectors": [
+        "Decomp_SC1::'串联混动经济性场景'"
+      ],
+      "native_mode": "TREE",
+      "engine": "OMG SysML v2 Pilot 0.63.1 native visualization export",
+      "jar_sha256": "67c914092f4520ba98548b285c5a9a8bc08f92a0aeec7b763e12a574e91f9ff7",
+      "render_method": "OMG SysML v2 Pilot原生PlantUML导出 → PlantUML图像",
+      "output_stem": "功能模型/02_SC1-功能分解",
+      "is_index": false,
+      "artifacts": {
+        "puml": {
+          "file": "功能模型/02_SC1-功能分解.puml",
+          "sha256": "87a2bc268bdd24052b0b51e176c67adcc811bdfe971f9bd3cf58d4af8d517e5b",
+          "bytes": 1329
+        },
+        "svg": {
+          "file": "功能模型/02_SC1-功能分解.svg",
+          "sha256": "ba3d5367e7ee56198e5d8467291b2d6b00aa585ed7af6faacaa5d22f2360e8bd",
+          "bytes": 14121
+        },
+        "png": {
+          "file": "功能模型/02_SC1-功能分解.png",
+          "sha256": "1fd0ceab07b011762b519450822a4e9632133d6b3364c9bf33cdc9e717559228",
+          "bytes": 75826
+        }
+      },
+      "png_dimensions": [
+        2475,
+        279
+      ]
+    },
+    {
+      "model_file": "功能模型/02_SC2-功能分解.sysml",
+      "source_sha256": "53f5425c50fbab9633e704f7faa259b56f71c1e0b77e240db3d8d429a519c2e9",
+      "suffix": "",
+      "selectors": [
+        "Decomp_SC2::'空调供风辅助电池冷却场景'"
+      ],
+      "native_mode": "TREE",
+      "engine": "OMG SysML v2 Pilot 0.63.1 native visualization export",
+      "jar_sha256": "67c914092f4520ba98548b285c5a9a8bc08f92a0aeec7b763e12a574e91f9ff7",
+      "render_method": "OMG SysML v2 Pilot原生PlantUML导出 → PlantUML图像",
+      "output_stem": "功能模型/02_SC2-功能分解",
+      "is_index": false,
+      "artifacts": {
+        "puml": {
+          "file": "功能模型/02_SC2-功能分解.puml",
+          "sha256": "0396f0abca342dc8614aa7e61c0d5f1244239e59d15336d097718c7f592409fd",
+          "bytes": 1359
+        },
+        "svg": {
+          "file": "功能模型/02_SC2-功能分解.svg",
+          "sha256": "015169f8aabd94fdea3d577daf058b44e85c7012825f5ae9109b47917e458ccc",
+          "bytes": 14167
+        },
+        "png": {
+          "file": "功能模型/02_SC2-功能分解.png",
+          "sha256": "73114eb73d8c8b167d03e4acc4925ae9e6a38a3d1ae76fc2b38c3fc841994870",
+          "bytes": 80740
+        }
+      },
+      "png_dimensions": [
+        2580,
+        279
+      ]
+    },
+    {
+      "model_file": "功能模型/02_SC3-功能分解.sysml",
+      "source_sha256": "54a5bb410ce13860fe88a85b3c32a3660fcd99b9b6d60e7d8bfca3e63eab62d1",
+      "suffix": "",
+      "selectors": [
+        "Decomp_SC3::'座舱空调与Chiller电池液冷场景'"
+      ],
+      "native_mode": "TREE",
+      "engine": "OMG SysML v2 Pilot 0.63.1 native visualization export",
+      "jar_sha256": "67c914092f4520ba98548b285c5a9a8bc08f92a0aeec7b763e12a574e91f9ff7",
+      "render_method": "OMG SysML v2 Pilot原生PlantUML导出 → PlantUML图像",
+      "output_stem": "功能模型/02_SC3-功能分解",
+      "is_index": false,
+      "artifacts": {
+        "puml": {
+          "file": "功能模型/02_SC3-功能分解.puml",
+          "sha256": "24447c997125ec8b9a1384bba75d15bde9804bc07ac48dc5e7b8d561ba61b9f8",
+          "bytes": 1483
+        },
+        "svg": {
+          "file": "功能模型/02_SC3-功能分解.svg",
+          "sha256": "d4cabdb8e2ff46f4d6bff10bac2608d908ebac32647b45c5b9731df997cdafe3",
+          "bytes": 15506
+        },
+        "png": {
+          "file": "功能模型/02_SC3-功能分解.png",
+          "sha256": "fcac4efa81dad1be7a6c057a4f028528ba47524fe7afed8ad4a8a7a610855b02",
+          "bytes": 88031
+        }
+      },
+      "png_dimensions": [
+        2956,
+        279
+      ]
+    },
+    {
+      "model_file": "行为模型/SC1-行为模型.sysml",
+      "source_sha256": "af92dc415c048ec8ce53c93441b48a99d331367bfd10e6734cb226b62e191827",
+      "suffix": "",
+      "selectors": [
+        "Render_SC1::ACT"
+      ],
+      "native_mode": "view ActionFlowView",
+      "engine": "OMG SysML v2 Pilot 0.63.1 native visualization export",
+      "jar_sha256": "67c914092f4520ba98548b285c5a9a8bc08f92a0aeec7b763e12a574e91f9ff7",
+      "render_method": "OMG SysML v2 Pilot原生PlantUML导出 → PlantUML图像",
+      "output_stem": "行为模型/SC1-行为模型",
+      "is_index": false,
+      "artifacts": {
+        "puml": {
+          "file": "行为模型/SC1-行为模型.puml",
+          "sha256": "81307ce879283833de4d603da3abe0f7d53270d262bceb9e6b7aef1072b9873f",
+          "bytes": 4697
+        },
+        "svg": {
+          "file": "行为模型/SC1-行为模型.svg",
+          "sha256": "2d878d9a7ab1d74efe93ece98cad70fc658543fc39515e5411938cc37e8d0563",
+          "bytes": 57272
+        },
+        "png": {
+          "file": "行为模型/SC1-行为模型.png",
+          "sha256": "36094f1f3f61d9c7ba25aa0752bc19e172893bd9e7123fed2dcc3e4be2601e01",
+          "bytes": 231343
+        }
+      },
+      "png_dimensions": [
+        3000,
+        917
+      ]
+    },
+    {
+      "model_file": "行为模型/SC2-行为模型.sysml",
+      "source_sha256": "d3b27a75e34270c5668899167330081e839844ce6f409efc53b7eff5e825d0b5",
+      "suffix": "",
+      "selectors": [
+        "Render_SC2::ACT"
+      ],
+      "native_mode": "view ActionFlowView",
+      "engine": "OMG SysML v2 Pilot 0.63.1 native visualization export",
+      "jar_sha256": "67c914092f4520ba98548b285c5a9a8bc08f92a0aeec7b763e12a574e91f9ff7",
+      "render_method": "OMG SysML v2 Pilot原生PlantUML导出 → PlantUML图像",
+      "output_stem": "行为模型/SC2-行为模型",
+      "is_index": false,
+      "artifacts": {
+        "puml": {
+          "file": "行为模型/SC2-行为模型.puml",
+          "sha256": "54cae6bc0a3c63595b49706971c46b6ba165c20f0ae15131f3a93cf05f416c40",
+          "bytes": 5281
+        },
+        "svg": {
+          "file": "行为模型/SC2-行为模型.svg",
+          "sha256": "8ee67f59f19ef1353535c6abc59f69bf2efeba392ad1ccaf8346bc743851ea4c",
+          "bytes": 63144
+        },
+        "png": {
+          "file": "行为模型/SC2-行为模型.png",
+          "sha256": "6196a1f2cd50ca510c18c81c18f812646938e33b1624efc183711ccf79816ba9",
+          "bytes": 288004
+        }
+      },
+      "png_dimensions": [
+        3000,
+        1276
+      ]
+    },
+    {
+      "model_file": "行为模型/SC3-行为模型.sysml",
+      "source_sha256": "303d91dbf94a0a587a6685a1970cce1513d15716a5f6c2bf2a1e1f524f828cc9",
+      "suffix": "",
+      "selectors": [
+        "Render_SC3::ACT"
+      ],
+      "native_mode": "view ActionFlowView",
+      "engine": "OMG SysML v2 Pilot 0.63.1 native visualization export",
+      "jar_sha256": "67c914092f4520ba98548b285c5a9a8bc08f92a0aeec7b763e12a574e91f9ff7",
+      "render_method": "OMG SysML v2 Pilot原生PlantUML导出 → PlantUML图像",
+      "output_stem": "行为模型/SC3-行为模型",
+      "is_index": false,
+      "artifacts": {
+        "puml": {
+          "file": "行为模型/SC3-行为模型.puml",
+          "sha256": "91997b97c1de00d6c8a5f3d16dae3a59120e6765991812387f428d9ad46c3484",
+          "bytes": 5385
+        },
+        "svg": {
+          "file": "行为模型/SC3-行为模型.svg",
+          "sha256": "bee9c9ea94c7e4aa702408a1a50d4d51cfb6bfda524f7f67fb06c927e6a7e78b",
+          "bytes": 65182
+        },
+        "png": {
+          "file": "行为模型/SC3-行为模型.png",
+          "sha256": "8ef1e6ce287f75d71141c77e464f3f2975c0041d73fc1ab206e4f89f659609eb",
+          "bytes": 346202
+        }
+      },
+      "png_dimensions": [
+        3000,
+        1386
+      ]
+    },
+    {
+      "model_file": "需求图/3.3.1.2-需求图.sysml",
+      "source_sha256": "d30026dfab72845cc12ce06153a84fb7cb8177679d7f63bdba1fcb466467e289",
+      "suffix": "",
+      "selectors": [
+        "RequirementModel_01::AirConditioningHeating"
+      ],
+      "native_mode": "TREE",
+      "engine": "OMG SysML v2 Pilot 0.63.1 native visualization export",
+      "jar_sha256": "67c914092f4520ba98548b285c5a9a8bc08f92a0aeec7b763e12a574e91f9ff7",
+      "render_method": "OMG SysML v2 Pilot原生PlantUML导出 → PlantUML图像",
+      "output_stem": "需求图/3.3.1.2-需求图",
+      "is_index": false,
+      "artifacts": {
+        "puml": {
+          "file": "需求图/3.3.1.2-需求图.puml",
+          "sha256": "ce8c2945b397e53f1e07bb9cc9535e794b454924d4de0a30ccadada5816cfe6f",
+          "bytes": 1767
+        },
+        "svg": {
+          "file": "需求图/3.3.1.2-需求图.svg",
+          "sha256": "b075753ef4dabe7c9103d4612b96f663e4ecdded6fbfda38862fd0d002a26052",
+          "bytes": 14185
+        },
+        "png": {
+          "file": "需求图/3.3.1.2-需求图.png",
+          "sha256": "3173a846004de11a529a1b4585343f2374be876fc8cc15d31af0e17e23c4697e",
+          "bytes": 112228
+        }
+      },
+      "png_dimensions": [
+        2986,
+        337
+      ]
+    },
+    {
+      "model_file": "需求图/3.3.1.6-需求图.sysml",
+      "source_sha256": "8faaaafa86fef79fd991511faaff68142fed2ca0ee2e62d2c917538d9f6118b2",
+      "suffix": "",
+      "selectors": [
+        "RequirementModel_02::AutomaticClimateMode"
+      ],
+      "native_mode": "TREE",
+      "engine": "OMG SysML v2 Pilot 0.63.1 native visualization export",
+      "jar_sha256": "67c914092f4520ba98548b285c5a9a8bc08f92a0aeec7b763e12a574e91f9ff7",
+      "render_method": "OMG SysML v2 Pilot原生PlantUML导出 → PlantUML图像",
+      "output_stem": "需求图/3.3.1.6-需求图",
+      "is_index": false,
+      "artifacts": {
+        "puml": {
+          "file": "需求图/3.3.1.6-需求图.puml",
+          "sha256": "cfd7f6e3c51c51b16d4c184494293265c61d77db4817976c0d921811af6e0f59",
+          "bytes": 1759
+        },
+        "svg": {
+          "file": "需求图/3.3.1.6-需求图.svg",
+          "sha256": "d5e0c059dd7f8d21a177353e8c212d6b856887386704dfb2685af2b589f9cbed",
+          "bytes": 14769
+        },
+        "png": {
+          "file": "需求图/3.3.1.6-需求图.png",
+          "sha256": "e6c57ab534c920530df530af5e2df757bf55d1fab885fa7069e70c13ee4ce409",
+          "bytes": 119094
+        }
+      },
+      "png_dimensions": [
+        2531,
+        359
+      ]
+    },
+    {
+      "model_file": "需求图/3.3.1.9-需求图.sysml",
+      "source_sha256": "36380c27b06783d878c11dd2377db4fa9c73dd53db0eaf99b624e08f5f322011",
+      "suffix": "",
+      "selectors": [
+        "RequirementModel_03::FrontRearDefrostDemist"
+      ],
+      "native_mode": "TREE",
+      "engine": "OMG SysML v2 Pilot 0.63.1 native visualization export",
+      "jar_sha256": "67c914092f4520ba98548b285c5a9a8bc08f92a0aeec7b763e12a574e91f9ff7",
+      "render_method": "OMG SysML v2 Pilot原生PlantUML导出 → PlantUML图像",
+      "output_stem": "需求图/3.3.1.9-需求图",
+      "is_index": false,
+      "artifacts": {
+        "puml": {
+          "file": "需求图/3.3.1.9-需求图.puml",
+          "sha256": "4d72faf7adb100fb487973ff002d72cdfa2720fab75469289c3b4473b8124e65",
+          "bytes": 1658
+        },
+        "svg": {
+          "file": "需求图/3.3.1.9-需求图.svg",
+          "sha256": "efdec7fd3427fa6184628152f1153326455c5f61039f90b9e1963d7e0ebfd311",
+          "bytes": 13225
+        },
+        "png": {
+          "file": "需求图/3.3.1.9-需求图.png",
+          "sha256": "77133eca2414c8276b0482199862e7e69754b0ef683515b990e83884d63b3d84",
+          "bytes": 110425
+        }
+      },
+      "png_dimensions": [
+        2257,
+        359
+      ]
+    },
+    {
+      "model_file": "需求外部BDD图/3.3.1.2、3.3.1.6、3.3.1.9-BDD图.sysml",
+      "source_sha256": "4eb187a1b5914c392a508c508ec9fedf3e8fa5da214f518d8c4e3ec2994a55ef",
+      "suffix": "",
+      "selectors": [
+        "'热管理三条需求外部环境图BDD'::'热管理控制外部环境'"
+      ],
+      "native_mode": "INTERCONNECTION",
+      "engine": "OMG SysML v2 Pilot 0.63.1 native visualization export",
+      "jar_sha256": "67c914092f4520ba98548b285c5a9a8bc08f92a0aeec7b763e12a574e91f9ff7",
+      "render_method": "OMG SysML v2 Pilot原生PlantUML导出 → PlantUML图像",
+      "output_stem": "需求外部BDD图/3.3.1.2、3.3.1.6、3.3.1.9-BDD图",
+      "is_index": false,
+      "artifacts": {
+        "puml": {
+          "file": "需求外部BDD图/3.3.1.2、3.3.1.6、3.3.1.9-BDD图.puml",
+          "sha256": "0c1fe3ca8367cb716d53586cebf66f7f7730d37a32f5246c45ec35f623e1ca9a",
+          "bytes": 2121
+        },
+        "svg": {
+          "file": "需求外部BDD图/3.3.1.2、3.3.1.6、3.3.1.9-BDD图.svg",
+          "sha256": "f8c3af3aa64f541cece6226421515f06bded42956dd7ec33afd457c771545e7f",
+          "bytes": 16608
+        },
+        "png": {
+          "file": "需求外部BDD图/3.3.1.2、3.3.1.6、3.3.1.9-BDD图.png",
+          "sha256": "bc5c1f4fd4b003ec2b310492a5489db15c62540563c109a471c16863457164de",
+          "bytes": 85197
+        }
+      },
+      "png_dimensions": [
+        1266,
+        499
+      ]
+    },
+    {
+      "model_file": "需求活动图/3.3.1.2-需求活动图.sysml",
+      "source_sha256": "2c4303e72824ea28d35af5c9294bdf39b2c07a7bd84d3ac85da0296aae9c0652",
+      "suffix": "",
+      "selectors": [
+        "Behaviour_3_3_1_2::'ACT_3312_需求活动图'"
+      ],
+      "native_mode": "view ActionFlowView",
+      "engine": "OMG SysML v2 Pilot 0.63.1 native visualization export",
+      "jar_sha256": "67c914092f4520ba98548b285c5a9a8bc08f92a0aeec7b763e12a574e91f9ff7",
+      "render_method": "OMG SysML v2 Pilot原生PlantUML导出 → PlantUML图像",
+      "output_stem": "需求活动图/3.3.1.2-需求活动图",
+      "is_index": false,
+      "artifacts": {
+        "puml": {
+          "file": "需求活动图/3.3.1.2-需求活动图.puml",
+          "sha256": "5e28c0647704564e19d3ffebfc9e81b21912de8fe95b71804742640f1fdaab14",
+          "bytes": 4585
+        },
+        "svg": {
+          "file": "需求活动图/3.3.1.2-需求活动图.svg",
+          "sha256": "7b19ef650044e9b15591f68222f965212e17b5e57a174c41234f89a7d5db5809",
+          "bytes": 47141
+        },
+        "png": {
+          "file": "需求活动图/3.3.1.2-需求活动图.png",
+          "sha256": "2776eb71dcc1ce7f31ed413e937d5c75e43b42b6e25ef447bd288d3ecfe92eb2",
+          "bytes": 196434
+        }
+      },
+      "png_dimensions": [
+        3000,
+        674
+      ]
+    },
+    {
+      "model_file": "需求活动图/3.3.1.6-需求活动图.sysml",
+      "source_sha256": "557ea824cfae80e609ae67014b92dc1020a5344ccd53b9a767f8d896b75d84ad",
+      "suffix": "",
+      "selectors": [
+        "Behaviour_3_3_1_6::'ACT_3316_需求活动图'"
+      ],
+      "native_mode": "view ActionFlowView",
+      "engine": "OMG SysML v2 Pilot 0.63.1 native visualization export",
+      "jar_sha256": "67c914092f4520ba98548b285c5a9a8bc08f92a0aeec7b763e12a574e91f9ff7",
+      "render_method": "OMG SysML v2 Pilot原生PlantUML导出 → PlantUML图像",
+      "output_stem": "需求活动图/3.3.1.6-需求活动图",
+      "is_index": false,
+      "artifacts": {
+        "puml": {
+          "file": "需求活动图/3.3.1.6-需求活动图.puml",
+          "sha256": "9ac41fa616beb7bf05c9a462705cb552fcf686fae4feeba8eae311402084e0a8",
+          "bytes": 3564
+        },
+        "svg": {
+          "file": "需求活动图/3.3.1.6-需求活动图.svg",
+          "sha256": "70c518609591af9b72202f2d94e0fafe23e0d8050ad72b37fe6111a30c71c281",
+          "bytes": 44062
+        },
+        "png": {
+          "file": "需求活动图/3.3.1.6-需求活动图.png",
+          "sha256": "9ab8667d01e1d1d6c4da16df4433a33cb42a5cff9dfbff6cb19248aee4a71107",
+          "bytes": 119195
+        }
+      },
+      "png_dimensions": [
+        3000,
+        479
+      ]
+    },
+    {
+      "model_file": "需求活动图/3.3.1.9-需求活动图.sysml",
+      "source_sha256": "45ecb011fe494876ab1683eaa1ac10c8fd354a750f1736cc80763f76c6980781",
+      "suffix": "",
+      "selectors": [
+        "Behaviour_3_3_1_9::'ACT_3319_需求活动图'"
+      ],
+      "native_mode": "view ActionFlowView",
+      "engine": "OMG SysML v2 Pilot 0.63.1 native visualization export",
+      "jar_sha256": "67c914092f4520ba98548b285c5a9a8bc08f92a0aeec7b763e12a574e91f9ff7",
+      "render_method": "OMG SysML v2 Pilot原生PlantUML导出 → PlantUML图像",
+      "output_stem": "需求活动图/3.3.1.9-需求活动图",
+      "is_index": false,
+      "artifacts": {
+        "puml": {
+          "file": "需求活动图/3.3.1.9-需求活动图.puml",
+          "sha256": "0ded67bd6a5531645bee498ad7751763ed37d015501b68b564cef104b0daf2dc",
+          "bytes": 4285
+        },
+        "svg": {
+          "file": "需求活动图/3.3.1.9-需求活动图.svg",
+          "sha256": "7b46821fb89d64964b16744f613dbe6d783c3cc260e5da83215075d5893fa57f",
+          "bytes": 50664
+        },
+        "png": {
+          "file": "需求活动图/3.3.1.9-需求活动图.png",
+          "sha256": "0b700b72aea7995136fcb77f8d269c49d893d147ee7259b45747d991ac85324e",
+          "bytes": 329788
+        }
+      },
+      "png_dimensions": [
+        3000,
+        1284
+      ]
+    },
+    {
+      "model_file": "需求用例图/3.3.1.2、3.3.1.6、3.3.1.9-需求用例图.sysml",
+      "source_sha256": "66f3b9b1b763a8944744e91a1ad2771d324c3199620144a38def7b7390a9580e",
+      "suffix": "",
+      "selectors": [
+        "'热管理三条需求用例模型'::'获得乘员舱制热效果'",
+        "'热管理三条需求用例模型'::'获得自动温控服务'",
+        "'热管理三条需求用例模型'::'获得前风窗除霜除雾效果'"
+      ],
+      "native_mode": "TREE",
+      "engine": "OMG SysML v2 Pilot 0.63.1 native visualization export",
+      "jar_sha256": "67c914092f4520ba98548b285c5a9a8bc08f92a0aeec7b763e12a574e91f9ff7",
+      "render_method": "OMG SysML v2 Pilot原生PlantUML导出 → PlantUML图像",
+      "output_stem": "需求用例图/3.3.1.2、3.3.1.6、3.3.1.9-需求用例图",
+      "is_index": false,
+      "artifacts": {
+        "puml": {
+          "file": "需求用例图/3.3.1.2、3.3.1.6、3.3.1.9-需求用例图.puml",
+          "sha256": "7a4fdaacbcf2acdc45d9ce1db755f113cb89e3ebceaacaf9df4cc0933471e8c3",
+          "bytes": 2052
+        },
+        "svg": {
+          "file": "需求用例图/3.3.1.2、3.3.1.6、3.3.1.9-需求用例图.svg",
+          "sha256": "71eb20c12452e2fb0258f6fcacb60b57f6b764ad17eff45809ba1aed6ff93186",
+          "bytes": 24326
+        },
+        "png": {
+          "file": "需求用例图/3.3.1.2、3.3.1.6、3.3.1.9-需求用例图.png",
+          "sha256": "673dfe28876c56ba5ce8344b43a12f56f702ab02e3df1c8a77036575c0c02260",
+          "bytes": 93863
+        }
+      },
+      "png_dimensions": [
+        2619,
+        371
+      ]
+    },
+    {
+      "model_file": "下游导入包/功能模型__00_概念接口类型.sysml",
+      "source_sha256": "6bdc17566f82bbec10dfcfe91e90e9d83151bd98de64e74de1f1580bf01ce39e",
+      "suffix": "",
+      "selectors": [
+        "SEOV_ConceptTypes::C001",
+        "SEOV_ConceptTypes::C002",
+        "SEOV_ConceptTypes::C003",
+        "SEOV_ConceptTypes::C004",
+        "SEOV_ConceptTypes::C005",
+        "SEOV_ConceptTypes::C006",
+        "SEOV_ConceptTypes::C007",
+        "SEOV_ConceptTypes::C008",
+        "SEOV_ConceptTypes::C009",
+        "SEOV_ConceptTypes::C010",
+        "SEOV_ConceptTypes::C011",
+        "SEOV_ConceptTypes::C012",
+        "SEOV_ConceptTypes::C013",
+        "SEOV_ConceptTypes::C014",
+        "SEOV_ConceptTypes::C015",
+        "SEOV_ConceptTypes::C016",
+        "SEOV_ConceptTypes::C017",
+        "SEOV_ConceptTypes::C018",
+        "SEOV_ConceptTypes::C019",
+        "SEOV_ConceptTypes::C020",
+        "SEOV_ConceptTypes::C021",
+        "SEOV_ConceptTypes::C022",
+        "SEOV_ConceptTypes::C023",
+        "SEOV_ConceptTypes::C024",
+        "SEOV_ConceptTypes::C025",
+        "SEOV_ConceptTypes::C026",
+        "SEOV_ConceptTypes::C027",
+        "SEOV_ConceptTypes::C028",
+        "SEOV_ConceptTypes::C029",
+        "SEOV_ConceptTypes::C030",
+        "SEOV_ConceptTypes::C031",
+        "SEOV_ConceptTypes::C032",
+        "SEOV_ConceptTypes::C033",
+        "SEOV_ConceptTypes::C034",
+        "SEOV_ConceptTypes::C035",
+        "SEOV_ConceptTypes::C036",
+        "SEOV_ConceptTypes::C037",
+        "SEOV_ConceptTypes::C038",
+        "SEOV_ConceptTypes::C039",
+        "SEOV_ConceptTypes::C040",
+        "SEOV_ConceptTypes::C041",
+        "SEOV_ConceptTypes::C042",
+        "SEOV_ConceptTypes::C043",
+        "SEOV_ConceptTypes::C044",
+        "SEOV_ConceptTypes::C045",
+        "SEOV_ConceptTypes::C046",
+        "SEOV_ConceptTypes::C047",
+        "SEOV_ConceptTypes::C048",
+        "SEOV_ConceptTypes::C049",
+        "SEOV_ConceptTypes::C050",
+        "SEOV_ConceptTypes::C051",
+        "SEOV_ConceptTypes::C052",
+        "SEOV_ConceptTypes::C053",
+        "SEOV_ConceptTypes::C054",
+        "SEOV_ConceptTypes::C055",
+        "SEOV_ConceptTypes::C056",
+        "SEOV_ConceptTypes::C057",
+        "SEOV_ConceptTypes::C058",
+        "SEOV_ConceptTypes::C059",
+        "SEOV_ConceptTypes::C060",
+        "SEOV_ConceptTypes::C061",
+        "SEOV_ConceptTypes::C062",
+        "SEOV_ConceptTypes::C063",
+        "SEOV_ConceptTypes::C064",
+        "SEOV_ConceptTypes::C065",
+        "SEOV_ConceptTypes::C066",
+        "SEOV_ConceptTypes::C067",
+        "SEOV_ConceptTypes::C068",
+        "SEOV_ConceptTypes::C069",
+        "SEOV_ConceptTypes::C070",
+        "SEOV_ConceptTypes::C071",
+        "SEOV_ConceptTypes::C072",
+        "SEOV_ConceptTypes::C073",
+        "SEOV_ConceptTypes::C074",
+        "SEOV_ConceptTypes::C075",
+        "SEOV_ConceptTypes::C076",
+        "SEOV_ConceptTypes::C077",
+        "SEOV_ConceptTypes::C078",
+        "SEOV_ConceptTypes::C079",
+        "SEOV_ConceptTypes::C080",
+        "SEOV_ConceptTypes::C081",
+        "SEOV_ConceptTypes::C082",
+        "SEOV_ConceptTypes::C083",
+        "SEOV_ConceptTypes::C084",
+        "SEOV_ConceptTypes::C085",
+        "SEOV_ConceptTypes::C086",
+        "SEOV_ConceptTypes::C087",
+        "SEOV_ConceptTypes::C088",
+        "SEOV_ConceptTypes::C089",
+        "SEOV_ConceptTypes::C090",
+        "SEOV_ConceptTypes::C091",
+        "SEOV_ConceptTypes::C092",
+        "SEOV_ConceptTypes::C093",
+        "SEOV_ConceptTypes::C094",
+        "SEOV_ConceptTypes::C095",
+        "SEOV_ConceptTypes::C096",
+        "SEOV_ConceptTypes::C097",
+        "SEOV_ConceptTypes::C098",
+        "SEOV_ConceptTypes::C099",
+        "SEOV_ConceptTypes::C100",
+        "SEOV_ConceptTypes::C101",
+        "SEOV_ConceptTypes::C102",
+        "SEOV_ConceptTypes::C103",
+        "SEOV_ConceptTypes::C104",
+        "SEOV_ConceptTypes::C105",
+        "SEOV_ConceptTypes::C106",
+        "SEOV_ConceptTypes::C107",
+        "SEOV_ConceptTypes::C108",
+        "SEOV_ConceptTypes::C109",
+        "SEOV_ConceptTypes::C110",
+        "SEOV_ConceptTypes::C111",
+        "SEOV_ConceptTypes::C112",
+        "SEOV_ConceptTypes::C113",
+        "SEOV_ConceptTypes::C114",
+        "SEOV_ConceptTypes::C115",
+        "SEOV_ConceptTypes::C116",
+        "SEOV_ConceptTypes::C117",
+        "SEOV_ConceptTypes::C118",
+        "SEOV_ConceptTypes::C119",
+        "SEOV_ConceptTypes::C120",
+        "SEOV_ConceptTypes::C121",
+        "SEOV_ConceptTypes::C122",
+        "SEOV_ConceptTypes::C123",
+        "SEOV_ConceptTypes::C124",
+        "SEOV_ConceptTypes::C125",
+        "SEOV_ConceptTypes::C126",
+        "SEOV_ConceptTypes::C127",
+        "SEOV_ConceptTypes::C128",
+        "SEOV_ConceptTypes::C129",
+        "SEOV_ConceptTypes::C130",
+        "SEOV_ConceptTypes::C131",
+        "SEOV_ConceptTypes::C132",
+        "SEOV_ConceptTypes::C133",
+        "SEOV_ConceptTypes::C134",
+        "SEOV_ConceptTypes::C135",
+        "SEOV_ConceptTypes::C136",
+        "SEOV_ConceptTypes::C137",
+        "SEOV_ConceptTypes::C138",
+        "SEOV_ConceptTypes::C139",
+        "SEOV_ConceptTypes::C140",
+        "SEOV_ConceptTypes::C141",
+        "SEOV_ConceptTypes::C142",
+        "SEOV_ConceptTypes::C143",
+        "SEOV_ConceptTypes::C144",
+        "SEOV_ConceptTypes::C145",
+        "SEOV_ConceptTypes::C146",
+        "SEOV_ConceptTypes::C147",
+        "SEOV_ConceptTypes::C148",
+        "SEOV_ConceptTypes::C149",
+        "SEOV_ConceptTypes::C150",
+        "SEOV_ConceptTypes::C151",
+        "SEOV_ConceptTypes::C152",
+        "SEOV_ConceptTypes::C153",
+        "SEOV_ConceptTypes::C154",
+        "SEOV_ConceptTypes::C155",
+        "SEOV_ConceptTypes::C156",
+        "SEOV_ConceptTypes::C157",
+        "SEOV_ConceptTypes::C158",
+        "SEOV_ConceptTypes::C159",
+        "SEOV_ConceptTypes::C160",
+        "SEOV_ConceptTypes::C161",
+        "SEOV_ConceptTypes::C162",
+        "SEOV_ConceptTypes::C163",
+        "SEOV_ConceptTypes::C164",
+        "SEOV_ConceptTypes::C165",
+        "SEOV_ConceptTypes::C166",
+        "SEOV_ConceptTypes::C167",
+        "SEOV_ConceptTypes::C168",
+        "SEOV_ConceptTypes::C169",
+        "SEOV_ConceptTypes::C170",
+        "SEOV_ConceptTypes::C171",
+        "SEOV_ConceptTypes::C172",
+        "SEOV_ConceptTypes::C173",
+        "SEOV_ConceptTypes::C174",
+        "SEOV_ConceptTypes::C175",
+        "SEOV_ConceptTypes::C176",
+        "SEOV_ConceptTypes::C177",
+        "SEOV_ConceptTypes::C178",
+        "SEOV_ConceptTypes::C179",
+        "SEOV_ConceptTypes::C180",
+        "SEOV_ConceptTypes::C181",
+        "SEOV_ConceptTypes::C182",
+        "SEOV_ConceptTypes::C183",
+        "SEOV_ConceptTypes::C184",
+        "SEOV_ConceptTypes::C185",
+        "SEOV_ConceptTypes::C186",
+        "SEOV_ConceptTypes::C187",
+        "SEOV_ConceptTypes::C188",
+        "SEOV_ConceptTypes::C189",
+        "SEOV_ConceptTypes::C190",
+        "SEOV_ConceptTypes::C191",
+        "SEOV_ConceptTypes::C192",
+        "SEOV_ConceptTypes::C193",
+        "SEOV_ConceptTypes::C194",
+        "SEOV_ConceptTypes::C195"
+      ],
+      "native_mode": "TREE",
+      "engine": "OMG SysML v2 Pilot 0.63.1 native visualization export",
+      "jar_sha256": "67c914092f4520ba98548b285c5a9a8bc08f92a0aeec7b763e12a574e91f9ff7",
+      "render_method": "完整源模型目录索引＋原生分页详图（未交付截断图）",
+      "output_stem": "下游导入包/功能模型__00_概念接口类型",
+      "is_index": true,
+      "artifacts": {
+        "puml": {
+          "file": "下游导入包/功能模型__00_概念接口类型.puml",
+          "sha256": "59f37e64e0f8c88d0418fece48b9eb5bea3dd6c05d354f3a8e5da00cfb3122cf",
+          "bytes": 8633
+        },
+        "svg": {
+          "file": "下游导入包/功能模型__00_概念接口类型.svg",
+          "sha256": "8c50d225bb4e626d15bd614abfd63d74e2f8845e73d7bb49f3f6518c3b0d17af",
+          "bytes": 54676
+        },
+        "png": {
+          "file": "下游导入包/功能模型__00_概念接口类型.png",
+          "sha256": "10578e89dc4ac067925e40716b205d27d1b46451ff655f69c63faaefa27d1b90",
+          "bytes": 741100
+        }
+      },
+      "png_dimensions": [
+        761,
+        7352
+      ],
+      "copy_of": "功能模型/00_概念接口类型.sysml"
+    },
+    {
+      "model_file": "下游导入包/功能模型__00_概念接口类型.sysml",
+      "source_sha256": "6bdc17566f82bbec10dfcfe91e90e9d83151bd98de64e74de1f1580bf01ce39e",
+      "suffix": "_详情_01",
+      "selectors": [
+        "SEOV_ConceptTypes::C001",
+        "SEOV_ConceptTypes::C002",
+        "SEOV_ConceptTypes::C003",
+        "SEOV_ConceptTypes::C004",
+        "SEOV_ConceptTypes::C005",
+        "SEOV_ConceptTypes::C006",
+        "SEOV_ConceptTypes::C007",
+        "SEOV_ConceptTypes::C008"
+      ],
+      "native_mode": "TREE",
+      "engine": "OMG SysML v2 Pilot 0.63.1 native visualization export",
+      "jar_sha256": "67c914092f4520ba98548b285c5a9a8bc08f92a0aeec7b763e12a574e91f9ff7",
+      "render_method": "OMG SysML v2 Pilot原生PlantUML导出 → PlantUML图像",
+      "output_stem": "下游导入包/功能模型__00_概念接口类型_详情_01",
+      "is_index": false,
+      "artifacts": {
+        "puml": {
+          "file": "下游导入包/功能模型__00_概念接口类型_详情_01.puml",
+          "sha256": "906dd0fb362dcde537430bad6647fc57a41585891aecf44d612656d45da6ab3f",
+          "bytes": 1528
+        },
+        "svg": {
+          "file": "下游导入包/功能模型__00_概念接口类型_详情_01.svg",
+          "sha256": "b6fcd17b6003a8750d048e04a1544172cc70154a39c99c5b90b9cdb1e0349bdc",
+          "bytes": 12708
+        },
+        "png": {
+          "file": "下游导入包/功能模型__00_概念接口类型_详情_01.png",
+          "sha256": "511e8c0128f0d5f6de0824d08484d8ef43de8a0a04eddb5472ba8481b491f67d",
+          "bytes": 81902
+        }
+      },
+      "png_dimensions": [
+        3000,
+        182
+      ],
+      "copy_of": "功能模型/00_概念接口类型.sysml"
+    },
+    {
+      "model_file": "下游导入包/功能模型__00_概念接口类型.sysml",
+      "source_sha256": "6bdc17566f82bbec10dfcfe91e90e9d83151bd98de64e74de1f1580bf01ce39e",
+      "suffix": "_详情_02",
+      "selectors": [
+        "SEOV_ConceptTypes::C009",
+        "SEOV_ConceptTypes::C010",
+        "SEOV_ConceptTypes::C011",
+        "SEOV_ConceptTypes::C012",
+        "SEOV_ConceptTypes::C013",
+        "SEOV_ConceptTypes::C014",
+        "SEOV_ConceptTypes::C015",
+        "SEOV_ConceptTypes::C016"
+      ],
+      "native_mode": "TREE",
+      "engine": "OMG SysML v2 Pilot 0.63.1 native visualization export",
+      "jar_sha256": "67c914092f4520ba98548b285c5a9a8bc08f92a0aeec7b763e12a574e91f9ff7",
+      "render_method": "OMG SysML v2 Pilot原生PlantUML导出 → PlantUML图像",
+      "output_stem": "下游导入包/功能模型__00_概念接口类型_详情_02",
+      "is_index": false,
+      "artifacts": {
+        "puml": {
+          "file": "下游导入包/功能模型__00_概念接口类型_详情_02.puml",
+          "sha256": "aca612e548400956e9f4b2e5548e86dbd316a6f67db5c870d3801a4106eccaa6",
+          "bytes": 1617
+        },
+        "svg": {
+          "file": "下游导入包/功能模型__00_概念接口类型_详情_02.svg",
+          "sha256": "1c188ea0cb9d470f103e03dccf612e8ff022a68f9548a4efe81dd699e9ca507a",
+          "bytes": 13766
+        },
+        "png": {
+          "file": "下游导入包/功能模型__00_概念接口类型_详情_02.png",
+          "sha256": "0e5ec9d9f8dbc7f538369353410b9ea5720a18e28550b0b829bb989ca5a5e852",
+          "bytes": 87827
+        }
+      },
+      "png_dimensions": [
+        3000,
+        180
+      ],
+      "copy_of": "功能模型/00_概念接口类型.sysml"
+    },
+    {
+      "model_file": "下游导入包/功能模型__00_概念接口类型.sysml",
+      "source_sha256": "6bdc17566f82bbec10dfcfe91e90e9d83151bd98de64e74de1f1580bf01ce39e",
+      "suffix": "_详情_03",
+      "selectors": [
+        "SEOV_ConceptTypes::C017",
+        "SEOV_ConceptTypes::C018",
+        "SEOV_ConceptTypes::C019",
+        "SEOV_ConceptTypes::C020",
+        "SEOV_ConceptTypes::C021",
+        "SEOV_ConceptTypes::C022",
+        "SEOV_ConceptTypes::C023",
+        "SEOV_ConceptTypes::C024"
+      ],
+      "native_mode": "TREE",
+      "engine": "OMG SysML v2 Pilot 0.63.1 native visualization export",
+      "jar_sha256": "67c914092f4520ba98548b285c5a9a8bc08f92a0aeec7b763e12a574e91f9ff7",
+      "render_method": "OMG SysML v2 Pilot原生PlantUML导出 → PlantUML图像",
+      "output_stem": "下游导入包/功能模型__00_概念接口类型_详情_03",
+      "is_index": false,
+      "artifacts": {
+        "puml": {
+          "file": "下游导入包/功能模型__00_概念接口类型_详情_03.puml",
+          "sha256": "d2706973e23b869c9469cef0890c0a00f2d012d3eee4c6ce5f87432fd8b476de",
+          "bytes": 1472
+        },
+        "svg": {
+          "file": "下游导入包/功能模型__00_概念接口类型_详情_03.svg",
+          "sha256": "91b883dc0df3e17f1a4be2cb0a5e7519551d10623a12ec7e0e8766a752d58df0",
+          "bytes": 11453
+        },
+        "png": {
+          "file": "下游导入包/功能模型__00_概念接口类型_详情_03.png",
+          "sha256": "9784df3d95fe54c2412677c331a6646f1aadf72cd7c1f94f7a88cc67b8c72105",
+          "bytes": 49063
+        }
+      },
+      "png_dimensions": [
+        2844,
+        139
+      ],
+      "copy_of": "功能模型/00_概念接口类型.sysml"
+    },
+    {
+      "model_file": "下游导入包/功能模型__00_概念接口类型.sysml",
+      "source_sha256": "6bdc17566f82bbec10dfcfe91e90e9d83151bd98de64e74de1f1580bf01ce39e",
+      "suffix": "_详情_04",
+      "selectors": [
+        "SEOV_ConceptTypes::C025",
+        "SEOV_ConceptTypes::C026",
+        "SEOV_ConceptTypes::C027",
+        "SEOV_ConceptTypes::C028",
+        "SEOV_ConceptTypes::C029",
+        "SEOV_ConceptTypes::C030",
+        "SEOV_ConceptTypes::C031",
+        "SEOV_ConceptTypes::C032"
+      ],
+      "native_mode": "TREE",
+      "engine": "OMG SysML v2 Pilot 0.63.1 native visualization export",
+      "jar_sha256": "67c914092f4520ba98548b285c5a9a8bc08f92a0aeec7b763e12a574e91f9ff7",
+      "render_method": "OMG SysML v2 Pilot原生PlantUML导出 → PlantUML图像",
+      "output_stem": "下游导入包/功能模型__00_概念接口类型_详情_04",
+      "is_index": false,
+      "artifacts": {
+        "puml": {
+          "file": "下游导入包/功能模型__00_概念接口类型_详情_04.puml",
+          "sha256": "378e41a56dca33e9c191600eb35166b71003639f8dfa33ffa29fb0d8b1afb153",
+          "bytes": 1496
+        },
+        "svg": {
+          "file": "下游导入包/功能模型__00_概念接口类型_详情_04.svg",
+          "sha256": "fe3b07a7f570c56d43cc4f0426476387db87ca3692c5ca2a8454a856d5bd9005",
+          "bytes": 11929
+        },
+        "png": {
+          "file": "下游导入包/功能模型__00_概念接口类型_详情_04.png",
+          "sha256": "a8fc69678c396c05eb5651267dc9b2893e30bcb28b6082404313ba3855dd8fd0",
+          "bytes": 46996
+        }
+      },
+      "png_dimensions": [
+        2747,
+        184
+      ],
+      "copy_of": "功能模型/00_概念接口类型.sysml"
+    },
+    {
+      "model_file": "下游导入包/功能模型__00_概念接口类型.sysml",
+      "source_sha256": "6bdc17566f82bbec10dfcfe91e90e9d83151bd98de64e74de1f1580bf01ce39e",
+      "suffix": "_详情_05",
+      "selectors": [
+        "SEOV_ConceptTypes::C033",
+        "SEOV_ConceptTypes::C034",
+        "SEOV_ConceptTypes::C035",
+        "SEOV_ConceptTypes::C036",
+        "SEOV_ConceptTypes::C037",
+        "SEOV_ConceptTypes::C038",
+        "SEOV_ConceptTypes::C039",
+        "SEOV_ConceptTypes::C040"
+      ],
+      "native_mode": "TREE",
+      "engine": "OMG SysML v2 Pilot 0.63.1 native visualization export",
+      "jar_sha256": "67c914092f4520ba98548b285c5a9a8bc08f92a0aeec7b763e12a574e91f9ff7",
+      "render_method": "OMG SysML v2 Pilot原生PlantUML导出 → PlantUML图像",
+      "output_stem": "下游导入包/功能模型__00_概念接口类型_详情_05",
+      "is_index": false,
+      "artifacts": {
+        "puml": {
+          "file": "下游导入包/功能模型__00_概念接口类型_详情_05.puml",
+          "sha256": "9ec41109e0a4dbb2de914a851f389e57632cf2bf0e18e70ec7d9a8f4cf1f6efd",
+          "bytes": 1532
+        },
+        "svg": {
+          "file": "下游导入包/功能模型__00_概念接口类型_详情_05.svg",
+          "sha256": "0b1026cef852fbdd2c2827b90fb2909ed0955c2d1cdf46f0e3729946e44acabe",
+          "bytes": 11563
+        },
+        "png": {
+          "file": "下游导入包/功能模型__00_概念接口类型_详情_05.png",
+          "sha256": "30ddb053e8d610ec427065693d12a4bcda6283ff8bde2addb79b39c90387c4f0",
+          "bytes": 33128
+        }
+      },
+      "png_dimensions": [
+        2997,
+        139
+      ],
+      "copy_of": "功能模型/00_概念接口类型.sysml"
+    },
+    {
+      "model_file": "下游导入包/功能模型__00_概念接口类型.sysml",
+      "source_sha256": "6bdc17566f82bbec10dfcfe91e90e9d83151bd98de64e74de1f1580bf01ce39e",
+      "suffix": "_详情_06",
+      "selectors": [
+        "SEOV_ConceptTypes::C041",
+        "SEOV_ConceptTypes::C042",
+        "SEOV_ConceptTypes::C043",
+        "SEOV_ConceptTypes::C044",
+        "SEOV_ConceptTypes::C045",
+        "SEOV_ConceptTypes::C046",
+        "SEOV_ConceptTypes::C047",
+        "SEOV_ConceptTypes::C048"
+      ],
+      "native_mode": "TREE",
+      "engine": "OMG SysML v2 Pilot 0.63.1 native visualization export",
+      "jar_sha256": "67c914092f4520ba98548b285c5a9a8bc08f92a0aeec7b763e12a574e91f9ff7",
+      "render_method": "OMG SysML v2 Pilot原生PlantUML导出 → PlantUML图像",
+      "output_stem": "下游导入包/功能模型__00_概念接口类型_详情_06",
+      "is_index": false,
+      "artifacts": {
+        "puml": {
+          "file": "下游导入包/功能模型__00_概念接口类型_详情_06.puml",
+          "sha256": "db73917f2c447f42c44216b074af2ffe9cb7d72a3649d456989a753c133abee7",
+          "bytes": 1524
+        },
+        "svg": {
+          "file": "下游导入包/功能模型__00_概念接口类型_详情_06.svg",
+          "sha256": "912c9161032e90a5e6fbd8b7d7eef46bcff3417066ae6305cd25ca080a5bd116",
+          "bytes": 11560
+        },
+        "png": {
+          "file": "下游导入包/功能模型__00_概念接口类型_详情_06.png",
+          "sha256": "f54dcf281217198bb923e1b3e8b1ce249b4e3ae3fd971bad51f1e95eacddf38f",
+          "bytes": 47155
+        }
+      },
+      "png_dimensions": [
+        2880,
+        139
+      ],
+      "copy_of": "功能模型/00_概念接口类型.sysml"
+    },
+    {
+      "model_file": "下游导入包/功能模型__00_概念接口类型.sysml",
+      "source_sha256": "6bdc17566f82bbec10dfcfe91e90e9d83151bd98de64e74de1f1580bf01ce39e",
+      "suffix": "_详情_07",
+      "selectors": [
+        "SEOV_ConceptTypes::C049",
+        "SEOV_ConceptTypes::C050",
+        "SEOV_ConceptTypes::C051",
+        "SEOV_ConceptTypes::C052",
+        "SEOV_ConceptTypes::C053",
+        "SEOV_ConceptTypes::C054",
+        "SEOV_ConceptTypes::C055",
+        "SEOV_ConceptTypes::C056"
+      ],
+      "native_mode": "TREE",
+      "engine": "OMG SysML v2 Pilot 0.63.1 native visualization export",
+      "jar_sha256": "67c914092f4520ba98548b285c5a9a8bc08f92a0aeec7b763e12a574e91f9ff7",
+      "render_method": "OMG SysML v2 Pilot原生PlantUML导出 → PlantUML图像",
+      "output_stem": "下游导入包/功能模型__00_概念接口类型_详情_07",
+      "is_index": false,
+      "artifacts": {
+        "puml": {
+          "file": "下游导入包/功能模型__00_概念接口类型_详情_07.puml",
+          "sha256": "1d83156158007efbcaa591b63171f87f101ecdb5d039e8d291e967ea6c89cd0d",
+          "bytes": 1399
+        },
+        "svg": {
+          "file": "下游导入包/功能模型__00_概念接口类型_详情_07.svg",
+          "sha256": "3a91d23b31129cf503ba39f24739fe3796611510b49d5808a65d28472b8900dc",
+          "bytes": 11267
+        },
+        "png": {
+          "file": "下游导入包/功能模型__00_概念接口类型_详情_07.png",
+          "sha256": "c45dd849b995c8df258201ed1bfcf4a4c55ea19d18a78b39041061885404aae2",
+          "bytes": 43244
+        }
+      },
+      "png_dimensions": [
+        2647,
+        139
+      ],
+      "copy_of": "功能模型/00_概念接口类型.sysml"
+    },
+    {
+      "model_file": "下游导入包/功能模型__00_概念接口类型.sysml",
+      "source_sha256": "6bdc17566f82bbec10dfcfe91e90e9d83151bd98de64e74de1f1580bf01ce39e",
+      "suffix": "_详情_08",
+      "selectors": [
+        "SEOV_ConceptTypes::C057",
+        "SEOV_ConceptTypes::C058",
+        "SEOV_ConceptTypes::C059",
+        "SEOV_ConceptTypes::C060",
+        "SEOV_ConceptTypes::C061",
+        "SEOV_ConceptTypes::C062",
+        "SEOV_ConceptTypes::C063",
+        "SEOV_ConceptTypes::C064"
+      ],
+      "native_mode": "TREE",
+      "engine": "OMG SysML v2 Pilot 0.63.1 native visualization export",
+      "jar_sha256": "67c914092f4520ba98548b285c5a9a8bc08f92a0aeec7b763e12a574e91f9ff7",
+      "render_method": "OMG SysML v2 Pilot原生PlantUML导出 → PlantUML图像",
+      "output_stem": "下游导入包/功能模型__00_概念接口类型_详情_08",
+      "is_index": false,
+      "artifacts": {
+        "puml": {
+          "file": "下游导入包/功能模型__00_概念接口类型_详情_08.puml",
+          "sha256": "2ae9205a1acb7da119a2ecb21f8ca105f78ac54fca19c8e98ba2c34e13bc9b4f",
+          "bytes": 1503
+        },
+        "svg": {
+          "file": "下游导入包/功能模型__00_概念接口类型_详情_08.svg",
+          "sha256": "7ddb9d62c191c50195c99bcc0664bd6c823bdd3520de7b9059bab8e03a4ac87c",
+          "bytes": 12196
+        },
+        "png": {
+          "file": "下游导入包/功能模型__00_概念接口类型_详情_08.png",
+          "sha256": "0ac03cded9c37382211777c900cb0bb231d0840128ec06125ffa7c771cff557a",
+          "bytes": 54705
+        }
+      },
+      "png_dimensions": [
+        2776,
+        184
+      ],
+      "copy_of": "功能模型/00_概念接口类型.sysml"
+    },
+    {
+      "model_file": "下游导入包/功能模型__00_概念接口类型.sysml",
+      "source_sha256": "6bdc17566f82bbec10dfcfe91e90e9d83151bd98de64e74de1f1580bf01ce39e",
+      "suffix": "_详情_09",
+      "selectors": [
+        "SEOV_ConceptTypes::C065",
+        "SEOV_ConceptTypes::C066",
+        "SEOV_ConceptTypes::C067",
+        "SEOV_ConceptTypes::C068",
+        "SEOV_ConceptTypes::C069",
+        "SEOV_ConceptTypes::C070",
+        "SEOV_ConceptTypes::C071",
+        "SEOV_ConceptTypes::C072"
+      ],
+      "native_mode": "TREE",
+      "engine": "OMG SysML v2 Pilot 0.63.1 native visualization export",
+      "jar_sha256": "67c914092f4520ba98548b285c5a9a8bc08f92a0aeec7b763e12a574e91f9ff7",
+      "render_method": "OMG SysML v2 Pilot原生PlantUML导出 → PlantUML图像",
+      "output_stem": "下游导入包/功能模型__00_概念接口类型_详情_09",
+      "is_index": false,
+      "artifacts": {
+        "puml": {
+          "file": "下游导入包/功能模型__00_概念接口类型_详情_09.puml",
+          "sha256": "68aa8a413cd6b6c59a9aa932df348cf8155922eef46672aea47574ec6b3173a5",
+          "bytes": 1517
+        },
+        "svg": {
+          "file": "下游导入包/功能模型__00_概念接口类型_详情_09.svg",
+          "sha256": "b30a4d3c05222ac9b64946867af467a16524814b4c11bc6ed4da9c6d5691b9f4",
+          "bytes": 11539
+        },
+        "png": {
+          "file": "下游导入包/功能模型__00_概念接口类型_详情_09.png",
+          "sha256": "bf2a5c7e0af039f29f957905d884f764c04ebc4b6f069c7b648bac01522d31c1",
+          "bytes": 64274
+        }
+      },
+      "png_dimensions": [
+        2880,
+        139
+      ],
+      "copy_of": "功能模型/00_概念接口类型.sysml"
+    },
+    {
+      "model_file": "下游导入包/功能模型__00_概念接口类型.sysml",
+      "source_sha256": "6bdc17566f82bbec10dfcfe91e90e9d83151bd98de64e74de1f1580bf01ce39e",
+      "suffix": "_详情_10",
+      "selectors": [
+        "SEOV_ConceptTypes::C073",
+        "SEOV_ConceptTypes::C074",
+        "SEOV_ConceptTypes::C075",
+        "SEOV_ConceptTypes::C076",
+        "SEOV_ConceptTypes::C077",
+        "SEOV_ConceptTypes::C078",
+        "SEOV_ConceptTypes::C079",
+        "SEOV_ConceptTypes::C080"
+      ],
+      "native_mode": "TREE",
+      "engine": "OMG SysML v2 Pilot 0.63.1 native visualization export",
+      "jar_sha256": "67c914092f4520ba98548b285c5a9a8bc08f92a0aeec7b763e12a574e91f9ff7",
+      "render_method": "OMG SysML v2 Pilot原生PlantUML导出 → PlantUML图像",
+      "output_stem": "下游导入包/功能模型__00_概念接口类型_详情_10",
+      "is_index": false,
+      "artifacts": {
+        "puml": {
+          "file": "下游导入包/功能模型__00_概念接口类型_详情_10.puml",
+          "sha256": "6f741c1051299aee80a10096760510f427d3fcdd2f12d15e6701830744e384de",
+          "bytes": 1448
+        },
+        "svg": {
+          "file": "下游导入包/功能模型__00_概念接口类型_详情_10.svg",
+          "sha256": "05071a666f159ad03aa24366b05dfd24b77ac42a05a8ca627b97c784c247bd64",
+          "bytes": 11422
+        },
+        "png": {
+          "file": "下游导入包/功能模型__00_概念接口类型_详情_10.png",
+          "sha256": "7ba2bda3ace27f15431b7ad65e434e3600572f1df77be504fbadf6f6488122cb",
+          "bytes": 35825
+        }
+      },
+      "png_dimensions": [
+        2727,
+        139
+      ],
+      "copy_of": "功能模型/00_概念接口类型.sysml"
+    },
+    {
+      "model_file": "下游导入包/功能模型__00_概念接口类型.sysml",
+      "source_sha256": "6bdc17566f82bbec10dfcfe91e90e9d83151bd98de64e74de1f1580bf01ce39e",
+      "suffix": "_详情_11",
+      "selectors": [
+        "SEOV_ConceptTypes::C081",
+        "SEOV_ConceptTypes::C082",
+        "SEOV_ConceptTypes::C083",
+        "SEOV_ConceptTypes::C084",
+        "SEOV_ConceptTypes::C085",
+        "SEOV_ConceptTypes::C086",
+        "SEOV_ConceptTypes::C087",
+        "SEOV_ConceptTypes::C088"
+      ],
+      "native_mode": "TREE",
+      "engine": "OMG SysML v2 Pilot 0.63.1 native visualization export",
+      "jar_sha256": "67c914092f4520ba98548b285c5a9a8bc08f92a0aeec7b763e12a574e91f9ff7",
+      "render_method": "OMG SysML v2 Pilot原生PlantUML导出 → PlantUML图像",
+      "output_stem": "下游导入包/功能模型__00_概念接口类型_详情_11",
+      "is_index": false,
+      "artifacts": {
+        "puml": {
+          "file": "下游导入包/功能模型__00_概念接口类型_详情_11.puml",
+          "sha256": "d767969b560482616e96208ceecef3b1c9f28ec3e28bcde938da82817b31e3ca",
+          "bytes": 1422
+        },
+        "svg": {
+          "file": "下游导入包/功能模型__00_概念接口类型_详情_11.svg",
+          "sha256": "f405d01ceab40d877e728b09fab403e5d1d79a83d60c98bd9695e696b8b00871",
+          "bytes": 11355
+        },
+        "png": {
+          "file": "下游导入包/功能模型__00_概念接口类型_详情_11.png",
+          "sha256": "9002d2a54793b3adde09880cda8f0c73d1e5f3f29a089da4963b2c6f2ec17b42",
+          "bytes": 55429
+        }
+      },
+      "png_dimensions": [
+        2628,
+        139
+      ],
+      "copy_of": "功能模型/00_概念接口类型.sysml"
+    },
+    {
+      "model_file": "下游导入包/功能模型__00_概念接口类型.sysml",
+      "source_sha256": "6bdc17566f82bbec10dfcfe91e90e9d83151bd98de64e74de1f1580bf01ce39e",
+      "suffix": "_详情_12",
+      "selectors": [
+        "SEOV_ConceptTypes::C089",
+        "SEOV_ConceptTypes::C090",
+        "SEOV_ConceptTypes::C091",
+        "SEOV_ConceptTypes::C092",
+        "SEOV_ConceptTypes::C093",
+        "SEOV_ConceptTypes::C094",
+        "SEOV_ConceptTypes::C095",
+        "SEOV_ConceptTypes::C096"
+      ],
+      "native_mode": "TREE",
+      "engine": "OMG SysML v2 Pilot 0.63.1 native visualization export",
+      "jar_sha256": "67c914092f4520ba98548b285c5a9a8bc08f92a0aeec7b763e12a574e91f9ff7",
+      "render_method": "OMG SysML v2 Pilot原生PlantUML导出 → PlantUML图像",
+      "output_stem": "下游导入包/功能模型__00_概念接口类型_详情_12",
+      "is_index": false,
+      "artifacts": {
+        "puml": {
+          "file": "下游导入包/功能模型__00_概念接口类型_详情_12.puml",
+          "sha256": "b3cdc272d33ef5894d6250e51cf6df865caa0425c4485b9918f51dada5658d34",
+          "bytes": 1574
+        },
+        "svg": {
+          "file": "下游导入包/功能模型__00_概念接口类型_详情_12.svg",
+          "sha256": "f200149c6a89dbc8f96f60ac4be8cad48334acd4b779193039c841ff5ae32e51",
+          "bytes": 13821
+        },
+        "png": {
+          "file": "下游导入包/功能模型__00_概念接口类型_详情_12.png",
+          "sha256": "b2b33b4b4dacf5848a321408db60d1d0ba9beff141ed4888c354c1cc566f2cca",
+          "bytes": 91614
+        }
+      },
+      "png_dimensions": [
+        2999,
+        182
+      ],
+      "copy_of": "功能模型/00_概念接口类型.sysml"
+    },
+    {
+      "model_file": "下游导入包/功能模型__00_概念接口类型.sysml",
+      "source_sha256": "6bdc17566f82bbec10dfcfe91e90e9d83151bd98de64e74de1f1580bf01ce39e",
+      "suffix": "_详情_13",
+      "selectors": [
+        "SEOV_ConceptTypes::C097",
+        "SEOV_ConceptTypes::C098",
+        "SEOV_ConceptTypes::C099",
+        "SEOV_ConceptTypes::C100",
+        "SEOV_ConceptTypes::C101",
+        "SEOV_ConceptTypes::C102",
+        "SEOV_ConceptTypes::C103",
+        "SEOV_ConceptTypes::C104"
+      ],
+      "native_mode": "TREE",
+      "engine": "OMG SysML v2 Pilot 0.63.1 native visualization export",
+      "jar_sha256": "67c914092f4520ba98548b285c5a9a8bc08f92a0aeec7b763e12a574e91f9ff7",
+      "render_method": "OMG SysML v2 Pilot原生PlantUML导出 → PlantUML图像",
+      "output_stem": "下游导入包/功能模型__00_概念接口类型_详情_13",
+      "is_index": false,
+      "artifacts": {
+        "puml": {
+          "file": "下游导入包/功能模型__00_概念接口类型_详情_13.puml",
+          "sha256": "675723e1df552f35a5c1cc4da175d0f5cf01366a65958b118f8ee443ef15bef3",
+          "bytes": 1504
+        },
+        "svg": {
+          "file": "下游导入包/功能模型__00_概念接口类型_详情_13.svg",
+          "sha256": "9b623df53410dbd1507419252cb7b89f9ae49fd00e786c0bdaedc23376203397",
+          "bytes": 11535
+        },
+        "png": {
+          "file": "下游导入包/功能模型__00_概念接口类型_详情_13.png",
+          "sha256": "929a6123f41bee29017a8f841402a8e7e1f70bb6a59d29f961644ad0d44e610e",
+          "bytes": 51240
+        }
+      },
+      "png_dimensions": [
+        2800,
+        139
+      ],
+      "copy_of": "功能模型/00_概念接口类型.sysml"
+    },
+    {
+      "model_file": "下游导入包/功能模型__00_概念接口类型.sysml",
+      "source_sha256": "6bdc17566f82bbec10dfcfe91e90e9d83151bd98de64e74de1f1580bf01ce39e",
+      "suffix": "_详情_14",
+      "selectors": [
+        "SEOV_ConceptTypes::C105",
+        "SEOV_ConceptTypes::C106",
+        "SEOV_ConceptTypes::C107",
+        "SEOV_ConceptTypes::C108",
+        "SEOV_ConceptTypes::C109",
+        "SEOV_ConceptTypes::C110",
+        "SEOV_ConceptTypes::C111",
+        "SEOV_ConceptTypes::C112"
+      ],
+      "native_mode": "TREE",
+      "engine": "OMG SysML v2 Pilot 0.63.1 native visualization export",
+      "jar_sha256": "67c914092f4520ba98548b285c5a9a8bc08f92a0aeec7b763e12a574e91f9ff7",
+      "render_method": "OMG SysML v2 Pilot原生PlantUML导出 → PlantUML图像",
+      "output_stem": "下游导入包/功能模型__00_概念接口类型_详情_14",
+      "is_index": false,
+      "artifacts": {
+        "puml": {
+          "file": "下游导入包/功能模型__00_概念接口类型_详情_14.puml",
+          "sha256": "1e2874a3d9323a060fd42243d042e474bca10a13443ac31a19828d288d89eace",
+          "bytes": 1540
+        },
+        "svg": {
+          "file": "下游导入包/功能模型__00_概念接口类型_详情_14.svg",
+          "sha256": "10b33ddd47efbba29be49c6353f3636ff3b175787caaaae7c957960b75dfbf38",
+          "bytes": 11558
+        },
+        "png": {
+          "file": "下游导入包/功能模型__00_概念接口类型_详情_14.png",
+          "sha256": "ea343a86832da29dd6d75bd75a1e59f004471e68d5fe7a09d04586da392954d5",
+          "bytes": 61321
+        }
+      },
+      "png_dimensions": [
+        2932,
+        139
+      ],
+      "copy_of": "功能模型/00_概念接口类型.sysml"
+    },
+    {
+      "model_file": "下游导入包/功能模型__00_概念接口类型.sysml",
+      "source_sha256": "6bdc17566f82bbec10dfcfe91e90e9d83151bd98de64e74de1f1580bf01ce39e",
+      "suffix": "_详情_15",
+      "selectors": [
+        "SEOV_ConceptTypes::C113",
+        "SEOV_ConceptTypes::C114",
+        "SEOV_ConceptTypes::C115",
+        "SEOV_ConceptTypes::C116",
+        "SEOV_ConceptTypes::C117",
+        "SEOV_ConceptTypes::C118",
+        "SEOV_ConceptTypes::C119",
+        "SEOV_ConceptTypes::C120"
+      ],
+      "native_mode": "TREE",
+      "engine": "OMG SysML v2 Pilot 0.63.1 native visualization export",
+      "jar_sha256": "67c914092f4520ba98548b285c5a9a8bc08f92a0aeec7b763e12a574e91f9ff7",
+      "render_method": "OMG SysML v2 Pilot原生PlantUML导出 → PlantUML图像",
+      "output_stem": "下游导入包/功能模型__00_概念接口类型_详情_15",
+      "is_index": false,
+      "artifacts": {
+        "puml": {
+          "file": "下游导入包/功能模型__00_概念接口类型_详情_15.puml",
+          "sha256": "069addb955159a2c07be61057df5438d33f48c4c471e87e5f073a8457a897ed5",
+          "bytes": 1490
+        },
+        "svg": {
+          "file": "下游导入包/功能模型__00_概念接口类型_详情_15.svg",
+          "sha256": "fd3831a7793f9f33e07c511946c6af8f2fd7b155375d2b5bf1d3fd13d494c029",
+          "bytes": 11756
+        },
+        "png": {
+          "file": "下游导入包/功能模型__00_概念接口类型_详情_15.png",
+          "sha256": "df7d0c7ff3d8d06130162337a966feac2abbac1b8a78fbe2cb519f7c57f6b67e",
+          "bytes": 50737
+        }
+      },
+      "png_dimensions": [
+        2881,
+        163
+      ],
+      "copy_of": "功能模型/00_概念接口类型.sysml"
+    },
+    {
+      "model_file": "下游导入包/功能模型__00_概念接口类型.sysml",
+      "source_sha256": "6bdc17566f82bbec10dfcfe91e90e9d83151bd98de64e74de1f1580bf01ce39e",
+      "suffix": "_详情_16",
+      "selectors": [
+        "SEOV_ConceptTypes::C121",
+        "SEOV_ConceptTypes::C122",
+        "SEOV_ConceptTypes::C123",
+        "SEOV_ConceptTypes::C124",
+        "SEOV_ConceptTypes::C125",
+        "SEOV_ConceptTypes::C126",
+        "SEOV_ConceptTypes::C127",
+        "SEOV_ConceptTypes::C128"
+      ],
+      "native_mode": "TREE",
+      "engine": "OMG SysML v2 Pilot 0.63.1 native visualization export",
+      "jar_sha256": "67c914092f4520ba98548b285c5a9a8bc08f92a0aeec7b763e12a574e91f9ff7",
+      "render_method": "OMG SysML v2 Pilot原生PlantUML导出 → PlantUML图像",
+      "output_stem": "下游导入包/功能模型__00_概念接口类型_详情_16",
+      "is_index": false,
+      "artifacts": {
+        "puml": {
+          "file": "下游导入包/功能模型__00_概念接口类型_详情_16.puml",
+          "sha256": "f00b0aa47d4c367ee7e62572b13e2eb70d16e0b2922f3269a11dd54b5623d534",
+          "bytes": 1606
+        },
+        "svg": {
+          "file": "下游导入包/功能模型__00_概念接口类型_详情_16.svg",
+          "sha256": "b818d0c9663afa49071418b01e594ea0a4556339462116a7a7bcbd338cfaef02",
+          "bytes": 12532
+        },
+        "png": {
+          "file": "下游导入包/功能模型__00_概念接口类型_详情_16.png",
+          "sha256": "48b19dff7741ac21bcb78dc6a3f5e821d771cca751ec4b0f4cf5ce5cff68fdbc",
+          "bytes": 64316
+        }
+      },
+      "png_dimensions": [
+        3000,
+        184
+      ],
+      "copy_of": "功能模型/00_概念接口类型.sysml"
+    },
+    {
+      "model_file": "下游导入包/功能模型__00_概念接口类型.sysml",
+      "source_sha256": "6bdc17566f82bbec10dfcfe91e90e9d83151bd98de64e74de1f1580bf01ce39e",
+      "suffix": "_详情_17",
+      "selectors": [
+        "SEOV_ConceptTypes::C129",
+        "SEOV_ConceptTypes::C130",
+        "SEOV_ConceptTypes::C131",
+        "SEOV_ConceptTypes::C132",
+        "SEOV_ConceptTypes::C133",
+        "SEOV_ConceptTypes::C134",
+        "SEOV_ConceptTypes::C135",
+        "SEOV_ConceptTypes::C136"
+      ],
+      "native_mode": "TREE",
+      "engine": "OMG SysML v2 Pilot 0.63.1 native visualization export",
+      "jar_sha256": "67c914092f4520ba98548b285c5a9a8bc08f92a0aeec7b763e12a574e91f9ff7",
+      "render_method": "OMG SysML v2 Pilot原生PlantUML导出 → PlantUML图像",
+      "output_stem": "下游导入包/功能模型__00_概念接口类型_详情_17",
+      "is_index": false,
+      "artifacts": {
+        "puml": {
+          "file": "下游导入包/功能模型__00_概念接口类型_详情_17.puml",
+          "sha256": "69ca135daff2b9b02180dddd92894e197ea10ee02c2cae1079d241486458f235",
+          "bytes": 1618
+        },
+        "svg": {
+          "file": "下游导入包/功能模型__00_概念接口类型_详情_17.svg",
+          "sha256": "edb673e1cedb5f2e3a6027a3d8f41c7add409b46464814d45faf29abd9998864",
+          "bytes": 13298
+        },
+        "png": {
+          "file": "下游导入包/功能模型__00_概念接口类型_详情_17.png",
+          "sha256": "8b66118fa0a579d20fd6a8b0e1ea5121881bc714669cf9a1a7e1d3ff98df207c",
+          "bytes": 82247
+        }
+      },
+      "png_dimensions": [
+        3000,
+        175
+      ],
+      "copy_of": "功能模型/00_概念接口类型.sysml"
+    },
+    {
+      "model_file": "下游导入包/功能模型__00_概念接口类型.sysml",
+      "source_sha256": "6bdc17566f82bbec10dfcfe91e90e9d83151bd98de64e74de1f1580bf01ce39e",
+      "suffix": "_详情_18",
+      "selectors": [
+        "SEOV_ConceptTypes::C137",
+        "SEOV_ConceptTypes::C138",
+        "SEOV_ConceptTypes::C139",
+        "SEOV_ConceptTypes::C140",
+        "SEOV_ConceptTypes::C141",
+        "SEOV_ConceptTypes::C142",
+        "SEOV_ConceptTypes::C143",
+        "SEOV_ConceptTypes::C144"
+      ],
+      "native_mode": "TREE",
+      "engine": "OMG SysML v2 Pilot 0.63.1 native visualization export",
+      "jar_sha256": "67c914092f4520ba98548b285c5a9a8bc08f92a0aeec7b763e12a574e91f9ff7",
+      "render_method": "OMG SysML v2 Pilot原生PlantUML导出 → PlantUML图像",
+      "output_stem": "下游导入包/功能模型__00_概念接口类型_详情_18",
+      "is_index": false,
+      "artifacts": {
+        "puml": {
+          "file": "下游导入包/功能模型__00_概念接口类型_详情_18.puml",
+          "sha256": "6435778d5146434df61d27d64750feaa8222358ea4f3ebb9663f9ede20aa349e",
+          "bytes": 1488
+        },
+        "svg": {
+          "file": "下游导入包/功能模型__00_概念接口类型_详情_18.svg",
+          "sha256": "841fb19b6849d7e3975f442b4cd77187ab8d73c2ab05e732b74e8e2ebea041c9",
+          "bytes": 12004
+        },
+        "png": {
+          "file": "下游导入包/功能模型__00_概念接口类型_详情_18.png",
+          "sha256": "416b8d5f0c578412c0592aa20d0fed0d4b95d03aa26f6ed4c52940e6c7384536",
+          "bytes": 65410
+        }
+      },
+      "png_dimensions": [
+        2833,
+        163
+      ],
+      "copy_of": "功能模型/00_概念接口类型.sysml"
+    },
+    {
+      "model_file": "下游导入包/功能模型__00_概念接口类型.sysml",
+      "source_sha256": "6bdc17566f82bbec10dfcfe91e90e9d83151bd98de64e74de1f1580bf01ce39e",
+      "suffix": "_详情_19",
+      "selectors": [
+        "SEOV_ConceptTypes::C145",
+        "SEOV_ConceptTypes::C146",
+        "SEOV_ConceptTypes::C147",
+        "SEOV_ConceptTypes::C148",
+        "SEOV_ConceptTypes::C149",
+        "SEOV_ConceptTypes::C150",
+        "SEOV_ConceptTypes::C151",
+        "SEOV_ConceptTypes::C152"
+      ],
+      "native_mode": "TREE",
+      "engine": "OMG SysML v2 Pilot 0.63.1 native visualization export",
+      "jar_sha256": "67c914092f4520ba98548b285c5a9a8bc08f92a0aeec7b763e12a574e91f9ff7",
+      "render_method": "OMG SysML v2 Pilot原生PlantUML导出 → PlantUML图像",
+      "output_stem": "下游导入包/功能模型__00_概念接口类型_详情_19",
+      "is_index": false,
+      "artifacts": {
+        "puml": {
+          "file": "下游导入包/功能模型__00_概念接口类型_详情_19.puml",
+          "sha256": "129a8f1cb82ff8390b72efaa34efb4eb8647044bb5f8f258d4dce85ab36d7434",
+          "bytes": 1494
+        },
+        "svg": {
+          "file": "下游导入包/功能模型__00_概念接口类型_详情_19.svg",
+          "sha256": "6bfd7cadf9e9bf2178a435165929ab21e5322abf0067c1058c69b0bf63e36a58",
+          "bytes": 11495
+        },
+        "png": {
+          "file": "下游导入包/功能模型__00_概念接口类型_详情_19.png",
+          "sha256": "d1bab3ce6c933d667dca568b95589388f781a1e5eb76f206a321271ff79faff5",
+          "bytes": 35121
+        }
+      },
+      "png_dimensions": [
+        2886,
+        139
+      ],
+      "copy_of": "功能模型/00_概念接口类型.sysml"
+    },
+    {
+      "model_file": "下游导入包/功能模型__00_概念接口类型.sysml",
+      "source_sha256": "6bdc17566f82bbec10dfcfe91e90e9d83151bd98de64e74de1f1580bf01ce39e",
+      "suffix": "_详情_20",
+      "selectors": [
+        "SEOV_ConceptTypes::C153",
+        "SEOV_ConceptTypes::C154",
+        "SEOV_ConceptTypes::C155",
+        "SEOV_ConceptTypes::C156",
+        "SEOV_ConceptTypes::C157",
+        "SEOV_ConceptTypes::C158",
+        "SEOV_ConceptTypes::C159",
+        "SEOV_ConceptTypes::C160"
+      ],
+      "native_mode": "TREE",
+      "engine": "OMG SysML v2 Pilot 0.63.1 native visualization export",
+      "jar_sha256": "67c914092f4520ba98548b285c5a9a8bc08f92a0aeec7b763e12a574e91f9ff7",
+      "render_method": "OMG SysML v2 Pilot原生PlantUML导出 → PlantUML图像",
+      "output_stem": "下游导入包/功能模型__00_概念接口类型_详情_20",
+      "is_index": false,
+      "artifacts": {
+        "puml": {
+          "file": "下游导入包/功能模型__00_概念接口类型_详情_20.puml",
+          "sha256": "aaaf14668796922f90ff9505ebce3a415e59b932fc9475236bbcc1cebcb5eb71",
+          "bytes": 1467
+        },
+        "svg": {
+          "file": "下游导入包/功能模型__00_概念接口类型_详情_20.svg",
+          "sha256": "639b92d2aa1c9943cc77e9e340fc79f7f0e9d345f2dcd7624ec2899edadfc10d",
+          "bytes": 11431
+        },
+        "png": {
+          "file": "下游导入包/功能模型__00_概念接口类型_详情_20.png",
+          "sha256": "f013cd2972ee701b3df81fd5aa1ba4b315880fb492b1843ad2cf5ce7086e536c",
+          "bytes": 43378
+        }
+      },
+      "png_dimensions": [
+        2800,
+        139
+      ],
+      "copy_of": "功能模型/00_概念接口类型.sysml"
+    },
+    {
+      "model_file": "下游导入包/功能模型__00_概念接口类型.sysml",
+      "source_sha256": "6bdc17566f82bbec10dfcfe91e90e9d83151bd98de64e74de1f1580bf01ce39e",
+      "suffix": "_详情_21",
+      "selectors": [
+        "SEOV_ConceptTypes::C161",
+        "SEOV_ConceptTypes::C162",
+        "SEOV_ConceptTypes::C163",
+        "SEOV_ConceptTypes::C164",
+        "SEOV_ConceptTypes::C165",
+        "SEOV_ConceptTypes::C166",
+        "SEOV_ConceptTypes::C167",
+        "SEOV_ConceptTypes::C168"
+      ],
+      "native_mode": "TREE",
+      "engine": "OMG SysML v2 Pilot 0.63.1 native visualization export",
+      "jar_sha256": "67c914092f4520ba98548b285c5a9a8bc08f92a0aeec7b763e12a574e91f9ff7",
+      "render_method": "OMG SysML v2 Pilot原生PlantUML导出 → PlantUML图像",
+      "output_stem": "下游导入包/功能模型__00_概念接口类型_详情_21",
+      "is_index": false,
+      "artifacts": {
+        "puml": {
+          "file": "下游导入包/功能模型__00_概念接口类型_详情_21.puml",
+          "sha256": "36f864459088656dd6e4733633497075cd163f8f6c036d5fb44cfe7f65fbbc2b",
+          "bytes": 1481
+        },
+        "svg": {
+          "file": "下游导入包/功能模型__00_概念接口类型_详情_21.svg",
+          "sha256": "10ed056e051f6229b0c2e87c9f837da40cc85d85dd3d5d8ea2cd352393ff4970",
+          "bytes": 11472
+        },
+        "png": {
+          "file": "下游导入包/功能模型__00_概念接口类型_详情_21.png",
+          "sha256": "0cc32a956a99accebbe04393e58cf3d92f84400b6cb4c5eef817309836d1c341",
+          "bytes": 38856
+        }
+      },
+      "png_dimensions": [
+        2891,
+        139
+      ],
+      "copy_of": "功能模型/00_概念接口类型.sysml"
+    },
+    {
+      "model_file": "下游导入包/功能模型__00_概念接口类型.sysml",
+      "source_sha256": "6bdc17566f82bbec10dfcfe91e90e9d83151bd98de64e74de1f1580bf01ce39e",
+      "suffix": "_详情_22",
+      "selectors": [
+        "SEOV_ConceptTypes::C169",
+        "SEOV_ConceptTypes::C170",
+        "SEOV_ConceptTypes::C171",
+        "SEOV_ConceptTypes::C172",
+        "SEOV_ConceptTypes::C173",
+        "SEOV_ConceptTypes::C174",
+        "SEOV_ConceptTypes::C175",
+        "SEOV_ConceptTypes::C176"
+      ],
+      "native_mode": "TREE",
+      "engine": "OMG SysML v2 Pilot 0.63.1 native visualization export",
+      "jar_sha256": "67c914092f4520ba98548b285c5a9a8bc08f92a0aeec7b763e12a574e91f9ff7",
+      "render_method": "OMG SysML v2 Pilot原生PlantUML导出 → PlantUML图像",
+      "output_stem": "下游导入包/功能模型__00_概念接口类型_详情_22",
+      "is_index": false,
+      "artifacts": {
+        "puml": {
+          "file": "下游导入包/功能模型__00_概念接口类型_详情_22.puml",
+          "sha256": "c95e0d781a3df6338f3fc38cfa4502e3044c1443f4e6eb531f67e7326a7f149c",
+          "bytes": 1473
+        },
+        "svg": {
+          "file": "下游导入包/功能模型__00_概念接口类型_详情_22.svg",
+          "sha256": "80bfd434c83e040d74fdc9546173098f68d547bc2a36aeb6fdf0bab58353bd9e",
+          "bytes": 11453
+        },
+        "png": {
+          "file": "下游导入包/功能模型__00_概念接口类型_详情_22.png",
+          "sha256": "486381b0b84b97180aec639c359363f3d6739f678405f6ee181a8e10a6c85bba",
+          "bytes": 31558
+        }
+      },
+      "png_dimensions": [
+        2781,
+        139
+      ],
+      "copy_of": "功能模型/00_概念接口类型.sysml"
+    },
+    {
+      "model_file": "下游导入包/功能模型__00_概念接口类型.sysml",
+      "source_sha256": "6bdc17566f82bbec10dfcfe91e90e9d83151bd98de64e74de1f1580bf01ce39e",
+      "suffix": "_详情_23",
+      "selectors": [
+        "SEOV_ConceptTypes::C177",
+        "SEOV_ConceptTypes::C178",
+        "SEOV_ConceptTypes::C179",
+        "SEOV_ConceptTypes::C180",
+        "SEOV_ConceptTypes::C181",
+        "SEOV_ConceptTypes::C182",
+        "SEOV_ConceptTypes::C183",
+        "SEOV_ConceptTypes::C184"
+      ],
+      "native_mode": "TREE",
+      "engine": "OMG SysML v2 Pilot 0.63.1 native visualization export",
+      "jar_sha256": "67c914092f4520ba98548b285c5a9a8bc08f92a0aeec7b763e12a574e91f9ff7",
+      "render_method": "OMG SysML v2 Pilot原生PlantUML导出 → PlantUML图像",
+      "output_stem": "下游导入包/功能模型__00_概念接口类型_详情_23",
+      "is_index": false,
+      "artifacts": {
+        "puml": {
+          "file": "下游导入包/功能模型__00_概念接口类型_详情_23.puml",
+          "sha256": "98bd66f588f7f49acfb346b85cc5f9760e409ea70476589a2c567c4e9428a15f",
+          "bytes": 1463
+        },
+        "svg": {
+          "file": "下游导入包/功能模型__00_概念接口类型_详情_23.svg",
+          "sha256": "23df80d828b724535f2afb5e5bf5fa2d51ee6b27654653f77ad2f6f1dc27c934",
+          "bytes": 11435
+        },
+        "png": {
+          "file": "下游导入包/功能模型__00_概念接口类型_详情_23.png",
+          "sha256": "3d0919cf3df9a821f5d016b770a13b2196638873382044dba4dd3b22b4eec80c",
+          "bytes": 59769
+        }
+      },
+      "png_dimensions": [
+        2827,
+        139
+      ],
+      "copy_of": "功能模型/00_概念接口类型.sysml"
+    },
+    {
+      "model_file": "下游导入包/功能模型__00_概念接口类型.sysml",
+      "source_sha256": "6bdc17566f82bbec10dfcfe91e90e9d83151bd98de64e74de1f1580bf01ce39e",
+      "suffix": "_详情_24",
+      "selectors": [
+        "SEOV_ConceptTypes::C185",
+        "SEOV_ConceptTypes::C186",
+        "SEOV_ConceptTypes::C187",
+        "SEOV_ConceptTypes::C188",
+        "SEOV_ConceptTypes::C189",
+        "SEOV_ConceptTypes::C190",
+        "SEOV_ConceptTypes::C191",
+        "SEOV_ConceptTypes::C192"
+      ],
+      "native_mode": "TREE",
+      "engine": "OMG SysML v2 Pilot 0.63.1 native visualization export",
+      "jar_sha256": "67c914092f4520ba98548b285c5a9a8bc08f92a0aeec7b763e12a574e91f9ff7",
+      "render_method": "OMG SysML v2 Pilot原生PlantUML导出 → PlantUML图像",
+      "output_stem": "下游导入包/功能模型__00_概念接口类型_详情_24",
+      "is_index": false,
+      "artifacts": {
+        "puml": {
+          "file": "下游导入包/功能模型__00_概念接口类型_详情_24.puml",
+          "sha256": "df558624f95b82c3103fb4df234631da3b36fd4b7c22a836e37cecd8528022cc",
+          "bytes": 1518
+        },
+        "svg": {
+          "file": "下游导入包/功能模型__00_概念接口类型_详情_24.svg",
+          "sha256": "d4ea66bc0d68bb5b6d5c657cfecc5dfefe5e2209911203df83c788271dc66248",
+          "bytes": 11524
+        },
+        "png": {
+          "file": "下游导入包/功能模型__00_概念接口类型_详情_24.png",
+          "sha256": "cf01f596041f1b558ffd720509a91ab4579808e9f2eada1fa2eb1fa7a1e49f32",
+          "bytes": 38534
+        }
+      },
+      "png_dimensions": [
+        2905,
+        139
+      ],
+      "copy_of": "功能模型/00_概念接口类型.sysml"
+    },
+    {
+      "model_file": "下游导入包/功能模型__00_概念接口类型.sysml",
+      "source_sha256": "6bdc17566f82bbec10dfcfe91e90e9d83151bd98de64e74de1f1580bf01ce39e",
+      "suffix": "_详情_25",
+      "selectors": [
+        "SEOV_ConceptTypes::C193",
+        "SEOV_ConceptTypes::C194",
+        "SEOV_ConceptTypes::C195"
+      ],
+      "native_mode": "TREE",
+      "engine": "OMG SysML v2 Pilot 0.63.1 native visualization export",
+      "jar_sha256": "67c914092f4520ba98548b285c5a9a8bc08f92a0aeec7b763e12a574e91f9ff7",
+      "render_method": "OMG SysML v2 Pilot原生PlantUML导出 → PlantUML图像",
+      "output_stem": "下游导入包/功能模型__00_概念接口类型_详情_25",
+      "is_index": false,
+      "artifacts": {
+        "puml": {
+          "file": "下游导入包/功能模型__00_概念接口类型_详情_25.puml",
+          "sha256": "2bf4bda3a3f38e89e3704f2bf84c4c7b9d3eac95dd98e25a43b501cd4ffe2538",
+          "bytes": 698
+        },
+        "svg": {
+          "file": "下游导入包/功能模型__00_概念接口类型_详情_25.svg",
+          "sha256": "1a4872b43b3904db3491a3114823cd69ab8f4ade2bc293ed2a51c64c2e9e3936",
+          "bytes": 5217
+        },
+        "png": {
+          "file": "下游导入包/功能模型__00_概念接口类型_详情_25.png",
+          "sha256": "1a07dd222a64b5197908e62496d5ee7d0c73783938c970bb211c2f23a4bb384b",
+          "bytes": 31130
+        }
+      },
+      "png_dimensions": [
+        980,
+        184
+      ],
+      "copy_of": "功能模型/00_概念接口类型.sysml"
+    },
+    {
+      "model_file": "下游导入包/功能模型__01_原子及组合功能定义.sysml",
+      "source_sha256": "4071b8ff601fb96df98f2b5b8395e13422ada534b51f7808736ad5406d5fd702",
+      "suffix": "",
+      "selectors": [
+        "SEOV_FunctionActions::F_LF_001",
+        "SEOV_FunctionActions::F_LF_002",
+        "SEOV_FunctionActions::F_LF_003",
+        "SEOV_FunctionActions::F_LF_004",
+        "SEOV_FunctionActions::F_LF_005",
+        "SEOV_FunctionActions::F_LF_006",
+        "SEOV_FunctionActions::F_LF_007",
+        "SEOV_FunctionActions::F_LF_008",
+        "SEOV_FunctionActions::F_LF_009",
+        "SEOV_FunctionActions::F_LF_010",
+        "SEOV_FunctionActions::F_LF_011",
+        "SEOV_FunctionActions::F_LF_012",
+        "SEOV_FunctionActions::F_LF_013",
+        "SEOV_FunctionActions::F_LF_014",
+        "SEOV_FunctionActions::F_LF_015",
+        "SEOV_FunctionActions::F_LF_016",
+        "SEOV_FunctionActions::F_LF_017",
+        "SEOV_FunctionActions::F_LF_018",
+        "SEOV_FunctionActions::F_LF_019",
+        "SEOV_FunctionActions::F_LF_020",
+        "SEOV_FunctionActions::F_LF_021",
+        "SEOV_FunctionActions::F_LF_022",
+        "SEOV_FunctionActions::F_LF_023",
+        "SEOV_FunctionActions::F_LF_024",
+        "SEOV_FunctionActions::F_LF_026",
+        "SEOV_FunctionActions::F_LF_027",
+        "SEOV_FunctionActions::F_LF_028",
+        "SEOV_FunctionActions::F_LF_029",
+        "SEOV_FunctionActions::F_LF_030",
+        "SEOV_FunctionActions::F_LF_031",
+        "SEOV_FunctionActions::F_LF_032",
+        "SEOV_FunctionActions::F_S1_F01",
+        "SEOV_FunctionActions::F_S1_F02",
+        "SEOV_FunctionActions::F_S1_F03",
+        "SEOV_FunctionActions::F_S1_F04",
+        "SEOV_FunctionActions::F_S1_F05",
+        "SEOV_FunctionActions::F_S1_F06",
+        "SEOV_FunctionActions::F_S1_F07",
+        "SEOV_FunctionActions::F_S1_F08",
+        "SEOV_FunctionActions::F_S1_F09",
+        "SEOV_FunctionActions::F_S1_F10",
+        "SEOV_FunctionActions::F_S2_F01",
+        "SEOV_FunctionActions::F_S2_F02",
+        "SEOV_FunctionActions::F_S2_F03",
+        "SEOV_FunctionActions::F_S2_F04",
+        "SEOV_FunctionActions::F_S2_F05",
+        "SEOV_FunctionActions::F_S2_F06",
+        "SEOV_FunctionActions::F_S2_F07",
+        "SEOV_FunctionActions::F_S2_F08",
+        "SEOV_FunctionActions::F_S2_F09",
+        "SEOV_FunctionActions::F_S2_F10",
+        "SEOV_FunctionActions::F_S3_F01",
+        "SEOV_FunctionActions::F_S3_F02",
+        "SEOV_FunctionActions::F_S3_F03",
+        "SEOV_FunctionActions::F_S3_F04",
+        "SEOV_FunctionActions::F_S3_F05",
+        "SEOV_FunctionActions::F_S3_F06",
+        "SEOV_FunctionActions::F_S3_F07",
+        "SEOV_FunctionActions::F_S3_F08",
+        "SEOV_FunctionActions::F_S3_F09",
+        "SEOV_FunctionActions::F_S3_F10",
+        "SEOV_FunctionActions::F_S3_F11",
+        "SEOV_FunctionActions::F_LF_011_01",
+        "SEOV_FunctionActions::F_LF_011_02",
+        "SEOV_FunctionActions::F_LF_011_03",
+        "SEOV_FunctionActions::F_LF_011_04",
+        "SEOV_FunctionActions::F_LF_011_05",
+        "SEOV_FunctionActions::F_LF_011_06",
+        "SEOV_FunctionActions::F_S2_F09_01",
+        "SEOV_FunctionActions::F_S2_F09_02",
+        "SEOV_FunctionActions::F_S2_F09_03",
+        "SEOV_FunctionActions::F_S3_F06_01",
+        "SEOV_FunctionActions::F_S3_F06_02"
+      ],
+      "native_mode": "TREE",
+      "engine": "OMG SysML v2 Pilot 0.63.1 native visualization export",
+      "jar_sha256": "67c914092f4520ba98548b285c5a9a8bc08f92a0aeec7b763e12a574e91f9ff7",
+      "render_method": "完整源模型目录索引＋原生分页详图（未交付截断图）",
+      "output_stem": "下游导入包/功能模型__01_原子及组合功能定义",
+      "is_index": true,
+      "artifacts": {
+        "puml": {
+          "file": "下游导入包/功能模型__01_原子及组合功能定义.puml",
+          "sha256": "6fca478da39745e9d15182feb74d70c003e8b22c6d15eaec4f6ac018c41580fc",
+          "bytes": 4051
+        },
+        "svg": {
+          "file": "下游导入包/功能模型__01_原子及组合功能定义.svg",
+          "sha256": "d3a215df68b1775227f71092117a15928a2dd4c3811148a7eaa81b16c77f57c4",
+          "bytes": 23142
+        },
+        "png": {
+          "file": "下游导入包/功能模型__01_原子及组合功能定义.png",
+          "sha256": "a10ffa925193fef1602706556844c2811916da9e151c3bfd56a264bad015a4fd",
+          "bytes": 330509
+        }
+      },
+      "png_dimensions": [
+        761,
+        2884
+      ],
+      "copy_of": "功能模型/01_原子及组合功能定义.sysml"
+    },
+    {
+      "model_file": "下游导入包/功能模型__01_原子及组合功能定义.sysml",
+      "source_sha256": "4071b8ff601fb96df98f2b5b8395e13422ada534b51f7808736ad5406d5fd702",
+      "suffix": "_详情_01",
+      "selectors": [
+        "SEOV_FunctionActions::F_LF_001",
+        "SEOV_FunctionActions::F_LF_002",
+        "SEOV_FunctionActions::F_LF_003",
+        "SEOV_FunctionActions::F_LF_004",
+        "SEOV_FunctionActions::F_LF_005",
+        "SEOV_FunctionActions::F_LF_006",
+        "SEOV_FunctionActions::F_LF_007",
+        "SEOV_FunctionActions::F_LF_008"
+      ],
+      "native_mode": "TREE",
+      "engine": "OMG SysML v2 Pilot 0.63.1 native visualization export",
+      "jar_sha256": "67c914092f4520ba98548b285c5a9a8bc08f92a0aeec7b763e12a574e91f9ff7",
+      "render_method": "OMG SysML v2 Pilot原生PlantUML导出 → PlantUML图像",
+      "output_stem": "下游导入包/功能模型__01_原子及组合功能定义_详情_01",
+      "is_index": false,
+      "artifacts": {
+        "puml": {
+          "file": "下游导入包/功能模型__01_原子及组合功能定义_详情_01.puml",
+          "sha256": "0b05e03c5e62eabe0fb8324e7bfc3a7187354efcb778190a174fd7241b304625",
+          "bytes": 4543
+        },
+        "svg": {
+          "file": "下游导入包/功能模型__01_原子及组合功能定义_详情_01.svg",
+          "sha256": "ff9c29a07cd0fcb94da62a275276fa8783c42cc861ea4f4d04b19298528a963c",
+          "bytes": 50383
+        },
+        "png": {
+          "file": "下游导入包/功能模型__01_原子及组合功能定义_详情_01.png",
+          "sha256": "c7211d82e1bf4c69a67979290dc270a6cd011667ba89905e7b97e84b601b66d0",
+          "bytes": 111760
+        }
+      },
+      "png_dimensions": [
+        2999,
+        186
+      ],
+      "copy_of": "功能模型/01_原子及组合功能定义.sysml"
+    },
+    {
+      "model_file": "下游导入包/功能模型__01_原子及组合功能定义.sysml",
+      "source_sha256": "4071b8ff601fb96df98f2b5b8395e13422ada534b51f7808736ad5406d5fd702",
+      "suffix": "_详情_02",
+      "selectors": [
+        "SEOV_FunctionActions::F_LF_009",
+        "SEOV_FunctionActions::F_LF_010",
+        "SEOV_FunctionActions::F_LF_011",
+        "SEOV_FunctionActions::F_LF_012",
+        "SEOV_FunctionActions::F_LF_013",
+        "SEOV_FunctionActions::F_LF_014",
+        "SEOV_FunctionActions::F_LF_015",
+        "SEOV_FunctionActions::F_LF_016"
+      ],
+      "native_mode": "TREE",
+      "engine": "OMG SysML v2 Pilot 0.63.1 native visualization export",
+      "jar_sha256": "67c914092f4520ba98548b285c5a9a8bc08f92a0aeec7b763e12a574e91f9ff7",
+      "render_method": "OMG SysML v2 Pilot原生PlantUML导出 → PlantUML图像",
+      "output_stem": "下游导入包/功能模型__01_原子及组合功能定义_详情_02",
+      "is_index": false,
+      "artifacts": {
+        "puml": {
+          "file": "下游导入包/功能模型__01_原子及组合功能定义_详情_02.puml",
+          "sha256": "0f89ca89f643cd1ed9aef0e585008b037cb78d552c7fae282e0887cb1a9354ed",
+          "bytes": 5673
+        },
+        "svg": {
+          "file": "下游导入包/功能模型__01_原子及组合功能定义_详情_02.svg",
+          "sha256": "5016cb7a8f4d4af033ec98704c7b690f51715edc562c7bd0c9945d8ceb5f9200",
+          "bytes": 67280
+        },
+        "png": {
+          "file": "下游导入包/功能模型__01_原子及组合功能定义_详情_02.png",
+          "sha256": "15e6cdd6dcef0c2c4b2f4276c7e6657086eff6acd0d7707a71856ee3dc5b3273",
+          "bytes": 80600
+        }
+      },
+      "png_dimensions": [
+        3000,
+        122
+      ],
+      "copy_of": "功能模型/01_原子及组合功能定义.sysml"
+    },
+    {
+      "model_file": "下游导入包/功能模型__01_原子及组合功能定义.sysml",
+      "source_sha256": "4071b8ff601fb96df98f2b5b8395e13422ada534b51f7808736ad5406d5fd702",
+      "suffix": "_详情_03",
+      "selectors": [
+        "SEOV_FunctionActions::F_LF_017",
+        "SEOV_FunctionActions::F_LF_018",
+        "SEOV_FunctionActions::F_LF_019",
+        "SEOV_FunctionActions::F_LF_020",
+        "SEOV_FunctionActions::F_LF_021",
+        "SEOV_FunctionActions::F_LF_022",
+        "SEOV_FunctionActions::F_LF_023",
+        "SEOV_FunctionActions::F_LF_024"
+      ],
+      "native_mode": "TREE",
+      "engine": "OMG SysML v2 Pilot 0.63.1 native visualization export",
+      "jar_sha256": "67c914092f4520ba98548b285c5a9a8bc08f92a0aeec7b763e12a574e91f9ff7",
+      "render_method": "OMG SysML v2 Pilot原生PlantUML导出 → PlantUML图像",
+      "output_stem": "下游导入包/功能模型__01_原子及组合功能定义_详情_03",
+      "is_index": false,
+      "artifacts": {
+        "puml": {
+          "file": "下游导入包/功能模型__01_原子及组合功能定义_详情_03.puml",
+          "sha256": "45d5ce1344d08a51944c1d6c850c7479eb7bac6387aaa93fbb39ba160b3422d9",
+          "bytes": 4611
+        },
+        "svg": {
+          "file": "下游导入包/功能模型__01_原子及组合功能定义_详情_03.svg",
+          "sha256": "c6a20f4118cfcffd10ae10e6546b2a71b89c111f5c9be9be519c021199458412",
+          "bytes": 52507
+        },
+        "png": {
+          "file": "下游导入包/功能模型__01_原子及组合功能定义_详情_03.png",
+          "sha256": "f35cba4e2d28f254cc518c86778679d3adc96ea9b8bee311a9796fdc90fc1f02",
+          "bytes": 100085
+        }
+      },
+      "png_dimensions": [
+        3000,
+        176
+      ],
+      "copy_of": "功能模型/01_原子及组合功能定义.sysml"
+    },
+    {
+      "model_file": "下游导入包/功能模型__01_原子及组合功能定义.sysml",
+      "source_sha256": "4071b8ff601fb96df98f2b5b8395e13422ada534b51f7808736ad5406d5fd702",
+      "suffix": "_详情_04",
+      "selectors": [
+        "SEOV_FunctionActions::F_LF_026",
+        "SEOV_FunctionActions::F_LF_027",
+        "SEOV_FunctionActions::F_LF_028",
+        "SEOV_FunctionActions::F_LF_029",
+        "SEOV_FunctionActions::F_LF_030",
+        "SEOV_FunctionActions::F_LF_031",
+        "SEOV_FunctionActions::F_LF_032",
+        "SEOV_FunctionActions::F_S1_F01"
+      ],
+      "native_mode": "TREE",
+      "engine": "OMG SysML v2 Pilot 0.63.1 native visualization export",
+      "jar_sha256": "67c914092f4520ba98548b285c5a9a8bc08f92a0aeec7b763e12a574e91f9ff7",
+      "render_method": "OMG SysML v2 Pilot原生PlantUML导出 → PlantUML图像",
+      "output_stem": "下游导入包/功能模型__01_原子及组合功能定义_详情_04",
+      "is_index": false,
+      "artifacts": {
+        "puml": {
+          "file": "下游导入包/功能模型__01_原子及组合功能定义_详情_04.puml",
+          "sha256": "89a29e36ddb44dd8bfca9acecc42e125a835c63441a8ceb640df9b6cdcf54262",
+          "bytes": 4439
+        },
+        "svg": {
+          "file": "下游导入包/功能模型__01_原子及组合功能定义_详情_04.svg",
+          "sha256": "7db721568f6456151f9485d31a5a3bc3c66e27a75f97825d730222a4a3765fea",
+          "bytes": 48866
+        },
+        "png": {
+          "file": "下游导入包/功能模型__01_原子及组合功能定义_详情_04.png",
+          "sha256": "d0f8d7e5e9d27f2f312471e9927e7c36efc9970685a745791c49f264188e990e",
+          "bytes": 107139
+        }
+      },
+      "png_dimensions": [
+        3000,
+        186
+      ],
+      "copy_of": "功能模型/01_原子及组合功能定义.sysml"
+    },
+    {
+      "model_file": "下游导入包/功能模型__01_原子及组合功能定义.sysml",
+      "source_sha256": "4071b8ff601fb96df98f2b5b8395e13422ada534b51f7808736ad5406d5fd702",
+      "suffix": "_详情_05",
+      "selectors": [
+        "SEOV_FunctionActions::F_S1_F02",
+        "SEOV_FunctionActions::F_S1_F03",
+        "SEOV_FunctionActions::F_S1_F04",
+        "SEOV_FunctionActions::F_S1_F05",
+        "SEOV_FunctionActions::F_S1_F06",
+        "SEOV_FunctionActions::F_S1_F07",
+        "SEOV_FunctionActions::F_S1_F08",
+        "SEOV_FunctionActions::F_S1_F09"
+      ],
+      "native_mode": "TREE",
+      "engine": "OMG SysML v2 Pilot 0.63.1 native visualization export",
+      "jar_sha256": "67c914092f4520ba98548b285c5a9a8bc08f92a0aeec7b763e12a574e91f9ff7",
+      "render_method": "OMG SysML v2 Pilot原生PlantUML导出 → PlantUML图像",
+      "output_stem": "下游导入包/功能模型__01_原子及组合功能定义_详情_05",
+      "is_index": false,
+      "artifacts": {
+        "puml": {
+          "file": "下游导入包/功能模型__01_原子及组合功能定义_详情_05.puml",
+          "sha256": "74d843cae04ba99eba6f27a9288aec098d3d431a05f09f5aa9154e74ba3c7ec8",
+          "bytes": 3185
+        },
+        "svg": {
+          "file": "下游导入包/功能模型__01_原子及组合功能定义_详情_05.svg",
+          "sha256": "54185f94d6b678a5dbd1ec0340551580f7ff56ad56cd904e596e7dcc914db501",
+          "bytes": 33556
+        },
+        "png": {
+          "file": "下游导入包/功能模型__01_原子及组合功能定义_详情_05.png",
+          "sha256": "880654c8d40e27adf0277852d176305aa66f23c2171b539735de9ac1fddbe87c",
+          "bytes": 153083
+        }
+      },
+      "png_dimensions": [
+        2999,
+        283
+      ],
+      "copy_of": "功能模型/01_原子及组合功能定义.sysml"
+    },
+    {
+      "model_file": "下游导入包/功能模型__01_原子及组合功能定义.sysml",
+      "source_sha256": "4071b8ff601fb96df98f2b5b8395e13422ada534b51f7808736ad5406d5fd702",
+      "suffix": "_详情_06",
+      "selectors": [
+        "SEOV_FunctionActions::F_S1_F10",
+        "SEOV_FunctionActions::F_S2_F01",
+        "SEOV_FunctionActions::F_S2_F02",
+        "SEOV_FunctionActions::F_S2_F03",
+        "SEOV_FunctionActions::F_S2_F04",
+        "SEOV_FunctionActions::F_S2_F05",
+        "SEOV_FunctionActions::F_S2_F06",
+        "SEOV_FunctionActions::F_S2_F07"
+      ],
+      "native_mode": "TREE",
+      "engine": "OMG SysML v2 Pilot 0.63.1 native visualization export",
+      "jar_sha256": "67c914092f4520ba98548b285c5a9a8bc08f92a0aeec7b763e12a574e91f9ff7",
+      "render_method": "OMG SysML v2 Pilot原生PlantUML导出 → PlantUML图像",
+      "output_stem": "下游导入包/功能模型__01_原子及组合功能定义_详情_06",
+      "is_index": false,
+      "artifacts": {
+        "puml": {
+          "file": "下游导入包/功能模型__01_原子及组合功能定义_详情_06.puml",
+          "sha256": "5d8caa9b241679377e19f95d250ee8905ba964d169827f97f60369311edc8218",
+          "bytes": 3296
+        },
+        "svg": {
+          "file": "下游导入包/功能模型__01_原子及组合功能定义_详情_06.svg",
+          "sha256": "f679ae7753bd697fc65ca88effbe7c119fb434d079ac15465c2188ef1415eab9",
+          "bytes": 35149
+        },
+        "png": {
+          "file": "下游导入包/功能模型__01_原子及组合功能定义_详情_06.png",
+          "sha256": "bb439d073acea4fa187840f1b091210f4f02b0cdbe735f1d8907502f8f1cfafa",
+          "bytes": 160362
+        }
+      },
+      "png_dimensions": [
+        3000,
+        292
+      ],
+      "copy_of": "功能模型/01_原子及组合功能定义.sysml"
+    },
+    {
+      "model_file": "下游导入包/功能模型__01_原子及组合功能定义.sysml",
+      "source_sha256": "4071b8ff601fb96df98f2b5b8395e13422ada534b51f7808736ad5406d5fd702",
+      "suffix": "_详情_07",
+      "selectors": [
+        "SEOV_FunctionActions::F_S2_F08",
+        "SEOV_FunctionActions::F_S2_F09",
+        "SEOV_FunctionActions::F_S2_F10",
+        "SEOV_FunctionActions::F_S3_F01",
+        "SEOV_FunctionActions::F_S3_F02",
+        "SEOV_FunctionActions::F_S3_F03",
+        "SEOV_FunctionActions::F_S3_F04",
+        "SEOV_FunctionActions::F_S3_F05"
+      ],
+      "native_mode": "TREE",
+      "engine": "OMG SysML v2 Pilot 0.63.1 native visualization export",
+      "jar_sha256": "67c914092f4520ba98548b285c5a9a8bc08f92a0aeec7b763e12a574e91f9ff7",
+      "render_method": "OMG SysML v2 Pilot原生PlantUML导出 → PlantUML图像",
+      "output_stem": "下游导入包/功能模型__01_原子及组合功能定义_详情_07",
+      "is_index": false,
+      "artifacts": {
+        "puml": {
+          "file": "下游导入包/功能模型__01_原子及组合功能定义_详情_07.puml",
+          "sha256": "e886ff6abcb5a4d8b0708e9f5fcc1a1f9928104d3a8822a336117d9c17f77589",
+          "bytes": 3769
+        },
+        "svg": {
+          "file": "下游导入包/功能模型__01_原子及组合功能定义_详情_07.svg",
+          "sha256": "613288b8ad7fc07b4b739d6de1f4716b4b058358521e26a38e72e9c006c07a66",
+          "bytes": 41710
+        },
+        "png": {
+          "file": "下游导入包/功能模型__01_原子及组合功能定义_详情_07.png",
+          "sha256": "cd8e5f2d534de356d609d3168e97ba265a16fc8b33021a3c4c6d06ce04e48037",
+          "bytes": 120574
+        }
+      },
+      "png_dimensions": [
+        3000,
+        209
+      ],
+      "copy_of": "功能模型/01_原子及组合功能定义.sysml"
+    },
+    {
+      "model_file": "下游导入包/功能模型__01_原子及组合功能定义.sysml",
+      "source_sha256": "4071b8ff601fb96df98f2b5b8395e13422ada534b51f7808736ad5406d5fd702",
+      "suffix": "_详情_08",
+      "selectors": [
+        "SEOV_FunctionActions::F_S3_F06",
+        "SEOV_FunctionActions::F_S3_F07",
+        "SEOV_FunctionActions::F_S3_F08",
+        "SEOV_FunctionActions::F_S3_F09",
+        "SEOV_FunctionActions::F_S3_F10",
+        "SEOV_FunctionActions::F_S3_F11",
+        "SEOV_FunctionActions::F_LF_011_01",
+        "SEOV_FunctionActions::F_LF_011_02"
+      ],
+      "native_mode": "TREE",
+      "engine": "OMG SysML v2 Pilot 0.63.1 native visualization export",
+      "jar_sha256": "67c914092f4520ba98548b285c5a9a8bc08f92a0aeec7b763e12a574e91f9ff7",
+      "render_method": "OMG SysML v2 Pilot原生PlantUML导出 → PlantUML图像",
+      "output_stem": "下游导入包/功能模型__01_原子及组合功能定义_详情_08",
+      "is_index": false,
+      "artifacts": {
+        "puml": {
+          "file": "下游导入包/功能模型__01_原子及组合功能定义_详情_08.puml",
+          "sha256": "7d68a1b621577f340234d924112c9b8a12006ab6f36b7bc3937c35ca1592e86d",
+          "bytes": 3848
+        },
+        "svg": {
+          "file": "下游导入包/功能模型__01_原子及组合功能定义_详情_08.svg",
+          "sha256": "caae816e66c3ac7f120ca6d9956b3aead9e63dc175a73f36c963e0ab11cbd368",
+          "bytes": 39862
+        },
+        "png": {
+          "file": "下游导入包/功能模型__01_原子及组合功能定义_详情_08.png",
+          "sha256": "14e8c02ad0e21d7b0d410483fba6f0fbcfb8a0b3518d2b80a49436f56f7bc0b4",
+          "bytes": 147156
+        }
+      },
+      "png_dimensions": [
+        3000,
+        253
+      ],
+      "copy_of": "功能模型/01_原子及组合功能定义.sysml"
+    },
+    {
+      "model_file": "下游导入包/功能模型__01_原子及组合功能定义.sysml",
+      "source_sha256": "4071b8ff601fb96df98f2b5b8395e13422ada534b51f7808736ad5406d5fd702",
+      "suffix": "_详情_09",
+      "selectors": [
+        "SEOV_FunctionActions::F_LF_011_03",
+        "SEOV_FunctionActions::F_LF_011_04",
+        "SEOV_FunctionActions::F_LF_011_05",
+        "SEOV_FunctionActions::F_LF_011_06",
+        "SEOV_FunctionActions::F_S2_F09_01",
+        "SEOV_FunctionActions::F_S2_F09_02",
+        "SEOV_FunctionActions::F_S2_F09_03",
+        "SEOV_FunctionActions::F_S3_F06_01"
+      ],
+      "native_mode": "TREE",
+      "engine": "OMG SysML v2 Pilot 0.63.1 native visualization export",
+      "jar_sha256": "67c914092f4520ba98548b285c5a9a8bc08f92a0aeec7b763e12a574e91f9ff7",
+      "render_method": "OMG SysML v2 Pilot原生PlantUML导出 → PlantUML图像",
+      "output_stem": "下游导入包/功能模型__01_原子及组合功能定义_详情_09",
+      "is_index": false,
+      "artifacts": {
+        "puml": {
+          "file": "下游导入包/功能模型__01_原子及组合功能定义_详情_09.puml",
+          "sha256": "c853c95e9ec1a18a3a72c435ece9e1736eba34f11f79fae77bd8e17f74c546c1",
+          "bytes": 4865
+        },
+        "svg": {
+          "file": "下游导入包/功能模型__01_原子及组合功能定义_详情_09.svg",
+          "sha256": "73fd648ec6c15090600c3dfc24d6ed2f7847d7b6b4a3a688319abd6ced47b1d6",
+          "bytes": 50952
+        },
+        "png": {
+          "file": "下游导入包/功能模型__01_原子及组合功能定义_详情_09.png",
+          "sha256": "88ae18a076c02b0b97fe2b8b7a608469a427531ab8e6c6c663d28d4fdf28997c",
+          "bytes": 124857
+        }
+      },
+      "png_dimensions": [
+        3000,
+        205
+      ],
+      "copy_of": "功能模型/01_原子及组合功能定义.sysml"
+    },
+    {
+      "model_file": "下游导入包/功能模型__01_原子及组合功能定义.sysml",
+      "source_sha256": "4071b8ff601fb96df98f2b5b8395e13422ada534b51f7808736ad5406d5fd702",
+      "suffix": "_详情_10",
+      "selectors": [
+        "SEOV_FunctionActions::F_S3_F06_02"
+      ],
+      "native_mode": "TREE",
+      "engine": "OMG SysML v2 Pilot 0.63.1 native visualization export",
+      "jar_sha256": "67c914092f4520ba98548b285c5a9a8bc08f92a0aeec7b763e12a574e91f9ff7",
+      "render_method": "OMG SysML v2 Pilot原生PlantUML导出 → PlantUML图像",
+      "output_stem": "下游导入包/功能模型__01_原子及组合功能定义_详情_10",
+      "is_index": false,
+      "artifacts": {
+        "puml": {
+          "file": "下游导入包/功能模型__01_原子及组合功能定义_详情_10.puml",
+          "sha256": "3b947910a12e5a3cae712acf26316aa21b8affae140e27182cf2097226b469f0",
+          "bytes": 647
+        },
+        "svg": {
+          "file": "下游导入包/功能模型__01_原子及组合功能定义_详情_10.svg",
+          "sha256": "29cfb65bdb429f70ef70390366899262f71d5134714dfe0289f4ebcba10c3ffd",
+          "bytes": 4748
+        },
+        "png": {
+          "file": "下游导入包/功能模型__01_原子及组合功能定义_详情_10.png",
+          "sha256": "6055206a912d6eaa08c093842faafdf8709958232891861fcc2c96fe7d573492",
+          "bytes": 25154
+        }
+      },
+      "png_dimensions": [
+        405,
+        302
+      ],
+      "copy_of": "功能模型/01_原子及组合功能定义.sysml"
+    },
+    {
+      "model_file": "下游导入包/功能模型__02_3.3.1.2-功能分解.sysml",
+      "source_sha256": "b22c30e27b904b554c1f2d35480c4cc576c7cdb25aae3ec8e2b61bfed7572ebb",
+      "suffix": "",
+      "selectors": [
+        "Decomp_3_3_1_2::'乘员舱制热控制'"
+      ],
+      "native_mode": "TREE",
+      "engine": "OMG SysML v2 Pilot 0.63.1 native visualization export",
+      "jar_sha256": "67c914092f4520ba98548b285c5a9a8bc08f92a0aeec7b763e12a574e91f9ff7",
+      "render_method": "OMG SysML v2 Pilot原生PlantUML导出 → PlantUML图像",
+      "output_stem": "下游导入包/功能模型__02_3.3.1.2-功能分解",
+      "is_index": false,
+      "artifacts": {
+        "puml": {
+          "file": "下游导入包/功能模型__02_3.3.1.2-功能分解.puml",
+          "sha256": "35ca52c72d9dfad2223ad5b2d847375133f4964c2fb4bdabccc782bb878b7f38",
+          "bytes": 1512
+        },
+        "svg": {
+          "file": "下游导入包/功能模型__02_3.3.1.2-功能分解.svg",
+          "sha256": "48bad6f4d5cbf2507f0ff5bf301612e233ee7144cd878796afc4b23844455e33",
+          "bytes": 16210
+        },
+        "png": {
+          "file": "下游导入包/功能模型__02_3.3.1.2-功能分解.png",
+          "sha256": "f7395cd17c511de3aab7b9cd1d9105348584be1b1b8913c6e2d74c2f5eb03682",
+          "bytes": 76625
+        }
+      },
+      "png_dimensions": [
+        2142,
+        420
+      ],
+      "copy_of": "功能模型/02_3.3.1.2-功能分解.sysml"
+    },
+    {
+      "model_file": "下游导入包/功能模型__02_3.3.1.6-功能分解.sysml",
+      "source_sha256": "480b3d3ca74f90323d3bdf4311c8c2eebbf62dac532ee6b3bd4e5d8097403fcf",
+      "suffix": "",
+      "selectors": [
+        "Decomp_3_3_1_6::'自动空调控制'"
+      ],
+      "native_mode": "TREE",
+      "engine": "OMG SysML v2 Pilot 0.63.1 native visualization export",
+      "jar_sha256": "67c914092f4520ba98548b285c5a9a8bc08f92a0aeec7b763e12a574e91f9ff7",
+      "render_method": "OMG SysML v2 Pilot原生PlantUML导出 → PlantUML图像",
+      "output_stem": "下游导入包/功能模型__02_3.3.1.6-功能分解",
+      "is_index": false,
+      "artifacts": {
+        "puml": {
+          "file": "下游导入包/功能模型__02_3.3.1.6-功能分解.puml",
+          "sha256": "5a94da761a12e913007cf08c272a2704e7fc6b5b938a593b76b6e88b8314d863",
+          "bytes": 1672
+        },
+        "svg": {
+          "file": "下游导入包/功能模型__02_3.3.1.6-功能分解.svg",
+          "sha256": "d85cb2fc06bb4a81dec934d8964d3fb6184c4f054b83aa43905fbe5aa7cfb049",
+          "bytes": 18491
+        },
+        "png": {
+          "file": "下游导入包/功能模型__02_3.3.1.6-功能分解.png",
+          "sha256": "0bf66edd79dd589ba3d72e0ce8e2fadc3357f82244850602a575fb09dce901be",
+          "bytes": 85826
+        }
+      },
+      "png_dimensions": [
+        2293,
+        420
+      ],
+      "copy_of": "功能模型/02_3.3.1.6-功能分解.sysml"
+    },
+    {
+      "model_file": "下游导入包/功能模型__02_3.3.1.9-功能分解.sysml",
+      "source_sha256": "69ba265940fc0a1a1731b72762158d881dd8b82b8d54fb29cbc4454da69b3e5d",
+      "suffix": "",
+      "selectors": [
+        "Decomp_3_3_1_9::'前风窗除霜除雾控制'"
+      ],
+      "native_mode": "TREE",
+      "engine": "OMG SysML v2 Pilot 0.63.1 native visualization export",
+      "jar_sha256": "67c914092f4520ba98548b285c5a9a8bc08f92a0aeec7b763e12a574e91f9ff7",
+      "render_method": "OMG SysML v2 Pilot原生PlantUML导出 → PlantUML图像",
+      "output_stem": "下游导入包/功能模型__02_3.3.1.9-功能分解",
+      "is_index": false,
+      "artifacts": {
+        "puml": {
+          "file": "下游导入包/功能模型__02_3.3.1.9-功能分解.puml",
+          "sha256": "e0019136a2119ac8eb1d0a9d538bfe89f5dc6a2468bf39806023137d466200b1",
+          "bytes": 1785
+        },
+        "svg": {
+          "file": "下游导入包/功能模型__02_3.3.1.9-功能分解.svg",
+          "sha256": "336ffe037c73a67b204cf70c6218139c3240827ac1c66da181850ddbc92cdfdc",
+          "bytes": 19599
+        },
+        "png": {
+          "file": "下游导入包/功能模型__02_3.3.1.9-功能分解.png",
+          "sha256": "c67129751c5932d94a7f1f5d3b5e6aa19c2cc6eaa77a05d6d9c46064f10fc72e",
+          "bytes": 96501
+        }
+      },
+      "png_dimensions": [
+        2550,
+        420
+      ],
+      "copy_of": "功能模型/02_3.3.1.9-功能分解.sysml"
+    },
+    {
+      "model_file": "下游导入包/功能模型__02_SC1-功能分解.sysml",
+      "source_sha256": "0bb6fe2a4dfa1521e859cb2acca5fe038281297587127f888dc27e8e4f245181",
+      "suffix": "",
+      "selectors": [
+        "Decomp_SC1::'串联混动经济性场景'"
+      ],
+      "native_mode": "TREE",
+      "engine": "OMG SysML v2 Pilot 0.63.1 native visualization export",
+      "jar_sha256": "67c914092f4520ba98548b285c5a9a8bc08f92a0aeec7b763e12a574e91f9ff7",
+      "render_method": "OMG SysML v2 Pilot原生PlantUML导出 → PlantUML图像",
+      "output_stem": "下游导入包/功能模型__02_SC1-功能分解",
+      "is_index": false,
+      "artifacts": {
+        "puml": {
+          "file": "下游导入包/功能模型__02_SC1-功能分解.puml",
+          "sha256": "87a2bc268bdd24052b0b51e176c67adcc811bdfe971f9bd3cf58d4af8d517e5b",
+          "bytes": 1329
+        },
+        "svg": {
+          "file": "下游导入包/功能模型__02_SC1-功能分解.svg",
+          "sha256": "ba3d5367e7ee56198e5d8467291b2d6b00aa585ed7af6faacaa5d22f2360e8bd",
+          "bytes": 14121
+        },
+        "png": {
+          "file": "下游导入包/功能模型__02_SC1-功能分解.png",
+          "sha256": "1fd0ceab07b011762b519450822a4e9632133d6b3364c9bf33cdc9e717559228",
+          "bytes": 75826
+        }
+      },
+      "png_dimensions": [
+        2475,
+        279
+      ],
+      "copy_of": "功能模型/02_SC1-功能分解.sysml"
+    },
+    {
+      "model_file": "下游导入包/功能模型__02_SC2-功能分解.sysml",
+      "source_sha256": "53f5425c50fbab9633e704f7faa259b56f71c1e0b77e240db3d8d429a519c2e9",
+      "suffix": "",
+      "selectors": [
+        "Decomp_SC2::'空调供风辅助电池冷却场景'"
+      ],
+      "native_mode": "TREE",
+      "engine": "OMG SysML v2 Pilot 0.63.1 native visualization export",
+      "jar_sha256": "67c914092f4520ba98548b285c5a9a8bc08f92a0aeec7b763e12a574e91f9ff7",
+      "render_method": "OMG SysML v2 Pilot原生PlantUML导出 → PlantUML图像",
+      "output_stem": "下游导入包/功能模型__02_SC2-功能分解",
+      "is_index": false,
+      "artifacts": {
+        "puml": {
+          "file": "下游导入包/功能模型__02_SC2-功能分解.puml",
+          "sha256": "0396f0abca342dc8614aa7e61c0d5f1244239e59d15336d097718c7f592409fd",
+          "bytes": 1359
+        },
+        "svg": {
+          "file": "下游导入包/功能模型__02_SC2-功能分解.svg",
+          "sha256": "015169f8aabd94fdea3d577daf058b44e85c7012825f5ae9109b47917e458ccc",
+          "bytes": 14167
+        },
+        "png": {
+          "file": "下游导入包/功能模型__02_SC2-功能分解.png",
+          "sha256": "73114eb73d8c8b167d03e4acc4925ae9e6a38a3d1ae76fc2b38c3fc841994870",
+          "bytes": 80740
+        }
+      },
+      "png_dimensions": [
+        2580,
+        279
+      ],
+      "copy_of": "功能模型/02_SC2-功能分解.sysml"
+    },
+    {
+      "model_file": "下游导入包/功能模型__02_SC3-功能分解.sysml",
+      "source_sha256": "54a5bb410ce13860fe88a85b3c32a3660fcd99b9b6d60e7d8bfca3e63eab62d1",
+      "suffix": "",
+      "selectors": [
+        "Decomp_SC3::'座舱空调与Chiller电池液冷场景'"
+      ],
+      "native_mode": "TREE",
+      "engine": "OMG SysML v2 Pilot 0.63.1 native visualization export",
+      "jar_sha256": "67c914092f4520ba98548b285c5a9a8bc08f92a0aeec7b763e12a574e91f9ff7",
+      "render_method": "OMG SysML v2 Pilot原生PlantUML导出 → PlantUML图像",
+      "output_stem": "下游导入包/功能模型__02_SC3-功能分解",
+      "is_index": false,
+      "artifacts": {
+        "puml": {
+          "file": "下游导入包/功能模型__02_SC3-功能分解.puml",
+          "sha256": "24447c997125ec8b9a1384bba75d15bde9804bc07ac48dc5e7b8d561ba61b9f8",
+          "bytes": 1483
+        },
+        "svg": {
+          "file": "下游导入包/功能模型__02_SC3-功能分解.svg",
+          "sha256": "d4cabdb8e2ff46f4d6bff10bac2608d908ebac32647b45c5b9731df997cdafe3",
+          "bytes": 15506
+        },
+        "png": {
+          "file": "下游导入包/功能模型__02_SC3-功能分解.png",
+          "sha256": "fcac4efa81dad1be7a6c057a4f028528ba47524fe7afed8ad4a8a7a610855b02",
+          "bytes": 88031
+        }
+      },
+      "png_dimensions": [
+        2956,
+        279
+      ],
+      "copy_of": "功能模型/02_SC3-功能分解.sysml"
+    },
+    {
+      "model_file": "下游导入包/行为模型__SC1-行为模型.sysml",
+      "source_sha256": "af92dc415c048ec8ce53c93441b48a99d331367bfd10e6734cb226b62e191827",
+      "suffix": "",
+      "selectors": [
+        "Render_SC1::ACT"
+      ],
+      "native_mode": "view ActionFlowView",
+      "engine": "OMG SysML v2 Pilot 0.63.1 native visualization export",
+      "jar_sha256": "67c914092f4520ba98548b285c5a9a8bc08f92a0aeec7b763e12a574e91f9ff7",
+      "render_method": "OMG SysML v2 Pilot原生PlantUML导出 → PlantUML图像",
+      "output_stem": "下游导入包/行为模型__SC1-行为模型",
+      "is_index": false,
+      "artifacts": {
+        "puml": {
+          "file": "下游导入包/行为模型__SC1-行为模型.puml",
+          "sha256": "81307ce879283833de4d603da3abe0f7d53270d262bceb9e6b7aef1072b9873f",
+          "bytes": 4697
+        },
+        "svg": {
+          "file": "下游导入包/行为模型__SC1-行为模型.svg",
+          "sha256": "2d878d9a7ab1d74efe93ece98cad70fc658543fc39515e5411938cc37e8d0563",
+          "bytes": 57272
+        },
+        "png": {
+          "file": "下游导入包/行为模型__SC1-行为模型.png",
+          "sha256": "36094f1f3f61d9c7ba25aa0752bc19e172893bd9e7123fed2dcc3e4be2601e01",
+          "bytes": 231343
+        }
+      },
+      "png_dimensions": [
+        3000,
+        917
+      ],
+      "copy_of": "行为模型/SC1-行为模型.sysml"
+    },
+    {
+      "model_file": "下游导入包/行为模型__SC2-行为模型.sysml",
+      "source_sha256": "d3b27a75e34270c5668899167330081e839844ce6f409efc53b7eff5e825d0b5",
+      "suffix": "",
+      "selectors": [
+        "Render_SC2::ACT"
+      ],
+      "native_mode": "view ActionFlowView",
+      "engine": "OMG SysML v2 Pilot 0.63.1 native visualization export",
+      "jar_sha256": "67c914092f4520ba98548b285c5a9a8bc08f92a0aeec7b763e12a574e91f9ff7",
+      "render_method": "OMG SysML v2 Pilot原生PlantUML导出 → PlantUML图像",
+      "output_stem": "下游导入包/行为模型__SC2-行为模型",
+      "is_index": false,
+      "artifacts": {
+        "puml": {
+          "file": "下游导入包/行为模型__SC2-行为模型.puml",
+          "sha256": "54cae6bc0a3c63595b49706971c46b6ba165c20f0ae15131f3a93cf05f416c40",
+          "bytes": 5281
+        },
+        "svg": {
+          "file": "下游导入包/行为模型__SC2-行为模型.svg",
+          "sha256": "8ee67f59f19ef1353535c6abc59f69bf2efeba392ad1ccaf8346bc743851ea4c",
+          "bytes": 63144
+        },
+        "png": {
+          "file": "下游导入包/行为模型__SC2-行为模型.png",
+          "sha256": "6196a1f2cd50ca510c18c81c18f812646938e33b1624efc183711ccf79816ba9",
+          "bytes": 288004
+        }
+      },
+      "png_dimensions": [
+        3000,
+        1276
+      ],
+      "copy_of": "行为模型/SC2-行为模型.sysml"
+    },
+    {
+      "model_file": "下游导入包/行为模型__SC3-行为模型.sysml",
+      "source_sha256": "303d91dbf94a0a587a6685a1970cce1513d15716a5f6c2bf2a1e1f524f828cc9",
+      "suffix": "",
+      "selectors": [
+        "Render_SC3::ACT"
+      ],
+      "native_mode": "view ActionFlowView",
+      "engine": "OMG SysML v2 Pilot 0.63.1 native visualization export",
+      "jar_sha256": "67c914092f4520ba98548b285c5a9a8bc08f92a0aeec7b763e12a574e91f9ff7",
+      "render_method": "OMG SysML v2 Pilot原生PlantUML导出 → PlantUML图像",
+      "output_stem": "下游导入包/行为模型__SC3-行为模型",
+      "is_index": false,
+      "artifacts": {
+        "puml": {
+          "file": "下游导入包/行为模型__SC3-行为模型.puml",
+          "sha256": "91997b97c1de00d6c8a5f3d16dae3a59120e6765991812387f428d9ad46c3484",
+          "bytes": 5385
+        },
+        "svg": {
+          "file": "下游导入包/行为模型__SC3-行为模型.svg",
+          "sha256": "bee9c9ea94c7e4aa702408a1a50d4d51cfb6bfda524f7f67fb06c927e6a7e78b",
+          "bytes": 65182
+        },
+        "png": {
+          "file": "下游导入包/行为模型__SC3-行为模型.png",
+          "sha256": "8ef1e6ce287f75d71141c77e464f3f2975c0041d73fc1ab206e4f89f659609eb",
+          "bytes": 346202
+        }
+      },
+      "png_dimensions": [
+        3000,
+        1386
+      ],
+      "copy_of": "行为模型/SC3-行为模型.sysml"
+    },
+    {
+      "model_file": "下游导入包/需求图__3.3.1.2-需求图.sysml",
+      "source_sha256": "d30026dfab72845cc12ce06153a84fb7cb8177679d7f63bdba1fcb466467e289",
+      "suffix": "",
+      "selectors": [
+        "RequirementModel_01::AirConditioningHeating"
+      ],
+      "native_mode": "TREE",
+      "engine": "OMG SysML v2 Pilot 0.63.1 native visualization export",
+      "jar_sha256": "67c914092f4520ba98548b285c5a9a8bc08f92a0aeec7b763e12a574e91f9ff7",
+      "render_method": "OMG SysML v2 Pilot原生PlantUML导出 → PlantUML图像",
+      "output_stem": "下游导入包/需求图__3.3.1.2-需求图",
+      "is_index": false,
+      "artifacts": {
+        "puml": {
+          "file": "下游导入包/需求图__3.3.1.2-需求图.puml",
+          "sha256": "ce8c2945b397e53f1e07bb9cc9535e794b454924d4de0a30ccadada5816cfe6f",
+          "bytes": 1767
+        },
+        "svg": {
+          "file": "下游导入包/需求图__3.3.1.2-需求图.svg",
+          "sha256": "b075753ef4dabe7c9103d4612b96f663e4ecdded6fbfda38862fd0d002a26052",
+          "bytes": 14185
+        },
+        "png": {
+          "file": "下游导入包/需求图__3.3.1.2-需求图.png",
+          "sha256": "3173a846004de11a529a1b4585343f2374be876fc8cc15d31af0e17e23c4697e",
+          "bytes": 112228
+        }
+      },
+      "png_dimensions": [
+        2986,
+        337
+      ],
+      "copy_of": "需求图/3.3.1.2-需求图.sysml"
+    },
+    {
+      "model_file": "下游导入包/需求图__3.3.1.6-需求图.sysml",
+      "source_sha256": "8faaaafa86fef79fd991511faaff68142fed2ca0ee2e62d2c917538d9f6118b2",
+      "suffix": "",
+      "selectors": [
+        "RequirementModel_02::AutomaticClimateMode"
+      ],
+      "native_mode": "TREE",
+      "engine": "OMG SysML v2 Pilot 0.63.1 native visualization export",
+      "jar_sha256": "67c914092f4520ba98548b285c5a9a8bc08f92a0aeec7b763e12a574e91f9ff7",
+      "render_method": "OMG SysML v2 Pilot原生PlantUML导出 → PlantUML图像",
+      "output_stem": "下游导入包/需求图__3.3.1.6-需求图",
+      "is_index": false,
+      "artifacts": {
+        "puml": {
+          "file": "下游导入包/需求图__3.3.1.6-需求图.puml",
+          "sha256": "cfd7f6e3c51c51b16d4c184494293265c61d77db4817976c0d921811af6e0f59",
+          "bytes": 1759
+        },
+        "svg": {
+          "file": "下游导入包/需求图__3.3.1.6-需求图.svg",
+          "sha256": "d5e0c059dd7f8d21a177353e8c212d6b856887386704dfb2685af2b589f9cbed",
+          "bytes": 14769
+        },
+        "png": {
+          "file": "下游导入包/需求图__3.3.1.6-需求图.png",
+          "sha256": "e6c57ab534c920530df530af5e2df757bf55d1fab885fa7069e70c13ee4ce409",
+          "bytes": 119094
+        }
+      },
+      "png_dimensions": [
+        2531,
+        359
+      ],
+      "copy_of": "需求图/3.3.1.6-需求图.sysml"
+    },
+    {
+      "model_file": "下游导入包/需求图__3.3.1.9-需求图.sysml",
+      "source_sha256": "36380c27b06783d878c11dd2377db4fa9c73dd53db0eaf99b624e08f5f322011",
+      "suffix": "",
+      "selectors": [
+        "RequirementModel_03::FrontRearDefrostDemist"
+      ],
+      "native_mode": "TREE",
+      "engine": "OMG SysML v2 Pilot 0.63.1 native visualization export",
+      "jar_sha256": "67c914092f4520ba98548b285c5a9a8bc08f92a0aeec7b763e12a574e91f9ff7",
+      "render_method": "OMG SysML v2 Pilot原生PlantUML导出 → PlantUML图像",
+      "output_stem": "下游导入包/需求图__3.3.1.9-需求图",
+      "is_index": false,
+      "artifacts": {
+        "puml": {
+          "file": "下游导入包/需求图__3.3.1.9-需求图.puml",
+          "sha256": "4d72faf7adb100fb487973ff002d72cdfa2720fab75469289c3b4473b8124e65",
+          "bytes": 1658
+        },
+        "svg": {
+          "file": "下游导入包/需求图__3.3.1.9-需求图.svg",
+          "sha256": "efdec7fd3427fa6184628152f1153326455c5f61039f90b9e1963d7e0ebfd311",
+          "bytes": 13225
+        },
+        "png": {
+          "file": "下游导入包/需求图__3.3.1.9-需求图.png",
+          "sha256": "77133eca2414c8276b0482199862e7e69754b0ef683515b990e83884d63b3d84",
+          "bytes": 110425
+        }
+      },
+      "png_dimensions": [
+        2257,
+        359
+      ],
+      "copy_of": "需求图/3.3.1.9-需求图.sysml"
+    },
+    {
+      "model_file": "下游导入包/需求外部BDD图__3.3.1.2、3.3.1.6、3.3.1.9-BDD图.sysml",
+      "source_sha256": "4eb187a1b5914c392a508c508ec9fedf3e8fa5da214f518d8c4e3ec2994a55ef",
+      "suffix": "",
+      "selectors": [
+        "'热管理三条需求外部环境图BDD'::'热管理控制外部环境'"
+      ],
+      "native_mode": "INTERCONNECTION",
+      "engine": "OMG SysML v2 Pilot 0.63.1 native visualization export",
+      "jar_sha256": "67c914092f4520ba98548b285c5a9a8bc08f92a0aeec7b763e12a574e91f9ff7",
+      "render_method": "OMG SysML v2 Pilot原生PlantUML导出 → PlantUML图像",
+      "output_stem": "下游导入包/需求外部BDD图__3.3.1.2、3.3.1.6、3.3.1.9-BDD图",
+      "is_index": false,
+      "artifacts": {
+        "puml": {
+          "file": "下游导入包/需求外部BDD图__3.3.1.2、3.3.1.6、3.3.1.9-BDD图.puml",
+          "sha256": "0c1fe3ca8367cb716d53586cebf66f7f7730d37a32f5246c45ec35f623e1ca9a",
+          "bytes": 2121
+        },
+        "svg": {
+          "file": "下游导入包/需求外部BDD图__3.3.1.2、3.3.1.6、3.3.1.9-BDD图.svg",
+          "sha256": "f8c3af3aa64f541cece6226421515f06bded42956dd7ec33afd457c771545e7f",
+          "bytes": 16608
+        },
+        "png": {
+          "file": "下游导入包/需求外部BDD图__3.3.1.2、3.3.1.6、3.3.1.9-BDD图.png",
+          "sha256": "bc5c1f4fd4b003ec2b310492a5489db15c62540563c109a471c16863457164de",
+          "bytes": 85197
+        }
+      },
+      "png_dimensions": [
+        1266,
+        499
+      ],
+      "copy_of": "需求外部BDD图/3.3.1.2、3.3.1.6、3.3.1.9-BDD图.sysml"
+    },
+    {
+      "model_file": "下游导入包/需求活动图__3.3.1.2-需求活动图.sysml",
+      "source_sha256": "2c4303e72824ea28d35af5c9294bdf39b2c07a7bd84d3ac85da0296aae9c0652",
+      "suffix": "",
+      "selectors": [
+        "Behaviour_3_3_1_2::'ACT_3312_需求活动图'"
+      ],
+      "native_mode": "view ActionFlowView",
+      "engine": "OMG SysML v2 Pilot 0.63.1 native visualization export",
+      "jar_sha256": "67c914092f4520ba98548b285c5a9a8bc08f92a0aeec7b763e12a574e91f9ff7",
+      "render_method": "OMG SysML v2 Pilot原生PlantUML导出 → PlantUML图像",
+      "output_stem": "下游导入包/需求活动图__3.3.1.2-需求活动图",
+      "is_index": false,
+      "artifacts": {
+        "puml": {
+          "file": "下游导入包/需求活动图__3.3.1.2-需求活动图.puml",
+          "sha256": "5e28c0647704564e19d3ffebfc9e81b21912de8fe95b71804742640f1fdaab14",
+          "bytes": 4585
+        },
+        "svg": {
+          "file": "下游导入包/需求活动图__3.3.1.2-需求活动图.svg",
+          "sha256": "7b19ef650044e9b15591f68222f965212e17b5e57a174c41234f89a7d5db5809",
+          "bytes": 47141
+        },
+        "png": {
+          "file": "下游导入包/需求活动图__3.3.1.2-需求活动图.png",
+          "sha256": "2776eb71dcc1ce7f31ed413e937d5c75e43b42b6e25ef447bd288d3ecfe92eb2",
+          "bytes": 196434
+        }
+      },
+      "png_dimensions": [
+        3000,
+        674
+      ],
+      "copy_of": "需求活动图/3.3.1.2-需求活动图.sysml"
+    },
+    {
+      "model_file": "下游导入包/需求活动图__3.3.1.6-需求活动图.sysml",
+      "source_sha256": "557ea824cfae80e609ae67014b92dc1020a5344ccd53b9a767f8d896b75d84ad",
+      "suffix": "",
+      "selectors": [
+        "Behaviour_3_3_1_6::'ACT_3316_需求活动图'"
+      ],
+      "native_mode": "view ActionFlowView",
+      "engine": "OMG SysML v2 Pilot 0.63.1 native visualization export",
+      "jar_sha256": "67c914092f4520ba98548b285c5a9a8bc08f92a0aeec7b763e12a574e91f9ff7",
+      "render_method": "OMG SysML v2 Pilot原生PlantUML导出 → PlantUML图像",
+      "output_stem": "下游导入包/需求活动图__3.3.1.6-需求活动图",
+      "is_index": false,
+      "artifacts": {
+        "puml": {
+          "file": "下游导入包/需求活动图__3.3.1.6-需求活动图.puml",
+          "sha256": "9ac41fa616beb7bf05c9a462705cb552fcf686fae4feeba8eae311402084e0a8",
+          "bytes": 3564
+        },
+        "svg": {
+          "file": "下游导入包/需求活动图__3.3.1.6-需求活动图.svg",
+          "sha256": "70c518609591af9b72202f2d94e0fafe23e0d8050ad72b37fe6111a30c71c281",
+          "bytes": 44062
+        },
+        "png": {
+          "file": "下游导入包/需求活动图__3.3.1.6-需求活动图.png",
+          "sha256": "9ab8667d01e1d1d6c4da16df4433a33cb42a5cff9dfbff6cb19248aee4a71107",
+          "bytes": 119195
+        }
+      },
+      "png_dimensions": [
+        3000,
+        479
+      ],
+      "copy_of": "需求活动图/3.3.1.6-需求活动图.sysml"
+    },
+    {
+      "model_file": "下游导入包/需求活动图__3.3.1.9-需求活动图.sysml",
+      "source_sha256": "45ecb011fe494876ab1683eaa1ac10c8fd354a750f1736cc80763f76c6980781",
+      "suffix": "",
+      "selectors": [
+        "Behaviour_3_3_1_9::'ACT_3319_需求活动图'"
+      ],
+      "native_mode": "view ActionFlowView",
+      "engine": "OMG SysML v2 Pilot 0.63.1 native visualization export",
+      "jar_sha256": "67c914092f4520ba98548b285c5a9a8bc08f92a0aeec7b763e12a574e91f9ff7",
+      "render_method": "OMG SysML v2 Pilot原生PlantUML导出 → PlantUML图像",
+      "output_stem": "下游导入包/需求活动图__3.3.1.9-需求活动图",
+      "is_index": false,
+      "artifacts": {
+        "puml": {
+          "file": "下游导入包/需求活动图__3.3.1.9-需求活动图.puml",
+          "sha256": "0ded67bd6a5531645bee498ad7751763ed37d015501b68b564cef104b0daf2dc",
+          "bytes": 4285
+        },
+        "svg": {
+          "file": "下游导入包/需求活动图__3.3.1.9-需求活动图.svg",
+          "sha256": "7b46821fb89d64964b16744f613dbe6d783c3cc260e5da83215075d5893fa57f",
+          "bytes": 50664
+        },
+        "png": {
+          "file": "下游导入包/需求活动图__3.3.1.9-需求活动图.png",
+          "sha256": "0b700b72aea7995136fcb77f8d269c49d893d147ee7259b45747d991ac85324e",
+          "bytes": 329788
+        }
+      },
+      "png_dimensions": [
+        3000,
+        1284
+      ],
+      "copy_of": "需求活动图/3.3.1.9-需求活动图.sysml"
+    },
+    {
+      "model_file": "下游导入包/需求用例图__3.3.1.2、3.3.1.6、3.3.1.9-需求用例图.sysml",
+      "source_sha256": "66f3b9b1b763a8944744e91a1ad2771d324c3199620144a38def7b7390a9580e",
+      "suffix": "",
+      "selectors": [
+        "'热管理三条需求用例模型'::'获得乘员舱制热效果'",
+        "'热管理三条需求用例模型'::'获得自动温控服务'",
+        "'热管理三条需求用例模型'::'获得前风窗除霜除雾效果'"
+      ],
+      "native_mode": "TREE",
+      "engine": "OMG SysML v2 Pilot 0.63.1 native visualization export",
+      "jar_sha256": "67c914092f4520ba98548b285c5a9a8bc08f92a0aeec7b763e12a574e91f9ff7",
+      "render_method": "OMG SysML v2 Pilot原生PlantUML导出 → PlantUML图像",
+      "output_stem": "下游导入包/需求用例图__3.3.1.2、3.3.1.6、3.3.1.9-需求用例图",
+      "is_index": false,
+      "artifacts": {
+        "puml": {
+          "file": "下游导入包/需求用例图__3.3.1.2、3.3.1.6、3.3.1.9-需求用例图.puml",
+          "sha256": "7a4fdaacbcf2acdc45d9ce1db755f113cb89e3ebceaacaf9df4cc0933471e8c3",
+          "bytes": 2052
+        },
+        "svg": {
+          "file": "下游导入包/需求用例图__3.3.1.2、3.3.1.6、3.3.1.9-需求用例图.svg",
+          "sha256": "71eb20c12452e2fb0258f6fcacb60b57f6b764ad17eff45809ba1aed6ff93186",
+          "bytes": 24326
+        },
+        "png": {
+          "file": "下游导入包/需求用例图__3.3.1.2、3.3.1.6、3.3.1.9-需求用例图.png",
+          "sha256": "673dfe28876c56ba5ce8344b43a12f56f702ab02e3df1c8a77036575c0c02260",
+          "bytes": 93863
+        }
+      },
+      "png_dimensions": [
+        2619,
+        371
+      ],
+      "copy_of": "需求用例图/3.3.1.2、3.3.1.6、3.3.1.9-需求用例图.sysml"
+    }
+  ],
+  "limitations": [
+    "图像来自模型视图/目录与分页，不能代替控制算法仿真或源理工具验收",
+    "两个大文件的主图为完整目录索引，原生模型内容由详情分页完整覆盖；未交付超限截断图"
+  ],
+  "readable_layouts": [
+    {
+      "model_file": "需求活动图/3.3.1.2-需求活动图.sysml",
+      "source_sha256": "2c4303e72824ea28d35af5c9294bdf39b2c07a7bd84d3ac85da0296aae9c0652",
+      "render_method": "经逐条SysML转移校验的控制流阅读布局；不展示全部端口细节，端口见原生图",
+      "files": [
+        "需求活动图/3.3.1.2-需求活动图_阅读版.dot",
+        "需求活动图/3.3.1.2-需求活动图_阅读版.svg",
+        "需求活动图/3.3.1.2-需求活动图_阅读版.png"
+      ]
+    },
+    {
+      "model_file": "需求活动图/3.3.1.6-需求活动图.sysml",
+      "source_sha256": "557ea824cfae80e609ae67014b92dc1020a5344ccd53b9a767f8d896b75d84ad",
+      "render_method": "经逐条SysML转移校验的控制流阅读布局；不展示全部端口细节，端口见原生图",
+      "files": [
+        "需求活动图/3.3.1.6-需求活动图_阅读版.dot",
+        "需求活动图/3.3.1.6-需求活动图_阅读版.svg",
+        "需求活动图/3.3.1.6-需求活动图_阅读版.png"
+      ]
+    },
+    {
+      "model_file": "需求活动图/3.3.1.9-需求活动图.sysml",
+      "source_sha256": "45ecb011fe494876ab1683eaa1ac10c8fd354a750f1736cc80763f76c6980781",
+      "render_method": "经逐条SysML转移校验的控制流阅读布局；不展示全部端口细节，端口见原生图",
+      "files": [
+        "需求活动图/3.3.1.9-需求活动图_阅读版.dot",
+        "需求活动图/3.3.1.9-需求活动图_阅读版.svg",
+        "需求活动图/3.3.1.9-需求活动图_阅读版.png"
+      ]
+    },
+    {
+      "model_file": "行为模型/SC1-行为模型.sysml",
+      "source_sha256": "af92dc415c048ec8ce53c93441b48a99d331367bfd10e6734cb226b62e191827",
+      "render_method": "经逐条SysML转移校验的控制流阅读布局；不展示全部端口细节，端口见原生图",
+      "files": [
+        "行为模型/SC1-行为模型_阅读版.dot",
+        "行为模型/SC1-行为模型_阅读版.svg",
+        "行为模型/SC1-行为模型_阅读版.png"
+      ]
+    },
+    {
+      "model_file": "行为模型/SC2-行为模型.sysml",
+      "source_sha256": "d3b27a75e34270c5668899167330081e839844ce6f409efc53b7eff5e825d0b5",
+      "render_method": "经逐条SysML转移校验的控制流阅读布局；不展示全部端口细节，端口见原生图",
+      "files": [
+        "行为模型/SC2-行为模型_阅读版.dot",
+        "行为模型/SC2-行为模型_阅读版.svg",
+        "行为模型/SC2-行为模型_阅读版.png"
+      ]
+    },
+    {
+      "model_file": "行为模型/SC3-行为模型.sysml",
+      "source_sha256": "303d91dbf94a0a587a6685a1970cce1513d15716a5f6c2bf2a1e1f524f828cc9",
+      "render_method": "经逐条SysML转移校验的控制流阅读布局；不展示全部端口细节，端口见原生图",
+      "files": [
+        "行为模型/SC3-行为模型_阅读版.dot",
+        "行为模型/SC3-行为模型_阅读版.svg",
+        "行为模型/SC3-行为模型_阅读版.png"
+      ]
+    },
+    {
+      "model_file": "需求外部BDD图/3.3.1.2、3.3.1.6、3.3.1.9-BDD图.sysml",
+      "source_sha256": "4eb187a1b5914c392a508c508ec9fedf3e8fa5da214f518d8c4e3ec2994a55ef",
+      "render_method": "按原SysML实例、端口、interface connect直接绘制的可读布局；7个角色、8条连接均保留",
+      "part_count": 7,
+      "connection_count": 8,
+      "files": [
+        "需求外部BDD图/3.3.1.2、3.3.1.6、3.3.1.9-BDD图_阅读版.dot",
+        "需求外部BDD图/3.3.1.2、3.3.1.6、3.3.1.9-BDD图_阅读版.svg",
+        "需求外部BDD图/3.3.1.2、3.3.1.6、3.3.1.9-BDD图_阅读版.png"
+      ]
+    },
+    {
+      "model_file": "下游导入包/行为模型__SC1-行为模型.sysml",
+      "source_sha256": "af92dc415c048ec8ce53c93441b48a99d331367bfd10e6734cb226b62e191827",
+      "render_method": "经逐条SysML转移校验的控制流阅读布局；不展示全部端口细节，端口见原生图",
+      "files": [
+        "下游导入包/行为模型__SC1-行为模型_阅读版.dot",
+        "下游导入包/行为模型__SC1-行为模型_阅读版.svg",
+        "下游导入包/行为模型__SC1-行为模型_阅读版.png"
+      ],
+      "copy_of": "行为模型/SC1-行为模型.sysml"
+    },
+    {
+      "model_file": "下游导入包/行为模型__SC2-行为模型.sysml",
+      "source_sha256": "d3b27a75e34270c5668899167330081e839844ce6f409efc53b7eff5e825d0b5",
+      "render_method": "经逐条SysML转移校验的控制流阅读布局；不展示全部端口细节，端口见原生图",
+      "files": [
+        "下游导入包/行为模型__SC2-行为模型_阅读版.dot",
+        "下游导入包/行为模型__SC2-行为模型_阅读版.svg",
+        "下游导入包/行为模型__SC2-行为模型_阅读版.png"
+      ],
+      "copy_of": "行为模型/SC2-行为模型.sysml"
+    },
+    {
+      "model_file": "下游导入包/行为模型__SC3-行为模型.sysml",
+      "source_sha256": "303d91dbf94a0a587a6685a1970cce1513d15716a5f6c2bf2a1e1f524f828cc9",
+      "render_method": "经逐条SysML转移校验的控制流阅读布局；不展示全部端口细节，端口见原生图",
+      "files": [
+        "下游导入包/行为模型__SC3-行为模型_阅读版.dot",
+        "下游导入包/行为模型__SC3-行为模型_阅读版.svg",
+        "下游导入包/行为模型__SC3-行为模型_阅读版.png"
+      ],
+      "copy_of": "行为模型/SC3-行为模型.sysml"
+    },
+    {
+      "model_file": "下游导入包/需求外部BDD图__3.3.1.2、3.3.1.6、3.3.1.9-BDD图.sysml",
+      "source_sha256": "4eb187a1b5914c392a508c508ec9fedf3e8fa5da214f518d8c4e3ec2994a55ef",
+      "render_method": "按原SysML实例、端口、interface connect直接绘制的可读布局；7个角色、8条连接均保留",
+      "part_count": 7,
+      "connection_count": 8,
+      "files": [
+        "下游导入包/需求外部BDD图__3.3.1.2、3.3.1.6、3.3.1.9-BDD图_阅读版.dot",
+        "下游导入包/需求外部BDD图__3.3.1.2、3.3.1.6、3.3.1.9-BDD图_阅读版.svg",
+        "下游导入包/需求外部BDD图__3.3.1.2、3.3.1.6、3.3.1.9-BDD图_阅读版.png"
+      ],
+      "copy_of": "需求外部BDD图/3.3.1.2、3.3.1.6、3.3.1.9-BDD图.sysml"
+    },
+    {
+      "model_file": "下游导入包/需求活动图__3.3.1.2-需求活动图.sysml",
+      "source_sha256": "2c4303e72824ea28d35af5c9294bdf39b2c07a7bd84d3ac85da0296aae9c0652",
+      "render_method": "经逐条SysML转移校验的控制流阅读布局；不展示全部端口细节，端口见原生图",
+      "files": [
+        "下游导入包/需求活动图__3.3.1.2-需求活动图_阅读版.dot",
+        "下游导入包/需求活动图__3.3.1.2-需求活动图_阅读版.svg",
+        "下游导入包/需求活动图__3.3.1.2-需求活动图_阅读版.png"
+      ],
+      "copy_of": "需求活动图/3.3.1.2-需求活动图.sysml"
+    },
+    {
+      "model_file": "下游导入包/需求活动图__3.3.1.6-需求活动图.sysml",
+      "source_sha256": "557ea824cfae80e609ae67014b92dc1020a5344ccd53b9a767f8d896b75d84ad",
+      "render_method": "经逐条SysML转移校验的控制流阅读布局；不展示全部端口细节，端口见原生图",
+      "files": [
+        "下游导入包/需求活动图__3.3.1.6-需求活动图_阅读版.dot",
+        "下游导入包/需求活动图__3.3.1.6-需求活动图_阅读版.svg",
+        "下游导入包/需求活动图__3.3.1.6-需求活动图_阅读版.png"
+      ],
+      "copy_of": "需求活动图/3.3.1.6-需求活动图.sysml"
+    },
+    {
+      "model_file": "下游导入包/需求活动图__3.3.1.9-需求活动图.sysml",
+      "source_sha256": "45ecb011fe494876ab1683eaa1ac10c8fd354a750f1736cc80763f76c6980781",
+      "render_method": "经逐条SysML转移校验的控制流阅读布局；不展示全部端口细节，端口见原生图",
+      "files": [
+        "下游导入包/需求活动图__3.3.1.9-需求活动图_阅读版.dot",
+        "下游导入包/需求活动图__3.3.1.9-需求活动图_阅读版.svg",
+        "下游导入包/需求活动图__3.3.1.9-需求活动图_阅读版.png"
+      ],
+      "copy_of": "需求活动图/3.3.1.9-需求活动图.sysml"
+    }
+  ],
+  "verification": {
+    "passed": true,
+    "sysml_files_covered": 38,
+    "primary_png_count": 38,
+    "primary_svg_count": 38,
+    "native_and_index_views": 108,
+    "readable_views": 14,
+    "source_models_unchanged": true,
+    "large_model_pagination_complete": true,
+    "all_image_formats_read_back": true,
+    "files": [
+      {
+        "file": "功能模型/00_概念接口类型.sysml",
+        "source_unchanged": true,
+        "primary_images_present": true,
+        "source_sha256": "6bdc17566f82bbec10dfcfe91e90e9d83151bd98de64e74de1f1580bf01ce39e"
+      },
+      {
+        "file": "下游导入包/功能模型__00_概念接口类型.sysml",
+        "source_unchanged": true,
+        "primary_images_present": true,
+        "source_sha256": "6bdc17566f82bbec10dfcfe91e90e9d83151bd98de64e74de1f1580bf01ce39e"
+      },
+      {
+        "file": "功能模型/01_原子及组合功能定义.sysml",
+        "source_unchanged": true,
+        "primary_images_present": true,
+        "source_sha256": "4071b8ff601fb96df98f2b5b8395e13422ada534b51f7808736ad5406d5fd702"
+      },
+      {
+        "file": "下游导入包/功能模型__01_原子及组合功能定义.sysml",
+        "source_unchanged": true,
+        "primary_images_present": true,
+        "source_sha256": "4071b8ff601fb96df98f2b5b8395e13422ada534b51f7808736ad5406d5fd702"
+      },
+      {
+        "file": "功能模型/02_3.3.1.2-功能分解.sysml",
+        "source_unchanged": true,
+        "primary_images_present": true,
+        "source_sha256": "b22c30e27b904b554c1f2d35480c4cc576c7cdb25aae3ec8e2b61bfed7572ebb"
+      },
+      {
+        "file": "下游导入包/功能模型__02_3.3.1.2-功能分解.sysml",
+        "source_unchanged": true,
+        "primary_images_present": true,
+        "source_sha256": "b22c30e27b904b554c1f2d35480c4cc576c7cdb25aae3ec8e2b61bfed7572ebb"
+      },
+      {
+        "file": "功能模型/02_3.3.1.6-功能分解.sysml",
+        "source_unchanged": true,
+        "primary_images_present": true,
+        "source_sha256": "480b3d3ca74f90323d3bdf4311c8c2eebbf62dac532ee6b3bd4e5d8097403fcf"
+      },
+      {
+        "file": "下游导入包/功能模型__02_3.3.1.6-功能分解.sysml",
+        "source_unchanged": true,
+        "primary_images_present": true,
+        "source_sha256": "480b3d3ca74f90323d3bdf4311c8c2eebbf62dac532ee6b3bd4e5d8097403fcf"
+      },
+      {
+        "file": "功能模型/02_3.3.1.9-功能分解.sysml",
+        "source_unchanged": true,
+        "primary_images_present": true,
+        "source_sha256": "69ba265940fc0a1a1731b72762158d881dd8b82b8d54fb29cbc4454da69b3e5d"
+      },
+      {
+        "file": "下游导入包/功能模型__02_3.3.1.9-功能分解.sysml",
+        "source_unchanged": true,
+        "primary_images_present": true,
+        "source_sha256": "69ba265940fc0a1a1731b72762158d881dd8b82b8d54fb29cbc4454da69b3e5d"
+      },
+      {
+        "file": "功能模型/02_SC1-功能分解.sysml",
+        "source_unchanged": true,
+        "primary_images_present": true,
+        "source_sha256": "0bb6fe2a4dfa1521e859cb2acca5fe038281297587127f888dc27e8e4f245181"
+      },
+      {
+        "file": "下游导入包/功能模型__02_SC1-功能分解.sysml",
+        "source_unchanged": true,
+        "primary_images_present": true,
+        "source_sha256": "0bb6fe2a4dfa1521e859cb2acca5fe038281297587127f888dc27e8e4f245181"
+      },
+      {
+        "file": "功能模型/02_SC2-功能分解.sysml",
+        "source_unchanged": true,
+        "primary_images_present": true,
+        "source_sha256": "53f5425c50fbab9633e704f7faa259b56f71c1e0b77e240db3d8d429a519c2e9"
+      },
+      {
+        "file": "下游导入包/功能模型__02_SC2-功能分解.sysml",
+        "source_unchanged": true,
+        "primary_images_present": true,
+        "source_sha256": "53f5425c50fbab9633e704f7faa259b56f71c1e0b77e240db3d8d429a519c2e9"
+      },
+      {
+        "file": "功能模型/02_SC3-功能分解.sysml",
+        "source_unchanged": true,
+        "primary_images_present": true,
+        "source_sha256": "54a5bb410ce13860fe88a85b3c32a3660fcd99b9b6d60e7d8bfca3e63eab62d1"
+      },
+      {
+        "file": "下游导入包/功能模型__02_SC3-功能分解.sysml",
+        "source_unchanged": true,
+        "primary_images_present": true,
+        "source_sha256": "54a5bb410ce13860fe88a85b3c32a3660fcd99b9b6d60e7d8bfca3e63eab62d1"
+      },
+      {
+        "file": "行为模型/SC1-行为模型.sysml",
+        "source_unchanged": true,
+        "primary_images_present": true,
+        "source_sha256": "af92dc415c048ec8ce53c93441b48a99d331367bfd10e6734cb226b62e191827"
+      },
+      {
+        "file": "下游导入包/行为模型__SC1-行为模型.sysml",
+        "source_unchanged": true,
+        "primary_images_present": true,
+        "source_sha256": "af92dc415c048ec8ce53c93441b48a99d331367bfd10e6734cb226b62e191827"
+      },
+      {
+        "file": "行为模型/SC2-行为模型.sysml",
+        "source_unchanged": true,
+        "primary_images_present": true,
+        "source_sha256": "d3b27a75e34270c5668899167330081e839844ce6f409efc53b7eff5e825d0b5"
+      },
+      {
+        "file": "下游导入包/行为模型__SC2-行为模型.sysml",
+        "source_unchanged": true,
+        "primary_images_present": true,
+        "source_sha256": "d3b27a75e34270c5668899167330081e839844ce6f409efc53b7eff5e825d0b5"
+      },
+      {
+        "file": "行为模型/SC3-行为模型.sysml",
+        "source_unchanged": true,
+        "primary_images_present": true,
+        "source_sha256": "303d91dbf94a0a587a6685a1970cce1513d15716a5f6c2bf2a1e1f524f828cc9"
+      },
+      {
+        "file": "下游导入包/行为模型__SC3-行为模型.sysml",
+        "source_unchanged": true,
+        "primary_images_present": true,
+        "source_sha256": "303d91dbf94a0a587a6685a1970cce1513d15716a5f6c2bf2a1e1f524f828cc9"
+      },
+      {
+        "file": "需求图/3.3.1.2-需求图.sysml",
+        "source_unchanged": true,
+        "primary_images_present": true,
+        "source_sha256": "d30026dfab72845cc12ce06153a84fb7cb8177679d7f63bdba1fcb466467e289"
+      },
+      {
+        "file": "下游导入包/需求图__3.3.1.2-需求图.sysml",
+        "source_unchanged": true,
+        "primary_images_present": true,
+        "source_sha256": "d30026dfab72845cc12ce06153a84fb7cb8177679d7f63bdba1fcb466467e289"
+      },
+      {
+        "file": "需求图/3.3.1.6-需求图.sysml",
+        "source_unchanged": true,
+        "primary_images_present": true,
+        "source_sha256": "8faaaafa86fef79fd991511faaff68142fed2ca0ee2e62d2c917538d9f6118b2"
+      },
+      {
+        "file": "下游导入包/需求图__3.3.1.6-需求图.sysml",
+        "source_unchanged": true,
+        "primary_images_present": true,
+        "source_sha256": "8faaaafa86fef79fd991511faaff68142fed2ca0ee2e62d2c917538d9f6118b2"
+      },
+      {
+        "file": "需求图/3.3.1.9-需求图.sysml",
+        "source_unchanged": true,
+        "primary_images_present": true,
+        "source_sha256": "36380c27b06783d878c11dd2377db4fa9c73dd53db0eaf99b624e08f5f322011"
+      },
+      {
+        "file": "下游导入包/需求图__3.3.1.9-需求图.sysml",
+        "source_unchanged": true,
+        "primary_images_present": true,
+        "source_sha256": "36380c27b06783d878c11dd2377db4fa9c73dd53db0eaf99b624e08f5f322011"
+      },
+      {
+        "file": "需求外部BDD图/3.3.1.2、3.3.1.6、3.3.1.9-BDD图.sysml",
+        "source_unchanged": true,
+        "primary_images_present": true,
+        "source_sha256": "4eb187a1b5914c392a508c508ec9fedf3e8fa5da214f518d8c4e3ec2994a55ef"
+      },
+      {
+        "file": "下游导入包/需求外部BDD图__3.3.1.2、3.3.1.6、3.3.1.9-BDD图.sysml",
+        "source_unchanged": true,
+        "primary_images_present": true,
+        "source_sha256": "4eb187a1b5914c392a508c508ec9fedf3e8fa5da214f518d8c4e3ec2994a55ef"
+      },
+      {
+        "file": "需求活动图/3.3.1.2-需求活动图.sysml",
+        "source_unchanged": true,
+        "primary_images_present": true,
+        "source_sha256": "2c4303e72824ea28d35af5c9294bdf39b2c07a7bd84d3ac85da0296aae9c0652"
+      },
+      {
+        "file": "下游导入包/需求活动图__3.3.1.2-需求活动图.sysml",
+        "source_unchanged": true,
+        "primary_images_present": true,
+        "source_sha256": "2c4303e72824ea28d35af5c9294bdf39b2c07a7bd84d3ac85da0296aae9c0652"
+      },
+      {
+        "file": "需求活动图/3.3.1.6-需求活动图.sysml",
+        "source_unchanged": true,
+        "primary_images_present": true,
+        "source_sha256": "557ea824cfae80e609ae67014b92dc1020a5344ccd53b9a767f8d896b75d84ad"
+      },
+      {
+        "file": "下游导入包/需求活动图__3.3.1.6-需求活动图.sysml",
+        "source_unchanged": true,
+        "primary_images_present": true,
+        "source_sha256": "557ea824cfae80e609ae67014b92dc1020a5344ccd53b9a767f8d896b75d84ad"
+      },
+      {
+        "file": "需求活动图/3.3.1.9-需求活动图.sysml",
+        "source_unchanged": true,
+        "primary_images_present": true,
+        "source_sha256": "45ecb011fe494876ab1683eaa1ac10c8fd354a750f1736cc80763f76c6980781"
+      },
+      {
+        "file": "下游导入包/需求活动图__3.3.1.9-需求活动图.sysml",
+        "source_unchanged": true,
+        "primary_images_present": true,
+        "source_sha256": "45ecb011fe494876ab1683eaa1ac10c8fd354a750f1736cc80763f76c6980781"
+      },
+      {
+        "file": "需求用例图/3.3.1.2、3.3.1.6、3.3.1.9-需求用例图.sysml",
+        "source_unchanged": true,
+        "primary_images_present": true,
+        "source_sha256": "66f3b9b1b763a8944744e91a1ad2771d324c3199620144a38def7b7390a9580e"
+      },
+      {
+        "file": "下游导入包/需求用例图__3.3.1.2、3.3.1.6、3.3.1.9-需求用例图.sysml",
+        "source_unchanged": true,
+        "primary_images_present": true,
+        "source_sha256": "66f3b9b1b763a8944744e91a1ad2771d324c3199620144a38def7b7390a9580e"
+      }
+    ]
+  }
+}

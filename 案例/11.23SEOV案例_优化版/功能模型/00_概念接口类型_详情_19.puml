@@ -1,0 +1,44 @@
+@startuml
+skinparam defaultFontName Noto Sans CJK SC
+skinparam defaultFontSize 12
+skinparam dpi 120
+scale max 2400*12000
+
+skin sysmlbw
+skinparam monochrome true
+skinparam wrapWidth 300
+hide circle
+
+comp def "C145" as E1  <<(T,blue) item  def>>  {
+##//doc//##
+目标温度、实测温度；角色：目标<U+002F>设定；单位：来源未提供或不适用。
+}
+comp def "C146" as E2  <<(T,blue) item  def>>  {
+##//doc//##
+目标温度边界状态；角色：目标<U+002F>设定；单位：来源未提供或不适用。
+}
+comp def "C147" as E3  <<(T,blue) item  def>>  {
+##//doc//##
+空气循环控制请求；角色：请求<U+002F>命令；单位：来源未提供或不适用。
+}
+comp def "C148" as E4  <<(T,blue) item  def>>  {
+##//doc//##
+空气循环请求；角色：请求<U+002F>命令；单位：来源未提供或不适用。
+}
+comp def "C149" as E5  <<(T,blue) item  def>>  {
+##//doc//##
+空气输送状态；角色：反馈<U+002F>实际状态；单位：来源未提供或不适用。
+}
+comp def "C150" as E6  <<(T,blue) item  def>>  {
+##//doc//##
+空调启动、座舱状态；角色：反馈<U+002F>实际状态；单位：来源未提供或不适用。
+}
+comp def "C151" as E7  <<(T,blue) item  def>>  {
+##//doc//##
+空调运行状态信息；角色：反馈<U+002F>实际状态；单位：来源未提供或不适用。
+}
+comp def "C152" as E8  <<(T,blue) item  def>>  {
+##//doc//##
+经过时间；角色：分析数据；单位：来源未提供或不适用。
+}
+@enduml

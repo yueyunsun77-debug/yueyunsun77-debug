@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?><svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" contentStyleType="text/css" height="500px" preserveAspectRatio="none" style="width:1267px;height:500px;background:#FFFFFF;" version="1.1" viewBox="0 0 1267 500" width="1267.5px" zoomAndPan="magnify"><defs/><g><!--MD5=[fbc87193dbaf4d95561dea2c320d4a47]
+cluster E1--><g id="cluster_E1"><rect fill="#FFFFFF" height="484.3" id="E1" style="stroke:#383838;stroke-width:1.875;" width="1115" x="144.375" y="8.75"/><rect fill="#F1F1F1" height="55.9403" style="stroke:#383838;stroke-width:1.875;" width="1115" x="144.375" y="8.75"/><text fill="#000000" font-family="Noto Sans CJK SC" font-size="15" font-style="italic" lengthAdjust="spacing" textLength="75" x="664.375" y="32.4001">«part  def»</text><text fill="#000000" font-family="Noto Sans CJK SC" font-size="15" lengthAdjust="spacing" textLength="135" x="634.375" y="54.1203">热管理控制外部环境</text></g><!--MD5=[e4f7fae6ed58524ba242bb0b0d3be6b7]
+cluster E2--><g id="cluster_E2"><rect fill="#FFFFFF" height="93.575" id="E2" rx="12.5" ry="12.5" style="stroke:#383838;stroke-width:1.875;" width="702.5" x="159.375" y="205.9"/><rect fill="#F1F1F1" height="34.2202" rx="12.5" ry="12.5" style="stroke:#F1F1F1;stroke-width:1.875;" width="702.5" x="159.375" y="205.9"/><rect fill="#F1F1F1" height="12.5" style="stroke:#F1F1F1;stroke-width:1.875;" width="702.5" x="159.375" y="227.6202"/><rect fill="none" height="93.575" id="E2" rx="12.5" ry="12.5" style="stroke:#383838;stroke-width:1.875;" width="702.5" x="159.375" y="205.9"/><text fill="#000000" font-family="Noto Sans CJK SC" font-size="15" lengthAdjust="spacing" textLength="167.5" x="426.875" y="229.5501">SYS: 热管理逻辑控制服务</text><line style="stroke:#383838;stroke-width:1.25;" x1="159.375" x2="861.875" y1="240.1202" y2="240.1202"/></g><!--MD5=[7f149f147074ac12df2cb0a7728a5fb0]
+cluster E9--><g id="cluster_E9"><rect fill="#FFFFFF" height="93.575" id="E9" rx="12.5" ry="12.5" style="stroke:#383838;stroke-width:1.875;" width="165" x="1003.125" y="205.9"/><rect fill="#F1F1F1" height="34.2202" rx="12.5" ry="12.5" style="stroke:#F1F1F1;stroke-width:1.875;" width="165" x="1003.125" y="205.9"/><rect fill="#F1F1F1" height="12.5" style="stroke:#F1F1F1;stroke-width:1.875;" width="165" x="1003.125" y="227.6202"/><rect fill="none" height="93.575" id="E9" rx="12.5" ry="12.5" style="stroke:#383838;stroke-width:1.875;" width="165" x="1003.125" y="205.9"/><text fill="#000000" font-family="Noto Sans CJK SC" font-size="15" lengthAdjust="spacing" textLength="135" x="1018.125" y="229.5501">IVI: IVI中控交互系统</text><line style="stroke:#383838;stroke-width:1.25;" x1="1003.125" x2="1168.125" y1="240.1202" y2="240.1202"/></g><!--MD5=[47bea60c1a0ac6c1143df232041969c0]
+cluster E12--><g id="cluster_E12"><rect fill="#FFFFFF" height="111.075" id="E12" rx="12.5" ry="12.5" style="stroke:#383838;stroke-width:1.875;" width="310" x="898.125" y="344.475"/><rect fill="#F1F1F1" height="34.2202" rx="12.5" ry="12.5" style="stroke:#F1F1F1;stroke-width:1.875;" width="310" x="898.125" y="344.475"/><rect fill="#F1F1F1" height="12.5" style="stroke:#F1F1F1;stroke-width:1.875;" width="310" x="898.125" y="366.1952"/><rect fill="none" height="111.075" id="E12" rx="12.5" ry="12.5" style="stroke:#383838;stroke-width:1.875;" width="310" x="898.125" y="344.475"/><text fill="#000000" font-family="Noto Sans CJK SC" font-size="15" lengthAdjust="spacing" textLength="157.5" x="974.375" y="368.1251">CAN: 车载CAN通信网络</text><line style="stroke:#383838;stroke-width:1.25;" x1="898.125" x2="1208.125" y1="378.6952" y2="378.6952"/></g><!--MD5=[3e4be939245ddbd2da6080b60acb37a8]
+cluster E17--><g id="cluster_E17"><rect fill="#FFFFFF" height="85.9" id="E17" rx="12.5" ry="12.5" style="stroke:#383838;stroke-width:1.875;" width="280" x="546.875" y="75"/><rect fill="#F1F1F1" height="34.2202" rx="12.5" ry="12.5" style="stroke:#F1F1F1;stroke-width:1.875;" width="280" x="546.875" y="75"/><rect fill="#F1F1F1" height="12.5" style="stroke:#F1F1F1;stroke-width:1.875;" width="280" x="546.875" y="96.7202"/><rect fill="none" height="85.9" id="E17" rx="12.5" ry="12.5" style="stroke:#383838;stroke-width:1.875;" width="280" x="546.875" y="75"/><text fill="#000000" font-family="Noto Sans CJK SC" font-size="15" lengthAdjust="spacing" textLength="233.75" x="570" y="98.6501">VEHICLE: 整车状态与电源管理系统</text><line style="stroke:#383838;stroke-width:1.25;" x1="546.875" x2="826.875" y1="109.2202" y2="109.2202"/></g><!--MD5=[7aa1c94561e55dd272896cdcfb9397aa]
+cluster E19--><g id="cluster_E19"><rect fill="#FFFFFF" height="85.9" id="E19" rx="12.5" ry="12.5" style="stroke:#383838;stroke-width:1.875;" width="253.75" x="271.25" y="75"/><rect fill="#F1F1F1" height="34.2202" rx="12.5" ry="12.5" style="stroke:#F1F1F1;stroke-width:1.875;" width="253.75" x="271.25" y="75"/><rect fill="#F1F1F1" height="12.5" style="stroke:#F1F1F1;stroke-width:1.875;" width="253.75" x="271.25" y="96.7202"/><rect fill="none" height="85.9" id="E19" rx="12.5" ry="12.5" style="stroke:#383838;stroke-width:1.875;" width="253.75" x="271.25" y="75"/><text fill="#000000" font-family="Noto Sans CJK SC" font-size="15" lengthAdjust="spacing" textLength="240" x="278.125" y="98.6501">SENSORS: 温度与环境信息提供服务</text><line style="stroke:#383838;stroke-width:1.25;" x1="271.25" x2="525" y1="109.2202" y2="109.2202"/></g><!--MD5=[fff9a9dd1f029f5adabe173397837fc6]
+cluster E21--><g id="cluster_E21"><rect fill="#FFFFFF" height="72.5" id="E21" rx="12.5" ry="12.5" style="stroke:#383838;stroke-width:1.875;" width="277.5" x="229.375" y="344.475"/><rect fill="#F1F1F1" height="34.2202" rx="12.5" ry="12.5" style="stroke:#F1F1F1;stroke-width:1.875;" width="277.5" x="229.375" y="344.475"/><rect fill="#F1F1F1" height="12.5" style="stroke:#F1F1F1;stroke-width:1.875;" width="277.5" x="229.375" y="366.1952"/><rect fill="none" height="72.5" id="E21" rx="12.5" ry="12.5" style="stroke:#383838;stroke-width:1.875;" width="277.5" x="229.375" y="344.475"/><text fill="#000000" font-family="Noto Sans CJK SC" font-size="15" lengthAdjust="spacing" textLength="258.75" x="238.75" y="368.1251">ACTUATORS: 热量与空气调节执行服务</text><line style="stroke:#383838;stroke-width:1.25;" x1="229.375" x2="506.875" y1="378.6952" y2="378.6952"/></g><!--MD5=[2b498f8700fd69074bf9bb3cdfb8940b]
+cluster E23--><g id="cluster_E23"><rect fill="#FFFFFF" height="72.5" id="E23" rx="12.5" ry="12.5" style="stroke:#383838;stroke-width:1.875;" width="310" x="584.0625" y="344.475"/><rect fill="#F1F1F1" height="34.2202" rx="12.5" ry="12.5" style="stroke:#F1F1F1;stroke-width:1.875;" width="310" x="584.0625" y="344.475"/><rect fill="#F1F1F1" height="12.5" style="stroke:#F1F1F1;stroke-width:1.875;" width="310" x="584.0625" y="366.1952"/><rect fill="none" height="72.5" id="E23" rx="12.5" ry="12.5" style="stroke:#383838;stroke-width:1.875;" width="310" x="584.0625" y="344.475"/><text fill="#000000" font-family="Noto Sans CJK SC" font-size="15" lengthAdjust="spacing" textLength="293.75" x="592.1875" y="368.1251">CABIN_WINDSCREEN: 乘员舱与前风窗环境</text><line style="stroke:#383838;stroke-width:1.25;" x1="584.0625" x2="894.0625" y1="378.6952" y2="378.6952"/></g><text fill="#000000" font-family="Noto Sans CJK SC" font-size="15" lengthAdjust="spacing" textLength="223.75" x="490" y="324.3751">^statusOut: ThermalStatusPort</text><rect fill="#F1F1F1" height="15" style="stroke:#181818;stroke-width:1.875;" width="15" x="598.125" y="291.975"/><text fill="#000000" font-family="Noto Sans CJK SC" font-size="15" lengthAdjust="spacing" textLength="246.25" x="442.5" y="179.08">^vehicleStateIn: ~VehicleStatePort</text><rect fill="#F1F1F1" height="15" style="stroke:#181818;stroke-width:1.875;" width="15" x="561.875" y="198.4"/><text fill="#000000" font-family="Noto Sans CJK SC" font-size="15" lengthAdjust="spacing" textLength="233.75" x="178.75" y="179.08">^sensorDataIn: ~SensorDataPort</text><rect fill="#F1F1F1" height="15" style="stroke:#181818;stroke-width:1.875;" width="15" x="291.875" y="198.4"/><text fill="#000000" font-family="Noto Sans CJK SC" font-size="15" lengthAdjust="spacing" textLength="341.25" x="7.5" y="324.3751">^actuatorCommandOut: ActuatorCommandPort</text><rect fill="#F1F1F1" height="15" style="stroke:#181818;stroke-width:1.875;" width="15" x="174.375" y="291.975"/><text fill="#000000" font-family="Noto Sans CJK SC" font-size="15" lengthAdjust="spacing" textLength="233.75" x="426.25" y="324.3751">^cabinEffectOut: CabinEffectPort</text><rect fill="#F1F1F1" height="15" style="stroke:#181818;stroke-width:1.875;" width="15" x="539.375" y="291.975"/><text fill="#000000" font-family="Noto Sans CJK SC" font-size="15" lengthAdjust="spacing" textLength="242.5" x="714.375" y="179.08">^requestIn: ~ThermalRequestPort</text><rect fill="#F1F1F1" height="15" style="stroke:#181818;stroke-width:1.875;" width="15" x="831.875" y="198.4"/><text fill="#000000" font-family="Noto Sans CJK SC" font-size="15" lengthAdjust="spacing" textLength="246.25" x="898.75" y="324.3751">^requestOut: ThermalRequestPort</text><rect fill="#F1F1F1" height="15" style="stroke:#181818;stroke-width:1.875;" width="15" x="1018.125" y="291.975"/><text fill="#000000" font-family="Noto Sans CJK SC" font-size="15" lengthAdjust="spacing" textLength="220" x="1031.875" y="179.08">^statusIn: ~ThermalStatusPort</text><rect fill="#F1F1F1" height="15" style="stroke:#181818;stroke-width:1.875;" width="15" x="1138.125" y="198.4"/><text fill="#000000" font-family="Noto Sans CJK SC" font-size="15" lengthAdjust="spacing" textLength="242.5" x="854.375" y="317.655">^requestIn: ~ThermalRequestPort</text><rect fill="#F1F1F1" height="15" style="stroke:#181818;stroke-width:1.875;" width="15" x="971.875" y="336.975"/><text fill="#000000" font-family="Noto Sans CJK SC" font-size="15" lengthAdjust="spacing" textLength="223.75" x="863.75" y="480.4501">^statusOut: ThermalStatusPort</text><rect fill="#F1F1F1" height="15" style="stroke:#181818;stroke-width:1.875;" width="15" x="971.875" y="448.05"/><text fill="#000000" font-family="Noto Sans CJK SC" font-size="15" lengthAdjust="spacing" textLength="246.25" x="793.75" y="480.4501">^requestOut: ThermalRequestPort</text><rect fill="#F1F1F1" height="15" style="stroke:#181818;stroke-width:1.875;" width="15" x="913.125" y="448.05"/><text fill="#000000" font-family="Noto Sans CJK SC" font-size="15" lengthAdjust="spacing" textLength="220" x="806.875" y="317.655">^statusIn: ~ThermalStatusPort</text><rect fill="#F1F1F1" height="15" style="stroke:#181818;stroke-width:1.875;" width="15" x="913.125" y="336.975"/><text fill="#000000" font-family="Noto Sans CJK SC" font-size="15" lengthAdjust="spacing" textLength="200" x="465.625" y="185.8001">^stateOut: VehicleStatePort</text><rect fill="#F1F1F1" height="15" style="stroke:#181818;stroke-width:1.875;" width="15" x="561.875" y="153.4"/><text fill="#000000" font-family="Noto Sans CJK SC" font-size="15" lengthAdjust="spacing" textLength="188.75" x="201.25" y="185.8001">^dataOut: SensorDataPort</text><rect fill="#F1F1F1" height="15" style="stroke:#181818;stroke-width:1.875;" width="15" x="291.875" y="153.4"/><text fill="#000000" font-family="Noto Sans CJK SC" font-size="15" lengthAdjust="spacing" textLength="273.75" x="113.75" y="317.655">^commandIn: ~ActuatorCommandPort</text><rect fill="#F1F1F1" height="15" style="stroke:#181818;stroke-width:1.875;" width="15" x="246.875" y="336.975"/><text fill="#000000" font-family="Noto Sans CJK SC" font-size="15" lengthAdjust="spacing" textLength="192.5" x="511.875" y="317.655">^effectIn: ~CabinEffectPort</text><rect fill="#F1F1F1" height="15" style="stroke:#181818;stroke-width:1.875;" width="15" x="604.375" y="336.975"/><!--MD5=[74b78f105e346754c1f4f010190a9055]
+link E10 to E13--><g id="link_E10_E13"><path d="M1018.8,307 C1010.1625,314.9375 995.325,328.5625 986.5375,336.65 " fill="none" id="E10-E13" style="stroke:#181818;stroke-width:3.75;"/></g><!--MD5=[1b01d5b954197aaf3899ca0bde35faf5]
+link E15 to E8--><g id="link_E15_E8"><path d="M913.5625,447.6 C911.075,444.8625 908.5,441.5375 906.875,438.05 C877.2625,374.7125 877.1375,345.05 891.875,326.975 C905.85,309.8375 926.65,334.1125 940.625,316.975 C947.65,308.3625 945.325,302.0375 940.625,291.975 C920.65,249.175 867.2625,220.325 847.1625,210.7 " fill="none" id="E15-E8" style="stroke:#181818;stroke-width:3.75;"/></g><!--MD5=[67eeca8c522b5f54b838dfac719565b0]
+link E3 to E16--><g id="link_E3_E16"><path d="M613.6,306.35 C619.4125,310.1125 627.6375,314.7625 635.625,316.975 C685.2,330.6875 816.1625,318.35 866.875,326.975 C883.7875,329.85 902.85,336.45 913.1125,340.3 " fill="none" id="E3-E16" style="stroke:#181818;stroke-width:3.75;"/></g><!--MD5=[d00f01b66edb9b3ce8f530f77713355e]
+link E14 to E11--><g id="link_E14_E11"><path d="M987.225,452.3875 C993.25,450.9875 1001.7875,449.15 1009.375,448.05 C1062.3375,440.35 1077.7375,452.1125 1129.375,438.05 C1181.125,423.9625 1238.125,439.3625 1238.125,385.725 C1238.125,270.9 1238.125,270.9 1238.125,270.9 C1238.125,245 1225.575,238.2625 1204.375,223.4 C1188.425,212.225 1165.05,208.7125 1153.175,207.625 " fill="none" id="E14-E11" style="stroke:#181818;stroke-width:3.75;"/></g><!--MD5=[482ecaf6e19610fa3a2476c3822f682c]
+link E18 to E4--><g id="link_E18_E4"><path d="M569.375,168.425 C569.375,176.3625 569.375,189.9875 569.375,198.075 " fill="none" id="E18-E4" style="stroke:#181818;stroke-width:3.75;"/></g><!--MD5=[bfe754d2cb838f1b38d4bf1012338a46]
+link E20 to E5--><g id="link_E20_E5"><path d="M299.375,168.425 C299.375,176.3625 299.375,189.9875 299.375,198.075 " fill="none" id="E20-E5" style="stroke:#181818;stroke-width:3.75;"/></g><!--MD5=[9eb0a53e60893dfa143113c2e4dfdb73]
+link E6 to E22--><g id="link_E6_E22"><path d="M189.6375,305.275 C203.5125,313.4125 232.45,330.375 246.45,338.575 " fill="none" id="E6-E22" style="stroke:#181818;stroke-width:3.75;"/></g><!--MD5=[ebc2215d62640d2cb2e59d4ce366acd9]
+link E7 to E24--><g id="link_E7_E24"><path d="M554.85,305.9375 C567.45,314.1875 591.85,330.125 604.2375,338.2375 " fill="none" id="E7-E24" style="stroke:#181818;stroke-width:3.75;"/></g><!--MD5=[9e892982c7a46610ffb839540ca153a2]
+@startuml
+skinparam defaultFontName Noto Sans CJK SC
+skinparam defaultFontSize 12
+skinparam dpi 120
+scale max 2400*12000
+
+skin sysmlbw
+skinparam monochrome true
+skinparam wrapWidth 300
+hide circle
+skinparam ranksep 10
+skinparam rectangle {
+ backgroundColor<<block>> LightGreen
+}
+
+rec def "热管理控制外部环境" as E1  <<(T,blue) part  def>>  {
+rec usage "SYS: 热管理逻辑控制服务" as E2  {
+portout "^statusOut: ThermalStatusPort  " as E3  <<(T,blue) port>>  
+portin "^vehicleStateIn: ~VehicleStatePort  " as E4  <<(T,blue) port>>  
+portin "^sensorDataIn: ~SensorDataPort  " as E5  <<(T,blue) port>>  
+portout "^actuatorCommandOut: ActuatorCommandPort  " as E6  <<(T,blue) port>>  
+portout "^cabinEffectOut: CabinEffectPort  " as E7  <<(T,blue) port>>  
+portin "^requestIn: ~ThermalRequestPort  " as E8  <<(T,blue) port>>  
+}
+rec usage "IVI: IVI中控交互系统" as E9  {
+portout "^requestOut: ThermalRequestPort  " as E10  <<(T,blue) port>>  
+portin "^statusIn: ~ThermalStatusPort  " as E11  <<(T,blue) port>>  
+}
+rec usage "CAN: 车载CAN通信网络" as E12  {
+portin "^requestIn: ~ThermalRequestPort  " as E13  <<(T,blue) port>>  
+portout "^statusOut: ThermalStatusPort  " as E14  <<(T,blue) port>>  
+portout "^requestOut: ThermalRequestPort  " as E15  <<(T,blue) port>>  
+portin "^statusIn: ~ThermalStatusPort  " as E16  <<(T,blue) port>>  
+}
+rec usage "VEHICLE: 整车状态与电源管理系统" as E17  {
+portout "^stateOut: VehicleStatePort  " as E18  <<(T,blue) port>>  
+}
+rec usage "SENSORS: 温度与环境信息提供服务" as E19  {
+portout "^dataOut: SensorDataPort  " as E20  <<(T,blue) port>>  
+}
+rec usage "ACTUATORS: 热量与空气调节执行服务" as E21  {
+portin "^commandIn: ~ActuatorCommandPort  " as E22  <<(T,blue) port>>  
+}
+rec usage "CABIN_WINDSCREEN: 乘员舱与前风窗环境" as E23  {
+portin "^effectIn: ~CabinEffectPort  " as E24  <<(T,blue) port>>  
+}
+}
+E10 -[thickness=3]- E13  
+E15 -[thickness=3]- E8  
+E3 -[thickness=3]- E16  
+E14 -[thickness=3]- E11  
+E18 -[thickness=3]- E4  
+E20 -[thickness=3]- E5  
+E6 -[thickness=3]- E22  
+E7 -[thickness=3]- E24  
+@enduml
+
+PlantUML version 1.2022.7(Tue Aug 23 01:01:30 CST 2022)
+(EPL source distribution)
+Java Runtime: OpenJDK Runtime Environment
+JVM: OpenJDK 64-Bit Server VM
+Default Encoding: UTF-8
+Language: en
+Country: null
+--></g></svg>

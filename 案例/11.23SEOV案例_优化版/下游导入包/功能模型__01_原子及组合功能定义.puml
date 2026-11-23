@@ -1,0 +1,31 @@
+@startuml
+skinparam defaultFontName Noto Sans CJK SC
+skinparam defaultFontSize 12
+skinparam dpi 120
+scale max 2400*12000
+title 01_原子及组合功能定义.sysml — 完整目录与原生分页图索引
+skinparam rectangleBackgroundColor #EFF5FA
+rectangle "第1页：01_原子及组合功能定义_详情_01\nLF-001 判定电加热使能条件\nLF-002 判定整车故障下的加热许可\nLF-003 判定电量约束下的加热许可\nLF-004 控制电加热通断\nLF-005 切断过温电加热请求\nLF-006 判定电加热恢复许可\nLF-007 反馈电加热状态\nLF-008 判定目标温度边界" as PAGE0
+rectangle "第2页：01_原子及组合功能定义_详情_02\nLF-009 更新座舱目标温度\nLF-010 获取温度与环境信息\nLF-011 协调自动温控请求\nLF-012 反馈自动模式状态\nLF-013 反馈空调运行状态\nLF-014 切换自动模式状态\nLF-015 调节座舱温度\nLF-016 接收风窗除霜除雾请求" as PAGE1
+PAGE0 -[hidden]down-> PAGE1
+rectangle "第3页：01_原子及组合功能定义_详情_03\nLF-017 调节送风模式\nLF-018 调节送风量\nLF-019 调节空气循环方式\nLF-020 调节制冷能力\nLF-021 保持座舱温度设定\nLF-022 反馈风窗与空调状态\nLF-023 仲裁热管理能力请求\nLF-024 判定低电量制冷许可" as PAGE2
+PAGE1 -[hidden]down-> PAGE2
+rectangle "第4页：01_原子及组合功能定义_详情_04\nLF-026 控制前风窗除霜除雾模式\nLF-027 获取电加热温度\nLF-028 处理AUTO下的AC操作\nLF-029 调节发动机发电工作点\nLF-030 记录静置预冷时长\nLF-031 控制匀速行驶工况\nLF-032 判定电池主动冷却需求\nS1-F01 接收驾驶指令" as PAGE3
+PAGE2 -[hidden]down-> PAGE3
+rectangle "第5页：01_原子及组合功能定义_详情_05\nS1-F02 分析动力需求\nS1-F03 选择运行模式\nS1-F04 控制电驱动能量转换\nS1-F05 判定再生制动请求\nS1-F06 协调再生充电\nS1-F07 协调发动机启动\nS1-F08 调节发动机发电工作点\nS1-F09 管理充电能量收支" as PAGE4
+PAGE3 -[hidden]down-> PAGE4
+rectangle "第6页：01_原子及组合功能定义_详情_06\nS1-F10 更新运行模式评估信息\nS2-F01 初始化驾驶循环\nS2-F02 记录静置预冷时长\nS2-F03 控制匀速行驶工况\nS2-F04 处理座舱降温请求\nS2-F05 获取电池温度\nS2-F06 判定电池主动冷却需求\nS2-F07 评估环境空气换热量" as PAGE5
+PAGE4 -[hidden]down-> PAGE5
+rectangle "第7页：01_原子及组合功能定义_详情_07\nS2-F08 协调座舱与电池冷却能力\nS2-F09 评估主动供风响应\nS2-F10 汇总空气侧换热量\nS3-F01 获取座舱目标温度\nS3-F02 获取座舱实际温度\nS3-F03 判定座舱制冷需求\nS3-F04 调节座舱制冷能力\nS3-F05 调节座舱送风量" as PAGE6
+PAGE5 -[hidden]down-> PAGE6
+rectangle "第8页：01_原子及组合功能定义_详情_08\nS3-F06 获取电池温度与功率\nS3-F07 判定电池辅助冷却需求\nS3-F08 计算电池冷却能力需求\nS3-F09 分配座舱与电池制冷能力\nS3-F10 调节电池液路换热量\nS3-F11 反馈座舱与电池冷却状态\nLF-011-01 调节自动模式送风量\nLF-011-02 调节自动模式送风温度" as PAGE7
+PAGE6 -[hidden]down-> PAGE7
+rectangle "第9页：01_原子及组合功能定义_详情_09\nLF-011-03 调节自动模式送风模式\nLF-011-04 调节自动模式空气循环\nLF-011-05 调节自动模式制冷能力\nLF-011-06 调节自动模式电加热功率\nS2-F09-01 获取电池入口实际供风条件\nS2-F09-02 判定电池实际供风状态\nS2-F09-03 计算主动供风换热量\nS3-F06-01 获取电池控制温度" as PAGE8
+PAGE7 -[hidden]down-> PAGE8
+rectangle "第10页：01_原子及组合功能定义_详情_10\nS3-F06-02 获取电池充放电功率" as PAGE9
+PAGE8 -[hidden]down-> PAGE9
+legend bottom
+本图为完整目录导览；每个条目的原生结构、端口和doc见同名“详情”分页图。
+原生导出器对单图元素数量有限制，采用分页避免截断，不把超限截断图作为完整渲染交付。
+endlegend
+@enduml

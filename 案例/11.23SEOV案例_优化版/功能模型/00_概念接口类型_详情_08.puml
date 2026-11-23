@@ -1,0 +1,50 @@
+@startuml
+skinparam defaultFontName Noto Sans CJK SC
+skinparam defaultFontSize 12
+skinparam dpi 120
+scale max 2400*12000
+
+skin sysmlbw
+skinparam monochrome true
+skinparam wrapWidth 300
+hide circle
+
+comp def "C057" as E1  <<(T,blue) item  def>>  {
+##//doc//##
+各项加热许可；角色：分析数据；单位：来源未提供或不适用。
+}
+comp def "C058" as E2  <<(T,blue) item  def>>  {
+##//doc//##
+回收能量与充电请求；角色：请求<U+002F>命令；单位：来源未提供或不适用。
+}
+comp def "C059" as E3  <<(T,blue) item  def>>  {
+##//doc//##
+实际供风反馈；角色：反馈<U+002F>实际状态；单位：来源未提供或不适用。
+}
+comp def "C060" as E4  <<(T,blue) item  def>>  {
+##//doc//##
+实际功率；角色：反馈<U+002F>实际状态；单位：来源未提供或不适用。
+--
+##//attributes//##
+value: Real
+}
+comp def "C061" as E5  <<(T,blue) item  def>>  {
+##//doc//##
+实际温度；角色：反馈<U+002F>实际状态；单位：来源未提供或不适用。
+}
+comp def "C062" as E6  <<(T,blue) item  def>>  {
+##//doc//##
+室内温度；角色：分析数据；单位：℃。
+--
+##//attributes//##
+value: Real
+}
+comp def "C063" as E7  <<(T,blue) item  def>>  {
+##//doc//##
+室内温度信息；角色：反馈<U+002F>实际状态；单位：来源未提供或不适用。
+}
+comp def "C064" as E8  <<(T,blue) item  def>>  {
+##//doc//##
+室外温度信息；角色：反馈<U+002F>实际状态；单位：来源未提供或不适用。
+}
+@enduml

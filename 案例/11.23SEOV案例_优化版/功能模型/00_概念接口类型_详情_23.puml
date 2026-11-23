@@ -1,0 +1,44 @@
+@startuml
+skinparam defaultFontName Noto Sans CJK SC
+skinparam defaultFontSize 12
+skinparam dpi 120
+scale max 2400*12000
+
+skin sysmlbw
+skinparam monochrome true
+skinparam wrapWidth 300
+hide circle
+
+comp def "C177" as E1  <<(T,blue) item  def>>  {
+##//doc//##
+除湿需求；角色：分析数据；单位：来源未提供或不适用。
+}
+comp def "C178" as E2  <<(T,blue) item  def>>  {
+##//doc//##
+需求重新评估信息；角色：反馈<U+002F>实际状态；单位：来源未提供或不适用。
+}
+comp def "C179" as E3  <<(T,blue) item  def>>  {
+##//doc//##
+静置2分钟完成事件；角色：分析数据；单位：来源未提供或不适用。
+}
+comp def "C180" as E4  <<(T,blue) item  def>>  {
+##//doc//##
+静置阶段与座舱降温请求；角色：请求<U+002F>命令；单位：来源未提供或不适用。
+}
+comp def "C181" as E5  <<(T,blue) item  def>>  {
+##//doc//##
+静置预冷完成事件；角色：分析数据；单位：来源未提供或不适用。
+}
+comp def "C182" as E6  <<(T,blue) item  def>>  {
+##//doc//##
+预冷完成事件；角色：分析数据；单位：来源未提供或不适用。
+}
+comp def "C183" as E7  <<(T,blue) item  def>>  {
+##//doc//##
+预冷完成事件、车速反馈；角色：反馈<U+002F>实际状态；单位：来源未提供或不适用。
+}
+comp def "C184" as E8  <<(T,blue) item  def>>  {
+##//doc//##
+预冷起点；角色：分析数据；单位：来源未提供或不适用。
+}
+@enduml

@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?><svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" contentStyleType="text/css" height="421.25px" preserveAspectRatio="none" style="width:2295px;height:421px;background:#FFFFFF;" version="1.1" viewBox="0 0 2295 421" width="2295px" zoomAndPan="magnify"><defs/><g><!--MD5=[43c9051892ef23e1a46a86907403d788]
+class E1--><g id="elem_E1"><rect fill="#F1F1F1" height="123.0687" id="E1" rx="3.125" ry="3.125" style="stroke:#181818;stroke-width:0.625;" width="405" x="1290" y="8.75"/><text fill="#000000" font-family="Noto Sans CJK SC" font-size="15" font-style="italic" lengthAdjust="spacing" textLength="88.75" x="1448.125" y="32.4001">«action  def»</text><text fill="#000000" font-family="Noto Sans CJK SC" font-size="15" lengthAdjust="spacing" textLength="90" x="1447.5" y="54.1203">自动空调控制</text><line style="stroke:#181818;stroke-width:0.625;" x1="1291.25" x2="1693.75" y1="64.6903" y2="64.6903"/><text fill="#000000" font-family="Noto Sans CJK SC" font-size="15" lengthAdjust="spacing" textLength="120" x="1297.5" y="100.7785">仅表达功能分解；</text><text fill="#000000" font-family="Noto Sans CJK SC" font-size="15" lengthAdjust="spacing" textLength="390" x="1297.5" y="122.4986">行为顺序、条件、并行与反馈见行为模型中的同名根模型。</text><text fill="#000000" font-family="Noto Sans CJK SC" font-size="15" font-style="italic" lengthAdjust="spacing" textLength="25" x="1480" y="80.6053">doc</text></g><!--MD5=[b4997ac47864f28c2f74865a473b2911]
+class E2--><g id="elem_E2"><rect fill="#F1F1F1" height="65.9403" id="E2" rx="12.5" ry="12.5" style="stroke:#181818;stroke-width:0.625;" width="135" x="560" y="206.25"/><text fill="#000000" font-family="Noto Sans CJK SC" font-size="15" font-style="italic" lengthAdjust="spacing" textLength="58.75" x="598.125" y="229.9001">«action»</text><text fill="#000000" font-family="Noto Sans CJK SC" font-size="15" lengthAdjust="spacing" textLength="120" x="563.75" y="251.6203">处理用户模式操作</text><line style="stroke:#181818;stroke-width:0.625;" x1="561.25" x2="693.75" y1="262.1903" y2="262.1903"/></g><!--MD5=[09b614a08d8cba4a07c9adeb5e0fee81]
+class E3--><g id="elem_E3"><rect fill="#F1F1F1" height="65.9403" id="E3" rx="12.5" ry="12.5" style="stroke:#181818;stroke-width:0.625;" width="212.5" x="8.75" y="347.5"/><text fill="#000000" font-family="Noto Sans CJK SC" font-size="15" font-style="italic" lengthAdjust="spacing" textLength="58.75" x="85.625" y="371.1501">«action»</text><text fill="#000000" font-family="Noto Sans CJK SC" font-size="15" lengthAdjust="spacing" textLength="197.5" x="12.5" y="392.8703">判定目标温度边界: F_LF_008</text><line style="stroke:#181818;stroke-width:0.625;" x1="10" x2="220" y1="403.4403" y2="403.4403"/></g><!--MD5=[ebbe1d658d1005bcc118a6aa81145e00]
+class E4--><g id="elem_E4"><rect fill="#F1F1F1" height="65.9403" id="E4" rx="12.5" ry="12.5" style="stroke:#181818;stroke-width:0.625;" width="212.5" x="265" y="347.5"/><text fill="#000000" font-family="Noto Sans CJK SC" font-size="15" font-style="italic" lengthAdjust="spacing" textLength="58.75" x="341.875" y="371.1501">«action»</text><text fill="#000000" font-family="Noto Sans CJK SC" font-size="15" lengthAdjust="spacing" textLength="197.5" x="268.75" y="392.8703">更新座舱目标温度: F_LF_009</text><line style="stroke:#181818;stroke-width:0.625;" x1="266.25" x2="476.25" y1="403.4403" y2="403.4403"/></g><!--MD5=[270fce915f116d4de14055a7c1d9a0f3]
+class E5--><g id="elem_E5"><rect fill="#F1F1F1" height="65.9403" id="E5" rx="12.5" ry="12.5" style="stroke:#181818;stroke-width:0.625;" width="212.5" x="521.25" y="347.5"/><text fill="#000000" font-family="Noto Sans CJK SC" font-size="15" font-style="italic" lengthAdjust="spacing" textLength="58.75" x="598.125" y="371.1501">«action»</text><text fill="#000000" font-family="Noto Sans CJK SC" font-size="15" lengthAdjust="spacing" textLength="197.5" x="525" y="392.8703">切换自动模式状态: F_LF_014</text><line style="stroke:#181818;stroke-width:0.625;" x1="522.5" x2="732.5" y1="403.4403" y2="403.4403"/></g><!--MD5=[60a26617385b1d2d0262a64233df1f8d]
+class E6--><g id="elem_E6"><rect fill="#F1F1F1" height="65.9403" id="E6" rx="12.5" ry="12.5" style="stroke:#181818;stroke-width:0.625;" width="241.25" x="778.125" y="347.5"/><text fill="#000000" font-family="Noto Sans CJK SC" font-size="15" font-style="italic" lengthAdjust="spacing" textLength="58.75" x="869.375" y="371.1501">«action»</text><text fill="#000000" font-family="Noto Sans CJK SC" font-size="15" lengthAdjust="spacing" textLength="226.25" x="781.875" y="392.8703">处理AUTO下的AC操作: F_LF_028</text><line style="stroke:#181818;stroke-width:0.625;" x1="779.375" x2="1018.125" y1="403.4403" y2="403.4403"/></g><!--MD5=[2156ba9850f5573cc1fc38a6a4b2f02b]
+class E7--><g id="elem_E7"><rect fill="#F1F1F1" height="65.9403" id="E7" rx="12.5" ry="12.5" style="stroke:#181818;stroke-width:0.625;" width="150" x="1192.5" y="206.25"/><text fill="#000000" font-family="Noto Sans CJK SC" font-size="15" font-style="italic" lengthAdjust="spacing" textLength="58.75" x="1238.125" y="229.9001">«action»</text><text fill="#000000" font-family="Noto Sans CJK SC" font-size="15" lengthAdjust="spacing" textLength="135" x="1196.25" y="251.6203">获取温度与环境信息</text><line style="stroke:#181818;stroke-width:0.625;" x1="1193.75" x2="1341.25" y1="262.1903" y2="262.1903"/></g><!--MD5=[b9389687b975829384b498ac4b7476b2]
+class E8--><g id="elem_E8"><rect fill="#F1F1F1" height="65.9403" id="E8" rx="12.5" ry="12.5" style="stroke:#181818;stroke-width:0.625;" width="227.5" x="1063.75" y="347.5"/><text fill="#000000" font-family="Noto Sans CJK SC" font-size="15" font-style="italic" lengthAdjust="spacing" textLength="58.75" x="1148.125" y="371.1501">«action»</text><text fill="#000000" font-family="Noto Sans CJK SC" font-size="15" lengthAdjust="spacing" textLength="212.5" x="1067.5" y="392.8703">获取温度与环境信息: F_LF_010</text><line style="stroke:#181818;stroke-width:0.625;" x1="1065" x2="1290" y1="403.4403" y2="403.4403"/></g><!--MD5=[fd4143e9d270a159db93a4ea2a975926]
+class E9--><g id="elem_E9"><rect fill="#F1F1F1" height="65.9403" id="E9" rx="12.5" ry="12.5" style="stroke:#181818;stroke-width:0.625;" width="135" x="1425" y="206.25"/><text fill="#000000" font-family="Noto Sans CJK SC" font-size="15" font-style="italic" lengthAdjust="spacing" textLength="58.75" x="1463.125" y="229.9001">«action»</text><text fill="#000000" font-family="Noto Sans CJK SC" font-size="15" lengthAdjust="spacing" textLength="120" x="1428.75" y="251.6203">协调自动温控请求</text><line style="stroke:#181818;stroke-width:0.625;" x1="1426.25" x2="1558.75" y1="262.1903" y2="262.1903"/></g><!--MD5=[96f4274e9e20536e775497830990834d]
+class E10--><g id="elem_E10"><rect fill="#F1F1F1" height="65.9403" id="E10" rx="12.5" ry="12.5" style="stroke:#181818;stroke-width:0.625;" width="212.5" x="1335" y="347.5"/><text fill="#000000" font-family="Noto Sans CJK SC" font-size="15" font-style="italic" lengthAdjust="spacing" textLength="58.75" x="1411.875" y="371.1501">«action»</text><text fill="#000000" font-family="Noto Sans CJK SC" font-size="15" lengthAdjust="spacing" textLength="197.5" x="1338.75" y="392.8703">协调自动温控请求: F_LF_011</text><line style="stroke:#181818;stroke-width:0.625;" x1="1336.25" x2="1546.25" y1="403.4403" y2="403.4403"/></g><!--MD5=[1dd1bfd58a279cf63c5f349dbc8fc6a1]
+class E11--><g id="elem_E11"><rect fill="#F1F1F1" height="65.9403" id="E11" rx="12.5" ry="12.5" style="stroke:#181818;stroke-width:0.625;" width="182.5" x="1591.25" y="347.5"/><text fill="#000000" font-family="Noto Sans CJK SC" font-size="15" font-style="italic" lengthAdjust="spacing" textLength="58.75" x="1653.125" y="371.1501">«action»</text><text fill="#000000" font-family="Noto Sans CJK SC" font-size="15" lengthAdjust="spacing" textLength="167.5" x="1595" y="392.8703">调节座舱温度: F_LF_015</text><line style="stroke:#181818;stroke-width:0.625;" x1="1592.5" x2="1772.5" y1="403.4403" y2="403.4403"/></g><!--MD5=[49a0ec8f00dab7302a31f22d0f0fe584]
+class E12--><g id="elem_E12"><rect fill="#F1F1F1" height="65.9403" id="E12" rx="12.5" ry="12.5" style="stroke:#181818;stroke-width:0.625;" width="145" x="1752.5" y="206.25"/><text fill="#000000" font-family="Noto Sans CJK SC" font-size="15" font-style="italic" lengthAdjust="spacing" textLength="58.75" x="1795.625" y="229.9001">«action»</text><text fill="#000000" font-family="Noto Sans CJK SC" font-size="15" lengthAdjust="spacing" textLength="130" x="1756.25" y="251.6203">处理AUTO模式请求</text><line style="stroke:#181818;stroke-width:0.625;" x1="1753.75" x2="1896.25" y1="262.1903" y2="262.1903"/></g><!--MD5=[ee3c913d1a06f366521f9ef512b67efe]
+class E13--><g id="elem_E13"><rect fill="#F1F1F1" height="65.9403" id="E13" rx="12.5" ry="12.5" style="stroke:#181818;stroke-width:0.625;" width="212.5" x="1817.5" y="347.5"/><text fill="#000000" font-family="Noto Sans CJK SC" font-size="15" font-style="italic" lengthAdjust="spacing" textLength="58.75" x="1894.375" y="371.1501">«action»</text><text fill="#000000" font-family="Noto Sans CJK SC" font-size="15" lengthAdjust="spacing" textLength="197.5" x="1821.25" y="392.8703">反馈自动模式状态: F_LF_012</text><line style="stroke:#181818;stroke-width:0.625;" x1="1818.75" x2="2028.75" y1="403.4403" y2="403.4403"/></g><!--MD5=[bee11217b2f71d958a27249dc326068c]
+class E14--><g id="elem_E14"><rect fill="#F1F1F1" height="65.9403" id="E14" rx="12.5" ry="12.5" style="stroke:#181818;stroke-width:0.625;" width="165" x="2045" y="206.25"/><text fill="#000000" font-family="Noto Sans CJK SC" font-size="15" font-style="italic" lengthAdjust="spacing" textLength="58.75" x="2098.125" y="229.9001">«action»</text><text fill="#000000" font-family="Noto Sans CJK SC" font-size="15" lengthAdjust="spacing" textLength="150" x="2048.75" y="251.6203">更新自动温控运行信息</text><line style="stroke:#181818;stroke-width:0.625;" x1="2046.25" x2="2208.75" y1="262.1903" y2="262.1903"/></g><!--MD5=[0c48fb7552dae8cbbef69381101a84c8]
+class E15--><g id="elem_E15"><rect fill="#F1F1F1" height="65.9403" id="E15" rx="12.5" ry="12.5" style="stroke:#181818;stroke-width:0.625;" width="212.5" x="2073.75" y="347.5"/><text fill="#000000" font-family="Noto Sans CJK SC" font-size="15" font-style="italic" lengthAdjust="spacing" textLength="58.75" x="2150.625" y="371.1501">«action»</text><text fill="#000000" font-family="Noto Sans CJK SC" font-size="15" lengthAdjust="spacing" textLength="197.5" x="2077.5" y="392.8703">反馈空调运行状态: F_LF_013</text><line style="stroke:#181818;stroke-width:0.625;" x1="2075" x2="2285" y1="403.4403" y2="403.4403"/></g><!--MD5=[a523cb2a0b79ecf9065ad8783f96c320]
+reverse link E1 to E2--><g id="link_E1_E2"><path d="M1273.2,113.55 C1082.4,150.3625 817.7625,201.425 695.0125,225.1 " fill="none" id="E1-backto-E2" style="stroke:#181818;stroke-width:1.25;"/><polygon fill="#181818" points="1289.7,110.375,1281.3904,106.882,1274.9701,113.2089,1283.2797,116.7019,1289.7,110.375" style="stroke:#181818;stroke-width:1.25;"/></g><!--MD5=[209b3feb70ccb6233bfe1053d122c12c]
+reverse link E2 to E3--><g id="link_E2_E3"><path d="M544.1625,263.1875 C456.2125,287 317.325,324.6 221.4875,350.55 " fill="none" id="E2-backto-E3" style="stroke:#181818;stroke-width:1.25;"/><polygon fill="#181818" points="559.975,258.9125,551.4281,256.0489,545.4975,262.8369,554.0444,265.7006,559.975,258.9125" style="stroke:#181818;stroke-width:1.25;"/></g><!--MD5=[9618e71518536f8baf3342ff6fdab317]
+reverse link E2 to E4--><g id="link_E2_E4"><path d="M553.8375,280.5125 C514.7,301.7 467.2375,327.4 430.5125,347.2875 " fill="none" id="E2-backto-E4" style="stroke:#181818;stroke-width:1.25;"/><polygon fill="#181818" points="568.3875,272.6375,559.4113,271.8142,555.199,279.7833,564.1752,280.6066,568.3875,272.6375" style="stroke:#181818;stroke-width:1.25;"/></g><!--MD5=[4e1a83fab71cdb913c109063314ae896]
+reverse link E2 to E5--><g id="link_E2_E5"><path d="M627.5,289.5875 C627.5,308.775 627.5,330.2375 627.5,347.3625 " fill="none" id="E2-backto-E5" style="stroke:#181818;stroke-width:1.25;"/><polygon fill="#181818" points="627.5,272.8,622.5,280.3,627.5,287.8,632.5,280.3,627.5,272.8" style="stroke:#181818;stroke-width:1.25;"/></g><!--MD5=[ce036f65110ae2351ccce5a81dc2e928]
+reverse link E2 to E6--><g id="link_E2_E6"><path d="M704.925,280.225 C746.4625,301.475 796.975,327.3125 836.025,347.2875 " fill="none" id="E2-backto-E6" style="stroke:#181818;stroke-width:1.25;"/><polygon fill="#181818" points="690.075,272.6375,694.4816,280.5008,703.4349,279.4575,699.0283,271.5942,690.075,272.6375" style="stroke:#181818;stroke-width:1.25;"/></g><!--MD5=[fc9706a6b2cf8c0e423679d303750d3f]
+reverse link E1 to E7--><g id="link_E1_E7"><path d="M1398.2,141.1875 C1367.7125,163.8 1335.4,187.7625 1310.525,206.2125 " fill="none" id="E1-backto-E7" style="stroke:#181818;stroke-width:1.25;"/><polygon fill="#181818" points="1411.5875,131.2625,1402.5849,131.713,1399.5382,140.1964,1408.5408,139.7459,1411.5875,131.2625" style="stroke:#181818;stroke-width:1.25;"/></g><!--MD5=[dc164f5e8a733ab456ef1add180e9e34]
+reverse link E7 to E8--><g id="link_E7_E8"><path d="M1237.6375,286.675 C1224.725,306.5625 1209.9375,329.3625 1198.2625,347.3625 " fill="none" id="E7-backto-E8" style="stroke:#181818;stroke-width:1.25;"/><polygon fill="#181818" points="1246.625,272.8,1238.3485,276.3706,1238.4612,285.3838,1246.7377,281.8132,1246.625,272.8" style="stroke:#181818;stroke-width:1.25;"/></g><!--MD5=[12b85c4d420790db1e7d6becd0483003]
+reverse link E1 to E9--><g id="link_E1_E9"><path d="M1492.5,147.7625 C1492.5,168.3125 1492.5,189.425 1492.5,206.075 " fill="none" id="E1-backto-E9" style="stroke:#181818;stroke-width:1.25;"/><polygon fill="#181818" points="1492.5,131.5,1487.5,139,1492.5,146.5,1497.5,139,1492.5,131.5" style="stroke:#181818;stroke-width:1.25;"/></g><!--MD5=[23ac544a70576c3e717098101004234c]
+reverse link E9 to E10--><g id="link_E9_E10"><path d="M1474.85,288.4125 C1467.65,307.8875 1459.525,329.8875 1453.075,347.3625 " fill="none" id="E9-backto-E10" style="stroke:#181818;stroke-width:1.25;"/><polygon fill="#181818" points="1480.6125,272.8,1473.3185,278.096,1475.4017,286.8658,1482.6957,281.5698,1480.6125,272.8" style="stroke:#181818;stroke-width:1.25;"/></g><!--MD5=[1fc04a95fd77ad5ce46c1a3027516051]
+reverse link E9 to E11--><g id="link_E9_E11"><path d="M1550.0625,282.6625 C1578.525,303.45 1612.3375,328.1375 1638.675,347.3625 " fill="none" id="E9-backto-E11" style="stroke:#181818;stroke-width:1.25;"/><polygon fill="#181818" points="1536.5625,272.8,1539.6687,281.2618,1548.6743,281.649,1545.5681,273.1872,1536.5625,272.8" style="stroke:#181818;stroke-width:1.25;"/></g><!--MD5=[1ce714eca3dce10fc00333d7dcca796c]
+reverse link E1 to E12--><g id="link_E1_E12"><path d="M1627.0125,138.7625 C1673.4625,162.075 1723.3375,187.1 1761.4125,206.2125 " fill="none" id="E1-backto-E12" style="stroke:#181818;stroke-width:1.25;"/><polygon fill="#181818" points="1612.075,131.2625,1616.5318,139.0975,1625.4782,137.997,1621.0215,130.162,1612.075,131.2625" style="stroke:#181818;stroke-width:1.25;"/></g><!--MD5=[062ed86c389d1a88f61c6380d0491e17]
+reverse link E12 to E13--><g id="link_E12_E13"><path d="M1857.3625,286.0875 C1871.6125,306.125 1888.025,329.1875 1900.975,347.3625 " fill="none" id="E12-backto-E13" style="stroke:#181818;stroke-width:1.25;"/><polygon fill="#181818" points="1847.9,272.8,1848.1665,281.8099,1856.5858,285.0293,1856.3193,276.0194,1847.9,272.8" style="stroke:#181818;stroke-width:1.25;"/></g><!--MD5=[ce4de61ba9284c831a39085aadd64e19]
+reverse link E1 to E14--><g id="link_E1_E14"><path d="M1710.9,128.65 C1825.95,158.875 1960.2875,194.1875 2044.6375,216.35 " fill="none" id="E1-backto-E14" style="stroke:#181818;stroke-width:1.25;"/><polygon fill="#181818" points="1695.1625,124.5125,1701.1472,131.2529,1709.671,128.321,1703.6862,121.5806,1695.1625,124.5125" style="stroke:#181818;stroke-width:1.25;"/></g><!--MD5=[17bf29720e4688890742b92d9a67fdf0]
+reverse link E14 to E15--><g id="link_E14_E15"><path d="M2145.5875,288.4125 C2152.95,307.8875 2161.275,329.8875 2167.8875,347.3625 " fill="none" id="E14-backto-E15" style="stroke:#181818;stroke-width:1.25;"/><polygon fill="#181818" points="2139.675,272.8,2137.6528,281.5841,2144.9834,286.8293,2147.0056,278.0452,2139.675,272.8" style="stroke:#181818;stroke-width:1.25;"/></g><!--MD5=[f0fadde19c0f888fc988978ed7fc5138]
+@startuml
+skinparam defaultFontName Noto Sans CJK SC
+skinparam defaultFontSize 12
+skinparam dpi 120
+scale max 2400*12000
+
+skin sysmlbw
+skinparam monochrome true
+skinparam wrapWidth 300
+hide circle
+
+comp def "自动空调控制" as E1  <<(T,blue) action  def>>  {
+##//doc//##
+仅表达功能分解；行为顺序、条件、并行与反馈见行为模型中的同名根模型。
+}
+comp usage "处理用户模式操作  " as E2  <<(T,blue) action>>  {
+}
+comp usage "判定目标温度边界: F_LF_008  " as E3  <<(T,blue) action>>  {
+}
+comp usage "更新座舱目标温度: F_LF_009  " as E4  <<(T,blue) action>>  {
+}
+comp usage "切换自动模式状态: F_LF_014  " as E5  <<(T,blue) action>>  {
+}
+comp usage "处理AUTO下的AC操作: F_LF_028  " as E6  <<(T,blue) action>>  {
+}
+comp usage "获取温度与环境信息  " as E7  <<(T,blue) action>>  {
+}
+comp usage "获取温度与环境信息: F_LF_010  " as E8  <<(T,blue) action>>  {
+}
+comp usage "协调自动温控请求  " as E9  <<(T,blue) action>>  {
+}
+comp usage "协调自动温控请求: F_LF_011  " as E10  <<(T,blue) action>>  {
+}
+comp usage "调节座舱温度: F_LF_015  " as E11  <<(T,blue) action>>  {
+}
+comp usage "处理AUTO模式请求  " as E12  <<(T,blue) action>>  {
+}
+comp usage "反馈自动模式状态: F_LF_012  " as E13  <<(T,blue) action>>  {
+}
+comp usage "更新自动温控运行信息  " as E14  <<(T,blue) action>>  {
+}
+comp usage "反馈空调运行状态: F_LF_013  " as E15  <<(T,blue) action>>  {
+}
+E1 *- - E2  
+E2 *- - E3  
+E2 *- - E4  
+E2 *- - E5  
+E2 *- - E6  
+E1 *- - E7  
+E7 *- - E8  
+E1 *- - E9  
+E9 *- - E10  
+E9 *- - E11  
+E1 *- - E12  
+E12 *- - E13  
+E1 *- - E14  
+E14 *- - E15  
+@enduml
+
+PlantUML version 1.2022.7(Tue Aug 23 01:01:30 CST 2022)
+(EPL source distribution)
+Java Runtime: OpenJDK Runtime Environment
+JVM: OpenJDK 64-Bit Server VM
+Default Encoding: UTF-8
+Language: en
+Country: null
+--></g></svg>

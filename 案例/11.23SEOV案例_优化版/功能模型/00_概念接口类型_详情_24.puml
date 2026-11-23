@@ -1,0 +1,44 @@
+@startuml
+skinparam defaultFontName Noto Sans CJK SC
+skinparam defaultFontSize 12
+skinparam dpi 120
+scale max 2400*12000
+
+skin sysmlbw
+skinparam monochrome true
+skinparam wrapWidth 300
+hide circle
+
+comp def "C185" as E1  <<(T,blue) item  def>>  {
+##//doc//##
+风窗与空调状态信息；角色：反馈<U+002F>实际状态；单位：来源未提供或不适用。
+}
+comp def "C186" as E2  <<(T,blue) item  def>>  {
+##//doc//##
+风窗模式状态；角色：反馈<U+002F>实际状态；单位：来源未提供或不适用。
+}
+comp def "C187" as E3  <<(T,blue) item  def>>  {
+##//doc//##
+风窗模式请求；角色：请求<U+002F>命令；单位：来源未提供或不适用。
+}
+comp def "C188" as E4  <<(T,blue) item  def>>  {
+##//doc//##
+风量状态；角色：反馈<U+002F>实际状态；单位：来源未提供或不适用。
+}
+comp def "C189" as E5  <<(T,blue) item  def>>  {
+##//doc//##
+驱动<U+002F>制动需求；角色：分析数据；单位：来源未提供或不适用。
+}
+comp def "C190" as E6  <<(T,blue) item  def>>  {
+##//doc//##
+驱动<U+002F>回收<U+002F>发电请求；角色：请求<U+002F>命令；单位：来源未提供或不适用。
+}
+comp def "C191" as E7  <<(T,blue) item  def>>  {
+##//doc//##
+驱动力请求与用电反馈；角色：请求<U+002F>命令；单位：来源未提供或不适用。
+}
+comp def "C192" as E8  <<(T,blue) item  def>>  {
+##//doc//##
+驱动请求、可用电能；角色：请求<U+002F>命令；单位：来源未提供或不适用。
+}
+@enduml

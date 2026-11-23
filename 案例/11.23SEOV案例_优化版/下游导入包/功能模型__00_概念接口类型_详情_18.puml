@@ -1,0 +1,50 @@
+@startuml
+skinparam defaultFontName Noto Sans CJK SC
+skinparam defaultFontSize 12
+skinparam dpi 120
+scale max 2400*12000
+
+skin sysmlbw
+skinparam monochrome true
+skinparam wrapWidth 300
+hide circle
+
+comp def "C137" as E1  <<(T,blue) item  def>>  {
+##//doc//##
+电池温度、充放电功率；角色：分析数据；单位：来源未提供或不适用。
+}
+comp def "C138" as E2  <<(T,blue) item  def>>  {
+##//doc//##
+电池温度反馈；角色：反馈<U+002F>实际状态；单位：来源未提供或不适用。
+}
+comp def "C139" as E3  <<(T,blue) item  def>>  {
+##//doc//##
+电池热节点与前舱局部空气状态；角色：反馈<U+002F>实际状态；单位：来源未提供或不适用。
+}
+comp def "C140" as E4  <<(T,blue) item  def>>  {
+##//doc//##
+电池热量交换响应；角色：分析数据；单位：来源未提供或不适用。
+}
+comp def "C141" as E5  <<(T,blue) item  def>>  {
+##//doc//##
+电芯温度；角色：分析数据；单位：℃。
+--
+##//attributes//##
+value: Real
+}
+comp def "C142" as E6  <<(T,blue) item  def>>  {
+##//doc//##
+电芯温度快照；角色：分析数据；单位：来源未提供或不适用。
+}
+comp def "C143" as E7  <<(T,blue) item  def>>  {
+##//doc//##
+电量约束下的加热许可；角色：分析数据；单位：来源未提供或不适用。
+}
+comp def "C144" as E8  <<(T,blue) item  def>>  {
+##//doc//##
+目标温度；角色：目标<U+002F>设定；单位：℃。
+--
+##//attributes//##
+value: Real
+}
+@enduml

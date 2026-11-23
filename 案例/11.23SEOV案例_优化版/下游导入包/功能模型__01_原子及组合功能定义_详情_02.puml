@@ -1,0 +1,170 @@
+@startuml
+skinparam defaultFontName Noto Sans CJK SC
+skinparam defaultFontSize 12
+skinparam dpi 120
+scale max 2400*12000
+
+skin sysmlbw
+skinparam monochrome true
+skinparam wrapWidth 300
+hide circle
+
+comp def "F_LF_009" as E1  <<(T,blue) action  def>>  {
+##//doc//##
+更新座舱目标温度；层级：叶级功能；来源：11.23SEOV案例<U+005F>优化版 <U+002F> 3.3.1.6 <U+002F> 处理用户模式操作 <U+002F> LF<U+002D>009 更新座舱目标温度。
+}
+comp usage "inputs_1: C105  " as E2  <<(T,blue) item>>  {
+}
+comp usage "inputs_2: C077  " as E3  <<(T,blue) item>>  {
+}
+comp usage "outputs_1: C089  " as E4  <<(T,blue) item>>  {
+}
+comp def "F_LF_010" as E5  <<(T,blue) action  def>>  {
+##//doc//##
+获取温度与环境信息；层级：叶级功能；来源：11.23SEOV案例<U+005F>优化版 <U+002F> 3.3.1.6 <U+002F> 获取温度与环境信息 <U+002F> LF<U+002D>010 获取温度与环境信息。
+}
+comp usage "inputs_1: C063  " as E6  <<(T,blue) item>>  {
+}
+comp usage "inputs_2: C064  " as E7  <<(T,blue) item>>  {
+}
+comp usage "inputs_3: C088  " as E8  <<(T,blue) item>>  {
+}
+comp usage "inputs_4: C014  " as E9  <<(T,blue) item>>  {
+}
+comp usage "outputs_1: C106  " as E10  <<(T,blue) item>>  {
+}
+comp def "F_LF_011" as E11  <<(T,blue) action  def>>  {
+##//doc//##
+协调自动温控请求；层级：组合功能；来源：11.23SEOV案例<U+005F>优化版 <U+002F> 3.3.1.6 <U+002F> 协调自动温控请求 <U+002F> LF<U+002D>011 协调自动温控请求。
+}
+comp usage "inputs_1: C155  " as E12  <<(T,blue) item>>  {
+}
+comp usage "inputs_2: C144  " as E13  <<(T,blue) item>>  {
+}
+comp usage "inputs_3: C102  " as E14  <<(T,blue) item>>  {
+}
+comp usage "inputs_4: C053  " as E15  <<(T,blue) item>>  {
+}
+comp usage "outputs_1: C175  " as E16  <<(T,blue) item>>  {
+}
+comp usage "outputs_2: C173  " as E17  <<(T,blue) item>>  {
+}
+comp usage "outputs_3: C171  " as E18  <<(T,blue) item>>  {
+}
+comp usage "outputs_4: C082  " as E19  <<(T,blue) item>>  {
+}
+comp usage "outputs_5: C025  " as E20  <<(T,blue) item>>  {
+}
+comp usage "outputs_6: C116  " as E21  <<(T,blue) item>>  {
+}
+comp usage "调节自动模式送风量: F_LF_011_01  " as E22  <<(T,blue) action>>  {
+}
+comp usage "调节自动模式送风温度: F_LF_011_02  " as E23  <<(T,blue) action>>  {
+}
+comp usage "调节自动模式送风模式: F_LF_011_03  " as E24  <<(T,blue) action>>  {
+}
+comp usage "调节自动模式空气循环: F_LF_011_04  " as E25  <<(T,blue) action>>  {
+}
+comp usage "调节自动模式制冷能力: F_LF_011_05  " as E26  <<(T,blue) action>>  {
+}
+comp usage "调节自动模式电加热功率: F_LF_011_06  " as E27  <<(T,blue) action>>  {
+}
+comp def "F_LF_012" as E28  <<(T,blue) action  def>>  {
+##//doc//##
+反馈自动模式状态；层级：叶级功能；来源：11.23SEOV案例<U+005F>优化版 <U+002F> 3.3.1.6 <U+002F> 处理AUTO模式请求 <U+002F> LF<U+002D>012 反馈自动模式状态。
+}
+comp usage "inputs_1: C078  " as E29  <<(T,blue) item>>  {
+}
+comp usage "outputs_1: C156  " as E30  <<(T,blue) item>>  {
+}
+comp def "F_LF_013" as E31  <<(T,blue) action  def>>  {
+##//doc//##
+反馈空调运行状态；层级：叶级功能；来源：11.23SEOV案例<U+005F>优化版 <U+002F> 3.3.1.6 <U+002F> 更新自动温控运行信息 <U+002F> LF<U+002D>013 反馈空调运行状态。
+}
+comp usage "inputs_1: C188  " as E32  <<(T,blue) item>>  {
+}
+comp usage "inputs_2: C104  " as E33  <<(T,blue) item>>  {
+}
+comp usage "inputs_3: C023  " as E34  <<(T,blue) item>>  {
+}
+comp usage "inputs_4: C080  " as E35  <<(T,blue) item>>  {
+}
+comp usage "inputs_5: C170  " as E36  <<(T,blue) item>>  {
+}
+comp usage "inputs_6: C155  " as E37  <<(T,blue) item>>  {
+}
+comp usage "outputs_1: C151  " as E38  <<(T,blue) item>>  {
+}
+comp def "F_LF_014" as E39  <<(T,blue) action  def>>  {
+##//doc//##
+切换自动模式状态；层级：叶级功能；来源：11.23SEOV案例<U+005F>优化版 <U+002F> 3.3.1.6 <U+002F> 处理用户模式操作 <U+002F> LF<U+002D>014 切换自动模式状态。
+}
+comp usage "inputs_1: C076  " as E40  <<(T,blue) item>>  {
+}
+comp usage "inputs_2: C111  " as E41  <<(T,blue) item>>  {
+}
+comp usage "outputs_1: C090  " as E42  <<(T,blue) item>>  {
+}
+comp def "F_LF_015" as E43  <<(T,blue) action  def>>  {
+##//doc//##
+调节座舱温度；层级：叶级功能；来源：11.23SEOV案例<U+005F>优化版 <U+002F> 3.3.1.6 <U+002F> 协调自动温控请求 <U+002F> LF<U+002D>015 调节座舱温度。
+}
+comp usage "inputs_1: C144  " as E44  <<(T,blue) item>>  {
+}
+comp usage "inputs_2: C061  " as E45  <<(T,blue) item>>  {
+}
+comp usage "inputs_3: C050  " as E46  <<(T,blue) item>>  {
+}
+comp usage "outputs_1: C073  " as E47  <<(T,blue) item>>  {
+}
+comp def "F_LF_016" as E48  <<(T,blue) action  def>>  {
+##//doc//##
+接收风窗除霜除雾请求；层级：叶级功能；来源：11.23SEOV案例<U+005F>优化版 <U+002F> 3.3.1.9 <U+002F> 接收风窗除霜或除雾请求 <U+002F> LF<U+002D>016 接收风窗除霜除雾请求。
+}
+comp usage "inputs_1: C114  " as E49  <<(T,blue) item>>  {
+}
+comp usage "outputs_1: C066  " as E50  <<(T,blue) item>>  {
+}
+E1 o-- E2  
+E1 o-- E3  
+E1 o-- E4  
+E5 o-- E6  
+E5 o-- E7  
+E5 o-- E8  
+E5 o-- E9  
+E5 o-- E10  
+E11 o-- E12  
+E11 o-- E13  
+E11 o-- E14  
+E11 o-- E15  
+E11 o-- E16  
+E11 o-- E17  
+E11 o-- E18  
+E11 o-- E19  
+E11 o-- E20  
+E11 o-- E21  
+E11 *-- E22  
+E11 *-- E23  
+E11 *-- E24  
+E11 *-- E25  
+E11 *-- E26  
+E11 *-- E27  
+E28 o-- E29  
+E28 o-- E30  
+E31 o-- E32  
+E31 o-- E33  
+E31 o-- E34  
+E31 o-- E35  
+E31 o-- E36  
+E31 o-- E37  
+E31 o-- E38  
+E39 o-- E40  
+E39 o-- E41  
+E39 o-- E42  
+E43 o-- E44  
+E43 o-- E45  
+E43 o-- E46  
+E43 o-- E47  
+E48 o-- E49  
+E48 o-- E50  
+@enduml

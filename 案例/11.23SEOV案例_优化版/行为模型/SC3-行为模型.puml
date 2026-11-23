@@ -1,0 +1,210 @@
+@startuml
+skinparam defaultFontName Noto Sans CJK SC
+skinparam defaultFontSize 12
+skinparam dpi 120
+scale max 2400*12000
+
+skin sysmlbw
+skinparam monochrome true
+skinparam wrapWidth 300
+hide circle
+skinparam ranksep 10
+skinparam rectangle {
+ backgroundColor<<block>> LightGreen
+}
+
+rec usage "行为评估流程" as E1  <<(T,blue) action>>  {
+rec usage "获取本周期快照" as E2  <<(T,blue) action>>  {
+portout "stopRequested" as E4   
+portout "cabinCoolingRequested" as E5   
+portout "batteryCriteriaDefined" as E6   
+portout "batteryTemperatureHigh" as E7   
+portout "batteryPowerHigh" as E8   
+portout "availableCapacitySufficient" as E9   
+portout "chillerPathAvailable" as E10   
+}
+
+choice "是否继续评估" as E11   
+choice "电池判据定义判断" as E12   
+choice "电池辅助需求判断" as E13   
+choice "冷量分配能力判断" as E14   
+choice "座舱执行需求判断" as E15   
+choice "电池执行需求判断" as E16   
+choice "Chiller流路可用判断" as E17   
+fork "并行需求评估" as E18   
+choice "合并电池需求路径" as E19   
+join "汇合需求评估" as E20   
+fork "并行执行冷却" as E21   
+choice "合并座舱执行路径" as E22   
+choice "合并电池执行路径" as E23   
+join "汇合冷却执行" as E24   
+choice "合并本周期结果" as E25   
+rec usage "获取座舱目标温度" as E26  <<(T,blue) action>>  {
+}
+
+rec usage "获取座舱实际温度" as E28  <<(T,blue) action>>  {
+}
+
+rec usage "判定座舱制冷需求" as E30  <<(T,blue) action>>  {
+}
+
+rec usage "获取电池控制温度" as E32  <<(T,blue) action>>  {
+}
+
+rec usage "获取电池充放电功率" as E34  <<(T,blue) action>>  {
+}
+
+rec usage "计算电池冷量需求" as E36  <<(T,blue) action>>  {
+}
+
+rec usage "分配共享制冷能力" as E38  <<(T,blue) action>>  {
+}
+
+rec usage "调节座舱制冷能力" as E40  <<(T,blue) action>>  {
+}
+
+rec usage "调节座舱送风量" as E42  <<(T,blue) action>>  {
+}
+
+rec usage "调节电池Chiller液路换热" as E44  <<(T,blue) action>>  {
+}
+
+rec usage "反馈座舱与电池温控状态" as E46  <<(T,blue) action>>  {
+}
+
+rec usage "记录电池判据未定义" as E48  <<(T,blue) action>>  {
+}
+
+rec usage "记录无电池辅助冷却需求" as E50  <<(T,blue) action>>  {
+}
+
+rec usage "记录能力不足分配策略缺口" as E52  <<(T,blue) action>>  {
+}
+
+rec usage "保持无座舱制冷请求" as E54  <<(T,blue) action>>  {
+}
+
+rec usage "保持无电池冷却请求" as E56  <<(T,blue) action>>  {
+}
+
+rec usage "记录Chiller流路不可用" as E58  <<(T,blue) action>>  {
+}
+
+[*] --> E2  
+E11 --> [*]  : ['获取本周期快照'.stopRequested]
+}
+
+note as E3
+功能引用：行为适配/上下文。
+end note 
+note as E27
+功能引用：S3-F01。
+end note 
+note as E29
+功能引用：S3-F02。
+end note 
+note as E31
+功能引用：S3-F03。
+end note 
+note as E33
+功能引用：S3-F06-01。
+end note 
+note as E35
+功能引用：S3-F06-02。
+end note 
+note as E37
+功能引用：S3-F08。
+end note 
+note as E39
+功能引用：S3-F09。
+end note 
+note as E41
+功能引用：S3-F04。
+end note 
+note as E43
+功能引用：S3-F05。
+end note 
+note as E45
+功能引用：S3-F10。
+end note 
+note as E47
+功能引用：S3-F11。
+end note 
+note as E49
+功能引用：行为适配/上下文。
+end note 
+note as E51
+功能引用：行为适配/上下文。
+end note 
+note as E53
+功能引用：行为适配/上下文。
+end note 
+note as E55
+功能引用：行为适配/上下文。
+end note 
+note as E57
+功能引用：行为适配/上下文。
+end note 
+note as E59
+功能引用：行为适配/上下文。
+end note 
+E3 .. E2  
+E27 .. E26  
+E29 .. E28  
+E31 .. E30  
+E33 .. E32  
+E35 .. E34  
+E37 .. E36  
+E39 .. E38  
+E41 .. E40  
+E43 .. E42  
+E45 .. E44  
+E47 .. E46  
+E49 .. E48  
+E51 .. E50  
+E53 .. E52  
+E55 .. E54  
+E57 .. E56  
+E59 .. E58  
+E2 --> E11  
+E11  --> E18  : [not '获取本周期快照'.stopRequested]
+E18 --> E26  
+E26 --> E28  
+E28 --> E30  
+E30 --> E20  
+E18 --> E32  
+E32 --> E34  
+E34 --> E12  
+E12  --> E13  : ['获取本周期快照'.batteryCriteriaDefined]
+E12  --> E48  : [not '获取本周期快照'.batteryCriteriaDefined]
+E13  --> E36  : ['获取本周期快照'.batteryTemperatureHigh or '获取本周期快照'.batteryPowerHigh]
+E13  --> E50  : [not ('获取本周期快照'.batteryTemperatureHigh or '获取本周期快照'.batteryPowerHigh)]
+E36 --> E19  
+E50 --> E19  
+E48 --> E19  
+E19 --> E20  
+E20 --> E38  
+E38 --> E14  
+E14  --> E21  : ['获取本周期快照'.availableCapacitySufficient]
+E14  --> E52  : [not '获取本周期快照'.availableCapacitySufficient]
+E52 --> E25  
+E21 --> E15  
+E21 --> E16  
+E15  --> E40  : ['获取本周期快照'.cabinCoolingRequested]
+E15  --> E54  : [not '获取本周期快照'.cabinCoolingRequested]
+E40 --> E42  
+E42 --> E22  
+E54 --> E22  
+E22 --> E24  
+E16  --> E17  : ['获取本周期快照'.batteryCriteriaDefined and ('获取本周期快照'.batteryTemperatureHigh or '获取本周期快照'.batteryPowerHigh)]
+E16  --> E56  : [not ('获取本周期快照'.batteryCriteriaDefined and ('获取本周期快照'.batteryTemperatureHigh or '获取本周期快照'.batteryPowerHigh))]
+E17  --> E44  : ['获取本周期快照'.chillerPathAvailable]
+E17  --> E58  : [not '获取本周期快照'.chillerPathAvailable]
+E44 --> E23  
+E56 --> E23  
+E58 --> E23  
+E23 --> E24  
+E24 --> E25  
+E25 --> E46  
+E46 --> E2  
+@enduml

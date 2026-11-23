@@ -1,0 +1,47 @@
+@startuml
+skinparam defaultFontName Noto Sans CJK SC
+skinparam defaultFontSize 12
+skinparam dpi 120
+scale max 2400*12000
+
+skin sysmlbw
+skinparam monochrome true
+skinparam wrapWidth 300
+hide circle
+
+comp def "C001" as E1  <<(T,blue) item  def>>  {
+##//doc//##
+45 km<U+002F>h行驶20分钟工况；角色：分析数据；单位：来源未提供或不适用。
+}
+comp def "C002" as E2  <<(T,blue) item  def>>  {
+##//doc//##
+AC按键操作；角色：分析数据；单位：来源未提供或不适用。
+}
+comp def "C003" as E3  <<(T,blue) item  def>>  {
+##//doc//##
+AUTO运行状态；角色：反馈<U+002F>实际状态；单位：来源未提供或不适用。
+}
+comp def "C004" as E4  <<(T,blue) item  def>>  {
+##//doc//##
+下一步模式评估信息；角色：反馈<U+002F>实际状态；单位：来源未提供或不适用。
+}
+comp def "C005" as E5  <<(T,blue) item  def>>  {
+##//doc//##
+两个功能的能力分配；角色：分析数据；单位：来源未提供或不适用。
+}
+comp def "C006" as E6  <<(T,blue) item  def>>  {
+##//doc//##
+两类冷却需求、可用能力；角色：分析数据；单位：来源未提供或不适用。
+}
+comp def "C007" as E7  <<(T,blue) item  def>>  {
+##//doc//##
+主动供风有效热导；角色：分析数据；单位：来源未提供或不适用。
+--
+##//attributes//##
+value: Real
+}
+comp def "C008" as E8  <<(T,blue) item  def>>  {
+##//doc//##
+主动供风有效热导与独立换热边界；角色：分析数据；单位：来源未提供或不适用。
+}
+@enduml

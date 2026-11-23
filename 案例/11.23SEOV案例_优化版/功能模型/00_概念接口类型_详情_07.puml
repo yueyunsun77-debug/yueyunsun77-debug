@@ -1,0 +1,44 @@
+@startuml
+skinparam defaultFontName Noto Sans CJK SC
+skinparam defaultFontSize 12
+skinparam dpi 120
+scale max 2400*12000
+
+skin sysmlbw
+skinparam monochrome true
+skinparam wrapWidth 300
+hide circle
+
+comp def "C049" as E1  <<(T,blue) item  def>>  {
+##//doc//##
+可用温度调节能力；角色：分析数据；单位：来源未提供或不适用。
+}
+comp def "C050" as E2  <<(T,blue) item  def>>  {
+##//doc//##
+可用温控能力；角色：分析数据；单位：来源未提供或不适用。
+}
+comp def "C051" as E3  <<(T,blue) item  def>>  {
+##//doc//##
+可用空气输送能力；角色：分析数据；单位：来源未提供或不适用。
+}
+comp def "C052" as E4  <<(T,blue) item  def>>  {
+##//doc//##
+可用能力；角色：分析数据；单位：来源未提供或不适用。
+}
+comp def "C053" as E5  <<(T,blue) item  def>>  {
+##//doc//##
+可用调节能力；角色：分析数据；单位：来源未提供或不适用。
+}
+comp def "C054" as E6  <<(T,blue) item  def>>  {
+##//doc//##
+可用送风模式；角色：分析数据；单位：来源未提供或不适用。
+}
+comp def "C055" as E7  <<(T,blue) item  def>>  {
+##//doc//##
+可用送风能力；角色：分析数据；单位：来源未提供或不适用。
+}
+comp def "C056" as E8  <<(T,blue) item  def>>  {
+##//doc//##
+各路径能力分配；角色：分析数据；单位：来源未提供或不适用。
+}
+@enduml

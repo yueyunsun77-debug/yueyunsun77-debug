@@ -1,0 +1,53 @@
+@startuml
+skinparam defaultFontName Noto Sans CJK SC
+skinparam defaultFontSize 12
+skinparam dpi 120
+scale max 2400*12000
+
+skin sysmlbw
+skinparam monochrome true
+skinparam wrapWidth 300
+hide circle
+
+comp def "C009" as E1  <<(T,blue) item  def>>  {
+##//doc//##
+主动供风的有符号换热贡献；角色：分析数据；单位：来源未提供或不适用。
+--
+##//attributes//##
+value: Real
+}
+comp def "C010" as E2  <<(T,blue) item  def>>  {
+##//doc//##
+主动冷却请求；角色：请求<U+002F>命令；单位：来源未提供或不适用。
+}
+comp def "C011" as E3  <<(T,blue) item  def>>  {
+##//doc//##
+人员设定或场景目标；角色：目标<U+002F>设定；单位：来源未提供或不适用。
+}
+comp def "C012" as E4  <<(T,blue) item  def>>  {
+##//doc//##
+仿真开始、空调启动操作；角色：分析数据；单位：来源未提供或不适用。
+}
+comp def "C013" as E5  <<(T,blue) item  def>>  {
+##//doc//##
+低电量条件下的制冷许可；角色：分析数据；单位：来源未提供或不适用。
+}
+comp def "C014" as E6  <<(T,blue) item  def>>  {
+##//doc//##
+供热入口温度信息；角色：反馈<U+002F>实际状态；单位：来源未提供或不适用。
+}
+comp def "C015" as E7  <<(T,blue) item  def>>  {
+##//doc//##
+供风反馈有效性；角色：信息有效性；单位：来源未提供或不适用。
+--
+##//attributes//##
+value: Boolean
+}
+comp def "C016" as E8  <<(T,blue) item  def>>  {
+##//doc//##
+供风能力可用状态；角色：反馈<U+002F>实际状态；单位：来源未提供或不适用。
+--
+##//attributes//##
+value: Boolean
+}
+@enduml

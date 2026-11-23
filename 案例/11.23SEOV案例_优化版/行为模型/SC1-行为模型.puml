@@ -1,0 +1,188 @@
+@startuml
+skinparam defaultFontName Noto Sans CJK SC
+skinparam defaultFontSize 12
+skinparam dpi 120
+scale max 2400*12000
+
+skin sysmlbw
+skinparam monochrome true
+skinparam wrapWidth 300
+hide circle
+skinparam ranksep 10
+skinparam rectangle {
+ backgroundColor<<block>> LightGreen
+}
+
+rec usage "行为评估流程" as E1  <<(T,blue) action>>  {
+rec usage "获取本周期快照" as E2  <<(T,blue) action>>  {
+portout "stopRequested" as E4   
+portout "driveRequested" as E5   
+portout "brakeRequested" as E6   
+portout "regenAvailable" as E7   
+portout "batteryAcceptsCharge" as E8   
+portout "generationRequested" as E9   
+portout "engineRunning" as E10   
+}
+
+choice "是否继续评估" as E11   
+choice "驾驶意图判断" as E12   
+choice "回收可用性判断" as E13   
+choice "发电需求判断" as E14   
+choice "发动机状态判断" as E15   
+choice "启动完成判断" as E16   
+fork "并行驱动与发电" as E17   
+choice "合并驾驶路径" as E18   
+choice "合并发电路径" as E19   
+join "汇合能量路径" as E20   
+rec usage "接收驾驶指令" as E21  <<(T,blue) action>>  {
+}
+
+rec usage "分析动力需求" as E23  <<(T,blue) action>>  {
+}
+
+rec usage "选择运行模式" as E25  <<(T,blue) action>>  {
+}
+
+rec usage "执行电驱动请求" as E27  <<(T,blue) action>>  {
+}
+
+rec usage "判定再生制动请求" as E29  <<(T,blue) action>>  {
+}
+
+rec usage "协调再生充电" as E31  <<(T,blue) action>>  {
+}
+
+rec usage "调节发电工作点" as E33  <<(T,blue) action>>  {
+}
+
+rec usage "管理充电能量收支" as E35  <<(T,blue) action>>  {
+}
+
+rec usage "反馈并更新模式评估" as E37  <<(T,blue) action>>  {
+}
+
+rec usage "协调发动机启动" as E39  <<(T,blue) action>>  {
+}
+
+rec usage "记录加速制动冲突" as E42  <<(T,blue) action>>  {
+}
+
+rec usage "记录回收不可用" as E44  <<(T,blue) action>>  {
+}
+
+rec usage "保持无驱动制动请求" as E46  <<(T,blue) action>>  {
+}
+
+rec usage "记录发动机启动未完成" as E48  <<(T,blue) action>>  {
+}
+
+rec usage "保持无发电请求" as E50  <<(T,blue) action>>  {
+}
+
+[*] --> E2  
+E11 --> [*]  : ['获取本周期快照'.stopRequested]
+}
+
+note as E3
+功能引用：行为适配/上下文。
+end note 
+note as E22
+功能引用：S1-F01。
+end note 
+note as E24
+功能引用：S1-F02。
+end note 
+note as E26
+功能引用：S1-F03。
+end note 
+note as E28
+功能引用：S1-F04。
+end note 
+note as E30
+功能引用：S1-F05。
+end note 
+note as E32
+功能引用：S1-F06。
+end note 
+note as E34
+功能引用：S1-F08。
+end note 
+note as E36
+功能引用：S1-F09。
+end note 
+note as E38
+功能引用：S1-F10。
+end note 
+note as E40
+功能引用：S1-F07。
+end note 
+note as E41
+本节点属性是行为决策所需的分析投影，不重新定义继承的概念级输出端口。
+end note 
+note as E43
+功能引用：行为适配/上下文。
+end note 
+note as E45
+功能引用：行为适配/上下文。
+end note 
+note as E47
+功能引用：行为适配/上下文。
+end note 
+note as E49
+功能引用：行为适配/上下文。
+end note 
+note as E51
+功能引用：行为适配/上下文。
+end note 
+E3 .. E2  
+E22 .. E21  
+E24 .. E23  
+E26 .. E25  
+E28 .. E27  
+E30 .. E29  
+E32 .. E31  
+E34 .. E33  
+E36 .. E35  
+E38 .. E37  
+E40 .. E39  
+E41 .. E39  
+E43 .. E42  
+E45 .. E44  
+E47 .. E46  
+E49 .. E48  
+E51 .. E50  
+E2 --> E11  
+E11  --> E21  : [not '获取本周期快照'.stopRequested]
+E21 --> E23  
+E23 --> E25  
+E25 --> E17  
+E17 --> E12  
+E17 --> E14  
+E12  --> E27  : ['获取本周期快照'.driveRequested and not '获取本周期快照'.brakeRequested]
+E12  --> E29  : ['获取本周期快照'.brakeRequested and not '获取本周期快照'.driveRequested]
+E12  --> E42  : ['获取本周期快照'.driveRequested and '获取本周期快照'.brakeRequested]
+E12  --> E46  : [not '获取本周期快照'.driveRequested and not '获取本周期快照'.brakeRequested]
+E29 --> E13  
+E13  --> E31  : ['获取本周期快照'.regenAvailable and '获取本周期快照'.batteryAcceptsCharge]
+E13  --> E44  : [not ('获取本周期快照'.regenAvailable and '获取本周期快照'.batteryAcceptsCharge)]
+E27 --> E18  
+E31 --> E18  
+E42 --> E18  
+E44 --> E18  
+E46 --> E18  
+E14  --> E15  : ['获取本周期快照'.generationRequested]
+E14  --> E50  : [not '获取本周期快照'.generationRequested]
+E15  --> E33  : ['获取本周期快照'.engineRunning]
+E15  --> E39  : [not '获取本周期快照'.engineRunning]
+E39 --> E16  
+E16  --> E33  : ['协调发动机启动'.startCompleted]
+E16  --> E48  : [not '协调发动机启动'.startCompleted]
+E33 --> E19  
+E48 --> E19  
+E50 --> E19  
+E18 --> E20  
+E19 --> E20  
+E20 --> E35  
+E35 --> E37  
+E37 --> E2  
+@enduml

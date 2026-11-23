@@ -1,0 +1,58 @@
+@startuml
+skinparam defaultFontName Noto Sans CJK SC
+skinparam defaultFontSize 12
+skinparam dpi 120
+scale max 2400*12000
+
+skin sysmlbw
+skinparam monochrome true
+skinparam wrapWidth 300
+hide circle
+
+comp def "自动空调控制" as E1  <<(T,blue) action  def>>  {
+##//doc//##
+仅表达功能分解；行为顺序、条件、并行与反馈见行为模型中的同名根模型。
+}
+comp usage "处理用户模式操作  " as E2  <<(T,blue) action>>  {
+}
+comp usage "判定目标温度边界: F_LF_008  " as E3  <<(T,blue) action>>  {
+}
+comp usage "更新座舱目标温度: F_LF_009  " as E4  <<(T,blue) action>>  {
+}
+comp usage "切换自动模式状态: F_LF_014  " as E5  <<(T,blue) action>>  {
+}
+comp usage "处理AUTO下的AC操作: F_LF_028  " as E6  <<(T,blue) action>>  {
+}
+comp usage "获取温度与环境信息  " as E7  <<(T,blue) action>>  {
+}
+comp usage "获取温度与环境信息: F_LF_010  " as E8  <<(T,blue) action>>  {
+}
+comp usage "协调自动温控请求  " as E9  <<(T,blue) action>>  {
+}
+comp usage "协调自动温控请求: F_LF_011  " as E10  <<(T,blue) action>>  {
+}
+comp usage "调节座舱温度: F_LF_015  " as E11  <<(T,blue) action>>  {
+}
+comp usage "处理AUTO模式请求  " as E12  <<(T,blue) action>>  {
+}
+comp usage "反馈自动模式状态: F_LF_012  " as E13  <<(T,blue) action>>  {
+}
+comp usage "更新自动温控运行信息  " as E14  <<(T,blue) action>>  {
+}
+comp usage "反馈空调运行状态: F_LF_013  " as E15  <<(T,blue) action>>  {
+}
+E1 *-- E2  
+E2 *-- E3  
+E2 *-- E4  
+E2 *-- E5  
+E2 *-- E6  
+E1 *-- E7  
+E7 *-- E8  
+E1 *-- E9  
+E9 *-- E10  
+E9 *-- E11  
+E1 *-- E12  
+E12 *-- E13  
+E1 *-- E14  
+E14 *-- E15  
+@enduml

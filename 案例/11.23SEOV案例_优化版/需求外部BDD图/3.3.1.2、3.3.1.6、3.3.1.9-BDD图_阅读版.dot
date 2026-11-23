@@ -1,0 +1,20 @@
+digraph G {
+graph [rankdir=LR,bgcolor="white",nodesep="0.7",ranksep="1.1",pad="0.4"];
+node [shape=plain,fontname="Noto Sans CJK SC"];
+edge [fontname="Noto Sans CJK SC",fontsize=9,color="#52728C"];
+SYS [label=<<TABLE BORDER="1" CELLBORDER="0" CELLSPACING="0" CELLPADDING="8"><TR><TD BGCOLOR="#DCEAF5"><B>SYS 热管理逻辑控制服务</B></TD></TR><TR><TD ALIGN="LEFT" PORT="requestIn">requestIn : ~ThermalRequestPort</TD></TR><TR><TD ALIGN="LEFT" PORT="statusOut">statusOut : ThermalStatusPort</TD></TR><TR><TD ALIGN="LEFT" PORT="vehicleStateIn">vehicleStateIn : ~VehicleStatePort</TD></TR><TR><TD ALIGN="LEFT" PORT="sensorDataIn">sensorDataIn : ~SensorDataPort</TD></TR><TR><TD ALIGN="LEFT" PORT="actuatorCommandOut">actuatorCommandOut : ActuatorCommandPort</TD></TR><TR><TD ALIGN="LEFT" PORT="cabinEffectOut">cabinEffectOut : CabinEffectPort</TD></TR></TABLE>>];
+IVI [label=<<TABLE BORDER="1" CELLBORDER="0" CELLSPACING="0" CELLPADDING="8"><TR><TD BGCOLOR="#DCEAF5"><B>IVI IVI中控交互系统</B></TD></TR><TR><TD ALIGN="LEFT" PORT="requestOut">requestOut : ThermalRequestPort</TD></TR><TR><TD ALIGN="LEFT" PORT="statusIn">statusIn : ~ThermalStatusPort</TD></TR></TABLE>>];
+CAN [label=<<TABLE BORDER="1" CELLBORDER="0" CELLSPACING="0" CELLPADDING="8"><TR><TD BGCOLOR="#DCEAF5"><B>CAN 车载CAN通信网络</B></TD></TR><TR><TD ALIGN="LEFT" PORT="requestIn">requestIn : ~ThermalRequestPort</TD></TR><TR><TD ALIGN="LEFT" PORT="requestOut">requestOut : ThermalRequestPort</TD></TR><TR><TD ALIGN="LEFT" PORT="statusIn">statusIn : ~ThermalStatusPort</TD></TR><TR><TD ALIGN="LEFT" PORT="statusOut">statusOut : ThermalStatusPort</TD></TR></TABLE>>];
+VEHICLE [label=<<TABLE BORDER="1" CELLBORDER="0" CELLSPACING="0" CELLPADDING="8"><TR><TD BGCOLOR="#DCEAF5"><B>VEHICLE 整车状态与电源管理系统</B></TD></TR><TR><TD ALIGN="LEFT" PORT="stateOut">stateOut : VehicleStatePort</TD></TR></TABLE>>];
+SENSORS [label=<<TABLE BORDER="1" CELLBORDER="0" CELLSPACING="0" CELLPADDING="8"><TR><TD BGCOLOR="#DCEAF5"><B>SENSORS 温度与环境信息提供服务</B></TD></TR><TR><TD ALIGN="LEFT" PORT="dataOut">dataOut : SensorDataPort</TD></TR></TABLE>>];
+ACTUATORS [label=<<TABLE BORDER="1" CELLBORDER="0" CELLSPACING="0" CELLPADDING="8"><TR><TD BGCOLOR="#DCEAF5"><B>ACTUATORS 热量与空气调节执行服务</B></TD></TR><TR><TD ALIGN="LEFT" PORT="commandIn">commandIn : ~ActuatorCommandPort</TD></TR></TABLE>>];
+CABIN_WINDSCREEN [label=<<TABLE BORDER="1" CELLBORDER="0" CELLSPACING="0" CELLPADDING="8"><TR><TD BGCOLOR="#DCEAF5"><B>CABIN_WINDSCREEN 乘员舱与前风窗环境</B></TD></TR><TR><TD ALIGN="LEFT" PORT="effectIn">effectIn : ~CabinEffectPort</TD></TR></TABLE>>];
+IVI:requestOut -> CAN:requestIn [label="requestIVIToCAN\nThermalRequestInterface"];
+CAN:requestOut -> SYS:requestIn [label="requestCANToSYS\nThermalRequestInterface"];
+SYS:statusOut -> CAN:statusIn [label="statusSYSOutToCAN\nThermalStatusInterface"];
+CAN:statusOut -> IVI:statusIn [label="statusCANToIVI\nThermalStatusInterface"];
+VEHICLE:stateOut -> SYS:vehicleStateIn [label="vehicleStateToSYS\nVehicleStateInterface"];
+SENSORS:dataOut -> SYS:sensorDataIn [label="sensorDataToSYS\nSensorDataInterface"];
+SYS:actuatorCommandOut -> ACTUATORS:commandIn [label="actuatorCommandsToHVAC\nActuatorCommandInterface"];
+SYS:cabinEffectOut -> CABIN_WINDSCREEN:effectIn [label="cabinEffectsFromSYS\nCabinEffectInterface"];
+}

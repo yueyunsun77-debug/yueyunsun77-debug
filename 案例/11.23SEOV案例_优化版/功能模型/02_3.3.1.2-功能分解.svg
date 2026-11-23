@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?><svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" contentStyleType="text/css" height="421.25px" preserveAspectRatio="none" style="width:2143px;height:421px;background:#FFFFFF;" version="1.1" viewBox="0 0 2143 421" width="2143.75px" zoomAndPan="magnify"><defs/><g><!--MD5=[43c9051892ef23e1a46a86907403d788]
+class E1--><g id="elem_E1"><rect fill="#F1F1F1" height="123.0687" id="E1" rx="3.125" ry="3.125" style="stroke:#181818;stroke-width:0.625;" width="405" x="982.5" y="8.75"/><text fill="#000000" font-family="Noto Sans CJK SC" font-size="15" font-style="italic" lengthAdjust="spacing" textLength="88.75" x="1140.625" y="32.4001">«action  def»</text><text fill="#000000" font-family="Noto Sans CJK SC" font-size="15" lengthAdjust="spacing" textLength="105" x="1132.5" y="54.1203">乘员舱制热控制</text><line style="stroke:#181818;stroke-width:0.625;" x1="983.75" x2="1386.25" y1="64.6903" y2="64.6903"/><text fill="#000000" font-family="Noto Sans CJK SC" font-size="15" lengthAdjust="spacing" textLength="120" x="990" y="100.7785">仅表达功能分解；</text><text fill="#000000" font-family="Noto Sans CJK SC" font-size="15" lengthAdjust="spacing" textLength="390" x="990" y="122.4986">行为顺序、条件、并行与反馈见行为模型中的同名根模型。</text><text fill="#000000" font-family="Noto Sans CJK SC" font-size="15" font-style="italic" lengthAdjust="spacing" textLength="25" x="1172.5" y="80.6053">doc</text></g><!--MD5=[b4997ac47864f28c2f74865a473b2911]
+class E2--><g id="elem_E2"><rect fill="#F1F1F1" height="65.9403" id="E2" rx="12.5" ry="12.5" style="stroke:#181818;stroke-width:0.625;" width="150" x="500" y="206.25"/><text fill="#000000" font-family="Noto Sans CJK SC" font-size="15" font-style="italic" lengthAdjust="spacing" textLength="58.75" x="545.625" y="229.9001">«action»</text><text fill="#000000" font-family="Noto Sans CJK SC" font-size="15" lengthAdjust="spacing" textLength="135" x="503.75" y="251.6203">检查电加热使能条件</text><line style="stroke:#181818;stroke-width:0.625;" x1="501.25" x2="648.75" y1="262.1903" y2="262.1903"/></g><!--MD5=[09b614a08d8cba4a07c9adeb5e0fee81]
+class E3--><g id="elem_E3"><rect fill="#F1F1F1" height="65.9403" id="E3" rx="12.5" ry="12.5" style="stroke:#181818;stroke-width:0.625;" width="227.5" x="8.75" y="347.5"/><text fill="#000000" font-family="Noto Sans CJK SC" font-size="15" font-style="italic" lengthAdjust="spacing" textLength="58.75" x="93.125" y="371.1501">«action»</text><text fill="#000000" font-family="Noto Sans CJK SC" font-size="15" lengthAdjust="spacing" textLength="212.5" x="12.5" y="392.8703">判定电加热使能条件: F_LF_001</text><line style="stroke:#181818;stroke-width:0.625;" x1="10" x2="235" y1="403.4403" y2="403.4403"/></g><!--MD5=[ebbe1d658d1005bcc118a6aa81145e00]
+class E4--><g id="elem_E4"><rect fill="#F1F1F1" height="65.9403" id="E4" rx="12.5" ry="12.5" style="stroke:#181818;stroke-width:0.625;" width="272.5" x="280" y="347.5"/><text fill="#000000" font-family="Noto Sans CJK SC" font-size="15" font-style="italic" lengthAdjust="spacing" textLength="58.75" x="386.875" y="371.1501">«action»</text><text fill="#000000" font-family="Noto Sans CJK SC" font-size="15" lengthAdjust="spacing" textLength="257.5" x="283.75" y="392.8703">判定整车故障下的加热许可: F_LF_002</text><line style="stroke:#181818;stroke-width:0.625;" x1="281.25" x2="551.25" y1="403.4403" y2="403.4403"/></g><!--MD5=[270fce915f116d4de14055a7c1d9a0f3]
+class E5--><g id="elem_E5"><rect fill="#F1F1F1" height="65.9403" id="E5" rx="12.5" ry="12.5" style="stroke:#181818;stroke-width:0.625;" width="272.5" x="596.25" y="347.5"/><text fill="#000000" font-family="Noto Sans CJK SC" font-size="15" font-style="italic" lengthAdjust="spacing" textLength="58.75" x="703.125" y="371.1501">«action»</text><text fill="#000000" font-family="Noto Sans CJK SC" font-size="15" lengthAdjust="spacing" textLength="257.5" x="600" y="392.8703">判定电量约束下的加热许可: F_LF_003</text><line style="stroke:#181818;stroke-width:0.625;" x1="597.5" x2="867.5" y1="403.4403" y2="403.4403"/></g><!--MD5=[60a26617385b1d2d0262a64233df1f8d]
+class E6--><g id="elem_E6"><rect fill="#F1F1F1" height="65.9403" id="E6" rx="12.5" ry="12.5" style="stroke:#181818;stroke-width:0.625;" width="120" x="997.5" y="206.25"/><text fill="#000000" font-family="Noto Sans CJK SC" font-size="15" font-style="italic" lengthAdjust="spacing" textLength="58.75" x="1028.125" y="229.9001">«action»</text><text fill="#000000" font-family="Noto Sans CJK SC" font-size="15" lengthAdjust="spacing" textLength="105" x="1001.25" y="251.6203">控制电加热通断</text><line style="stroke:#181818;stroke-width:0.625;" x1="998.75" x2="1116.25" y1="262.1903" y2="262.1903"/></g><!--MD5=[2156ba9850f5573cc1fc38a6a4b2f02b]
+class E7--><g id="elem_E7"><rect fill="#F1F1F1" height="65.9403" id="E7" rx="12.5" ry="12.5" style="stroke:#181818;stroke-width:0.625;" width="197.5" x="912.5" y="347.5"/><text fill="#000000" font-family="Noto Sans CJK SC" font-size="15" font-style="italic" lengthAdjust="spacing" textLength="58.75" x="981.875" y="371.1501">«action»</text><text fill="#000000" font-family="Noto Sans CJK SC" font-size="15" lengthAdjust="spacing" textLength="182.5" x="916.25" y="392.8703">控制电加热通断: F_LF_004</text><line style="stroke:#181818;stroke-width:0.625;" x1="913.75" x2="1108.75" y1="403.4403" y2="403.4403"/></g><!--MD5=[b9389687b975829384b498ac4b7476b2]
+class E8--><g id="elem_E8"><rect fill="#F1F1F1" height="65.9403" id="E8" rx="12.5" ry="12.5" style="stroke:#181818;stroke-width:0.625;" width="120" x="1342.5" y="206.25"/><text fill="#000000" font-family="Noto Sans CJK SC" font-size="15" font-style="italic" lengthAdjust="spacing" textLength="58.75" x="1373.125" y="229.9001">«action»</text><text fill="#000000" font-family="Noto Sans CJK SC" font-size="15" lengthAdjust="spacing" textLength="105" x="1346.25" y="251.6203">保护电加热运行</text><line style="stroke:#181818;stroke-width:0.625;" x1="1343.75" x2="1461.25" y1="262.1903" y2="262.1903"/></g><!--MD5=[fd4143e9d270a159db93a4ea2a975926]
+class E9--><g id="elem_E9"><rect fill="#F1F1F1" height="65.9403" id="E9" rx="12.5" ry="12.5" style="stroke:#181818;stroke-width:0.625;" width="227.5" x="1153.75" y="347.5"/><text fill="#000000" font-family="Noto Sans CJK SC" font-size="15" font-style="italic" lengthAdjust="spacing" textLength="58.75" x="1238.125" y="371.1501">«action»</text><text fill="#000000" font-family="Noto Sans CJK SC" font-size="15" lengthAdjust="spacing" textLength="212.5" x="1157.5" y="392.8703">切断过温电加热请求: F_LF_005</text><line style="stroke:#181818;stroke-width:0.625;" x1="1155" x2="1380" y1="403.4403" y2="403.4403"/></g><!--MD5=[96f4274e9e20536e775497830990834d]
+class E10--><g id="elem_E10"><rect fill="#F1F1F1" height="65.9403" id="E10" rx="12.5" ry="12.5" style="stroke:#181818;stroke-width:0.625;" width="227.5" x="1425" y="347.5"/><text fill="#000000" font-family="Noto Sans CJK SC" font-size="15" font-style="italic" lengthAdjust="spacing" textLength="58.75" x="1509.375" y="371.1501">«action»</text><text fill="#000000" font-family="Noto Sans CJK SC" font-size="15" lengthAdjust="spacing" textLength="212.5" x="1428.75" y="392.8703">判定电加热恢复许可: F_LF_006</text><line style="stroke:#181818;stroke-width:0.625;" x1="1426.25" x2="1651.25" y1="403.4403" y2="403.4403"/></g><!--MD5=[1dd1bfd58a279cf63c5f349dbc8fc6a1]
+class E11--><g id="elem_E11"><rect fill="#F1F1F1" height="65.9403" id="E11" rx="12.5" ry="12.5" style="stroke:#181818;stroke-width:0.625;" width="197.5" x="1696.25" y="347.5"/><text fill="#000000" font-family="Noto Sans CJK SC" font-size="15" font-style="italic" lengthAdjust="spacing" textLength="58.75" x="1765.625" y="371.1501">«action»</text><text fill="#000000" font-family="Noto Sans CJK SC" font-size="15" lengthAdjust="spacing" textLength="182.5" x="1700" y="392.8703">获取电加热温度: F_LF_027</text><line style="stroke:#181818;stroke-width:0.625;" x1="1697.5" x2="1892.5" y1="403.4403" y2="403.4403"/></g><!--MD5=[49a0ec8f00dab7302a31f22d0f0fe584]
+class E12--><g id="elem_E12"><rect fill="#F1F1F1" height="65.9403" id="E12" rx="12.5" ry="12.5" style="stroke:#181818;stroke-width:0.625;" width="150" x="1801.25" y="206.25"/><text fill="#000000" font-family="Noto Sans CJK SC" font-size="15" font-style="italic" lengthAdjust="spacing" textLength="58.75" x="1846.875" y="229.9001">«action»</text><text fill="#000000" font-family="Noto Sans CJK SC" font-size="15" lengthAdjust="spacing" textLength="135" x="1805" y="251.6203">反馈电加热运行信息</text><line style="stroke:#181818;stroke-width:0.625;" x1="1802.5" x2="1950" y1="262.1903" y2="262.1903"/></g><!--MD5=[ee3c913d1a06f366521f9ef512b67efe]
+class E13--><g id="elem_E13"><rect fill="#F1F1F1" height="65.9403" id="E13" rx="12.5" ry="12.5" style="stroke:#181818;stroke-width:0.625;" width="197.5" x="1937.5" y="347.5"/><text fill="#000000" font-family="Noto Sans CJK SC" font-size="15" font-style="italic" lengthAdjust="spacing" textLength="58.75" x="2006.875" y="371.1501">«action»</text><text fill="#000000" font-family="Noto Sans CJK SC" font-size="15" lengthAdjust="spacing" textLength="182.5" x="1941.25" y="392.8703">反馈电加热状态: F_LF_007</text><line style="stroke:#181818;stroke-width:0.625;" x1="1938.75" x2="2133.75" y1="403.4403" y2="403.4403"/></g><!--MD5=[a523cb2a0b79ecf9065ad8783f96c320]
+reverse link E1 to E2--><g id="link_E1_E2"><path d="M966.4625,131.0375 C855.9,161.275 728.8,196.05 650.1875,217.55 " fill="none" id="E1-backto-E2" style="stroke:#181818;stroke-width:1.25;"/><polygon fill="#181818" points="982.3,126.7,973.747,123.8545,967.8308,130.6551,976.3838,133.5006,982.3,126.7" style="stroke:#181818;stroke-width:1.25;"/></g><!--MD5=[209b3feb70ccb6233bfe1053d122c12c]
+reverse link E2 to E3--><g id="link_E2_E3"><path d="M483.925,268.55 C409.5625,291.35 304.4375,323.5875 226.725,347.4125 " fill="none" id="E2-backto-E3" style="stroke:#181818;stroke-width:1.25;"/><polygon fill="#181818" points="499.775,263.6875,491.1381,261.108,485.4351,268.0884,494.072,270.6679,499.775,263.6875" style="stroke:#181818;stroke-width:1.25;"/></g><!--MD5=[9618e71518536f8baf3342ff6fdab317]
+reverse link E2 to E4--><g id="link_E2_E4"><path d="M525.9375,283.5125 C502.35,304.125 474.575,328.4 452.875,347.3625 " fill="none" id="E2-backto-E4" style="stroke:#181818;stroke-width:1.25;"/><polygon fill="#181818" points="538.175,272.8,529.2369,273.9667,526.8762,282.6659,535.8142,281.4992,538.175,272.8" style="stroke:#181818;stroke-width:1.25;"/></g><!--MD5=[4e1a83fab71cdb913c109063314ae896]
+reverse link E2 to E5--><g id="link_E2_E5"><path d="M624,283.8 C647.325,304.35 674.7375,328.4875 696.1625,347.3625 " fill="none" id="E2-backto-E5" style="stroke:#181818;stroke-width:1.25;"/><polygon fill="#181818" points="611.525,272.8,613.8453,281.5101,622.7779,282.7183,620.4575,274.0082,611.525,272.8" style="stroke:#181818;stroke-width:1.25;"/></g><!--MD5=[aca2ef284c2b1b90e17e73bf3f292c07]
+reverse link E1 to E6--><g id="link_E1_E6"><path d="M1128.875,144.7125 C1112.45,166.2125 1095.3375,188.6 1081.9875,206.075 " fill="none" id="E1-backto-E6" style="stroke:#181818;stroke-width:1.25;"/><polygon fill="#181818" points="1138.975,131.5,1130.447,134.4196,1129.862,143.4144,1138.39,140.4949,1138.975,131.5" style="stroke:#181818;stroke-width:1.25;"/></g><!--MD5=[3f50a3473f1dfb74d3f76443e03635af]
+reverse link E6 to E7--><g id="link_E6_E7"><path d="M1041.575,288.4125 C1035.075,307.8875 1027.75,329.8875 1021.925,347.3625 " fill="none" id="E6-backto-E7" style="stroke:#181818;stroke-width:1.25;"/><polygon fill="#181818" points="1046.775,272.8,1039.658,278.3315,1042.0266,287.0286,1049.1437,281.4971,1046.775,272.8" style="stroke:#181818;stroke-width:1.25;"/></g><!--MD5=[661cb7e25c535686a73d30316f0ecb18]
+reverse link E1 to E8--><g id="link_E1_E8"><path d="M1276.7875,141.675 C1306,164.0875 1336.875,187.775 1360.725,206.075 " fill="none" id="E1-backto-E8" style="stroke:#181818;stroke-width:1.25;"/><polygon fill="#181818" points="1263.525,131.5,1266.4314,140.0325,1275.4254,140.6313,1272.519,132.0989,1263.525,131.5" style="stroke:#181818;stroke-width:1.25;"/></g><!--MD5=[22f5b4bae7e060dce8a1c8021efdb95b]
+reverse link E8 to E9--><g id="link_E8_E9"><path d="M1359.3875,284.9375 C1339.6375,305.2375 1316.675,328.8375 1298.6375,347.3625 " fill="none" id="E8-backto-E9" style="stroke:#181818;stroke-width:1.25;"/><polygon fill="#181818" points="1371.1875,272.8,1362.3742,274.6911,1360.7301,283.5538,1369.5434,281.6627,1371.1875,272.8" style="stroke:#181818;stroke-width:1.25;"/></g><!--MD5=[82b7655495be5c02ec58611e6ac45fcc]
+reverse link E8 to E10--><g id="link_E8_E10"><path d="M1446.0125,284.9375 C1465.95,305.2375 1489.125,328.8375 1507.325,347.3625 " fill="none" id="E8-backto-E10" style="stroke:#181818;stroke-width:1.25;"/><polygon fill="#181818" points="1434.1,272.8,1435.7853,281.6549,1444.6073,283.505,1442.922,274.65,1434.1,272.8" style="stroke:#181818;stroke-width:1.25;"/></g><!--MD5=[b208543202a0cdca1f032c532d95d528]
+reverse link E8 to E11--><g id="link_E8_E11"><path d="M1477.925,267.2875 C1542.6375,290.1625 1636.0375,323.1875 1704.7125,347.4625 " fill="none" id="E8-backto-E11" style="stroke:#181818;stroke-width:1.25;"/><polygon fill="#181818" points="1462.5375,261.85,1467.9445,269.0621,1476.6814,266.8449,1471.2744,259.6328,1462.5375,261.85" style="stroke:#181818;stroke-width:1.25;"/></g><!--MD5=[1ce714eca3dce10fc00333d7dcca796c]
+reverse link E1 to E12--><g id="link_E1_E12"><path d="M1403.75,124.0625 C1539.8625,156.9125 1706.475,197.1375 1801.0875,219.975 " fill="none" id="E1-backto-E12" style="stroke:#181818;stroke-width:1.25;"/><polygon fill="#181818" points="1387.725,120.1875,1393.8397,126.8102,1402.3048,123.713,1396.1901,117.0903,1387.725,120.1875" style="stroke:#181818;stroke-width:1.25;"/></g><!--MD5=[062ed86c389d1a88f61c6380d0491e17]
+reverse link E12 to E13--><g id="link_E12_E13"><path d="M1925.7,283.5125 C1949.475,304.125 1977.475,328.4 1999.3375,347.3625 " fill="none" id="E12-backto-E13" style="stroke:#181818;stroke-width:1.25;"/><polygon fill="#181818" points="1913.3625,272.8,1915.7574,281.4899,1924.7,282.6214,1922.3051,273.9316,1913.3625,272.8" style="stroke:#181818;stroke-width:1.25;"/></g><!--MD5=[82d95f7449b80c99a37c06bb8ba5f916]
+@startuml
+skinparam defaultFontName Noto Sans CJK SC
+skinparam defaultFontSize 12
+skinparam dpi 120
+scale max 2400*12000
+
+skin sysmlbw
+skinparam monochrome true
+skinparam wrapWidth 300
+hide circle
+
+comp def "乘员舱制热控制" as E1  <<(T,blue) action  def>>  {
+##//doc//##
+仅表达功能分解；行为顺序、条件、并行与反馈见行为模型中的同名根模型。
+}
+comp usage "检查电加热使能条件  " as E2  <<(T,blue) action>>  {
+}
+comp usage "判定电加热使能条件: F_LF_001  " as E3  <<(T,blue) action>>  {
+}
+comp usage "判定整车故障下的加热许可: F_LF_002  " as E4  <<(T,blue) action>>  {
+}
+comp usage "判定电量约束下的加热许可: F_LF_003  " as E5  <<(T,blue) action>>  {
+}
+comp usage "控制电加热通断  " as E6  <<(T,blue) action>>  {
+}
+comp usage "控制电加热通断: F_LF_004  " as E7  <<(T,blue) action>>  {
+}
+comp usage "保护电加热运行  " as E8  <<(T,blue) action>>  {
+}
+comp usage "切断过温电加热请求: F_LF_005  " as E9  <<(T,blue) action>>  {
+}
+comp usage "判定电加热恢复许可: F_LF_006  " as E10  <<(T,blue) action>>  {
+}
+comp usage "获取电加热温度: F_LF_027  " as E11  <<(T,blue) action>>  {
+}
+comp usage "反馈电加热运行信息  " as E12  <<(T,blue) action>>  {
+}
+comp usage "反馈电加热状态: F_LF_007  " as E13  <<(T,blue) action>>  {
+}
+E1 *- - E2  
+E2 *- - E3  
+E2 *- - E4  
+E2 *- - E5  
+E1 *- - E6  
+E6 *- - E7  
+E1 *- - E8  
+E8 *- - E9  
+E8 *- - E10  
+E8 *- - E11  
+E1 *- - E12  
+E12 *- - E13  
+@enduml
+
+PlantUML version 1.2022.7(Tue Aug 23 01:01:30 CST 2022)
+(EPL source distribution)
+Java Runtime: OpenJDK Runtime Environment
+JVM: OpenJDK 64-Bit Server VM
+Default Encoding: UTF-8
+Language: en
+Country: null
+--></g></svg>

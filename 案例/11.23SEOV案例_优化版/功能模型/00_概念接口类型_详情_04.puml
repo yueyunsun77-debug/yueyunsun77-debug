@@ -1,0 +1,47 @@
+@startuml
+skinparam defaultFontName Noto Sans CJK SC
+skinparam defaultFontSize 12
+skinparam dpi 120
+scale max 2400*12000
+
+skin sysmlbw
+skinparam monochrome true
+skinparam wrapWidth 300
+hide circle
+
+comp def "C025" as E1  <<(T,blue) item  def>>  {
+##//doc//##
+制冷能力请求；角色：请求<U+002F>命令；单位：来源未提供或不适用。
+}
+comp def "C026" as E2  <<(T,blue) item  def>>  {
+##//doc//##
+制冷许可；角色：分析数据；单位：来源未提供或不适用。
+}
+comp def "C027" as E3  <<(T,blue) item  def>>  {
+##//doc//##
+制冷请求、空气输送需求；角色：请求<U+002F>命令；单位：来源未提供或不适用。
+}
+comp def "C028" as E4  <<(T,blue) item  def>>  {
+##//doc//##
+制冷运行许可；角色：分析数据；单位：来源未提供或不适用。
+--
+##//attributes//##
+value: Boolean
+}
+comp def "C029" as E5  <<(T,blue) item  def>>  {
+##//doc//##
+制冷量调节请求；角色：请求<U+002F>命令；单位：来源未提供或不适用。
+}
+comp def "C030" as E6  <<(T,blue) item  def>>  {
+##//doc//##
+制动请求、回收可用性；角色：请求<U+002F>命令；单位：来源未提供或不适用。
+}
+comp def "C031" as E7  <<(T,blue) item  def>>  {
+##//doc//##
+制热请求；角色：请求<U+002F>命令；单位：来源未提供或不适用。
+}
+comp def "C032" as E8  <<(T,blue) item  def>>  {
+##//doc//##
+前除霜状态；角色：反馈<U+002F>实际状态；单位：来源未提供或不适用。
+}
+@enduml
