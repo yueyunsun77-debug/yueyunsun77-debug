@@ -1,0 +1,48 @@
+@startuml
+skinparam defaultFontName Noto Sans CJK SC
+skinparam defaultFontSize 15
+skinparam dpi 135
+skinparam backgroundColor white
+skinparam shadowing false
+skinparam ArrowColor #777777
+skinparam ArrowThickness 1
+skinparam activityBackgroundColor white
+skinparam activityBorderColor #858585
+skinparam activityFontColor #222222
+skinparam activityDiamondBackgroundColor white
+skinparam activityDiamondBorderColor #858585
+skinparam activityDiamondFontSize 13
+skinparam activityStartColor #666666
+skinparam activityEndColor #777777
+skinparam conditionStyle InsideDiamond
+!pragma useVerticalIf on
+skinparam defaultTextAlignment center
+skinparam roundcorner 14
+skinparam NoteBackgroundColor #FAFAFA
+skinparam NoteBorderColor #AAAAAA
+title 3.3.1.2 空调制热 · 需求活动图（关键判断）
+start
+:<color:#8070AC>▣</color> <size:11>«action»</size>\n接收制热请求并读取目标温度;
+:<color:#8070AC>▣</color> <size:11>«action»</size>\n检查电加热使能条件;
+:<color:#8070AC>▣</color> <size:11>«action»</size>\n采集电加热温度与保护状态;
+if (全部使能条件满足？) then (否)
+  :<color:#8070AC>▣</color> <size:11>«action»</size>\n关闭或保持关闭电加热;
+elseif (电加热温度 ≥ 过温上限？) then (是)
+  :<color:#8070AC>▣</color> <size:11>«action»</size>\n断开电加热并进入过温保护;
+elseif (当前未处于过温保护？) then (是)
+  :<color:#8070AC>▣</color> <size:11>«action»</size>\n允许正常加热;
+elseif (电加热温度 ≤ 恢复阈值？) then (是)
+  :<color:#8070AC>▣</color> <size:11>«action»</size>\n解除过温保护并允许重新闭合;
+else (否)
+  :<color:#8070AC>▣</color> <size:11>«action»</size>\n保持过温保护，禁止加热;
+endif
+:<color:#8070AC>▣</color> <size:11>«action»</size>\n反馈电加热状态与功率信息;
+stop
+legend bottom
+依据原始SysML动作说明展开关键判断，属于细化视图；原始代码未改动。
+使能条件（全部满足）：送风开启、目标温度>室内温度、车辆高压、整车无故障、SOC>10%。
+第一个判断：否→右侧关闭动作，是↓；其余判断：是→右侧动作，否↓。
+各分支合并后反馈；过温上限与恢复阈值仍为XXX℃待标定。
+展示单次控制评估；代码说明的50 ms温度检测与持续控制不因终点而停止。
+endlegend
+@enduml
