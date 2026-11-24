@@ -1,0 +1,52 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1100" height="1170" viewBox="0 0 1100 1170"><rect width="100%" height="100%" fill="#F5F8FC"/>
+<text x="550" y="38" text-anchor="middle" dominant-baseline="central" font-family="Noto Sans CJK SC,sans-serif" font-size="26" fill="#203F56">ACT_3316 自动空调模式 · 主要流程</text>
+<circle cx="440" cy="90" r="9" fill="#203F56" stroke="#203F56"/>
+<rect x="290.0" y="133" width="300" height="54" rx="7" fill="#E3EFF9" stroke="#65839D" stroke-width="1.2"/>
+<text x="440" y="160" text-anchor="middle" dominant-baseline="central" font-family="Noto Sans CJK SC,sans-serif" font-size="18" fill="#203F56">接收AUTO模式请求</text>
+<polyline points="440,100 440,133" fill="none" stroke="#65839D" stroke-width="1.2"/>
+<polygon points="440,133 436.4952349192221,124.71045105397403 443.5047650807779,124.71045105397403" fill="#65839D" stroke="#65839D" stroke-width="1.2"/>
+<rect x="275.0" y="228" width="330" height="54" rx="7" fill="#E3EFF9" stroke="#65839D" stroke-width="1.2"/>
+<text x="440" y="255" text-anchor="middle" dominant-baseline="central" font-family="Noto Sans CJK SC,sans-serif" font-size="18" fill="#203F56">处理请求并反馈AUTO状态</text>
+<polyline points="440,187 440,228" fill="none" stroke="#65839D" stroke-width="1.2"/>
+<polygon points="440,228 436.4952349192221,219.71045105397403 443.5047650807779,219.71045105397403" fill="#65839D" stroke="#65839D" stroke-width="1.2"/>
+<polygon points="440,325 560.0,350 440,375 320.0,350" fill="#FFF0C9" stroke="#65839D" stroke-width="1.2"/>
+<text x="440" y="350" text-anchor="middle" dominant-baseline="central" font-family="Noto Sans CJK SC,sans-serif" font-size="16" fill="#203F56">AUTO是否激活？</text>
+<polyline points="440,282 440,325" fill="none" stroke="#65839D" stroke-width="1.2"/>
+<polygon points="440,325 436.4952349192221,316.71045105397405 443.5047650807779,316.71045105397405" fill="#65839D" stroke="#65839D" stroke-width="1.2"/>
+<rect x="265.0" y="428" width="350" height="54" rx="7" fill="#E3EFF9" stroke="#65839D" stroke-width="1.2"/>
+<text x="440" y="455" text-anchor="middle" dominant-baseline="central" font-family="Noto Sans CJK SC,sans-serif" font-size="18" fill="#203F56">采集环境信号并执行自动调节</text>
+<polyline points="440,375 440,428" fill="none" stroke="#65839D" stroke-width="1.2"/>
+<polygon points="440,428 436.4952349192221,419.71045105397405 443.5047650807779,419.71045105397405" fill="#65839D" stroke="#65839D" stroke-width="1.2"/>
+<text x="463" y="401.5" text-anchor="middle" dominant-baseline="central" font-family="Noto Sans CJK SC,sans-serif" font-size="16" fill="#203F56">是</text>
+<polygon points="440,535 565.0,560 440,585 315.0,560" fill="#FFF0C9" stroke="#65839D" stroke-width="1.2"/>
+<text x="440" y="560" text-anchor="middle" dominant-baseline="central" font-family="Noto Sans CJK SC,sans-serif" font-size="16" fill="#203F56">是否有用户操作？</text>
+<polyline points="440,482 440,535" fill="none" stroke="#65839D" stroke-width="1.2"/>
+<polygon points="440,535 436.4952349192221,526.710451053974 443.5047650807779,526.710451053974" fill="#65839D" stroke="#65839D" stroke-width="1.2"/>
+<rect x="645.0" y="633" width="330" height="54" rx="7" fill="#E3EFF9" stroke="#65839D" stroke-width="1.2"/>
+<text x="810" y="660" text-anchor="middle" dominant-baseline="central" font-family="Noto Sans CJK SC,sans-serif" font-size="18" fill="#203F56">按用户操作保持或切换模式</text>
+<polyline points="565,560 810,560 810,633" fill="none" stroke="#65839D" stroke-width="1.2"/>
+<polygon points="810,633 806.4952349192222,624.710451053974 813.5047650807778,624.710451053974" fill="#65839D" stroke="#65839D" stroke-width="1.2"/>
+<text x="695" y="540" text-anchor="middle" dominant-baseline="central" font-family="Noto Sans CJK SC,sans-serif" font-size="16" fill="#203F56">是</text>
+<polygon points="440,765 550.0,790 440,815 330.0,790" fill="#FFF0C9" stroke="#65839D" stroke-width="1.2"/>
+<text x="440" y="790" text-anchor="middle" dominant-baseline="central" font-family="Noto Sans CJK SC,sans-serif" font-size="16" fill="#203F56">处理路径合并</text>
+<polyline points="810,687 810,790 550,790" fill="none" stroke="#65839D" stroke-width="1.2"/>
+<polygon points="550,790 558.289548946026,786.4952349192222 558.289548946026,793.5047650807778" fill="#65839D" stroke="#65839D" stroke-width="1.2"/>
+<polyline points="440,585 440,765" fill="none" stroke="#65839D" stroke-width="1.2"/>
+<polygon points="440,765 436.4952349192221,756.710451053974 443.5047650807779,756.710451053974" fill="#65839D" stroke="#65839D" stroke-width="1.2"/>
+<text x="464" y="675" text-anchor="middle" dominant-baseline="central" font-family="Noto Sans CJK SC,sans-serif" font-size="16" fill="#203F56">否</text>
+<polyline points="320,350 80,350 80,790 330,790" fill="none" stroke="#65839D" stroke-width="1.2"/>
+<polygon points="330,790 321.71045105397405,793.5047650807778 321.71045105397405,786.4952349192222" fill="#65839D" stroke="#65839D" stroke-width="1.2"/>
+<text x="230" y="330" text-anchor="middle" dominant-baseline="central" font-family="Noto Sans CJK SC,sans-serif" font-size="16" fill="#203F56">否</text>
+<rect x="265.0" y="873" width="350" height="54" rx="7" fill="#E3EFF9" stroke="#65839D" stroke-width="1.2"/>
+<text x="440" y="900" text-anchor="middle" dominant-baseline="central" font-family="Noto Sans CJK SC,sans-serif" font-size="18" fill="#203F56">更新控制输出并持续反馈状态</text>
+<polyline points="440,815 440,873" fill="none" stroke="#65839D" stroke-width="1.2"/>
+<polygon points="440,873 436.4952349192221,864.710451053974 443.5047650807779,864.710451053974" fill="#65839D" stroke="#65839D" stroke-width="1.2"/>
+<circle cx="440" cy="980" r="13" fill="#F5F8FC" stroke="#203F56"/>
+<circle cx="440" cy="980" r="8" fill="#203F56" stroke="#203F56"/>
+<polyline points="440,927 440,967" fill="none" stroke="#65839D" stroke-width="1.2"/>
+<polygon points="440,967 436.4952349192221,958.710451053974 443.5047650807779,958.710451053974" fill="#65839D" stroke="#65839D" stroke-width="1.2"/>
+<text x="550" y="1030" text-anchor="middle" dominant-baseline="central" font-family="Noto Sans CJK SC,sans-serif" font-size="15" fill="#203F56">操作规则：温度／循环→保持AUTO；风量／吹风模式→退出AUTO；前除霜→切换模式。</text>
+<text x="550" y="1065" text-anchor="middle" dominant-baseline="central" font-family="Noto Sans CJK SC,sans-serif" font-size="15" fill="#203F56">AC→关闭制冷请求，AUTO反馈Close，其余自动项继续；重复AUTO操作策略待确认。</text>
+<text x="550" y="1100" text-anchor="middle" dominant-baseline="central" font-family="Noto Sans CJK SC,sans-serif" font-size="15" fill="#203F56">依据原始SysML动作说明归纳，原始代码未改动；同时操作的优先级未给出。</text>
+<text x="550" y="1135" text-anchor="middle" dominant-baseline="central" font-family="Noto Sans CJK SC,sans-serif" font-size="15" fill="#203F56">仅展示一次评估；持续调节由动作内部执行。</text>
+</svg>

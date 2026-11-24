@@ -1,0 +1,52 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1100" height="1160" viewBox="0 0 1100 1160"><rect width="100%" height="100%" fill="#F5F8FC"/>
+<text x="550" y="38" text-anchor="middle" dominant-baseline="central" font-family="Noto Sans CJK SC,sans-serif" font-size="25" fill="#203F56">ACT_3319 前后风窗除霜／除雾 · 主要流程</text>
+<circle cx="400" cy="90" r="9" fill="#203F56" stroke="#203F56"/>
+<rect x="230.0" y="133" width="340" height="54" rx="7" fill="#E3EFF9" stroke="#65839D" stroke-width="1.2"/>
+<text x="400" y="160" text-anchor="middle" dominant-baseline="central" font-family="Noto Sans CJK SC,sans-serif" font-size="18" fill="#203F56">接收风窗除霜或除雾请求</text>
+<polyline points="400,100 400,133" fill="none" stroke="#65839D" stroke-width="1.2"/>
+<polygon points="400,133 396.4952349192221,124.71045105397403 403.5047650807779,124.71045105397403" fill="#65839D" stroke="#65839D" stroke-width="1.2"/>
+<rect x="250.0" y="228" width="300" height="54" rx="7" fill="#E3EFF9" stroke="#65839D" stroke-width="1.2"/>
+<text x="400" y="255" text-anchor="middle" dominant-baseline="central" font-family="Noto Sans CJK SC,sans-serif" font-size="18" fill="#203F56">识别请求类型</text>
+<polyline points="400,187 400,228" fill="none" stroke="#65839D" stroke-width="1.2"/>
+<polygon points="400,228 396.4952349192221,219.71045105397403 403.5047650807779,219.71045105397403" fill="#65839D" stroke="#65839D" stroke-width="1.2"/>
+<polygon points="400,325 540.0,350 400,375 260.0,350" fill="#FFF0C9" stroke="#65839D" stroke-width="1.2"/>
+<text x="400" y="350" text-anchor="middle" dominant-baseline="central" font-family="Noto Sans CJK SC,sans-serif" font-size="16" fill="#203F56">有依据的前风窗请求？</text>
+<polyline points="400,282 400,325" fill="none" stroke="#65839D" stroke-width="1.2"/>
+<polygon points="400,325 396.4952349192221,316.71045105397405 403.5047650807779,316.71045105397405" fill="#65839D" stroke="#65839D" stroke-width="1.2"/>
+<rect x="225.0" y="428" width="350" height="54" rx="7" fill="#E3EFF9" stroke="#65839D" stroke-width="1.2"/>
+<text x="400" y="455" text-anchor="middle" dominant-baseline="central" font-family="Noto Sans CJK SC,sans-serif" font-size="18" fill="#203F56">配置风口、最大风量及外循环</text>
+<polyline points="400,375 400,428" fill="none" stroke="#65839D" stroke-width="1.2"/>
+<polygon points="400,428 396.4952349192221,419.71045105397405 403.5047650807779,419.71045105397405" fill="#65839D" stroke="#65839D" stroke-width="1.2"/>
+<text x="423" y="401.5" text-anchor="middle" dominant-baseline="central" font-family="Noto Sans CJK SC,sans-serif" font-size="16" fill="#203F56">是</text>
+<rect x="217.5" y="528" width="365" height="54" rx="7" fill="#E3EFF9" stroke="#65839D" stroke-width="1.2"/>
+<text x="400" y="555" text-anchor="middle" dominant-baseline="central" font-family="Noto Sans CJK SC,sans-serif" font-size="18" fill="#203F56">按环境温度确定AC与制冷请求</text>
+<polyline points="400,482 400,528" fill="none" stroke="#65839D" stroke-width="1.2"/>
+<polygon points="400,528 396.4952349192221,519.710451053974 403.5047650807779,519.710451053974" fill="#65839D" stroke="#65839D" stroke-width="1.2"/>
+<rect x="240.0" y="628" width="320" height="54" rx="7" fill="#E3EFF9" stroke="#65839D" stroke-width="1.2"/>
+<text x="400" y="655" text-anchor="middle" dominant-baseline="central" font-family="Noto Sans CJK SC,sans-serif" font-size="18" fill="#203F56">实施热量与空气调节</text>
+<polyline points="400,582 400,628" fill="none" stroke="#65839D" stroke-width="1.2"/>
+<polygon points="400,628 396.4952349192221,619.710451053974 403.5047650807779,619.710451053974" fill="#65839D" stroke="#65839D" stroke-width="1.2"/>
+<rect x="240.0" y="728" width="320" height="54" rx="7" fill="#E3EFF9" stroke="#65839D" stroke-width="1.2"/>
+<text x="400" y="755" text-anchor="middle" dominant-baseline="central" font-family="Noto Sans CJK SC,sans-serif" font-size="18" fill="#203F56">反馈模式与空调状态</text>
+<polyline points="400,682 400,728" fill="none" stroke="#65839D" stroke-width="1.2"/>
+<polygon points="400,728 396.4952349192221,719.710451053974 403.5047650807779,719.710451053974" fill="#65839D" stroke="#65839D" stroke-width="1.2"/>
+<rect x="690.0" y="428" width="320" height="54" rx="7" fill="#E3EFF9" stroke="#65839D" stroke-width="1.2"/>
+<text x="850" y="455" text-anchor="middle" dominant-baseline="central" font-family="Noto Sans CJK SC,sans-serif" font-size="18" fill="#203F56">后风窗等请求待补充依据</text>
+<polyline points="540,350 850,350 850,428" fill="none" stroke="#65839D" stroke-width="1.2"/>
+<polygon points="850,428 846.4952349192222,419.71045105397405 853.5047650807778,419.71045105397405" fill="#65839D" stroke="#65839D" stroke-width="1.2"/>
+<text x="705" y="330" text-anchor="middle" dominant-baseline="central" font-family="Noto Sans CJK SC,sans-serif" font-size="16" fill="#203F56">否</text>
+<polygon points="400,840 510.0,865 400,890 290.0,865" fill="#FFF0C9" stroke="#65839D" stroke-width="1.2"/>
+<text x="400" y="865" text-anchor="middle" dominant-baseline="central" font-family="Noto Sans CJK SC,sans-serif" font-size="16" fill="#203F56">处理路径合并</text>
+<polyline points="400,782 400,840" fill="none" stroke="#65839D" stroke-width="1.2"/>
+<polygon points="400,840 396.4952349192221,831.710451053974 403.5047650807779,831.710451053974" fill="#65839D" stroke="#65839D" stroke-width="1.2"/>
+<polyline points="850,482 850,865 510,865" fill="none" stroke="#65839D" stroke-width="1.2"/>
+<polygon points="510,865 518.289548946026,861.4952349192222 518.289548946026,868.5047650807778" fill="#65839D" stroke="#65839D" stroke-width="1.2"/>
+<circle cx="400" cy="960" r="13" fill="#F5F8FC" stroke="#203F56"/>
+<circle cx="400" cy="960" r="8" fill="#203F56" stroke="#203F56"/>
+<polyline points="400,890 400,947" fill="none" stroke="#65839D" stroke-width="1.2"/>
+<polygon points="400,947 396.4952349192221,938.710451053974 403.5047650807779,938.710451053974" fill="#65839D" stroke="#65839D" stroke-width="1.2"/>
+<text x="550" y="1015" text-anchor="middle" dominant-baseline="central" font-family="Noto Sans CJK SC,sans-serif" font-size="16" fill="#203F56">前除霜／前除雾共用控制流程，风口按请求切换至对应位置。</text>
+<text x="550" y="1050" text-anchor="middle" dominant-baseline="central" font-family="Noto Sans CJK SC,sans-serif" font-size="16" fill="#203F56">后风窗请求独立待确认，不进入前风窗控制流程。</text>
+<text x="550" y="1085" text-anchor="middle" dominant-baseline="central" font-family="Noto Sans CJK SC,sans-serif" font-size="16" fill="#203F56">环境温度判据、外循环开度及除湿转速仍需确认或标定。</text>
+<text x="550" y="1120" text-anchor="middle" dominant-baseline="central" font-family="Noto Sans CJK SC,sans-serif" font-size="16" fill="#203F56">依据原始SysML动作说明归纳；原始代码未改动。</text>
+</svg>
