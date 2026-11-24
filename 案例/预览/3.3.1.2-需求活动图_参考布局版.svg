@@ -1,0 +1,84 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1000" height="1550" viewBox="0 0 1000 1550"><rect width="100%" height="100%" fill="#F5F8FC"/>
+<text x="500" y="36" text-anchor="middle" dominant-baseline="central" font-family="Noto Sans CJK SC,sans-serif" font-size="27" fill="#203F56">ACT_3312 空调制热 · 需求活动图</text>
+<circle cx="500" cy="88" r="9" fill="#203F56" stroke="#203F56"/>
+<rect x="335.0" y="128" width="330" height="54" rx="7" fill="#E3EFF9" stroke="#65839D" stroke-width="1.2"/>
+<text x="500" y="155" text-anchor="middle" dominant-baseline="central" font-family="Noto Sans CJK SC,sans-serif" font-size="18" fill="#203F56">接收制热请求并读取目标温度</text>
+<rect x="357.5" y="223" width="285" height="54" rx="7" fill="#E3EFF9" stroke="#65839D" stroke-width="1.2"/>
+<text x="500" y="250" text-anchor="middle" dominant-baseline="central" font-family="Noto Sans CJK SC,sans-serif" font-size="18" fill="#203F56">检查电加热使能条件</text>
+<polygon points="500,325 617.5,350 500,375 382.5,350" fill="#FFF0C9" stroke="#65839D" stroke-width="1.2"/>
+<text x="500" y="350" text-anchor="middle" dominant-baseline="central" font-family="Noto Sans CJK SC,sans-serif" font-size="16" fill="#203F56">全部使能条件满足？</text>
+<rect x="52.5" y="323" width="265" height="54" rx="7" fill="#E3EFF9" stroke="#65839D" stroke-width="1.2"/>
+<text x="185" y="350" text-anchor="middle" dominant-baseline="central" font-family="Noto Sans CJK SC,sans-serif" font-size="18" fill="#203F56">关闭或保持关闭电加热</text>
+<rect x="340.0" y="438" width="320" height="54" rx="7" fill="#E3EFF9" stroke="#65839D" stroke-width="1.2"/>
+<text x="500" y="465" text-anchor="middle" dominant-baseline="central" font-family="Noto Sans CJK SC,sans-serif" font-size="18" fill="#203F56">采集电加热温度与保护状态</text>
+<polygon points="500,550 617.5,575 500,600 382.5,575" fill="#FFF0C9" stroke="#65839D" stroke-width="1.2"/>
+<text x="500" y="575" text-anchor="middle" dominant-baseline="central" font-family="Noto Sans CJK SC,sans-serif" font-size="16" fill="#203F56">温度 ≥ 过温上限？</text>
+<rect x="670.0" y="548" width="280" height="54" rx="7" fill="#E3EFF9" stroke="#65839D" stroke-width="1.2"/>
+<text x="810" y="575" text-anchor="middle" dominant-baseline="central" font-family="Noto Sans CJK SC,sans-serif" font-size="18" fill="#203F56">断开加热并进入过温保护</text>
+<polygon points="500,710 617.5,735 500,760 382.5,735" fill="#FFF0C9" stroke="#65839D" stroke-width="1.2"/>
+<text x="500" y="735" text-anchor="middle" dominant-baseline="central" font-family="Noto Sans CJK SC,sans-serif" font-size="16" fill="#203F56">当前处于过温保护？</text>
+<rect x="70.0" y="708" width="230" height="54" rx="7" fill="#E3EFF9" stroke="#65839D" stroke-width="1.2"/>
+<text x="185" y="735" text-anchor="middle" dominant-baseline="central" font-family="Noto Sans CJK SC,sans-serif" font-size="18" fill="#203F56">允许正常加热</text>
+<polygon points="500,870 617.5,895 500,920 382.5,895" fill="#FFF0C9" stroke="#65839D" stroke-width="1.2"/>
+<text x="500" y="895" text-anchor="middle" dominant-baseline="central" font-family="Noto Sans CJK SC,sans-serif" font-size="16" fill="#203F56">温度 ≤ 恢复阈值？</text>
+<rect x="670.0" y="868" width="280" height="54" rx="7" fill="#E3EFF9" stroke="#65839D" stroke-width="1.2"/>
+<text x="810" y="895" text-anchor="middle" dominant-baseline="central" font-family="Noto Sans CJK SC,sans-serif" font-size="18" fill="#203F56">保持过温保护，禁止加热</text>
+<rect x="350.0" y="983" width="300" height="54" rx="7" fill="#E3EFF9" stroke="#65839D" stroke-width="1.2"/>
+<text x="500" y="1010" text-anchor="middle" dominant-baseline="central" font-family="Noto Sans CJK SC,sans-serif" font-size="18" fill="#203F56">解除保护并允许重新闭合</text>
+<polygon points="500,1115 600.0,1140 500,1165 400.0,1140" fill="#FFF0C9" stroke="#65839D" stroke-width="1.2"/>
+<text x="500" y="1140" text-anchor="middle" dominant-baseline="central" font-family="Noto Sans CJK SC,sans-serif" font-size="16" fill="#203F56">控制结果合并</text>
+<rect x="335.0" y="1218" width="330" height="54" rx="7" fill="#E3EFF9" stroke="#65839D" stroke-width="1.2"/>
+<text x="500" y="1245" text-anchor="middle" dominant-baseline="central" font-family="Noto Sans CJK SC,sans-serif" font-size="18" fill="#203F56">反馈电加热状态与功率信息</text>
+<circle cx="500" cy="1340" r="13" fill="#F5F8FC" stroke="#203F56"/>
+<circle cx="500" cy="1340" r="8" fill="#203F56" stroke="#203F56"/>
+<polyline points="500,99 500,128" fill="none" stroke="#65839D" stroke-width="1.2"/>
+<polygon points="500,128 496.4952349192221,119.71045105397403 503.5047650807779,119.71045105397403" fill="#65839D" stroke="#65839D" stroke-width="1.2"/>
+<polyline points="500,182 500,223" fill="none" stroke="#65839D" stroke-width="1.2"/>
+<polygon points="500,223 496.4952349192221,214.71045105397403 503.5047650807779,214.71045105397403" fill="#65839D" stroke="#65839D" stroke-width="1.2"/>
+<polyline points="500,277 500,325" fill="none" stroke="#65839D" stroke-width="1.2"/>
+<polygon points="500,325 496.4952349192221,316.71045105397405 503.5047650807779,316.71045105397405" fill="#65839D" stroke="#65839D" stroke-width="1.2"/>
+<polyline points="382.5,350 317.5,350" fill="none" stroke="#65839D" stroke-width="1.2"/>
+<polygon points="317.5,350 325.78954894602595,346.4952349192221 325.78954894602595,353.5047650807779" fill="#65839D" stroke="#65839D" stroke-width="1.2"/>
+<text x="350" y="330" text-anchor="middle" dominant-baseline="central" font-family="Noto Sans CJK SC,sans-serif" font-size="16" fill="#203F56">否</text>
+<polyline points="500,375 500,438" fill="none" stroke="#65839D" stroke-width="1.2"/>
+<polygon points="500,438 496.4952349192221,429.71045105397405 503.5047650807779,429.71045105397405" fill="#65839D" stroke="#65839D" stroke-width="1.2"/>
+<text x="520" y="402" text-anchor="middle" dominant-baseline="central" font-family="Noto Sans CJK SC,sans-serif" font-size="16" fill="#203F56">是</text>
+<polyline points="500,492 500,550" fill="none" stroke="#65839D" stroke-width="1.2"/>
+<polygon points="500,550 496.4952349192221,541.710451053974 503.5047650807779,541.710451053974" fill="#65839D" stroke="#65839D" stroke-width="1.2"/>
+<polyline points="617.5,575 670,575" fill="none" stroke="#65839D" stroke-width="1.2"/>
+<polygon points="670,575 661.710451053974,578.5047650807778 661.710451053974,571.4952349192222" fill="#65839D" stroke="#65839D" stroke-width="1.2"/>
+<text x="645" y="555" text-anchor="middle" dominant-baseline="central" font-family="Noto Sans CJK SC,sans-serif" font-size="16" fill="#203F56">是</text>
+<polyline points="500,600 500,710" fill="none" stroke="#65839D" stroke-width="1.2"/>
+<polygon points="500,710 496.4952349192221,701.710451053974 503.5047650807779,701.710451053974" fill="#65839D" stroke="#65839D" stroke-width="1.2"/>
+<text x="520" y="650" text-anchor="middle" dominant-baseline="central" font-family="Noto Sans CJK SC,sans-serif" font-size="16" fill="#203F56">否</text>
+<polyline points="382.5,735 300,735" fill="none" stroke="#65839D" stroke-width="1.2"/>
+<polygon points="300,735 308.28954894602595,731.4952349192222 308.28954894602595,738.5047650807778" fill="#65839D" stroke="#65839D" stroke-width="1.2"/>
+<text x="342" y="715" text-anchor="middle" dominant-baseline="central" font-family="Noto Sans CJK SC,sans-serif" font-size="16" fill="#203F56">否</text>
+<polyline points="500,760 500,870" fill="none" stroke="#65839D" stroke-width="1.2"/>
+<polygon points="500,870 496.4952349192221,861.710451053974 503.5047650807779,861.710451053974" fill="#65839D" stroke="#65839D" stroke-width="1.2"/>
+<text x="520" y="810" text-anchor="middle" dominant-baseline="central" font-family="Noto Sans CJK SC,sans-serif" font-size="16" fill="#203F56">是</text>
+<polyline points="617.5,895 670,895" fill="none" stroke="#65839D" stroke-width="1.2"/>
+<polygon points="670,895 661.710451053974,898.5047650807778 661.710451053974,891.4952349192222" fill="#65839D" stroke="#65839D" stroke-width="1.2"/>
+<text x="645" y="875" text-anchor="middle" dominant-baseline="central" font-family="Noto Sans CJK SC,sans-serif" font-size="16" fill="#203F56">否</text>
+<polyline points="500,920 500,983" fill="none" stroke="#65839D" stroke-width="1.2"/>
+<polygon points="500,983 496.4952349192221,974.710451053974 503.5047650807779,974.710451053974" fill="#65839D" stroke="#65839D" stroke-width="1.2"/>
+<text x="520" y="949" text-anchor="middle" dominant-baseline="central" font-family="Noto Sans CJK SC,sans-serif" font-size="16" fill="#203F56">是</text>
+<polyline points="185,377 185,415 30,415 30,1140 400,1140" fill="none" stroke="#65839D" stroke-width="1.2"/>
+<polygon points="400,1140 391.71045105397405,1143.5047650807778 391.71045105397405,1136.4952349192222" fill="#65839D" stroke="#65839D" stroke-width="1.2"/>
+<polyline points="185,762 185,1140" fill="none" stroke="#65839D" stroke-width="1.2"/>
+<polygon points="185,1140 181.49523491922216,1131.710451053974 188.50476508077784,1131.710451053974" fill="#65839D" stroke="#65839D" stroke-width="1.2"/>
+<polyline points="810,602 810,645 970,645 970,1140 600,1140" fill="none" stroke="#65839D" stroke-width="1.2"/>
+<polygon points="600,1140 608.289548946026,1136.4952349192222 608.289548946026,1143.5047650807778" fill="#65839D" stroke="#65839D" stroke-width="1.2"/>
+<polyline points="810,922 810,1140" fill="none" stroke="#65839D" stroke-width="1.2"/>
+<polygon points="810,1140 806.4952349192222,1131.710451053974 813.5047650807778,1131.710451053974" fill="#65839D" stroke="#65839D" stroke-width="1.2"/>
+<polyline points="500,1037 500,1115" fill="none" stroke="#65839D" stroke-width="1.2"/>
+<polygon points="500,1115 496.4952349192221,1106.710451053974 503.5047650807779,1106.710451053974" fill="#65839D" stroke="#65839D" stroke-width="1.2"/>
+<polyline points="500,1165 500,1218" fill="none" stroke="#65839D" stroke-width="1.2"/>
+<polygon points="500,1218 496.4952349192221,1209.710451053974 503.5047650807779,1209.710451053974" fill="#65839D" stroke="#65839D" stroke-width="1.2"/>
+<polyline points="500,1272 500,1327" fill="none" stroke="#65839D" stroke-width="1.2"/>
+<polygon points="500,1327 496.4952349192221,1318.710451053974 503.5047650807779,1318.710451053974" fill="#65839D" stroke="#65839D" stroke-width="1.2"/>
+<text x="500" y="1402" text-anchor="middle" dominant-baseline="central" font-family="Noto Sans CJK SC,sans-serif" font-size="16" fill="#203F56">依据原始SysML动作说明细化；原始代码未改动。</text>
+<text x="500" y="1435" text-anchor="middle" dominant-baseline="central" font-family="Noto Sans CJK SC,sans-serif" font-size="16" fill="#203F56">使能：送风开启、目标温度&gt;室内温度、车辆高压、无故障、SOC&gt;10%。</text>
+<text x="500" y="1468" text-anchor="middle" dominant-baseline="central" font-family="Noto Sans CJK SC,sans-serif" font-size="16" fill="#203F56">过温上限、恢复阈值为XXX℃待标定；恢复加热仍需满足全部使能条件。</text>
+<text x="500" y="1501" text-anchor="middle" dominant-baseline="central" font-family="Noto Sans CJK SC,sans-serif" font-size="16" fill="#203F56">展示一次评估；50 ms温度检测与持续控制由动作内部执行。</text>
+</svg>
