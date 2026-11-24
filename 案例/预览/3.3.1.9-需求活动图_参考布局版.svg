@@ -1,0 +1,70 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1400" height="1400" viewBox="0 0 1400 1400"><rect width="100%" height="100%" fill="#F5F8FC"/>
+<text x="650" y="40" text-anchor="middle" dominant-baseline="central" font-family="Noto Sans CJK SC,sans-serif" font-size="28" fill="#203F56">ACT_3319 前后风窗除霜／除雾 · 需求活动图</text>
+<circle cx="650" cy="90" r="9" fill="#203F56" stroke="#203F56"/>
+<rect x="485.0" y="133" width="330" height="54" rx="7" fill="#E3EFF9" stroke="#65839D" stroke-width="1.2"/>
+<text x="650" y="160" text-anchor="middle" dominant-baseline="central" font-family="Noto Sans CJK SC,sans-serif" font-size="18" fill="#203F56">接收风窗除霜或除雾请求</text>
+<polyline points="650,100 650,133" fill="none" stroke="#65839D" stroke-width="1.2"/>
+<polygon points="650,133 646.4952349192222,124.71045105397403 653.5047650807778,124.71045105397403" fill="#65839D" stroke="#65839D" stroke-width="1.2"/>
+<rect x="450.0" y="233" width="400" height="54" rx="7" fill="#E3EFF9" stroke="#65839D" stroke-width="1.2"/>
+<text x="650" y="260" text-anchor="middle" dominant-baseline="central" font-family="Noto Sans CJK SC,sans-serif" font-size="18" fill="#203F56">识别前除霜、前除雾或后风窗请求</text>
+<polyline points="650,187 650,233" fill="none" stroke="#65839D" stroke-width="1.2"/>
+<polygon points="650,233 646.4952349192222,224.71045105397403 653.5047650807778,224.71045105397403" fill="#65839D" stroke="#65839D" stroke-width="1.2"/>
+<polygon points="650,345 795.0,370 650,395 505.0,370" fill="#FFF0C9" stroke="#65839D" stroke-width="1.2"/>
+<text x="650" y="370" text-anchor="middle" dominant-baseline="central" font-family="Noto Sans CJK SC,sans-serif" font-size="16" fill="#203F56">请求类型与依据分类</text>
+<polyline points="650,287 650,345" fill="none" stroke="#65839D" stroke-width="1.2"/>
+<polygon points="650,345 646.4952349192222,336.71045105397405 653.5047650807778,336.71045105397405" fill="#65839D" stroke="#65839D" stroke-width="1.2"/>
+<polyline points="505,370 240,370 240,473" fill="none" stroke="#65839D" stroke-width="1.2"/>
+<polygon points="240,473 236.49523491922216,464.71045105397405 243.50476508077784,464.71045105397405" fill="#65839D" stroke="#65839D" stroke-width="1.2"/>
+<text x="355" y="350" text-anchor="middle" dominant-baseline="central" font-family="Noto Sans CJK SC,sans-serif" font-size="16" fill="#203F56">前除霜</text>
+<polyline points="650,395 650,435 760,435 760,473" fill="none" stroke="#65839D" stroke-width="1.2"/>
+<polygon points="760,473 756.4952349192222,464.71045105397405 763.5047650807778,464.71045105397405" fill="#65839D" stroke="#65839D" stroke-width="1.2"/>
+<text x="715" y="414" text-anchor="middle" dominant-baseline="central" font-family="Noto Sans CJK SC,sans-serif" font-size="16" fill="#203F56">前除雾</text>
+<polyline points="795,370 1170,370 1170,473" fill="none" stroke="#65839D" stroke-width="1.2"/>
+<polygon points="1170,473 1166.4952349192222,464.71045105397405 1173.5047650807778,464.71045105397405" fill="#65839D" stroke="#65839D" stroke-width="1.2"/>
+<text x="1040" y="350" text-anchor="middle" dominant-baseline="central" font-family="Noto Sans CJK SC,sans-serif" font-size="16" fill="#203F56">后风窗／依据不足</text>
+<rect x="90.0" y="473" width="300" height="54" rx="7" fill="#E3EFF9" stroke="#65839D" stroke-width="1.2"/>
+<text x="240" y="500" text-anchor="middle" dominant-baseline="central" font-family="Noto Sans CJK SC,sans-serif" font-size="18" fill="#203F56">风口切换至前除霜位置</text>
+<rect x="610.0" y="473" width="300" height="54" rx="7" fill="#E3EFF9" stroke="#65839D" stroke-width="1.2"/>
+<text x="760" y="500" text-anchor="middle" dominant-baseline="central" font-family="Noto Sans CJK SC,sans-serif" font-size="18" fill="#203F56">风口切换至前除雾位置</text>
+<rect x="1015.0" y="473" width="310" height="54" rx="7" fill="#E3EFF9" stroke="#65839D" stroke-width="1.2"/>
+<text x="1170" y="500" text-anchor="middle" dominant-baseline="central" font-family="Noto Sans CJK SC,sans-serif" font-size="18" fill="#203F56">记录设计依据缺口，待确认</text>
+<rect x="80.0" y="583" width="320" height="54" rx="7" fill="#E3EFF9" stroke="#65839D" stroke-width="1.2"/>
+<text x="240" y="610" text-anchor="middle" dominant-baseline="central" font-family="Noto Sans CJK SC,sans-serif" font-size="18" fill="#203F56">请求最大风量并切换外循环</text>
+<polyline points="240,527 240,583" fill="none" stroke="#65839D" stroke-width="1.2"/>
+<polygon points="240,583 236.49523491922216,574.710451053974 243.50476508077784,574.710451053974" fill="#65839D" stroke="#65839D" stroke-width="1.2"/>
+<rect x="600.0" y="583" width="320" height="54" rx="7" fill="#E3EFF9" stroke="#65839D" stroke-width="1.2"/>
+<text x="760" y="610" text-anchor="middle" dominant-baseline="central" font-family="Noto Sans CJK SC,sans-serif" font-size="18" fill="#203F56">请求最大风量并切换外循环</text>
+<polyline points="760,527 760,583" fill="none" stroke="#65839D" stroke-width="1.2"/>
+<polygon points="760,583 756.4952349192222,574.710451053974 763.5047650807778,574.710451053974" fill="#65839D" stroke="#65839D" stroke-width="1.2"/>
+<polyline points="240,637 240,700 500,700 500,725" fill="none" stroke="#65839D" stroke-width="1.2"/>
+<polygon points="500,725 496.4952349192221,716.710451053974 503.5047650807779,716.710451053974" fill="#65839D" stroke="#65839D" stroke-width="1.2"/>
+<polyline points="760,637 760,700 500,700" fill="none" stroke="#65839D" stroke-width="1.2"/>
+<polygon points="500,700 508.28954894602595,696.4952349192222 508.28954894602595,703.5047650807778" fill="#65839D" stroke="#65839D" stroke-width="1.2"/>
+<polygon points="500,725 625.0,750 500,775 375.0,750" fill="#FFF0C9" stroke="#65839D" stroke-width="1.2"/>
+<text x="500" y="750" text-anchor="middle" dominant-baseline="central" font-family="Noto Sans CJK SC,sans-serif" font-size="16" fill="#203F56">前风窗配置合并</text>
+<rect x="290.0" y="828" width="420" height="54" rx="7" fill="#E3EFF9" stroke="#65839D" stroke-width="1.2"/>
+<text x="500" y="855" text-anchor="middle" dominant-baseline="central" font-family="Noto Sans CJK SC,sans-serif" font-size="18" fill="#203F56">按环境温度确定AC与制冷能力请求</text>
+<polyline points="500,775 500,828" fill="none" stroke="#65839D" stroke-width="1.2"/>
+<polygon points="500,828 496.4952349192221,819.710451053974 503.5047650807779,819.710451053974" fill="#65839D" stroke="#65839D" stroke-width="1.2"/>
+<rect x="335.0" y="933" width="330" height="54" rx="7" fill="#E3EFF9" stroke="#65839D" stroke-width="1.2"/>
+<text x="500" y="960" text-anchor="middle" dominant-baseline="central" font-family="Noto Sans CJK SC,sans-serif" font-size="18" fill="#203F56">实施热量与空气调节</text>
+<polyline points="500,882 500,933" fill="none" stroke="#65839D" stroke-width="1.2"/>
+<polygon points="500,933 496.4952349192221,924.710451053974 503.5047650807779,924.710451053974" fill="#65839D" stroke="#65839D" stroke-width="1.2"/>
+<rect x="335.0" y="1038" width="330" height="54" rx="7" fill="#E3EFF9" stroke="#65839D" stroke-width="1.2"/>
+<text x="500" y="1065" text-anchor="middle" dominant-baseline="central" font-family="Noto Sans CJK SC,sans-serif" font-size="18" fill="#203F56">反馈模式与空调状态</text>
+<polyline points="500,987 500,1038" fill="none" stroke="#65839D" stroke-width="1.2"/>
+<polygon points="500,1038 496.4952349192221,1029.710451053974 503.5047650807779,1029.710451053974" fill="#65839D" stroke="#65839D" stroke-width="1.2"/>
+<polygon points="650,1135 770.0,1160 650,1185 530.0,1160" fill="#FFF0C9" stroke="#65839D" stroke-width="1.2"/>
+<text x="650" y="1160" text-anchor="middle" dominant-baseline="central" font-family="Noto Sans CJK SC,sans-serif" font-size="16" fill="#203F56">处理路径合并</text>
+<polyline points="500,1092 500,1160 530,1160" fill="none" stroke="#65839D" stroke-width="1.2"/>
+<polygon points="530,1160 521.710451053974,1163.5047650807778 521.710451053974,1156.4952349192222" fill="#65839D" stroke="#65839D" stroke-width="1.2"/>
+<polyline points="1170,527 1170,1160 770,1160" fill="none" stroke="#65839D" stroke-width="1.2"/>
+<polygon points="770,1160 778.289548946026,1156.4952349192222 778.289548946026,1163.5047650807778" fill="#65839D" stroke="#65839D" stroke-width="1.2"/>
+<circle cx="650" cy="1250" r="13" fill="#F5F8FC" stroke="#203F56"/>
+<circle cx="650" cy="1250" r="8" fill="#203F56" stroke="#203F56"/>
+<polyline points="650,1185 650,1237" fill="none" stroke="#65839D" stroke-width="1.2"/>
+<polygon points="650,1237 646.4952349192222,1228.710451053974 653.5047650807778,1228.710451053974" fill="#65839D" stroke="#65839D" stroke-width="1.2"/>
+<text x="700" y="1310" text-anchor="middle" dominant-baseline="central" font-family="Noto Sans CJK SC,sans-serif" font-size="16" fill="#203F56">依据原始SysML动作说明细化；原始代码未改动。后风窗请求不进入前风窗控制链。</text>
+<text x="700" y="1345" text-anchor="middle" dominant-baseline="central" font-family="Noto Sans CJK SC,sans-serif" font-size="16" fill="#203F56">环境温度判据、外循环约90%开度及除湿最低转速约1000 rpm仍需确认或标定。</text>
+<text x="700" y="1380" text-anchor="middle" dominant-baseline="central" font-family="Noto Sans CJK SC,sans-serif" font-size="16" fill="#203F56">前除霜优先级：高于电池降温、乘员舱制冷；完整仲裁阈值待确认。</text>
+</svg>
