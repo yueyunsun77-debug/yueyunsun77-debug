@@ -1,0 +1,2859 @@
+[
+  {
+    "candidate_id": "C01",
+    "name": "获取温度：电芯控制温度",
+    "applicable_scenarios": [
+      "1",
+      "2",
+      "3"
+    ],
+    "group": "共用功能",
+    "disposition": "采用为分析参照，非独立新增正式需求",
+    "mapped_case_functions": [
+      "S2-F05",
+      "S3-F06"
+    ],
+    "reason": "已有案例功能有明确引用映射，按原清单配置/场景边界使用",
+    "conditions": "见详细说明中的场景和配置限制",
+    "evidence_status": "仅直接核对用户清单，清单引用的外部原文未全部提供；本版筛选不替代专家确认"
+  },
+  {
+    "candidate_id": "C02",
+    "name": "判定冷却需求：电池主动冷却需求",
+    "applicable_scenarios": [
+      "1",
+      "2",
+      "3"
+    ],
+    "group": "共用功能",
+    "disposition": "采用为分析参照，非独立新增正式需求",
+    "mapped_case_functions": [
+      "LF-032",
+      "S2-F06",
+      "S3-F07"
+    ],
+    "reason": "已有案例功能有明确引用映射，按原清单配置/场景边界使用",
+    "conditions": "见详细说明中的场景和配置限制",
+    "evidence_status": "仅直接核对用户清单，清单引用的外部原文未全部提供；本版筛选不替代专家确认"
+  },
+  {
+    "candidate_id": "C03",
+    "name": "反馈耗电功率：热管理辅助用电功率",
+    "applicable_scenarios": [
+      "1",
+      "2",
+      "3"
+    ],
+    "group": "共用功能",
+    "disposition": "待配置与需求确认",
+    "mapped_case_functions": [],
+    "reason": "清单支持能力或机理，不足以认定目标案例必须采用该项",
+    "conditions": "见详细说明中的场景和配置限制",
+    "evidence_status": "仅直接核对用户清单，清单引用的外部原文未全部提供；本版筛选不替代专家确认"
+  },
+  {
+    "candidate_id": "C04",
+    "name": "估算发热量：受控对象的损耗热",
+    "applicable_scenarios": [
+      "1",
+      "2",
+      "3"
+    ],
+    "group": "共用功能",
+    "disposition": "待配置与需求确认",
+    "mapped_case_functions": [],
+    "reason": "清单支持能力或机理，不足以认定目标案例必须采用该项",
+    "conditions": "见详细说明中的场景和配置限制",
+    "evidence_status": "仅直接核对用户清单，清单引用的外部原文未全部提供；本版筛选不替代专家确认"
+  },
+  {
+    "candidate_id": "C05",
+    "name": "更新温度：热管理对象的热节点温度",
+    "applicable_scenarios": [
+      "1",
+      "2",
+      "3"
+    ],
+    "group": "共用功能",
+    "disposition": "待配置与需求确认",
+    "mapped_case_functions": [],
+    "reason": "清单支持能力或机理，不足以认定目标案例必须采用该项",
+    "conditions": "见详细说明中的场景和配置限制",
+    "evidence_status": "仅直接核对用户清单，清单引用的外部原文未全部提供；本版筛选不替代专家确认"
+  },
+  {
+    "candidate_id": "H01",
+    "name": "读取工况：动力系统运行工况",
+    "applicable_scenarios": [
+      "1"
+    ],
+    "group": "场景一专用",
+    "disposition": "本版暂缓纳入",
+    "mapped_case_functions": [],
+    "reason": "属于未指定热管理配置、其他动力类型、维修服务或额外仿真职责，保持候选",
+    "conditions": "见详细说明中的场景和配置限制",
+    "evidence_status": "仅直接核对用户清单，清单引用的外部原文未全部提供；本版筛选不替代专家确认"
+  },
+  {
+    "candidate_id": "H02",
+    "name": "获取温度：发动机热状态温度",
+    "applicable_scenarios": [
+      "1"
+    ],
+    "group": "场景一专用",
+    "disposition": "本版暂缓纳入",
+    "mapped_case_functions": [],
+    "reason": "属于未指定热管理配置、其他动力类型、维修服务或额外仿真职责，保持候选",
+    "conditions": "见详细说明中的场景和配置限制",
+    "evidence_status": "仅直接核对用户清单，清单引用的外部原文未全部提供；本版筛选不替代专家确认"
+  },
+  {
+    "candidate_id": "H03",
+    "name": "判定冷却需求：发动机冷却需求",
+    "applicable_scenarios": [
+      "1"
+    ],
+    "group": "场景一专用",
+    "disposition": "本版暂缓纳入",
+    "mapped_case_functions": [],
+    "reason": "属于未指定热管理配置、其他动力类型、维修服务或额外仿真职责，保持候选",
+    "conditions": "见详细说明中的场景和配置限制",
+    "evidence_status": "仅直接核对用户清单，清单引用的外部原文未全部提供；本版筛选不替代专家确认"
+  },
+  {
+    "candidate_id": "H04",
+    "name": "调节散热量：发动机向环境的散热量",
+    "applicable_scenarios": [
+      "1"
+    ],
+    "group": "场景一专用",
+    "disposition": "本版暂缓纳入",
+    "mapped_case_functions": [],
+    "reason": "属于未指定热管理配置、其他动力类型、维修服务或额外仿真职责，保持候选",
+    "conditions": "见详细说明中的场景和配置限制",
+    "evidence_status": "仅直接核对用户清单，清单引用的外部原文未全部提供；本版筛选不替代专家确认"
+  },
+  {
+    "candidate_id": "H05",
+    "name": "获取温度：牵引电机及发电电机温度",
+    "applicable_scenarios": [
+      "1"
+    ],
+    "group": "场景一专用",
+    "disposition": "本版暂缓纳入",
+    "mapped_case_functions": [],
+    "reason": "属于未指定热管理配置、其他动力类型、维修服务或额外仿真职责，保持候选",
+    "conditions": "见详细说明中的场景和配置限制",
+    "evidence_status": "仅直接核对用户清单，清单引用的外部原文未全部提供；本版筛选不替代专家确认"
+  },
+  {
+    "candidate_id": "H06",
+    "name": "获取温度：功率电子元件温度",
+    "applicable_scenarios": [
+      "1"
+    ],
+    "group": "场景一专用",
+    "disposition": "本版暂缓纳入",
+    "mapped_case_functions": [],
+    "reason": "属于未指定热管理配置、其他动力类型、维修服务或额外仿真职责，保持候选",
+    "conditions": "见详细说明中的场景和配置限制",
+    "evidence_status": "仅直接核对用户清单，清单引用的外部原文未全部提供；本版筛选不替代专家确认"
+  },
+  {
+    "candidate_id": "H07",
+    "name": "获取温度：电驱冷却回路进出口温度",
+    "applicable_scenarios": [
+      "1"
+    ],
+    "group": "场景一专用",
+    "disposition": "本版暂缓纳入",
+    "mapped_case_functions": [],
+    "reason": "属于未指定热管理配置、其他动力类型、维修服务或额外仿真职责，保持候选",
+    "conditions": "见详细说明中的场景和配置限制",
+    "evidence_status": "仅直接核对用户清单，清单引用的外部原文未全部提供；本版筛选不替代专家确认"
+  },
+  {
+    "candidate_id": "H08",
+    "name": "判定冷却需求：电驱与功率电子冷却需求",
+    "applicable_scenarios": [
+      "1"
+    ],
+    "group": "场景一专用",
+    "disposition": "本版暂缓纳入",
+    "mapped_case_functions": [],
+    "reason": "属于未指定热管理配置、其他动力类型、维修服务或额外仿真职责，保持候选",
+    "conditions": "见详细说明中的场景和配置限制",
+    "evidence_status": "仅直接核对用户清单，清单引用的外部原文未全部提供；本版筛选不替代专家确认"
+  },
+  {
+    "candidate_id": "H09",
+    "name": "确定流量：电驱回路目标冷却液流量",
+    "applicable_scenarios": [
+      "1"
+    ],
+    "group": "场景一专用",
+    "disposition": "本版暂缓纳入",
+    "mapped_case_functions": [],
+    "reason": "属于未指定热管理配置、其他动力类型、维修服务或额外仿真职责，保持候选",
+    "conditions": "见详细说明中的场景和配置限制",
+    "evidence_status": "仅直接核对用户清单，清单引用的外部原文未全部提供；本版筛选不替代专家确认"
+  },
+  {
+    "candidate_id": "H10",
+    "name": "调节流量：电驱回路实际冷却液流量",
+    "applicable_scenarios": [
+      "1"
+    ],
+    "group": "场景一专用",
+    "disposition": "本版暂缓纳入",
+    "mapped_case_functions": [],
+    "reason": "属于未指定热管理配置、其他动力类型、维修服务或额外仿真职责，保持候选",
+    "conditions": "见详细说明中的场景和配置限制",
+    "evidence_status": "仅直接核对用户清单，清单引用的外部原文未全部提供；本版筛选不替代专家确认"
+  },
+  {
+    "candidate_id": "H11",
+    "name": "转移热量：电驱与功率电子的损耗热",
+    "applicable_scenarios": [
+      "1"
+    ],
+    "group": "场景一专用",
+    "disposition": "本版暂缓纳入",
+    "mapped_case_functions": [],
+    "reason": "属于未指定热管理配置、其他动力类型、维修服务或额外仿真职责，保持候选",
+    "conditions": "见详细说明中的场景和配置限制",
+    "evidence_status": "仅直接核对用户清单，清单引用的外部原文未全部提供；本版筛选不替代专家确认"
+  },
+  {
+    "candidate_id": "H12",
+    "name": "调节散热量：电驱冷却回路向环境的散热量",
+    "applicable_scenarios": [
+      "1"
+    ],
+    "group": "场景一专用",
+    "disposition": "本版暂缓纳入",
+    "mapped_case_functions": [],
+    "reason": "属于未指定热管理配置、其他动力类型、维修服务或额外仿真职责，保持候选",
+    "conditions": "见详细说明中的场景和配置限制",
+    "evidence_status": "仅直接核对用户清单，清单引用的外部原文未全部提供；本版筛选不替代专家确认"
+  },
+  {
+    "candidate_id": "H13",
+    "name": "提出限功率：电池充放电功率的热限制",
+    "applicable_scenarios": [
+      "1"
+    ],
+    "group": "场景一专用",
+    "disposition": "本版暂缓纳入",
+    "mapped_case_functions": [],
+    "reason": "属于未指定热管理配置、其他动力类型、维修服务或额外仿真职责，保持候选",
+    "conditions": "见详细说明中的场景和配置限制",
+    "evidence_status": "仅直接核对用户清单，清单引用的外部原文未全部提供；本版筛选不替代专家确认"
+  },
+  {
+    "candidate_id": "H14",
+    "name": "提出限转矩：电机允许转矩的热限制",
+    "applicable_scenarios": [
+      "1"
+    ],
+    "group": "场景一专用",
+    "disposition": "本版暂缓纳入",
+    "mapped_case_functions": [],
+    "reason": "属于未指定热管理配置、其他动力类型、维修服务或额外仿真职责，保持候选",
+    "conditions": "见详细说明中的场景和配置限制",
+    "evidence_status": "仅直接核对用户清单，清单引用的外部原文未全部提供；本版筛选不替代专家确认"
+  },
+  {
+    "candidate_id": "H15",
+    "name": "延续冷却：停机后的电驱余热",
+    "applicable_scenarios": [
+      "1"
+    ],
+    "group": "场景一专用",
+    "disposition": "本版暂缓纳入",
+    "mapped_case_functions": [],
+    "reason": "属于未指定热管理配置、其他动力类型、维修服务或额外仿真职责，保持候选",
+    "conditions": "见详细说明中的场景和配置限制",
+    "evidence_status": "仅直接核对用户清单，清单引用的外部原文未全部提供；本版筛选不替代专家确认"
+  },
+  {
+    "candidate_id": "H16",
+    "name": "调节冷却能力：动力电池的散热能力",
+    "applicable_scenarios": [
+      "1"
+    ],
+    "group": "场景一专用",
+    "disposition": "本版暂缓纳入",
+    "mapped_case_functions": [],
+    "reason": "属于未指定热管理配置、其他动力类型、维修服务或额外仿真职责，保持候选",
+    "conditions": "见详细说明中的场景和配置限制",
+    "evidence_status": "仅直接核对用户清单，清单引用的外部原文未全部提供；本版筛选不替代专家确认"
+  },
+  {
+    "candidate_id": "K01",
+    "name": "接收制冷请求：座舱降温请求",
+    "applicable_scenarios": [
+      "2",
+      "3"
+    ],
+    "group": "座舱共用功能",
+    "disposition": "待配置与需求确认",
+    "mapped_case_functions": [],
+    "reason": "清单支持能力或机理，不足以认定目标案例必须采用该项",
+    "conditions": "见详细说明中的场景和配置限制",
+    "evidence_status": "仅直接核对用户清单，清单引用的外部原文未全部提供；本版筛选不替代专家确认"
+  },
+  {
+    "candidate_id": "K02",
+    "name": "获取温度：座舱目标温度",
+    "applicable_scenarios": [
+      "2",
+      "3"
+    ],
+    "group": "座舱共用功能",
+    "disposition": "采用为分析参照，非独立新增正式需求",
+    "mapped_case_functions": [
+      "S3-F01"
+    ],
+    "reason": "已有案例功能有明确引用映射，按原清单配置/场景边界使用",
+    "conditions": "见详细说明中的场景和配置限制",
+    "evidence_status": "仅直接核对用户清单，清单引用的外部原文未全部提供；本版筛选不替代专家确认"
+  },
+  {
+    "candidate_id": "K03",
+    "name": "获取温度：座舱实际温度",
+    "applicable_scenarios": [
+      "2",
+      "3"
+    ],
+    "group": "座舱共用功能",
+    "disposition": "采用为分析参照，非独立新增正式需求",
+    "mapped_case_functions": [
+      "LF-010",
+      "S3-F02"
+    ],
+    "reason": "已有案例功能有明确引用映射，按原清单配置/场景边界使用",
+    "conditions": "见详细说明中的场景和配置限制",
+    "evidence_status": "仅直接核对用户清单，清单引用的外部原文未全部提供；本版筛选不替代专家确认"
+  },
+  {
+    "candidate_id": "K04",
+    "name": "计算温差：座舱实际温度与目标温度的偏差",
+    "applicable_scenarios": [
+      "2",
+      "3"
+    ],
+    "group": "座舱共用功能",
+    "disposition": "采用为分析参照，非独立新增正式需求",
+    "mapped_case_functions": [
+      "LF-015",
+      "S3-F03"
+    ],
+    "reason": "已有案例功能有明确引用映射，按原清单配置/场景边界使用",
+    "conditions": "见详细说明中的场景和配置限制",
+    "evidence_status": "仅直接核对用户清单，清单引用的外部原文未全部提供；本版筛选不替代专家确认"
+  },
+  {
+    "candidate_id": "K05",
+    "name": "确定制冷量：座舱所需制冷量",
+    "applicable_scenarios": [
+      "2",
+      "3"
+    ],
+    "group": "座舱共用功能",
+    "disposition": "采用为分析参照，非独立新增正式需求",
+    "mapped_case_functions": [
+      "LF-015",
+      "S3-F03"
+    ],
+    "reason": "已有案例功能有明确引用映射，按原清单配置/场景边界使用",
+    "conditions": "见详细说明中的场景和配置限制",
+    "evidence_status": "仅直接核对用户清单，清单引用的外部原文未全部提供；本版筛选不替代专家确认"
+  },
+  {
+    "candidate_id": "K06",
+    "name": "判定制冷许可：空调制冷运行许可",
+    "applicable_scenarios": [
+      "2",
+      "3"
+    ],
+    "group": "座舱共用功能",
+    "disposition": "待配置与需求确认",
+    "mapped_case_functions": [],
+    "reason": "清单支持能力或机理，不足以认定目标案例必须采用该项",
+    "conditions": "见详细说明中的场景和配置限制",
+    "evidence_status": "仅直接核对用户清单，清单引用的外部原文未全部提供；本版筛选不替代专家确认"
+  },
+  {
+    "candidate_id": "K07",
+    "name": "调节转速：空调压缩机转速",
+    "applicable_scenarios": [
+      "2",
+      "3"
+    ],
+    "group": "座舱共用功能",
+    "disposition": "采用为分析参照，非独立新增正式需求",
+    "mapped_case_functions": [
+      "LF-020",
+      "S3-F04"
+    ],
+    "reason": "已有案例功能有明确引用映射，按原清单配置/场景边界使用",
+    "conditions": "见详细说明中的场景和配置限制",
+    "evidence_status": "仅直接核对用户清单，清单引用的外部原文未全部提供；本版筛选不替代专家确认"
+  },
+  {
+    "candidate_id": "K08",
+    "name": "冷却空气：送入座舱的空气",
+    "applicable_scenarios": [
+      "2",
+      "3"
+    ],
+    "group": "座舱共用功能",
+    "disposition": "采用为分析参照，非独立新增正式需求",
+    "mapped_case_functions": [
+      "S3-F05"
+    ],
+    "reason": "已有案例功能有明确引用映射，按原清单配置/场景边界使用",
+    "conditions": "见详细说明中的场景和配置限制",
+    "evidence_status": "仅直接核对用户清单，清单引用的外部原文未全部提供；本版筛选不替代专家确认"
+  },
+  {
+    "candidate_id": "K09",
+    "name": "调节风量：座舱送风量",
+    "applicable_scenarios": [
+      "2",
+      "3"
+    ],
+    "group": "座舱共用功能",
+    "disposition": "采用为分析参照，非独立新增正式需求",
+    "mapped_case_functions": [
+      "LF-018",
+      "S3-F05"
+    ],
+    "reason": "已有案例功能有明确引用映射，按原清单配置/场景边界使用",
+    "conditions": "见详细说明中的场景和配置限制",
+    "evidence_status": "仅直接核对用户清单，清单引用的外部原文未全部提供；本版筛选不替代专家确认"
+  },
+  {
+    "candidate_id": "K10",
+    "name": "反馈温控状态：座舱温控执行结果",
+    "applicable_scenarios": [
+      "2",
+      "3"
+    ],
+    "group": "座舱共用功能",
+    "disposition": "采用为分析参照，非独立新增正式需求",
+    "mapped_case_functions": [
+      "S3-F11"
+    ],
+    "reason": "已有案例功能有明确引用映射，按原清单配置/场景边界使用",
+    "conditions": "见详细说明中的场景和配置限制",
+    "evidence_status": "仅直接核对用户清单，清单引用的外部原文未全部提供；本版筛选不替代专家确认"
+  },
+  {
+    "candidate_id": "A01",
+    "name": "获取温度：前舱局部空气温度",
+    "applicable_scenarios": [
+      "2"
+    ],
+    "group": "场景二空气换热",
+    "disposition": "待配置与需求确认",
+    "mapped_case_functions": [],
+    "reason": "清单支持能力或机理，不足以认定目标案例必须采用该项",
+    "conditions": "见详细说明中的场景和配置限制",
+    "evidence_status": "仅直接核对用户清单，清单引用的外部原文未全部提供；本版筛选不替代专家确认"
+  },
+  {
+    "candidate_id": "A02",
+    "name": "确定换热边界：电池热节点与空气侧边界的映射",
+    "applicable_scenarios": [
+      "2"
+    ],
+    "group": "场景二空气换热",
+    "disposition": "待配置与需求确认",
+    "mapped_case_functions": [],
+    "reason": "清单支持能力或机理，不足以认定目标案例必须采用该项",
+    "conditions": "见详细说明中的场景和配置限制",
+    "evidence_status": "仅直接核对用户清单，清单引用的外部原文未全部提供；本版筛选不替代专家确认"
+  },
+  {
+    "candidate_id": "A03",
+    "name": "获取换热参数：环境换热的有效热导",
+    "applicable_scenarios": [
+      "2"
+    ],
+    "group": "场景二空气换热",
+    "disposition": "待配置与需求确认",
+    "mapped_case_functions": [],
+    "reason": "清单支持能力或机理，不足以认定目标案例必须采用该项",
+    "conditions": "见详细说明中的场景和配置限制",
+    "evidence_status": "仅直接核对用户清单，清单引用的外部原文未全部提供；本版筛选不替代专家确认"
+  },
+  {
+    "candidate_id": "A04",
+    "name": "计算热流：电池与前舱空气之间的换热热流",
+    "applicable_scenarios": [
+      "2"
+    ],
+    "group": "场景二空气换热",
+    "disposition": "采用为分析参照，非独立新增正式需求",
+    "mapped_case_functions": [
+      "S2-F07"
+    ],
+    "reason": "已有案例功能有明确引用映射，按原清单配置/场景边界使用",
+    "conditions": "见详细说明中的场景和配置限制",
+    "evidence_status": "仅直接核对用户清单，清单引用的外部原文未全部提供；本版筛选不替代专家确认"
+  },
+  {
+    "candidate_id": "A05",
+    "name": "请求供风：用于电池主动冷却的空调风",
+    "applicable_scenarios": [
+      "2"
+    ],
+    "group": "场景二空气换热",
+    "disposition": "待配置与需求确认",
+    "mapped_case_functions": [],
+    "reason": "清单支持能力或机理，不足以认定目标案例必须采用该项",
+    "conditions": "见详细说明中的场景和配置限制",
+    "evidence_status": "仅直接核对用户清单，清单引用的外部原文未全部提供；本版筛选不替代专家确认"
+  },
+  {
+    "candidate_id": "A06",
+    "name": "撤销供风：电池主动冷却供风请求",
+    "applicable_scenarios": [
+      "2"
+    ],
+    "group": "场景二空气换热",
+    "disposition": "待配置与需求确认",
+    "mapped_case_functions": [],
+    "reason": "清单支持能力或机理，不足以认定目标案例必须采用该项",
+    "conditions": "见详细说明中的场景和配置限制",
+    "evidence_status": "仅直接核对用户清单，清单引用的外部原文未全部提供；本版筛选不替代专家确认"
+  },
+  {
+    "candidate_id": "A07",
+    "name": "判定可用性：电池冷却供风能力",
+    "applicable_scenarios": [
+      "2"
+    ],
+    "group": "场景二空气换热",
+    "disposition": "采用为分析参照，非独立新增正式需求",
+    "mapped_case_functions": [
+      "S2-F09"
+    ],
+    "reason": "已有案例功能有明确引用映射，按原清单配置/场景边界使用",
+    "conditions": "见详细说明中的场景和配置限制",
+    "evidence_status": "仅直接核对用户清单，清单引用的外部原文未全部提供；本版筛选不替代专家确认"
+  },
+  {
+    "candidate_id": "A08",
+    "name": "获取供风条件：电池入口实际空气温度与流量",
+    "applicable_scenarios": [
+      "2"
+    ],
+    "group": "场景二空气换热",
+    "disposition": "待配置与需求确认",
+    "mapped_case_functions": [],
+    "reason": "清单支持能力或机理，不足以认定目标案例必须采用该项",
+    "conditions": "见详细说明中的场景和配置限制",
+    "evidence_status": "仅直接核对用户清单，清单引用的外部原文未全部提供；本版筛选不替代专家确认"
+  },
+  {
+    "candidate_id": "A09",
+    "name": "输送冷风：电池换热表面的空调风",
+    "applicable_scenarios": [
+      "2"
+    ],
+    "group": "场景二空气换热",
+    "disposition": "待配置与需求确认",
+    "mapped_case_functions": [],
+    "reason": "清单支持能力或机理，不足以认定目标案例必须采用该项",
+    "conditions": "见详细说明中的场景和配置限制",
+    "evidence_status": "仅直接核对用户清单，清单引用的外部原文未全部提供；本版筛选不替代专家确认"
+  },
+  {
+    "candidate_id": "A10",
+    "name": "获取换热参数：主动供风换热的有效热导",
+    "applicable_scenarios": [
+      "2"
+    ],
+    "group": "场景二空气换热",
+    "disposition": "待配置与需求确认",
+    "mapped_case_functions": [],
+    "reason": "清单支持能力或机理，不足以认定目标案例必须采用该项",
+    "conditions": "见详细说明中的场景和配置限制",
+    "evidence_status": "仅直接核对用户清单，清单引用的外部原文未全部提供；本版筛选不替代专家确认"
+  },
+  {
+    "candidate_id": "A11",
+    "name": "计算热流：电池与空调风之间的换热热流",
+    "applicable_scenarios": [
+      "2"
+    ],
+    "group": "场景二空气换热",
+    "disposition": "待配置与需求确认",
+    "mapped_case_functions": [],
+    "reason": "清单支持能力或机理，不足以认定目标案例必须采用该项",
+    "conditions": "见详细说明中的场景和配置限制",
+    "evidence_status": "仅直接核对用户清单，清单引用的外部原文未全部提供；本版筛选不替代专家确认"
+  },
+  {
+    "candidate_id": "A12",
+    "name": "反馈冷却状态：电池主动风冷执行结果",
+    "applicable_scenarios": [
+      "2"
+    ],
+    "group": "场景二空气换热",
+    "disposition": "采用为分析参照，非独立新增正式需求",
+    "mapped_case_functions": [
+      "S2-F09"
+    ],
+    "reason": "已有案例功能有明确引用映射，按原清单配置/场景边界使用",
+    "conditions": "见详细说明中的场景和配置限制",
+    "evidence_status": "仅直接核对用户清单，清单引用的外部原文未全部提供；本版筛选不替代专家确认"
+  },
+  {
+    "candidate_id": "A13",
+    "name": "汇总热流：电池各节点的净空气换热热流",
+    "applicable_scenarios": [
+      "2"
+    ],
+    "group": "场景二空气换热",
+    "disposition": "采用为分析参照，非独立新增正式需求",
+    "mapped_case_functions": [
+      "S2-F10"
+    ],
+    "reason": "已有案例功能有明确引用映射，按原清单配置/场景边界使用",
+    "conditions": "见详细说明中的场景和配置限制",
+    "evidence_status": "仅直接核对用户清单，清单引用的外部原文未全部提供；本版筛选不替代专家确认"
+  },
+  {
+    "candidate_id": "L01",
+    "name": "获取功率：电池充放电功率",
+    "applicable_scenarios": [
+      "3"
+    ],
+    "group": "场景三液冷",
+    "disposition": "采用为分析参照，非独立新增正式需求",
+    "mapped_case_functions": [
+      "S3-F06"
+    ],
+    "reason": "已有案例功能有明确引用映射，按原清单配置/场景边界使用",
+    "conditions": "见详细说明中的场景和配置限制",
+    "evidence_status": "仅直接核对用户清单，清单引用的外部原文未全部提供；本版筛选不替代专家确认"
+  },
+  {
+    "candidate_id": "L02",
+    "name": "确定温度：电池目标冷却液温度",
+    "applicable_scenarios": [
+      "3"
+    ],
+    "group": "场景三液冷",
+    "disposition": "采用为分析参照，非独立新增正式需求",
+    "mapped_case_functions": [
+      "S3-F08"
+    ],
+    "reason": "已有案例功能有明确引用映射，按原清单配置/场景边界使用",
+    "conditions": "见详细说明中的场景和配置限制",
+    "evidence_status": "仅直接核对用户清单，清单引用的外部原文未全部提供；本版筛选不替代专家确认"
+  },
+  {
+    "candidate_id": "L03",
+    "name": "获取温度：电池回路进出口冷却液温度",
+    "applicable_scenarios": [
+      "3"
+    ],
+    "group": "场景三液冷",
+    "disposition": "待配置与需求确认",
+    "mapped_case_functions": [],
+    "reason": "清单支持能力或机理，不足以认定目标案例必须采用该项",
+    "conditions": "见详细说明中的场景和配置限制",
+    "evidence_status": "仅直接核对用户清单，清单引用的外部原文未全部提供；本版筛选不替代专家确认"
+  },
+  {
+    "candidate_id": "L04",
+    "name": "确定流量：电池目标冷却液流量",
+    "applicable_scenarios": [
+      "3"
+    ],
+    "group": "场景三液冷",
+    "disposition": "采用为分析参照，非独立新增正式需求",
+    "mapped_case_functions": [
+      "S3-F08"
+    ],
+    "reason": "已有案例功能有明确引用映射，按原清单配置/场景边界使用",
+    "conditions": "见详细说明中的场景和配置限制",
+    "evidence_status": "仅直接核对用户清单，清单引用的外部原文未全部提供；本版筛选不替代专家确认"
+  },
+  {
+    "candidate_id": "L05",
+    "name": "调节流量：电池回路冷却液流量",
+    "applicable_scenarios": [
+      "3"
+    ],
+    "group": "场景三液冷",
+    "disposition": "采用为分析参照，非独立新增正式需求",
+    "mapped_case_functions": [
+      "S3-F10"
+    ],
+    "reason": "已有案例功能有明确引用映射，按原清单配置/场景边界使用",
+    "conditions": "见详细说明中的场景和配置限制",
+    "evidence_status": "仅直接核对用户清单，清单引用的外部原文未全部提供；本版筛选不替代专家确认"
+  },
+  {
+    "candidate_id": "L06",
+    "name": "建立流路：电池经Chiller换热的冷却液路径",
+    "applicable_scenarios": [
+      "3"
+    ],
+    "group": "场景三液冷",
+    "disposition": "采用为分析参照，非独立新增正式需求",
+    "mapped_case_functions": [
+      "S3-F10"
+    ],
+    "reason": "已有案例功能有明确引用映射，按原清单配置/场景边界使用",
+    "conditions": "见详细说明中的场景和配置限制",
+    "evidence_status": "仅直接核对用户清单，清单引用的外部原文未全部提供；本版筛选不替代专家确认"
+  },
+  {
+    "candidate_id": "L07",
+    "name": "转移热量：电池向冷却液释放的热量",
+    "applicable_scenarios": [
+      "3"
+    ],
+    "group": "场景三液冷",
+    "disposition": "采用为分析参照，非独立新增正式需求",
+    "mapped_case_functions": [
+      "S3-F10"
+    ],
+    "reason": "已有案例功能有明确引用映射，按原清单配置/场景边界使用",
+    "conditions": "见详细说明中的场景和配置限制",
+    "evidence_status": "仅直接核对用户清单，清单引用的外部原文未全部提供；本版筛选不替代专家确认"
+  },
+  {
+    "candidate_id": "L08",
+    "name": "调节流量：Chiller支路制冷剂流量",
+    "applicable_scenarios": [
+      "3"
+    ],
+    "group": "场景三液冷",
+    "disposition": "待配置与需求确认",
+    "mapped_case_functions": [],
+    "reason": "清单支持能力或机理，不足以认定目标案例必须采用该项",
+    "conditions": "见详细说明中的场景和配置限制",
+    "evidence_status": "仅直接核对用户清单，清单引用的外部原文未全部提供；本版筛选不替代专家确认"
+  },
+  {
+    "candidate_id": "L09",
+    "name": "冷却液体：电池回路冷却液",
+    "applicable_scenarios": [
+      "3"
+    ],
+    "group": "场景三液冷",
+    "disposition": "采用为分析参照，非独立新增正式需求",
+    "mapped_case_functions": [
+      "S3-F10"
+    ],
+    "reason": "已有案例功能有明确引用映射，按原清单配置/场景边界使用",
+    "conditions": "见详细说明中的场景和配置限制",
+    "evidence_status": "仅直接核对用户清单，清单引用的外部原文未全部提供；本版筛选不替代专家确认"
+  },
+  {
+    "candidate_id": "L10",
+    "name": "分配制冷量：座舱与电池的共享制冷能力",
+    "applicable_scenarios": [
+      "3"
+    ],
+    "group": "场景三液冷",
+    "disposition": "采用为分析参照，非独立新增正式需求",
+    "mapped_case_functions": [
+      "S3-F09"
+    ],
+    "reason": "已有案例功能有明确引用映射，按原清单配置/场景边界使用",
+    "conditions": "见详细说明中的场景和配置限制",
+    "evidence_status": "仅直接核对用户清单，清单引用的外部原文未全部提供；本版筛选不替代专家确认"
+  },
+  {
+    "candidate_id": "L11",
+    "name": "调节风量：冷凝器散热风量",
+    "applicable_scenarios": [
+      "3"
+    ],
+    "group": "场景三液冷",
+    "disposition": "待配置与需求确认",
+    "mapped_case_functions": [],
+    "reason": "清单支持能力或机理，不足以认定目标案例必须采用该项",
+    "conditions": "见详细说明中的场景和配置限制",
+    "evidence_status": "仅直接核对用户清单，清单引用的外部原文未全部提供；本版筛选不替代专家确认"
+  },
+  {
+    "candidate_id": "L12",
+    "name": "调节流量：座舱蒸发器支路制冷剂流量",
+    "applicable_scenarios": [
+      "3"
+    ],
+    "group": "场景三液冷",
+    "disposition": "待配置与需求确认",
+    "mapped_case_functions": [],
+    "reason": "清单支持能力或机理，不足以认定目标案例必须采用该项",
+    "conditions": "见详细说明中的场景和配置限制",
+    "evidence_status": "仅直接核对用户清单，清单引用的外部原文未全部提供；本版筛选不替代专家确认"
+  },
+  {
+    "candidate_id": "L13",
+    "name": "撤销冷却：电池Chiller辅助冷却请求",
+    "applicable_scenarios": [
+      "3"
+    ],
+    "group": "场景三液冷",
+    "disposition": "待配置与需求确认",
+    "mapped_case_functions": [],
+    "reason": "清单支持能力或机理，不足以认定目标案例必须采用该项",
+    "conditions": "见详细说明中的场景和配置限制",
+    "evidence_status": "仅直接核对用户清单，清单引用的外部原文未全部提供；本版筛选不替代专家确认"
+  },
+  {
+    "candidate_id": "L14",
+    "name": "反馈冷却状态：电池液冷执行结果",
+    "applicable_scenarios": [
+      "3"
+    ],
+    "group": "场景三液冷",
+    "disposition": "采用为分析参照，非独立新增正式需求",
+    "mapped_case_functions": [
+      "S3-F11"
+    ],
+    "reason": "已有案例功能有明确引用映射，按原清单配置/场景边界使用",
+    "conditions": "见详细说明中的场景和配置限制",
+    "evidence_status": "仅直接核对用户清单，清单引用的外部原文未全部提供；本版筛选不替代专家确认"
+  },
+  {
+    "candidate_id": "P01",
+    "name": "获取温度：蒸发器表面温度",
+    "applicable_scenarios": [
+      "2",
+      "3"
+    ],
+    "group": "保护补充",
+    "disposition": "待配置与需求确认",
+    "mapped_case_functions": [],
+    "reason": "清单支持能力或机理，不足以认定目标案例必须采用该项",
+    "conditions": "见详细说明中的场景和配置限制",
+    "evidence_status": "仅直接核对用户清单，清单引用的外部原文未全部提供；本版筛选不替代专家确认"
+  },
+  {
+    "candidate_id": "P02",
+    "name": "获取压力：制冷剂回路高低压",
+    "applicable_scenarios": [
+      "2",
+      "3"
+    ],
+    "group": "保护补充",
+    "disposition": "待配置与需求确认",
+    "mapped_case_functions": [],
+    "reason": "清单支持能力或机理，不足以认定目标案例必须采用该项",
+    "conditions": "见详细说明中的场景和配置限制",
+    "evidence_status": "仅直接核对用户清单，清单引用的外部原文未全部提供；本版筛选不替代专家确认"
+  },
+  {
+    "candidate_id": "P03",
+    "name": "获取温度：制冷剂回路温度",
+    "applicable_scenarios": [
+      "2",
+      "3"
+    ],
+    "group": "保护补充",
+    "disposition": "待配置与需求确认",
+    "mapped_case_functions": [],
+    "reason": "清单支持能力或机理，不足以认定目标案例必须采用该项",
+    "conditions": "见详细说明中的场景和配置限制",
+    "evidence_status": "仅直接核对用户清单，清单引用的外部原文未全部提供；本版筛选不替代专家确认"
+  },
+  {
+    "candidate_id": "P04",
+    "name": "抑制结冰：蒸发器表面结冰",
+    "applicable_scenarios": [
+      "2",
+      "3"
+    ],
+    "group": "保护补充",
+    "disposition": "待配置与需求确认",
+    "mapped_case_functions": [],
+    "reason": "清单支持能力或机理，不足以认定目标案例必须采用该项",
+    "conditions": "见详细说明中的场景和配置限制",
+    "evidence_status": "仅直接核对用户清单，清单引用的外部原文未全部提供；本版筛选不替代专家确认"
+  },
+  {
+    "candidate_id": "P05",
+    "name": "限制运行：温压越限的制冷剂回路",
+    "applicable_scenarios": [
+      "2",
+      "3"
+    ],
+    "group": "保护补充",
+    "disposition": "待配置与需求确认",
+    "mapped_case_functions": [],
+    "reason": "清单支持能力或机理，不足以认定目标案例必须采用该项",
+    "conditions": "见详细说明中的场景和配置限制",
+    "evidence_status": "仅直接核对用户清单，清单引用的外部原文未全部提供；本版筛选不替代专家确认"
+  },
+  {
+    "candidate_id": "P06",
+    "name": "抑制启停：压缩机短周期启停",
+    "applicable_scenarios": [
+      "2",
+      "3"
+    ],
+    "group": "保护补充",
+    "disposition": "待配置与需求确认",
+    "mapped_case_functions": [],
+    "reason": "清单支持能力或机理，不足以认定目标案例必须采用该项",
+    "conditions": "见详细说明中的场景和配置限制",
+    "evidence_status": "仅直接核对用户清单，清单引用的外部原文未全部提供；本版筛选不替代专家确认"
+  },
+  {
+    "candidate_id": "P07",
+    "name": "处置故障：热管理测量与执行故障",
+    "applicable_scenarios": [
+      "1",
+      "2",
+      "3"
+    ],
+    "group": "保护补充",
+    "disposition": "待配置与需求确认",
+    "mapped_case_functions": [],
+    "reason": "清单支持能力或机理，不足以认定目标案例必须采用该项",
+    "conditions": "见详细说明中的场景和配置限制",
+    "evidence_status": "仅直接核对用户清单，清单引用的外部原文未全部提供；本版筛选不替代专家确认"
+  },
+  {
+    "candidate_id": "P08",
+    "name": "提出热保护：电池热安全限制",
+    "applicable_scenarios": [
+      "1",
+      "2",
+      "3"
+    ],
+    "group": "保护补充",
+    "disposition": "待配置与需求确认",
+    "mapped_case_functions": [],
+    "reason": "清单支持能力或机理，不足以认定目标案例必须采用该项",
+    "conditions": "见详细说明中的场景和配置限制",
+    "evidence_status": "仅直接核对用户清单，清单引用的外部原文未全部提供；本版筛选不替代专家确认"
+  },
+  {
+    "candidate_id": "P09",
+    "name": "提示补液：冷却液不足状态",
+    "applicable_scenarios": [
+      "1",
+      "3"
+    ],
+    "group": "保护补充",
+    "disposition": "待配置与需求确认",
+    "mapped_case_functions": [],
+    "reason": "清单支持能力或机理，不足以认定目标案例必须采用该项",
+    "conditions": "见详细说明中的场景和配置限制",
+    "evidence_status": "仅直接核对用户清单，清单引用的外部原文未全部提供；本版筛选不替代专家确认"
+  },
+  {
+    "candidate_id": "P10",
+    "name": "限制制冷：低环境温度下的制冷请求",
+    "applicable_scenarios": [
+      "2",
+      "3"
+    ],
+    "group": "保护补充",
+    "disposition": "待配置与需求确认",
+    "mapped_case_functions": [],
+    "reason": "清单支持能力或机理，不足以认定目标案例必须采用该项",
+    "conditions": "见详细说明中的场景和配置限制",
+    "evidence_status": "仅直接核对用户清单，清单引用的外部原文未全部提供；本版筛选不替代专家确认"
+  },
+  {
+    "candidate_id": "E01",
+    "name": "去除水分：座舱送风中的水分",
+    "applicable_scenarios": [
+      "3"
+    ],
+    "group": "场景三可选扩展",
+    "disposition": "本版暂缓纳入",
+    "mapped_case_functions": [],
+    "reason": "属于未指定热管理配置、其他动力类型、维修服务或额外仿真职责，保持候选",
+    "conditions": "见详细说明中的场景和配置限制",
+    "evidence_status": "仅直接核对用户清单，清单引用的外部原文未全部提供；本版筛选不替代专家确认"
+  },
+  {
+    "candidate_id": "E02",
+    "name": "清除雾气：前风窗内表面雾气",
+    "applicable_scenarios": [
+      "3"
+    ],
+    "group": "场景三可选扩展",
+    "disposition": "本版暂缓纳入",
+    "mapped_case_functions": [],
+    "reason": "属于未指定热管理配置、其他动力类型、维修服务或额外仿真职责，保持候选",
+    "conditions": "见详细说明中的场景和配置限制",
+    "evidence_status": "仅直接核对用户清单，清单引用的外部原文未全部提供；本版筛选不替代专家确认"
+  },
+  {
+    "candidate_id": "E03",
+    "name": "清除结霜：前风窗结霜",
+    "applicable_scenarios": [
+      "3"
+    ],
+    "group": "场景三可选扩展",
+    "disposition": "本版暂缓纳入",
+    "mapped_case_functions": [],
+    "reason": "属于未指定热管理配置、其他动力类型、维修服务或额外仿真职责，保持候选",
+    "conditions": "见详细说明中的场景和配置限制",
+    "evidence_status": "仅直接核对用户清单，清单引用的外部原文未全部提供；本版筛选不替代专家确认"
+  },
+  {
+    "candidate_id": "E04",
+    "name": "切换循环：座舱空气内外循环模式",
+    "applicable_scenarios": [
+      "3"
+    ],
+    "group": "场景三可选扩展",
+    "disposition": "本版暂缓纳入",
+    "mapped_case_functions": [],
+    "reason": "属于未指定热管理配置、其他动力类型、维修服务或额外仿真职责，保持候选",
+    "conditions": "见详细说明中的场景和配置限制",
+    "evidence_status": "仅直接核对用户清单，清单引用的外部原文未全部提供；本版筛选不替代专家确认"
+  },
+  {
+    "candidate_id": "N-R01",
+    "name": "压缩制冷剂：低压制冷剂蒸气",
+    "applicable_scenarios": [
+      "2",
+      "3"
+    ],
+    "group": "制冷剂循环与介质处理",
+    "disposition": "待配置与需求确认",
+    "mapped_case_functions": [],
+    "reason": "清单支持能力或机理，不足以认定目标案例必须采用该项",
+    "conditions": "采用相应热管理配置时；具体性能指标待目标项目确认。 范围：场景内补充；类型：系统物理功能。",
+    "evidence_status": "仅直接核对用户清单，清单引用的外部原文未全部提供；本版筛选不替代专家确认"
+  },
+  {
+    "candidate_id": "N-R02",
+    "name": "冷凝放热：亚临界高压制冷剂",
+    "applicable_scenarios": [
+      "2",
+      "3"
+    ],
+    "group": "制冷剂循环与介质处理",
+    "disposition": "待配置与需求确认",
+    "mapped_case_functions": [],
+    "reason": "清单支持能力或机理，不足以认定目标案例必须采用该项",
+    "conditions": "采用相应热管理配置时；具体性能指标待目标项目确认。 范围：场景内补充；类型：系统物理功能。",
+    "evidence_status": "仅直接核对用户清单，清单引用的外部原文未全部提供；本版筛选不替代专家确认"
+  },
+  {
+    "candidate_id": "N-R03",
+    "name": "节流降压：换热支路入口制冷剂",
+    "applicable_scenarios": [
+      "2",
+      "3"
+    ],
+    "group": "制冷剂循环与介质处理",
+    "disposition": "待配置与需求确认",
+    "mapped_case_functions": [],
+    "reason": "清单支持能力或机理，不足以认定目标案例必须采用该项",
+    "conditions": "采用相应热管理配置时；具体性能指标待目标项目确认。 范围：场景内补充；类型：系统物理功能。",
+    "evidence_status": "仅直接核对用户清单，清单引用的外部原文未全部提供；本版筛选不替代专家确认"
+  },
+  {
+    "candidate_id": "N-R04",
+    "name": "储存液态冷媒：制冷剂循环中的液态储备",
+    "applicable_scenarios": [
+      "2",
+      "3"
+    ],
+    "group": "制冷剂循环与介质处理",
+    "disposition": "待配置与需求确认",
+    "mapped_case_functions": [],
+    "reason": "清单支持能力或机理，不足以认定目标案例必须采用该项",
+    "conditions": "采用相应热管理配置时；具体性能指标待目标项目确认。 范围：场景内补充；类型：系统物理功能。",
+    "evidence_status": "仅直接核对用户清单，清单引用的外部原文未全部提供；本版筛选不替代专家确认"
+  },
+  {
+    "candidate_id": "N-R05",
+    "name": "过滤杂质：制冷剂携带的固体杂质",
+    "applicable_scenarios": [
+      "2",
+      "3"
+    ],
+    "group": "制冷剂循环与介质处理",
+    "disposition": "待配置与需求确认",
+    "mapped_case_functions": [],
+    "reason": "清单支持能力或机理，不足以认定目标案例必须采用该项",
+    "conditions": "采用相应热管理配置时；具体性能指标待目标项目确认。 范围：场景内补充；类型：系统物理功能。",
+    "evidence_status": "仅直接核对用户清单，清单引用的外部原文未全部提供；本版筛选不替代专家确认"
+  },
+  {
+    "candidate_id": "N-R06",
+    "name": "吸附水分：制冷剂回路中的残余水分",
+    "applicable_scenarios": [
+      "2",
+      "3"
+    ],
+    "group": "制冷剂循环与介质处理",
+    "disposition": "待配置与需求确认",
+    "mapped_case_functions": [],
+    "reason": "清单支持能力或机理，不足以认定目标案例必须采用该项",
+    "conditions": "采用相应热管理配置时；具体性能指标待目标项目确认。 范围：场景内补充；类型：系统物理功能。",
+    "evidence_status": "仅直接核对用户清单，清单引用的外部原文未全部提供；本版筛选不替代专家确认"
+  },
+  {
+    "candidate_id": "N-R07",
+    "name": "分离气液：储液器内两相制冷剂",
+    "applicable_scenarios": [
+      "2",
+      "3"
+    ],
+    "group": "制冷剂循环与介质处理",
+    "disposition": "待配置与需求确认",
+    "mapped_case_functions": [],
+    "reason": "清单支持能力或机理，不足以认定目标案例必须采用该项",
+    "conditions": "采用相应热管理配置时；具体性能指标待目标项目确认。 范围：场景内补充；类型：系统物理功能。",
+    "evidence_status": "仅直接核对用户清单，清单引用的外部原文未全部提供；本版筛选不替代专家确认"
+  },
+  {
+    "candidate_id": "N-R08",
+    "name": "截留液态冷媒：吸气侧夹带的液态制冷剂",
+    "applicable_scenarios": [
+      "2",
+      "3"
+    ],
+    "group": "制冷剂循环与介质处理",
+    "disposition": "待配置与需求确认",
+    "mapped_case_functions": [],
+    "reason": "清单支持能力或机理，不足以认定目标案例必须采用该项",
+    "conditions": "配置低压蓄液器；不得据图假定每个回路都有该部件。 范围：场景内补充；类型：系统物理功能。",
+    "evidence_status": "仅直接核对用户清单，清单引用的外部原文未全部提供；本版筛选不替代专家确认"
+  },
+  {
+    "candidate_id": "N-R09",
+    "name": "回送润滑油：制冷剂循环携带的冷冻油",
+    "applicable_scenarios": [
+      "2",
+      "3"
+    ],
+    "group": "制冷剂循环与介质处理",
+    "disposition": "待配置与需求确认",
+    "mapped_case_functions": [],
+    "reason": "清单支持能力或机理，不足以认定目标案例必须采用该项",
+    "conditions": "采用相应热管理配置时；具体性能指标待目标项目确认。 范围：场景内补充；类型：系统物理功能。",
+    "evidence_status": "仅直接核对用户清单，清单引用的外部原文未全部提供；本版筛选不替代专家确认"
+  },
+  {
+    "candidate_id": "N-R10",
+    "name": "调节过热度：蒸发支路出口制冷剂过热度",
+    "applicable_scenarios": [
+      "2",
+      "3"
+    ],
+    "group": "制冷剂循环与介质处理",
+    "disposition": "待配置与需求确认",
+    "mapped_case_functions": [],
+    "reason": "清单支持能力或机理，不足以认定目标案例必须采用该项",
+    "conditions": "采用相应热管理配置时；具体性能指标待目标项目确认。 范围：场景内补充；类型：系统控制功能。",
+    "evidence_status": "仅直接核对用户清单，清单引用的外部原文未全部提供；本版筛选不替代专家确认"
+  },
+  {
+    "candidate_id": "N-R11",
+    "name": "截止冷媒流动：未使用的制冷剂支路",
+    "applicable_scenarios": [
+      "2",
+      "3"
+    ],
+    "group": "制冷剂循环与介质处理",
+    "disposition": "待配置与需求确认",
+    "mapped_case_functions": [],
+    "reason": "清单支持能力或机理，不足以认定目标案例必须采用该项",
+    "conditions": "存在具备截止能力的冷媒阀和相应支路。 范围：场景内补充；类型：系统物理功能。",
+    "evidence_status": "仅直接核对用户清单，清单引用的外部原文未全部提供；本版筛选不替代专家确认"
+  },
+  {
+    "candidate_id": "N-R12",
+    "name": "切换换热路径：制冷剂回路有效通路",
+    "applicable_scenarios": [
+      "2",
+      "3"
+    ],
+    "group": "制冷剂循环与介质处理",
+    "disposition": "待配置与需求确认",
+    "mapped_case_functions": [],
+    "reason": "清单支持能力或机理，不足以认定目标案例必须采用该项",
+    "conditions": "热泵或多支路阀组配置，须补充模式—阀态矩阵。 范围：配置/工况扩展；类型：系统物理功能。",
+    "evidence_status": "仅直接核对用户清单，清单引用的外部原文未全部提供；本版筛选不替代专家确认"
+  },
+  {
+    "candidate_id": "N-R13",
+    "name": "冷却高压冷媒：跨临界工况高压制冷剂",
+    "applicable_scenarios": [
+      "2",
+      "3"
+    ],
+    "group": "制冷剂循环与介质处理",
+    "disposition": "待配置与需求确认",
+    "mapped_case_functions": [],
+    "reason": "清单支持能力或机理，不足以认定目标案例必须采用该项",
+    "conditions": "采用R744等适用的跨临界循环；与R02按工况选择。 范围：配置/工况扩展；类型：系统物理功能。",
+    "evidence_status": "仅直接核对用户清单，清单引用的外部原文未全部提供；本版筛选不替代专家确认"
+  },
+  {
+    "candidate_id": "N-R14",
+    "name": "交换回路内热量：高低压侧制冷剂之间的热量",
+    "applicable_scenarios": [
+      "2",
+      "3"
+    ],
+    "group": "制冷剂循环与介质处理",
+    "disposition": "待配置与需求确认",
+    "mapped_case_functions": [],
+    "reason": "清单支持能力或机理，不足以认定目标案例必须采用该项",
+    "conditions": "配置同轴管或独立内部换热器；换热方向由实际温差确定。 范围：配置/工况扩展；类型：系统物理功能。",
+    "evidence_status": "仅直接核对用户清单，清单引用的外部原文未全部提供；本版筛选不替代专家确认"
+  },
+  {
+    "candidate_id": "N-R15",
+    "name": "补入中压蒸气：压缩过程中的制冷剂蒸气",
+    "applicable_scenarios": [
+      "2",
+      "3"
+    ],
+    "group": "制冷剂循环与介质处理",
+    "disposition": "待配置与需求确认",
+    "mapped_case_functions": [],
+    "reason": "清单支持能力或机理，不足以认定目标案例必须采用该项",
+    "conditions": "配置支持气体喷射的压缩机及支路。 范围：配置/工况扩展；类型：系统物理功能。",
+    "evidence_status": "仅直接核对用户清单，清单引用的外部原文未全部提供；本版筛选不替代专家确认"
+  },
+  {
+    "candidate_id": "N-R16",
+    "name": "调节高侧压力：跨临界制冷循环高压侧压力",
+    "applicable_scenarios": [
+      "2",
+      "3"
+    ],
+    "group": "制冷剂循环与介质处理",
+    "disposition": "待配置与需求确认",
+    "mapped_case_functions": [],
+    "reason": "清单支持能力或机理，不足以认定目标案例必须采用该项",
+    "conditions": "采用跨临界循环，压力目标和允许包络待标定。 范围：配置/工况扩展；类型：系统控制功能。",
+    "evidence_status": "仅直接核对用户清单，清单引用的外部原文未全部提供；本版筛选不替代专家确认"
+  },
+  {
+    "candidate_id": "N-Y01",
+    "name": "循环输送冷却液：有效液路中的冷却液",
+    "applicable_scenarios": [
+      "1",
+      "3"
+    ],
+    "group": "冷却液输送与回路组织",
+    "disposition": "待配置与需求确认",
+    "mapped_case_functions": [],
+    "reason": "清单支持能力或机理，不足以认定目标案例必须采用该项",
+    "conditions": "采用相应热管理配置时；具体性能指标待目标项目确认。 范围：场景内补充；类型：系统物理功能。",
+    "evidence_status": "仅直接核对用户清单，清单引用的外部原文未全部提供；本版筛选不替代专家确认"
+  },
+  {
+    "candidate_id": "N-Y02",
+    "name": "分配冷却流量：多个并联热负荷支路的冷却液",
+    "applicable_scenarios": [
+      "1",
+      "3"
+    ],
+    "group": "冷却液输送与回路组织",
+    "disposition": "待配置与需求确认",
+    "mapped_case_functions": [],
+    "reason": "清单支持能力或机理，不足以认定目标案例必须采用该项",
+    "conditions": "采用相应热管理配置时；具体性能指标待目标项目确认。 范围：场景内补充；类型：系统物理功能。",
+    "evidence_status": "仅直接核对用户清单，清单引用的外部原文未全部提供；本版筛选不替代专家确认"
+  },
+  {
+    "candidate_id": "N-Y03",
+    "name": "混合回流介质：来自不同支路的冷却液",
+    "applicable_scenarios": [
+      "1",
+      "3"
+    ],
+    "group": "冷却液输送与回路组织",
+    "disposition": "待配置与需求确认",
+    "mapped_case_functions": [],
+    "reason": "清单支持能力或机理，不足以认定目标案例必须采用该项",
+    "conditions": "介质相容且存在汇流/混合通道；混合温度须按能量守恒确定。 范围：场景内补充；类型：系统物理功能。",
+    "evidence_status": "仅直接核对用户清单，清单引用的外部原文未全部提供；本版筛选不替代专家确认"
+  },
+  {
+    "candidate_id": "N-Y04",
+    "name": "旁通散热支路：暂不需要外排热的冷却液",
+    "applicable_scenarios": [
+      "1",
+      "3"
+    ],
+    "group": "冷却液输送与回路组织",
+    "disposition": "待配置与需求确认",
+    "mapped_case_functions": [],
+    "reason": "清单支持能力或机理，不足以认定目标案例必须采用该项",
+    "conditions": "采用相应热管理配置时；具体性能指标待目标项目确认。 范围：场景内补充；类型：系统物理功能。",
+    "evidence_status": "仅直接核对用户清单，清单引用的外部原文未全部提供；本版筛选不替代专家确认"
+  },
+  {
+    "candidate_id": "N-Y05",
+    "name": "重构液路连接：电池与电驱等可切换液路",
+    "applicable_scenarios": [
+      "1",
+      "3"
+    ],
+    "group": "冷却液输送与回路组织",
+    "disposition": "待配置与需求确认",
+    "mapped_case_functions": [],
+    "reason": "清单支持能力或机理，不足以认定目标案例必须采用该项",
+    "conditions": "具有多通阀或等效可重构回路；串并联服务测试不能替代行驶模式策略。 范围：场景内补充；类型：系统物理功能。",
+    "evidence_status": "仅直接核对用户清单，清单引用的外部原文未全部提供；本版筛选不替代专家确认"
+  },
+  {
+    "candidate_id": "N-Y06",
+    "name": "阻止逆向流动：不允许反流的冷却液支路",
+    "applicable_scenarios": [
+      "1",
+      "3"
+    ],
+    "group": "冷却液输送与回路组织",
+    "disposition": "待配置与需求确认",
+    "mapped_case_functions": [],
+    "reason": "清单支持能力或机理，不足以认定目标案例必须采用该项",
+    "conditions": "采用相应热管理配置时；具体性能指标待目标项目确认。 范围：场景内补充；类型：系统物理功能。",
+    "evidence_status": "仅直接核对用户清单，清单引用的外部原文未全部提供；本版筛选不替代专家确认"
+  },
+  {
+    "candidate_id": "N-Y07",
+    "name": "容纳热膨胀：温度变化引起的冷却液体积变化",
+    "applicable_scenarios": [
+      "1",
+      "3"
+    ],
+    "group": "冷却液输送与回路组织",
+    "disposition": "待配置与需求确认",
+    "mapped_case_functions": [],
+    "reason": "清单支持能力或机理，不足以认定目标案例必须采用该项",
+    "conditions": "采用相应热管理配置时；具体性能指标待目标项目确认。 范围：场景内补充；类型：系统物理功能。",
+    "evidence_status": "仅直接核对用户清单，清单引用的外部原文未全部提供；本版筛选不替代专家确认"
+  },
+  {
+    "candidate_id": "N-Y08",
+    "name": "分离夹带气体：循环冷却液中的气泡",
+    "applicable_scenarios": [
+      "1",
+      "3"
+    ],
+    "group": "冷却液输送与回路组织",
+    "disposition": "待配置与需求确认",
+    "mapped_case_functions": [],
+    "reason": "清单支持能力或机理，不足以认定目标案例必须采用该项",
+    "conditions": "采用相应热管理配置时；具体性能指标待目标项目确认。 范围：场景内补充；类型：系统物理功能。",
+    "evidence_status": "仅直接核对用户清单，清单引用的外部原文未全部提供；本版筛选不替代专家确认"
+  },
+  {
+    "candidate_id": "N-Y09",
+    "name": "释放超限压力：冷却液回路异常高压力",
+    "applicable_scenarios": [
+      "1",
+      "3"
+    ],
+    "group": "冷却液输送与回路组织",
+    "disposition": "待配置与需求确认",
+    "mapped_case_functions": [],
+    "reason": "清单支持能力或机理，不足以认定目标案例必须采用该项",
+    "conditions": "采用相应热管理配置时；具体性能指标待目标项目确认。 范围：场景内补充；类型：系统物理功能。",
+    "evidence_status": "仅直接核对用户清单，清单引用的外部原文未全部提供；本版筛选不替代专家确认"
+  },
+  {
+    "candidate_id": "N-Y10",
+    "name": "隔离液路支路：需要停用或维护的冷却液支路",
+    "applicable_scenarios": [
+      "1",
+      "3"
+    ],
+    "group": "冷却液输送与回路组织",
+    "disposition": "待配置与需求确认",
+    "mapped_case_functions": [],
+    "reason": "清单支持能力或机理，不足以认定目标案例必须采用该项",
+    "conditions": "具有隔离能力的阀路；异常隔离策略为目标项目待定项。 范围：场景内补充；类型：系统物理功能。",
+    "evidence_status": "仅直接核对用户清单，清单引用的外部原文未全部提供；本版筛选不替代专家确认"
+  },
+  {
+    "candidate_id": "N-Y11",
+    "name": "输送散热空气：流经前端换热器的空气",
+    "applicable_scenarios": [
+      "1",
+      "2",
+      "3"
+    ],
+    "group": "冷却液输送与回路组织",
+    "disposition": "待配置与需求确认",
+    "mapped_case_functions": [],
+    "reason": "清单支持能力或机理，不足以认定目标案例必须采用该项",
+    "conditions": "采用相应热管理配置时；具体性能指标待目标项目确认。 范围：场景内补充；类型：系统物理功能。",
+    "evidence_status": "仅直接核对用户清单，清单引用的外部原文未全部提供；本版筛选不替代专家确认"
+  },
+  {
+    "candidate_id": "N-Y12",
+    "name": "调节进风通道：前端换热器空气通道有效开度",
+    "applicable_scenarios": [
+      "1",
+      "2",
+      "3"
+    ],
+    "group": "冷却液输送与回路组织",
+    "disposition": "待配置与需求确认",
+    "mapped_case_functions": [],
+    "reason": "清单支持能力或机理，不足以认定目标案例必须采用该项",
+    "conditions": "配置主动进气格栅或等效可调风道。 范围：配置/工况扩展；类型：系统控制功能。",
+    "evidence_status": "仅直接核对用户清单，清单引用的外部原文未全部提供；本版筛选不替代专家确认"
+  },
+  {
+    "candidate_id": "N-B01",
+    "name": "传导电芯热量：电芯至冷却界面的热量",
+    "applicable_scenarios": [
+      "1",
+      "2",
+      "3"
+    ],
+    "group": "电池换热与预调温",
+    "disposition": "待配置与需求确认",
+    "mapped_case_functions": [],
+    "reason": "清单支持能力或机理，不足以认定目标案例必须采用该项",
+    "conditions": "采用相应热管理配置时；具体性能指标待目标项目确认。 范围：场景内补充；类型：系统物理功能。",
+    "evidence_status": "仅直接核对用户清单，清单引用的外部原文未全部提供；本版筛选不替代专家确认"
+  },
+  {
+    "candidate_id": "N-B02",
+    "name": "均衡电池温差：不同电芯或模块之间的温差",
+    "applicable_scenarios": [
+      "1",
+      "2",
+      "3"
+    ],
+    "group": "电池换热与预调温",
+    "disposition": "待配置与需求确认",
+    "mapped_case_functions": [],
+    "reason": "清单支持能力或机理，不足以认定目标案例必须采用该项",
+    "conditions": "均匀性要求与可调节自由度明确后适用。 范围：场景内补充；类型：系统控制功能。",
+    "evidence_status": "仅直接核对用户清单，清单引用的外部原文未全部提供；本版筛选不替代专家确认"
+  },
+  {
+    "candidate_id": "N-B03",
+    "name": "过滤冷却进气：电池冷却空气携带的灰尘杂物",
+    "applicable_scenarios": [
+      "1",
+      "2"
+    ],
+    "group": "电池换热与预调温",
+    "disposition": "待配置与需求确认",
+    "mapped_case_functions": [],
+    "reason": "清单支持能力或机理，不足以认定目标案例必须采用该项",
+    "conditions": "采用电池风冷且配置进气过滤结构。 范围：场景内补充；类型：系统物理功能。",
+    "evidence_status": "仅直接核对用户清单，清单引用的外部原文未全部提供；本版筛选不替代专家确认"
+  },
+  {
+    "candidate_id": "N-B04",
+    "name": "导出电池排风：经过电池换热后的空气",
+    "applicable_scenarios": [
+      "1",
+      "2"
+    ],
+    "group": "电池换热与预调温",
+    "disposition": "待配置与需求确认",
+    "mapped_case_functions": [],
+    "reason": "清单支持能力或机理，不足以认定目标案例必须采用该项",
+    "conditions": "采用相应热管理配置时；具体性能指标待目标项目确认。 范围：场景内补充；类型：系统物理功能。",
+    "evidence_status": "仅直接核对用户清单，清单引用的外部原文未全部提供；本版筛选不替代专家确认"
+  },
+  {
+    "candidate_id": "N-B05",
+    "name": "调节电池风量：实际进入电池换热通道的冷却风量",
+    "applicable_scenarios": [
+      "1",
+      "2"
+    ],
+    "group": "电池换热与预调温",
+    "disposition": "待配置与需求确认",
+    "mapped_case_functions": [],
+    "reason": "清单支持能力或机理，不足以认定目标案例必须采用该项",
+    "conditions": "具有可调风量能力；场景二仍使用其既定35℃请求判据。 范围：场景内补充；类型：系统控制功能。",
+    "evidence_status": "仅直接核对用户清单，清单引用的外部原文未全部提供；本版筛选不替代专家确认"
+  },
+  {
+    "candidate_id": "N-B06",
+    "name": "切换电池散热路径：电池液冷回路的环境散热与Chiller散热通路",
+    "applicable_scenarios": [
+      "1",
+      "3"
+    ],
+    "group": "电池换热与预调温",
+    "disposition": "待配置与需求确认",
+    "mapped_case_functions": [],
+    "reason": "清单支持能力或机理，不足以认定目标案例必须采用该项",
+    "conditions": "同时具备环境散热器路径与Chiller路径。 范围：场景内补充；类型：系统物理功能。",
+    "evidence_status": "仅直接核对用户清单，清单引用的外部原文未全部提供；本版筛选不替代专家确认"
+  },
+  {
+    "candidate_id": "N-B07",
+    "name": "向环境排出电池热量：电池冷却液携带的热量",
+    "applicable_scenarios": [
+      "1",
+      "3"
+    ],
+    "group": "电池换热与预调温",
+    "disposition": "待配置与需求确认",
+    "mapped_case_functions": [],
+    "reason": "清单支持能力或机理，不足以认定目标案例必须采用该项",
+    "conditions": "采用相应热管理配置时；具体性能指标待目标项目确认。 范围：场景内补充；类型：系统物理功能。",
+    "evidence_status": "仅直接核对用户清单，清单引用的外部原文未全部提供；本版筛选不替代专家确认"
+  },
+  {
+    "candidate_id": "N-B08",
+    "name": "直接蒸发吸热：电池冷却界面传入制冷剂的热量",
+    "applicable_scenarios": [
+      "其他配置",
+      "服务"
+    ],
+    "group": "电池换热与预调温",
+    "disposition": "待配置与需求确认",
+    "mapped_case_functions": [],
+    "reason": "清单支持能力或机理，不足以认定目标案例必须采用该项",
+    "conditions": "冷媒直冷电池架构；不能与原场景二风冷/场景三Chiller架构直接拼接。 范围：替代架构扩展；类型：系统物理功能。",
+    "evidence_status": "仅直接核对用户清单，清单引用的外部原文未全部提供；本版筛选不替代专家确认"
+  },
+  {
+    "candidate_id": "N-B09",
+    "name": "判定加热需求：电池低温加热需求",
+    "applicable_scenarios": [
+      "1",
+      "2",
+      "3"
+    ],
+    "group": "电池换热与预调温",
+    "disposition": "待配置与需求确认",
+    "mapped_case_functions": [],
+    "reason": "清单支持能力或机理，不足以认定目标案例必须采用该项",
+    "conditions": "采用相应热管理配置时；具体性能指标待目标项目确认。 范围：配置/工况扩展；类型：系统控制功能。",
+    "evidence_status": "仅直接核对用户清单，清单引用的外部原文未全部提供；本版筛选不替代专家确认"
+  },
+  {
+    "candidate_id": "N-B10",
+    "name": "加热电池冷却液：流向电池的冷却液",
+    "applicable_scenarios": [
+      "1",
+      "3"
+    ],
+    "group": "电池换热与预调温",
+    "disposition": "待配置与需求确认",
+    "mapped_case_functions": [],
+    "reason": "清单支持能力或机理，不足以认定目标案例必须采用该项",
+    "conditions": "采用相应热管理配置时；具体性能指标待目标项目确认。 范围：配置/工况扩展；类型：系统物理功能。",
+    "evidence_status": "仅直接核对用户清单，清单引用的外部原文未全部提供；本版筛选不替代专家确认"
+  },
+  {
+    "candidate_id": "N-B11",
+    "name": "向电池传入液体热量：高温冷却液与低温电池之间的热量",
+    "applicable_scenarios": [
+      "1",
+      "3"
+    ],
+    "group": "电池换热与预调温",
+    "disposition": "待配置与需求确认",
+    "mapped_case_functions": [],
+    "reason": "清单支持能力或机理，不足以认定目标案例必须采用该项",
+    "conditions": "采用相应热管理配置时；具体性能指标待目标项目确认。 范围：配置/工况扩展；类型：系统物理功能。",
+    "evidence_status": "仅直接核对用户清单，清单引用的外部原文未全部提供；本版筛选不替代专家确认"
+  },
+  {
+    "candidate_id": "N-B12",
+    "name": "直接加热电池：电池加热界面的热量",
+    "applicable_scenarios": [
+      "1",
+      "2",
+      "3"
+    ],
+    "group": "电池换热与预调温",
+    "disposition": "待配置与需求确认",
+    "mapped_case_functions": [],
+    "reason": "清单支持能力或机理，不足以认定目标案例必须采用该项",
+    "conditions": "采用相应热管理配置时；具体性能指标待目标项目确认。 范围：配置/工况扩展；类型：系统物理功能。",
+    "evidence_status": "仅直接核对用户清单，清单引用的外部原文未全部提供；本版筛选不替代专家确认"
+  },
+  {
+    "candidate_id": "N-B13",
+    "name": "形成预调温计划：到站快充或出发前的电池温度目标与时机",
+    "applicable_scenarios": [
+      "1",
+      "2",
+      "3"
+    ],
+    "group": "电池换热与预调温",
+    "disposition": "待配置与需求确认",
+    "mapped_case_functions": [],
+    "reason": "清单支持能力或机理，不足以认定目标案例必须采用该项",
+    "conditions": "目标场景扩展到快充或出发前预调温。 范围：配置/工况扩展；类型：系统控制功能。",
+    "evidence_status": "仅直接核对用户清单，清单引用的外部原文未全部提供；本版筛选不替代专家确认"
+  },
+  {
+    "candidate_id": "N-B14",
+    "name": "维持停车热状态：停车期间电池温度",
+    "applicable_scenarios": [
+      "1",
+      "2",
+      "3"
+    ],
+    "group": "电池换热与预调温",
+    "disposition": "待配置与需求确认",
+    "mapped_case_functions": [],
+    "reason": "清单支持能力或机理，不足以认定目标案例必须采用该项",
+    "conditions": "扩展停车温控，明确低SOC退出及允许持续时间。 范围：配置/工况扩展；类型：系统控制功能。",
+    "evidence_status": "仅直接核对用户清单，清单引用的外部原文未全部提供；本版筛选不替代专家确认"
+  },
+  {
+    "candidate_id": "N-B15",
+    "name": "防止冷却界面凝露：电池冷却边界的凝露风险",
+    "applicable_scenarios": [
+      "1",
+      "2",
+      "3"
+    ],
+    "group": "电池换热与预调温",
+    "disposition": "待配置与需求确认",
+    "mapped_case_functions": [],
+    "reason": "清单支持能力或机理，不足以认定目标案例必须采用该项",
+    "conditions": "采用相应热管理配置时；具体性能指标待目标项目确认。 范围：场景内补充；类型：系统控制功能。",
+    "evidence_status": "仅直接核对用户清单，清单引用的外部原文未全部提供；本版筛选不替代专家确认"
+  },
+  {
+    "candidate_id": "N-B16",
+    "name": "限制温度变化率：电池升温或降温速率",
+    "applicable_scenarios": [
+      "1",
+      "2",
+      "3"
+    ],
+    "group": "电池换热与预调温",
+    "disposition": "待配置与需求确认",
+    "mapped_case_functions": [],
+    "reason": "清单支持能力或机理，不足以认定目标案例必须采用该项",
+    "conditions": "采用相应热管理配置时；具体性能指标待目标项目确认。 范围：场景内补充；类型：系统控制功能。",
+    "evidence_status": "仅直接核对用户清单，清单引用的外部原文未全部提供；本版筛选不替代专家确认"
+  },
+  {
+    "candidate_id": "N-B17",
+    "name": "交换环境对流热量：电芯表面与前舱环境空气之间的热量",
+    "applicable_scenarios": [
+      "2"
+    ],
+    "group": "电池换热与预调温",
+    "disposition": "待配置与需求确认",
+    "mapped_case_functions": [],
+    "reason": "清单支持能力或机理，不足以认定目标案例必须采用该项",
+    "conditions": "采用相应热管理配置时；具体性能指标待目标项目确认。 范围：场景内补充；类型：系统物理功能。",
+    "evidence_status": "仅直接核对用户清单，清单引用的外部原文未全部提供；本版筛选不替代专家确认"
+  },
+  {
+    "candidate_id": "N-B18",
+    "name": "交换供风热量：电芯表面与实际送达的空调空气之间的热量",
+    "applicable_scenarios": [
+      "2"
+    ],
+    "group": "电池换热与预调温",
+    "disposition": "待配置与需求确认",
+    "mapped_case_functions": [],
+    "reason": "清单支持能力或机理，不足以认定目标案例必须采用该项",
+    "conditions": "采用相应热管理配置时；具体性能指标待目标项目确认。 范围：场景内补充；类型：系统物理功能。",
+    "evidence_status": "仅直接核对用户清单，清单引用的外部原文未全部提供；本版筛选不替代专家确认"
+  },
+  {
+    "candidate_id": "N-N01",
+    "name": "减少暖机散热：冷启动阶段发动机外排热量",
+    "applicable_scenarios": [
+      "1"
+    ],
+    "group": "发动机及油液热管理",
+    "disposition": "待配置与需求确认",
+    "mapped_case_functions": [],
+    "reason": "清单支持能力或机理，不足以认定目标案例必须采用该项",
+    "conditions": "采用相应热管理配置时；具体性能指标待目标项目确认。 范围：场景内补充；类型：系统物理功能。",
+    "evidence_status": "仅直接核对用户清单，清单引用的外部原文未全部提供；本版筛选不替代专家确认"
+  },
+  {
+    "candidate_id": "N-N02",
+    "name": "确定发动机温度目标：当前负载下的发动机冷却液目标温度",
+    "applicable_scenarios": [
+      "1"
+    ],
+    "group": "发动机及油液热管理",
+    "disposition": "待配置与需求确认",
+    "mapped_case_functions": [],
+    "reason": "清单支持能力或机理，不足以认定目标案例必须采用该项",
+    "conditions": "采用相应热管理配置时；具体性能指标待目标项目确认。 范围：场景内补充；类型：系统控制功能。",
+    "evidence_status": "仅直接核对用户清单，清单引用的外部原文未全部提供；本版筛选不替代专家确认"
+  },
+  {
+    "candidate_id": "N-N03",
+    "name": "输送发动机热量：缸体缸盖传入冷却液的热量",
+    "applicable_scenarios": [
+      "1"
+    ],
+    "group": "发动机及油液热管理",
+    "disposition": "待配置与需求确认",
+    "mapped_case_functions": [],
+    "reason": "清单支持能力或机理，不足以认定目标案例必须采用该项",
+    "conditions": "采用相应热管理配置时；具体性能指标待目标项目确认。 范围：场景内补充；类型：系统物理功能。",
+    "evidence_status": "仅直接核对用户清单，清单引用的外部原文未全部提供；本版筛选不替代专家确认"
+  },
+  {
+    "candidate_id": "N-N04",
+    "name": "调节发动机旁通：发动机回路经散热器与旁通的流量分配",
+    "applicable_scenarios": [
+      "1"
+    ],
+    "group": "发动机及油液热管理",
+    "disposition": "待配置与需求确认",
+    "mapped_case_functions": [],
+    "reason": "清单支持能力或机理，不足以认定目标案例必须采用该项",
+    "conditions": "采用相应热管理配置时；具体性能指标待目标项目确认。 范围：场景内补充；类型：系统控制功能。",
+    "evidence_status": "仅直接核对用户清单，清单引用的外部原文未全部提供；本版筛选不替代专家确认"
+  },
+  {
+    "candidate_id": "N-N05",
+    "name": "冷却发动机油：高温发动机润滑油",
+    "applicable_scenarios": [
+      "1"
+    ],
+    "group": "发动机及油液热管理",
+    "disposition": "待配置与需求确认",
+    "mapped_case_functions": [],
+    "reason": "清单支持能力或机理，不足以认定目标案例必须采用该项",
+    "conditions": "采用相应热管理配置时；具体性能指标待目标项目确认。 范围：场景内补充；类型：系统物理功能。",
+    "evidence_status": "仅直接核对用户清单，清单引用的外部原文未全部提供；本版筛选不替代专家确认"
+  },
+  {
+    "candidate_id": "N-N06",
+    "name": "预热发动机油：低温发动机润滑油",
+    "applicable_scenarios": [
+      "1"
+    ],
+    "group": "发动机及油液热管理",
+    "disposition": "待配置与需求确认",
+    "mapped_case_functions": [],
+    "reason": "清单支持能力或机理，不足以认定目标案例必须采用该项",
+    "conditions": "采用相应热管理配置时；具体性能指标待目标项目确认。 范围：配置/工况扩展；类型：系统物理功能。",
+    "evidence_status": "仅直接核对用户清单，清单引用的外部原文未全部提供；本版筛选不替代专家确认"
+  },
+  {
+    "candidate_id": "N-N07",
+    "name": "冷却增压部件：涡轮增压器高温部位",
+    "applicable_scenarios": [
+      "1"
+    ],
+    "group": "发动机及油液热管理",
+    "disposition": "待配置与需求确认",
+    "mapped_case_functions": [],
+    "reason": "清单支持能力或机理，不足以认定目标案例必须采用该项",
+    "conditions": "串联混动发动机采用需要液冷的增压配置。 范围：场景内补充；类型：系统物理功能。",
+    "evidence_status": "仅直接核对用户清单，清单引用的外部原文未全部提供；本版筛选不替代专家确认"
+  },
+  {
+    "candidate_id": "N-N08",
+    "name": "执行增压器续冷：停机后增压器剩余热量",
+    "applicable_scenarios": [
+      "1"
+    ],
+    "group": "发动机及油液热管理",
+    "disposition": "待配置与需求确认",
+    "mapped_case_functions": [],
+    "reason": "清单支持能力或机理，不足以认定目标案例必须采用该项",
+    "conditions": "配置对应续冷能力；持续时间由目标发动机标定。 范围：场景内补充；类型：系统控制功能。",
+    "evidence_status": "仅直接核对用户清单，清单引用的外部原文未全部提供；本版筛选不替代专家确认"
+  },
+  {
+    "candidate_id": "N-N09",
+    "name": "冷却增压空气：压缩后的发动机进气",
+    "applicable_scenarios": [
+      "1"
+    ],
+    "group": "发动机及油液热管理",
+    "disposition": "待配置与需求确认",
+    "mapped_case_functions": [],
+    "reason": "清单支持能力或机理，不足以认定目标案例必须采用该项",
+    "conditions": "发动机采用增压及进气冷却。 范围：配置/工况扩展；类型：系统物理功能。",
+    "evidence_status": "仅直接核对用户清单，清单引用的外部原文未全部提供；本版筛选不替代专家确认"
+  },
+  {
+    "candidate_id": "N-N10",
+    "name": "冷却再循环废气：返回进气侧的发动机废气",
+    "applicable_scenarios": [
+      "1"
+    ],
+    "group": "发动机及油液热管理",
+    "disposition": "待配置与需求确认",
+    "mapped_case_functions": [],
+    "reason": "清单支持能力或机理，不足以认定目标案例必须采用该项",
+    "conditions": "配置冷却式EGR的发电发动机。 范围：配置/工况扩展；类型：系统物理功能。",
+    "evidence_status": "仅直接核对用户清单，清单引用的外部原文未全部提供；本版筛选不替代专家确认"
+  },
+  {
+    "candidate_id": "N-N11",
+    "name": "回收发动机余热：发动机冷却液中的可用热量",
+    "applicable_scenarios": [
+      "1"
+    ],
+    "group": "发动机及油液热管理",
+    "disposition": "待配置与需求确认",
+    "mapped_case_functions": [],
+    "reason": "清单支持能力或机理，不足以认定目标案例必须采用该项",
+    "conditions": "采用相应热管理配置时；具体性能指标待目标项目确认。 范围：配置/工况扩展；类型：系统物理功能。",
+    "evidence_status": "仅直接核对用户清单，清单引用的外部原文未全部提供；本版筛选不替代专家确认"
+  },
+  {
+    "candidate_id": "N-N12",
+    "name": "冷却传动油液：高温变速器或减速器油液",
+    "applicable_scenarios": [
+      "其他配置",
+      "服务"
+    ],
+    "group": "发动机及油液热管理",
+    "disposition": "待配置与需求确认",
+    "mapped_case_functions": [],
+    "reason": "清单支持能力或机理，不足以认定目标案例必须采用该项",
+    "conditions": "具有独立油液温控需求和油液换热器的传动系统。 范围：其他传动配置扩展；类型：系统物理功能。",
+    "evidence_status": "仅直接核对用户清单，清单引用的外部原文未全部提供；本版筛选不替代专家确认"
+  },
+  {
+    "candidate_id": "N-N13",
+    "name": "加热传动油液：低温传动系统油液",
+    "applicable_scenarios": [
+      "其他配置",
+      "服务"
+    ],
+    "group": "发动机及油液热管理",
+    "disposition": "待配置与需求确认",
+    "mapped_case_functions": [],
+    "reason": "清单支持能力或机理，不足以认定目标案例必须采用该项",
+    "conditions": "采用相应热管理配置时；具体性能指标待目标项目确认。 范围：其他传动配置扩展；类型：系统物理功能。",
+    "evidence_status": "仅直接核对用户清单，清单引用的外部原文未全部提供；本版筛选不替代专家确认"
+  },
+  {
+    "candidate_id": "N-N14",
+    "name": "限制发动机热负荷：发动机可持续输出功率",
+    "applicable_scenarios": [
+      "1"
+    ],
+    "group": "发动机及油液热管理",
+    "disposition": "待配置与需求确认",
+    "mapped_case_functions": [],
+    "reason": "清单支持能力或机理，不足以认定目标案例必须采用该项",
+    "conditions": "采用相应热管理配置时；具体性能指标待目标项目确认。 范围：场景内补充；类型：系统控制功能。",
+    "evidence_status": "仅直接核对用户清单，清单引用的外部原文未全部提供；本版筛选不替代专家确认"
+  },
+  {
+    "candidate_id": "N-D01",
+    "name": "冷却电机绕组：电机绕组和定子的损耗热",
+    "applicable_scenarios": [
+      "1",
+      "2",
+      "3"
+    ],
+    "group": "电驱与附属电子设备散热",
+    "disposition": "待配置与需求确认",
+    "mapped_case_functions": [],
+    "reason": "清单支持能力或机理，不足以认定目标案例必须采用该项",
+    "conditions": "目标系统实际建模电驱热负荷；场景二/三属于电驱热管理范围扩展。 范围：配置/工况扩展；类型：系统物理功能。",
+    "evidence_status": "仅直接核对用户清单，清单引用的外部原文未全部提供；本版筛选不替代专家确认"
+  },
+  {
+    "candidate_id": "N-D02",
+    "name": "冷却电机转子：电机转子损耗热",
+    "applicable_scenarios": [
+      "1",
+      "2",
+      "3"
+    ],
+    "group": "电驱与附属电子设备散热",
+    "disposition": "待配置与需求确认",
+    "mapped_case_functions": [],
+    "reason": "清单支持能力或机理，不足以认定目标案例必须采用该项",
+    "conditions": "采用相应热管理配置时；具体性能指标待目标项目确认。 范围：配置/工况扩展；类型：系统物理功能。",
+    "evidence_status": "仅直接核对用户清单，清单引用的外部原文未全部提供；本版筛选不替代专家确认"
+  },
+  {
+    "candidate_id": "N-D03",
+    "name": "循环输送冷却油：流经电驱热源的油液",
+    "applicable_scenarios": [
+      "1",
+      "2",
+      "3"
+    ],
+    "group": "电驱与附属电子设备散热",
+    "disposition": "待配置与需求确认",
+    "mapped_case_functions": [],
+    "reason": "清单支持能力或机理，不足以认定目标案例必须采用该项",
+    "conditions": "采用相应热管理配置时；具体性能指标待目标项目确认。 范围：配置/工况扩展；类型：系统物理功能。",
+    "evidence_status": "仅直接核对用户清单，清单引用的外部原文未全部提供；本版筛选不替代专家确认"
+  },
+  {
+    "candidate_id": "N-D04",
+    "name": "转移油侧热量：电驱油液与冷却液之间的热量",
+    "applicable_scenarios": [
+      "1",
+      "2",
+      "3"
+    ],
+    "group": "电驱与附属电子设备散热",
+    "disposition": "待配置与需求确认",
+    "mapped_case_functions": [],
+    "reason": "清单支持能力或机理，不足以认定目标案例必须采用该项",
+    "conditions": "采用相应热管理配置时；具体性能指标待目标项目确认。 范围：配置/工况扩展；类型：系统物理功能。",
+    "evidence_status": "仅直接核对用户清单，清单引用的外部原文未全部提供；本版筛选不替代专家确认"
+  },
+  {
+    "candidate_id": "N-D05",
+    "name": "冷却充电设备：车载充电机的损耗热",
+    "applicable_scenarios": [
+      "1",
+      "2",
+      "3"
+    ],
+    "group": "电驱与附属电子设备散热",
+    "disposition": "待配置与需求确认",
+    "mapped_case_functions": [],
+    "reason": "清单支持能力或机理，不足以认定目标案例必须采用该项",
+    "conditions": "目标车辆配置车载充电机并扩展到交流充电工况。 范围：配置/工况扩展；类型：系统物理功能。",
+    "evidence_status": "仅直接核对用户清单，清单引用的外部原文未全部提供；本版筛选不替代专家确认"
+  },
+  {
+    "candidate_id": "N-D06",
+    "name": "冷却低压变换设备：DC/DC变换过程的损耗热",
+    "applicable_scenarios": [
+      "1",
+      "2",
+      "3"
+    ],
+    "group": "电驱与附属电子设备散热",
+    "disposition": "待配置与需求确认",
+    "mapped_case_functions": [],
+    "reason": "清单支持能力或机理，不足以认定目标案例必须采用该项",
+    "conditions": "采用相应热管理配置时；具体性能指标待目标项目确认。 范围：配置/工况扩展；类型：系统物理功能。",
+    "evidence_status": "仅直接核对用户清单，清单引用的外部原文未全部提供；本版筛选不替代专家确认"
+  },
+  {
+    "candidate_id": "N-D07",
+    "name": "冷却计算设备：辅助驾驶或座舱计算设备的热量",
+    "applicable_scenarios": [
+      "其他配置",
+      "服务"
+    ],
+    "group": "电驱与附属电子设备散热",
+    "disposition": "待配置与需求确认",
+    "mapped_case_functions": [],
+    "reason": "清单支持能力或机理，不足以认定目标案例必须采用该项",
+    "conditions": "采用相应热管理配置时；具体性能指标待目标项目确认。 范围：其他热负荷扩展；类型：系统物理功能。",
+    "evidence_status": "仅直接核对用户清单，清单引用的外部原文未全部提供；本版筛选不替代专家确认"
+  },
+  {
+    "candidate_id": "N-D08",
+    "name": "限制电子设备热功率：充电及电能变换设备的允许工作功率",
+    "applicable_scenarios": [
+      "1",
+      "2",
+      "3"
+    ],
+    "group": "电驱与附属电子设备散热",
+    "disposition": "待配置与需求确认",
+    "mapped_case_functions": [],
+    "reason": "清单支持能力或机理，不足以认定目标案例必须采用该项",
+    "conditions": "采用相应热管理配置时；具体性能指标待目标项目确认。 范围：配置/工况扩展；类型：系统控制功能。",
+    "evidence_status": "仅直接核对用户清单，清单引用的外部原文未全部提供；本版筛选不替代专家确认"
+  },
+  {
+    "candidate_id": "N-W01",
+    "name": "判定供暖需求：座舱加热需求",
+    "applicable_scenarios": [
+      "1",
+      "2",
+      "3"
+    ],
+    "group": "座舱供暖与空气处理",
+    "disposition": "待配置与需求确认",
+    "mapped_case_functions": [],
+    "reason": "清单支持能力或机理，不足以认定目标案例必须采用该项",
+    "conditions": "采用相应热管理配置时；具体性能指标待目标项目确认。 范围：配置/工况扩展；类型：系统控制功能。",
+    "evidence_status": "仅直接核对用户清单，清单引用的外部原文未全部提供；本版筛选不替代专家确认"
+  },
+  {
+    "candidate_id": "N-W02",
+    "name": "加热座舱液体介质：流向暖风换热器的冷却液",
+    "applicable_scenarios": [
+      "1",
+      "2",
+      "3"
+    ],
+    "group": "座舱供暖与空气处理",
+    "disposition": "待配置与需求确认",
+    "mapped_case_functions": [],
+    "reason": "清单支持能力或机理，不足以认定目标案例必须采用该项",
+    "conditions": "采用相应热管理配置时；具体性能指标待目标项目确认。 范围：配置/工况扩展；类型：系统物理功能。",
+    "evidence_status": "仅直接核对用户清单，清单引用的外部原文未全部提供；本版筛选不替代专家确认"
+  },
+  {
+    "candidate_id": "N-W03",
+    "name": "加热座舱送风：暖风换热器中的空气",
+    "applicable_scenarios": [
+      "1",
+      "2",
+      "3"
+    ],
+    "group": "座舱供暖与空气处理",
+    "disposition": "待配置与需求确认",
+    "mapped_case_functions": [],
+    "reason": "清单支持能力或机理，不足以认定目标案例必须采用该项",
+    "conditions": "采用相应热管理配置时；具体性能指标待目标项目确认。 范围：配置/工况扩展；类型：系统物理功能。",
+    "evidence_status": "仅直接核对用户清单，清单引用的外部原文未全部提供；本版筛选不替代专家确认"
+  },
+  {
+    "candidate_id": "N-W04",
+    "name": "直接电热送风：流经空气加热界面的座舱空气",
+    "applicable_scenarios": [
+      "1",
+      "2",
+      "3"
+    ],
+    "group": "座舱供暖与空气处理",
+    "disposition": "待配置与需求确认",
+    "mapped_case_functions": [],
+    "reason": "清单支持能力或机理，不足以认定目标案例必须采用该项",
+    "conditions": "采用相应热管理配置时；具体性能指标待目标项目确认。 范围：配置/工况扩展；类型：系统物理功能。",
+    "evidence_status": "仅直接核对用户清单，清单引用的外部原文未全部提供；本版筛选不替代专家确认"
+  },
+  {
+    "candidate_id": "N-W05",
+    "name": "向座舱释放冷媒热量：舱内放热换热器中的制冷剂热量",
+    "applicable_scenarios": [
+      "1",
+      "2",
+      "3"
+    ],
+    "group": "座舱供暖与空气处理",
+    "disposition": "待配置与需求确认",
+    "mapped_case_functions": [],
+    "reason": "清单支持能力或机理，不足以认定目标案例必须采用该项",
+    "conditions": "热泵供暖配置；不可直接套用于只制冷的原始空调。 范围：配置/工况扩展；类型：系统物理功能。",
+    "evidence_status": "仅直接核对用户清单，清单引用的外部原文未全部提供；本版筛选不替代专家确认"
+  },
+  {
+    "candidate_id": "N-W06",
+    "name": "从环境吸收热量：室外空气可提供的热量",
+    "applicable_scenarios": [
+      "1",
+      "2",
+      "3"
+    ],
+    "group": "座舱供暖与空气处理",
+    "disposition": "待配置与需求确认",
+    "mapped_case_functions": [],
+    "reason": "清单支持能力或机理，不足以认定目标案例必须采用该项",
+    "conditions": "采用相应热管理配置时；具体性能指标待目标项目确认。 范围：配置/工况扩展；类型：系统物理功能。",
+    "evidence_status": "仅直接核对用户清单，清单引用的外部原文未全部提供；本版筛选不替代专家确认"
+  },
+  {
+    "candidate_id": "N-W07",
+    "name": "调节混风温度：进入座舱的冷热空气混合温度",
+    "applicable_scenarios": [
+      "2",
+      "3"
+    ],
+    "group": "座舱供暖与空气处理",
+    "disposition": "待配置与需求确认",
+    "mapped_case_functions": [],
+    "reason": "清单支持能力或机理，不足以认定目标案例必须采用该项",
+    "conditions": "配置相应混风通路；纯制冷最简模型可以不采用。 范围：场景内补充；类型：系统控制功能。",
+    "evidence_status": "仅直接核对用户清单，清单引用的外部原文未全部提供；本版筛选不替代专家确认"
+  },
+  {
+    "candidate_id": "N-W08",
+    "name": "分配座舱送风：不同座舱出风区域的空气流量",
+    "applicable_scenarios": [
+      "2",
+      "3"
+    ],
+    "group": "座舱供暖与空气处理",
+    "disposition": "待配置与需求确认",
+    "mapped_case_functions": [],
+    "reason": "清单支持能力或机理，不足以认定目标案例必须采用该项",
+    "conditions": "采用相应热管理配置时；具体性能指标待目标项目确认。 范围：场景内补充；类型：系统控制功能。",
+    "evidence_status": "仅直接核对用户清单，清单引用的外部原文未全部提供；本版筛选不替代专家确认"
+  },
+  {
+    "candidate_id": "N-W09",
+    "name": "调节分区温度：不同乘员区域的空气温度",
+    "applicable_scenarios": [
+      "2",
+      "3"
+    ],
+    "group": "座舱供暖与空气处理",
+    "disposition": "待配置与需求确认",
+    "mapped_case_functions": [],
+    "reason": "清单支持能力或机理，不足以认定目标案例必须采用该项",
+    "conditions": "采用相应热管理配置时；具体性能指标待目标项目确认。 范围：配置/工况扩展；类型：系统控制功能。",
+    "evidence_status": "仅直接核对用户清单，清单引用的外部原文未全部提供；本版筛选不替代专家确认"
+  },
+  {
+    "candidate_id": "N-W10",
+    "name": "获取湿度：座舱空气湿度",
+    "applicable_scenarios": [
+      "2",
+      "3"
+    ],
+    "group": "座舱供暖与空气处理",
+    "disposition": "待配置与需求确认",
+    "mapped_case_functions": [],
+    "reason": "清单支持能力或机理，不足以认定目标案例必须采用该项",
+    "conditions": "采用相应热管理配置时；具体性能指标待目标项目确认。 范围：场景内补充；类型：系统控制功能。",
+    "evidence_status": "仅直接核对用户清单，清单引用的外部原文未全部提供；本版筛选不替代专家确认"
+  },
+  {
+    "candidate_id": "N-W11",
+    "name": "判定结雾风险：风挡表面的凝露风险",
+    "applicable_scenarios": [
+      "2",
+      "3"
+    ],
+    "group": "座舱供暖与空气处理",
+    "disposition": "待配置与需求确认",
+    "mapped_case_functions": [],
+    "reason": "清单支持能力或机理，不足以认定目标案例必须采用该项",
+    "conditions": "采用相应热管理配置时；具体性能指标待目标项目确认。 范围：场景内补充；类型：系统控制功能。",
+    "evidence_status": "仅直接核对用户清单，清单引用的外部原文未全部提供；本版筛选不替代专家确认"
+  },
+  {
+    "candidate_id": "N-W12",
+    "name": "排出凝结水：空气换热器产生的冷凝水",
+    "applicable_scenarios": [
+      "2",
+      "3"
+    ],
+    "group": "座舱供暖与空气处理",
+    "disposition": "待配置与需求确认",
+    "mapped_case_functions": [],
+    "reason": "清单支持能力或机理，不足以认定目标案例必须采用该项",
+    "conditions": "采用相应热管理配置时；具体性能指标待目标项目确认。 范围：场景内补充；类型：系统物理功能。",
+    "evidence_status": "仅直接核对用户清单，清单引用的外部原文未全部提供；本版筛选不替代专家确认"
+  },
+  {
+    "candidate_id": "N-W13",
+    "name": "干燥空调风路：停机后蒸发器与风道的残余水分",
+    "applicable_scenarios": [
+      "2",
+      "3"
+    ],
+    "group": "座舱供暖与空气处理",
+    "disposition": "待配置与需求确认",
+    "mapped_case_functions": [],
+    "reason": "清单支持能力或机理，不足以认定目标案例必须采用该项",
+    "conditions": "采用相应热管理配置时；具体性能指标待目标项目确认。 范围：配置/工况扩展；类型：系统控制功能。",
+    "evidence_status": "仅直接核对用户清单，清单引用的外部原文未全部提供；本版筛选不替代专家确认"
+  },
+  {
+    "candidate_id": "N-W14",
+    "name": "过滤座舱进气：座舱空气入口的颗粒物",
+    "applicable_scenarios": [
+      "2",
+      "3"
+    ],
+    "group": "座舱供暖与空气处理",
+    "disposition": "待配置与需求确认",
+    "mapped_case_functions": [],
+    "reason": "清单支持能力或机理，不足以认定目标案例必须采用该项",
+    "conditions": "采用相应热管理配置时；具体性能指标待目标项目确认。 范围：场景内补充；类型：系统物理功能。",
+    "evidence_status": "仅直接核对用户清单，清单引用的外部原文未全部提供；本版筛选不替代专家确认"
+  },
+  {
+    "candidate_id": "N-W15",
+    "name": "预调座舱温度：出发前的座舱温度",
+    "applicable_scenarios": [
+      "2",
+      "3"
+    ],
+    "group": "座舱供暖与空气处理",
+    "disposition": "待配置与需求确认",
+    "mapped_case_functions": [],
+    "reason": "清单支持能力或机理，不足以认定目标案例必须采用该项",
+    "conditions": "采用相应热管理配置时；具体性能指标待目标项目确认。 范围：配置/工况扩展；类型：系统控制功能。",
+    "evidence_status": "仅直接核对用户清单，清单引用的外部原文未全部提供；本版筛选不替代专家确认"
+  },
+  {
+    "candidate_id": "N-W16",
+    "name": "补偿附加热负荷：日照或乘员变化引起的座舱热负荷",
+    "applicable_scenarios": [
+      "2",
+      "3"
+    ],
+    "group": "座舱供暖与空气处理",
+    "disposition": "待配置与需求确认",
+    "mapped_case_functions": [],
+    "reason": "清单支持能力或机理，不足以认定目标案例必须采用该项",
+    "conditions": "采用相应热管理配置时；具体性能指标待目标项目确认。 范围：场景内补充；类型：系统控制功能。",
+    "evidence_status": "仅直接核对用户清单，清单引用的外部原文未全部提供；本版筛选不替代专家确认"
+  },
+  {
+    "candidate_id": "N-W17",
+    "name": "去除室外结霜：热泵室外换热器表面霜层",
+    "applicable_scenarios": [
+      "2",
+      "3"
+    ],
+    "group": "座舱供暖与空气处理",
+    "disposition": "待配置与需求确认",
+    "mapped_case_functions": [],
+    "reason": "清单支持能力或机理，不足以认定目标案例必须采用该项",
+    "conditions": "采用相应热管理配置时；具体性能指标待目标项目确认。 范围：配置/工况扩展；类型：系统控制功能。",
+    "evidence_status": "仅直接核对用户清单，清单引用的外部原文未全部提供；本版筛选不替代专家确认"
+  },
+  {
+    "candidate_id": "N-G01",
+    "name": "评估热源可用性：环境及电驱等可回收热源",
+    "applicable_scenarios": [
+      "1",
+      "2",
+      "3"
+    ],
+    "group": "跨回路热量协调",
+    "disposition": "待配置与需求确认",
+    "mapped_case_functions": [],
+    "reason": "清单支持能力或机理，不足以认定目标案例必须采用该项",
+    "conditions": "采用相应热管理配置时；具体性能指标待目标项目确认。 范围：配置/工况扩展；类型：系统控制功能。",
+    "evidence_status": "仅直接核对用户清单，清单引用的外部原文未全部提供；本版筛选不替代专家确认"
+  },
+  {
+    "candidate_id": "N-G02",
+    "name": "回收电驱余热：电驱及功率电子排出的热量",
+    "applicable_scenarios": [
+      "1",
+      "2",
+      "3"
+    ],
+    "group": "跨回路热量协调",
+    "disposition": "待配置与需求确认",
+    "mapped_case_functions": [],
+    "reason": "清单支持能力或机理，不足以认定目标案例必须采用该项",
+    "conditions": "采用相应热管理配置时；具体性能指标待目标项目确认。 范围：配置/工况扩展；类型：系统物理功能。",
+    "evidence_status": "仅直接核对用户清单，清单引用的外部原文未全部提供；本版筛选不替代专家确认"
+  },
+  {
+    "candidate_id": "N-G03",
+    "name": "向液路供热：冷媒放热侧传给冷却液的热量",
+    "applicable_scenarios": [
+      "1",
+      "3"
+    ],
+    "group": "跨回路热量协调",
+    "disposition": "待配置与需求确认",
+    "mapped_case_functions": [],
+    "reason": "清单支持能力或机理，不足以认定目标案例必须采用该项",
+    "conditions": "采用相应热管理配置时；具体性能指标待目标项目确认。 范围：配置/工况扩展；类型：系统物理功能。",
+    "evidence_status": "仅直接核对用户清单，清单引用的外部原文未全部提供；本版筛选不替代专家确认"
+  },
+  {
+    "candidate_id": "N-G04",
+    "name": "分配共享热量：座舱与电池等对象可用的供热量",
+    "applicable_scenarios": [
+      "1",
+      "2",
+      "3"
+    ],
+    "group": "跨回路热量协调",
+    "disposition": "待配置与需求确认",
+    "mapped_case_functions": [],
+    "reason": "清单支持能力或机理，不足以认定目标案例必须采用该项",
+    "conditions": "采用相应热管理配置时；具体性能指标待目标项目确认。 范围：配置/工况扩展；类型：系统控制功能。",
+    "evidence_status": "仅直接核对用户清单，清单引用的外部原文未全部提供；本版筛选不替代专家确认"
+  },
+  {
+    "candidate_id": "N-G05",
+    "name": "限制辅助能耗：热管理可用电功率预算",
+    "applicable_scenarios": [
+      "1",
+      "2",
+      "3"
+    ],
+    "group": "跨回路热量协调",
+    "disposition": "待配置与需求确认",
+    "mapped_case_functions": [],
+    "reason": "清单支持能力或机理，不足以认定目标案例必须采用该项",
+    "conditions": "采用相应热管理配置时；具体性能指标待目标项目确认。 范围：场景内补充；类型：系统控制功能。",
+    "evidence_status": "仅直接核对用户清单，清单引用的外部原文未全部提供；本版筛选不替代专家确认"
+  },
+  {
+    "candidate_id": "N-G06",
+    "name": "选择温控组合：可行的热源与散热路径组合",
+    "applicable_scenarios": [
+      "1",
+      "2",
+      "3"
+    ],
+    "group": "跨回路热量协调",
+    "disposition": "待配置与需求确认",
+    "mapped_case_functions": [],
+    "reason": "清单支持能力或机理，不足以认定目标案例必须采用该项",
+    "conditions": "采用相应热管理配置时；具体性能指标待目标项目确认。 范围：配置/工况扩展；类型：系统控制功能。",
+    "evidence_status": "仅直接核对用户清单，清单引用的外部原文未全部提供；本版筛选不替代专家确认"
+  },
+  {
+    "candidate_id": "N-G07",
+    "name": "协调模式切换：切换期间的泵阀与冷热源动作",
+    "applicable_scenarios": [
+      "1",
+      "2",
+      "3"
+    ],
+    "group": "跨回路热量协调",
+    "disposition": "待配置与需求确认",
+    "mapped_case_functions": [],
+    "reason": "清单支持能力或机理，不足以认定目标案例必须采用该项",
+    "conditions": "采用相应热管理配置时；具体性能指标待目标项目确认。 范围：场景内补充；类型：系统控制功能。",
+    "evidence_status": "仅直接核对用户清单，清单引用的外部原文未全部提供；本版筛选不替代专家确认"
+  },
+  {
+    "candidate_id": "N-G08",
+    "name": "接续余热利用：原热源停止后仍可用的残余热量",
+    "applicable_scenarios": [
+      "1",
+      "2",
+      "3"
+    ],
+    "group": "跨回路热量协调",
+    "disposition": "待配置与需求确认",
+    "mapped_case_functions": [],
+    "reason": "清单支持能力或机理，不足以认定目标案例必须采用该项",
+    "conditions": "采用相应热管理配置时；具体性能指标待目标项目确认。 范围：配置/工况扩展；类型：系统控制功能。",
+    "evidence_status": "仅直接核对用户清单，清单引用的外部原文未全部提供；本版筛选不替代专家确认"
+  },
+  {
+    "candidate_id": "N-G09",
+    "name": "存储可用热量：可储存的余热或预置热量",
+    "applicable_scenarios": [
+      "其他配置",
+      "服务"
+    ],
+    "group": "跨回路热量协调",
+    "disposition": "待配置与需求确认",
+    "mapped_case_functions": [],
+    "reason": "清单支持能力或机理，不足以认定目标案例必须采用该项",
+    "conditions": "原典型图中存在相变储热罐；历史车型库未核实其装车。 范围：储热配置扩展；类型：系统物理功能。",
+    "evidence_status": "仅直接核对用户清单，清单引用的外部原文未全部提供；本版筛选不替代专家确认"
+  },
+  {
+    "candidate_id": "N-G10",
+    "name": "释放存储热量：储热介质中的可用热量",
+    "applicable_scenarios": [
+      "其他配置",
+      "服务"
+    ],
+    "group": "跨回路热量协调",
+    "disposition": "待配置与需求确认",
+    "mapped_case_functions": [],
+    "reason": "清单支持能力或机理，不足以认定目标案例必须采用该项",
+    "conditions": "配置专用储热装置；不宣称所列历史车型具有该配置。 范围：储热配置扩展；类型：系统物理功能。",
+    "evidence_status": "仅直接核对用户清单，清单引用的外部原文未全部提供；本版筛选不替代专家确认"
+  },
+  {
+    "candidate_id": "N-Q01",
+    "name": "校验温度有效性：热管理温度输入",
+    "applicable_scenarios": [
+      "1",
+      "2",
+      "3"
+    ],
+    "group": "诊断、保护与降级",
+    "disposition": "待配置与需求确认",
+    "mapped_case_functions": [],
+    "reason": "清单支持能力或机理，不足以认定目标案例必须采用该项",
+    "conditions": "采用相应热管理配置时；具体性能指标待目标项目确认。 范围：场景内补充；类型：系统控制功能。",
+    "evidence_status": "仅直接核对用户清单，清单引用的外部原文未全部提供；本版筛选不替代专家确认"
+  },
+  {
+    "candidate_id": "N-Q02",
+    "name": "识别流量不足：要求流通的液路实际流量",
+    "applicable_scenarios": [
+      "1",
+      "3"
+    ],
+    "group": "诊断、保护与降级",
+    "disposition": "待配置与需求确认",
+    "mapped_case_functions": [],
+    "reason": "清单支持能力或机理，不足以认定目标案例必须采用该项",
+    "conditions": "采用相应热管理配置时；具体性能指标待目标项目确认。 范围：场景内补充；类型：系统控制功能。",
+    "evidence_status": "仅直接核对用户清单，清单引用的外部原文未全部提供；本版筛选不替代专家确认"
+  },
+  {
+    "candidate_id": "N-Q03",
+    "name": "诊断阀位偏差：要求阀态与实际通路之间的偏差",
+    "applicable_scenarios": [
+      "1",
+      "3"
+    ],
+    "group": "诊断、保护与降级",
+    "disposition": "待配置与需求确认",
+    "mapped_case_functions": [],
+    "reason": "清单支持能力或机理，不足以认定目标案例必须采用该项",
+    "conditions": "采用相应热管理配置时；具体性能指标待目标项目确认。 范围：场景内补充；类型：系统控制功能。",
+    "evidence_status": "仅直接核对用户清单，清单引用的外部原文未全部提供；本版筛选不替代专家确认"
+  },
+  {
+    "candidate_id": "N-Q04",
+    "name": "识别换热能力下降：实际温控效果与期望效果的偏差",
+    "applicable_scenarios": [
+      "1",
+      "2",
+      "3"
+    ],
+    "group": "诊断、保护与降级",
+    "disposition": "待配置与需求确认",
+    "mapped_case_functions": [],
+    "reason": "清单支持能力或机理，不足以认定目标案例必须采用该项",
+    "conditions": "采用相应热管理配置时；具体性能指标待目标项目确认。 范围：场景内补充；类型：系统控制功能。",
+    "evidence_status": "仅直接核对用户清单，清单引用的外部原文未全部提供；本版筛选不替代专家确认"
+  },
+  {
+    "candidate_id": "N-Q05",
+    "name": "识别介质泄漏：冷却液或制冷剂异常流失",
+    "applicable_scenarios": [
+      "1",
+      "2",
+      "3"
+    ],
+    "group": "诊断、保护与降级",
+    "disposition": "待配置与需求确认",
+    "mapped_case_functions": [],
+    "reason": "清单支持能力或机理，不足以认定目标案例必须采用该项",
+    "conditions": "采用相应热管理配置时；具体性能指标待目标项目确认。 范围：场景内补充；类型：系统控制功能。",
+    "evidence_status": "仅直接核对用户清单，清单引用的外部原文未全部提供；本版筛选不替代专家确认"
+  },
+  {
+    "candidate_id": "N-Q06",
+    "name": "抑制加热干烧：缺少介质流动时的液体加热",
+    "applicable_scenarios": [
+      "1",
+      "3"
+    ],
+    "group": "诊断、保护与降级",
+    "disposition": "待配置与需求确认",
+    "mapped_case_functions": [],
+    "reason": "清单支持能力或机理，不足以认定目标案例必须采用该项",
+    "conditions": "采用相应热管理配置时；具体性能指标待目标项目确认。 范围：配置/工况扩展；类型：系统控制功能。",
+    "evidence_status": "仅直接核对用户清单，清单引用的外部原文未全部提供；本版筛选不替代专家确认"
+  },
+  {
+    "candidate_id": "N-Q07",
+    "name": "抑制冷却液冻结：低温工况下的液体冻结风险",
+    "applicable_scenarios": [
+      "1",
+      "3"
+    ],
+    "group": "诊断、保护与降级",
+    "disposition": "待配置与需求确认",
+    "mapped_case_functions": [],
+    "reason": "清单支持能力或机理，不足以认定目标案例必须采用该项",
+    "conditions": "采用相应热管理配置时；具体性能指标待目标项目确认。 范围：场景内补充；类型：系统控制功能。",
+    "evidence_status": "仅直接核对用户清单，清单引用的外部原文未全部提供；本版筛选不替代专家确认"
+  },
+  {
+    "candidate_id": "N-Q08",
+    "name": "释放冷媒过压：制冷剂回路超限压力",
+    "applicable_scenarios": [
+      "2",
+      "3"
+    ],
+    "group": "诊断、保护与降级",
+    "disposition": "待配置与需求确认",
+    "mapped_case_functions": [],
+    "reason": "清单支持能力或机理，不足以认定目标案例必须采用该项",
+    "conditions": "具备相应泄压装置；排放路径及开启条件必须按配置确认。 范围：场景内补充；类型：系统物理功能。",
+    "evidence_status": "仅直接核对用户清单，清单引用的外部原文未全部提供；本版筛选不替代专家确认"
+  },
+  {
+    "candidate_id": "N-Q09",
+    "name": "限制压缩机运行包络：压缩过程允许的压力温度与转速组合",
+    "applicable_scenarios": [
+      "2",
+      "3"
+    ],
+    "group": "诊断、保护与降级",
+    "disposition": "待配置与需求确认",
+    "mapped_case_functions": [],
+    "reason": "清单支持能力或机理，不足以认定目标案例必须采用该项",
+    "conditions": "采用相应热管理配置时；具体性能指标待目标项目确认。 范围：场景内补充；类型：系统控制功能。",
+    "evidence_status": "仅直接核对用户清单，清单引用的外部原文未全部提供；本版筛选不替代专家确认"
+  },
+  {
+    "candidate_id": "N-Q10",
+    "name": "保持保护性温控：部分故障后的可用温控能力",
+    "applicable_scenarios": [
+      "1",
+      "2",
+      "3"
+    ],
+    "group": "诊断、保护与降级",
+    "disposition": "待配置与需求确认",
+    "mapped_case_functions": [],
+    "reason": "清单支持能力或机理，不足以认定目标案例必须采用该项",
+    "conditions": "采用相应热管理配置时；具体性能指标待目标项目确认。 范围：场景内补充；类型：系统控制功能。",
+    "evidence_status": "仅直接核对用户清单，清单引用的外部原文未全部提供；本版筛选不替代专家确认"
+  },
+  {
+    "candidate_id": "N-Q11",
+    "name": "报告热能力限制：温控可用能力或热保护限制状态",
+    "applicable_scenarios": [
+      "1",
+      "2",
+      "3"
+    ],
+    "group": "诊断、保护与降级",
+    "disposition": "待配置与需求确认",
+    "mapped_case_functions": [],
+    "reason": "清单支持能力或机理，不足以认定目标案例必须采用该项",
+    "conditions": "采用相应热管理配置时；具体性能指标待目标项目确认。 范围：场景内补充；类型：系统控制功能。",
+    "evidence_status": "仅直接核对用户清单，清单引用的外部原文未全部提供；本版筛选不替代专家确认"
+  },
+  {
+    "candidate_id": "N-Q12",
+    "name": "记录热故障证据：故障发生时的热状态与执行条件",
+    "applicable_scenarios": [
+      "1",
+      "2",
+      "3"
+    ],
+    "group": "诊断、保护与降级",
+    "disposition": "待配置与需求确认",
+    "mapped_case_functions": [],
+    "reason": "清单支持能力或机理，不足以认定目标案例必须采用该项",
+    "conditions": "采用相应热管理配置时；具体性能指标待目标项目确认。 范围：场景内补充；类型：系统控制功能。",
+    "evidence_status": "仅直接核对用户清单，清单引用的外部原文未全部提供；本版筛选不替代专家确认"
+  },
+  {
+    "candidate_id": "N-Q13",
+    "name": "抑制控制抖动：阈值附近的冷热模式反复切换",
+    "applicable_scenarios": [
+      "1",
+      "2",
+      "3"
+    ],
+    "group": "诊断、保护与降级",
+    "disposition": "待配置与需求确认",
+    "mapped_case_functions": [],
+    "reason": "清单支持能力或机理，不足以认定目标案例必须采用该项",
+    "conditions": "采用相应热管理配置时；具体性能指标待目标项目确认。 范围：控制策略候选；类型：系统控制功能。",
+    "evidence_status": "仅直接核对用户清单，清单引用的外部原文未全部提供；本版筛选不替代专家确认"
+  },
+  {
+    "candidate_id": "N-Q14",
+    "name": "隔离不安全热路径：可能放大异常影响的热连接",
+    "applicable_scenarios": [
+      "1",
+      "2",
+      "3"
+    ],
+    "group": "诊断、保护与降级",
+    "disposition": "待配置与需求确认",
+    "mapped_case_functions": [],
+    "reason": "清单支持能力或机理，不足以认定目标案例必须采用该项",
+    "conditions": "采用相应热管理配置时；具体性能指标待目标项目确认。 范围：安全策略候选；类型：系统控制功能。",
+    "evidence_status": "仅直接核对用户清单，清单引用的外部原文未全部提供；本版筛选不替代专家确认"
+  },
+  {
+    "candidate_id": "N-Q15",
+    "name": "请求紧急热处置：电池快速异常升温事件",
+    "applicable_scenarios": [
+      "1",
+      "2",
+      "3"
+    ],
+    "group": "诊断、保护与降级",
+    "disposition": "待配置与需求确认",
+    "mapped_case_functions": [],
+    "reason": "清单支持能力或机理，不足以认定目标案例必须采用该项",
+    "conditions": "采用相应热管理配置时；具体性能指标待目标项目确认。 范围：安全策略候选；类型：系统控制功能。",
+    "evidence_status": "仅直接核对用户清单，清单引用的外部原文未全部提供；本版筛选不替代专家确认"
+  },
+  {
+    "candidate_id": "N-Q16",
+    "name": "确认恢复条件：保护或降级后的温控恢复许可",
+    "applicable_scenarios": [
+      "1",
+      "2",
+      "3"
+    ],
+    "group": "诊断、保护与降级",
+    "disposition": "待配置与需求确认",
+    "mapped_case_functions": [],
+    "reason": "清单支持能力或机理，不足以认定目标案例必须采用该项",
+    "conditions": "采用相应热管理配置时；具体性能指标待目标项目确认。 范围：场景内补充；类型：系统控制功能。",
+    "evidence_status": "仅直接核对用户清单，清单引用的外部原文未全部提供；本版筛选不替代专家确认"
+  },
+  {
+    "candidate_id": "N-F01",
+    "name": "冷却燃料电池堆：燃料电池堆产生的热量",
+    "applicable_scenarios": [
+      "其他配置",
+      "服务"
+    ],
+    "group": "燃料电池配置扩展",
+    "disposition": "本版暂缓纳入",
+    "mapped_case_functions": [],
+    "reason": "属于未指定热管理配置、其他动力类型、维修服务或额外仿真职责，保持候选",
+    "conditions": "采用相应热管理配置时；具体性能指标待目标项目确认。 范围：燃料电池配置扩展；类型：系统物理功能。",
+    "evidence_status": "仅直接核对用户清单，清单引用的外部原文未全部提供；本版筛选不替代专家确认"
+  },
+  {
+    "candidate_id": "N-F02",
+    "name": "切换电堆暖机路径：电堆液路的散热器与旁通通道",
+    "applicable_scenarios": [
+      "其他配置",
+      "服务"
+    ],
+    "group": "燃料电池配置扩展",
+    "disposition": "本版暂缓纳入",
+    "mapped_case_functions": [],
+    "reason": "属于未指定热管理配置、其他动力类型、维修服务或额外仿真职责，保持候选",
+    "conditions": "采用相应热管理配置时；具体性能指标待目标项目确认。 范围：燃料电池配置扩展；类型：系统控制功能。",
+    "evidence_status": "仅直接核对用户清单，清单引用的外部原文未全部提供；本版筛选不替代专家确认"
+  },
+  {
+    "candidate_id": "N-F03",
+    "name": "去除溶解离子：燃料电池冷却液中的溶解离子",
+    "applicable_scenarios": [
+      "其他配置",
+      "服务"
+    ],
+    "group": "燃料电池配置扩展",
+    "disposition": "本版暂缓纳入",
+    "mapped_case_functions": [],
+    "reason": "属于未指定热管理配置、其他动力类型、维修服务或额外仿真职责，保持候选",
+    "conditions": "采用相应热管理配置时；具体性能指标待目标项目确认。 范围：燃料电池配置扩展；类型：系统物理功能。",
+    "evidence_status": "仅直接核对用户清单，清单引用的外部原文未全部提供；本版筛选不替代专家确认"
+  },
+  {
+    "candidate_id": "N-F04",
+    "name": "回收电堆余热：燃料电池堆冷却液可用热量",
+    "applicable_scenarios": [
+      "其他配置",
+      "服务"
+    ],
+    "group": "燃料电池配置扩展",
+    "disposition": "本版暂缓纳入",
+    "mapped_case_functions": [],
+    "reason": "属于未指定热管理配置、其他动力类型、维修服务或额外仿真职责，保持候选",
+    "conditions": "采用相应热管理配置时；具体性能指标待目标项目确认。 范围：燃料电池配置扩展；类型：系统物理功能。",
+    "evidence_status": "仅直接核对用户清单，清单引用的外部原文未全部提供；本版筛选不替代专家确认"
+  },
+  {
+    "candidate_id": "N-F05",
+    "name": "监控冷却液电导率：燃料电池冷却液导电特性",
+    "applicable_scenarios": [
+      "其他配置",
+      "服务"
+    ],
+    "group": "燃料电池配置扩展",
+    "disposition": "本版暂缓纳入",
+    "mapped_case_functions": [],
+    "reason": "属于未指定热管理配置、其他动力类型、维修服务或额外仿真职责，保持候选",
+    "conditions": "采用相应热管理配置时；具体性能指标待目标项目确认。 范围：燃料电池配置扩展；类型：系统控制功能。",
+    "evidence_status": "仅直接核对用户清单，清单引用的外部原文未全部提供；本版筛选不替代专家确认"
+  },
+  {
+    "candidate_id": "N-S01",
+    "name": "排除液路空气：维修加注后冷却液回路中的残留空气",
+    "applicable_scenarios": [
+      "其他配置",
+      "服务"
+    ],
+    "group": "维修与调试服务",
+    "disposition": "本版暂缓纳入",
+    "mapped_case_functions": [],
+    "reason": "属于未指定热管理配置、其他动力类型、维修服务或额外仿真职责，保持候选",
+    "conditions": "采用相应热管理配置时；具体性能指标待目标项目确认。 范围：维修服务扩展；类型：维修服务功能。",
+    "evidence_status": "仅直接核对用户清单，清单引用的外部原文未全部提供；本版筛选不替代专家确认"
+  },
+  {
+    "candidate_id": "N-S02",
+    "name": "开放介质服务通路：维修加注或回收所需的热管理通道",
+    "applicable_scenarios": [
+      "其他配置",
+      "服务"
+    ],
+    "group": "维修与调试服务",
+    "disposition": "本版暂缓纳入",
+    "mapped_case_functions": [],
+    "reason": "属于未指定热管理配置、其他动力类型、维修服务或额外仿真职责，保持候选",
+    "conditions": "采用相应热管理配置时；具体性能指标待目标项目确认。 范围：维修服务扩展；类型：维修服务功能。",
+    "evidence_status": "仅直接核对用户清单，清单引用的外部原文未全部提供；本版筛选不替代专家确认"
+  },
+  {
+    "candidate_id": "N-S03",
+    "name": "识别循环泵配置：循环泵与控制所需的配置参数",
+    "applicable_scenarios": [
+      "其他配置",
+      "服务"
+    ],
+    "group": "维修与调试服务",
+    "disposition": "本版暂缓纳入",
+    "mapped_case_functions": [],
+    "reason": "属于未指定热管理配置、其他动力类型、维修服务或额外仿真职责，保持候选",
+    "conditions": "采用相应热管理配置时；具体性能指标待目标项目确认。 范围：维修服务扩展；类型：维修服务功能。",
+    "evidence_status": "仅直接核对用户清单，清单引用的外部原文未全部提供；本版筛选不替代专家确认"
+  },
+  {
+    "candidate_id": "N-S04",
+    "name": "验证阀路动作：维修测试中的冷却液阀动作",
+    "applicable_scenarios": [
+      "其他配置",
+      "服务"
+    ],
+    "group": "维修与调试服务",
+    "disposition": "本版暂缓纳入",
+    "mapped_case_functions": [],
+    "reason": "属于未指定热管理配置、其他动力类型、维修服务或额外仿真职责，保持候选",
+    "conditions": "采用相应热管理配置时；具体性能指标待目标项目确认。 范围：维修服务扩展；类型：维修服务功能。",
+    "evidence_status": "仅直接核对用户清单，清单引用的外部原文未全部提供；本版筛选不替代专家确认"
+  },
+  {
+    "candidate_id": "N-S05",
+    "name": "调试热泵系统：装配或维修后的热泵运行能力",
+    "applicable_scenarios": [
+      "其他配置",
+      "服务"
+    ],
+    "group": "维修与调试服务",
+    "disposition": "本版暂缓纳入",
+    "mapped_case_functions": [],
+    "reason": "属于未指定热管理配置、其他动力类型、维修服务或额外仿真职责，保持候选",
+    "conditions": "采用相应热管理配置时；具体性能指标待目标项目确认。 范围：维修服务扩展；类型：维修服务功能。",
+    "evidence_status": "仅直接核对用户清单，清单引用的外部原文未全部提供；本版筛选不替代专家确认"
+  },
+  {
+    "candidate_id": "N-S06",
+    "name": "重置更换参数：压缩机更换后的适配参数",
+    "applicable_scenarios": [
+      "其他配置",
+      "服务"
+    ],
+    "group": "维修与调试服务",
+    "disposition": "本版暂缓纳入",
+    "mapped_case_functions": [],
+    "reason": "属于未指定热管理配置、其他动力类型、维修服务或额外仿真职责，保持候选",
+    "conditions": "采用相应热管理配置时；具体性能指标待目标项目确认。 范围：维修服务扩展；类型：维修服务功能。",
+    "evidence_status": "仅直接核对用户清单，清单引用的外部原文未全部提供；本版筛选不替代专家确认"
+  },
+  {
+    "candidate_id": "N-S07",
+    "name": "清洁电池风路：电池进气滤网、风机与风道的积尘",
+    "applicable_scenarios": [
+      "其他配置",
+      "服务"
+    ],
+    "group": "维修与调试服务",
+    "disposition": "本版暂缓纳入",
+    "mapped_case_functions": [],
+    "reason": "属于未指定热管理配置、其他动力类型、维修服务或额外仿真职责，保持候选",
+    "conditions": "采用相应热管理配置时；具体性能指标待目标项目确认。 范围：维修服务扩展；类型：维修服务功能。",
+    "evidence_status": "仅直接核对用户清单，清单引用的外部原文未全部提供；本版筛选不替代专家确认"
+  },
+  {
+    "candidate_id": "N-M01",
+    "name": "计算导热热流：固体热节点之间的热量传递",
+    "applicable_scenarios": [
+      "1",
+      "2",
+      "3"
+    ],
+    "group": "仿真与热模型补充",
+    "disposition": "本版暂缓纳入",
+    "mapped_case_functions": [],
+    "reason": "属于未指定热管理配置、其他动力类型、维修服务或额外仿真职责，保持候选",
+    "conditions": "采用相应热管理配置时；具体性能指标待目标项目确认。 范围：场景内补充；类型：仿真功能。",
+    "evidence_status": "仅直接核对用户清单，清单引用的外部原文未全部提供；本版筛选不替代专家确认"
+  },
+  {
+    "candidate_id": "N-M02",
+    "name": "计算液路输热：液体流量与进出口焓差对应的热流",
+    "applicable_scenarios": [
+      "1",
+      "3"
+    ],
+    "group": "仿真与热模型补充",
+    "disposition": "本版暂缓纳入",
+    "mapped_case_functions": [],
+    "reason": "属于未指定热管理配置、其他动力类型、维修服务或额外仿真职责，保持候选",
+    "conditions": "采用相应热管理配置时；具体性能指标待目标项目确认。 范围：场景内补充；类型：仿真功能。",
+    "evidence_status": "仅直接核对用户清单，清单引用的外部原文未全部提供；本版筛选不替代专家确认"
+  },
+  {
+    "candidate_id": "N-M03",
+    "name": "计算相变换热：冷媒蒸发或冷凝过程的焓变",
+    "applicable_scenarios": [
+      "2",
+      "3"
+    ],
+    "group": "仿真与热模型补充",
+    "disposition": "本版暂缓纳入",
+    "mapped_case_functions": [],
+    "reason": "属于未指定热管理配置、其他动力类型、维修服务或额外仿真职责，保持候选",
+    "conditions": "采用相应热管理配置时；具体性能指标待目标项目确认。 范围：场景内补充；类型：仿真功能。",
+    "evidence_status": "仅直接核对用户清单，清单引用的外部原文未全部提供；本版筛选不替代专家确认"
+  },
+  {
+    "candidate_id": "N-M04",
+    "name": "估算座舱热湿负荷：环境、日照、乘员及通风产生的显潜热负荷",
+    "applicable_scenarios": [
+      "2",
+      "3"
+    ],
+    "group": "仿真与热模型补充",
+    "disposition": "本版暂缓纳入",
+    "mapped_case_functions": [],
+    "reason": "属于未指定热管理配置、其他动力类型、维修服务或额外仿真职责，保持候选",
+    "conditions": "采用相应热管理配置时；具体性能指标待目标项目确认。 范围：场景内补充；类型：仿真功能。",
+    "evidence_status": "仅直接核对用户清单，清单引用的外部原文未全部提供；本版筛选不替代专家确认"
+  },
+  {
+    "candidate_id": "N-M05",
+    "name": "核算回路能量平衡：热源、换热、辅助功与储能变化",
+    "applicable_scenarios": [
+      "1",
+      "2",
+      "3"
+    ],
+    "group": "仿真与热模型补充",
+    "disposition": "本版暂缓纳入",
+    "mapped_case_functions": [],
+    "reason": "属于未指定热管理配置、其他动力类型、维修服务或额外仿真职责，保持候选",
+    "conditions": "采用相应热管理配置时；具体性能指标待目标项目确认。 范围：场景内补充；类型：仿真功能。",
+    "evidence_status": "仅直接核对用户清单，清单引用的外部原文未全部提供；本版筛选不替代专家确认"
+  },
+  {
+    "candidate_id": "N-M06",
+    "name": "更新边界换热能力：随车速、风量和模式变化的换热参数",
+    "applicable_scenarios": [
+      "1",
+      "2",
+      "3"
+    ],
+    "group": "仿真与热模型补充",
+    "disposition": "本版暂缓纳入",
+    "mapped_case_functions": [],
+    "reason": "属于未指定热管理配置、其他动力类型、维修服务或额外仿真职责，保持候选",
+    "conditions": "采用相应热管理配置时；具体性能指标待目标项目确认。 范围：场景内补充；类型：仿真功能。",
+    "evidence_status": "仅直接核对用户清单，清单引用的外部原文未全部提供；本版筛选不替代专家确认"
+  }
+]

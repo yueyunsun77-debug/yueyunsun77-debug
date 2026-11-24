@@ -1,0 +1,3456 @@
+{
+  "passed": true,
+  "check_count": 689,
+  "canonical_models": 19,
+  "sysml_files_covered": 38,
+  "views": 108,
+  "source_transition_count": 199,
+  "model_code_changed": false,
+  "checks": [
+    {
+      "name": "功能模型/00_概念接口类型.sysml源码未改动",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "功能模型/00_概念接口类型.sysml同名png存在",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "功能模型/00_概念接口类型.sysml同名svg存在",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "下游导入包/功能模型__00_概念接口类型.sysml源码未改动",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "下游导入包/功能模型__00_概念接口类型.sysml同名png存在",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "下游导入包/功能模型__00_概念接口类型.sysml同名svg存在",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "功能模型/01_原子及组合功能定义.sysml源码未改动",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "功能模型/01_原子及组合功能定义.sysml同名png存在",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "功能模型/01_原子及组合功能定义.sysml同名svg存在",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "下游导入包/功能模型__01_原子及组合功能定义.sysml源码未改动",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "下游导入包/功能模型__01_原子及组合功能定义.sysml同名png存在",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "下游导入包/功能模型__01_原子及组合功能定义.sysml同名svg存在",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "功能模型/02_3.3.1.2-功能分解.sysml源码未改动",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "功能模型/02_3.3.1.2-功能分解.sysml同名png存在",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "功能模型/02_3.3.1.2-功能分解.sysml同名svg存在",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "下游导入包/功能模型__02_3.3.1.2-功能分解.sysml源码未改动",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "下游导入包/功能模型__02_3.3.1.2-功能分解.sysml同名png存在",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "下游导入包/功能模型__02_3.3.1.2-功能分解.sysml同名svg存在",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "功能模型/02_3.3.1.6-功能分解.sysml源码未改动",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "功能模型/02_3.3.1.6-功能分解.sysml同名png存在",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "功能模型/02_3.3.1.6-功能分解.sysml同名svg存在",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "下游导入包/功能模型__02_3.3.1.6-功能分解.sysml源码未改动",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "下游导入包/功能模型__02_3.3.1.6-功能分解.sysml同名png存在",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "下游导入包/功能模型__02_3.3.1.6-功能分解.sysml同名svg存在",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "功能模型/02_3.3.1.9-功能分解.sysml源码未改动",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "功能模型/02_3.3.1.9-功能分解.sysml同名png存在",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "功能模型/02_3.3.1.9-功能分解.sysml同名svg存在",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "下游导入包/功能模型__02_3.3.1.9-功能分解.sysml源码未改动",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "下游导入包/功能模型__02_3.3.1.9-功能分解.sysml同名png存在",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "下游导入包/功能模型__02_3.3.1.9-功能分解.sysml同名svg存在",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "功能模型/02_SC1-功能分解.sysml源码未改动",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "功能模型/02_SC1-功能分解.sysml同名png存在",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "功能模型/02_SC1-功能分解.sysml同名svg存在",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "下游导入包/功能模型__02_SC1-功能分解.sysml源码未改动",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "下游导入包/功能模型__02_SC1-功能分解.sysml同名png存在",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "下游导入包/功能模型__02_SC1-功能分解.sysml同名svg存在",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "功能模型/02_SC2-功能分解.sysml源码未改动",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "功能模型/02_SC2-功能分解.sysml同名png存在",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "功能模型/02_SC2-功能分解.sysml同名svg存在",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "下游导入包/功能模型__02_SC2-功能分解.sysml源码未改动",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "下游导入包/功能模型__02_SC2-功能分解.sysml同名png存在",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "下游导入包/功能模型__02_SC2-功能分解.sysml同名svg存在",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "功能模型/02_SC3-功能分解.sysml源码未改动",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "功能模型/02_SC3-功能分解.sysml同名png存在",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "功能模型/02_SC3-功能分解.sysml同名svg存在",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "下游导入包/功能模型__02_SC3-功能分解.sysml源码未改动",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "下游导入包/功能模型__02_SC3-功能分解.sysml同名png存在",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "下游导入包/功能模型__02_SC3-功能分解.sysml同名svg存在",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "行为模型/SC1-行为模型.sysml源码未改动",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "行为模型/SC1-行为模型.sysml同名png存在",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "行为模型/SC1-行为模型.sysml同名svg存在",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "下游导入包/行为模型__SC1-行为模型.sysml源码未改动",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "下游导入包/行为模型__SC1-行为模型.sysml同名png存在",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "下游导入包/行为模型__SC1-行为模型.sysml同名svg存在",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "行为模型/SC2-行为模型.sysml源码未改动",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "行为模型/SC2-行为模型.sysml同名png存在",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "行为模型/SC2-行为模型.sysml同名svg存在",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "下游导入包/行为模型__SC2-行为模型.sysml源码未改动",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "下游导入包/行为模型__SC2-行为模型.sysml同名png存在",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "下游导入包/行为模型__SC2-行为模型.sysml同名svg存在",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "行为模型/SC3-行为模型.sysml源码未改动",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "行为模型/SC3-行为模型.sysml同名png存在",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "行为模型/SC3-行为模型.sysml同名svg存在",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "下游导入包/行为模型__SC3-行为模型.sysml源码未改动",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "下游导入包/行为模型__SC3-行为模型.sysml同名png存在",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "下游导入包/行为模型__SC3-行为模型.sysml同名svg存在",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "需求图/3.3.1.2-需求图.sysml源码未改动",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "需求图/3.3.1.2-需求图.sysml同名png存在",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "需求图/3.3.1.2-需求图.sysml同名svg存在",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "下游导入包/需求图__3.3.1.2-需求图.sysml源码未改动",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "下游导入包/需求图__3.3.1.2-需求图.sysml同名png存在",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "下游导入包/需求图__3.3.1.2-需求图.sysml同名svg存在",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "需求图/3.3.1.6-需求图.sysml源码未改动",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "需求图/3.3.1.6-需求图.sysml同名png存在",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "需求图/3.3.1.6-需求图.sysml同名svg存在",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "下游导入包/需求图__3.3.1.6-需求图.sysml源码未改动",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "下游导入包/需求图__3.3.1.6-需求图.sysml同名png存在",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "下游导入包/需求图__3.3.1.6-需求图.sysml同名svg存在",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "需求图/3.3.1.9-需求图.sysml源码未改动",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "需求图/3.3.1.9-需求图.sysml同名png存在",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "需求图/3.3.1.9-需求图.sysml同名svg存在",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "下游导入包/需求图__3.3.1.9-需求图.sysml源码未改动",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "下游导入包/需求图__3.3.1.9-需求图.sysml同名png存在",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "下游导入包/需求图__3.3.1.9-需求图.sysml同名svg存在",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "需求外部BDD图/3.3.1.2、3.3.1.6、3.3.1.9-BDD图.sysml源码未改动",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "需求外部BDD图/3.3.1.2、3.3.1.6、3.3.1.9-BDD图.sysml同名png存在",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "需求外部BDD图/3.3.1.2、3.3.1.6、3.3.1.9-BDD图.sysml同名svg存在",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "下游导入包/需求外部BDD图__3.3.1.2、3.3.1.6、3.3.1.9-BDD图.sysml源码未改动",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "下游导入包/需求外部BDD图__3.3.1.2、3.3.1.6、3.3.1.9-BDD图.sysml同名png存在",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "下游导入包/需求外部BDD图__3.3.1.2、3.3.1.6、3.3.1.9-BDD图.sysml同名svg存在",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "需求活动图/3.3.1.2-需求活动图.sysml源码未改动",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "需求活动图/3.3.1.2-需求活动图.sysml同名png存在",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "需求活动图/3.3.1.2-需求活动图.sysml同名svg存在",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "下游导入包/需求活动图__3.3.1.2-需求活动图.sysml源码未改动",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "下游导入包/需求活动图__3.3.1.2-需求活动图.sysml同名png存在",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "下游导入包/需求活动图__3.3.1.2-需求活动图.sysml同名svg存在",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "需求活动图/3.3.1.6-需求活动图.sysml源码未改动",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "需求活动图/3.3.1.6-需求活动图.sysml同名png存在",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "需求活动图/3.3.1.6-需求活动图.sysml同名svg存在",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "下游导入包/需求活动图__3.3.1.6-需求活动图.sysml源码未改动",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "下游导入包/需求活动图__3.3.1.6-需求活动图.sysml同名png存在",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "下游导入包/需求活动图__3.3.1.6-需求活动图.sysml同名svg存在",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "需求活动图/3.3.1.9-需求活动图.sysml源码未改动",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "需求活动图/3.3.1.9-需求活动图.sysml同名png存在",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "需求活动图/3.3.1.9-需求活动图.sysml同名svg存在",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "下游导入包/需求活动图__3.3.1.9-需求活动图.sysml源码未改动",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "下游导入包/需求活动图__3.3.1.9-需求活动图.sysml同名png存在",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "下游导入包/需求活动图__3.3.1.9-需求活动图.sysml同名svg存在",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "需求用例图/3.3.1.2、3.3.1.6、3.3.1.9-需求用例图.sysml源码未改动",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "需求用例图/3.3.1.2、3.3.1.6、3.3.1.9-需求用例图.sysml同名png存在",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "需求用例图/3.3.1.2、3.3.1.6、3.3.1.9-需求用例图.sysml同名svg存在",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "下游导入包/需求用例图__3.3.1.2、3.3.1.6、3.3.1.9-需求用例图.sysml源码未改动",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "下游导入包/需求用例图__3.3.1.2、3.3.1.6、3.3.1.9-需求用例图.sysml同名png存在",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "下游导入包/需求用例图__3.3.1.2、3.3.1.6、3.3.1.9-需求用例图.sysml同名svg存在",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "需求图/3.3.1.2-需求图.png摘要",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "需求图/3.3.1.2-需求图.svg摘要",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "需求图/3.3.1.2-需求图.svg真实矢量图",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "需求图/3.3.1.2-需求图.dot摘要",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "需求图/3.3.1.2-需求图.puml摘要",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "需求图/3.3.1.6-需求图.png摘要",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "需求图/3.3.1.6-需求图.svg摘要",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "需求图/3.3.1.6-需求图.svg真实矢量图",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "需求图/3.3.1.6-需求图.dot摘要",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "需求图/3.3.1.6-需求图.puml摘要",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "需求图/3.3.1.9-需求图.png摘要",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "需求图/3.3.1.9-需求图.svg摘要",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "需求图/3.3.1.9-需求图.svg真实矢量图",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "需求图/3.3.1.9-需求图.dot摘要",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "需求图/3.3.1.9-需求图.puml摘要",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "需求活动图/3.3.1.2-需求活动图.png摘要",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "需求活动图/3.3.1.2-需求活动图.svg摘要",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "需求活动图/3.3.1.2-需求活动图.svg真实矢量图",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "需求活动图/3.3.1.2-需求活动图.dot摘要",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "需求活动图/3.3.1.2-需求活动图.puml摘要",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "需求活动图/3.3.1.6-需求活动图.png摘要",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "需求活动图/3.3.1.6-需求活动图.svg摘要",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "需求活动图/3.3.1.6-需求活动图.svg真实矢量图",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "需求活动图/3.3.1.6-需求活动图.dot摘要",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "需求活动图/3.3.1.6-需求活动图.puml摘要",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "需求活动图/3.3.1.9-需求活动图.png摘要",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "需求活动图/3.3.1.9-需求活动图.svg摘要",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "需求活动图/3.3.1.9-需求活动图.svg真实矢量图",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "需求活动图/3.3.1.9-需求活动图.dot摘要",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "需求活动图/3.3.1.9-需求活动图.puml摘要",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "行为模型/SC1-行为模型.png摘要",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "行为模型/SC1-行为模型.svg摘要",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "行为模型/SC1-行为模型.svg真实矢量图",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "行为模型/SC1-行为模型.dot摘要",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "行为模型/SC1-行为模型.puml摘要",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "行为模型/SC2-行为模型.png摘要",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "行为模型/SC2-行为模型.svg摘要",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "行为模型/SC2-行为模型.svg真实矢量图",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "行为模型/SC2-行为模型.dot摘要",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "行为模型/SC2-行为模型.puml摘要",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "行为模型/SC3-行为模型.png摘要",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "行为模型/SC3-行为模型.svg摘要",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "行为模型/SC3-行为模型.svg真实矢量图",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "行为模型/SC3-行为模型.dot摘要",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "行为模型/SC3-行为模型.puml摘要",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "需求外部BDD图/3.3.1.2、3.3.1.6、3.3.1.9-BDD图.png摘要",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "需求外部BDD图/3.3.1.2、3.3.1.6、3.3.1.9-BDD图.svg摘要",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "需求外部BDD图/3.3.1.2、3.3.1.6、3.3.1.9-BDD图.svg真实矢量图",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "需求外部BDD图/3.3.1.2、3.3.1.6、3.3.1.9-BDD图.dot摘要",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "需求外部BDD图/3.3.1.2、3.3.1.6、3.3.1.9-BDD图.puml摘要",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "需求用例图/3.3.1.2、3.3.1.6、3.3.1.9-需求用例图.puml摘要",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "需求用例图/3.3.1.2、3.3.1.6、3.3.1.9-需求用例图.png摘要",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "需求用例图/3.3.1.2、3.3.1.6、3.3.1.9-需求用例图.svg摘要",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "需求用例图/3.3.1.2、3.3.1.6、3.3.1.9-需求用例图.svg真实矢量图",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "功能模型/00_概念接口类型_详情_01.png摘要",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "功能模型/00_概念接口类型_详情_01.svg摘要",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "功能模型/00_概念接口类型_详情_01.svg真实矢量图",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "功能模型/00_概念接口类型_详情_01.dot摘要",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "功能模型/00_概念接口类型_详情_01.puml摘要",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "功能模型/00_概念接口类型_详情_02.png摘要",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "功能模型/00_概念接口类型_详情_02.svg摘要",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "功能模型/00_概念接口类型_详情_02.svg真实矢量图",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "功能模型/00_概念接口类型_详情_02.dot摘要",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "功能模型/00_概念接口类型_详情_02.puml摘要",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "功能模型/00_概念接口类型_详情_03.png摘要",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "功能模型/00_概念接口类型_详情_03.svg摘要",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "功能模型/00_概念接口类型_详情_03.svg真实矢量图",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "功能模型/00_概念接口类型_详情_03.dot摘要",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "功能模型/00_概念接口类型_详情_03.puml摘要",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "功能模型/00_概念接口类型_详情_04.png摘要",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "功能模型/00_概念接口类型_详情_04.svg摘要",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "功能模型/00_概念接口类型_详情_04.svg真实矢量图",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "功能模型/00_概念接口类型_详情_04.dot摘要",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "功能模型/00_概念接口类型_详情_04.puml摘要",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "功能模型/00_概念接口类型_详情_05.png摘要",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "功能模型/00_概念接口类型_详情_05.svg摘要",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "功能模型/00_概念接口类型_详情_05.svg真实矢量图",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "功能模型/00_概念接口类型_详情_05.dot摘要",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "功能模型/00_概念接口类型_详情_05.puml摘要",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "功能模型/00_概念接口类型_详情_06.png摘要",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "功能模型/00_概念接口类型_详情_06.svg摘要",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "功能模型/00_概念接口类型_详情_06.svg真实矢量图",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "功能模型/00_概念接口类型_详情_06.dot摘要",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "功能模型/00_概念接口类型_详情_06.puml摘要",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "功能模型/00_概念接口类型_详情_07.png摘要",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "功能模型/00_概念接口类型_详情_07.svg摘要",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "功能模型/00_概念接口类型_详情_07.svg真实矢量图",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "功能模型/00_概念接口类型_详情_07.dot摘要",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "功能模型/00_概念接口类型_详情_07.puml摘要",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "功能模型/00_概念接口类型_详情_08.png摘要",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "功能模型/00_概念接口类型_详情_08.svg摘要",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "功能模型/00_概念接口类型_详情_08.svg真实矢量图",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "功能模型/00_概念接口类型_详情_08.dot摘要",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "功能模型/00_概念接口类型_详情_08.puml摘要",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "功能模型/00_概念接口类型_详情_09.png摘要",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "功能模型/00_概念接口类型_详情_09.svg摘要",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "功能模型/00_概念接口类型_详情_09.svg真实矢量图",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "功能模型/00_概念接口类型_详情_09.dot摘要",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "功能模型/00_概念接口类型_详情_09.puml摘要",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "功能模型/00_概念接口类型_详情_10.png摘要",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "功能模型/00_概念接口类型_详情_10.svg摘要",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "功能模型/00_概念接口类型_详情_10.svg真实矢量图",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "功能模型/00_概念接口类型_详情_10.dot摘要",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "功能模型/00_概念接口类型_详情_10.puml摘要",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "功能模型/00_概念接口类型_详情_11.png摘要",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "功能模型/00_概念接口类型_详情_11.svg摘要",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "功能模型/00_概念接口类型_详情_11.svg真实矢量图",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "功能模型/00_概念接口类型_详情_11.dot摘要",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "功能模型/00_概念接口类型_详情_11.puml摘要",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "功能模型/00_概念接口类型_详情_12.png摘要",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "功能模型/00_概念接口类型_详情_12.svg摘要",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "功能模型/00_概念接口类型_详情_12.svg真实矢量图",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "功能模型/00_概念接口类型_详情_12.dot摘要",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "功能模型/00_概念接口类型_详情_12.puml摘要",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "功能模型/00_概念接口类型_详情_13.png摘要",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "功能模型/00_概念接口类型_详情_13.svg摘要",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "功能模型/00_概念接口类型_详情_13.svg真实矢量图",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "功能模型/00_概念接口类型_详情_13.dot摘要",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "功能模型/00_概念接口类型_详情_13.puml摘要",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "功能模型/00_概念接口类型_详情_14.png摘要",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "功能模型/00_概念接口类型_详情_14.svg摘要",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "功能模型/00_概念接口类型_详情_14.svg真实矢量图",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "功能模型/00_概念接口类型_详情_14.dot摘要",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "功能模型/00_概念接口类型_详情_14.puml摘要",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "功能模型/00_概念接口类型_详情_15.png摘要",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "功能模型/00_概念接口类型_详情_15.svg摘要",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "功能模型/00_概念接口类型_详情_15.svg真实矢量图",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "功能模型/00_概念接口类型_详情_15.dot摘要",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "功能模型/00_概念接口类型_详情_15.puml摘要",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "功能模型/00_概念接口类型_详情_16.png摘要",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "功能模型/00_概念接口类型_详情_16.svg摘要",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "功能模型/00_概念接口类型_详情_16.svg真实矢量图",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "功能模型/00_概念接口类型_详情_16.dot摘要",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "功能模型/00_概念接口类型_详情_16.puml摘要",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "功能模型/00_概念接口类型_详情_17.png摘要",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "功能模型/00_概念接口类型_详情_17.svg摘要",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "功能模型/00_概念接口类型_详情_17.svg真实矢量图",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "功能模型/00_概念接口类型_详情_17.dot摘要",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "功能模型/00_概念接口类型_详情_17.puml摘要",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "功能模型/00_概念接口类型_详情_18.png摘要",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "功能模型/00_概念接口类型_详情_18.svg摘要",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "功能模型/00_概念接口类型_详情_18.svg真实矢量图",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "功能模型/00_概念接口类型_详情_18.dot摘要",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "功能模型/00_概念接口类型_详情_18.puml摘要",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "功能模型/00_概念接口类型_详情_19.png摘要",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "功能模型/00_概念接口类型_详情_19.svg摘要",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "功能模型/00_概念接口类型_详情_19.svg真实矢量图",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "功能模型/00_概念接口类型_详情_19.dot摘要",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "功能模型/00_概念接口类型_详情_19.puml摘要",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "功能模型/00_概念接口类型_详情_20.png摘要",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "功能模型/00_概念接口类型_详情_20.svg摘要",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "功能模型/00_概念接口类型_详情_20.svg真实矢量图",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "功能模型/00_概念接口类型_详情_20.dot摘要",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "功能模型/00_概念接口类型_详情_20.puml摘要",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "功能模型/00_概念接口类型_详情_21.png摘要",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "功能模型/00_概念接口类型_详情_21.svg摘要",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "功能模型/00_概念接口类型_详情_21.svg真实矢量图",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "功能模型/00_概念接口类型_详情_21.dot摘要",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "功能模型/00_概念接口类型_详情_21.puml摘要",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "功能模型/00_概念接口类型_详情_22.png摘要",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "功能模型/00_概念接口类型_详情_22.svg摘要",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "功能模型/00_概念接口类型_详情_22.svg真实矢量图",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "功能模型/00_概念接口类型_详情_22.dot摘要",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "功能模型/00_概念接口类型_详情_22.puml摘要",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "功能模型/00_概念接口类型_详情_23.png摘要",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "功能模型/00_概念接口类型_详情_23.svg摘要",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "功能模型/00_概念接口类型_详情_23.svg真实矢量图",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "功能模型/00_概念接口类型_详情_23.dot摘要",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "功能模型/00_概念接口类型_详情_23.puml摘要",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "功能模型/00_概念接口类型_详情_24.png摘要",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "功能模型/00_概念接口类型_详情_24.svg摘要",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "功能模型/00_概念接口类型_详情_24.svg真实矢量图",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "功能模型/00_概念接口类型_详情_24.dot摘要",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "功能模型/00_概念接口类型_详情_24.puml摘要",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "功能模型/00_概念接口类型_详情_25.png摘要",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "功能模型/00_概念接口类型_详情_25.svg摘要",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "功能模型/00_概念接口类型_详情_25.svg真实矢量图",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "功能模型/00_概念接口类型_详情_25.dot摘要",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "功能模型/00_概念接口类型_详情_25.puml摘要",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "功能模型/00_概念接口类型.png摘要",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "功能模型/00_概念接口类型.svg摘要",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "功能模型/00_概念接口类型.svg真实矢量图",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "功能模型/00_概念接口类型.dot摘要",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "功能模型/00_概念接口类型.puml摘要",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "功能模型/01_原子及组合功能定义_详情_01.png摘要",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "功能模型/01_原子及组合功能定义_详情_01.svg摘要",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "功能模型/01_原子及组合功能定义_详情_01.svg真实矢量图",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "功能模型/01_原子及组合功能定义_详情_01.dot摘要",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "功能模型/01_原子及组合功能定义_详情_01.puml摘要",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "功能模型/01_原子及组合功能定义_详情_02.png摘要",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "功能模型/01_原子及组合功能定义_详情_02.svg摘要",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "功能模型/01_原子及组合功能定义_详情_02.svg真实矢量图",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "功能模型/01_原子及组合功能定义_详情_02.dot摘要",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "功能模型/01_原子及组合功能定义_详情_02.puml摘要",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "功能模型/01_原子及组合功能定义_详情_03.png摘要",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "功能模型/01_原子及组合功能定义_详情_03.svg摘要",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "功能模型/01_原子及组合功能定义_详情_03.svg真实矢量图",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "功能模型/01_原子及组合功能定义_详情_03.dot摘要",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "功能模型/01_原子及组合功能定义_详情_03.puml摘要",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "功能模型/01_原子及组合功能定义_详情_04.png摘要",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "功能模型/01_原子及组合功能定义_详情_04.svg摘要",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "功能模型/01_原子及组合功能定义_详情_04.svg真实矢量图",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "功能模型/01_原子及组合功能定义_详情_04.dot摘要",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "功能模型/01_原子及组合功能定义_详情_04.puml摘要",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "功能模型/01_原子及组合功能定义_详情_05.png摘要",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "功能模型/01_原子及组合功能定义_详情_05.svg摘要",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "功能模型/01_原子及组合功能定义_详情_05.svg真实矢量图",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "功能模型/01_原子及组合功能定义_详情_05.dot摘要",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "功能模型/01_原子及组合功能定义_详情_05.puml摘要",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "功能模型/01_原子及组合功能定义_详情_06.png摘要",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "功能模型/01_原子及组合功能定义_详情_06.svg摘要",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "功能模型/01_原子及组合功能定义_详情_06.svg真实矢量图",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "功能模型/01_原子及组合功能定义_详情_06.dot摘要",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "功能模型/01_原子及组合功能定义_详情_06.puml摘要",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "功能模型/01_原子及组合功能定义_详情_07.png摘要",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "功能模型/01_原子及组合功能定义_详情_07.svg摘要",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "功能模型/01_原子及组合功能定义_详情_07.svg真实矢量图",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "功能模型/01_原子及组合功能定义_详情_07.dot摘要",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "功能模型/01_原子及组合功能定义_详情_07.puml摘要",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "功能模型/01_原子及组合功能定义_详情_08.png摘要",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "功能模型/01_原子及组合功能定义_详情_08.svg摘要",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "功能模型/01_原子及组合功能定义_详情_08.svg真实矢量图",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "功能模型/01_原子及组合功能定义_详情_08.dot摘要",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "功能模型/01_原子及组合功能定义_详情_08.puml摘要",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "功能模型/01_原子及组合功能定义_详情_09.png摘要",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "功能模型/01_原子及组合功能定义_详情_09.svg摘要",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "功能模型/01_原子及组合功能定义_详情_09.svg真实矢量图",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "功能模型/01_原子及组合功能定义_详情_09.dot摘要",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "功能模型/01_原子及组合功能定义_详情_09.puml摘要",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "功能模型/01_原子及组合功能定义_详情_10.png摘要",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "功能模型/01_原子及组合功能定义_详情_10.svg摘要",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "功能模型/01_原子及组合功能定义_详情_10.svg真实矢量图",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "功能模型/01_原子及组合功能定义_详情_10.dot摘要",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "功能模型/01_原子及组合功能定义_详情_10.puml摘要",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "功能模型/01_原子及组合功能定义.png摘要",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "功能模型/01_原子及组合功能定义.svg摘要",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "功能模型/01_原子及组合功能定义.svg真实矢量图",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "功能模型/01_原子及组合功能定义.dot摘要",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "功能模型/01_原子及组合功能定义.puml摘要",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "功能模型/02_3.3.1.2-功能分解.png摘要",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "功能模型/02_3.3.1.2-功能分解.svg摘要",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "功能模型/02_3.3.1.2-功能分解.svg真实矢量图",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "功能模型/02_3.3.1.2-功能分解.dot摘要",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "功能模型/02_3.3.1.2-功能分解.puml摘要",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "功能模型/02_3.3.1.6-功能分解.png摘要",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "功能模型/02_3.3.1.6-功能分解.svg摘要",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "功能模型/02_3.3.1.6-功能分解.svg真实矢量图",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "功能模型/02_3.3.1.6-功能分解.dot摘要",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "功能模型/02_3.3.1.6-功能分解.puml摘要",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "功能模型/02_3.3.1.9-功能分解.png摘要",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "功能模型/02_3.3.1.9-功能分解.svg摘要",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "功能模型/02_3.3.1.9-功能分解.svg真实矢量图",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "功能模型/02_3.3.1.9-功能分解.dot摘要",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "功能模型/02_3.3.1.9-功能分解.puml摘要",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "功能模型/02_SC1-功能分解.png摘要",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "功能模型/02_SC1-功能分解.svg摘要",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "功能模型/02_SC1-功能分解.svg真实矢量图",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "功能模型/02_SC1-功能分解.dot摘要",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "功能模型/02_SC1-功能分解.puml摘要",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "功能模型/02_SC2-功能分解.png摘要",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "功能模型/02_SC2-功能分解.svg摘要",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "功能模型/02_SC2-功能分解.svg真实矢量图",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "功能模型/02_SC2-功能分解.dot摘要",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "功能模型/02_SC2-功能分解.puml摘要",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "功能模型/02_SC3-功能分解.png摘要",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "功能模型/02_SC3-功能分解.svg摘要",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "功能模型/02_SC3-功能分解.svg真实矢量图",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "功能模型/02_SC3-功能分解.dot摘要",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "功能模型/02_SC3-功能分解.puml摘要",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "下游导入包/功能模型__00_概念接口类型_详情_01.png摘要",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "下游导入包/功能模型__00_概念接口类型_详情_01.svg摘要",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "下游导入包/功能模型__00_概念接口类型_详情_01.svg真实矢量图",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "下游导入包/功能模型__00_概念接口类型_详情_01.dot摘要",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "下游导入包/功能模型__00_概念接口类型_详情_01.puml摘要",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "下游导入包/功能模型__00_概念接口类型_详情_02.png摘要",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "下游导入包/功能模型__00_概念接口类型_详情_02.svg摘要",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "下游导入包/功能模型__00_概念接口类型_详情_02.svg真实矢量图",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "下游导入包/功能模型__00_概念接口类型_详情_02.dot摘要",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "下游导入包/功能模型__00_概念接口类型_详情_02.puml摘要",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "下游导入包/功能模型__00_概念接口类型_详情_03.png摘要",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "下游导入包/功能模型__00_概念接口类型_详情_03.svg摘要",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "下游导入包/功能模型__00_概念接口类型_详情_03.svg真实矢量图",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "下游导入包/功能模型__00_概念接口类型_详情_03.dot摘要",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "下游导入包/功能模型__00_概念接口类型_详情_03.puml摘要",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "下游导入包/功能模型__00_概念接口类型_详情_04.png摘要",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "下游导入包/功能模型__00_概念接口类型_详情_04.svg摘要",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "下游导入包/功能模型__00_概念接口类型_详情_04.svg真实矢量图",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "下游导入包/功能模型__00_概念接口类型_详情_04.dot摘要",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "下游导入包/功能模型__00_概念接口类型_详情_04.puml摘要",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "下游导入包/功能模型__00_概念接口类型_详情_05.png摘要",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "下游导入包/功能模型__00_概念接口类型_详情_05.svg摘要",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "下游导入包/功能模型__00_概念接口类型_详情_05.svg真实矢量图",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "下游导入包/功能模型__00_概念接口类型_详情_05.dot摘要",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "下游导入包/功能模型__00_概念接口类型_详情_05.puml摘要",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "下游导入包/功能模型__00_概念接口类型_详情_06.png摘要",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "下游导入包/功能模型__00_概念接口类型_详情_06.svg摘要",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "下游导入包/功能模型__00_概念接口类型_详情_06.svg真实矢量图",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "下游导入包/功能模型__00_概念接口类型_详情_06.dot摘要",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "下游导入包/功能模型__00_概念接口类型_详情_06.puml摘要",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "下游导入包/功能模型__00_概念接口类型_详情_07.png摘要",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "下游导入包/功能模型__00_概念接口类型_详情_07.svg摘要",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "下游导入包/功能模型__00_概念接口类型_详情_07.svg真实矢量图",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "下游导入包/功能模型__00_概念接口类型_详情_07.dot摘要",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "下游导入包/功能模型__00_概念接口类型_详情_07.puml摘要",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "下游导入包/功能模型__00_概念接口类型_详情_08.png摘要",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "下游导入包/功能模型__00_概念接口类型_详情_08.svg摘要",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "下游导入包/功能模型__00_概念接口类型_详情_08.svg真实矢量图",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "下游导入包/功能模型__00_概念接口类型_详情_08.dot摘要",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "下游导入包/功能模型__00_概念接口类型_详情_08.puml摘要",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "下游导入包/功能模型__00_概念接口类型_详情_09.png摘要",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "下游导入包/功能模型__00_概念接口类型_详情_09.svg摘要",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "下游导入包/功能模型__00_概念接口类型_详情_09.svg真实矢量图",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "下游导入包/功能模型__00_概念接口类型_详情_09.dot摘要",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "下游导入包/功能模型__00_概念接口类型_详情_09.puml摘要",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "下游导入包/功能模型__00_概念接口类型_详情_10.png摘要",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "下游导入包/功能模型__00_概念接口类型_详情_10.svg摘要",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "下游导入包/功能模型__00_概念接口类型_详情_10.svg真实矢量图",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "下游导入包/功能模型__00_概念接口类型_详情_10.dot摘要",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "下游导入包/功能模型__00_概念接口类型_详情_10.puml摘要",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "下游导入包/功能模型__00_概念接口类型_详情_11.png摘要",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "下游导入包/功能模型__00_概念接口类型_详情_11.svg摘要",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "下游导入包/功能模型__00_概念接口类型_详情_11.svg真实矢量图",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "下游导入包/功能模型__00_概念接口类型_详情_11.dot摘要",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "下游导入包/功能模型__00_概念接口类型_详情_11.puml摘要",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "下游导入包/功能模型__00_概念接口类型_详情_12.png摘要",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "下游导入包/功能模型__00_概念接口类型_详情_12.svg摘要",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "下游导入包/功能模型__00_概念接口类型_详情_12.svg真实矢量图",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "下游导入包/功能模型__00_概念接口类型_详情_12.dot摘要",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "下游导入包/功能模型__00_概念接口类型_详情_12.puml摘要",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "下游导入包/功能模型__00_概念接口类型_详情_13.png摘要",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "下游导入包/功能模型__00_概念接口类型_详情_13.svg摘要",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "下游导入包/功能模型__00_概念接口类型_详情_13.svg真实矢量图",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "下游导入包/功能模型__00_概念接口类型_详情_13.dot摘要",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "下游导入包/功能模型__00_概念接口类型_详情_13.puml摘要",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "下游导入包/功能模型__00_概念接口类型_详情_14.png摘要",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "下游导入包/功能模型__00_概念接口类型_详情_14.svg摘要",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "下游导入包/功能模型__00_概念接口类型_详情_14.svg真实矢量图",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "下游导入包/功能模型__00_概念接口类型_详情_14.dot摘要",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "下游导入包/功能模型__00_概念接口类型_详情_14.puml摘要",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "下游导入包/功能模型__00_概念接口类型_详情_15.png摘要",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "下游导入包/功能模型__00_概念接口类型_详情_15.svg摘要",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "下游导入包/功能模型__00_概念接口类型_详情_15.svg真实矢量图",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "下游导入包/功能模型__00_概念接口类型_详情_15.dot摘要",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "下游导入包/功能模型__00_概念接口类型_详情_15.puml摘要",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "下游导入包/功能模型__00_概念接口类型_详情_16.png摘要",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "下游导入包/功能模型__00_概念接口类型_详情_16.svg摘要",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "下游导入包/功能模型__00_概念接口类型_详情_16.svg真实矢量图",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "下游导入包/功能模型__00_概念接口类型_详情_16.dot摘要",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "下游导入包/功能模型__00_概念接口类型_详情_16.puml摘要",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "下游导入包/功能模型__00_概念接口类型_详情_17.png摘要",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "下游导入包/功能模型__00_概念接口类型_详情_17.svg摘要",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "下游导入包/功能模型__00_概念接口类型_详情_17.svg真实矢量图",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "下游导入包/功能模型__00_概念接口类型_详情_17.dot摘要",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "下游导入包/功能模型__00_概念接口类型_详情_17.puml摘要",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "下游导入包/功能模型__00_概念接口类型_详情_18.png摘要",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "下游导入包/功能模型__00_概念接口类型_详情_18.svg摘要",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "下游导入包/功能模型__00_概念接口类型_详情_18.svg真实矢量图",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "下游导入包/功能模型__00_概念接口类型_详情_18.dot摘要",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "下游导入包/功能模型__00_概念接口类型_详情_18.puml摘要",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "下游导入包/功能模型__00_概念接口类型_详情_19.png摘要",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "下游导入包/功能模型__00_概念接口类型_详情_19.svg摘要",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "下游导入包/功能模型__00_概念接口类型_详情_19.svg真实矢量图",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "下游导入包/功能模型__00_概念接口类型_详情_19.dot摘要",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "下游导入包/功能模型__00_概念接口类型_详情_19.puml摘要",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "下游导入包/功能模型__00_概念接口类型_详情_20.png摘要",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "下游导入包/功能模型__00_概念接口类型_详情_20.svg摘要",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "下游导入包/功能模型__00_概念接口类型_详情_20.svg真实矢量图",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "下游导入包/功能模型__00_概念接口类型_详情_20.dot摘要",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "下游导入包/功能模型__00_概念接口类型_详情_20.puml摘要",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "下游导入包/功能模型__00_概念接口类型_详情_21.png摘要",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "下游导入包/功能模型__00_概念接口类型_详情_21.svg摘要",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "下游导入包/功能模型__00_概念接口类型_详情_21.svg真实矢量图",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "下游导入包/功能模型__00_概念接口类型_详情_21.dot摘要",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "下游导入包/功能模型__00_概念接口类型_详情_21.puml摘要",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "下游导入包/功能模型__00_概念接口类型_详情_22.png摘要",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "下游导入包/功能模型__00_概念接口类型_详情_22.svg摘要",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "下游导入包/功能模型__00_概念接口类型_详情_22.svg真实矢量图",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "下游导入包/功能模型__00_概念接口类型_详情_22.dot摘要",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "下游导入包/功能模型__00_概念接口类型_详情_22.puml摘要",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "下游导入包/功能模型__00_概念接口类型_详情_23.png摘要",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "下游导入包/功能模型__00_概念接口类型_详情_23.svg摘要",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "下游导入包/功能模型__00_概念接口类型_详情_23.svg真实矢量图",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "下游导入包/功能模型__00_概念接口类型_详情_23.dot摘要",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "下游导入包/功能模型__00_概念接口类型_详情_23.puml摘要",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "下游导入包/功能模型__00_概念接口类型_详情_24.png摘要",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "下游导入包/功能模型__00_概念接口类型_详情_24.svg摘要",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "下游导入包/功能模型__00_概念接口类型_详情_24.svg真实矢量图",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "下游导入包/功能模型__00_概念接口类型_详情_24.dot摘要",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "下游导入包/功能模型__00_概念接口类型_详情_24.puml摘要",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "下游导入包/功能模型__00_概念接口类型_详情_25.png摘要",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "下游导入包/功能模型__00_概念接口类型_详情_25.svg摘要",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "下游导入包/功能模型__00_概念接口类型_详情_25.svg真实矢量图",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "下游导入包/功能模型__00_概念接口类型_详情_25.dot摘要",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "下游导入包/功能模型__00_概念接口类型_详情_25.puml摘要",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "下游导入包/功能模型__00_概念接口类型.png摘要",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "下游导入包/功能模型__00_概念接口类型.svg摘要",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "下游导入包/功能模型__00_概念接口类型.svg真实矢量图",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "下游导入包/功能模型__00_概念接口类型.dot摘要",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "下游导入包/功能模型__00_概念接口类型.puml摘要",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "下游导入包/功能模型__01_原子及组合功能定义_详情_01.png摘要",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "下游导入包/功能模型__01_原子及组合功能定义_详情_01.svg摘要",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "下游导入包/功能模型__01_原子及组合功能定义_详情_01.svg真实矢量图",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "下游导入包/功能模型__01_原子及组合功能定义_详情_01.dot摘要",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "下游导入包/功能模型__01_原子及组合功能定义_详情_01.puml摘要",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "下游导入包/功能模型__01_原子及组合功能定义_详情_02.png摘要",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "下游导入包/功能模型__01_原子及组合功能定义_详情_02.svg摘要",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "下游导入包/功能模型__01_原子及组合功能定义_详情_02.svg真实矢量图",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "下游导入包/功能模型__01_原子及组合功能定义_详情_02.dot摘要",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "下游导入包/功能模型__01_原子及组合功能定义_详情_02.puml摘要",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "下游导入包/功能模型__01_原子及组合功能定义_详情_03.png摘要",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "下游导入包/功能模型__01_原子及组合功能定义_详情_03.svg摘要",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "下游导入包/功能模型__01_原子及组合功能定义_详情_03.svg真实矢量图",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "下游导入包/功能模型__01_原子及组合功能定义_详情_03.dot摘要",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "下游导入包/功能模型__01_原子及组合功能定义_详情_03.puml摘要",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "下游导入包/功能模型__01_原子及组合功能定义_详情_04.png摘要",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "下游导入包/功能模型__01_原子及组合功能定义_详情_04.svg摘要",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "下游导入包/功能模型__01_原子及组合功能定义_详情_04.svg真实矢量图",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "下游导入包/功能模型__01_原子及组合功能定义_详情_04.dot摘要",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "下游导入包/功能模型__01_原子及组合功能定义_详情_04.puml摘要",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "下游导入包/功能模型__01_原子及组合功能定义_详情_05.png摘要",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "下游导入包/功能模型__01_原子及组合功能定义_详情_05.svg摘要",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "下游导入包/功能模型__01_原子及组合功能定义_详情_05.svg真实矢量图",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "下游导入包/功能模型__01_原子及组合功能定义_详情_05.dot摘要",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "下游导入包/功能模型__01_原子及组合功能定义_详情_05.puml摘要",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "下游导入包/功能模型__01_原子及组合功能定义_详情_06.png摘要",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "下游导入包/功能模型__01_原子及组合功能定义_详情_06.svg摘要",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "下游导入包/功能模型__01_原子及组合功能定义_详情_06.svg真实矢量图",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "下游导入包/功能模型__01_原子及组合功能定义_详情_06.dot摘要",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "下游导入包/功能模型__01_原子及组合功能定义_详情_06.puml摘要",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "下游导入包/功能模型__01_原子及组合功能定义_详情_07.png摘要",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "下游导入包/功能模型__01_原子及组合功能定义_详情_07.svg摘要",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "下游导入包/功能模型__01_原子及组合功能定义_详情_07.svg真实矢量图",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "下游导入包/功能模型__01_原子及组合功能定义_详情_07.dot摘要",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "下游导入包/功能模型__01_原子及组合功能定义_详情_07.puml摘要",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "下游导入包/功能模型__01_原子及组合功能定义_详情_08.png摘要",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "下游导入包/功能模型__01_原子及组合功能定义_详情_08.svg摘要",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "下游导入包/功能模型__01_原子及组合功能定义_详情_08.svg真实矢量图",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "下游导入包/功能模型__01_原子及组合功能定义_详情_08.dot摘要",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "下游导入包/功能模型__01_原子及组合功能定义_详情_08.puml摘要",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "下游导入包/功能模型__01_原子及组合功能定义_详情_09.png摘要",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "下游导入包/功能模型__01_原子及组合功能定义_详情_09.svg摘要",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "下游导入包/功能模型__01_原子及组合功能定义_详情_09.svg真实矢量图",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "下游导入包/功能模型__01_原子及组合功能定义_详情_09.dot摘要",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "下游导入包/功能模型__01_原子及组合功能定义_详情_09.puml摘要",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "下游导入包/功能模型__01_原子及组合功能定义_详情_10.png摘要",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "下游导入包/功能模型__01_原子及组合功能定义_详情_10.svg摘要",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "下游导入包/功能模型__01_原子及组合功能定义_详情_10.svg真实矢量图",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "下游导入包/功能模型__01_原子及组合功能定义_详情_10.dot摘要",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "下游导入包/功能模型__01_原子及组合功能定义_详情_10.puml摘要",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "下游导入包/功能模型__01_原子及组合功能定义.png摘要",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "下游导入包/功能模型__01_原子及组合功能定义.svg摘要",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "下游导入包/功能模型__01_原子及组合功能定义.svg真实矢量图",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "下游导入包/功能模型__01_原子及组合功能定义.dot摘要",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "下游导入包/功能模型__01_原子及组合功能定义.puml摘要",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "下游导入包/功能模型__02_3.3.1.2-功能分解.png摘要",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "下游导入包/功能模型__02_3.3.1.2-功能分解.svg摘要",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "下游导入包/功能模型__02_3.3.1.2-功能分解.svg真实矢量图",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "下游导入包/功能模型__02_3.3.1.2-功能分解.dot摘要",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "下游导入包/功能模型__02_3.3.1.2-功能分解.puml摘要",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "下游导入包/功能模型__02_3.3.1.6-功能分解.png摘要",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "下游导入包/功能模型__02_3.3.1.6-功能分解.svg摘要",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "下游导入包/功能模型__02_3.3.1.6-功能分解.svg真实矢量图",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "下游导入包/功能模型__02_3.3.1.6-功能分解.dot摘要",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "下游导入包/功能模型__02_3.3.1.6-功能分解.puml摘要",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "下游导入包/功能模型__02_3.3.1.9-功能分解.png摘要",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "下游导入包/功能模型__02_3.3.1.9-功能分解.svg摘要",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "下游导入包/功能模型__02_3.3.1.9-功能分解.svg真实矢量图",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "下游导入包/功能模型__02_3.3.1.9-功能分解.dot摘要",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "下游导入包/功能模型__02_3.3.1.9-功能分解.puml摘要",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "下游导入包/功能模型__02_SC1-功能分解.png摘要",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "下游导入包/功能模型__02_SC1-功能分解.svg摘要",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "下游导入包/功能模型__02_SC1-功能分解.svg真实矢量图",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "下游导入包/功能模型__02_SC1-功能分解.dot摘要",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "下游导入包/功能模型__02_SC1-功能分解.puml摘要",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "下游导入包/功能模型__02_SC2-功能分解.png摘要",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "下游导入包/功能模型__02_SC2-功能分解.svg摘要",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "下游导入包/功能模型__02_SC2-功能分解.svg真实矢量图",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "下游导入包/功能模型__02_SC2-功能分解.dot摘要",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "下游导入包/功能模型__02_SC2-功能分解.puml摘要",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "下游导入包/功能模型__02_SC3-功能分解.png摘要",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "下游导入包/功能模型__02_SC3-功能分解.svg摘要",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "下游导入包/功能模型__02_SC3-功能分解.svg真实矢量图",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "下游导入包/功能模型__02_SC3-功能分解.dot摘要",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "下游导入包/功能模型__02_SC3-功能分解.puml摘要",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "下游导入包/行为模型__SC1-行为模型.png摘要",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "下游导入包/行为模型__SC1-行为模型.svg摘要",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "下游导入包/行为模型__SC1-行为模型.svg真实矢量图",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "下游导入包/行为模型__SC1-行为模型.dot摘要",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "下游导入包/行为模型__SC1-行为模型.puml摘要",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "下游导入包/行为模型__SC2-行为模型.png摘要",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "下游导入包/行为模型__SC2-行为模型.svg摘要",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "下游导入包/行为模型__SC2-行为模型.svg真实矢量图",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "下游导入包/行为模型__SC2-行为模型.dot摘要",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "下游导入包/行为模型__SC2-行为模型.puml摘要",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "下游导入包/行为模型__SC3-行为模型.png摘要",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "下游导入包/行为模型__SC3-行为模型.svg摘要",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "下游导入包/行为模型__SC3-行为模型.svg真实矢量图",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "下游导入包/行为模型__SC3-行为模型.dot摘要",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "下游导入包/行为模型__SC3-行为模型.puml摘要",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "下游导入包/需求图__3.3.1.2-需求图.png摘要",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "下游导入包/需求图__3.3.1.2-需求图.svg摘要",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "下游导入包/需求图__3.3.1.2-需求图.svg真实矢量图",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "下游导入包/需求图__3.3.1.2-需求图.dot摘要",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "下游导入包/需求图__3.3.1.2-需求图.puml摘要",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "下游导入包/需求图__3.3.1.6-需求图.png摘要",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "下游导入包/需求图__3.3.1.6-需求图.svg摘要",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "下游导入包/需求图__3.3.1.6-需求图.svg真实矢量图",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "下游导入包/需求图__3.3.1.6-需求图.dot摘要",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "下游导入包/需求图__3.3.1.6-需求图.puml摘要",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "下游导入包/需求图__3.3.1.9-需求图.png摘要",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "下游导入包/需求图__3.3.1.9-需求图.svg摘要",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "下游导入包/需求图__3.3.1.9-需求图.svg真实矢量图",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "下游导入包/需求图__3.3.1.9-需求图.dot摘要",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "下游导入包/需求图__3.3.1.9-需求图.puml摘要",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "下游导入包/需求外部BDD图__3.3.1.2、3.3.1.6、3.3.1.9-BDD图.png摘要",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "下游导入包/需求外部BDD图__3.3.1.2、3.3.1.6、3.3.1.9-BDD图.svg摘要",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "下游导入包/需求外部BDD图__3.3.1.2、3.3.1.6、3.3.1.9-BDD图.svg真实矢量图",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "下游导入包/需求外部BDD图__3.3.1.2、3.3.1.6、3.3.1.9-BDD图.dot摘要",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "下游导入包/需求外部BDD图__3.3.1.2、3.3.1.6、3.3.1.9-BDD图.puml摘要",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "下游导入包/需求活动图__3.3.1.2-需求活动图.png摘要",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "下游导入包/需求活动图__3.3.1.2-需求活动图.svg摘要",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "下游导入包/需求活动图__3.3.1.2-需求活动图.svg真实矢量图",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "下游导入包/需求活动图__3.3.1.2-需求活动图.dot摘要",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "下游导入包/需求活动图__3.3.1.2-需求活动图.puml摘要",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "下游导入包/需求活动图__3.3.1.6-需求活动图.png摘要",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "下游导入包/需求活动图__3.3.1.6-需求活动图.svg摘要",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "下游导入包/需求活动图__3.3.1.6-需求活动图.svg真实矢量图",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "下游导入包/需求活动图__3.3.1.6-需求活动图.dot摘要",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "下游导入包/需求活动图__3.3.1.6-需求活动图.puml摘要",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "下游导入包/需求活动图__3.3.1.9-需求活动图.png摘要",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "下游导入包/需求活动图__3.3.1.9-需求活动图.svg摘要",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "下游导入包/需求活动图__3.3.1.9-需求活动图.svg真实矢量图",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "下游导入包/需求活动图__3.3.1.9-需求活动图.dot摘要",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "下游导入包/需求活动图__3.3.1.9-需求活动图.puml摘要",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "下游导入包/需求用例图__3.3.1.2、3.3.1.6、3.3.1.9-需求用例图.puml摘要",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "下游导入包/需求用例图__3.3.1.2、3.3.1.6、3.3.1.9-需求用例图.png摘要",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "下游导入包/需求用例图__3.3.1.2、3.3.1.6、3.3.1.9-需求用例图.svg摘要",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "下游导入包/需求用例图__3.3.1.2、3.3.1.6、3.3.1.9-需求用例图.svg真实矢量图",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "3.3.1.2全部节点保留",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "3.3.1.2全部转移及原守卫保留",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "3.3.1.2视觉合并边不遗漏转移",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "3.3.1.2动作和决策框不重叠",
+      "passed": true,
+      "detail": []
+    },
+    {
+      "name": "3.3.1.6全部节点保留",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "3.3.1.6全部转移及原守卫保留",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "3.3.1.6视觉合并边不遗漏转移",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "3.3.1.6动作和决策框不重叠",
+      "passed": true,
+      "detail": []
+    },
+    {
+      "name": "3.3.1.9全部节点保留",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "3.3.1.9全部转移及原守卫保留",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "3.3.1.9视觉合并边不遗漏转移",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "3.3.1.9动作和决策框不重叠",
+      "passed": true,
+      "detail": []
+    },
+    {
+      "name": "SC1全部节点保留",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "SC1全部转移及原守卫保留",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "SC1视觉合并边不遗漏转移",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "SC1动作和决策框不重叠",
+      "passed": true,
+      "detail": []
+    },
+    {
+      "name": "SC2全部节点保留",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "SC2全部转移及原守卫保留",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "SC2视觉合并边不遗漏转移",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "SC2动作和决策框不重叠",
+      "passed": true,
+      "detail": []
+    },
+    {
+      "name": "SC3全部节点保留",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "SC3全部转移及原守卫保留",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "SC3视觉合并边不遗漏转移",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "SC3动作和决策框不重叠",
+      "passed": true,
+      "detail": []
+    },
+    {
+      "name": "功能模型/00_概念接口类型.sysml分页无遗漏及重复",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "功能模型/01_原子及组合功能定义.sysml分页无遗漏及重复",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "功能模型/02_3.3.1.2-功能分解.sysml分解节点完整",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "功能模型/02_3.3.1.6-功能分解.sysml分解节点完整",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "功能模型/02_3.3.1.9-功能分解.sysml分解节点完整",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "功能模型/02_SC1-功能分解.sysml分解节点完整",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "功能模型/02_SC2-功能分解.sysml分解节点完整",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "功能模型/02_SC3-功能分解.sysml分解节点完整",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "需求图/3.3.1.2-需求图.sysml需求层次完整",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "需求图/3.3.1.6-需求图.sysml需求层次完整",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "需求图/3.3.1.9-需求图.sysml需求层次完整",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "需求外部BDD图/3.3.1.2、3.3.1.6、3.3.1.9-BDD图.sysml全部接口保留",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "需求用例图/3.3.1.2、3.3.1.6、3.3.1.9-需求用例图.sysml用例参与者及追溯保留",
+      "passed": true,
+      "detail": ""
+    }
+  ]
+}

@@ -1,0 +1,10 @@
+digraph G {
+graph [layout=neato,overlap=true,bgcolor="white",fontname="Noto Sans CJK SC",fontsize=22,labelloc=t,label="热管理逻辑功能架构 · 六棵功能树总览",pad=.4,dpi=145];
+node [shape=box,style="rounded,filled",fillcolor="white",color="#858585",fontname="Noto Sans CJK SC",fontsize=15,penwidth=1.1,margin=".22,.2"];
+R0 [pos="0,0!",width=4.6,height=1.2,label="▣ «package»\n3.3.1.2 乘员舱制热控制\n8项规范功能（含组合层）\n详见 02_3.3.1.2-功能分解图"];
+R1 [pos="6.0,0!",width=4.6,height=1.2,label="▣ «package»\n3.3.1.6 自动空调控制\n15项规范功能（含组合层）\n详见 02_3.3.1.6-功能分解图"];
+R2 [pos="0,-2!",width=4.6,height=1.2,label="▣ «package»\n3.3.1.9 前风窗除霜除雾控制\n10项规范功能（含组合层）\n详见 02_3.3.1.9-功能分解图"];
+R3 [pos="6.0,-2!",width=4.6,height=1.2,label="▣ «package»\nSC1 串联混动经济性场景\n10项规范功能（含组合层）\n详见 02_SC1-功能分解图"];
+R4 [pos="0,-4!",width=4.6,height=1.2,label="▣ «package»\nSC2 空调供风辅助电池冷却场景\n13项规范功能（含组合层）\n详见 02_SC2-功能分解图"];
+R5 [pos="6.0,-4!",width=4.6,height=1.2,label="▣ «package»\nSC3 座舱空调与Chiller电池液冷场景\n13项规范功能（含组合层）\n详见 02_SC3-功能分解图"];
+}

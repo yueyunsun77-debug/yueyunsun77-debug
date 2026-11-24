@@ -1,0 +1,3509 @@
+{
+  "date": "2026-11-23",
+  "baseline": "11.17版本基线.zip",
+  "passed": true,
+  "check_count": 671,
+  "counts": {
+    "requirements": 75,
+    "legacy_IND_records": 41,
+    "metrics": 8,
+    "hard_constraints": 32,
+    "soft_constraints": 1,
+    "function_records": 73,
+    "canonical_functions": 69,
+    "composite_functions": 3,
+    "leaf_functions": 66,
+    "candidate_pool": 201,
+    "behaviour_models": 6,
+    "transitions": 199,
+    "sysml_models": 19
+  },
+  "checks": [
+    {
+      "name": "需求JSON Schema",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "功能JSON Schema",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "原75条需求ID保留且唯一",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "IND-001原条款及原值保留",
+      "passed": true,
+      "detail": "分类变更通过legacy_type/category/indicator_type及迁移理由保留，不改变数值、比较符或来源声明"
+    },
+    {
+      "name": "IND-001分类迁移可追溯",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "IND-001功能分配对象有效",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "IND-002原条款及原值保留",
+      "passed": true,
+      "detail": "分类变更通过legacy_type/category/indicator_type及迁移理由保留，不改变数值、比较符或来源声明"
+    },
+    {
+      "name": "IND-002分类迁移可追溯",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "IND-002功能分配对象有效",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "IND-003原条款及原值保留",
+      "passed": true,
+      "detail": "分类变更通过legacy_type/category/indicator_type及迁移理由保留，不改变数值、比较符或来源声明"
+    },
+    {
+      "name": "IND-003分类迁移可追溯",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "IND-003功能分配对象有效",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "IND-004原条款及原值保留",
+      "passed": true,
+      "detail": "分类变更通过legacy_type/category/indicator_type及迁移理由保留，不改变数值、比较符或来源声明"
+    },
+    {
+      "name": "IND-004分类迁移可追溯",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "IND-004功能分配对象有效",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "IND-005原条款及原值保留",
+      "passed": true,
+      "detail": "分类变更通过legacy_type/category/indicator_type及迁移理由保留，不改变数值、比较符或来源声明"
+    },
+    {
+      "name": "IND-005分类迁移可追溯",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "IND-005功能分配对象有效",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "IND-006原条款及原值保留",
+      "passed": true,
+      "detail": "分类变更通过legacy_type/category/indicator_type及迁移理由保留，不改变数值、比较符或来源声明"
+    },
+    {
+      "name": "IND-006分类迁移可追溯",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "IND-006功能分配对象有效",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "IND-007原条款及原值保留",
+      "passed": true,
+      "detail": "分类变更通过legacy_type/category/indicator_type及迁移理由保留，不改变数值、比较符或来源声明"
+    },
+    {
+      "name": "IND-007分类迁移可追溯",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "IND-007功能分配对象有效",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "IND-008原条款及原值保留",
+      "passed": true,
+      "detail": "分类变更通过legacy_type/category/indicator_type及迁移理由保留，不改变数值、比较符或来源声明"
+    },
+    {
+      "name": "IND-008分类迁移可追溯",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "IND-008功能分配对象有效",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "IND-009原条款及原值保留",
+      "passed": true,
+      "detail": "分类变更通过legacy_type/category/indicator_type及迁移理由保留，不改变数值、比较符或来源声明"
+    },
+    {
+      "name": "IND-009分类迁移可追溯",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "IND-009功能分配对象有效",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "IND-010原条款及原值保留",
+      "passed": true,
+      "detail": "分类变更通过legacy_type/category/indicator_type及迁移理由保留，不改变数值、比较符或来源声明"
+    },
+    {
+      "name": "IND-010分类迁移可追溯",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "IND-010功能分配对象有效",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "IND-011原条款及原值保留",
+      "passed": true,
+      "detail": "分类变更通过legacy_type/category/indicator_type及迁移理由保留，不改变数值、比较符或来源声明"
+    },
+    {
+      "name": "IND-011分类迁移可追溯",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "IND-011功能分配对象有效",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "IND-012原条款及原值保留",
+      "passed": true,
+      "detail": "分类变更通过legacy_type/category/indicator_type及迁移理由保留，不改变数值、比较符或来源声明"
+    },
+    {
+      "name": "IND-012分类迁移可追溯",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "IND-012功能分配对象有效",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "IND-013原条款及原值保留",
+      "passed": true,
+      "detail": "分类变更通过legacy_type/category/indicator_type及迁移理由保留，不改变数值、比较符或来源声明"
+    },
+    {
+      "name": "IND-013分类迁移可追溯",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "IND-013功能分配对象有效",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "IND-014原条款及原值保留",
+      "passed": true,
+      "detail": "分类变更通过legacy_type/category/indicator_type及迁移理由保留，不改变数值、比较符或来源声明"
+    },
+    {
+      "name": "IND-014分类迁移可追溯",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "IND-014功能分配对象有效",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "IND-015原条款及原值保留",
+      "passed": true,
+      "detail": "分类变更通过legacy_type/category/indicator_type及迁移理由保留，不改变数值、比较符或来源声明"
+    },
+    {
+      "name": "IND-015分类迁移可追溯",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "IND-015功能分配对象有效",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "IND-016原条款及原值保留",
+      "passed": true,
+      "detail": "分类变更通过legacy_type/category/indicator_type及迁移理由保留，不改变数值、比较符或来源声明"
+    },
+    {
+      "name": "IND-016分类迁移可追溯",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "IND-016功能分配对象有效",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "IND-017原条款及原值保留",
+      "passed": true,
+      "detail": "分类变更通过legacy_type/category/indicator_type及迁移理由保留，不改变数值、比较符或来源声明"
+    },
+    {
+      "name": "IND-017分类迁移可追溯",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "IND-017功能分配对象有效",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "IND-018原条款及原值保留",
+      "passed": true,
+      "detail": "分类变更通过legacy_type/category/indicator_type及迁移理由保留，不改变数值、比较符或来源声明"
+    },
+    {
+      "name": "IND-018分类迁移可追溯",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "IND-018功能分配对象有效",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "IND-019原条款及原值保留",
+      "passed": true,
+      "detail": "分类变更通过legacy_type/category/indicator_type及迁移理由保留，不改变数值、比较符或来源声明"
+    },
+    {
+      "name": "IND-019分类迁移可追溯",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "IND-019功能分配对象有效",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "IND-020原条款及原值保留",
+      "passed": true,
+      "detail": "分类变更通过legacy_type/category/indicator_type及迁移理由保留，不改变数值、比较符或来源声明"
+    },
+    {
+      "name": "IND-020分类迁移可追溯",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "IND-020功能分配对象有效",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "IND-021原条款及原值保留",
+      "passed": true,
+      "detail": "分类变更通过legacy_type/category/indicator_type及迁移理由保留，不改变数值、比较符或来源声明"
+    },
+    {
+      "name": "IND-021分类迁移可追溯",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "IND-021功能分配对象有效",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "IND-022原条款及原值保留",
+      "passed": true,
+      "detail": "分类变更通过legacy_type/category/indicator_type及迁移理由保留，不改变数值、比较符或来源声明"
+    },
+    {
+      "name": "IND-022分类迁移可追溯",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "IND-022功能分配对象有效",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "IND-023原条款及原值保留",
+      "passed": true,
+      "detail": "分类变更通过legacy_type/category/indicator_type及迁移理由保留，不改变数值、比较符或来源声明"
+    },
+    {
+      "name": "IND-023分类迁移可追溯",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "IND-023功能分配对象有效",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "IND-024原条款及原值保留",
+      "passed": true,
+      "detail": "分类变更通过legacy_type/category/indicator_type及迁移理由保留，不改变数值、比较符或来源声明"
+    },
+    {
+      "name": "IND-024分类迁移可追溯",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "IND-024功能分配对象有效",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "IND-025原条款及原值保留",
+      "passed": true,
+      "detail": "分类变更通过legacy_type/category/indicator_type及迁移理由保留，不改变数值、比较符或来源声明"
+    },
+    {
+      "name": "IND-025分类迁移可追溯",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "IND-025功能分配对象有效",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "IND-026原条款及原值保留",
+      "passed": true,
+      "detail": "分类变更通过legacy_type/category/indicator_type及迁移理由保留，不改变数值、比较符或来源声明"
+    },
+    {
+      "name": "IND-026分类迁移可追溯",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "IND-026功能分配对象有效",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "IND-027原条款及原值保留",
+      "passed": true,
+      "detail": "分类变更通过legacy_type/category/indicator_type及迁移理由保留，不改变数值、比较符或来源声明"
+    },
+    {
+      "name": "IND-027分类迁移可追溯",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "IND-027功能分配对象有效",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "IND-028原条款及原值保留",
+      "passed": true,
+      "detail": "分类变更通过legacy_type/category/indicator_type及迁移理由保留，不改变数值、比较符或来源声明"
+    },
+    {
+      "name": "IND-028分类迁移可追溯",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "IND-028功能分配对象有效",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "IND-029原条款及原值保留",
+      "passed": true,
+      "detail": "分类变更通过legacy_type/category/indicator_type及迁移理由保留，不改变数值、比较符或来源声明"
+    },
+    {
+      "name": "IND-029分类迁移可追溯",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "IND-029功能分配对象有效",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "IND-030原条款及原值保留",
+      "passed": true,
+      "detail": "分类变更通过legacy_type/category/indicator_type及迁移理由保留，不改变数值、比较符或来源声明"
+    },
+    {
+      "name": "IND-030分类迁移可追溯",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "IND-030功能分配对象有效",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "IND-031原条款及原值保留",
+      "passed": true,
+      "detail": "分类变更通过legacy_type/category/indicator_type及迁移理由保留，不改变数值、比较符或来源声明"
+    },
+    {
+      "name": "IND-031分类迁移可追溯",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "IND-031功能分配对象有效",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "IND-032原条款及原值保留",
+      "passed": true,
+      "detail": "分类变更通过legacy_type/category/indicator_type及迁移理由保留，不改变数值、比较符或来源声明"
+    },
+    {
+      "name": "IND-032分类迁移可追溯",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "IND-032功能分配对象有效",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "IND-033原条款及原值保留",
+      "passed": true,
+      "detail": "分类变更通过legacy_type/category/indicator_type及迁移理由保留，不改变数值、比较符或来源声明"
+    },
+    {
+      "name": "IND-033分类迁移可追溯",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "IND-033功能分配对象有效",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "IND-034原条款及原值保留",
+      "passed": true,
+      "detail": "分类变更通过legacy_type/category/indicator_type及迁移理由保留，不改变数值、比较符或来源声明"
+    },
+    {
+      "name": "IND-034分类迁移可追溯",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "IND-034功能分配对象有效",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "IND-035原条款及原值保留",
+      "passed": true,
+      "detail": "分类变更通过legacy_type/category/indicator_type及迁移理由保留，不改变数值、比较符或来源声明"
+    },
+    {
+      "name": "IND-035分类迁移可追溯",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "IND-035功能分配对象有效",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "IND-036原条款及原值保留",
+      "passed": true,
+      "detail": "分类变更通过legacy_type/category/indicator_type及迁移理由保留，不改变数值、比较符或来源声明"
+    },
+    {
+      "name": "IND-036分类迁移可追溯",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "IND-036功能分配对象有效",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "IND-037原条款及原值保留",
+      "passed": true,
+      "detail": "分类变更通过legacy_type/category/indicator_type及迁移理由保留，不改变数值、比较符或来源声明"
+    },
+    {
+      "name": "IND-037分类迁移可追溯",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "IND-037功能分配对象有效",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "IND-038原条款及原值保留",
+      "passed": true,
+      "detail": "分类变更通过legacy_type/category/indicator_type及迁移理由保留，不改变数值、比较符或来源声明"
+    },
+    {
+      "name": "IND-038分类迁移可追溯",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "IND-038功能分配对象有效",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "IND-039原条款及原值保留",
+      "passed": true,
+      "detail": "分类变更通过legacy_type/category/indicator_type及迁移理由保留，不改变数值、比较符或来源声明"
+    },
+    {
+      "name": "IND-039分类迁移可追溯",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "IND-039功能分配对象有效",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "IND-040原条款及原值保留",
+      "passed": true,
+      "detail": "分类变更通过legacy_type/category/indicator_type及迁移理由保留，不改变数值、比较符或来源声明"
+    },
+    {
+      "name": "IND-040分类迁移可追溯",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "IND-040功能分配对象有效",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "IND-041原条款及原值保留",
+      "passed": true,
+      "detail": "分类变更通过legacy_type/category/indicator_type及迁移理由保留，不改变数值、比较符或来源声明"
+    },
+    {
+      "name": "IND-041分类迁移可追溯",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "IND-041功能分配对象有效",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "条款性质分类统计",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "指标表八字段及两表一致",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "IND-010表JSON逐字段对应",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "IND-013表JSON逐字段对应",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "IND-019表JSON逐字段对应",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "IND-020表JSON逐字段对应",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "IND-031表JSON逐字段对应",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "IND-032表JSON逐字段对应",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "IND-033表JSON逐字段对应",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "IND-034表JSON逐字段对应",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "全部41条约束与指标表八字段及两表一致",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "全部41条约束与IND-001表JSON逐字段对应",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "全部41条约束与IND-002表JSON逐字段对应",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "全部41条约束与IND-003表JSON逐字段对应",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "全部41条约束与IND-004表JSON逐字段对应",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "全部41条约束与IND-005表JSON逐字段对应",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "全部41条约束与IND-006表JSON逐字段对应",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "全部41条约束与IND-007表JSON逐字段对应",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "全部41条约束与IND-008表JSON逐字段对应",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "全部41条约束与IND-009表JSON逐字段对应",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "全部41条约束与IND-010表JSON逐字段对应",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "全部41条约束与IND-011表JSON逐字段对应",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "全部41条约束与IND-012表JSON逐字段对应",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "全部41条约束与IND-013表JSON逐字段对应",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "全部41条约束与IND-014表JSON逐字段对应",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "全部41条约束与IND-015表JSON逐字段对应",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "全部41条约束与IND-016表JSON逐字段对应",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "全部41条约束与IND-017表JSON逐字段对应",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "全部41条约束与IND-018表JSON逐字段对应",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "全部41条约束与IND-019表JSON逐字段对应",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "全部41条约束与IND-020表JSON逐字段对应",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "全部41条约束与IND-021表JSON逐字段对应",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "全部41条约束与IND-022表JSON逐字段对应",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "全部41条约束与IND-023表JSON逐字段对应",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "全部41条约束与IND-024表JSON逐字段对应",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "全部41条约束与IND-025表JSON逐字段对应",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "全部41条约束与IND-026表JSON逐字段对应",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "全部41条约束与IND-027表JSON逐字段对应",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "全部41条约束与IND-028表JSON逐字段对应",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "全部41条约束与IND-029表JSON逐字段对应",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "全部41条约束与IND-030表JSON逐字段对应",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "全部41条约束与IND-031表JSON逐字段对应",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "全部41条约束与IND-032表JSON逐字段对应",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "全部41条约束与IND-033表JSON逐字段对应",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "全部41条约束与IND-034表JSON逐字段对应",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "全部41条约束与IND-035表JSON逐字段对应",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "全部41条约束与IND-036表JSON逐字段对应",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "全部41条约束与IND-037表JSON逐字段对应",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "全部41条约束与IND-038表JSON逐字段对应",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "全部41条约束与IND-039表JSON逐字段对应",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "全部41条约束与IND-040表JSON逐字段对应",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "全部41条约束与IND-041表JSON逐字段对应",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "功能ID保留与细化",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "规范功能及组合层级统计",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "V+O及能力字段",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "LF-001模型定位有效",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "LF-001-I01概念类型与语义角色一致",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "LF-001-I02概念类型与语义角色一致",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "LF-001-I03概念类型与语义角色一致",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "LF-001-I04概念类型与语义角色一致",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "LF-001-O01概念类型与语义角色一致",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "LF-002模型定位有效",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "LF-002-I01概念类型与语义角色一致",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "LF-002-O01概念类型与语义角色一致",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "LF-003模型定位有效",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "LF-003-I01概念类型与语义角色一致",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "LF-003-O01概念类型与语义角色一致",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "LF-004模型定位有效",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "LF-004-I01概念类型与语义角色一致",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "LF-004-I02概念类型与语义角色一致",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "LF-004-I03概念类型与语义角色一致",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "LF-004-I04概念类型与语义角色一致",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "LF-004-O01概念类型与语义角色一致",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "LF-005模型定位有效",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "LF-005-I01概念类型与语义角色一致",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "LF-005-I02概念类型与语义角色一致",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "LF-005-O01概念类型与语义角色一致",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "LF-006模型定位有效",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "LF-006-I01概念类型与语义角色一致",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "LF-006-I02概念类型与语义角色一致",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "LF-006-I03概念类型与语义角色一致",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "LF-006-O01概念类型与语义角色一致",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "LF-007模型定位有效",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "LF-007-I01概念类型与语义角色一致",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "LF-007-I02概念类型与语义角色一致",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "LF-007-I03概念类型与语义角色一致",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "LF-007-I04概念类型与语义角色一致",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "LF-007-I05概念类型与语义角色一致",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "LF-007-O01概念类型与语义角色一致",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "LF-008模型定位有效",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "LF-008-I01概念类型与语义角色一致",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "LF-008-O01概念类型与语义角色一致",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "LF-009模型定位有效",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "LF-009-I01概念类型与语义角色一致",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "LF-009-I02概念类型与语义角色一致",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "LF-009-O01概念类型与语义角色一致",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "LF-010模型定位有效",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "LF-010-I01概念类型与语义角色一致",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "LF-010-I02概念类型与语义角色一致",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "LF-010-I03概念类型与语义角色一致",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "LF-010-I04概念类型与语义角色一致",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "LF-010-O01概念类型与语义角色一致",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "LF-011模型定位有效",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "LF-011-I01概念类型与语义角色一致",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "LF-011-I02概念类型与语义角色一致",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "LF-011-I03概念类型与语义角色一致",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "LF-011-I04概念类型与语义角色一致",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "LF-011-O01概念类型与语义角色一致",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "LF-011-O02概念类型与语义角色一致",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "LF-011-O03概念类型与语义角色一致",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "LF-011-O04概念类型与语义角色一致",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "LF-011-O05概念类型与语义角色一致",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "LF-011-O06概念类型与语义角色一致",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "LF-011子功能完整",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "LF-012模型定位有效",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "LF-012-I01概念类型与语义角色一致",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "LF-012-O01概念类型与语义角色一致",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "LF-013模型定位有效",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "LF-013-I01概念类型与语义角色一致",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "LF-013-I02概念类型与语义角色一致",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "LF-013-I03概念类型与语义角色一致",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "LF-013-I04概念类型与语义角色一致",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "LF-013-I05概念类型与语义角色一致",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "LF-013-I06概念类型与语义角色一致",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "LF-013-O01概念类型与语义角色一致",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "LF-014模型定位有效",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "LF-014-I01概念类型与语义角色一致",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "LF-014-I02概念类型与语义角色一致",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "LF-014-O01概念类型与语义角色一致",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "LF-015模型定位有效",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "LF-015-I01概念类型与语义角色一致",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "LF-015-I02概念类型与语义角色一致",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "LF-015-I03概念类型与语义角色一致",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "LF-015-O01概念类型与语义角色一致",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "LF-016模型定位有效",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "LF-016-I01概念类型与语义角色一致",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "LF-016-O01概念类型与语义角色一致",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "LF-017模型定位有效",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "LF-017-I01概念类型与语义角色一致",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "LF-017-I02概念类型与语义角色一致",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "LF-017-O01概念类型与语义角色一致",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "LF-018模型定位有效",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "LF-018-I01概念类型与语义角色一致",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "LF-018-I02概念类型与语义角色一致",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "LF-018-O01概念类型与语义角色一致",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "LF-019模型定位有效",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "LF-019-I01概念类型与语义角色一致",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "LF-019-I02概念类型与语义角色一致",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "LF-019-O01概念类型与语义角色一致",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "LF-020模型定位有效",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "LF-020-I01概念类型与语义角色一致",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "LF-020-I02概念类型与语义角色一致",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "LF-020-I03概念类型与语义角色一致",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "LF-020-I04概念类型与语义角色一致",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "LF-020-O01概念类型与语义角色一致",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "LF-021模型定位有效",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "LF-021-I01概念类型与语义角色一致",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "LF-021-I02概念类型与语义角色一致",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "LF-021-O01概念类型与语义角色一致",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "LF-022模型定位有效",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "LF-022-I01概念类型与语义角色一致",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "LF-022-I02概念类型与语义角色一致",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "LF-022-I03概念类型与语义角色一致",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "LF-022-I04概念类型与语义角色一致",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "LF-022-I05概念类型与语义角色一致",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "LF-022-O01概念类型与语义角色一致",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "LF-023模型定位有效",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "LF-023-I01概念类型与语义角色一致",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "LF-023-I02概念类型与语义角色一致",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "LF-023-I03概念类型与语义角色一致",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "LF-023-I04概念类型与语义角色一致",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "LF-023-O01概念类型与语义角色一致",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "LF-024模型定位有效",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "LF-024-I01概念类型与语义角色一致",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "LF-024-I02概念类型与语义角色一致",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "LF-024-O01概念类型与语义角色一致",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "LF-026模型定位有效",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "LF-026-I01概念类型与语义角色一致",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "LF-026-I02概念类型与语义角色一致",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "LF-026-I03概念类型与语义角色一致",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "LF-026-O01概念类型与语义角色一致",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "LF-027模型定位有效",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "LF-027-I01概念类型与语义角色一致",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "LF-027-O01概念类型与语义角色一致",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "LF-028模型定位有效",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "LF-028-I01概念类型与语义角色一致",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "LF-028-I02概念类型与语义角色一致",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "LF-028-O01概念类型与语义角色一致",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "LF-028-O02概念类型与语义角色一致",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "LF-029模型定位有效",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "LF-029-I01概念类型与语义角色一致",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "LF-029-I02概念类型与语义角色一致",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "LF-029-I03概念类型与语义角色一致",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "LF-029-I04概念类型与语义角色一致",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "LF-029-O01概念类型与语义角色一致",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "LF-029-O02概念类型与语义角色一致",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "LF-030模型定位有效",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "LF-030-I01概念类型与语义角色一致",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "LF-030-I02概念类型与语义角色一致",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "LF-030-O01概念类型与语义角色一致",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "LF-031模型定位有效",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "LF-031-I01概念类型与语义角色一致",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "LF-031-I02概念类型与语义角色一致",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "LF-031-I03概念类型与语义角色一致",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "LF-031-O01概念类型与语义角色一致",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "LF-031-O02概念类型与语义角色一致",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "LF-032模型定位有效",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "LF-032-I01概念类型与语义角色一致",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "LF-032-O01概念类型与语义角色一致",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "S1-F01模型定位有效",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "S1-F01-I01概念类型与语义角色一致",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "S1-F01-O01概念类型与语义角色一致",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "S1-F02模型定位有效",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "S1-F02-I01概念类型与语义角色一致",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "S1-F02-O01概念类型与语义角色一致",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "S1-F03模型定位有效",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "S1-F03-I01概念类型与语义角色一致",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "S1-F03-O01概念类型与语义角色一致",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "S1-F04模型定位有效",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "S1-F04-I01概念类型与语义角色一致",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "S1-F04-O01概念类型与语义角色一致",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "S1-F05模型定位有效",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "S1-F05-I01概念类型与语义角色一致",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "S1-F05-O01概念类型与语义角色一致",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "S1-F06模型定位有效",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "S1-F06-I01概念类型与语义角色一致",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "S1-F06-O01概念类型与语义角色一致",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "S1-F07模型定位有效",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "S1-F07-I01概念类型与语义角色一致",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "S1-F07-O01概念类型与语义角色一致",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "S1-F08模型定位有效",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "S1-F08-I01概念类型与语义角色一致",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "S1-F08-O01概念类型与语义角色一致",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "S1-F09模型定位有效",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "S1-F09-I01概念类型与语义角色一致",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "S1-F09-O01概念类型与语义角色一致",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "S1-F10模型定位有效",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "S1-F10-I01概念类型与语义角色一致",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "S1-F10-O01概念类型与语义角色一致",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "S2-F01模型定位有效",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "S2-F01-I01概念类型与语义角色一致",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "S2-F01-O01概念类型与语义角色一致",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "S2-F02模型定位有效",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "S2-F02-I01概念类型与语义角色一致",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "S2-F02-O01概念类型与语义角色一致",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "S2-F03模型定位有效",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "S2-F03-I01概念类型与语义角色一致",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "S2-F03-O01概念类型与语义角色一致",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "S2-F04模型定位有效",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "S2-F04-I01概念类型与语义角色一致",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "S2-F04-O01概念类型与语义角色一致",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "S2-F05模型定位有效",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "S2-F05-I01概念类型与语义角色一致",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "S2-F05-O01概念类型与语义角色一致",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "S2-F06模型定位有效",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "S2-F06-I01概念类型与语义角色一致",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "S2-F06-O01概念类型与语义角色一致",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "S2-F07模型定位有效",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "S2-F07-I01概念类型与语义角色一致",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "S2-F07-I02概念类型与语义角色一致",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "S2-F07-O01概念类型与语义角色一致",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "S2-F08模型定位有效",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "S2-F08-I01概念类型与语义角色一致",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "S2-F08-O01概念类型与语义角色一致",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "S2-F09模型定位有效",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "S2-F09-I01概念类型与语义角色一致",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "S2-F09-I02概念类型与语义角色一致",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "S2-F09-I03概念类型与语义角色一致",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "S2-F09-O01概念类型与语义角色一致",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "S2-F09-O02概念类型与语义角色一致",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "S2-F09子功能完整",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "S2-F10模型定位有效",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "S2-F10-I01概念类型与语义角色一致",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "S2-F10-O01概念类型与语义角色一致",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "S3-F01模型定位有效",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "S3-F01-I01概念类型与语义角色一致",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "S3-F01-O01概念类型与语义角色一致",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "S3-F02模型定位有效",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "S3-F02-I01概念类型与语义角色一致",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "S3-F02-O01概念类型与语义角色一致",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "S3-F03模型定位有效",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "S3-F03-I01概念类型与语义角色一致",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "S3-F03-O01概念类型与语义角色一致",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "S3-F04模型定位有效",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "S3-F04-I01概念类型与语义角色一致",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "S3-F04-O01概念类型与语义角色一致",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "S3-F05模型定位有效",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "S3-F05-I01概念类型与语义角色一致",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "S3-F05-O01概念类型与语义角色一致",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "S3-F06模型定位有效",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "S3-F06-I01概念类型与语义角色一致",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "S3-F06-O01概念类型与语义角色一致",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "S3-F06子功能完整",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "S3-F07模型定位有效",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "S3-F07-I01概念类型与语义角色一致",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "S3-F07-O01概念类型与语义角色一致",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "S3-F08模型定位有效",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "S3-F08-I01概念类型与语义角色一致",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "S3-F08-O01概念类型与语义角色一致",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "S3-F09模型定位有效",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "S3-F09-I01概念类型与语义角色一致",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "S3-F09-O01概念类型与语义角色一致",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "S3-F10模型定位有效",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "S3-F10-I01概念类型与语义角色一致",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "S3-F10-O01概念类型与语义角色一致",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "S3-F11模型定位有效",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "S3-F11-I01概念类型与语义角色一致",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "S3-F11-O01概念类型与语义角色一致",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "LF-011-01模型定位有效",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "LF-011-01-I01概念类型与语义角色一致",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "LF-011-01-I02概念类型与语义角色一致",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "LF-011-01-O01概念类型与语义角色一致",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "LF-011-02模型定位有效",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "LF-011-02-I01概念类型与语义角色一致",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "LF-011-02-I02概念类型与语义角色一致",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "LF-011-02-O01概念类型与语义角色一致",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "LF-011-03模型定位有效",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "LF-011-03-I01概念类型与语义角色一致",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "LF-011-03-I02概念类型与语义角色一致",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "LF-011-03-O01概念类型与语义角色一致",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "LF-011-04模型定位有效",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "LF-011-04-I01概念类型与语义角色一致",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "LF-011-04-I02概念类型与语义角色一致",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "LF-011-04-O01概念类型与语义角色一致",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "LF-011-05模型定位有效",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "LF-011-05-I01概念类型与语义角色一致",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "LF-011-05-I02概念类型与语义角色一致",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "LF-011-05-O01概念类型与语义角色一致",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "LF-011-06模型定位有效",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "LF-011-06-I01概念类型与语义角色一致",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "LF-011-06-I02概念类型与语义角色一致",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "LF-011-06-O01概念类型与语义角色一致",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "S2-F09-01模型定位有效",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "S2-F09-01-I01概念类型与语义角色一致",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "S2-F09-01-O01概念类型与语义角色一致",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "S2-F09-01-O02概念类型与语义角色一致",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "S2-F09-01-O03概念类型与语义角色一致",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "S2-F09-02模型定位有效",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "S2-F09-02-I01概念类型与语义角色一致",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "S2-F09-02-I02概念类型与语义角色一致",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "S2-F09-02-I03概念类型与语义角色一致",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "S2-F09-02-I04概念类型与语义角色一致",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "S2-F09-02-O01概念类型与语义角色一致",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "S2-F09-03模型定位有效",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "S2-F09-03-I01概念类型与语义角色一致",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "S2-F09-03-I02概念类型与语义角色一致",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "S2-F09-03-I03概念类型与语义角色一致",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "S2-F09-03-I04概念类型与语义角色一致",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "S2-F09-03-O01概念类型与语义角色一致",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "S3-F06-01模型定位有效",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "S3-F06-01-I01概念类型与语义角色一致",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "S3-F06-01-O01概念类型与语义角色一致",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "S3-F06-02模型定位有效",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "S3-F06-02-I01概念类型与语义角色一致",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "S3-F06-02-O01概念类型与语义角色一致",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "端口ID唯一",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "后风窗不混入可执行功能",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "201项候选原数据完整保留",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "201项候选逐项筛选",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "功能树端点有效",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "分解关系端点有效",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "六份行为模型与199条转移",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "3.3.1.2转移真实存在于SysML",
+      "passed": true,
+      "detail": "不是只检查JSON：逐条对照实际SysML中的first/if/then"
+    },
+    {
+      "name": "3.3.1.2所有转移端点存在",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "3.3.1.2行为功能引用有效",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "3.3.1.2显式反馈闭环",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "3.3.1.2无结构孤立节点",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "3.3.1.2决策节点有显式守卫：是否继续评估",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "3.3.1.2决策节点有显式守卫：使能条件判断",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "3.3.1.2决策节点有显式守卫：标定有效性判断",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "3.3.1.2决策节点有显式守卫：过温判断",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "3.3.1.2决策节点有显式守卫：保护记忆判断",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "3.3.1.2决策节点有显式守卫：恢复条件判断",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "3.3.1.6转移真实存在于SysML",
+      "passed": true,
+      "detail": "不是只检查JSON：逐条对照实际SysML中的first/if/then"
+    },
+    {
+      "name": "3.3.1.6所有转移端点存在",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "3.3.1.6行为功能引用有效",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "3.3.1.6显式反馈闭环",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "3.3.1.6无结构孤立节点",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "3.3.1.6决策节点有显式守卫：是否继续评估",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "3.3.1.6决策节点有显式守卫：自动模式判断",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "3.3.1.6决策节点有显式守卫：用户操作判断",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "3.3.1.9转移真实存在于SysML",
+      "passed": true,
+      "detail": "不是只检查JSON：逐条对照实际SysML中的first/if/then"
+    },
+    {
+      "name": "3.3.1.9所有转移端点存在",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "3.3.1.9行为功能引用有效",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "3.3.1.9显式反馈闭环",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "3.3.1.9无结构孤立节点",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "3.3.1.9决策节点有显式守卫：是否继续评估",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "3.3.1.9决策节点有显式守卫：风窗请求判断",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "3.3.1.9决策节点有显式守卫：环境除湿判断",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "3.3.1.9决策节点有显式守卫：低电量许可判断",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "SC1转移真实存在于SysML",
+      "passed": true,
+      "detail": "不是只检查JSON：逐条对照实际SysML中的first/if/then"
+    },
+    {
+      "name": "SC1所有转移端点存在",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "SC1行为功能引用有效",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "SC1显式反馈闭环",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "SC1无结构孤立节点",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "SC1决策节点有显式守卫：是否继续评估",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "SC1决策节点有显式守卫：驾驶意图判断",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "SC1决策节点有显式守卫：回收可用性判断",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "SC1决策节点有显式守卫：发电需求判断",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "SC1决策节点有显式守卫：发动机状态判断",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "SC1决策节点有显式守卫：启动完成判断",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "SC2转移真实存在于SysML",
+      "passed": true,
+      "detail": "不是只检查JSON：逐条对照实际SysML中的first/if/then"
+    },
+    {
+      "name": "SC2所有转移端点存在",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "SC2行为功能引用有效",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "SC2显式反馈闭环",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "SC2无结构孤立节点",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "SC2决策节点有显式守卫：是否继续评估",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "SC2决策节点有显式守卫：驾驶阶段判断",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "SC2决策节点有显式守卫：参考规则采用判断",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "SC2决策节点有显式守卫：电芯温度有效性判断",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "SC2决策节点有显式守卫：电池供风需求判断",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "SC2决策节点有显式守卫：供风实际建立判断",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "SC2决策节点有显式守卫：热边界独立性判断",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "SC3转移真实存在于SysML",
+      "passed": true,
+      "detail": "不是只检查JSON：逐条对照实际SysML中的first/if/then"
+    },
+    {
+      "name": "SC3所有转移端点存在",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "SC3行为功能引用有效",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "SC3显式反馈闭环",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "SC3无结构孤立节点",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "SC3决策节点有显式守卫：是否继续评估",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "SC3决策节点有显式守卫：电池判据定义判断",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "SC3决策节点有显式守卫：电池辅助需求判断",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "SC3决策节点有显式守卫：冷量分配能力判断",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "SC3决策节点有显式守卫：座舱执行需求判断",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "SC3决策节点有显式守卫：电池执行需求判断",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "SC3决策节点有显式守卫：Chiller流路可用判断",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "3.3.1.2-CASE-01边界路径",
+      "passed": true,
+      "detail": {
+        "missing": [],
+        "unexpected": []
+      }
+    },
+    {
+      "name": "3.3.1.2-CASE-02边界路径",
+      "passed": true,
+      "detail": {
+        "missing": [],
+        "unexpected": []
+      }
+    },
+    {
+      "name": "3.3.1.2-CASE-03边界路径",
+      "passed": true,
+      "detail": {
+        "missing": [],
+        "unexpected": []
+      }
+    },
+    {
+      "name": "3.3.1.2-CASE-04边界路径",
+      "passed": true,
+      "detail": {
+        "missing": [],
+        "unexpected": []
+      }
+    },
+    {
+      "name": "3.3.1.2-CASE-05边界路径",
+      "passed": true,
+      "detail": {
+        "missing": [],
+        "unexpected": []
+      }
+    },
+    {
+      "name": "3.3.1.2-CASE-06边界路径",
+      "passed": true,
+      "detail": {
+        "missing": [],
+        "unexpected": []
+      }
+    },
+    {
+      "name": "3.3.1.2-CASE-07边界路径",
+      "passed": true,
+      "detail": {
+        "missing": [],
+        "unexpected": []
+      }
+    },
+    {
+      "name": "3.3.1.2-CASE-08边界路径",
+      "passed": true,
+      "detail": {
+        "missing": [],
+        "unexpected": []
+      }
+    },
+    {
+      "name": "3.3.1.2-CASE-09边界路径",
+      "passed": true,
+      "detail": {
+        "missing": [],
+        "unexpected": []
+      }
+    },
+    {
+      "name": "3.3.1.2-CASE-10边界路径",
+      "passed": true,
+      "detail": {
+        "missing": [],
+        "unexpected": []
+      }
+    },
+    {
+      "name": "3.3.1.6-CASE-01边界路径",
+      "passed": true,
+      "detail": {
+        "missing": [],
+        "unexpected": []
+      }
+    },
+    {
+      "name": "3.3.1.6-CASE-02边界路径",
+      "passed": true,
+      "detail": {
+        "missing": [],
+        "unexpected": []
+      }
+    },
+    {
+      "name": "3.3.1.6-CASE-03边界路径",
+      "passed": true,
+      "detail": {
+        "missing": [],
+        "unexpected": []
+      }
+    },
+    {
+      "name": "3.3.1.6-CASE-04边界路径",
+      "passed": true,
+      "detail": {
+        "missing": [],
+        "unexpected": []
+      }
+    },
+    {
+      "name": "3.3.1.6-CASE-05边界路径",
+      "passed": true,
+      "detail": {
+        "missing": [],
+        "unexpected": []
+      }
+    },
+    {
+      "name": "3.3.1.6-CASE-06边界路径",
+      "passed": true,
+      "detail": {
+        "missing": [],
+        "unexpected": []
+      }
+    },
+    {
+      "name": "3.3.1.6-CASE-07边界路径",
+      "passed": true,
+      "detail": {
+        "missing": [],
+        "unexpected": []
+      }
+    },
+    {
+      "name": "3.3.1.6-CASE-08边界路径",
+      "passed": true,
+      "detail": {
+        "missing": [],
+        "unexpected": []
+      }
+    },
+    {
+      "name": "3.3.1.6-CASE-09边界路径",
+      "passed": true,
+      "detail": {
+        "missing": [],
+        "unexpected": []
+      }
+    },
+    {
+      "name": "3.3.1.9-CASE-01边界路径",
+      "passed": true,
+      "detail": {
+        "missing": [],
+        "unexpected": []
+      }
+    },
+    {
+      "name": "3.3.1.9-CASE-02边界路径",
+      "passed": true,
+      "detail": {
+        "missing": [],
+        "unexpected": []
+      }
+    },
+    {
+      "name": "3.3.1.9-CASE-03边界路径",
+      "passed": true,
+      "detail": {
+        "missing": [],
+        "unexpected": []
+      }
+    },
+    {
+      "name": "3.3.1.9-CASE-04边界路径",
+      "passed": true,
+      "detail": {
+        "missing": [],
+        "unexpected": []
+      }
+    },
+    {
+      "name": "3.3.1.9-CASE-05边界路径",
+      "passed": true,
+      "detail": {
+        "missing": [],
+        "unexpected": []
+      }
+    },
+    {
+      "name": "3.3.1.9-CASE-06边界路径",
+      "passed": true,
+      "detail": {
+        "missing": [],
+        "unexpected": []
+      }
+    },
+    {
+      "name": "SC1-CASE-01边界路径",
+      "passed": true,
+      "detail": {
+        "missing": [],
+        "unexpected": []
+      }
+    },
+    {
+      "name": "SC1-CASE-02边界路径",
+      "passed": true,
+      "detail": {
+        "missing": [],
+        "unexpected": []
+      }
+    },
+    {
+      "name": "SC1-CASE-03边界路径",
+      "passed": true,
+      "detail": {
+        "missing": [],
+        "unexpected": []
+      }
+    },
+    {
+      "name": "SC2-CASE-01边界路径",
+      "passed": true,
+      "detail": {
+        "missing": [],
+        "unexpected": []
+      }
+    },
+    {
+      "name": "SC2-CASE-02边界路径",
+      "passed": true,
+      "detail": {
+        "missing": [],
+        "unexpected": []
+      }
+    },
+    {
+      "name": "SC2-CASE-03边界路径",
+      "passed": true,
+      "detail": {
+        "missing": [],
+        "unexpected": []
+      }
+    },
+    {
+      "name": "SC2-CASE-04边界路径",
+      "passed": true,
+      "detail": {
+        "missing": [],
+        "unexpected": []
+      }
+    },
+    {
+      "name": "SC2-CASE-05边界路径",
+      "passed": true,
+      "detail": {
+        "missing": [],
+        "unexpected": []
+      }
+    },
+    {
+      "name": "SC2-CASE-06边界路径",
+      "passed": true,
+      "detail": {
+        "missing": [],
+        "unexpected": []
+      }
+    },
+    {
+      "name": "SC2-CASE-07边界路径",
+      "passed": true,
+      "detail": {
+        "missing": [],
+        "unexpected": []
+      }
+    },
+    {
+      "name": "SC2-CASE-08边界路径",
+      "passed": true,
+      "detail": {
+        "missing": [],
+        "unexpected": []
+      }
+    },
+    {
+      "name": "SC3-CASE-01边界路径",
+      "passed": true,
+      "detail": {
+        "missing": [],
+        "unexpected": []
+      }
+    },
+    {
+      "name": "SC3-CASE-02边界路径",
+      "passed": true,
+      "detail": {
+        "missing": [],
+        "unexpected": []
+      }
+    },
+    {
+      "name": "SC3-CASE-03边界路径",
+      "passed": true,
+      "detail": {
+        "missing": [],
+        "unexpected": []
+      }
+    },
+    {
+      "name": "SC3-CASE-04边界路径",
+      "passed": true,
+      "detail": {
+        "missing": [],
+        "unexpected": []
+      }
+    },
+    {
+      "name": "SC3-CASE-05边界路径",
+      "passed": true,
+      "detail": {
+        "missing": [],
+        "unexpected": []
+      }
+    },
+    {
+      "name": "SC3-CASE-06边界路径",
+      "passed": true,
+      "detail": {
+        "missing": [],
+        "unexpected": []
+      }
+    },
+    {
+      "name": "3.3.1.2守卫互斥与覆盖：是否继续评估",
+      "passed": true,
+      "detail": "2组逻辑/等值边界组合；非标定值"
+    },
+    {
+      "name": "3.3.1.2守卫互斥与覆盖：使能条件判断",
+      "passed": true,
+      "detail": "192组逻辑/等值边界组合；非标定值"
+    },
+    {
+      "name": "3.3.1.2守卫互斥与覆盖：标定有效性判断",
+      "passed": true,
+      "detail": "2组逻辑/等值边界组合；非标定值"
+    },
+    {
+      "name": "3.3.1.2守卫互斥与覆盖：过温判断",
+      "passed": true,
+      "detail": "3组逻辑/等值边界组合；非标定值"
+    },
+    {
+      "name": "3.3.1.2守卫互斥与覆盖：保护记忆判断",
+      "passed": true,
+      "detail": "2组逻辑/等值边界组合；非标定值"
+    },
+    {
+      "name": "3.3.1.2守卫互斥与覆盖：恢复条件判断",
+      "passed": true,
+      "detail": "3组逻辑/等值边界组合；非标定值"
+    },
+    {
+      "name": "3.3.1.6守卫互斥与覆盖：是否继续评估",
+      "passed": true,
+      "detail": "2组逻辑/等值边界组合；非标定值"
+    },
+    {
+      "name": "3.3.1.6守卫互斥与覆盖：自动模式判断",
+      "passed": true,
+      "detail": "2组逻辑/等值边界组合；非标定值"
+    },
+    {
+      "name": "3.3.1.6守卫互斥与覆盖：用户操作判断",
+      "passed": true,
+      "detail": "8组逻辑/等值边界组合；非标定值"
+    },
+    {
+      "name": "3.3.1.9守卫互斥与覆盖：是否继续评估",
+      "passed": true,
+      "detail": "2组逻辑/等值边界组合；非标定值"
+    },
+    {
+      "name": "3.3.1.9守卫互斥与覆盖：风窗请求判断",
+      "passed": true,
+      "detail": "4组逻辑/等值边界组合；非标定值"
+    },
+    {
+      "name": "3.3.1.9守卫互斥与覆盖：环境除湿判断",
+      "passed": true,
+      "detail": "2组逻辑/等值边界组合；非标定值"
+    },
+    {
+      "name": "3.3.1.9守卫互斥与覆盖：低电量许可判断",
+      "passed": true,
+      "detail": "12组逻辑/等值边界组合；非标定值"
+    },
+    {
+      "name": "SC1守卫互斥与覆盖：是否继续评估",
+      "passed": true,
+      "detail": "2组逻辑/等值边界组合；非标定值"
+    },
+    {
+      "name": "SC1守卫互斥与覆盖：驾驶意图判断",
+      "passed": true,
+      "detail": "4组逻辑/等值边界组合；非标定值"
+    },
+    {
+      "name": "SC1守卫互斥与覆盖：回收可用性判断",
+      "passed": true,
+      "detail": "4组逻辑/等值边界组合；非标定值"
+    },
+    {
+      "name": "SC1守卫互斥与覆盖：发电需求判断",
+      "passed": true,
+      "detail": "2组逻辑/等值边界组合；非标定值"
+    },
+    {
+      "name": "SC1守卫互斥与覆盖：发动机状态判断",
+      "passed": true,
+      "detail": "2组逻辑/等值边界组合；非标定值"
+    },
+    {
+      "name": "SC1守卫互斥与覆盖：启动完成判断",
+      "passed": true,
+      "detail": "2组逻辑/等值边界组合；非标定值"
+    },
+    {
+      "name": "SC2守卫互斥与覆盖：是否继续评估",
+      "passed": true,
+      "detail": "10组逻辑/等值边界组合；非标定值"
+    },
+    {
+      "name": "SC2守卫互斥与覆盖：驾驶阶段判断",
+      "passed": true,
+      "detail": "5组逻辑/等值边界组合；非标定值"
+    },
+    {
+      "name": "SC2守卫互斥与覆盖：参考规则采用判断",
+      "passed": true,
+      "detail": "2组逻辑/等值边界组合；非标定值"
+    },
+    {
+      "name": "SC2守卫互斥与覆盖：电芯温度有效性判断",
+      "passed": true,
+      "detail": "2组逻辑/等值边界组合；非标定值"
+    },
+    {
+      "name": "SC2守卫互斥与覆盖：电池供风需求判断",
+      "passed": true,
+      "detail": "3组逻辑/等值边界组合；非标定值"
+    },
+    {
+      "name": "SC2守卫互斥与覆盖：供风实际建立判断",
+      "passed": true,
+      "detail": "8组逻辑/等值边界组合；非标定值"
+    },
+    {
+      "name": "SC2守卫互斥与覆盖：热边界独立性判断",
+      "passed": true,
+      "detail": "2组逻辑/等值边界组合；非标定值"
+    },
+    {
+      "name": "SC3守卫互斥与覆盖：是否继续评估",
+      "passed": true,
+      "detail": "2组逻辑/等值边界组合；非标定值"
+    },
+    {
+      "name": "SC3守卫互斥与覆盖：电池判据定义判断",
+      "passed": true,
+      "detail": "2组逻辑/等值边界组合；非标定值"
+    },
+    {
+      "name": "SC3守卫互斥与覆盖：电池辅助需求判断",
+      "passed": true,
+      "detail": "4组逻辑/等值边界组合；非标定值"
+    },
+    {
+      "name": "SC3守卫互斥与覆盖：冷量分配能力判断",
+      "passed": true,
+      "detail": "2组逻辑/等值边界组合；非标定值"
+    },
+    {
+      "name": "SC3守卫互斥与覆盖：座舱执行需求判断",
+      "passed": true,
+      "detail": "2组逻辑/等值边界组合；非标定值"
+    },
+    {
+      "name": "SC3守卫互斥与覆盖：电池执行需求判断",
+      "passed": true,
+      "detail": "8组逻辑/等值边界组合；非标定值"
+    },
+    {
+      "name": "SC3守卫互斥与覆盖：Chiller流路可用判断",
+      "passed": true,
+      "detail": "2组逻辑/等值边界组合；非标定值"
+    },
+    {
+      "name": "19份独立模型及导入副本",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "功能模型/00_概念接口类型.sysml导入副本及摘要一致",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "功能模型/01_原子及组合功能定义.sysml导入副本及摘要一致",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "功能模型/02_3.3.1.2-功能分解.sysml导入副本及摘要一致",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "功能模型/02_3.3.1.6-功能分解.sysml导入副本及摘要一致",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "功能模型/02_3.3.1.9-功能分解.sysml导入副本及摘要一致",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "功能模型/02_SC1-功能分解.sysml导入副本及摘要一致",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "功能模型/02_SC2-功能分解.sysml导入副本及摘要一致",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "功能模型/02_SC3-功能分解.sysml导入副本及摘要一致",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "行为模型/SC1-行为模型.sysml导入副本及摘要一致",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "行为模型/SC2-行为模型.sysml导入副本及摘要一致",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "行为模型/SC3-行为模型.sysml导入副本及摘要一致",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "需求图/3.3.1.2-需求图.sysml导入副本及摘要一致",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "需求图/3.3.1.6-需求图.sysml导入副本及摘要一致",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "需求图/3.3.1.9-需求图.sysml导入副本及摘要一致",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "需求外部BDD图/3.3.1.2、3.3.1.6、3.3.1.9-BDD图.sysml导入副本及摘要一致",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "需求活动图/3.3.1.2-需求活动图.sysml导入副本及摘要一致",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "需求活动图/3.3.1.6-需求活动图.sysml导入副本及摘要一致",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "需求活动图/3.3.1.9-需求活动图.sysml导入副本及摘要一致",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "需求用例图/3.3.1.2、3.3.1.6、3.3.1.9-需求用例图.sysml导入副本及摘要一致",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "原生SysML静态校验结果",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "功能模型/00_概念接口类型.sysml与原生校验摘要一致",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "功能模型/01_原子及组合功能定义.sysml与原生校验摘要一致",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "功能模型/02_3.3.1.2-功能分解.sysml与原生校验摘要一致",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "功能模型/02_3.3.1.6-功能分解.sysml与原生校验摘要一致",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "功能模型/02_3.3.1.9-功能分解.sysml与原生校验摘要一致",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "功能模型/02_SC1-功能分解.sysml与原生校验摘要一致",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "功能模型/02_SC2-功能分解.sysml与原生校验摘要一致",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "功能模型/02_SC3-功能分解.sysml与原生校验摘要一致",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "行为模型/SC1-行为模型.sysml与原生校验摘要一致",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "行为模型/SC2-行为模型.sysml与原生校验摘要一致",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "行为模型/SC3-行为模型.sysml与原生校验摘要一致",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "需求图/3.3.1.2-需求图.sysml与原生校验摘要一致",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "需求图/3.3.1.6-需求图.sysml与原生校验摘要一致",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "需求图/3.3.1.9-需求图.sysml与原生校验摘要一致",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "需求外部BDD图/3.3.1.2、3.3.1.6、3.3.1.9-BDD图.sysml与原生校验摘要一致",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "需求活动图/3.3.1.2-需求活动图.sysml与原生校验摘要一致",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "需求活动图/3.3.1.6-需求活动图.sysml与原生校验摘要一致",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "需求活动图/3.3.1.9-需求活动图.sysml与原生校验摘要一致",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "需求用例图/3.3.1.2、3.3.1.6、3.3.1.9-需求用例图.sysml与原生校验摘要一致",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "下游实际验证未虚报",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "功能抽取/功能清单_SEOV.json导入JSON一致",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "结构化需求条目/结构化需求清单.json导入JSON一致",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "行为模型/行为节点与转移清单.json导入JSON一致",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "文档内部链接有效",
+      "passed": true,
+      "detail": []
+    }
+  ],
+  "not_verified": [
+    "源理工具实际导入",
+    "完整整车与热管理仿真",
+    "缺失标定与专家采用确认"
+  ]
+}

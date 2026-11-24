@@ -1,0 +1,145 @@
+{
+  "engine": "OMG SysML v2 Pilot Implementation / Xtext IResourceValidator CheckMode.ALL",
+  "distribution": "jupyter-sysml-kernel 0.63.1 (conda-forge)",
+  "jar_sha256": "67c914092f4520ba98548b285c5a9a8bc08f92a0aeec7b763e12a574e91f9ff7",
+  "normative_library_files": 95,
+  "validation_kind": "local native parser, linking, types and implemented static semantic rules; not vehicle simulation",
+  "files": [
+    {
+      "file": "功能模型__00_概念接口类型.sysml",
+      "sha256": "6bdc17566f82bbec10dfcfe91e90e9d83151bd98de64e74de1f1580bf01ce39e",
+      "errors": 0,
+      "warnings": 0,
+      "issues": []
+    },
+    {
+      "file": "功能模型__01_原子及组合功能定义.sysml",
+      "sha256": "4071b8ff601fb96df98f2b5b8395e13422ada534b51f7808736ad5406d5fd702",
+      "errors": 0,
+      "warnings": 0,
+      "issues": []
+    },
+    {
+      "file": "功能模型__02_3.3.1.2-功能分解.sysml",
+      "sha256": "b22c30e27b904b554c1f2d35480c4cc576c7cdb25aae3ec8e2b61bfed7572ebb",
+      "errors": 0,
+      "warnings": 0,
+      "issues": []
+    },
+    {
+      "file": "功能模型__02_3.3.1.6-功能分解.sysml",
+      "sha256": "480b3d3ca74f90323d3bdf4311c8c2eebbf62dac532ee6b3bd4e5d8097403fcf",
+      "errors": 0,
+      "warnings": 0,
+      "issues": []
+    },
+    {
+      "file": "功能模型__02_3.3.1.9-功能分解.sysml",
+      "sha256": "69ba265940fc0a1a1731b72762158d881dd8b82b8d54fb29cbc4454da69b3e5d",
+      "errors": 0,
+      "warnings": 0,
+      "issues": []
+    },
+    {
+      "file": "功能模型__02_SC1-功能分解.sysml",
+      "sha256": "0bb6fe2a4dfa1521e859cb2acca5fe038281297587127f888dc27e8e4f245181",
+      "errors": 0,
+      "warnings": 0,
+      "issues": []
+    },
+    {
+      "file": "功能模型__02_SC2-功能分解.sysml",
+      "sha256": "53f5425c50fbab9633e704f7faa259b56f71c1e0b77e240db3d8d429a519c2e9",
+      "errors": 0,
+      "warnings": 0,
+      "issues": []
+    },
+    {
+      "file": "功能模型__02_SC3-功能分解.sysml",
+      "sha256": "54a5bb410ce13860fe88a85b3c32a3660fcd99b9b6d60e7d8bfca3e63eab62d1",
+      "errors": 0,
+      "warnings": 0,
+      "issues": []
+    },
+    {
+      "file": "行为模型__SC1-行为模型.sysml",
+      "sha256": "af92dc415c048ec8ce53c93441b48a99d331367bfd10e6734cb226b62e191827",
+      "errors": 0,
+      "warnings": 0,
+      "issues": []
+    },
+    {
+      "file": "行为模型__SC2-行为模型.sysml",
+      "sha256": "d3b27a75e34270c5668899167330081e839844ce6f409efc53b7eff5e825d0b5",
+      "errors": 0,
+      "warnings": 0,
+      "issues": []
+    },
+    {
+      "file": "行为模型__SC3-行为模型.sysml",
+      "sha256": "303d91dbf94a0a587a6685a1970cce1513d15716a5f6c2bf2a1e1f524f828cc9",
+      "errors": 0,
+      "warnings": 0,
+      "issues": []
+    },
+    {
+      "file": "需求图__3.3.1.2-需求图.sysml",
+      "sha256": "d30026dfab72845cc12ce06153a84fb7cb8177679d7f63bdba1fcb466467e289",
+      "errors": 0,
+      "warnings": 0,
+      "issues": []
+    },
+    {
+      "file": "需求图__3.3.1.6-需求图.sysml",
+      "sha256": "8faaaafa86fef79fd991511faaff68142fed2ca0ee2e62d2c917538d9f6118b2",
+      "errors": 0,
+      "warnings": 0,
+      "issues": []
+    },
+    {
+      "file": "需求图__3.3.1.9-需求图.sysml",
+      "sha256": "36380c27b06783d878c11dd2377db4fa9c73dd53db0eaf99b624e08f5f322011",
+      "errors": 0,
+      "warnings": 0,
+      "issues": []
+    },
+    {
+      "file": "需求外部BDD图__3.3.1.2、3.3.1.6、3.3.1.9-BDD图.sysml",
+      "sha256": "4eb187a1b5914c392a508c508ec9fedf3e8fa5da214f518d8c4e3ec2994a55ef",
+      "errors": 0,
+      "warnings": 0,
+      "issues": []
+    },
+    {
+      "file": "需求活动图__3.3.1.2-需求活动图.sysml",
+      "sha256": "2c4303e72824ea28d35af5c9294bdf39b2c07a7bd84d3ac85da0296aae9c0652",
+      "errors": 0,
+      "warnings": 0,
+      "issues": []
+    },
+    {
+      "file": "需求活动图__3.3.1.6-需求活动图.sysml",
+      "sha256": "557ea824cfae80e609ae67014b92dc1020a5344ccd53b9a767f8d896b75d84ad",
+      "errors": 0,
+      "warnings": 0,
+      "issues": []
+    },
+    {
+      "file": "需求活动图__3.3.1.9-需求活动图.sysml",
+      "sha256": "45ecb011fe494876ab1683eaa1ac10c8fd354a750f1736cc80763f76c6980781",
+      "errors": 0,
+      "warnings": 0,
+      "issues": []
+    },
+    {
+      "file": "需求用例图__3.3.1.2、3.3.1.6、3.3.1.9-需求用例图.sysml",
+      "sha256": "66f3b9b1b763a8944744e91a1ad2771d324c3199620144a38def7b7390a9580e",
+      "errors": 0,
+      "warnings": 0,
+      "issues": []
+    }
+  ],
+  "total_files": 19,
+  "errors": 0,
+  "warnings": 0
+}

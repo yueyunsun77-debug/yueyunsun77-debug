@@ -1,0 +1,28 @@
+digraph G {
+graph [bgcolor="white",fontname="Noto Sans CJK SC",fontsize=22,labelloc=t,label="02_SC3-功能分解 · 功能分解图",pad=0.45,nodesep=0.45,ranksep=0.65,splines=polyline,dpi=145,rankdir=LR,nodesep=.35,ranksep=.8];
+node [shape=box,style="rounded,filled",fillcolor="white",color="#858585",penwidth=1.1,fontname="Noto Sans CJK SC",fontsize=15,margin="0.16,0.12"];
+edge [color="#777777",fontname="Noto Sans CJK SC",fontsize=11,arrowsize=0.65,penwidth=1.0];
+A0 [label=<<FONT COLOR="#8070AC">▣</FONT> «action def»<BR/>座舱空调与Chiller电池<BR/>液冷场景>];
+A1 [label=<<FONT COLOR="#8070AC">▣</FONT> «action»<BR/>获取座舱目标温度<BR/><FONT POINT-SIZE="11">S3-F01</FONT>>];
+A0 -> A1 [dir=both,arrowtail=diamond,arrowhead=none];
+A2 [label=<<FONT COLOR="#8070AC">▣</FONT> «action»<BR/>获取座舱实际温度<BR/><FONT POINT-SIZE="11">S3-F02</FONT>>];
+A0 -> A2 [dir=both,arrowtail=diamond,arrowhead=none];
+A3 [label=<<FONT COLOR="#8070AC">▣</FONT> «action»<BR/>判定座舱制冷需求<BR/><FONT POINT-SIZE="11">S3-F03</FONT>>];
+A0 -> A3 [dir=both,arrowtail=diamond,arrowhead=none];
+A4 [label=<<FONT COLOR="#8070AC">▣</FONT> «action»<BR/>调节座舱制冷能力<BR/><FONT POINT-SIZE="11">S3-F04</FONT>>];
+A0 -> A4 [dir=both,arrowtail=diamond,arrowhead=none];
+A5 [label=<<FONT COLOR="#8070AC">▣</FONT> «action»<BR/>调节座舱送风量<BR/><FONT POINT-SIZE="11">S3-F05</FONT>>];
+A0 -> A5 [dir=both,arrowtail=diamond,arrowhead=none];
+A6 [label=<<FONT COLOR="#8070AC">▣</FONT> «action»<BR/>获取电池温度与功率<BR/><FONT POINT-SIZE="11">S3-F06</FONT>>];
+A0 -> A6 [dir=both,arrowtail=diamond,arrowhead=none];
+A7 [label=<<FONT COLOR="#8070AC">▣</FONT> «action»<BR/>判定电池辅助冷却需求<BR/><FONT POINT-SIZE="11">S3-F07</FONT>>];
+A0 -> A7 [dir=both,arrowtail=diamond,arrowhead=none];
+A8 [label=<<FONT COLOR="#8070AC">▣</FONT> «action»<BR/>计算电池冷却能力需求<BR/><FONT POINT-SIZE="11">S3-F08</FONT>>];
+A0 -> A8 [dir=both,arrowtail=diamond,arrowhead=none];
+A9 [label=<<FONT COLOR="#8070AC">▣</FONT> «action»<BR/>分配座舱与电池制冷能力<BR/><FONT POINT-SIZE="11">S3-F09</FONT>>];
+A0 -> A9 [dir=both,arrowtail=diamond,arrowhead=none];
+A10 [label=<<FONT COLOR="#8070AC">▣</FONT> «action»<BR/>调节电池液路换热量<BR/><FONT POINT-SIZE="11">S3-F10</FONT>>];
+A0 -> A10 [dir=both,arrowtail=diamond,arrowhead=none];
+A11 [label=<<FONT COLOR="#8070AC">▣</FONT> «action»<BR/>反馈座舱与电池冷却状态<BR/><FONT POINT-SIZE="11">S3-F11</FONT>>];
+A0 -> A11 [dir=both,arrowtail=diamond,arrowhead=none];
+}

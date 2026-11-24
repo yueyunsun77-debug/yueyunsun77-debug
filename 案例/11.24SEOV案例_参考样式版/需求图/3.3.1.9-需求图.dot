@@ -1,0 +1,24 @@
+digraph G {
+graph [bgcolor="white",fontname="Noto Sans CJK SC",fontsize=22,labelloc=t,label="3.3.1.9 前后风窗除霜/除雾 · 需求图",pad=0.45,nodesep=0.45,ranksep=0.65,splines=polyline,dpi=145,layout=neato,overlap=true,notranslate=true,splines=line];
+node [shape=box,style="rounded,filled",fillcolor="white",color="#858585",penwidth=1.1,fontname="Noto Sans CJK SC",fontsize=15,margin="0.16,0.12"];
+edge [color="#777777",fontname="Noto Sans CJK SC",fontsize=11,arrowsize=0.65,penwidth=1.0];
+MAIN [pos="0,0!",shape=plain,label=<<TABLE BORDER="1" COLOR="#858585" CELLBORDER="0" CELLSPACING="0" CELLPADDING="10" STYLE="ROUNDED"><TR><TD><FONT COLOR="#8070AC">▣</FONT> «requirement def»<BR/><B>前后风窗除霜/除雾</B><BR/>3.3.1.9 · 系统需求</TD></TR><TR><TD BORDER="1" SIDES="T"><I>doc</I><BR/>原需求层次保留</TD></TR></TABLE>>];
+R0 [pos="-3.5,2.4!",width=2.8,height=1.0,label=<<FONT COLOR="#8070AC">▣</FONT> «requirement»<BR/>3.3.1.9-01<BR/>风窗请求与反馈<BR/><FONT POINT-SIZE="11">系统需求</FONT>>];
+MAIN -> R0 [dir=both,arrowtail=diamond,arrowhead=none];
+// 3.3.1.9-01 | defrostRequestFeedback | IVI经CAN接收前除霜/前除雾请求并反馈状态
+R1 [pos="0,3.4!",width=2.8,height=1.0,label=<<FONT COLOR="#8070AC">▣</FONT> «requirement»<BR/>3.3.1.9-02<BR/>前风窗模式配置<BR/><FONT POINT-SIZE="11">系统需求</FONT>>];
+MAIN -> R1 [dir=both,arrowtail=diamond,arrowhead=none];
+// 3.3.1.9-02 | frontDefrostConfiguration | 前除霜/除雾位置、最大风量、外循环90%待定；温度保持
+R2 [pos="3.5,2.4!",width=2.8,height=1.0,label=<<FONT COLOR="#8070AC">▣</FONT> «requirement»<BR/>3.3.1.9-03<BR/>空调状态反馈<BR/><FONT POINT-SIZE="11">系统需求</FONT>>];
+MAIN -> R2 [dir=both,arrowtail=diamond,arrowhead=none];
+// 3.3.1.9-03 | actuatorStatusFeedback | 反馈风量、温度、AC、循环与前风窗模式状态
+R3 [pos="-3.7,0.0!",width=2.8,height=1.0,label=<<FONT COLOR="#8070AC">▣</FONT> «requirement»<BR/>3.3.1.9-04<BR/>模式保持与退出<BR/><FONT POINT-SIZE="11">系统需求</FONT>>];
+MAIN -> R3 [dir=both,arrowtail=diamond,arrowhead=none];
+// 3.3.1.9-04 | modePersistenceAndExit | 按规范保持、退出、返回此前非OFF模式；后风窗逻辑不可由前风窗外推
+R4 [pos="3.7,0.0!",width=2.8,height=1.0,label=<<FONT COLOR="#8070AC">▣</FONT> «requirement»<BR/>3.3.1.9-05<BR/>除湿制冷与优先级<BR/><FONT POINT-SIZE="11">系统需求</FONT>>];
+MAIN -> R4 [dir=both,arrowtail=diamond,arrowhead=none];
+// 3.3.1.9-05 | compressorDehumidificationPriority | 除湿转速接口最低1000 r/min待标定；优先级参SL29 4.1.3.3，阈值XX未定
+R5 [pos="0,-2.8!",width=2.8,height=1.0,label=<<FONT COLOR="#8070AC">▣</FONT> «requirement»<BR/>3.3.1.9-06<BR/>低电量除霜许可<BR/><FONT POINT-SIZE="11">系统需求</FONT>>];
+MAIN -> R5 [dir=both,arrowtail=diamond,arrowhead=none];
+// 3.3.1.9-06 | lowSocDefrostException | SOC<10%且前除霜关闭则禁止制冷输出，开启则允许；SOC=10%边界未规定
+}

@@ -1,0 +1,194 @@
+[
+  {
+    "function_id": "LF-001",
+    "original_name": "加热使能判断",
+    "updated_name": "判定电加热使能条件",
+    "status": "VO规范化"
+  },
+  {
+    "function_id": "LF-002",
+    "original_name": "故障状态与加热许可判断",
+    "updated_name": "判定整车故障下的加热许可",
+    "status": "VO规范化"
+  },
+  {
+    "function_id": "LF-003",
+    "original_name": "电量与加热许可判断",
+    "updated_name": "判定电量约束下的加热许可",
+    "status": "VO规范化"
+  },
+  {
+    "function_id": "LF-004",
+    "original_name": "电加热通断控制",
+    "updated_name": "控制电加热通断",
+    "status": "VO规范化"
+  },
+  {
+    "function_id": "LF-005",
+    "original_name": "电加热过温保护",
+    "updated_name": "切断过温电加热请求",
+    "status": "VO规范化"
+  },
+  {
+    "function_id": "LF-006",
+    "original_name": "电加热恢复许可控制",
+    "updated_name": "判定电加热恢复许可",
+    "status": "VO规范化"
+  },
+  {
+    "function_id": "LF-007",
+    "original_name": "加热状态反馈",
+    "updated_name": "反馈电加热状态",
+    "status": "VO规范化"
+  },
+  {
+    "function_id": "LF-008",
+    "original_name": "目标温度边界判定",
+    "updated_name": "判定目标温度边界",
+    "status": "VO规范化"
+  },
+  {
+    "function_id": "LF-009",
+    "original_name": "目标温度更新",
+    "updated_name": "更新座舱目标温度",
+    "status": "VO规范化"
+  },
+  {
+    "function_id": "LF-010",
+    "original_name": "温度与环境信息采集",
+    "updated_name": "获取温度与环境信息",
+    "status": "VO规范化"
+  },
+  {
+    "function_id": "LF-011",
+    "original_name": "自动温控协调",
+    "updated_name": "协调自动温控请求",
+    "status": "VO规范化"
+  },
+  {
+    "function_id": "LF-012",
+    "original_name": "自动模式状态反馈",
+    "updated_name": "反馈自动模式状态",
+    "status": "VO规范化"
+  },
+  {
+    "function_id": "LF-013",
+    "original_name": "空调状态反馈",
+    "updated_name": "反馈空调运行状态",
+    "status": "VO规范化"
+  },
+  {
+    "function_id": "LF-014",
+    "original_name": "自动模式保持与切换",
+    "updated_name": "切换自动模式状态",
+    "status": "VO规范化"
+  },
+  {
+    "function_id": "LF-015",
+    "original_name": "座舱温度闭环调节",
+    "updated_name": "调节座舱温度",
+    "status": "VO规范化"
+  },
+  {
+    "function_id": "LF-016",
+    "original_name": "风窗请求接收",
+    "updated_name": "接收风窗除霜除雾请求",
+    "status": "VO规范化"
+  },
+  {
+    "function_id": "LF-017",
+    "original_name": "送风模式调节",
+    "updated_name": "调节送风模式",
+    "status": "VO规范化"
+  },
+  {
+    "function_id": "LF-018",
+    "original_name": "空气输送与风量调节",
+    "updated_name": "调节送风量",
+    "status": "VO规范化"
+  },
+  {
+    "function_id": "LF-019",
+    "original_name": "循环方式调节",
+    "updated_name": "调节空气循环方式",
+    "status": "VO规范化"
+  },
+  {
+    "function_id": "LF-020",
+    "original_name": "制冷能力调节",
+    "updated_name": "调节制冷能力",
+    "status": "VO规范化"
+  },
+  {
+    "function_id": "LF-021",
+    "original_name": "目标温度保持",
+    "updated_name": "保持座舱温度设定",
+    "status": "VO规范化"
+  },
+  {
+    "function_id": "LF-022",
+    "original_name": "风窗与空调状态反馈",
+    "updated_name": "反馈风窗与空调状态",
+    "status": "VO规范化"
+  },
+  {
+    "function_id": "LF-023",
+    "original_name": "热管理能力仲裁",
+    "updated_name": "仲裁热管理能力请求",
+    "status": "VO规范化"
+  },
+  {
+    "function_id": "LF-024",
+    "original_name": "低电量制冷许可判断",
+    "updated_name": "判定低电量制冷许可",
+    "status": "VO规范化"
+  },
+  {
+    "function_id": "LF-025",
+    "original_name": "后风窗服务待确认",
+    "updated_name": "后风窗控制（待确认）",
+    "status": "待确认占位"
+  },
+  {
+    "function_id": "LF-026",
+    "original_name": "风窗除霜除雾控制",
+    "updated_name": "控制前风窗除霜除雾模式",
+    "status": "VO规范化"
+  },
+  {
+    "function_id": "LF-027",
+    "original_name": "电加热温度信息采集",
+    "updated_name": "获取电加热温度",
+    "status": "VO规范化"
+  },
+  {
+    "function_id": "LF-028",
+    "original_name": "AUTO下AC操作处理",
+    "updated_name": "处理AUTO下的AC操作",
+    "status": "VO规范化"
+  },
+  {
+    "function_id": "LF-029",
+    "original_name": "高效发电运行调节",
+    "updated_name": "调节发动机发电工作点",
+    "status": "VO规范化"
+  },
+  {
+    "function_id": "LF-030",
+    "original_name": "静置预冷计时",
+    "updated_name": "记录静置预冷时长",
+    "status": "VO规范化"
+  },
+  {
+    "function_id": "LF-031",
+    "original_name": "匀速行驶工况控制",
+    "updated_name": "控制匀速行驶工况",
+    "status": "VO规范化"
+  },
+  {
+    "function_id": "LF-032",
+    "original_name": "电池主动冷却触发判断",
+    "updated_name": "判定电池主动冷却需求",
+    "status": "VO规范化"
+  }
+]

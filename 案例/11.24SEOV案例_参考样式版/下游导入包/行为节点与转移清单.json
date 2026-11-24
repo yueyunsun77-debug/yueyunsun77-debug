@@ -1,0 +1,2491 @@
+[
+  {
+    "root_id": "3.3.1.2",
+    "title": "制热使能、过温保护与恢复闭环",
+    "model_file": "需求活动图/3.3.1.2-需求活动图.sysml",
+    "nodes": [
+      {
+        "name": "获取本周期快照",
+        "kind": "action",
+        "function_refs": [
+          "LF-027"
+        ],
+        "type_ref": null,
+        "body": "                    out attribute stopRequested : Boolean;\n                    out attribute heatingRequested : Boolean;\n                    out attribute blowerActive : Boolean;\n                    out attribute targetTemperature : Real;\n                    out attribute cabinTemperature : Real;\n                    out attribute highVoltageAvailable : Boolean;\n                    out attribute vehicleFaultActive : Boolean;\n                    out attribute soc : Real;\n                    out attribute heaterTemperature : Real;\n                    out attribute cutOffTemperature : Real;\n                    out attribute recoveryTemperature : Real;\n                    out attribute calibrationValid : Boolean;\n                    out attribute protectionWasActive : Boolean;"
+      },
+      {
+        "name": "是否继续评估",
+        "kind": "decide",
+        "function_refs": []
+      },
+      {
+        "name": "使能条件判断",
+        "kind": "decide",
+        "function_refs": []
+      },
+      {
+        "name": "标定有效性判断",
+        "kind": "decide",
+        "function_refs": []
+      },
+      {
+        "name": "过温判断",
+        "kind": "decide",
+        "function_refs": []
+      },
+      {
+        "name": "保护记忆判断",
+        "kind": "decide",
+        "function_refs": []
+      },
+      {
+        "name": "恢复条件判断",
+        "kind": "decide",
+        "function_refs": []
+      },
+      {
+        "name": "合并控制结果",
+        "kind": "merge",
+        "function_refs": []
+      },
+      {
+        "name": "判定全部加热许可",
+        "kind": "action",
+        "function_refs": [
+          "LF-001",
+          "LF-002",
+          "LF-003"
+        ],
+        "type_ref": null,
+        "body": ""
+      },
+      {
+        "name": "抑制电加热请求",
+        "kind": "action",
+        "function_refs": [
+          "LF-004"
+        ],
+        "type_ref": "LF-004",
+        "body": "            attribute requestedEnable : Boolean = false;\n            doc /* 本节点属性是行为决策所需的分析投影，不重新定义继承的概念级输出端口。 */"
+      },
+      {
+        "name": "记录标定参数缺口",
+        "kind": "action",
+        "function_refs": [
+          "LF-005",
+          "LF-006"
+        ],
+        "type_ref": null,
+        "body": ""
+      },
+      {
+        "name": "切断过温加热请求",
+        "kind": "action",
+        "function_refs": [
+          "LF-005"
+        ],
+        "type_ref": "LF-005",
+        "body": "            attribute requestedEnable : Boolean = false;\n            doc /* 本节点属性是行为决策所需的分析投影，不重新定义继承的概念级输出端口。 */"
+      },
+      {
+        "name": "维持保护禁止状态",
+        "kind": "action",
+        "function_refs": [
+          "LF-006"
+        ],
+        "type_ref": "LF-006",
+        "body": "            attribute recoveryAllowed : Boolean = false;\n            doc /* 本节点属性是行为决策所需的分析投影，不重新定义继承的概念级输出端口。 */"
+      },
+      {
+        "name": "允许恢复后的加热请求",
+        "kind": "action",
+        "function_refs": [
+          "LF-006",
+          "LF-004"
+        ],
+        "type_ref": "LF-004",
+        "body": "            attribute requestedEnable : Boolean = true;\n            doc /* 本节点属性是行为决策所需的分析投影，不重新定义继承的概念级输出端口。 */"
+      },
+      {
+        "name": "允许正常加热请求",
+        "kind": "action",
+        "function_refs": [
+          "LF-004"
+        ],
+        "type_ref": "LF-004",
+        "body": "            attribute requestedEnable : Boolean = true;\n            doc /* 本节点属性是行为决策所需的分析投影，不重新定义继承的概念级输出端口。 */"
+      },
+      {
+        "name": "反馈电加热运行状态",
+        "kind": "action",
+        "function_refs": [
+          "LF-007"
+        ],
+        "type_ref": "LF-007",
+        "body": ""
+      }
+    ],
+    "transitions": [
+      {
+        "transition_id": "3.3.1.2-T001",
+        "source": "start",
+        "target": "获取本周期快照",
+        "guard": null,
+        "type": "sequence"
+      },
+      {
+        "transition_id": "3.3.1.2-T002",
+        "source": "获取本周期快照",
+        "target": "是否继续评估",
+        "guard": null,
+        "type": "sequence"
+      },
+      {
+        "transition_id": "3.3.1.2-T003",
+        "source": "是否继续评估",
+        "target": "done",
+        "guard": "'获取本周期快照'.stopRequested",
+        "type": "condition"
+      },
+      {
+        "transition_id": "3.3.1.2-T004",
+        "source": "是否继续评估",
+        "target": "判定全部加热许可",
+        "guard": "not '获取本周期快照'.stopRequested",
+        "type": "condition"
+      },
+      {
+        "transition_id": "3.3.1.2-T005",
+        "source": "判定全部加热许可",
+        "target": "使能条件判断",
+        "guard": null,
+        "type": "sequence"
+      },
+      {
+        "transition_id": "3.3.1.2-T006",
+        "source": "使能条件判断",
+        "target": "标定有效性判断",
+        "guard": "'获取本周期快照'.heatingRequested and '获取本周期快照'.blowerActive and '获取本周期快照'.targetTemperature > '获取本周期快照'.cabinTemperature and '获取本周期快照'.highVoltageAvailable and not '获取本周期快照'.vehicleFaultActive and '获取本周期快照'.soc > 10.0",
+        "type": "condition"
+      },
+      {
+        "transition_id": "3.3.1.2-T007",
+        "source": "使能条件判断",
+        "target": "抑制电加热请求",
+        "guard": "not ('获取本周期快照'.heatingRequested and '获取本周期快照'.blowerActive and '获取本周期快照'.targetTemperature > '获取本周期快照'.cabinTemperature and '获取本周期快照'.highVoltageAvailable and not '获取本周期快照'.vehicleFaultActive and '获取本周期快照'.soc > 10.0)",
+        "type": "condition"
+      },
+      {
+        "transition_id": "3.3.1.2-T008",
+        "source": "标定有效性判断",
+        "target": "过温判断",
+        "guard": "'获取本周期快照'.calibrationValid",
+        "type": "condition"
+      },
+      {
+        "transition_id": "3.3.1.2-T009",
+        "source": "标定有效性判断",
+        "target": "记录标定参数缺口",
+        "guard": "not '获取本周期快照'.calibrationValid",
+        "type": "condition"
+      },
+      {
+        "transition_id": "3.3.1.2-T010",
+        "source": "过温判断",
+        "target": "切断过温加热请求",
+        "guard": "'获取本周期快照'.heaterTemperature >= '获取本周期快照'.cutOffTemperature",
+        "type": "condition"
+      },
+      {
+        "transition_id": "3.3.1.2-T011",
+        "source": "过温判断",
+        "target": "保护记忆判断",
+        "guard": "'获取本周期快照'.heaterTemperature < '获取本周期快照'.cutOffTemperature",
+        "type": "condition"
+      },
+      {
+        "transition_id": "3.3.1.2-T012",
+        "source": "保护记忆判断",
+        "target": "恢复条件判断",
+        "guard": "'获取本周期快照'.protectionWasActive",
+        "type": "condition"
+      },
+      {
+        "transition_id": "3.3.1.2-T013",
+        "source": "保护记忆判断",
+        "target": "允许正常加热请求",
+        "guard": "not '获取本周期快照'.protectionWasActive",
+        "type": "condition"
+      },
+      {
+        "transition_id": "3.3.1.2-T014",
+        "source": "恢复条件判断",
+        "target": "允许恢复后的加热请求",
+        "guard": "'获取本周期快照'.heaterTemperature <= '获取本周期快照'.recoveryTemperature",
+        "type": "condition"
+      },
+      {
+        "transition_id": "3.3.1.2-T015",
+        "source": "恢复条件判断",
+        "target": "维持保护禁止状态",
+        "guard": "'获取本周期快照'.heaterTemperature > '获取本周期快照'.recoveryTemperature",
+        "type": "condition"
+      },
+      {
+        "transition_id": "3.3.1.2-T016",
+        "source": "抑制电加热请求",
+        "target": "合并控制结果",
+        "guard": null,
+        "type": "sequence"
+      },
+      {
+        "transition_id": "3.3.1.2-T017",
+        "source": "记录标定参数缺口",
+        "target": "合并控制结果",
+        "guard": null,
+        "type": "sequence"
+      },
+      {
+        "transition_id": "3.3.1.2-T018",
+        "source": "切断过温加热请求",
+        "target": "合并控制结果",
+        "guard": null,
+        "type": "sequence"
+      },
+      {
+        "transition_id": "3.3.1.2-T019",
+        "source": "维持保护禁止状态",
+        "target": "合并控制结果",
+        "guard": null,
+        "type": "sequence"
+      },
+      {
+        "transition_id": "3.3.1.2-T020",
+        "source": "允许恢复后的加热请求",
+        "target": "合并控制结果",
+        "guard": null,
+        "type": "sequence"
+      },
+      {
+        "transition_id": "3.3.1.2-T021",
+        "source": "允许正常加热请求",
+        "target": "合并控制结果",
+        "guard": null,
+        "type": "sequence"
+      },
+      {
+        "transition_id": "3.3.1.2-T022",
+        "source": "合并控制结果",
+        "target": "反馈电加热运行状态",
+        "guard": null,
+        "type": "sequence"
+      },
+      {
+        "transition_id": "3.3.1.2-T023",
+        "source": "反馈电加热运行状态",
+        "target": "获取本周期快照",
+        "guard": null,
+        "type": "feedback"
+      }
+    ],
+    "validation_scope": "本地SysML静态语义和模型/清单一致性；非车辆仿真"
+  },
+  {
+    "root_id": "3.3.1.6",
+    "title": "AUTO操作分支与周期反馈",
+    "model_file": "需求活动图/3.3.1.6-需求活动图.sysml",
+    "nodes": [
+      {
+        "name": "获取本周期快照",
+        "kind": "action",
+        "function_refs": [],
+        "type_ref": null,
+        "body": "                    out attribute stopRequested : Boolean;\n                    out attribute autoModeActive : Boolean;\n                    out attribute operation : AutoOperation;"
+      },
+      {
+        "name": "是否继续评估",
+        "kind": "decide",
+        "function_refs": []
+      },
+      {
+        "name": "自动模式判断",
+        "kind": "decide",
+        "function_refs": []
+      },
+      {
+        "name": "用户操作判断",
+        "kind": "decide",
+        "function_refs": []
+      },
+      {
+        "name": "合并模式结果",
+        "kind": "merge",
+        "function_refs": []
+      },
+      {
+        "name": "获取自动温控输入",
+        "kind": "action",
+        "function_refs": [
+          "LF-010"
+        ],
+        "type_ref": "LF-010",
+        "body": ""
+      },
+      {
+        "name": "调节座舱温度请求",
+        "kind": "action",
+        "function_refs": [
+          "LF-015"
+        ],
+        "type_ref": "LF-015",
+        "body": ""
+      },
+      {
+        "name": "协调自动温控请求",
+        "kind": "action",
+        "function_refs": [
+          "LF-011"
+        ],
+        "type_ref": "LF-011",
+        "body": ""
+      },
+      {
+        "name": "更新温度并保持AUTO",
+        "kind": "action",
+        "function_refs": [
+          "LF-009",
+          "LF-008",
+          "LF-014"
+        ],
+        "type_ref": "LF-009",
+        "body": ""
+      },
+      {
+        "name": "保持AUTO循环操作",
+        "kind": "action",
+        "function_refs": [
+          "LF-014"
+        ],
+        "type_ref": "LF-014",
+        "body": ""
+      },
+      {
+        "name": "退出AUTO并保留其他自动项",
+        "kind": "action",
+        "function_refs": [
+          "LF-014"
+        ],
+        "type_ref": "LF-014",
+        "body": ""
+      },
+      {
+        "name": "切换至前除霜模式",
+        "kind": "action",
+        "function_refs": [
+          "LF-014"
+        ],
+        "type_ref": "LF-014",
+        "body": ""
+      },
+      {
+        "name": "处理AC关闭与Close反馈",
+        "kind": "action",
+        "function_refs": [
+          "LF-028"
+        ],
+        "type_ref": "LF-028",
+        "body": "            attribute compressorSpeedRequest : Real = 0.0;\n            attribute autoStatus : String = \"Close\";\n            doc /* 风量、温度、送风模式及循环等来源指定项仍自动；Close反馈不等于全部自动调节终止。 */\n            doc /* 本节点属性是行为决策所需的分析投影，不重新定义继承的概念级输出端口。 */"
+      },
+      {
+        "name": "记录重复AUTO语义缺口",
+        "kind": "action",
+        "function_refs": [
+          "LF-014"
+        ],
+        "type_ref": null,
+        "body": ""
+      },
+      {
+        "name": "保持当前自动控制",
+        "kind": "action",
+        "function_refs": [
+          "LF-014"
+        ],
+        "type_ref": "LF-014",
+        "body": ""
+      },
+      {
+        "name": "反馈自动与空调状态",
+        "kind": "action",
+        "function_refs": [
+          "LF-012",
+          "LF-013"
+        ],
+        "type_ref": "LF-013",
+        "body": ""
+      }
+    ],
+    "transitions": [
+      {
+        "transition_id": "3.3.1.6-T001",
+        "source": "start",
+        "target": "获取本周期快照",
+        "guard": null,
+        "type": "sequence"
+      },
+      {
+        "transition_id": "3.3.1.6-T002",
+        "source": "获取本周期快照",
+        "target": "是否继续评估",
+        "guard": null,
+        "type": "sequence"
+      },
+      {
+        "transition_id": "3.3.1.6-T003",
+        "source": "是否继续评估",
+        "target": "done",
+        "guard": "'获取本周期快照'.stopRequested",
+        "type": "condition"
+      },
+      {
+        "transition_id": "3.3.1.6-T004",
+        "source": "是否继续评估",
+        "target": "自动模式判断",
+        "guard": "not '获取本周期快照'.stopRequested",
+        "type": "condition"
+      },
+      {
+        "transition_id": "3.3.1.6-T005",
+        "source": "自动模式判断",
+        "target": "获取自动温控输入",
+        "guard": "'获取本周期快照'.autoModeActive",
+        "type": "condition"
+      },
+      {
+        "transition_id": "3.3.1.6-T006",
+        "source": "自动模式判断",
+        "target": "合并模式结果",
+        "guard": "not '获取本周期快照'.autoModeActive",
+        "type": "condition"
+      },
+      {
+        "transition_id": "3.3.1.6-T007",
+        "source": "获取自动温控输入",
+        "target": "调节座舱温度请求",
+        "guard": null,
+        "type": "sequence"
+      },
+      {
+        "transition_id": "3.3.1.6-T008",
+        "source": "调节座舱温度请求",
+        "target": "协调自动温控请求",
+        "guard": null,
+        "type": "sequence"
+      },
+      {
+        "transition_id": "3.3.1.6-T009",
+        "source": "协调自动温控请求",
+        "target": "用户操作判断",
+        "guard": null,
+        "type": "sequence"
+      },
+      {
+        "transition_id": "3.3.1.6-T010",
+        "source": "用户操作判断",
+        "target": "更新温度并保持AUTO",
+        "guard": "'获取本周期快照'.operation == AutoOperation::temperature",
+        "type": "condition"
+      },
+      {
+        "transition_id": "3.3.1.6-T011",
+        "source": "用户操作判断",
+        "target": "保持AUTO循环操作",
+        "guard": "'获取本周期快照'.operation == AutoOperation::circulation",
+        "type": "condition"
+      },
+      {
+        "transition_id": "3.3.1.6-T012",
+        "source": "用户操作判断",
+        "target": "退出AUTO并保留其他自动项",
+        "guard": "'获取本周期快照'.operation == AutoOperation::airflow",
+        "type": "condition"
+      },
+      {
+        "transition_id": "3.3.1.6-T013",
+        "source": "用户操作判断",
+        "target": "退出AUTO并保留其他自动项",
+        "guard": "'获取本周期快照'.operation == AutoOperation::distribution",
+        "type": "condition"
+      },
+      {
+        "transition_id": "3.3.1.6-T014",
+        "source": "用户操作判断",
+        "target": "切换至前除霜模式",
+        "guard": "'获取本周期快照'.operation == AutoOperation::frontDefrost",
+        "type": "condition"
+      },
+      {
+        "transition_id": "3.3.1.6-T015",
+        "source": "用户操作判断",
+        "target": "处理AC关闭与Close反馈",
+        "guard": "'获取本周期快照'.operation == AutoOperation::ac",
+        "type": "condition"
+      },
+      {
+        "transition_id": "3.3.1.6-T016",
+        "source": "用户操作判断",
+        "target": "记录重复AUTO语义缺口",
+        "guard": "'获取本周期快照'.operation == AutoOperation::autoRepeat",
+        "type": "condition"
+      },
+      {
+        "transition_id": "3.3.1.6-T017",
+        "source": "用户操作判断",
+        "target": "保持当前自动控制",
+        "guard": "'获取本周期快照'.operation == AutoOperation::noChange",
+        "type": "condition"
+      },
+      {
+        "transition_id": "3.3.1.6-T018",
+        "source": "更新温度并保持AUTO",
+        "target": "合并模式结果",
+        "guard": null,
+        "type": "sequence"
+      },
+      {
+        "transition_id": "3.3.1.6-T019",
+        "source": "保持AUTO循环操作",
+        "target": "合并模式结果",
+        "guard": null,
+        "type": "sequence"
+      },
+      {
+        "transition_id": "3.3.1.6-T020",
+        "source": "退出AUTO并保留其他自动项",
+        "target": "合并模式结果",
+        "guard": null,
+        "type": "sequence"
+      },
+      {
+        "transition_id": "3.3.1.6-T021",
+        "source": "切换至前除霜模式",
+        "target": "合并模式结果",
+        "guard": null,
+        "type": "sequence"
+      },
+      {
+        "transition_id": "3.3.1.6-T022",
+        "source": "处理AC关闭与Close反馈",
+        "target": "合并模式结果",
+        "guard": null,
+        "type": "sequence"
+      },
+      {
+        "transition_id": "3.3.1.6-T023",
+        "source": "记录重复AUTO语义缺口",
+        "target": "合并模式结果",
+        "guard": null,
+        "type": "sequence"
+      },
+      {
+        "transition_id": "3.3.1.6-T024",
+        "source": "保持当前自动控制",
+        "target": "合并模式结果",
+        "guard": null,
+        "type": "sequence"
+      },
+      {
+        "transition_id": "3.3.1.6-T025",
+        "source": "合并模式结果",
+        "target": "反馈自动与空调状态",
+        "guard": null,
+        "type": "sequence"
+      },
+      {
+        "transition_id": "3.3.1.6-T026",
+        "source": "反馈自动与空调状态",
+        "target": "获取本周期快照",
+        "guard": null,
+        "type": "feedback"
+      }
+    ],
+    "validation_scope": "本地SysML静态语义和模型/清单一致性；非车辆仿真"
+  },
+  {
+    "root_id": "3.3.1.9",
+    "title": "风窗模式、并行配置与低电量制冷许可",
+    "model_file": "需求活动图/3.3.1.9-需求活动图.sysml",
+    "nodes": [
+      {
+        "name": "获取本周期快照",
+        "kind": "action",
+        "function_refs": [],
+        "type_ref": null,
+        "body": "                    out attribute stopRequested : Boolean;\n                    out attribute requestKind : WindscreenKind;\n                    out attribute soc : Real;\n                    out attribute coolingRequestedByEnvironment : Boolean;"
+      },
+      {
+        "name": "是否继续评估",
+        "kind": "decide",
+        "function_refs": []
+      },
+      {
+        "name": "风窗请求判断",
+        "kind": "decide",
+        "function_refs": []
+      },
+      {
+        "name": "环境除湿判断",
+        "kind": "decide",
+        "function_refs": []
+      },
+      {
+        "name": "低电量许可判断",
+        "kind": "decide",
+        "function_refs": []
+      },
+      {
+        "name": "并行配置风窗参数",
+        "kind": "fork",
+        "function_refs": []
+      },
+      {
+        "name": "汇合风窗参数",
+        "kind": "join",
+        "function_refs": []
+      },
+      {
+        "name": "合并制冷决定",
+        "kind": "merge",
+        "function_refs": []
+      },
+      {
+        "name": "合并风窗路径",
+        "kind": "merge",
+        "function_refs": []
+      },
+      {
+        "name": "接收风窗请求",
+        "kind": "action",
+        "function_refs": [
+          "LF-016"
+        ],
+        "type_ref": "LF-016",
+        "body": ""
+      },
+      {
+        "name": "记录后风窗或未知依据缺口",
+        "kind": "action",
+        "function_refs": [],
+        "type_ref": null,
+        "body": ""
+      },
+      {
+        "name": "处理前风窗控制模式",
+        "kind": "action",
+        "function_refs": [
+          "LF-026"
+        ],
+        "type_ref": "LF-026",
+        "body": ""
+      },
+      {
+        "name": "仲裁热管理能力请求",
+        "kind": "action",
+        "function_refs": [
+          "LF-023"
+        ],
+        "type_ref": "LF-023",
+        "body": "            doc /* 前除霜 > 电池高温冷却 > 座舱制冷 > 电池非高温冷却。电池高温分界XX及完整仲裁算法仍待定义；本节点保留该功能契约，不擅自用35℃补值。 */\n            doc /* 本节点属性是行为决策所需的分析投影，不重新定义继承的概念级输出端口。 */"
+      },
+      {
+        "name": "请求风窗送风模式",
+        "kind": "action",
+        "function_refs": [
+          "LF-017"
+        ],
+        "type_ref": "LF-017",
+        "body": ""
+      },
+      {
+        "name": "请求最大送风量",
+        "kind": "action",
+        "function_refs": [
+          "LF-018"
+        ],
+        "type_ref": "LF-018",
+        "body": ""
+      },
+      {
+        "name": "请求来源规定的外循环",
+        "kind": "action",
+        "function_refs": [
+          "LF-019"
+        ],
+        "type_ref": "LF-019",
+        "body": ""
+      },
+      {
+        "name": "保持当前温度设定",
+        "kind": "action",
+        "function_refs": [
+          "LF-021"
+        ],
+        "type_ref": "LF-021",
+        "body": ""
+      },
+      {
+        "name": "允许制冷除湿请求",
+        "kind": "action",
+        "function_refs": [
+          "LF-020",
+          "LF-024"
+        ],
+        "type_ref": "LF-020",
+        "body": ""
+      },
+      {
+        "name": "禁止低电量非前除霜制冷",
+        "kind": "action",
+        "function_refs": [
+          "LF-024"
+        ],
+        "type_ref": "LF-024",
+        "body": ""
+      },
+      {
+        "name": "不提出环境除湿请求",
+        "kind": "action",
+        "function_refs": [
+          "LF-020"
+        ],
+        "type_ref": "LF-020",
+        "body": ""
+      },
+      {
+        "name": "记录SOC等于10的边界缺口",
+        "kind": "action",
+        "function_refs": [
+          "LF-024"
+        ],
+        "type_ref": null,
+        "body": ""
+      },
+      {
+        "name": "反馈风窗与空调状态",
+        "kind": "action",
+        "function_refs": [
+          "LF-022"
+        ],
+        "type_ref": "LF-022",
+        "body": ""
+      }
+    ],
+    "transitions": [
+      {
+        "transition_id": "3.3.1.9-T001",
+        "source": "start",
+        "target": "获取本周期快照",
+        "guard": null,
+        "type": "sequence"
+      },
+      {
+        "transition_id": "3.3.1.9-T002",
+        "source": "获取本周期快照",
+        "target": "是否继续评估",
+        "guard": null,
+        "type": "sequence"
+      },
+      {
+        "transition_id": "3.3.1.9-T003",
+        "source": "是否继续评估",
+        "target": "done",
+        "guard": "'获取本周期快照'.stopRequested",
+        "type": "condition"
+      },
+      {
+        "transition_id": "3.3.1.9-T004",
+        "source": "是否继续评估",
+        "target": "接收风窗请求",
+        "guard": "not '获取本周期快照'.stopRequested",
+        "type": "condition"
+      },
+      {
+        "transition_id": "3.3.1.9-T005",
+        "source": "接收风窗请求",
+        "target": "风窗请求判断",
+        "guard": null,
+        "type": "sequence"
+      },
+      {
+        "transition_id": "3.3.1.9-T006",
+        "source": "风窗请求判断",
+        "target": "处理前风窗控制模式",
+        "guard": "'获取本周期快照'.requestKind == WindscreenKind::frontDefrost or '获取本周期快照'.requestKind == WindscreenKind::frontDemist",
+        "type": "condition"
+      },
+      {
+        "transition_id": "3.3.1.9-T007",
+        "source": "处理前风窗控制模式",
+        "target": "并行配置风窗参数",
+        "guard": null,
+        "type": "sequence"
+      },
+      {
+        "transition_id": "3.3.1.9-T008",
+        "source": "风窗请求判断",
+        "target": "记录后风窗或未知依据缺口",
+        "guard": "not ('获取本周期快照'.requestKind == WindscreenKind::frontDefrost or '获取本周期快照'.requestKind == WindscreenKind::frontDemist)",
+        "type": "condition"
+      },
+      {
+        "transition_id": "3.3.1.9-T009",
+        "source": "并行配置风窗参数",
+        "target": "请求风窗送风模式",
+        "guard": null,
+        "type": "parallel"
+      },
+      {
+        "transition_id": "3.3.1.9-T010",
+        "source": "请求风窗送风模式",
+        "target": "汇合风窗参数",
+        "guard": null,
+        "type": "sequence"
+      },
+      {
+        "transition_id": "3.3.1.9-T011",
+        "source": "并行配置风窗参数",
+        "target": "请求最大送风量",
+        "guard": null,
+        "type": "parallel"
+      },
+      {
+        "transition_id": "3.3.1.9-T012",
+        "source": "请求最大送风量",
+        "target": "汇合风窗参数",
+        "guard": null,
+        "type": "sequence"
+      },
+      {
+        "transition_id": "3.3.1.9-T013",
+        "source": "并行配置风窗参数",
+        "target": "请求来源规定的外循环",
+        "guard": null,
+        "type": "parallel"
+      },
+      {
+        "transition_id": "3.3.1.9-T014",
+        "source": "请求来源规定的外循环",
+        "target": "汇合风窗参数",
+        "guard": null,
+        "type": "sequence"
+      },
+      {
+        "transition_id": "3.3.1.9-T015",
+        "source": "并行配置风窗参数",
+        "target": "保持当前温度设定",
+        "guard": null,
+        "type": "parallel"
+      },
+      {
+        "transition_id": "3.3.1.9-T016",
+        "source": "保持当前温度设定",
+        "target": "汇合风窗参数",
+        "guard": null,
+        "type": "sequence"
+      },
+      {
+        "transition_id": "3.3.1.9-T017",
+        "source": "汇合风窗参数",
+        "target": "仲裁热管理能力请求",
+        "guard": null,
+        "type": "sequence"
+      },
+      {
+        "transition_id": "3.3.1.9-T018",
+        "source": "仲裁热管理能力请求",
+        "target": "环境除湿判断",
+        "guard": null,
+        "type": "sequence"
+      },
+      {
+        "transition_id": "3.3.1.9-T019",
+        "source": "环境除湿判断",
+        "target": "低电量许可判断",
+        "guard": "'获取本周期快照'.coolingRequestedByEnvironment",
+        "type": "condition"
+      },
+      {
+        "transition_id": "3.3.1.9-T020",
+        "source": "环境除湿判断",
+        "target": "不提出环境除湿请求",
+        "guard": "not '获取本周期快照'.coolingRequestedByEnvironment",
+        "type": "condition"
+      },
+      {
+        "transition_id": "3.3.1.9-T021",
+        "source": "低电量许可判断",
+        "target": "允许制冷除湿请求",
+        "guard": "'获取本周期快照'.soc > 10.0 or ('获取本周期快照'.soc < 10.0 and '获取本周期快照'.requestKind == WindscreenKind::frontDefrost)",
+        "type": "condition"
+      },
+      {
+        "transition_id": "3.3.1.9-T022",
+        "source": "低电量许可判断",
+        "target": "禁止低电量非前除霜制冷",
+        "guard": "'获取本周期快照'.soc < 10.0 and '获取本周期快照'.requestKind != WindscreenKind::frontDefrost",
+        "type": "condition"
+      },
+      {
+        "transition_id": "3.3.1.9-T023",
+        "source": "低电量许可判断",
+        "target": "记录SOC等于10的边界缺口",
+        "guard": "'获取本周期快照'.soc == 10.0",
+        "type": "condition"
+      },
+      {
+        "transition_id": "3.3.1.9-T024",
+        "source": "允许制冷除湿请求",
+        "target": "合并制冷决定",
+        "guard": null,
+        "type": "sequence"
+      },
+      {
+        "transition_id": "3.3.1.9-T025",
+        "source": "禁止低电量非前除霜制冷",
+        "target": "合并制冷决定",
+        "guard": null,
+        "type": "sequence"
+      },
+      {
+        "transition_id": "3.3.1.9-T026",
+        "source": "不提出环境除湿请求",
+        "target": "合并制冷决定",
+        "guard": null,
+        "type": "sequence"
+      },
+      {
+        "transition_id": "3.3.1.9-T027",
+        "source": "记录SOC等于10的边界缺口",
+        "target": "合并制冷决定",
+        "guard": null,
+        "type": "sequence"
+      },
+      {
+        "transition_id": "3.3.1.9-T028",
+        "source": "合并制冷决定",
+        "target": "合并风窗路径",
+        "guard": null,
+        "type": "sequence"
+      },
+      {
+        "transition_id": "3.3.1.9-T029",
+        "source": "记录后风窗或未知依据缺口",
+        "target": "合并风窗路径",
+        "guard": null,
+        "type": "sequence"
+      },
+      {
+        "transition_id": "3.3.1.9-T030",
+        "source": "合并风窗路径",
+        "target": "反馈风窗与空调状态",
+        "guard": null,
+        "type": "sequence"
+      },
+      {
+        "transition_id": "3.3.1.9-T031",
+        "source": "反馈风窗与空调状态",
+        "target": "获取本周期快照",
+        "guard": null,
+        "type": "feedback"
+      }
+    ],
+    "validation_scope": "本地SysML静态语义和模型/清单一致性；非车辆仿真"
+  },
+  {
+    "root_id": "SC1",
+    "title": "串联混动驱动、回收、发电与能量反馈",
+    "model_file": "行为模型/SC1-行为模型.sysml",
+    "nodes": [
+      {
+        "name": "获取本周期快照",
+        "kind": "action",
+        "function_refs": [],
+        "type_ref": null,
+        "body": "                    out attribute stopRequested : Boolean;\n                    out attribute driveRequested : Boolean;\n                    out attribute brakeRequested : Boolean;\n                    out attribute regenAvailable : Boolean;\n                    out attribute batteryAcceptsCharge : Boolean;\n                    out attribute generationRequested : Boolean;\n                    out attribute engineRunning : Boolean;"
+      },
+      {
+        "name": "是否继续评估",
+        "kind": "decide",
+        "function_refs": []
+      },
+      {
+        "name": "驾驶意图判断",
+        "kind": "decide",
+        "function_refs": []
+      },
+      {
+        "name": "回收可用性判断",
+        "kind": "decide",
+        "function_refs": []
+      },
+      {
+        "name": "发电需求判断",
+        "kind": "decide",
+        "function_refs": []
+      },
+      {
+        "name": "发动机状态判断",
+        "kind": "decide",
+        "function_refs": []
+      },
+      {
+        "name": "启动完成判断",
+        "kind": "decide",
+        "function_refs": []
+      },
+      {
+        "name": "并行驱动与发电",
+        "kind": "fork",
+        "function_refs": []
+      },
+      {
+        "name": "合并驾驶路径",
+        "kind": "merge",
+        "function_refs": []
+      },
+      {
+        "name": "合并发电路径",
+        "kind": "merge",
+        "function_refs": []
+      },
+      {
+        "name": "汇合能量路径",
+        "kind": "join",
+        "function_refs": []
+      },
+      {
+        "name": "接收驾驶指令",
+        "kind": "action",
+        "function_refs": [
+          "S1-F01"
+        ],
+        "type_ref": "S1-F01",
+        "body": ""
+      },
+      {
+        "name": "分析动力需求",
+        "kind": "action",
+        "function_refs": [
+          "S1-F02"
+        ],
+        "type_ref": "S1-F02",
+        "body": ""
+      },
+      {
+        "name": "选择运行模式",
+        "kind": "action",
+        "function_refs": [
+          "S1-F03"
+        ],
+        "type_ref": "S1-F03",
+        "body": ""
+      },
+      {
+        "name": "执行电驱动请求",
+        "kind": "action",
+        "function_refs": [
+          "S1-F04"
+        ],
+        "type_ref": "S1-F04",
+        "body": ""
+      },
+      {
+        "name": "判定再生制动请求",
+        "kind": "action",
+        "function_refs": [
+          "S1-F05"
+        ],
+        "type_ref": "S1-F05",
+        "body": ""
+      },
+      {
+        "name": "协调再生充电",
+        "kind": "action",
+        "function_refs": [
+          "S1-F06"
+        ],
+        "type_ref": "S1-F06",
+        "body": ""
+      },
+      {
+        "name": "调节发电工作点",
+        "kind": "action",
+        "function_refs": [
+          "S1-F08"
+        ],
+        "type_ref": "S1-F08",
+        "body": ""
+      },
+      {
+        "name": "管理充电能量收支",
+        "kind": "action",
+        "function_refs": [
+          "S1-F09"
+        ],
+        "type_ref": "S1-F09",
+        "body": ""
+      },
+      {
+        "name": "反馈并更新模式评估",
+        "kind": "action",
+        "function_refs": [
+          "S1-F10"
+        ],
+        "type_ref": "S1-F10",
+        "body": ""
+      },
+      {
+        "name": "协调发动机启动",
+        "kind": "action",
+        "function_refs": [
+          "S1-F07"
+        ],
+        "type_ref": "S1-F07",
+        "body": "            attribute startCompleted : Boolean;\n            doc /* 本节点属性是行为决策所需的分析投影，不重新定义继承的概念级输出端口。 */"
+      },
+      {
+        "name": "记录加速制动冲突",
+        "kind": "action",
+        "function_refs": [],
+        "type_ref": null,
+        "body": ""
+      },
+      {
+        "name": "记录回收不可用",
+        "kind": "action",
+        "function_refs": [],
+        "type_ref": null,
+        "body": ""
+      },
+      {
+        "name": "保持无驱动制动请求",
+        "kind": "action",
+        "function_refs": [],
+        "type_ref": null,
+        "body": ""
+      },
+      {
+        "name": "记录发动机启动未完成",
+        "kind": "action",
+        "function_refs": [],
+        "type_ref": null,
+        "body": ""
+      },
+      {
+        "name": "保持无发电请求",
+        "kind": "action",
+        "function_refs": [],
+        "type_ref": null,
+        "body": ""
+      }
+    ],
+    "transitions": [
+      {
+        "transition_id": "SC1-T001",
+        "source": "start",
+        "target": "获取本周期快照",
+        "guard": null,
+        "type": "sequence"
+      },
+      {
+        "transition_id": "SC1-T002",
+        "source": "获取本周期快照",
+        "target": "是否继续评估",
+        "guard": null,
+        "type": "sequence"
+      },
+      {
+        "transition_id": "SC1-T003",
+        "source": "是否继续评估",
+        "target": "done",
+        "guard": "'获取本周期快照'.stopRequested",
+        "type": "condition"
+      },
+      {
+        "transition_id": "SC1-T004",
+        "source": "是否继续评估",
+        "target": "接收驾驶指令",
+        "guard": "not '获取本周期快照'.stopRequested",
+        "type": "condition"
+      },
+      {
+        "transition_id": "SC1-T005",
+        "source": "接收驾驶指令",
+        "target": "分析动力需求",
+        "guard": null,
+        "type": "sequence"
+      },
+      {
+        "transition_id": "SC1-T006",
+        "source": "分析动力需求",
+        "target": "选择运行模式",
+        "guard": null,
+        "type": "sequence"
+      },
+      {
+        "transition_id": "SC1-T007",
+        "source": "选择运行模式",
+        "target": "并行驱动与发电",
+        "guard": null,
+        "type": "sequence"
+      },
+      {
+        "transition_id": "SC1-T008",
+        "source": "并行驱动与发电",
+        "target": "驾驶意图判断",
+        "guard": null,
+        "type": "parallel"
+      },
+      {
+        "transition_id": "SC1-T009",
+        "source": "并行驱动与发电",
+        "target": "发电需求判断",
+        "guard": null,
+        "type": "parallel"
+      },
+      {
+        "transition_id": "SC1-T010",
+        "source": "驾驶意图判断",
+        "target": "执行电驱动请求",
+        "guard": "'获取本周期快照'.driveRequested and not '获取本周期快照'.brakeRequested",
+        "type": "condition"
+      },
+      {
+        "transition_id": "SC1-T011",
+        "source": "驾驶意图判断",
+        "target": "判定再生制动请求",
+        "guard": "'获取本周期快照'.brakeRequested and not '获取本周期快照'.driveRequested",
+        "type": "condition"
+      },
+      {
+        "transition_id": "SC1-T012",
+        "source": "驾驶意图判断",
+        "target": "记录加速制动冲突",
+        "guard": "'获取本周期快照'.driveRequested and '获取本周期快照'.brakeRequested",
+        "type": "condition"
+      },
+      {
+        "transition_id": "SC1-T013",
+        "source": "驾驶意图判断",
+        "target": "保持无驱动制动请求",
+        "guard": "not '获取本周期快照'.driveRequested and not '获取本周期快照'.brakeRequested",
+        "type": "condition"
+      },
+      {
+        "transition_id": "SC1-T014",
+        "source": "判定再生制动请求",
+        "target": "回收可用性判断",
+        "guard": null,
+        "type": "sequence"
+      },
+      {
+        "transition_id": "SC1-T015",
+        "source": "回收可用性判断",
+        "target": "协调再生充电",
+        "guard": "'获取本周期快照'.regenAvailable and '获取本周期快照'.batteryAcceptsCharge",
+        "type": "condition"
+      },
+      {
+        "transition_id": "SC1-T016",
+        "source": "回收可用性判断",
+        "target": "记录回收不可用",
+        "guard": "not ('获取本周期快照'.regenAvailable and '获取本周期快照'.batteryAcceptsCharge)",
+        "type": "condition"
+      },
+      {
+        "transition_id": "SC1-T017",
+        "source": "执行电驱动请求",
+        "target": "合并驾驶路径",
+        "guard": null,
+        "type": "sequence"
+      },
+      {
+        "transition_id": "SC1-T018",
+        "source": "协调再生充电",
+        "target": "合并驾驶路径",
+        "guard": null,
+        "type": "sequence"
+      },
+      {
+        "transition_id": "SC1-T019",
+        "source": "记录加速制动冲突",
+        "target": "合并驾驶路径",
+        "guard": null,
+        "type": "sequence"
+      },
+      {
+        "transition_id": "SC1-T020",
+        "source": "记录回收不可用",
+        "target": "合并驾驶路径",
+        "guard": null,
+        "type": "sequence"
+      },
+      {
+        "transition_id": "SC1-T021",
+        "source": "保持无驱动制动请求",
+        "target": "合并驾驶路径",
+        "guard": null,
+        "type": "sequence"
+      },
+      {
+        "transition_id": "SC1-T022",
+        "source": "发电需求判断",
+        "target": "发动机状态判断",
+        "guard": "'获取本周期快照'.generationRequested",
+        "type": "condition"
+      },
+      {
+        "transition_id": "SC1-T023",
+        "source": "发电需求判断",
+        "target": "保持无发电请求",
+        "guard": "not '获取本周期快照'.generationRequested",
+        "type": "condition"
+      },
+      {
+        "transition_id": "SC1-T024",
+        "source": "发动机状态判断",
+        "target": "调节发电工作点",
+        "guard": "'获取本周期快照'.engineRunning",
+        "type": "condition"
+      },
+      {
+        "transition_id": "SC1-T025",
+        "source": "发动机状态判断",
+        "target": "协调发动机启动",
+        "guard": "not '获取本周期快照'.engineRunning",
+        "type": "condition"
+      },
+      {
+        "transition_id": "SC1-T026",
+        "source": "协调发动机启动",
+        "target": "启动完成判断",
+        "guard": null,
+        "type": "sequence"
+      },
+      {
+        "transition_id": "SC1-T027",
+        "source": "启动完成判断",
+        "target": "调节发电工作点",
+        "guard": "'协调发动机启动'.startCompleted",
+        "type": "condition"
+      },
+      {
+        "transition_id": "SC1-T028",
+        "source": "启动完成判断",
+        "target": "记录发动机启动未完成",
+        "guard": "not '协调发动机启动'.startCompleted",
+        "type": "condition"
+      },
+      {
+        "transition_id": "SC1-T029",
+        "source": "调节发电工作点",
+        "target": "合并发电路径",
+        "guard": null,
+        "type": "sequence"
+      },
+      {
+        "transition_id": "SC1-T030",
+        "source": "记录发动机启动未完成",
+        "target": "合并发电路径",
+        "guard": null,
+        "type": "sequence"
+      },
+      {
+        "transition_id": "SC1-T031",
+        "source": "保持无发电请求",
+        "target": "合并发电路径",
+        "guard": null,
+        "type": "sequence"
+      },
+      {
+        "transition_id": "SC1-T032",
+        "source": "合并驾驶路径",
+        "target": "汇合能量路径",
+        "guard": null,
+        "type": "sequence"
+      },
+      {
+        "transition_id": "SC1-T033",
+        "source": "合并发电路径",
+        "target": "汇合能量路径",
+        "guard": null,
+        "type": "sequence"
+      },
+      {
+        "transition_id": "SC1-T034",
+        "source": "汇合能量路径",
+        "target": "管理充电能量收支",
+        "guard": null,
+        "type": "sequence"
+      },
+      {
+        "transition_id": "SC1-T035",
+        "source": "管理充电能量收支",
+        "target": "反馈并更新模式评估",
+        "guard": null,
+        "type": "sequence"
+      },
+      {
+        "transition_id": "SC1-T036",
+        "source": "反馈并更新模式评估",
+        "target": "获取本周期快照",
+        "guard": null,
+        "type": "feedback"
+      }
+    ],
+    "validation_scope": "本地SysML静态语义和模型/清单一致性；非车辆仿真"
+  },
+  {
+    "root_id": "SC2",
+    "title": "两阶段工况及空调风辅助电池冷却闭环",
+    "model_file": "行为模型/SC2-行为模型.sysml",
+    "nodes": [
+      {
+        "name": "获取本周期快照",
+        "kind": "action",
+        "function_refs": [],
+        "type_ref": null,
+        "body": "                    out attribute stopRequested : Boolean;\n                    out attribute elapsedSeconds : Real;\n                    out attribute referenceProfileAccepted : Boolean;\n                    out attribute cellTemperatureValid : Boolean;\n                    out attribute maxValidCellTemperature : Real;\n                    out attribute supplyCapabilityAvailable : Boolean;\n                    out attribute supplyFeedbackValid : Boolean;\n                    out attribute actualAirflowPositive : Boolean;\n                    out attribute independentAirBoundaries : Boolean;"
+      },
+      {
+        "name": "是否继续评估",
+        "kind": "decide",
+        "function_refs": []
+      },
+      {
+        "name": "驾驶阶段判断",
+        "kind": "decide",
+        "function_refs": []
+      },
+      {
+        "name": "参考规则采用判断",
+        "kind": "decide",
+        "function_refs": []
+      },
+      {
+        "name": "电芯温度有效性判断",
+        "kind": "decide",
+        "function_refs": []
+      },
+      {
+        "name": "电池供风需求判断",
+        "kind": "decide",
+        "function_refs": []
+      },
+      {
+        "name": "供风实际建立判断",
+        "kind": "decide",
+        "function_refs": []
+      },
+      {
+        "name": "热边界独立性判断",
+        "kind": "decide",
+        "function_refs": []
+      },
+      {
+        "name": "汇合驾驶阶段",
+        "kind": "merge",
+        "function_refs": []
+      },
+      {
+        "name": "并行温控换热",
+        "kind": "fork",
+        "function_refs": []
+      },
+      {
+        "name": "合并主动供风路径",
+        "kind": "merge",
+        "function_refs": []
+      },
+      {
+        "name": "汇合温控换热",
+        "kind": "join",
+        "function_refs": []
+      },
+      {
+        "name": "合并热边界结果",
+        "kind": "merge",
+        "function_refs": []
+      },
+      {
+        "name": "初始化驾驶循环与空调请求",
+        "kind": "action",
+        "function_refs": [
+          "S2-F01"
+        ],
+        "type_ref": "S2-F01",
+        "body": ""
+      },
+      {
+        "name": "执行静置预冷工况",
+        "kind": "action",
+        "function_refs": [
+          "S2-F02"
+        ],
+        "type_ref": "S2-F02",
+        "body": ""
+      },
+      {
+        "name": "执行匀速行驶工况",
+        "kind": "action",
+        "function_refs": [
+          "S2-F03"
+        ],
+        "type_ref": "S2-F03",
+        "body": ""
+      },
+      {
+        "name": "处理座舱降温请求",
+        "kind": "action",
+        "function_refs": [
+          "S2-F04"
+        ],
+        "type_ref": "S2-F04",
+        "body": ""
+      },
+      {
+        "name": "获取有效电池控制温度",
+        "kind": "action",
+        "function_refs": [
+          "S2-F05"
+        ],
+        "type_ref": "S2-F05",
+        "body": ""
+      },
+      {
+        "name": "评估有符号环境换热",
+        "kind": "action",
+        "function_refs": [
+          "S2-F07"
+        ],
+        "type_ref": "S2-F07",
+        "body": ""
+      },
+      {
+        "name": "获取实际供风条件",
+        "kind": "action",
+        "function_refs": [
+          "S2-F09-01"
+        ],
+        "type_ref": "S2-F09-01",
+        "body": ""
+      },
+      {
+        "name": "判定实际供风状态",
+        "kind": "action",
+        "function_refs": [
+          "S2-F09-02"
+        ],
+        "type_ref": "S2-F09-02",
+        "body": ""
+      },
+      {
+        "name": "计算主动供风换热量",
+        "kind": "action",
+        "function_refs": [
+          "S2-F09-03"
+        ],
+        "type_ref": "S2-F09-03",
+        "body": ""
+      },
+      {
+        "name": "汇总独立空气侧热流",
+        "kind": "action",
+        "function_refs": [
+          "S2-F10"
+        ],
+        "type_ref": "S2-F10",
+        "body": ""
+      },
+      {
+        "name": "提出电池主动供风请求",
+        "kind": "action",
+        "function_refs": [
+          "S2-F06",
+          "S2-F08"
+        ],
+        "type_ref": null,
+        "body": ""
+      },
+      {
+        "name": "撤销电池供风请求",
+        "kind": "action",
+        "function_refs": [
+          "S2-F06"
+        ],
+        "type_ref": null,
+        "body": ""
+      },
+      {
+        "name": "记录供风未实际建立",
+        "kind": "action",
+        "function_refs": [
+          "S2-F09-02"
+        ],
+        "type_ref": null,
+        "body": ""
+      },
+      {
+        "name": "记录无有效温度缺口",
+        "kind": "action",
+        "function_refs": [],
+        "type_ref": null,
+        "body": ""
+      },
+      {
+        "name": "记录参考规则未批准",
+        "kind": "action",
+        "function_refs": [],
+        "type_ref": null,
+        "body": ""
+      },
+      {
+        "name": "更新被替换的空气边界",
+        "kind": "action",
+        "function_refs": [
+          "S2-F10"
+        ],
+        "type_ref": null,
+        "body": ""
+      },
+      {
+        "name": "反馈本周期热状态",
+        "kind": "action",
+        "function_refs": [
+          "S2-F10"
+        ],
+        "type_ref": null,
+        "body": ""
+      }
+    ],
+    "transitions": [
+      {
+        "transition_id": "SC2-T001",
+        "source": "start",
+        "target": "初始化驾驶循环与空调请求",
+        "guard": null,
+        "type": "sequence"
+      },
+      {
+        "transition_id": "SC2-T002",
+        "source": "初始化驾驶循环与空调请求",
+        "target": "获取本周期快照",
+        "guard": null,
+        "type": "sequence"
+      },
+      {
+        "transition_id": "SC2-T003",
+        "source": "获取本周期快照",
+        "target": "是否继续评估",
+        "guard": null,
+        "type": "sequence"
+      },
+      {
+        "transition_id": "SC2-T004",
+        "source": "是否继续评估",
+        "target": "done",
+        "guard": "'获取本周期快照'.stopRequested or '获取本周期快照'.elapsedSeconds >= 1320.0",
+        "type": "condition"
+      },
+      {
+        "transition_id": "SC2-T005",
+        "source": "是否继续评估",
+        "target": "驾驶阶段判断",
+        "guard": "not '获取本周期快照'.stopRequested and '获取本周期快照'.elapsedSeconds < 1320.0",
+        "type": "condition"
+      },
+      {
+        "transition_id": "SC2-T006",
+        "source": "驾驶阶段判断",
+        "target": "执行静置预冷工况",
+        "guard": "'获取本周期快照'.elapsedSeconds < 120.0",
+        "type": "condition"
+      },
+      {
+        "transition_id": "SC2-T007",
+        "source": "驾驶阶段判断",
+        "target": "执行匀速行驶工况",
+        "guard": "'获取本周期快照'.elapsedSeconds >= 120.0",
+        "type": "condition"
+      },
+      {
+        "transition_id": "SC2-T008",
+        "source": "执行静置预冷工况",
+        "target": "汇合驾驶阶段",
+        "guard": null,
+        "type": "sequence"
+      },
+      {
+        "transition_id": "SC2-T009",
+        "source": "执行匀速行驶工况",
+        "target": "汇合驾驶阶段",
+        "guard": null,
+        "type": "sequence"
+      },
+      {
+        "transition_id": "SC2-T010",
+        "source": "汇合驾驶阶段",
+        "target": "并行温控换热",
+        "guard": null,
+        "type": "sequence"
+      },
+      {
+        "transition_id": "SC2-T011",
+        "source": "并行温控换热",
+        "target": "处理座舱降温请求",
+        "guard": null,
+        "type": "parallel"
+      },
+      {
+        "transition_id": "SC2-T012",
+        "source": "处理座舱降温请求",
+        "target": "汇合温控换热",
+        "guard": null,
+        "type": "sequence"
+      },
+      {
+        "transition_id": "SC2-T013",
+        "source": "并行温控换热",
+        "target": "评估有符号环境换热",
+        "guard": null,
+        "type": "parallel"
+      },
+      {
+        "transition_id": "SC2-T014",
+        "source": "评估有符号环境换热",
+        "target": "汇合温控换热",
+        "guard": null,
+        "type": "sequence"
+      },
+      {
+        "transition_id": "SC2-T015",
+        "source": "并行温控换热",
+        "target": "参考规则采用判断",
+        "guard": null,
+        "type": "parallel"
+      },
+      {
+        "transition_id": "SC2-T016",
+        "source": "参考规则采用判断",
+        "target": "获取有效电池控制温度",
+        "guard": "'获取本周期快照'.referenceProfileAccepted",
+        "type": "condition"
+      },
+      {
+        "transition_id": "SC2-T017",
+        "source": "参考规则采用判断",
+        "target": "记录参考规则未批准",
+        "guard": "not '获取本周期快照'.referenceProfileAccepted",
+        "type": "condition"
+      },
+      {
+        "transition_id": "SC2-T018",
+        "source": "获取有效电池控制温度",
+        "target": "电芯温度有效性判断",
+        "guard": null,
+        "type": "sequence"
+      },
+      {
+        "transition_id": "SC2-T019",
+        "source": "电芯温度有效性判断",
+        "target": "电池供风需求判断",
+        "guard": "'获取本周期快照'.cellTemperatureValid",
+        "type": "condition"
+      },
+      {
+        "transition_id": "SC2-T020",
+        "source": "电芯温度有效性判断",
+        "target": "记录无有效温度缺口",
+        "guard": "not '获取本周期快照'.cellTemperatureValid",
+        "type": "condition"
+      },
+      {
+        "transition_id": "SC2-T021",
+        "source": "电池供风需求判断",
+        "target": "提出电池主动供风请求",
+        "guard": "'获取本周期快照'.maxValidCellTemperature >= 35.0",
+        "type": "condition"
+      },
+      {
+        "transition_id": "SC2-T022",
+        "source": "电池供风需求判断",
+        "target": "撤销电池供风请求",
+        "guard": "'获取本周期快照'.maxValidCellTemperature < 35.0",
+        "type": "condition"
+      },
+      {
+        "transition_id": "SC2-T023",
+        "source": "提出电池主动供风请求",
+        "target": "获取实际供风条件",
+        "guard": null,
+        "type": "sequence"
+      },
+      {
+        "transition_id": "SC2-T024",
+        "source": "获取实际供风条件",
+        "target": "判定实际供风状态",
+        "guard": null,
+        "type": "sequence"
+      },
+      {
+        "transition_id": "SC2-T025",
+        "source": "判定实际供风状态",
+        "target": "供风实际建立判断",
+        "guard": null,
+        "type": "sequence"
+      },
+      {
+        "transition_id": "SC2-T026",
+        "source": "供风实际建立判断",
+        "target": "计算主动供风换热量",
+        "guard": "'获取本周期快照'.supplyCapabilityAvailable and '获取本周期快照'.supplyFeedbackValid and '获取本周期快照'.actualAirflowPositive",
+        "type": "condition"
+      },
+      {
+        "transition_id": "SC2-T027",
+        "source": "供风实际建立判断",
+        "target": "记录供风未实际建立",
+        "guard": "not ('获取本周期快照'.supplyCapabilityAvailable and '获取本周期快照'.supplyFeedbackValid and '获取本周期快照'.actualAirflowPositive)",
+        "type": "condition"
+      },
+      {
+        "transition_id": "SC2-T028",
+        "source": "计算主动供风换热量",
+        "target": "合并主动供风路径",
+        "guard": null,
+        "type": "sequence"
+      },
+      {
+        "transition_id": "SC2-T029",
+        "source": "撤销电池供风请求",
+        "target": "合并主动供风路径",
+        "guard": null,
+        "type": "sequence"
+      },
+      {
+        "transition_id": "SC2-T030",
+        "source": "记录供风未实际建立",
+        "target": "合并主动供风路径",
+        "guard": null,
+        "type": "sequence"
+      },
+      {
+        "transition_id": "SC2-T031",
+        "source": "记录无有效温度缺口",
+        "target": "合并主动供风路径",
+        "guard": null,
+        "type": "sequence"
+      },
+      {
+        "transition_id": "SC2-T032",
+        "source": "记录参考规则未批准",
+        "target": "合并主动供风路径",
+        "guard": null,
+        "type": "sequence"
+      },
+      {
+        "transition_id": "SC2-T033",
+        "source": "合并主动供风路径",
+        "target": "汇合温控换热",
+        "guard": null,
+        "type": "sequence"
+      },
+      {
+        "transition_id": "SC2-T034",
+        "source": "汇合温控换热",
+        "target": "热边界独立性判断",
+        "guard": null,
+        "type": "sequence"
+      },
+      {
+        "transition_id": "SC2-T035",
+        "source": "热边界独立性判断",
+        "target": "汇总独立空气侧热流",
+        "guard": "'获取本周期快照'.independentAirBoundaries",
+        "type": "condition"
+      },
+      {
+        "transition_id": "SC2-T036",
+        "source": "热边界独立性判断",
+        "target": "更新被替换的空气边界",
+        "guard": "not '获取本周期快照'.independentAirBoundaries",
+        "type": "condition"
+      },
+      {
+        "transition_id": "SC2-T037",
+        "source": "汇总独立空气侧热流",
+        "target": "合并热边界结果",
+        "guard": null,
+        "type": "sequence"
+      },
+      {
+        "transition_id": "SC2-T038",
+        "source": "更新被替换的空气边界",
+        "target": "合并热边界结果",
+        "guard": null,
+        "type": "sequence"
+      },
+      {
+        "transition_id": "SC2-T039",
+        "source": "合并热边界结果",
+        "target": "反馈本周期热状态",
+        "guard": null,
+        "type": "sequence"
+      },
+      {
+        "transition_id": "SC2-T040",
+        "source": "反馈本周期热状态",
+        "target": "获取本周期快照",
+        "guard": null,
+        "type": "feedback"
+      }
+    ],
+    "validation_scope": "本地SysML静态语义和模型/清单一致性；非车辆仿真"
+  },
+  {
+    "root_id": "SC3",
+    "title": "座舱与Chiller电池液冷需求分配闭环",
+    "model_file": "行为模型/SC3-行为模型.sysml",
+    "nodes": [
+      {
+        "name": "获取本周期快照",
+        "kind": "action",
+        "function_refs": [],
+        "type_ref": null,
+        "body": "                    out attribute stopRequested : Boolean;\n                    out attribute cabinCoolingRequested : Boolean;\n                    out attribute batteryCriteriaDefined : Boolean;\n                    out attribute batteryTemperatureHigh : Boolean;\n                    out attribute batteryPowerHigh : Boolean;\n                    out attribute availableCapacitySufficient : Boolean;\n                    out attribute chillerPathAvailable : Boolean;"
+      },
+      {
+        "name": "是否继续评估",
+        "kind": "decide",
+        "function_refs": []
+      },
+      {
+        "name": "电池判据定义判断",
+        "kind": "decide",
+        "function_refs": []
+      },
+      {
+        "name": "电池辅助需求判断",
+        "kind": "decide",
+        "function_refs": [
+          "S3-F07"
+        ]
+      },
+      {
+        "name": "冷量分配能力判断",
+        "kind": "decide",
+        "function_refs": []
+      },
+      {
+        "name": "座舱执行需求判断",
+        "kind": "decide",
+        "function_refs": []
+      },
+      {
+        "name": "电池执行需求判断",
+        "kind": "decide",
+        "function_refs": []
+      },
+      {
+        "name": "Chiller流路可用判断",
+        "kind": "decide",
+        "function_refs": []
+      },
+      {
+        "name": "并行需求评估",
+        "kind": "fork",
+        "function_refs": []
+      },
+      {
+        "name": "合并电池需求路径",
+        "kind": "merge",
+        "function_refs": []
+      },
+      {
+        "name": "汇合需求评估",
+        "kind": "join",
+        "function_refs": []
+      },
+      {
+        "name": "并行执行冷却",
+        "kind": "fork",
+        "function_refs": []
+      },
+      {
+        "name": "合并座舱执行路径",
+        "kind": "merge",
+        "function_refs": []
+      },
+      {
+        "name": "合并电池执行路径",
+        "kind": "merge",
+        "function_refs": []
+      },
+      {
+        "name": "汇合冷却执行",
+        "kind": "join",
+        "function_refs": []
+      },
+      {
+        "name": "合并本周期结果",
+        "kind": "merge",
+        "function_refs": []
+      },
+      {
+        "name": "获取座舱目标温度",
+        "kind": "action",
+        "function_refs": [
+          "S3-F01"
+        ],
+        "type_ref": "S3-F01",
+        "body": ""
+      },
+      {
+        "name": "获取座舱实际温度",
+        "kind": "action",
+        "function_refs": [
+          "S3-F02"
+        ],
+        "type_ref": "S3-F02",
+        "body": ""
+      },
+      {
+        "name": "判定座舱制冷需求",
+        "kind": "action",
+        "function_refs": [
+          "S3-F03"
+        ],
+        "type_ref": "S3-F03",
+        "body": ""
+      },
+      {
+        "name": "获取电池控制温度",
+        "kind": "action",
+        "function_refs": [
+          "S3-F06-01"
+        ],
+        "type_ref": "S3-F06-01",
+        "body": ""
+      },
+      {
+        "name": "获取电池充放电功率",
+        "kind": "action",
+        "function_refs": [
+          "S3-F06-02"
+        ],
+        "type_ref": "S3-F06-02",
+        "body": ""
+      },
+      {
+        "name": "计算电池冷量需求",
+        "kind": "action",
+        "function_refs": [
+          "S3-F08"
+        ],
+        "type_ref": "S3-F08",
+        "body": ""
+      },
+      {
+        "name": "分配共享制冷能力",
+        "kind": "action",
+        "function_refs": [
+          "S3-F09"
+        ],
+        "type_ref": "S3-F09",
+        "body": ""
+      },
+      {
+        "name": "调节座舱制冷能力",
+        "kind": "action",
+        "function_refs": [
+          "S3-F04"
+        ],
+        "type_ref": "S3-F04",
+        "body": ""
+      },
+      {
+        "name": "调节座舱送风量",
+        "kind": "action",
+        "function_refs": [
+          "S3-F05"
+        ],
+        "type_ref": "S3-F05",
+        "body": ""
+      },
+      {
+        "name": "调节电池Chiller液路换热",
+        "kind": "action",
+        "function_refs": [
+          "S3-F10"
+        ],
+        "type_ref": "S3-F10",
+        "body": ""
+      },
+      {
+        "name": "反馈座舱与电池温控状态",
+        "kind": "action",
+        "function_refs": [
+          "S3-F11"
+        ],
+        "type_ref": "S3-F11",
+        "body": ""
+      },
+      {
+        "name": "记录电池判据未定义",
+        "kind": "action",
+        "function_refs": [],
+        "type_ref": null,
+        "body": ""
+      },
+      {
+        "name": "记录无电池辅助冷却需求",
+        "kind": "action",
+        "function_refs": [],
+        "type_ref": null,
+        "body": ""
+      },
+      {
+        "name": "记录能力不足分配策略缺口",
+        "kind": "action",
+        "function_refs": [],
+        "type_ref": null,
+        "body": ""
+      },
+      {
+        "name": "保持无座舱制冷请求",
+        "kind": "action",
+        "function_refs": [],
+        "type_ref": null,
+        "body": ""
+      },
+      {
+        "name": "保持无电池冷却请求",
+        "kind": "action",
+        "function_refs": [],
+        "type_ref": null,
+        "body": ""
+      },
+      {
+        "name": "记录Chiller流路不可用",
+        "kind": "action",
+        "function_refs": [],
+        "type_ref": null,
+        "body": ""
+      }
+    ],
+    "transitions": [
+      {
+        "transition_id": "SC3-T001",
+        "source": "start",
+        "target": "获取本周期快照",
+        "guard": null,
+        "type": "sequence"
+      },
+      {
+        "transition_id": "SC3-T002",
+        "source": "获取本周期快照",
+        "target": "是否继续评估",
+        "guard": null,
+        "type": "sequence"
+      },
+      {
+        "transition_id": "SC3-T003",
+        "source": "是否继续评估",
+        "target": "done",
+        "guard": "'获取本周期快照'.stopRequested",
+        "type": "condition"
+      },
+      {
+        "transition_id": "SC3-T004",
+        "source": "是否继续评估",
+        "target": "并行需求评估",
+        "guard": "not '获取本周期快照'.stopRequested",
+        "type": "condition"
+      },
+      {
+        "transition_id": "SC3-T005",
+        "source": "并行需求评估",
+        "target": "获取座舱目标温度",
+        "guard": null,
+        "type": "parallel"
+      },
+      {
+        "transition_id": "SC3-T006",
+        "source": "获取座舱目标温度",
+        "target": "获取座舱实际温度",
+        "guard": null,
+        "type": "sequence"
+      },
+      {
+        "transition_id": "SC3-T007",
+        "source": "获取座舱实际温度",
+        "target": "判定座舱制冷需求",
+        "guard": null,
+        "type": "sequence"
+      },
+      {
+        "transition_id": "SC3-T008",
+        "source": "判定座舱制冷需求",
+        "target": "汇合需求评估",
+        "guard": null,
+        "type": "sequence"
+      },
+      {
+        "transition_id": "SC3-T009",
+        "source": "并行需求评估",
+        "target": "获取电池控制温度",
+        "guard": null,
+        "type": "parallel"
+      },
+      {
+        "transition_id": "SC3-T010",
+        "source": "获取电池控制温度",
+        "target": "获取电池充放电功率",
+        "guard": null,
+        "type": "sequence"
+      },
+      {
+        "transition_id": "SC3-T011",
+        "source": "获取电池充放电功率",
+        "target": "电池判据定义判断",
+        "guard": null,
+        "type": "sequence"
+      },
+      {
+        "transition_id": "SC3-T012",
+        "source": "电池判据定义判断",
+        "target": "电池辅助需求判断",
+        "guard": "'获取本周期快照'.batteryCriteriaDefined",
+        "type": "condition"
+      },
+      {
+        "transition_id": "SC3-T013",
+        "source": "电池判据定义判断",
+        "target": "记录电池判据未定义",
+        "guard": "not '获取本周期快照'.batteryCriteriaDefined",
+        "type": "condition"
+      },
+      {
+        "transition_id": "SC3-T014",
+        "source": "电池辅助需求判断",
+        "target": "计算电池冷量需求",
+        "guard": "('获取本周期快照'.batteryTemperatureHigh or '获取本周期快照'.batteryPowerHigh)",
+        "type": "condition"
+      },
+      {
+        "transition_id": "SC3-T015",
+        "source": "电池辅助需求判断",
+        "target": "记录无电池辅助冷却需求",
+        "guard": "not ('获取本周期快照'.batteryTemperatureHigh or '获取本周期快照'.batteryPowerHigh)",
+        "type": "condition"
+      },
+      {
+        "transition_id": "SC3-T016",
+        "source": "计算电池冷量需求",
+        "target": "合并电池需求路径",
+        "guard": null,
+        "type": "sequence"
+      },
+      {
+        "transition_id": "SC3-T017",
+        "source": "记录无电池辅助冷却需求",
+        "target": "合并电池需求路径",
+        "guard": null,
+        "type": "sequence"
+      },
+      {
+        "transition_id": "SC3-T018",
+        "source": "记录电池判据未定义",
+        "target": "合并电池需求路径",
+        "guard": null,
+        "type": "sequence"
+      },
+      {
+        "transition_id": "SC3-T019",
+        "source": "合并电池需求路径",
+        "target": "汇合需求评估",
+        "guard": null,
+        "type": "sequence"
+      },
+      {
+        "transition_id": "SC3-T020",
+        "source": "汇合需求评估",
+        "target": "分配共享制冷能力",
+        "guard": null,
+        "type": "sequence"
+      },
+      {
+        "transition_id": "SC3-T021",
+        "source": "分配共享制冷能力",
+        "target": "冷量分配能力判断",
+        "guard": null,
+        "type": "sequence"
+      },
+      {
+        "transition_id": "SC3-T022",
+        "source": "冷量分配能力判断",
+        "target": "并行执行冷却",
+        "guard": "'获取本周期快照'.availableCapacitySufficient",
+        "type": "condition"
+      },
+      {
+        "transition_id": "SC3-T023",
+        "source": "冷量分配能力判断",
+        "target": "记录能力不足分配策略缺口",
+        "guard": "not '获取本周期快照'.availableCapacitySufficient",
+        "type": "condition"
+      },
+      {
+        "transition_id": "SC3-T024",
+        "source": "记录能力不足分配策略缺口",
+        "target": "合并本周期结果",
+        "guard": null,
+        "type": "sequence"
+      },
+      {
+        "transition_id": "SC3-T025",
+        "source": "并行执行冷却",
+        "target": "座舱执行需求判断",
+        "guard": null,
+        "type": "parallel"
+      },
+      {
+        "transition_id": "SC3-T026",
+        "source": "并行执行冷却",
+        "target": "电池执行需求判断",
+        "guard": null,
+        "type": "parallel"
+      },
+      {
+        "transition_id": "SC3-T027",
+        "source": "座舱执行需求判断",
+        "target": "调节座舱制冷能力",
+        "guard": "'获取本周期快照'.cabinCoolingRequested",
+        "type": "condition"
+      },
+      {
+        "transition_id": "SC3-T028",
+        "source": "座舱执行需求判断",
+        "target": "保持无座舱制冷请求",
+        "guard": "not '获取本周期快照'.cabinCoolingRequested",
+        "type": "condition"
+      },
+      {
+        "transition_id": "SC3-T029",
+        "source": "调节座舱制冷能力",
+        "target": "调节座舱送风量",
+        "guard": null,
+        "type": "sequence"
+      },
+      {
+        "transition_id": "SC3-T030",
+        "source": "调节座舱送风量",
+        "target": "合并座舱执行路径",
+        "guard": null,
+        "type": "sequence"
+      },
+      {
+        "transition_id": "SC3-T031",
+        "source": "保持无座舱制冷请求",
+        "target": "合并座舱执行路径",
+        "guard": null,
+        "type": "sequence"
+      },
+      {
+        "transition_id": "SC3-T032",
+        "source": "合并座舱执行路径",
+        "target": "汇合冷却执行",
+        "guard": null,
+        "type": "sequence"
+      },
+      {
+        "transition_id": "SC3-T033",
+        "source": "电池执行需求判断",
+        "target": "Chiller流路可用判断",
+        "guard": "'获取本周期快照'.batteryCriteriaDefined and ('获取本周期快照'.batteryTemperatureHigh or '获取本周期快照'.batteryPowerHigh)",
+        "type": "condition"
+      },
+      {
+        "transition_id": "SC3-T034",
+        "source": "电池执行需求判断",
+        "target": "保持无电池冷却请求",
+        "guard": "not ('获取本周期快照'.batteryCriteriaDefined and ('获取本周期快照'.batteryTemperatureHigh or '获取本周期快照'.batteryPowerHigh))",
+        "type": "condition"
+      },
+      {
+        "transition_id": "SC3-T035",
+        "source": "Chiller流路可用判断",
+        "target": "调节电池Chiller液路换热",
+        "guard": "'获取本周期快照'.chillerPathAvailable",
+        "type": "condition"
+      },
+      {
+        "transition_id": "SC3-T036",
+        "source": "Chiller流路可用判断",
+        "target": "记录Chiller流路不可用",
+        "guard": "not '获取本周期快照'.chillerPathAvailable",
+        "type": "condition"
+      },
+      {
+        "transition_id": "SC3-T037",
+        "source": "调节电池Chiller液路换热",
+        "target": "合并电池执行路径",
+        "guard": null,
+        "type": "sequence"
+      },
+      {
+        "transition_id": "SC3-T038",
+        "source": "保持无电池冷却请求",
+        "target": "合并电池执行路径",
+        "guard": null,
+        "type": "sequence"
+      },
+      {
+        "transition_id": "SC3-T039",
+        "source": "记录Chiller流路不可用",
+        "target": "合并电池执行路径",
+        "guard": null,
+        "type": "sequence"
+      },
+      {
+        "transition_id": "SC3-T040",
+        "source": "合并电池执行路径",
+        "target": "汇合冷却执行",
+        "guard": null,
+        "type": "sequence"
+      },
+      {
+        "transition_id": "SC3-T041",
+        "source": "汇合冷却执行",
+        "target": "合并本周期结果",
+        "guard": null,
+        "type": "sequence"
+      },
+      {
+        "transition_id": "SC3-T042",
+        "source": "合并本周期结果",
+        "target": "反馈座舱与电池温控状态",
+        "guard": null,
+        "type": "sequence"
+      },
+      {
+        "transition_id": "SC3-T043",
+        "source": "反馈座舱与电池温控状态",
+        "target": "获取本周期快照",
+        "guard": null,
+        "type": "feedback"
+      }
+    ],
+    "validation_scope": "本地SysML静态语义和模型/清单一致性；非车辆仿真"
+  }
+]

@@ -1,0 +1,180 @@
+[
+  {
+    "case_function_id": "LF-010",
+    "candidate_ids": [
+      "K03"
+    ],
+    "relation": "概念相关或可细化参考；不自动等价，不自动产生分解/时序关系",
+    "review_status": "本次分析映射，需结合配置确认"
+  },
+  {
+    "case_function_id": "LF-015",
+    "candidate_ids": [
+      "K04",
+      "K05"
+    ],
+    "relation": "概念相关或可细化参考；不自动等价，不自动产生分解/时序关系",
+    "review_status": "本次分析映射，需结合配置确认"
+  },
+  {
+    "case_function_id": "LF-018",
+    "candidate_ids": [
+      "K09"
+    ],
+    "relation": "概念相关或可细化参考；不自动等价，不自动产生分解/时序关系",
+    "review_status": "本次分析映射，需结合配置确认"
+  },
+  {
+    "case_function_id": "LF-020",
+    "candidate_ids": [
+      "K07"
+    ],
+    "relation": "概念相关或可细化参考；不自动等价，不自动产生分解/时序关系",
+    "review_status": "本次分析映射，需结合配置确认"
+  },
+  {
+    "case_function_id": "LF-032",
+    "candidate_ids": [
+      "C02"
+    ],
+    "relation": "概念相关或可细化参考；不自动等价，不自动产生分解/时序关系",
+    "review_status": "本次分析映射，需结合配置确认"
+  },
+  {
+    "case_function_id": "S2-F05",
+    "candidate_ids": [
+      "C01"
+    ],
+    "relation": "概念相关或可细化参考；不自动等价，不自动产生分解/时序关系",
+    "review_status": "本次分析映射，需结合配置确认"
+  },
+  {
+    "case_function_id": "S2-F06",
+    "candidate_ids": [
+      "C02"
+    ],
+    "relation": "概念相关或可细化参考；不自动等价，不自动产生分解/时序关系",
+    "review_status": "本次分析映射，需结合配置确认"
+  },
+  {
+    "case_function_id": "S2-F07",
+    "candidate_ids": [
+      "A04"
+    ],
+    "relation": "概念相关或可细化参考；不自动等价，不自动产生分解/时序关系",
+    "review_status": "本次分析映射，需结合配置确认"
+  },
+  {
+    "case_function_id": "S2-F09",
+    "candidate_ids": [
+      "A07",
+      "A12"
+    ],
+    "relation": "概念相关或可细化参考；不自动等价，不自动产生分解/时序关系",
+    "review_status": "本次分析映射，需结合配置确认"
+  },
+  {
+    "case_function_id": "S2-F10",
+    "candidate_ids": [
+      "A13"
+    ],
+    "relation": "概念相关或可细化参考；不自动等价，不自动产生分解/时序关系",
+    "review_status": "本次分析映射，需结合配置确认"
+  },
+  {
+    "case_function_id": "S3-F01",
+    "candidate_ids": [
+      "K02"
+    ],
+    "relation": "概念相关或可细化参考；不自动等价，不自动产生分解/时序关系",
+    "review_status": "本次分析映射，需结合配置确认"
+  },
+  {
+    "case_function_id": "S3-F02",
+    "candidate_ids": [
+      "K03"
+    ],
+    "relation": "概念相关或可细化参考；不自动等价，不自动产生分解/时序关系",
+    "review_status": "本次分析映射，需结合配置确认"
+  },
+  {
+    "case_function_id": "S3-F03",
+    "candidate_ids": [
+      "K04",
+      "K05"
+    ],
+    "relation": "概念相关或可细化参考；不自动等价，不自动产生分解/时序关系",
+    "review_status": "本次分析映射，需结合配置确认"
+  },
+  {
+    "case_function_id": "S3-F04",
+    "candidate_ids": [
+      "K07"
+    ],
+    "relation": "概念相关或可细化参考；不自动等价，不自动产生分解/时序关系",
+    "review_status": "本次分析映射，需结合配置确认"
+  },
+  {
+    "case_function_id": "S3-F05",
+    "candidate_ids": [
+      "K08",
+      "K09"
+    ],
+    "relation": "概念相关或可细化参考；不自动等价，不自动产生分解/时序关系",
+    "review_status": "本次分析映射，需结合配置确认"
+  },
+  {
+    "case_function_id": "S3-F06",
+    "candidate_ids": [
+      "C01",
+      "L01"
+    ],
+    "relation": "概念相关或可细化参考；不自动等价，不自动产生分解/时序关系",
+    "review_status": "本次分析映射，需结合配置确认"
+  },
+  {
+    "case_function_id": "S3-F07",
+    "candidate_ids": [
+      "C02"
+    ],
+    "relation": "概念相关或可细化参考；不自动等价，不自动产生分解/时序关系",
+    "review_status": "本次分析映射，需结合配置确认"
+  },
+  {
+    "case_function_id": "S3-F08",
+    "candidate_ids": [
+      "L02",
+      "L04"
+    ],
+    "relation": "概念相关或可细化参考；不自动等价，不自动产生分解/时序关系",
+    "review_status": "本次分析映射，需结合配置确认"
+  },
+  {
+    "case_function_id": "S3-F09",
+    "candidate_ids": [
+      "L10"
+    ],
+    "relation": "概念相关或可细化参考；不自动等价，不自动产生分解/时序关系",
+    "review_status": "本次分析映射，需结合配置确认"
+  },
+  {
+    "case_function_id": "S3-F10",
+    "candidate_ids": [
+      "L05",
+      "L06",
+      "L07",
+      "L09"
+    ],
+    "relation": "概念相关或可细化参考；不自动等价，不自动产生分解/时序关系",
+    "review_status": "本次分析映射，需结合配置确认"
+  },
+  {
+    "case_function_id": "S3-F11",
+    "candidate_ids": [
+      "K10",
+      "L14"
+    ],
+    "relation": "概念相关或可细化参考；不自动等价，不自动产生分解/时序关系",
+    "review_status": "本次分析映射，需结合配置确认"
+  }
+]

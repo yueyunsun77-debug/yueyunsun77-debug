@@ -1,0 +1,4171 @@
+[
+  {
+    "req_id": "3.3.1.2",
+    "name": "空调制热",
+    "description": "系统应支持用户通过中控屏或物理控制发起乘员舱制热请求并设置目标温度。在空气输送功能开启、目标温度高于当前舱温、车辆处于高压状态、整车无故障且SOC大于10%时，CCU方可控制电加热通断实施加热。电加热接通后，系统应持续监测电加热温度；达到待标定的上限温度时断开电加热通断，降至待标定的恢复阈值后才允许再次闭合。系统应向总线反馈电加热通断状态、电加热当前温度、工作状态、实际功率和最大工作功率。Excel提出的环境条件与电池热负荷优化目标需在后续设计中进一步明确。",
+    "type": "功能需求",
+    "category": "功能性",
+    "source_refs": [
+      {
+        "file": "原始文件备份/3.3.1.2、3.3.1.6、3.3.1.9-需求条目.json",
+        "req_id": "3.3.1.2"
+      },
+      {
+        "source_type": "Excel",
+        "file": "原始文件备份/LCATC-DS-04-XX-27-B0-热管理.xlsx",
+        "sheet": "Function list",
+        "row": 16,
+        "cell_range": "A16:F16",
+        "source_id": "3.3.1.2",
+        "source_title": "Air Conditioning - Heating"
+      },
+      {
+        "source_type": "PDF设计需求",
+        "file": "原始文件备份/LCATC-DS-04-XX-27-B0-(CCU)Component Technical Specification.pdf",
+        "section": "6.11.1.3",
+        "printed_pages": "59–60",
+        "design_requirement_id": "SL30-LC05-SF01-手动PTC加热控制",
+        "evidence": "IVI发送目标温度、风量等级；PTC使能条件包括鼓风机开启、目标温度高于室内温度、车辆高压、整车无故障、SOC大于10%；加热时监测PTC温度并反馈状态/功率。"
+      },
+      {
+        "source_type": "PDF设计需求",
+        "file": "原始文件备份/LCATC-DS-04-XX-27-B0-(CCU)Component Technical Specification.pdf",
+        "section": "6.13.1.4",
+        "printed_pages": "68",
+        "design_requirement_id": "SL30-LC07-SF02-自动空调温度控制",
+        "evidence": "自动模式下根据环境温度和暖芯入口温度/PTC本体温度调节冷热风门；温度变化量和LO/HI边界在文档中有说明。"
+      },
+      {
+        "source_type": "PDF系统上下文",
+        "file": "原始文件备份/LCATC-DS-04-29-XX-B0-SL29_热管理子系统功能规范.pdf",
+        "section": "4.6.3.5",
+        "design_requirement_id": "SSTS-SL29-LC06-SF05",
+        "evidence": "CCU初始化后通过硬线每隔50 ms检测PTC温度。",
+        "original_printed_pages": "34–35",
+        "pdf_pages": [
+          30
+        ]
+      }
+    ],
+    "extras": {
+      "explicit_enable_conditions": [
+        "空气输送功能处于开启状态",
+        "目标温度高于室内温度",
+        "车辆处于高压状态",
+        "整车无故障",
+        "SOC > 10%"
+      ],
+      "explicit_temperature_protection": "电加热温度达到上限时断开继电器；温度降至恢复阈值后允许再次闭合；上限和恢复阈值在PDF中以XXX℃表示，待标定。",
+      "unresolved_items": [
+        "Excel提到的电池热负荷如何参与乘员舱制热输出优化，PDF中未给出明确仲裁逻辑。",
+        "Excel允许触摸或物理控制，PDF详细描述主要为IVI向CCU发送请求，物理按键输入路径需确认。",
+        "电加热温度上限/恢复阈值尚未给出具体数值。"
+      ],
+      "original_requirement_id": "3.3.1.2",
+      "requirement_object": "乘员舱温度",
+      "expected_effect": "在许可及保护约束下达到用户期望的制热状态",
+      "requirement_expression": "乘员舱温度：在许可及保护约束下达到用户期望的制热状态"
+    }
+  },
+  {
+    "req_id": "3.3.1.6",
+    "name": "自动空调模式",
+    "description": "系统应支持用户通过IVI的AUTO按键发起自动空调模式请求，CCU应响应模式开启/关闭请求并向IVI反馈自动模式状态。在自动模式下，CCU应依据室内温度、室外温度、日照负荷信息采集以及供热入口温度/电加热源温度等信号，自动协调空气输送能力、送风温度调节、送风模式调节、循环方式调节、制冷执行能力（转速接口）和电加热功率，使乘员舱温度趋于用户设定的目标温度。自动模式下调整目标温度或循环设置不应退出AUTO；操作风量或吹风模式按钮应退出AUTO；操作前除霜按钮应切换至前除霜状态；操作AC按钮时应关闭制冷执行功能请求，但其他自动控制项继续保持自动控制。 PDF 6.13.1.3明确：操作AC按键后AUTO反馈为Close，风量、温度、吹风模式和循环仍保持自动控制，不能将反馈状态与局部自动控制等同。",
+    "type": "功能需求",
+    "category": "功能性",
+    "source_refs": [
+      {
+        "file": "原始文件备份/3.3.1.2、3.3.1.6、3.3.1.9-需求条目.json",
+        "req_id": "3.3.1.6"
+      },
+      {
+        "source_type": "Excel",
+        "file": "原始文件备份/LCATC-DS-04-XX-27-B0-热管理.xlsx",
+        "sheet": "Function list",
+        "row": 20,
+        "cell_range": "A20:F20",
+        "source_id": "3.3.1.6",
+        "source_title": "Automatic Climate Mode"
+      },
+      {
+        "source_type": "PDF设计需求",
+        "file": "原始文件备份/LCATC-DS-04-XX-27-B0-(CCU)Component Technical Specification.pdf",
+        "section": "6.13.1.3",
+        "printed_pages": "67–68",
+        "design_requirement_id": "SL30-LC07-SF01-自动空调控制",
+        "evidence": "AUTO按键请求、状态反馈；依据室内/室外/阳光/PTC温度信号自动调节鼓风机、冷热风门、模式风门、循环风门、压缩机和PTC功率；规定AUTO状态下按键切换行为。"
+      },
+      {
+        "source_type": "PDF设计需求",
+        "file": "原始文件备份/LCATC-DS-04-XX-27-B0-(CCU)Component Technical Specification.pdf",
+        "section": "6.13.1.4",
+        "printed_pages": "68",
+        "design_requirement_id": "SL30-LC07-SF02-自动空调温度控制",
+        "evidence": "定义温度LO/HI边界、每次温度调节0.5度，并说明自动状态下按目标温度调节冷热风门。"
+      },
+      {
+        "source_type": "PDF系统上下文",
+        "file": "原始文件备份/LCATC-DS-04-29-XX-B0-SL29_热管理子系统功能规范.pdf",
+        "section": "4.6.3.4–4.6.3.5",
+        "design_requirement_id": "SSTS-SL29-LC06-SF04/SF05",
+        "evidence": "CCU初始化后按50 ms周期检测室内温度和PTC温度，为温控输入提供依据。",
+        "original_printed_pages": "34–35",
+        "pdf_pages": [
+          30
+        ]
+      }
+    ],
+    "extras": {
+      "sensor_inputs": [
+        "室内温度",
+        "室外温度",
+        "日照负荷信息采集",
+        "供热入口温度/ 电加热源温度"
+      ],
+      "controlled_outputs": [
+        "空气输送能力",
+        "送风温度调节",
+        "送风模式调节",
+        "循环方式调节",
+        "制冷执行能力请求（转速接口）",
+        "电加热功率"
+      ],
+      "mode_transition_rules": [
+        "温度设置变化：保持AUTO并更新目标温度",
+        "循环设置变化：保持AUTO并继续自动控制",
+        "风量按钮或吹风模式按钮：退出AUTO",
+        "前除霜按钮：进入前除霜状态",
+        "AC按钮：关闭制冷执行功能请求/转速请求为0，其他自动控制项继续工作",
+        "AC按键后AUTO状态反馈为Close；其他指定控制项仍自动运行（CCU PDF p68）"
+      ],
+      "unresolved_items": [
+        "PDF指出制冷执行功能、空气输送功能、电加热功率之间的匹配关系需要进一步商讨明确。",
+        "温度LO/HI的具体控制策略和标定参数应在后续测试/标定中确认。"
+      ],
+      "original_requirement_id": "3.3.1.6",
+      "requirement_object": "乘员舱温度与自动控制状态",
+      "expected_effect": "按目标温度自动调节，并按用户操作保持或切换模式",
+      "requirement_expression": "乘员舱温度与自动控制状态：按目标温度自动调节，并按用户操作保持或切换模式"
+    }
+  },
+  {
+    "req_id": "3.3.1.9",
+    "name": "前后风窗除霜/除雾",
+    "description": "系统应响应用户通过中控屏发出的风窗除霜/除雾请求。对PDF明确规定的前除霜模式，CCU应控制风口切换至除霜位置、空气输送功能请求最大风量并切换外循环，根据环境温度条件发出AC请求及制冷执行能力请求（转速接口），同时将风量、温度、AC、循环和前除霜状态反馈给IVI显示。对前除雾模式，CCU应控制风口切换至除雾位置、最大风量和外循环，并根据环境温度发出AC除湿请求；PDF指出制冷执行功能用于除湿时以最低转速约1000 rpm运行，具体标定需确认。模式内温度、风量、循环及AUTO/AC/模式按钮的交互应遵循PDF规定。Excel标题覆盖前后风窗，但当前两份PDF中未找到后风窗除霜/加热的完整控制需求，需补充设计依据。",
+    "type": "功能需求",
+    "category": "功能性",
+    "source_refs": [
+      {
+        "file": "原始文件备份/3.3.1.2、3.3.1.6、3.3.1.9-需求条目.json",
+        "req_id": "3.3.1.9"
+      },
+      {
+        "source_type": "Excel",
+        "file": "原始文件备份/LCATC-DS-04-XX-27-B0-热管理.xlsx",
+        "sheet": "Function list",
+        "row": 23,
+        "cell_range": "A23:F23",
+        "source_id": "3.3.1.9",
+        "source_title": "Front and Rear Defrost / Defog Windscreen"
+      },
+      {
+        "source_type": "PDF设计需求",
+        "file": "原始文件备份/LCATC-DS-04-XX-27-B0-(CCU)Component Technical Specification.pdf",
+        "section": "6.12.1.3",
+        "printed_pages": "62–63",
+        "design_requirement_id": "SL30-LC06-SF01-前除霜控制",
+        "evidence": "IVI通过CAN发送前除霜请求；CCU通过硬线控制执行器并反馈状态；首次进入时除霜风口、最大风量、外循环，按环境温度确定AC请求，压缩机用于除湿时最低约1000 rpm；定义模式内操作和退出行为。"
+      },
+      {
+        "source_type": "PDF设计需求",
+        "file": "原始文件备份/LCATC-DS-04-XX-27-B0-(CCU)Component Technical Specification.pdf",
+        "section": "6.12.1.4",
+        "printed_pages": "63–64",
+        "design_requirement_id": "SL30-LC06-SF02-前除雾控制",
+        "evidence": "IVI通过CAN发送前除雾请求；CCU控制除雾风口、最大风量、外循环及AC请求，并反馈状态给IVI；定义模式内操作和退出行为。"
+      },
+      {
+        "source_type": "PDF系统级优先级",
+        "file": "原始文件备份/LCATC-DS-04-29-XX-B0-SL29_热管理子系统功能规范.pdf",
+        "section": "4.1.3.3",
+        "design_requirement_id": "SSTS-SL29-LC01-SF03",
+        "evidence": "乘员舱制冷与电池包冷却同时发生时，前除霜模式优先级高于电池包降温和乘员舱制冷；相关阈值仍含待定项。",
+        "original_printed_pages": "16–17",
+        "pdf_pages": [
+          13,
+          14
+        ]
+      }
+    ],
+    "extras": {
+      "front_defrost_behavior": [
+        "前除霜请求通过IVI/CAN传给CCU",
+        "风口切换至除霜位置",
+        "最大风量",
+        "外循环开度约90%（PDF标注待定）",
+        "根据环境温度确定AC请求和制冷执行能力请求（转速接口）",
+        "前除霜状态及相关空调信号反馈给IVI"
+      ],
+      "front_demist_behavior": [
+        "前除雾请求通过IVI/CAN传给CCU",
+        "风口切换至除雾位置",
+        "最大风量",
+        "外循环开度约90%（PDF标注待定）",
+        "按环境温度决定AC请求",
+        "制冷执行功能用于除湿时最低转速约1000 rpm（需标定）",
+        "前除雾状态及相关空调信号反馈给IVI"
+      ],
+      "priority_rule": "SL29 PDF指出前除霜优先级高于电池包降温（达到阈值）和乘员舱制冷；其完整仲裁条件仍有XX/TBD。",
+      "unresolved_items": [
+        "后风窗除霜/加热逻辑在当前两份PDF中未找到完整描述，不能由前风窗逻辑直接推定。",
+        "外循环开度90%和制冷执行能力（转速接口）属于待定/待标定内容。",
+        "需明确后风窗是否采用独立电加热丝、由哪个控制器驱动以及反馈信号。"
+      ],
+      "original_requirement_id": "3.3.1.9",
+      "requirement_object": "前风窗可视状态",
+      "expected_effect": "按有依据的前除霜或前除雾模式改善可视状态；后风窗细节待确认",
+      "requirement_expression": "前风窗可视状态：按有依据的前除霜或前除雾模式改善可视状态；后风窗细节待确认"
+    }
+  },
+  {
+    "req_id": "IND-001",
+    "name": "空气输送功能状态",
+    "description": "空气输送功能必须处于开启状态",
+    "type": "硬约束",
+    "category": "功能性",
+    "source_refs": [
+      {
+        "file": "原始文件备份/3.3.1.2、3.3.1.6、3.3.1.9-指标分配表.xlsx",
+        "sheet": "指标分配表",
+        "row": 2,
+        "cell_range": "A2:E2"
+      },
+      {
+        "file": "原始文件备份/LCATC-DS-04-XX-27-B0-(CCU)Component Technical Specification.pdf",
+        "section": "6.11.1.3",
+        "pdf_pages": [
+          60
+        ]
+      }
+    ],
+    "extras": {
+      "measurement_unit": null,
+      "measurement_range": "空气输送功能必须处于开启状态",
+      "default_value": null,
+      "indicator_type": "逻辑约束",
+      "component_function_name": "判定电加热使能条件",
+      "function_id": "LF-001",
+      "parent_requirement": "3.3.1.2",
+      "original_row": 2,
+      "original_indicator_name": "鼓风机状态",
+      "original_measurement_text": "鼓风机必须处于开启状态",
+      "confirmation_status": "原文/原表要求",
+      "legacy_indicator_type": "使能条件",
+      "legacy_type": "指标",
+      "legacy_category": "功能性",
+      "requirement_nature": "逻辑约束",
+      "classification_reason": "约束使能、保护、模式、状态或触发条件；有阈值也不等同于性能指标",
+      "validation_status": "分析级条款，待下游验证",
+      "canonical_function_id": "LF-001"
+    }
+  },
+  {
+    "req_id": "IND-002",
+    "name": "目标温度与室内温度关系",
+    "description": "目标温度高于室内温度",
+    "type": "硬约束",
+    "category": "功能性",
+    "source_refs": [
+      {
+        "file": "原始文件备份/3.3.1.2、3.3.1.6、3.3.1.9-指标分配表.xlsx",
+        "sheet": "指标分配表",
+        "row": 3,
+        "cell_range": "A3:E3"
+      },
+      {
+        "file": "原始文件备份/LCATC-DS-04-XX-27-B0-(CCU)Component Technical Specification.pdf",
+        "section": "6.11.1.3",
+        "pdf_pages": [
+          60
+        ]
+      }
+    ],
+    "extras": {
+      "measurement_unit": null,
+      "measurement_range": "目标温度 > 室内温度",
+      "default_value": null,
+      "indicator_type": "逻辑约束",
+      "component_function_name": "判定电加热使能条件",
+      "function_id": "LF-001",
+      "parent_requirement": "3.3.1.2",
+      "original_row": 3,
+      "original_indicator_name": "目标温度与室内温度关系",
+      "original_measurement_text": "目标温度高于室内温度",
+      "confirmation_status": "原文/原表要求",
+      "legacy_indicator_type": "使能条件",
+      "legacy_type": "指标",
+      "legacy_category": "功能性",
+      "requirement_nature": "逻辑约束",
+      "classification_reason": "约束使能、保护、模式、状态或触发条件；有阈值也不等同于性能指标",
+      "validation_status": "分析级条款，待下游验证",
+      "canonical_function_id": "LF-001"
+    }
+  },
+  {
+    "req_id": "IND-003",
+    "name": "车辆高压状态",
+    "description": "车辆处于高压状态",
+    "type": "硬约束",
+    "category": "安全性",
+    "source_refs": [
+      {
+        "file": "原始文件备份/3.3.1.2、3.3.1.6、3.3.1.9-指标分配表.xlsx",
+        "sheet": "指标分配表",
+        "row": 4,
+        "cell_range": "A4:E4"
+      },
+      {
+        "file": "原始文件备份/LCATC-DS-04-XX-27-B0-(CCU)Component Technical Specification.pdf",
+        "section": "6.11.1.3",
+        "pdf_pages": [
+          60
+        ]
+      }
+    ],
+    "extras": {
+      "measurement_unit": null,
+      "measurement_range": "车辆处于高压状态",
+      "default_value": null,
+      "indicator_type": "逻辑约束",
+      "component_function_name": "判定电加热使能条件",
+      "function_id": "LF-001",
+      "parent_requirement": "3.3.1.2",
+      "original_row": 4,
+      "original_indicator_name": "车辆高压状态",
+      "original_measurement_text": "车辆处于高压状态",
+      "confirmation_status": "原文/原表要求",
+      "legacy_indicator_type": "电源条件",
+      "legacy_type": "指标",
+      "legacy_category": "安全性",
+      "requirement_nature": "逻辑约束",
+      "classification_reason": "约束使能、保护、模式、状态或触发条件；有阈值也不等同于性能指标",
+      "validation_status": "分析级条款，待下游验证",
+      "canonical_function_id": "LF-001"
+    }
+  },
+  {
+    "req_id": "IND-004",
+    "name": "整车故障状态",
+    "description": "整车无故障",
+    "type": "硬约束",
+    "category": "安全性",
+    "source_refs": [
+      {
+        "file": "原始文件备份/3.3.1.2、3.3.1.6、3.3.1.9-指标分配表.xlsx",
+        "sheet": "指标分配表",
+        "row": 5,
+        "cell_range": "A5:E5"
+      },
+      {
+        "file": "原始文件备份/LCATC-DS-04-XX-27-B0-(CCU)Component Technical Specification.pdf",
+        "section": "6.11.1.3",
+        "pdf_pages": [
+          60
+        ]
+      }
+    ],
+    "extras": {
+      "measurement_unit": null,
+      "measurement_range": "整车无故障",
+      "default_value": null,
+      "indicator_type": "逻辑约束",
+      "component_function_name": "判定整车故障下的加热许可",
+      "function_id": "LF-002",
+      "parent_requirement": "3.3.1.2",
+      "original_row": 5,
+      "original_indicator_name": "整车故障状态",
+      "original_measurement_text": "整车无故障",
+      "confirmation_status": "原文/原表要求",
+      "legacy_indicator_type": "故障约束",
+      "legacy_type": "指标",
+      "legacy_category": "安全性",
+      "requirement_nature": "逻辑约束",
+      "classification_reason": "约束使能、保护、模式、状态或触发条件；有阈值也不等同于性能指标",
+      "validation_status": "分析级条款，待下游验证",
+      "canonical_function_id": "LF-002"
+    }
+  },
+  {
+    "req_id": "IND-005",
+    "name": "SOC使能阈值",
+    "description": "SOC > 10%",
+    "type": "硬约束",
+    "category": "安全性",
+    "source_refs": [
+      {
+        "file": "原始文件备份/3.3.1.2、3.3.1.6、3.3.1.9-指标分配表.xlsx",
+        "sheet": "指标分配表",
+        "row": 6,
+        "cell_range": "A6:E6"
+      },
+      {
+        "file": "原始文件备份/LCATC-DS-04-XX-27-B0-(CCU)Component Technical Specification.pdf",
+        "section": "6.11.1.3",
+        "pdf_pages": [
+          60
+        ]
+      }
+    ],
+    "extras": {
+      "measurement_unit": "%",
+      "measurement_range": "SOC > 10%",
+      "default_value": null,
+      "indicator_type": "逻辑约束",
+      "component_function_name": "判定电量约束下的加热许可",
+      "function_id": "LF-003",
+      "parent_requirement": "3.3.1.2",
+      "original_row": 6,
+      "original_indicator_name": "SOC使能阈值",
+      "original_measurement_text": "SOC > 10%",
+      "confirmation_status": "原文/原表要求",
+      "legacy_indicator_type": "电量保护",
+      "legacy_type": "指标",
+      "legacy_category": "安全性",
+      "requirement_nature": "逻辑约束",
+      "classification_reason": "约束使能、保护、模式、状态或触发条件；有阈值也不等同于性能指标",
+      "validation_status": "分析级条款，待下游验证",
+      "canonical_function_id": "LF-003"
+    }
+  },
+  {
+    "req_id": "IND-006",
+    "name": "电加热通断控制",
+    "description": "满足全部使能条件后，CCU按请求控制电加热通断闭合/断开",
+    "type": "硬约束",
+    "category": "功能性",
+    "source_refs": [
+      {
+        "file": "原始文件备份/3.3.1.2、3.3.1.6、3.3.1.9-指标分配表.xlsx",
+        "sheet": "指标分配表",
+        "row": 7,
+        "cell_range": "A7:E7"
+      },
+      {
+        "file": "原始文件备份/LCATC-DS-04-XX-27-B0-(CCU)Component Technical Specification.pdf",
+        "section": "6.11.1.3",
+        "pdf_pages": [
+          60
+        ]
+      }
+    ],
+    "extras": {
+      "measurement_unit": null,
+      "measurement_range": "满足全部使能条件后，CCU按请求控制电加热通断闭合/断开",
+      "default_value": null,
+      "indicator_type": "逻辑约束",
+      "component_function_name": "控制电加热通断",
+      "function_id": "LF-004",
+      "parent_requirement": "3.3.1.2",
+      "original_row": 7,
+      "original_indicator_name": "PTC继电器控制",
+      "original_measurement_text": "满足全部使能条件后，CCU按请求控制PTC继电器闭合/断开",
+      "confirmation_status": "原文/原表要求",
+      "legacy_indicator_type": "执行控制",
+      "legacy_type": "指标",
+      "legacy_category": "功能性",
+      "requirement_nature": "逻辑约束",
+      "classification_reason": "约束使能、保护、模式、状态或触发条件；有阈值也不等同于性能指标",
+      "validation_status": "分析级条款，待下游验证",
+      "canonical_function_id": "LF-004"
+    }
+  },
+  {
+    "req_id": "IND-007",
+    "name": "电加热过温断开阈值",
+    "description": "电加热温度 ≥ XXX ℃ 时断开继电器；具体阈值待标定",
+    "type": "硬约束",
+    "category": "安全性",
+    "source_refs": [
+      {
+        "file": "原始文件备份/3.3.1.2、3.3.1.6、3.3.1.9-指标分配表.xlsx",
+        "sheet": "指标分配表",
+        "row": 8,
+        "cell_range": "A8:E8"
+      },
+      {
+        "file": "原始文件备份/LCATC-DS-04-XX-27-B0-(CCU)Component Technical Specification.pdf",
+        "section": "6.11.1.3",
+        "pdf_pages": [
+          60
+        ]
+      }
+    ],
+    "extras": {
+      "measurement_unit": "℃",
+      "measurement_range": "电加热温度 >= XXX ℃；待标定",
+      "default_value": null,
+      "indicator_type": "逻辑约束",
+      "component_function_name": "切断过温电加热请求",
+      "function_id": "LF-005",
+      "parent_requirement": "3.3.1.2",
+      "original_row": 8,
+      "original_indicator_name": "PTC过温断开阈值",
+      "original_measurement_text": "PTC温度 ≥ XXX ℃ 时断开继电器；具体阈值待标定",
+      "confirmation_status": "待确认/待标定",
+      "legacy_indicator_type": "温度保护",
+      "legacy_type": "指标",
+      "legacy_category": "安全性",
+      "requirement_nature": "逻辑约束",
+      "classification_reason": "约束使能、保护、模式、状态或触发条件；有阈值也不等同于性能指标",
+      "validation_status": "待标定/确认",
+      "canonical_function_id": "LF-005"
+    }
+  },
+  {
+    "req_id": "IND-008",
+    "name": "电加热重新允许闭合温度",
+    "description": "电加热温度 ≤ XXX ℃ 时才允许再次闭合；具体阈值待标定",
+    "type": "硬约束",
+    "category": "可靠性",
+    "source_refs": [
+      {
+        "file": "原始文件备份/3.3.1.2、3.3.1.6、3.3.1.9-指标分配表.xlsx",
+        "sheet": "指标分配表",
+        "row": 9,
+        "cell_range": "A9:E9"
+      },
+      {
+        "file": "原始文件备份/LCATC-DS-04-XX-27-B0-(CCU)Component Technical Specification.pdf",
+        "section": "6.11.1.3",
+        "pdf_pages": [
+          60
+        ]
+      }
+    ],
+    "extras": {
+      "measurement_unit": "℃",
+      "measurement_range": "电加热温度 <= XXX ℃；待标定",
+      "default_value": null,
+      "indicator_type": "逻辑约束",
+      "component_function_name": "判定电加热恢复许可",
+      "function_id": "LF-006",
+      "parent_requirement": "3.3.1.2",
+      "original_row": 9,
+      "original_indicator_name": "PTC重新允许闭合温度",
+      "original_measurement_text": "PTC温度 ≤ XXX ℃ 时才允许再次闭合；具体阈值待标定",
+      "confirmation_status": "待确认/待标定",
+      "legacy_indicator_type": "恢复控制",
+      "legacy_type": "指标",
+      "legacy_category": "可靠性",
+      "requirement_nature": "逻辑约束",
+      "classification_reason": "约束使能、保护、模式、状态或触发条件；有阈值也不等同于性能指标",
+      "validation_status": "待标定/确认",
+      "canonical_function_id": "LF-006"
+    }
+  },
+  {
+    "req_id": "IND-009",
+    "name": "电加热状态反馈内容",
+    "description": "电加热通断状态、电加热当前温度、电加热工作状态、实际功率、最大工作功率发送至总线",
+    "type": "硬约束",
+    "category": "功能性",
+    "source_refs": [
+      {
+        "file": "原始文件备份/3.3.1.2、3.3.1.6、3.3.1.9-指标分配表.xlsx",
+        "sheet": "指标分配表",
+        "row": 10,
+        "cell_range": "A10:E10"
+      },
+      {
+        "file": "原始文件备份/LCATC-DS-04-XX-27-B0-(CCU)Component Technical Specification.pdf",
+        "section": "6.11.1.3",
+        "pdf_pages": [
+          60
+        ]
+      }
+    ],
+    "extras": {
+      "measurement_unit": null,
+      "measurement_range": "电加热通断状态、电加热当前温度、电加热工作状态、实际功率、最大工作功率发送至总线",
+      "default_value": null,
+      "indicator_type": "接口要求",
+      "component_function_name": "反馈电加热状态",
+      "function_id": "LF-007",
+      "parent_requirement": "3.3.1.2",
+      "original_row": 10,
+      "original_indicator_name": "PTC状态反馈内容",
+      "original_measurement_text": "PTC继电器状态、PTC当前温度、PTC工作状态、实际功率、最大工作功率发送至总线",
+      "confirmation_status": "原文/原表要求",
+      "legacy_indicator_type": "状态反馈",
+      "legacy_type": "指标",
+      "legacy_category": "功能性",
+      "requirement_nature": "接口要求",
+      "classification_reason": "约束信息输入、输出内容或通信通道；不是数值性能要求",
+      "validation_status": "分析级条款，待下游验证",
+      "canonical_function_id": "LF-007"
+    }
+  },
+  {
+    "req_id": "IND-010",
+    "name": "电加热控制响应时间",
+    "description": "TBD（所给规范未明确具体时限）",
+    "type": "指标",
+    "category": "性能",
+    "source_refs": [
+      {
+        "file": "原始文件备份/3.3.1.2、3.3.1.6、3.3.1.9-指标分配表.xlsx",
+        "sheet": "指标分配表",
+        "row": 11,
+        "cell_range": "A11:E11"
+      }
+    ],
+    "extras": {
+      "measurement_unit": null,
+      "measurement_range": "TBD（所给规范未明确具体时限）",
+      "default_value": null,
+      "indicator_type": "性能指标",
+      "component_function_name": "控制电加热通断",
+      "function_id": "LF-004",
+      "parent_requirement": "3.3.1.2",
+      "original_row": 11,
+      "original_indicator_name": "PTC控制响应时间",
+      "original_measurement_text": "TBD（所给规范未明确具体时限）",
+      "confirmation_status": "待确认/待标定",
+      "legacy_indicator_type": "控制时序",
+      "legacy_type": "指标",
+      "legacy_category": "性能",
+      "requirement_nature": "性能指标",
+      "classification_reason": "可度量步长、检测周期、偏差或响应时长；缺数值仍保留TBD，不伪造验收界限",
+      "validation_status": "缺少定量界限，待完善",
+      "canonical_function_id": "LF-004"
+    }
+  },
+  {
+    "req_id": "IND-011",
+    "name": "低温边界显示",
+    "description": "设定温度 < 16 ℃ 时定义为 LO",
+    "type": "硬约束",
+    "category": "功能性",
+    "source_refs": [
+      {
+        "file": "原始文件备份/3.3.1.2、3.3.1.6、3.3.1.9-指标分配表.xlsx",
+        "sheet": "指标分配表",
+        "row": 12,
+        "cell_range": "A12:E12"
+      },
+      {
+        "file": "原始文件备份/LCATC-DS-04-XX-27-B0-(CCU)Component Technical Specification.pdf",
+        "section": "6.13.1.3–6.13.1.4",
+        "pdf_pages": [
+          67,
+          68
+        ]
+      }
+    ],
+    "extras": {
+      "measurement_unit": "℃",
+      "measurement_range": "设定温度 < 16 ℃ → LO",
+      "default_value": null,
+      "indicator_type": "逻辑约束",
+      "component_function_name": "判定目标温度边界",
+      "function_id": "LF-008",
+      "parent_requirement": "3.3.1.6",
+      "original_row": 12,
+      "original_indicator_name": "低温边界显示",
+      "original_measurement_text": "设定温度 < 16 ℃ 时定义为 LO",
+      "confirmation_status": "原文/原表要求",
+      "legacy_indicator_type": "温度设定",
+      "legacy_type": "指标",
+      "legacy_category": "性能",
+      "requirement_nature": "逻辑约束",
+      "classification_reason": "约束使能、保护、模式、状态或触发条件；有阈值也不等同于性能指标",
+      "validation_status": "分析级条款，待下游验证",
+      "canonical_function_id": "LF-008"
+    }
+  },
+  {
+    "req_id": "IND-012",
+    "name": "高温边界显示",
+    "description": "设定温度 > 30 ℃ 时定义为 HI",
+    "type": "硬约束",
+    "category": "功能性",
+    "source_refs": [
+      {
+        "file": "原始文件备份/3.3.1.2、3.3.1.6、3.3.1.9-指标分配表.xlsx",
+        "sheet": "指标分配表",
+        "row": 13,
+        "cell_range": "A13:E13"
+      },
+      {
+        "file": "原始文件备份/LCATC-DS-04-XX-27-B0-(CCU)Component Technical Specification.pdf",
+        "section": "6.13.1.3–6.13.1.4",
+        "pdf_pages": [
+          67,
+          68
+        ]
+      }
+    ],
+    "extras": {
+      "measurement_unit": "℃",
+      "measurement_range": "设定温度 > 30 ℃ → HI",
+      "default_value": null,
+      "indicator_type": "逻辑约束",
+      "component_function_name": "判定目标温度边界",
+      "function_id": "LF-008",
+      "parent_requirement": "3.3.1.6",
+      "original_row": 13,
+      "original_indicator_name": "高温边界显示",
+      "original_measurement_text": "设定温度 > 30 ℃ 时定义为 HI",
+      "confirmation_status": "原文/原表要求",
+      "legacy_indicator_type": "温度设定",
+      "legacy_type": "指标",
+      "legacy_category": "性能",
+      "requirement_nature": "逻辑约束",
+      "classification_reason": "约束使能、保护、模式、状态或触发条件；有阈值也不等同于性能指标",
+      "validation_status": "分析级条款，待下游验证",
+      "canonical_function_id": "LF-008"
+    }
+  },
+  {
+    "req_id": "IND-013",
+    "name": "单次温度调节步长",
+    "description": "每次温度增加/减小 0.5 ℃",
+    "type": "指标",
+    "category": "性能",
+    "source_refs": [
+      {
+        "file": "原始文件备份/3.3.1.2、3.3.1.6、3.3.1.9-指标分配表.xlsx",
+        "sheet": "指标分配表",
+        "row": 14,
+        "cell_range": "A14:E14"
+      },
+      {
+        "file": "原始文件备份/LCATC-DS-04-XX-27-B0-(CCU)Component Technical Specification.pdf",
+        "section": "6.13.1.3–6.13.1.4",
+        "pdf_pages": [
+          67,
+          68
+        ]
+      }
+    ],
+    "extras": {
+      "measurement_unit": "℃",
+      "measurement_range": "每次增加/减小 0.5 ℃",
+      "default_value": null,
+      "indicator_type": "性能指标",
+      "component_function_name": "更新座舱目标温度",
+      "function_id": "LF-009",
+      "parent_requirement": "3.3.1.6",
+      "original_row": 14,
+      "original_indicator_name": "单次温度调节步长",
+      "original_measurement_text": "每次温度增加/减小 0.5 ℃",
+      "confirmation_status": "原文/原表要求",
+      "legacy_indicator_type": "温度调节",
+      "legacy_type": "指标",
+      "legacy_category": "性能",
+      "requirement_nature": "性能指标",
+      "classification_reason": "可度量步长、检测周期、偏差或响应时长；缺数值仍保留TBD，不伪造验收界限",
+      "validation_status": "分析级条款，待下游验证",
+      "canonical_function_id": "LF-009"
+    }
+  },
+  {
+    "req_id": "IND-014",
+    "name": "自动调节输入信息",
+    "description": "室内温度、室外温度、日照负荷信息、供热入口温度",
+    "type": "硬约束",
+    "category": "功能性",
+    "source_refs": [
+      {
+        "file": "原始文件备份/3.3.1.2、3.3.1.6、3.3.1.9-指标分配表.xlsx",
+        "sheet": "指标分配表",
+        "row": 15,
+        "cell_range": "A15:E15"
+      },
+      {
+        "file": "原始文件备份/LCATC-DS-04-XX-27-B0-(CCU)Component Technical Specification.pdf",
+        "section": "6.13.1.3–6.13.1.4",
+        "pdf_pages": [
+          67,
+          68
+        ]
+      }
+    ],
+    "extras": {
+      "measurement_unit": null,
+      "measurement_range": "室内温度、室外温度、日照负荷信息、供热入口温度",
+      "default_value": null,
+      "indicator_type": "接口要求",
+      "component_function_name": "获取温度与环境信息",
+      "function_id": "LF-010",
+      "parent_requirement": "3.3.1.6",
+      "original_row": 15,
+      "original_indicator_name": "自动调节输入信息",
+      "original_measurement_text": "室内温度、室外温度、阳光传感器信号、PTC暖芯入口温度",
+      "confirmation_status": "原文/原表要求",
+      "legacy_indicator_type": "输入信号",
+      "legacy_type": "指标",
+      "legacy_category": "功能性",
+      "requirement_nature": "接口要求",
+      "classification_reason": "约束信息输入、输出内容或通信通道；不是数值性能要求",
+      "validation_status": "分析级条款，待下游验证",
+      "canonical_function_id": "LF-010"
+    }
+  },
+  {
+    "req_id": "IND-015",
+    "name": "自动调节对象",
+    "description": "空气输送能力、送风温度调节、送风模式调节、循环方式调节、制冷执行能力（转速接口）；根据系统配置控制电加热功率",
+    "type": "硬约束",
+    "category": "功能性",
+    "source_refs": [
+      {
+        "file": "原始文件备份/3.3.1.2、3.3.1.6、3.3.1.9-指标分配表.xlsx",
+        "sheet": "指标分配表",
+        "row": 16,
+        "cell_range": "A16:E16"
+      },
+      {
+        "file": "原始文件备份/LCATC-DS-04-XX-27-B0-(CCU)Component Technical Specification.pdf",
+        "section": "6.13.1.3–6.13.1.4",
+        "pdf_pages": [
+          67,
+          68
+        ]
+      }
+    ],
+    "extras": {
+      "measurement_unit": null,
+      "measurement_range": "空气输送能力、送风温度调节、送风模式调节、循环方式调节、制冷执行能力（转速接口）；根据系统配置控制电加热功率",
+      "default_value": null,
+      "indicator_type": "接口要求",
+      "component_function_name": "协调自动温控请求",
+      "function_id": "LF-011",
+      "parent_requirement": "3.3.1.6",
+      "original_row": 16,
+      "original_indicator_name": "自动调节对象",
+      "original_measurement_text": "鼓风机转速、冷热风门、模式风门、循环风门、压缩机转速；根据系统配置控制PTC功率",
+      "confirmation_status": "原文/原表要求",
+      "legacy_indicator_type": "执行控制",
+      "legacy_type": "指标",
+      "legacy_category": "功能性",
+      "requirement_nature": "接口要求",
+      "classification_reason": "约束信息输入、输出内容或通信通道；不是数值性能要求",
+      "validation_status": "分析级条款，待下游验证",
+      "canonical_function_id": "LF-011"
+    }
+  },
+  {
+    "req_id": "IND-016",
+    "name": "自动模式状态反馈",
+    "description": "CCU反馈自动模式状态给IVI；接口信号包括 CCU_AUTO_Status",
+    "type": "硬约束",
+    "category": "功能性",
+    "source_refs": [
+      {
+        "file": "原始文件备份/3.3.1.2、3.3.1.6、3.3.1.9-指标分配表.xlsx",
+        "sheet": "指标分配表",
+        "row": 17,
+        "cell_range": "A17:E17"
+      },
+      {
+        "file": "原始文件备份/LCATC-DS-04-XX-27-B0-(CCU)Component Technical Specification.pdf",
+        "section": "6.13.1.3–6.13.1.4",
+        "pdf_pages": [
+          67,
+          68
+        ]
+      }
+    ],
+    "extras": {
+      "measurement_unit": null,
+      "measurement_range": "CCU反馈自动模式状态给IVI；接口信号包括 CCU_AUTO_Status",
+      "default_value": null,
+      "indicator_type": "接口要求",
+      "component_function_name": "反馈自动模式状态",
+      "function_id": "LF-012",
+      "parent_requirement": "3.3.1.6",
+      "original_row": 17,
+      "original_indicator_name": "自动模式状态反馈",
+      "original_measurement_text": "CCU反馈自动模式状态给IVI；接口信号包括 CCU_AUTO_Status",
+      "confirmation_status": "原文/原表要求",
+      "legacy_indicator_type": "状态反馈",
+      "legacy_type": "指标",
+      "legacy_category": "功能性",
+      "requirement_nature": "接口要求",
+      "classification_reason": "约束信息输入、输出内容或通信通道；不是数值性能要求",
+      "validation_status": "分析级条款，待下游验证",
+      "canonical_function_id": "LF-012"
+    }
+  },
+  {
+    "req_id": "IND-017",
+    "name": "空调状态反馈内容",
+    "description": "空气输送等级、温度档位、AC状态、循环状态、吹风模式、AUTO状态",
+    "type": "硬约束",
+    "category": "功能性",
+    "source_refs": [
+      {
+        "file": "原始文件备份/3.3.1.2、3.3.1.6、3.3.1.9-指标分配表.xlsx",
+        "sheet": "指标分配表",
+        "row": 18,
+        "cell_range": "A18:E18"
+      },
+      {
+        "file": "原始文件备份/LCATC-DS-04-XX-27-B0-(CCU)Component Technical Specification.pdf",
+        "section": "6.13.1.3–6.13.1.4",
+        "pdf_pages": [
+          67,
+          68
+        ]
+      }
+    ],
+    "extras": {
+      "measurement_unit": null,
+      "measurement_range": "空气输送等级、温度档位、AC状态、循环状态、吹风模式、AUTO状态",
+      "default_value": null,
+      "indicator_type": "接口要求",
+      "component_function_name": "反馈空调运行状态",
+      "function_id": "LF-013",
+      "parent_requirement": "3.3.1.6",
+      "original_row": 18,
+      "original_indicator_name": "空调状态反馈内容",
+      "original_measurement_text": "鼓风机档位、温度档位、AC状态、循环状态、吹风模式、AUTO状态",
+      "confirmation_status": "原文/原表要求",
+      "legacy_indicator_type": "状态反馈",
+      "legacy_type": "指标",
+      "legacy_category": "功能性",
+      "requirement_nature": "接口要求",
+      "classification_reason": "约束信息输入、输出内容或通信通道；不是数值性能要求",
+      "validation_status": "分析级条款，待下游验证",
+      "canonical_function_id": "LF-013"
+    }
+  },
+  {
+    "req_id": "IND-018",
+    "name": "温度调节后的模式状态",
+    "description": "AUTO状态下调节温度不退出AUTO，仅更新目标温度并继续自动控制",
+    "type": "硬约束",
+    "category": "功能性",
+    "source_refs": [
+      {
+        "file": "原始文件备份/3.3.1.2、3.3.1.6、3.3.1.9-指标分配表.xlsx",
+        "sheet": "指标分配表",
+        "row": 19,
+        "cell_range": "A19:E19"
+      },
+      {
+        "file": "原始文件备份/LCATC-DS-04-XX-27-B0-(CCU)Component Technical Specification.pdf",
+        "section": "6.13.1.3–6.13.1.4",
+        "pdf_pages": [
+          67,
+          68
+        ]
+      }
+    ],
+    "extras": {
+      "measurement_unit": null,
+      "measurement_range": "AUTO状态下调节温度不退出AUTO，仅更新目标温度并继续自动控制",
+      "default_value": null,
+      "indicator_type": "逻辑约束",
+      "component_function_name": "切换自动模式状态",
+      "function_id": "LF-014",
+      "parent_requirement": "3.3.1.6",
+      "original_row": 19,
+      "original_indicator_name": "温度调节后的模式状态",
+      "original_measurement_text": "AUTO状态下调节温度不退出AUTO，仅更新目标温度并继续自动控制",
+      "confirmation_status": "原文/原表要求",
+      "legacy_indicator_type": "模式保持",
+      "legacy_type": "指标",
+      "legacy_category": "功能性",
+      "requirement_nature": "逻辑约束",
+      "classification_reason": "约束使能、保护、模式、状态或触发条件；有阈值也不等同于性能指标",
+      "validation_status": "分析级条款，待下游验证",
+      "canonical_function_id": "LF-014"
+    }
+  },
+  {
+    "req_id": "IND-019",
+    "name": "目标温度控制偏差",
+    "description": "TBD（原表未给出控制偏差数值）",
+    "type": "指标",
+    "category": "性能",
+    "source_refs": [
+      {
+        "file": "原始文件备份/3.3.1.2、3.3.1.6、3.3.1.9-指标分配表.xlsx",
+        "sheet": "指标分配表",
+        "row": 20,
+        "cell_range": "A20:E20"
+      }
+    ],
+    "extras": {
+      "measurement_unit": "℃",
+      "measurement_range": "TBD（原表未给出控制偏差数值）",
+      "default_value": null,
+      "indicator_type": "性能指标",
+      "component_function_name": "调节座舱温度",
+      "function_id": "LF-015",
+      "parent_requirement": "3.3.1.6",
+      "original_row": 20,
+      "original_indicator_name": "目标温度控制偏差",
+      "original_measurement_text": "TBD（原表未给出控制偏差数值）",
+      "confirmation_status": "待确认/待标定",
+      "legacy_indicator_type": "控制性能",
+      "legacy_type": "指标",
+      "legacy_category": "性能",
+      "requirement_nature": "性能指标",
+      "classification_reason": "可度量步长、检测周期、偏差或响应时长；缺数值仍保留TBD，不伪造验收界限",
+      "validation_status": "缺少定量界限，待完善",
+      "canonical_function_id": "LF-015"
+    }
+  },
+  {
+    "req_id": "IND-020",
+    "name": "目标温度稳定时间",
+    "description": "TBD（原表未给出稳定时间数值）",
+    "type": "指标",
+    "category": "性能",
+    "source_refs": [
+      {
+        "file": "原始文件备份/3.3.1.2、3.3.1.6、3.3.1.9-指标分配表.xlsx",
+        "sheet": "指标分配表",
+        "row": 20,
+        "cell_range": "A20:E20"
+      }
+    ],
+    "extras": {
+      "measurement_unit": null,
+      "measurement_range": "TBD（原表未给出稳定时间数值）",
+      "default_value": null,
+      "indicator_type": "性能指标",
+      "component_function_name": "调节座舱温度",
+      "function_id": "LF-015",
+      "parent_requirement": "3.3.1.6",
+      "original_row": 20,
+      "original_indicator_name": "目标温度稳定时间",
+      "original_measurement_text": "TBD（原表未给出稳定时间数值）",
+      "confirmation_status": "待确认/待标定",
+      "legacy_indicator_type": "控制性能",
+      "legacy_type": "指标",
+      "legacy_category": "性能",
+      "requirement_nature": "性能指标",
+      "classification_reason": "可度量步长、检测周期、偏差或响应时长；缺数值仍保留TBD，不伪造验收界限",
+      "validation_status": "缺少定量界限，待完善",
+      "canonical_function_id": "LF-015"
+    }
+  },
+  {
+    "req_id": "IND-021",
+    "name": "前除霜/除雾请求通道",
+    "description": "IVI通过CAN向CCU发送前除霜/前除雾请求",
+    "type": "硬约束",
+    "category": "功能性",
+    "source_refs": [
+      {
+        "file": "原始文件备份/3.3.1.2、3.3.1.6、3.3.1.9-指标分配表.xlsx",
+        "sheet": "指标分配表",
+        "row": 21,
+        "cell_range": "A21:E21"
+      },
+      {
+        "file": "原始文件备份/LCATC-DS-04-XX-27-B0-(CCU)Component Technical Specification.pdf",
+        "section": "6.12.1.3–6.12.1.4",
+        "pdf_pages": [
+          63,
+          64
+        ]
+      }
+    ],
+    "extras": {
+      "measurement_unit": null,
+      "measurement_range": "IVI通过CAN向CCU发送前除霜/前除雾请求",
+      "default_value": null,
+      "indicator_type": "接口要求",
+      "component_function_name": "接收风窗除霜除雾请求",
+      "function_id": "LF-016",
+      "parent_requirement": "3.3.1.9",
+      "original_row": 21,
+      "original_indicator_name": "前除霜/除雾请求通道",
+      "original_measurement_text": "IVI通过CAN向CCU发送前除霜/前除雾请求",
+      "confirmation_status": "原文/原表要求",
+      "legacy_indicator_type": "通信接口",
+      "legacy_type": "指标",
+      "legacy_category": "功能性",
+      "requirement_nature": "接口要求",
+      "classification_reason": "约束信息输入、输出内容或通信通道；不是数值性能要求",
+      "validation_status": "分析级条款，待下游验证",
+      "canonical_function_id": "LF-016"
+    }
+  },
+  {
+    "req_id": "IND-022",
+    "name": "初始出风口位置",
+    "description": "进入前除霜/除雾状态后，出风口切换至对应除霜/除雾位置",
+    "type": "硬约束",
+    "category": "安全性",
+    "source_refs": [
+      {
+        "file": "原始文件备份/3.3.1.2、3.3.1.6、3.3.1.9-指标分配表.xlsx",
+        "sheet": "指标分配表",
+        "row": 22,
+        "cell_range": "A22:E22"
+      },
+      {
+        "file": "原始文件备份/LCATC-DS-04-XX-27-B0-(CCU)Component Technical Specification.pdf",
+        "section": "6.12.1.3–6.12.1.4",
+        "pdf_pages": [
+          63,
+          64
+        ]
+      }
+    ],
+    "extras": {
+      "measurement_unit": null,
+      "measurement_range": "进入前除霜/除雾状态后，出风口切换至对应除霜/除雾位置",
+      "default_value": null,
+      "indicator_type": "逻辑约束",
+      "component_function_name": "调节送风模式",
+      "function_id": "LF-017",
+      "parent_requirement": "3.3.1.9",
+      "original_row": 22,
+      "original_indicator_name": "初始出风口位置",
+      "original_measurement_text": "进入前除霜/除雾状态后，出风口切换至对应除霜/除雾位置",
+      "confirmation_status": "原文/原表要求",
+      "legacy_indicator_type": "出风控制",
+      "legacy_type": "指标",
+      "legacy_category": "安全性",
+      "requirement_nature": "逻辑约束",
+      "classification_reason": "约束使能、保护、模式、状态或触发条件；有阈值也不等同于性能指标",
+      "validation_status": "分析级条款，待下游验证",
+      "canonical_function_id": "LF-017"
+    }
+  },
+  {
+    "req_id": "IND-023",
+    "name": "初始空气输送功能风量",
+    "description": "最大风量",
+    "type": "硬约束",
+    "category": "安全性",
+    "source_refs": [
+      {
+        "file": "原始文件备份/3.3.1.2、3.3.1.6、3.3.1.9-指标分配表.xlsx",
+        "sheet": "指标分配表",
+        "row": 23,
+        "cell_range": "A23:E23"
+      },
+      {
+        "file": "原始文件备份/LCATC-DS-04-XX-27-B0-(CCU)Component Technical Specification.pdf",
+        "section": "6.12.1.3–6.12.1.4",
+        "pdf_pages": [
+          63,
+          64
+        ]
+      }
+    ],
+    "extras": {
+      "measurement_unit": null,
+      "measurement_range": "最大风量",
+      "default_value": null,
+      "indicator_type": "逻辑约束",
+      "component_function_name": "调节送风量",
+      "function_id": "LF-018",
+      "parent_requirement": "3.3.1.9",
+      "original_row": 23,
+      "original_indicator_name": "初始鼓风机风量",
+      "original_measurement_text": "最大风量",
+      "confirmation_status": "原文/原表要求",
+      "legacy_indicator_type": "风量控制",
+      "legacy_type": "指标",
+      "legacy_category": "安全性",
+      "requirement_nature": "逻辑约束",
+      "classification_reason": "约束使能、保护、模式、状态或触发条件；有阈值也不等同于性能指标",
+      "validation_status": "分析级条款，待下游验证",
+      "canonical_function_id": "LF-018"
+    }
+  },
+  {
+    "req_id": "IND-024",
+    "name": "外循环开度",
+    "description": "90%（原规范标注待定）",
+    "type": "硬约束",
+    "category": "安全性",
+    "source_refs": [
+      {
+        "file": "原始文件备份/3.3.1.2、3.3.1.6、3.3.1.9-指标分配表.xlsx",
+        "sheet": "指标分配表",
+        "row": 24,
+        "cell_range": "A24:E24"
+      },
+      {
+        "file": "原始文件备份/LCATC-DS-04-XX-27-B0-(CCU)Component Technical Specification.pdf",
+        "section": "6.12.1.3–6.12.1.4",
+        "pdf_pages": [
+          63,
+          64
+        ]
+      }
+    ],
+    "extras": {
+      "measurement_unit": "%",
+      "measurement_range": "90%（原规范待定）",
+      "default_value": null,
+      "indicator_type": "配置约束",
+      "component_function_name": "调节空气循环方式",
+      "function_id": "LF-019",
+      "parent_requirement": "3.3.1.9",
+      "original_row": 24,
+      "original_indicator_name": "外循环开度",
+      "original_measurement_text": "90%（原规范标注待定）",
+      "confirmation_status": "待确认/待标定",
+      "legacy_indicator_type": "循环控制",
+      "legacy_type": "指标",
+      "legacy_category": "安全性",
+      "requirement_nature": "配置约束",
+      "classification_reason": "配置/执行接口边界，数值仍待定或标定；不当成通用性能承诺",
+      "validation_status": "待标定/确认",
+      "canonical_function_id": "LF-019"
+    }
+  },
+  {
+    "req_id": "IND-025",
+    "name": "除湿时制冷执行能力（转速接口）",
+    "description": "最低转速 1000 r/min（规范描述为除湿用途；相关转速仍需结合标定确认）",
+    "type": "硬约束",
+    "category": "性能",
+    "source_refs": [
+      {
+        "file": "原始文件备份/3.3.1.2、3.3.1.6、3.3.1.9-指标分配表.xlsx",
+        "sheet": "指标分配表",
+        "row": 25,
+        "cell_range": "A25:E25"
+      },
+      {
+        "file": "原始文件备份/LCATC-DS-04-XX-27-B0-(CCU)Component Technical Specification.pdf",
+        "section": "6.12.1.3–6.12.1.4",
+        "pdf_pages": [
+          63,
+          64
+        ]
+      }
+    ],
+    "extras": {
+      "measurement_unit": "r/min",
+      "measurement_range": "最低转速1000 r/min；待标定",
+      "default_value": null,
+      "indicator_type": "配置约束",
+      "component_function_name": "调节制冷能力",
+      "function_id": "LF-020",
+      "parent_requirement": "3.3.1.9",
+      "original_row": 25,
+      "original_indicator_name": "除湿时压缩机转速",
+      "original_measurement_text": "最低转速 1000 r/min（规范描述为除湿用途；相关转速仍需结合标定确认）",
+      "confirmation_status": "待确认/待标定",
+      "legacy_indicator_type": "压缩机控制",
+      "legacy_type": "指标",
+      "legacy_category": "性能",
+      "requirement_nature": "配置约束",
+      "classification_reason": "配置/执行接口边界，数值仍待定或标定；不当成通用性能承诺",
+      "validation_status": "待标定/确认",
+      "canonical_function_id": "LF-020"
+    }
+  },
+  {
+    "req_id": "IND-026",
+    "name": "进入模式后的温度设定",
+    "description": "温度保持不变；用户操作温度按键时按规范更新当前设定",
+    "type": "硬约束",
+    "category": "功能性",
+    "source_refs": [
+      {
+        "file": "原始文件备份/3.3.1.2、3.3.1.6、3.3.1.9-指标分配表.xlsx",
+        "sheet": "指标分配表",
+        "row": 26,
+        "cell_range": "A26:E26"
+      },
+      {
+        "file": "原始文件备份/LCATC-DS-04-XX-27-B0-(CCU)Component Technical Specification.pdf",
+        "section": "6.12.1.3–6.12.1.4",
+        "pdf_pages": [
+          63,
+          64
+        ]
+      }
+    ],
+    "extras": {
+      "measurement_unit": null,
+      "measurement_range": "温度保持不变；用户操作温度按键时按规范更新当前设定",
+      "default_value": null,
+      "indicator_type": "逻辑约束",
+      "component_function_name": "保持座舱温度设定",
+      "function_id": "LF-021",
+      "parent_requirement": "3.3.1.9",
+      "original_row": 26,
+      "original_indicator_name": "进入模式后的温度设定",
+      "original_measurement_text": "温度保持不变；用户操作温度按键时按规范更新当前设定",
+      "confirmation_status": "原文/原表要求",
+      "legacy_indicator_type": "温度保持",
+      "legacy_type": "指标",
+      "legacy_category": "功能性",
+      "requirement_nature": "逻辑约束",
+      "classification_reason": "约束使能、保护、模式、状态或触发条件；有阈值也不等同于性能指标",
+      "validation_status": "分析级条款，待下游验证",
+      "canonical_function_id": "LF-021"
+    }
+  },
+  {
+    "req_id": "IND-027",
+    "name": "前除霜/除雾反馈内容",
+    "description": "空气输送等级、温度状态、AC状态、循环状态、前除霜/除雾状态反馈给IVI",
+    "type": "硬约束",
+    "category": "功能性",
+    "source_refs": [
+      {
+        "file": "原始文件备份/3.3.1.2、3.3.1.6、3.3.1.9-指标分配表.xlsx",
+        "sheet": "指标分配表",
+        "row": 27,
+        "cell_range": "A27:E27"
+      },
+      {
+        "file": "原始文件备份/LCATC-DS-04-XX-27-B0-(CCU)Component Technical Specification.pdf",
+        "section": "6.12.1.3–6.12.1.4",
+        "pdf_pages": [
+          63,
+          64
+        ]
+      }
+    ],
+    "extras": {
+      "measurement_unit": null,
+      "measurement_range": "空气输送等级、温度状态、AC状态、循环状态、前除霜/除雾状态反馈给IVI",
+      "default_value": null,
+      "indicator_type": "接口要求",
+      "component_function_name": "反馈风窗与空调状态",
+      "function_id": "LF-022",
+      "parent_requirement": "3.3.1.9",
+      "original_row": 27,
+      "original_indicator_name": "前除霜/除雾反馈内容",
+      "original_measurement_text": "鼓风机档位、温度状态、AC状态、循环状态、前除霜/除雾状态反馈给IVI",
+      "confirmation_status": "原文/原表要求",
+      "legacy_indicator_type": "状态反馈",
+      "legacy_type": "指标",
+      "legacy_category": "功能性",
+      "requirement_nature": "接口要求",
+      "classification_reason": "约束信息输入、输出内容或通信通道；不是数值性能要求",
+      "validation_status": "分析级条款，待下游验证",
+      "canonical_function_id": "LF-022"
+    }
+  },
+  {
+    "req_id": "IND-028",
+    "name": "热管理控制优先级",
+    "description": "前除霜模式 > 电池包降温（达到阈值）> 乘员舱制冷 > 电池包降温（未达到阈值）",
+    "type": "硬约束",
+    "category": "安全性",
+    "source_refs": [
+      {
+        "file": "原始文件备份/3.3.1.2、3.3.1.6、3.3.1.9-指标分配表.xlsx",
+        "sheet": "指标分配表",
+        "row": 28,
+        "cell_range": "A28:E28"
+      },
+      {
+        "file": "原始文件备份/LCATC-DS-04-29-XX-B0-SL29_热管理子系统功能规范.pdf",
+        "section": "4.1.3.3",
+        "pdf_pages": [
+          13,
+          14
+        ]
+      }
+    ],
+    "extras": {
+      "measurement_unit": null,
+      "measurement_range": "前除霜模式 > 电池包降温（达到阈值）> 乘员舱制冷 > 电池包降温（未达到阈值）",
+      "default_value": null,
+      "indicator_type": "逻辑约束",
+      "component_function_name": "仲裁热管理能力请求",
+      "function_id": "LF-023",
+      "parent_requirement": "3.3.1.9",
+      "original_row": 28,
+      "original_indicator_name": "热管理控制优先级",
+      "original_measurement_text": "前除霜模式 > 电池包降温（达到阈值）> 乘员舱制冷 > 电池包降温（未达到阈值）",
+      "confirmation_status": "原文/原表要求",
+      "legacy_indicator_type": "优先级仲裁",
+      "legacy_type": "指标",
+      "legacy_category": "安全性",
+      "requirement_nature": "逻辑约束",
+      "classification_reason": "约束使能、保护、模式、状态或触发条件；有阈值也不等同于性能指标",
+      "validation_status": "分析级条款，待下游验证",
+      "canonical_function_id": "LF-023"
+    }
+  },
+  {
+    "req_id": "IND-029",
+    "name": "SOC低于10%时的制冷执行功能许可",
+    "description": "前除霜关闭时不允许制冷执行功能输出功率；前除霜开启时允许开启制冷执行功能",
+    "type": "硬约束",
+    "category": "安全性",
+    "source_refs": [
+      {
+        "file": "原始文件备份/3.3.1.2、3.3.1.6、3.3.1.9-指标分配表.xlsx",
+        "sheet": "指标分配表",
+        "row": 29,
+        "cell_range": "A29:E29"
+      },
+      {
+        "file": "原始文件备份/LCATC-DS-04-29-XX-B0-SL29_热管理子系统功能规范.pdf",
+        "section": "4.1.3.3",
+        "pdf_pages": [
+          13,
+          14
+        ]
+      }
+    ],
+    "extras": {
+      "measurement_unit": "%",
+      "measurement_range": "SOC < 10% 时按前除霜开启/关闭决定许可",
+      "default_value": null,
+      "indicator_type": "逻辑约束",
+      "component_function_name": "判定低电量制冷许可",
+      "function_id": "LF-024",
+      "parent_requirement": "3.3.1.9",
+      "original_row": 29,
+      "original_indicator_name": "SOC低于10%时的压缩机许可",
+      "original_measurement_text": "前除霜关闭时不允许压缩机输出功率；前除霜开启时允许开启压缩机",
+      "confirmation_status": "原文/原表要求",
+      "legacy_indicator_type": "电量约束",
+      "legacy_type": "指标",
+      "legacy_category": "安全性",
+      "requirement_nature": "逻辑约束",
+      "classification_reason": "约束使能、保护、模式、状态或触发条件；有阈值也不等同于性能指标",
+      "validation_status": "分析级条款，待下游验证",
+      "canonical_function_id": "LF-024"
+    }
+  },
+  {
+    "req_id": "IND-030",
+    "name": "后风窗除霜/除雾参数",
+    "description": "TBD（所给两份PDF未找到完整后风窗控制逻辑及具体指标）",
+    "type": "硬约束",
+    "category": "安全性",
+    "source_refs": [
+      {
+        "file": "原始文件备份/3.3.1.2、3.3.1.6、3.3.1.9-指标分配表.xlsx",
+        "sheet": "指标分配表",
+        "row": 30,
+        "cell_range": "A30:E30"
+      }
+    ],
+    "extras": {
+      "measurement_unit": null,
+      "measurement_range": "TBD（所给两份PDF未找到完整后风窗控制逻辑及具体指标）",
+      "default_value": null,
+      "indicator_type": "资料缺口",
+      "component_function_name": "后风窗控制（待确认）",
+      "function_id": "LF-025",
+      "parent_requirement": "3.3.1.9",
+      "original_row": 30,
+      "original_indicator_name": "后风窗除霜/除雾参数",
+      "original_measurement_text": "TBD（所给两份PDF未找到完整后风窗控制逻辑及具体指标）",
+      "confirmation_status": "待确认/待标定",
+      "allocation_status": "LF-025为待确认占位，不表示后风窗功能已实现",
+      "legacy_indicator_type": "后风窗控制",
+      "legacy_type": "指标",
+      "legacy_category": "安全性",
+      "requirement_nature": "资料缺口",
+      "classification_reason": "后风窗依据待补充；保留原ID与TBD，不形成可执行验收要求",
+      "validation_status": "资料缺口，不具备验收条件"
+    }
+  },
+  {
+    "req_id": "IND-031",
+    "name": "风窗请求响应时间",
+    "description": "TBD（原表未给出请求响应时限）",
+    "type": "指标",
+    "category": "性能",
+    "source_refs": [
+      {
+        "file": "原始文件备份/3.3.1.2、3.3.1.6、3.3.1.9-指标分配表.xlsx",
+        "sheet": "指标分配表",
+        "row": 31,
+        "cell_range": "A31:E31"
+      }
+    ],
+    "extras": {
+      "measurement_unit": null,
+      "measurement_range": "TBD（原表未给出请求响应时限）",
+      "default_value": null,
+      "indicator_type": "性能指标",
+      "component_function_name": "控制前风窗除霜除雾模式",
+      "function_id": "LF-026",
+      "parent_requirement": "3.3.1.9",
+      "original_row": 31,
+      "original_indicator_name": "风窗请求响应时间",
+      "original_measurement_text": "TBD（原表未给出请求响应时限）",
+      "confirmation_status": "待确认/待标定",
+      "legacy_indicator_type": "控制时序",
+      "legacy_type": "指标",
+      "legacy_category": "性能",
+      "requirement_nature": "性能指标",
+      "classification_reason": "可度量步长、检测周期、偏差或响应时长；缺数值仍保留TBD，不伪造验收界限",
+      "validation_status": "缺少定量界限，待完善",
+      "canonical_function_id": "LF-026"
+    }
+  },
+  {
+    "req_id": "IND-032",
+    "name": "风窗除霜除雾效果达成时间",
+    "description": "TBD（原表未给出效果时限及验收阈值）",
+    "type": "指标",
+    "category": "性能",
+    "source_refs": [
+      {
+        "file": "原始文件备份/3.3.1.2、3.3.1.6、3.3.1.9-指标分配表.xlsx",
+        "sheet": "指标分配表",
+        "row": 31,
+        "cell_range": "A31:E31"
+      }
+    ],
+    "extras": {
+      "measurement_unit": null,
+      "measurement_range": "TBD（原表未给出效果时限及验收阈值）",
+      "default_value": null,
+      "indicator_type": "性能指标",
+      "component_function_name": "控制前风窗除霜除雾模式",
+      "function_id": "LF-026",
+      "parent_requirement": "3.3.1.9",
+      "original_row": 31,
+      "original_indicator_name": "风窗除霜除雾效果达成时间",
+      "original_measurement_text": "TBD（原表未给出效果时限及验收阈值）",
+      "confirmation_status": "待确认/待标定",
+      "legacy_indicator_type": "控制时序",
+      "legacy_type": "指标",
+      "legacy_category": "性能",
+      "requirement_nature": "性能指标",
+      "classification_reason": "可度量步长、检测周期、偏差或响应时长；缺数值仍保留TBD，不伪造验收界限",
+      "validation_status": "缺少定量界限，待完善",
+      "canonical_function_id": "LF-026"
+    }
+  },
+  {
+    "req_id": "IND-033",
+    "name": "室内温度信息检测周期",
+    "description": "CCU初始化后，每隔50 ms检测对应温度；检测周期不是CAN发送周期。",
+    "type": "指标",
+    "category": "性能",
+    "source_refs": [
+      {
+        "file": "原始文件备份/LCATC-DS-04-29-XX-B0-SL29_热管理子系统功能规范.pdf",
+        "section": "4.6.3.4",
+        "pdf_pages": [
+          30
+        ]
+      }
+    ],
+    "extras": {
+      "measurement_unit": "ms",
+      "measurement_range": "每隔50 ms检测一次",
+      "default_value": null,
+      "indicator_type": "性能指标",
+      "component_function_name": "获取温度与环境信息",
+      "function_id": "LF-010",
+      "confirmation_status": "PDF明确",
+      "legacy_indicator_type": "未提供",
+      "legacy_type": "指标",
+      "legacy_category": "性能",
+      "requirement_nature": "性能指标",
+      "classification_reason": "可度量步长、检测周期、偏差或响应时长；缺数值仍保留TBD，不伪造验收界限",
+      "validation_status": "分析级条款，待下游验证",
+      "canonical_function_id": "LF-010"
+    }
+  },
+  {
+    "req_id": "IND-034",
+    "name": "电加热温度信息检测周期",
+    "description": "CCU初始化后，每隔50 ms检测对应温度；检测周期不是CAN发送周期。",
+    "type": "指标",
+    "category": "安全性",
+    "source_refs": [
+      {
+        "file": "原始文件备份/LCATC-DS-04-29-XX-B0-SL29_热管理子系统功能规范.pdf",
+        "section": "4.6.3.5",
+        "pdf_pages": [
+          30
+        ]
+      }
+    ],
+    "extras": {
+      "measurement_unit": "ms",
+      "measurement_range": "每隔50 ms检测一次",
+      "default_value": null,
+      "indicator_type": "性能指标",
+      "component_function_name": "获取电加热温度",
+      "function_id": "LF-027",
+      "confirmation_status": "PDF明确",
+      "legacy_indicator_type": "未提供",
+      "legacy_type": "指标",
+      "legacy_category": "安全性",
+      "requirement_nature": "性能指标",
+      "classification_reason": "可度量步长、检测周期、偏差或响应时长；缺数值仍保留TBD，不伪造验收界限",
+      "validation_status": "分析级条款，待下游验证",
+      "canonical_function_id": "LF-027"
+    }
+  },
+  {
+    "req_id": "IND-035",
+    "name": "AC操作后的制冷转速请求",
+    "description": "AUTO状态下操作AC按键，关闭制冷请求且转速请求为0；其余指定功能继续自动控制。",
+    "type": "硬约束",
+    "category": "功能性",
+    "source_refs": [
+      {
+        "file": "原始文件备份/LCATC-DS-04-XX-27-B0-(CCU)Component Technical Specification.pdf",
+        "section": "6.13.1.3",
+        "pdf_pages": [
+          68
+        ]
+      }
+    ],
+    "extras": {
+      "measurement_unit": "r/min",
+      "measurement_range": "= 0",
+      "default_value": null,
+      "indicator_type": "逻辑约束",
+      "component_function_name": "处理AUTO下的AC操作",
+      "function_id": "LF-028",
+      "legacy_indicator_type": "未提供",
+      "legacy_type": "指标",
+      "legacy_category": "功能性",
+      "requirement_nature": "逻辑约束",
+      "classification_reason": "约束使能、保护、模式、状态或触发条件；有阈值也不等同于性能指标",
+      "validation_status": "分析级条款，待下游验证",
+      "canonical_function_id": "LF-028"
+    }
+  },
+  {
+    "req_id": "IND-036",
+    "name": "AC操作后的AUTO状态反馈",
+    "description": "AUTO状态下操作AC按键时，反馈AUTO状态为Close；风量、温度、模式与循环仍保持自动操作。",
+    "type": "硬约束",
+    "category": "功能性",
+    "source_refs": [
+      {
+        "file": "原始文件备份/LCATC-DS-04-XX-27-B0-(CCU)Component Technical Specification.pdf",
+        "section": "6.13.1.3",
+        "pdf_pages": [
+          68
+        ]
+      }
+    ],
+    "extras": {
+      "measurement_unit": null,
+      "measurement_range": "Close",
+      "default_value": null,
+      "indicator_type": "接口要求",
+      "component_function_name": "处理AUTO下的AC操作",
+      "function_id": "LF-028",
+      "legacy_indicator_type": "未提供",
+      "legacy_type": "指标",
+      "legacy_category": "功能性",
+      "requirement_nature": "接口要求",
+      "classification_reason": "约束信息输入、输出内容或通信通道；不是数值性能要求",
+      "validation_status": "分析级条款，待下游验证",
+      "canonical_function_id": "LF-028"
+    }
+  },
+  {
+    "req_id": "IND-037",
+    "name": "发动机优先运行负载",
+    "description": "发动机启动后优先维持50%以上负载；运行偏好不作为全工况硬下限。",
+    "type": "软约束",
+    "category": "性能",
+    "source_refs": [
+      {
+        "file": "原始文件备份/热管理系统需求分析与建模修改任务书.txt",
+        "section": "5.2"
+      }
+    ],
+    "extras": {
+      "measurement_unit": "%",
+      "measurement_range": "50%以上",
+      "default_value": null,
+      "indicator_type": "运行偏好",
+      "component_function_name": "调节发动机发电工作点",
+      "function_id": "LF-029",
+      "constraint_nature": "偏好",
+      "legacy_indicator_type": "未提供",
+      "legacy_type": "指标",
+      "legacy_category": "性能",
+      "requirement_nature": "运行偏好",
+      "classification_reason": "优先维持50%以上负载是效率偏好，不是全工况硬下限",
+      "validation_status": "分析级条款，待下游验证",
+      "canonical_function_id": "S1-F08"
+    }
+  },
+  {
+    "req_id": "IND-038",
+    "name": "静置预冷持续时间",
+    "description": "车辆静置，驾驶员启动空调，座舱预冷持续2分钟。",
+    "type": "硬约束",
+    "category": "非功能性",
+    "source_refs": [
+      {
+        "file": "原始文件备份/热管理系统需求分析与建模修改任务书.txt",
+        "section": "5.3"
+      }
+    ],
+    "extras": {
+      "measurement_unit": "min",
+      "measurement_range": "= 2",
+      "default_value": null,
+      "indicator_type": "场景约束",
+      "component_function_name": "记录静置预冷时长",
+      "function_id": "LF-030",
+      "constraint_nature": "场景条件",
+      "legacy_indicator_type": "未提供",
+      "legacy_type": "指标",
+      "legacy_category": "非功能性",
+      "requirement_nature": "场景约束",
+      "classification_reason": "只约束指定驾驶循环参数，不作为产品全工况性能",
+      "validation_status": "分析级条款，待下游验证",
+      "canonical_function_id": "S2-F02"
+    }
+  },
+  {
+    "req_id": "IND-039",
+    "name": "第二阶段匀速行驶速度",
+    "description": "静置阶段之后以45 km/h匀速行驶。",
+    "type": "硬约束",
+    "category": "非功能性",
+    "source_refs": [
+      {
+        "file": "原始文件备份/热管理系统需求分析与建模修改任务书.txt",
+        "section": "5.3"
+      }
+    ],
+    "extras": {
+      "measurement_unit": "km/h",
+      "measurement_range": "= 45",
+      "default_value": null,
+      "indicator_type": "场景约束",
+      "component_function_name": "控制匀速行驶工况",
+      "function_id": "LF-031",
+      "constraint_nature": "场景条件",
+      "legacy_indicator_type": "未提供",
+      "legacy_type": "指标",
+      "legacy_category": "非功能性",
+      "requirement_nature": "场景约束",
+      "classification_reason": "只约束指定驾驶循环参数，不作为产品全工况性能",
+      "validation_status": "分析级条款，待下游验证",
+      "canonical_function_id": "S2-F03"
+    }
+  },
+  {
+    "req_id": "IND-040",
+    "name": "第二阶段匀速行驶持续时间",
+    "description": "第二阶段匀速行驶持续20分钟。",
+    "type": "硬约束",
+    "category": "非功能性",
+    "source_refs": [
+      {
+        "file": "原始文件备份/热管理系统需求分析与建模修改任务书.txt",
+        "section": "5.3"
+      }
+    ],
+    "extras": {
+      "measurement_unit": "min",
+      "measurement_range": "= 20",
+      "default_value": null,
+      "indicator_type": "场景约束",
+      "component_function_name": "控制匀速行驶工况",
+      "function_id": "LF-031",
+      "constraint_nature": "场景条件",
+      "legacy_indicator_type": "未提供",
+      "legacy_type": "指标",
+      "legacy_category": "非功能性",
+      "requirement_nature": "场景约束",
+      "classification_reason": "只约束指定驾驶循环参数，不作为产品全工况性能",
+      "validation_status": "分析级条款，待下游验证",
+      "canonical_function_id": "S2-F03"
+    }
+  },
+  {
+    "req_id": "IND-041",
+    "name": "场景二电池主动冷却触发温度",
+    "description": "电芯温度达到或超过35℃时引入座舱空调主动冷却。不是安全温度上限，退出策略未提供。",
+    "type": "硬约束",
+    "category": "功能性",
+    "source_refs": [
+      {
+        "file": "原始文件备份/热管理系统需求分析与建模修改任务书.txt",
+        "section": "5.3"
+      }
+    ],
+    "extras": {
+      "measurement_unit": "℃",
+      "measurement_range": ">= 35",
+      "default_value": null,
+      "indicator_type": "逻辑约束",
+      "component_function_name": "判定电池主动冷却需求",
+      "function_id": "LF-032",
+      "constraint_nature": "触发条件",
+      "reference_refinement": "本次按扩充清单C01/C02/A06参考细化最高有效温度及低于35℃撤销请求，原指标值与描述保留。",
+      "legacy_indicator_type": "未提供",
+      "legacy_type": "指标",
+      "legacy_category": "性能",
+      "requirement_nature": "逻辑约束",
+      "classification_reason": "约束使能、保护、模式、状态或触发条件；有阈值也不等同于性能指标",
+      "validation_status": "分析级条款，待下游验证",
+      "canonical_function_id": "S2-F06"
+    }
+  },
+  {
+    "req_id": "SC1-001",
+    "name": "接收驾驶指令",
+    "description": "接收驾驶指令：输入加速/制动指令；输出驾驶意图。输入同时有效时仲裁待确认。",
+    "type": "功能需求",
+    "category": "功能性",
+    "source_refs": [
+      {
+        "file": "原始文件备份/热管理系统需求分析与建模修改任务书.txt",
+        "section": "5.2"
+      }
+    ],
+    "extras": {
+      "function_id": "S1-F01",
+      "scenario": "混合动力汽车动力经济性建模",
+      "analysis_status": "来源支持的功能分解；输入输出为分析契约，非新增物理接口",
+      "s": null,
+      "v": "接收",
+      "o": "驾驶指令",
+      "e": null,
+      "action": "接收驾驶指令",
+      "inputs": [
+        {
+          "concept": "加速/制动指令",
+          "variables": [],
+          "port_id": "S1-F01-I01",
+          "type_ref": "C036",
+          "semantic_role": "分析数据",
+          "measurement_unit": null
+        }
+      ],
+      "outputs": [
+        {
+          "concept": "驾驶意图",
+          "variables": [],
+          "port_id": "S1-F01-O01",
+          "type_ref": "C193",
+          "semantic_role": "分析数据",
+          "measurement_unit": null
+        }
+      ],
+      "parent_id": "SC1",
+      "hierarchy_path": [
+        "11.23SEOV案例_优化版",
+        "SC1",
+        "S1-F01 接收驾驶指令"
+      ],
+      "required_capability": null,
+      "required_capability_status": "待业务方确认",
+      "preconditions": [],
+      "root_id": "SC1",
+      "canonical_function_id": "S1-F01",
+      "abstraction_level": "叶级功能",
+      "child_function_ids": [],
+      "source_model_path": [
+        "行为模型/SC1-行为模型.sysml",
+        "行为评估流程",
+        "接收驾驶指令"
+      ],
+      "behaviour_refs": [
+        {
+          "file": "行为模型/SC1-行为模型.sysml",
+          "root": "SC1",
+          "node": "接收驾驶指令"
+        }
+      ]
+    }
+  },
+  {
+    "req_id": "SC1-002",
+    "name": "分析动力需求",
+    "description": "分析动力需求：输入驾驶意图、工况；输出驱动/制动需求。需求先于模式选择。",
+    "type": "功能需求",
+    "category": "功能性",
+    "source_refs": [
+      {
+        "file": "原始文件备份/热管理系统需求分析与建模修改任务书.txt",
+        "section": "5.2"
+      }
+    ],
+    "extras": {
+      "function_id": "S1-F02",
+      "scenario": "混合动力汽车动力经济性建模",
+      "analysis_status": "来源支持的功能分解；输入输出为分析契约，非新增物理接口",
+      "s": null,
+      "v": "分析",
+      "o": "动力需求",
+      "e": null,
+      "action": "分析动力需求",
+      "inputs": [
+        {
+          "concept": "驾驶意图、工况",
+          "variables": [],
+          "port_id": "S1-F02-I01",
+          "type_ref": "C194",
+          "semantic_role": "分析数据",
+          "measurement_unit": null
+        }
+      ],
+      "outputs": [
+        {
+          "concept": "驱动/制动需求",
+          "variables": [],
+          "port_id": "S1-F02-O01",
+          "type_ref": "C189",
+          "semantic_role": "分析数据",
+          "measurement_unit": null
+        }
+      ],
+      "parent_id": "SC1",
+      "hierarchy_path": [
+        "11.23SEOV案例_优化版",
+        "SC1",
+        "S1-F02 分析动力需求"
+      ],
+      "required_capability": null,
+      "required_capability_status": "待业务方确认",
+      "preconditions": [],
+      "root_id": "SC1",
+      "canonical_function_id": "S1-F02",
+      "abstraction_level": "叶级功能",
+      "child_function_ids": [],
+      "source_model_path": [
+        "行为模型/SC1-行为模型.sysml",
+        "行为评估流程",
+        "分析动力需求"
+      ],
+      "behaviour_refs": [
+        {
+          "file": "行为模型/SC1-行为模型.sysml",
+          "root": "SC1",
+          "node": "分析动力需求"
+        }
+      ]
+    }
+  },
+  {
+    "req_id": "SC1-003",
+    "name": "选择运行模式",
+    "description": "选择运行模式：输入动力需求、能源状态；输出驱动/回收/发电请求。启动和停机阈值未给出。",
+    "type": "功能需求",
+    "category": "功能性",
+    "source_refs": [
+      {
+        "file": "原始文件备份/热管理系统需求分析与建模修改任务书.txt",
+        "section": "5.2"
+      }
+    ],
+    "extras": {
+      "function_id": "S1-F03",
+      "scenario": "混合动力汽车动力经济性建模",
+      "analysis_status": "来源支持的功能分解；输入输出为分析契约，非新增物理接口",
+      "s": null,
+      "v": "选择",
+      "o": "运行模式",
+      "e": null,
+      "action": "选择运行模式",
+      "inputs": [
+        {
+          "concept": "动力需求、能源状态",
+          "variables": [],
+          "port_id": "S1-F03-I01",
+          "type_ref": "C038",
+          "semantic_role": "反馈/实际状态",
+          "measurement_unit": null
+        }
+      ],
+      "outputs": [
+        {
+          "concept": "驱动/回收/发电请求",
+          "variables": [],
+          "port_id": "S1-F03-O01",
+          "type_ref": "C190",
+          "semantic_role": "请求/命令",
+          "measurement_unit": null
+        }
+      ],
+      "parent_id": "SC1",
+      "hierarchy_path": [
+        "11.23SEOV案例_优化版",
+        "SC1",
+        "S1-F03 选择运行模式"
+      ],
+      "required_capability": null,
+      "required_capability_status": "待业务方确认",
+      "preconditions": [],
+      "root_id": "SC1",
+      "canonical_function_id": "S1-F03",
+      "abstraction_level": "叶级功能",
+      "child_function_ids": [],
+      "source_model_path": [
+        "行为模型/SC1-行为模型.sysml",
+        "行为评估流程",
+        "选择运行模式"
+      ],
+      "behaviour_refs": [
+        {
+          "file": "行为模型/SC1-行为模型.sysml",
+          "root": "SC1",
+          "node": "选择运行模式"
+        }
+      ]
+    }
+  },
+  {
+    "req_id": "SC1-004",
+    "name": "控制电驱动能量转换",
+    "description": "控制电驱动能量转换：输入驱动请求、可用电能；输出驱动力请求与用电反馈。发动机不直接机械驱动。",
+    "type": "功能需求",
+    "category": "功能性",
+    "source_refs": [
+      {
+        "file": "原始文件备份/热管理系统需求分析与建模修改任务书.txt",
+        "section": "5.2"
+      }
+    ],
+    "extras": {
+      "function_id": "S1-F04",
+      "scenario": "混合动力汽车动力经济性建模",
+      "analysis_status": "来源支持的功能分解；输入输出为分析契约，非新增物理接口",
+      "s": null,
+      "v": "控制",
+      "o": "电驱动能量转换",
+      "e": null,
+      "action": "控制电驱动能量转换",
+      "inputs": [
+        {
+          "concept": "驱动请求、可用电能",
+          "variables": [],
+          "port_id": "S1-F04-I01",
+          "type_ref": "C192",
+          "semantic_role": "请求/命令",
+          "measurement_unit": null
+        }
+      ],
+      "outputs": [
+        {
+          "concept": "驱动力请求与用电反馈",
+          "variables": [],
+          "port_id": "S1-F04-O01",
+          "type_ref": "C191",
+          "semantic_role": "请求/命令",
+          "measurement_unit": null
+        }
+      ],
+      "parent_id": "SC1",
+      "hierarchy_path": [
+        "11.23SEOV案例_优化版",
+        "SC1",
+        "S1-F04 控制电驱动能量转换"
+      ],
+      "required_capability": null,
+      "required_capability_status": "待业务方确认",
+      "preconditions": [],
+      "root_id": "SC1",
+      "canonical_function_id": "S1-F04",
+      "abstraction_level": "叶级功能",
+      "child_function_ids": [],
+      "source_model_path": [
+        "行为模型/SC1-行为模型.sysml",
+        "行为评估流程",
+        "执行电驱动请求"
+      ],
+      "behaviour_refs": [
+        {
+          "file": "行为模型/SC1-行为模型.sysml",
+          "root": "SC1",
+          "node": "执行电驱动请求"
+        }
+      ]
+    }
+  },
+  {
+    "req_id": "SC1-005",
+    "name": "判定再生制动请求",
+    "description": "判定再生制动请求：输入制动请求、回收可用性；输出再生请求。回收上限及摩擦制动融合待确认。",
+    "type": "功能需求",
+    "category": "功能性",
+    "source_refs": [
+      {
+        "file": "原始文件备份/热管理系统需求分析与建模修改任务书.txt",
+        "section": "5.2"
+      }
+    ],
+    "extras": {
+      "function_id": "S1-F05",
+      "scenario": "混合动力汽车动力经济性建模",
+      "analysis_status": "来源支持的功能分解；输入输出为分析契约，非新增物理接口",
+      "s": null,
+      "v": "判定",
+      "o": "再生制动请求",
+      "e": null,
+      "action": "判定再生制动请求",
+      "inputs": [
+        {
+          "concept": "制动请求、回收可用性",
+          "variables": [],
+          "port_id": "S1-F05-I01",
+          "type_ref": "C030",
+          "semantic_role": "请求/命令",
+          "measurement_unit": null
+        }
+      ],
+      "outputs": [
+        {
+          "concept": "再生请求",
+          "variables": [],
+          "port_id": "S1-F05-O01",
+          "type_ref": "C019",
+          "semantic_role": "请求/命令",
+          "measurement_unit": null
+        }
+      ],
+      "parent_id": "SC1",
+      "hierarchy_path": [
+        "11.23SEOV案例_优化版",
+        "SC1",
+        "S1-F05 判定再生制动请求"
+      ],
+      "required_capability": null,
+      "required_capability_status": "待业务方确认",
+      "preconditions": [],
+      "root_id": "SC1",
+      "canonical_function_id": "S1-F05",
+      "abstraction_level": "叶级功能",
+      "child_function_ids": [],
+      "source_model_path": [
+        "行为模型/SC1-行为模型.sysml",
+        "行为评估流程",
+        "判定再生制动请求"
+      ],
+      "behaviour_refs": [
+        {
+          "file": "行为模型/SC1-行为模型.sysml",
+          "root": "SC1",
+          "node": "判定再生制动请求"
+        }
+      ]
+    }
+  },
+  {
+    "req_id": "SC1-006",
+    "name": "协调再生充电",
+    "description": "协调再生充电：输入再生请求、电池充电状态；输出回收能量与充电请求。受电池接受能力约束，数值未给出。",
+    "type": "功能需求",
+    "category": "功能性",
+    "source_refs": [
+      {
+        "file": "原始文件备份/热管理系统需求分析与建模修改任务书.txt",
+        "section": "5.2"
+      }
+    ],
+    "extras": {
+      "function_id": "S1-F06",
+      "scenario": "混合动力汽车动力经济性建模",
+      "analysis_status": "来源支持的功能分解；输入输出为分析契约，非新增物理接口",
+      "s": null,
+      "v": "协调",
+      "o": "再生充电",
+      "e": null,
+      "action": "协调再生充电",
+      "inputs": [
+        {
+          "concept": "再生请求、电池充电状态",
+          "variables": [],
+          "port_id": "S1-F06-I01",
+          "type_ref": "C020",
+          "semantic_role": "请求/命令",
+          "measurement_unit": null
+        }
+      ],
+      "outputs": [
+        {
+          "concept": "回收能量与充电请求",
+          "variables": [],
+          "port_id": "S1-F06-O01",
+          "type_ref": "C058",
+          "semantic_role": "请求/命令",
+          "measurement_unit": null
+        }
+      ],
+      "parent_id": "SC1",
+      "hierarchy_path": [
+        "11.23SEOV案例_优化版",
+        "SC1",
+        "S1-F06 协调再生充电"
+      ],
+      "required_capability": null,
+      "required_capability_status": "待业务方确认",
+      "preconditions": [],
+      "root_id": "SC1",
+      "canonical_function_id": "S1-F06",
+      "abstraction_level": "叶级功能",
+      "child_function_ids": [],
+      "source_model_path": [
+        "行为模型/SC1-行为模型.sysml",
+        "行为评估流程",
+        "协调再生充电"
+      ],
+      "behaviour_refs": [
+        {
+          "file": "行为模型/SC1-行为模型.sysml",
+          "root": "SC1",
+          "node": "协调再生充电"
+        }
+      ]
+    }
+  },
+  {
+    "req_id": "SC1-007",
+    "name": "协调发动机启动",
+    "description": "协调发动机启动：输入发电请求、启动状态；输出发动机已启动状态。启动完成先于发电控制。",
+    "type": "功能需求",
+    "category": "功能性",
+    "source_refs": [
+      {
+        "file": "原始文件备份/热管理系统需求分析与建模修改任务书.txt",
+        "section": "5.2"
+      }
+    ],
+    "extras": {
+      "function_id": "S1-F07",
+      "scenario": "混合动力汽车动力经济性建模",
+      "analysis_status": "来源支持的功能分解；输入输出为分析契约，非新增物理接口",
+      "s": null,
+      "v": "协调",
+      "o": "发动机启动",
+      "e": null,
+      "action": "协调发动机启动",
+      "inputs": [
+        {
+          "concept": "发电请求、启动状态",
+          "variables": [],
+          "port_id": "S1-F07-I01",
+          "type_ref": "C046",
+          "semantic_role": "请求/命令",
+          "measurement_unit": null
+        }
+      ],
+      "outputs": [
+        {
+          "concept": "发动机已启动状态",
+          "variables": [],
+          "port_id": "S1-F07-O01",
+          "type_ref": "C041",
+          "semantic_role": "反馈/实际状态",
+          "measurement_unit": null
+        }
+      ],
+      "parent_id": "SC1",
+      "hierarchy_path": [
+        "11.23SEOV案例_优化版",
+        "SC1",
+        "S1-F07 协调发动机启动"
+      ],
+      "required_capability": null,
+      "required_capability_status": "待业务方确认",
+      "preconditions": [],
+      "root_id": "SC1",
+      "canonical_function_id": "S1-F07",
+      "abstraction_level": "叶级功能",
+      "child_function_ids": [],
+      "source_model_path": [
+        "行为模型/SC1-行为模型.sysml",
+        "行为评估流程",
+        "协调发动机启动"
+      ],
+      "behaviour_refs": [
+        {
+          "file": "行为模型/SC1-行为模型.sysml",
+          "root": "SC1",
+          "node": "协调发动机启动"
+        }
+      ]
+    }
+  },
+  {
+    "req_id": "SC1-008",
+    "name": "调节发动机发电工作点",
+    "description": "调节发动机发电工作点：输入发动机已启动、负载转速反馈；输出发电电能、负载转速目标。最优转速区间未给出；优先维持50%以上负载。",
+    "type": "功能需求",
+    "category": "功能性",
+    "source_refs": [
+      {
+        "file": "原始文件备份/热管理系统需求分析与建模修改任务书.txt",
+        "section": "5.2"
+      }
+    ],
+    "extras": {
+      "function_id": "S1-F08",
+      "scenario": "混合动力汽车动力经济性建模",
+      "analysis_status": "来源支持的功能分解；输入输出为分析契约，非新增物理接口",
+      "s": null,
+      "v": "调节",
+      "o": "发动机发电工作点",
+      "e": "优先维持50%以上负载，最优转速区间待确认",
+      "action": "调节发动机发电工作点",
+      "inputs": [
+        {
+          "concept": "发动机已启动、负载转速反馈",
+          "variables": [],
+          "port_id": "S1-F08-I01",
+          "type_ref": "C040",
+          "semantic_role": "反馈/实际状态",
+          "measurement_unit": null
+        }
+      ],
+      "outputs": [
+        {
+          "concept": "发电电能、负载转速目标",
+          "variables": [],
+          "port_id": "S1-F08-O01",
+          "type_ref": "C045",
+          "semantic_role": "目标/设定",
+          "measurement_unit": null
+        }
+      ],
+      "parent_id": "SC1",
+      "hierarchy_path": [
+        "11.23SEOV案例_优化版",
+        "SC1",
+        "S1-F08 调节发动机发电工作点"
+      ],
+      "required_capability": null,
+      "required_capability_status": "待业务方确认",
+      "preconditions": [],
+      "root_id": "SC1",
+      "canonical_function_id": "S1-F08",
+      "abstraction_level": "叶级功能",
+      "child_function_ids": [],
+      "source_model_path": [
+        "行为模型/SC1-行为模型.sysml",
+        "行为评估流程",
+        "调节发电工作点"
+      ],
+      "behaviour_refs": [
+        {
+          "file": "行为模型/SC1-行为模型.sysml",
+          "root": "SC1",
+          "node": "调节发电工作点"
+        }
+      ]
+    }
+  },
+  {
+    "req_id": "SC1-009",
+    "name": "管理充电能量收支",
+    "description": "管理充电能量收支：输入发电/回收电能、电池状态、驱动消耗；输出充电调度与能耗记录。发电和回收能量不得重复记账。",
+    "type": "功能需求",
+    "category": "功能性",
+    "source_refs": [
+      {
+        "file": "原始文件备份/热管理系统需求分析与建模修改任务书.txt",
+        "section": "5.2"
+      }
+    ],
+    "extras": {
+      "function_id": "S1-F09",
+      "scenario": "混合动力汽车动力经济性建模",
+      "analysis_status": "来源支持的功能分解；输入输出为分析契约，非新增物理接口",
+      "s": null,
+      "v": "管理",
+      "o": "充电能量收支",
+      "e": null,
+      "action": "管理充电能量收支",
+      "inputs": [
+        {
+          "concept": "发电/回收电能、电池状态、驱动消耗",
+          "variables": [],
+          "port_id": "S1-F09-I01",
+          "type_ref": "C044",
+          "semantic_role": "反馈/实际状态",
+          "measurement_unit": null
+        }
+      ],
+      "outputs": [
+        {
+          "concept": "充电调度与能耗记录",
+          "variables": [],
+          "port_id": "S1-F09-O01",
+          "type_ref": "C017",
+          "semantic_role": "分析数据",
+          "measurement_unit": null
+        }
+      ],
+      "parent_id": "SC1",
+      "hierarchy_path": [
+        "11.23SEOV案例_优化版",
+        "SC1",
+        "S1-F09 管理充电能量收支"
+      ],
+      "required_capability": null,
+      "required_capability_status": "待业务方确认",
+      "preconditions": [],
+      "root_id": "SC1",
+      "canonical_function_id": "S1-F09",
+      "abstraction_level": "叶级功能",
+      "child_function_ids": [],
+      "source_model_path": [
+        "行为模型/SC1-行为模型.sysml",
+        "行为评估流程",
+        "管理充电能量收支"
+      ],
+      "behaviour_refs": [
+        {
+          "file": "行为模型/SC1-行为模型.sysml",
+          "root": "SC1",
+          "node": "管理充电能量收支"
+        }
+      ]
+    }
+  },
+  {
+    "req_id": "SC1-010",
+    "name": "更新运行模式评估信息",
+    "description": "更新运行模式评估信息：输入转速、负载、电池及车辆响应；输出下一步模式评估信息。闭环周期与控制算法待确认。",
+    "type": "功能需求",
+    "category": "功能性",
+    "source_refs": [
+      {
+        "file": "原始文件备份/热管理系统需求分析与建模修改任务书.txt",
+        "section": "5.2"
+      }
+    ],
+    "extras": {
+      "function_id": "S1-F10",
+      "scenario": "混合动力汽车动力经济性建模",
+      "analysis_status": "来源支持的功能分解；输入输出为分析契约，非新增物理接口",
+      "s": null,
+      "v": "更新",
+      "o": "运行模式评估信息",
+      "e": null,
+      "action": "更新运行模式评估信息",
+      "inputs": [
+        {
+          "concept": "转速、负载、电池及车辆响应",
+          "variables": [],
+          "port_id": "S1-F10-I01",
+          "type_ref": "C161",
+          "semantic_role": "分析数据",
+          "measurement_unit": null
+        }
+      ],
+      "outputs": [
+        {
+          "concept": "下一步模式评估信息",
+          "variables": [],
+          "port_id": "S1-F10-O01",
+          "type_ref": "C004",
+          "semantic_role": "反馈/实际状态",
+          "measurement_unit": null
+        }
+      ],
+      "parent_id": "SC1",
+      "hierarchy_path": [
+        "11.23SEOV案例_优化版",
+        "SC1",
+        "S1-F10 更新运行模式评估信息"
+      ],
+      "required_capability": null,
+      "required_capability_status": "待业务方确认",
+      "preconditions": [],
+      "root_id": "SC1",
+      "canonical_function_id": "S1-F10",
+      "abstraction_level": "叶级功能",
+      "child_function_ids": [],
+      "source_model_path": [
+        "行为模型/SC1-行为模型.sysml",
+        "行为评估流程",
+        "反馈并更新模式评估"
+      ],
+      "behaviour_refs": [
+        {
+          "file": "行为模型/SC1-行为模型.sysml",
+          "root": "SC1",
+          "node": "反馈并更新模式评估"
+        }
+      ]
+    }
+  },
+  {
+    "req_id": "SC2-001",
+    "name": "初始化驾驶循环",
+    "description": "初始化驾驶循环：输入仿真开始、空调启动操作；输出静置阶段与座舱降温请求。初始温度、时间步长未给出。",
+    "type": "功能需求",
+    "category": "功能性",
+    "source_refs": [
+      {
+        "file": "原始文件备份/热管理系统需求分析与建模修改任务书.txt",
+        "section": "5.3"
+      }
+    ],
+    "extras": {
+      "function_id": "S2-F01",
+      "scenario": "纯电热管理建模",
+      "analysis_status": "来源支持的功能分解；输入输出为分析契约，非新增物理接口",
+      "s": null,
+      "v": "初始化",
+      "o": "驾驶循环",
+      "e": null,
+      "action": "初始化驾驶循环",
+      "inputs": [
+        {
+          "concept": "仿真开始、空调启动操作",
+          "variables": [],
+          "port_id": "S2-F01-I01",
+          "type_ref": "C012",
+          "semantic_role": "分析数据",
+          "measurement_unit": null
+        }
+      ],
+      "outputs": [
+        {
+          "concept": "静置阶段与座舱降温请求",
+          "variables": [],
+          "port_id": "S2-F01-O01",
+          "type_ref": "C180",
+          "semantic_role": "请求/命令",
+          "measurement_unit": null
+        }
+      ],
+      "parent_id": "SC2",
+      "hierarchy_path": [
+        "11.23SEOV案例_优化版",
+        "SC2",
+        "S2-F01 初始化驾驶循环"
+      ],
+      "required_capability": null,
+      "required_capability_status": "待业务方确认",
+      "preconditions": [],
+      "root_id": "SC2",
+      "canonical_function_id": "S2-F01",
+      "abstraction_level": "叶级功能",
+      "child_function_ids": [],
+      "source_model_path": [
+        "行为模型/SC2-行为模型.sysml",
+        "行为评估流程",
+        "初始化驾驶循环与空调请求"
+      ],
+      "behaviour_refs": [
+        {
+          "file": "行为模型/SC2-行为模型.sysml",
+          "root": "SC2",
+          "node": "初始化驾驶循环与空调请求"
+        }
+      ]
+    }
+  },
+  {
+    "req_id": "SC2-002",
+    "name": "记录静置预冷时长",
+    "description": "记录静置预冷时长：输入阶段起点、经过时间；输出静置2分钟完成事件。不可省略座舱空调启动。",
+    "type": "功能需求",
+    "category": "功能性",
+    "source_refs": [
+      {
+        "file": "原始文件备份/热管理系统需求分析与建模修改任务书.txt",
+        "section": "5.3"
+      }
+    ],
+    "extras": {
+      "function_id": "S2-F02",
+      "scenario": "纯电热管理建模",
+      "analysis_status": "来源支持的功能分解；输入输出为分析契约，非新增物理接口",
+      "s": null,
+      "v": "记录",
+      "o": "静置预冷时长",
+      "e": "完成2分钟静置预冷",
+      "action": "记录静置预冷时长",
+      "inputs": [
+        {
+          "concept": "阶段起点、经过时间",
+          "variables": [],
+          "port_id": "S2-F02-I01",
+          "type_ref": "C176",
+          "semantic_role": "分析数据",
+          "measurement_unit": null
+        }
+      ],
+      "outputs": [
+        {
+          "concept": "静置2分钟完成事件",
+          "variables": [],
+          "port_id": "S2-F02-O01",
+          "type_ref": "C179",
+          "semantic_role": "分析数据",
+          "measurement_unit": null
+        }
+      ],
+      "parent_id": "SC2",
+      "hierarchy_path": [
+        "11.23SEOV案例_优化版",
+        "SC2",
+        "S2-F02 记录静置预冷时长"
+      ],
+      "required_capability": null,
+      "required_capability_status": "待业务方确认",
+      "preconditions": [],
+      "root_id": "SC2",
+      "canonical_function_id": "S2-F02",
+      "abstraction_level": "叶级功能",
+      "child_function_ids": [],
+      "source_model_path": [
+        "行为模型/SC2-行为模型.sysml",
+        "行为评估流程",
+        "执行静置预冷工况"
+      ],
+      "behaviour_refs": [
+        {
+          "file": "行为模型/SC2-行为模型.sysml",
+          "root": "SC2",
+          "node": "执行静置预冷工况"
+        }
+      ]
+    }
+  },
+  {
+    "req_id": "SC2-003",
+    "name": "控制匀速行驶工况",
+    "description": "控制匀速行驶工况：输入预冷完成事件、车速反馈；输出45 km/h行驶20分钟工况。总循环22分钟由2+20推导，不新增指标。",
+    "type": "功能需求",
+    "category": "功能性",
+    "source_refs": [
+      {
+        "file": "原始文件备份/热管理系统需求分析与建模修改任务书.txt",
+        "section": "5.3"
+      }
+    ],
+    "extras": {
+      "function_id": "S2-F03",
+      "scenario": "纯电热管理建模",
+      "analysis_status": "来源支持的功能分解；输入输出为分析契约，非新增物理接口",
+      "s": null,
+      "v": "控制",
+      "o": "匀速行驶工况",
+      "e": "完成45 km/h、20分钟的匀速行驶工况",
+      "action": "控制匀速行驶工况",
+      "inputs": [
+        {
+          "concept": "预冷完成事件、车速反馈",
+          "variables": [],
+          "port_id": "S2-F03-I01",
+          "type_ref": "C183",
+          "semantic_role": "反馈/实际状态",
+          "measurement_unit": null
+        }
+      ],
+      "outputs": [
+        {
+          "concept": "45 km/h行驶20分钟工况",
+          "variables": [],
+          "port_id": "S2-F03-O01",
+          "type_ref": "C001",
+          "semantic_role": "分析数据",
+          "measurement_unit": null
+        }
+      ],
+      "parent_id": "SC2",
+      "hierarchy_path": [
+        "11.23SEOV案例_优化版",
+        "SC2",
+        "S2-F03 控制匀速行驶工况"
+      ],
+      "required_capability": null,
+      "required_capability_status": "待业务方确认",
+      "preconditions": [],
+      "root_id": "SC2",
+      "canonical_function_id": "S2-F03",
+      "abstraction_level": "叶级功能",
+      "child_function_ids": [],
+      "source_model_path": [
+        "行为模型/SC2-行为模型.sysml",
+        "行为评估流程",
+        "执行匀速行驶工况"
+      ],
+      "behaviour_refs": [
+        {
+          "file": "行为模型/SC2-行为模型.sysml",
+          "root": "SC2",
+          "node": "执行匀速行驶工况"
+        }
+      ]
+    }
+  },
+  {
+    "req_id": "SC2-004",
+    "name": "处理座舱降温请求",
+    "description": "处理座舱降温请求：输入空调启动、座舱状态；输出座舱制冷需求与响应。目标温度未提供。",
+    "type": "功能需求",
+    "category": "功能性",
+    "source_refs": [
+      {
+        "file": "原始文件备份/热管理系统需求分析与建模修改任务书.txt",
+        "section": "5.3"
+      }
+    ],
+    "extras": {
+      "function_id": "S2-F04",
+      "scenario": "纯电热管理建模",
+      "analysis_status": "来源支持的功能分解；输入输出为分析契约，非新增物理接口",
+      "s": null,
+      "v": "处理",
+      "o": "座舱降温请求",
+      "e": null,
+      "action": "处理座舱降温请求",
+      "inputs": [
+        {
+          "concept": "空调启动、座舱状态",
+          "variables": [],
+          "port_id": "S2-F04-I01",
+          "type_ref": "C150",
+          "semantic_role": "反馈/实际状态",
+          "measurement_unit": null
+        }
+      ],
+      "outputs": [
+        {
+          "concept": "座舱制冷需求与响应",
+          "variables": [],
+          "port_id": "S2-F04-O01",
+          "type_ref": "C071",
+          "semantic_role": "分析数据",
+          "measurement_unit": null
+        }
+      ],
+      "parent_id": "SC2",
+      "hierarchy_path": [
+        "11.23SEOV案例_优化版",
+        "SC2",
+        "S2-F04 处理座舱降温请求"
+      ],
+      "required_capability": null,
+      "required_capability_status": "待业务方确认",
+      "preconditions": [],
+      "root_id": "SC2",
+      "canonical_function_id": "S2-F04",
+      "abstraction_level": "叶级功能",
+      "child_function_ids": [],
+      "source_model_path": [
+        "行为模型/SC2-行为模型.sysml",
+        "行为评估流程",
+        "处理座舱降温请求"
+      ],
+      "behaviour_refs": [
+        {
+          "file": "行为模型/SC2-行为模型.sysml",
+          "root": "SC2",
+          "node": "处理座舱降温请求"
+        }
+      ]
+    }
+  },
+  {
+    "req_id": "SC2-005",
+    "name": "获取电池温度",
+    "description": "获取电池温度：按扩充清单C01参考细化，输入有效电芯温度信息，输出最高有效电芯控制温度；无有效温度的处置策略待确认，不能将无效值当作0℃。",
+    "type": "功能需求",
+    "category": "功能性",
+    "source_refs": [
+      {
+        "file": "原始文件备份/热管理系统需求分析与建模修改任务书.txt",
+        "section": "5.3"
+      },
+      {
+        "file": "00_修改依据/汽车热管理_SVOE功能清单_扩充版.md",
+        "line": 35,
+        "section": "2. 完整SVOE清单 / 共用功能",
+        "function_id": "C01",
+        "evidence_status": "本次直接核对清单；清单所引外部原文未随附件提供，未独立复核",
+        "usage": "本次结合清单的参考细化；非原11.3条目自带约束"
+      }
+    ],
+    "extras": {
+      "function_id": "S2-F05",
+      "scenario": "纯电热管理建模",
+      "analysis_status": "来源支持的功能分解；输入输出为分析契约，非新增物理接口",
+      "s": null,
+      "v": "获取",
+      "o": "电池温度",
+      "e": null,
+      "action": "获取电池温度",
+      "inputs": [
+        {
+          "concept": "电芯温度快照",
+          "variables": [],
+          "port_id": "S2-F05-I01",
+          "type_ref": "C142",
+          "semantic_role": "分析数据",
+          "measurement_unit": null
+        }
+      ],
+      "outputs": [
+        {
+          "concept": "最高有效电芯温度及有效性",
+          "variables": [],
+          "port_id": "S2-F05-O01",
+          "type_ref": "C093",
+          "semantic_role": "信息有效性",
+          "measurement_unit": null
+        }
+      ],
+      "parent_id": "SC2",
+      "hierarchy_path": [
+        "11.23SEOV案例_优化版",
+        "SC2",
+        "S2-F05 获取电池温度"
+      ],
+      "required_capability": null,
+      "required_capability_status": "待业务方确认",
+      "preconditions": [
+        "按扩充清单C01参考细化，先筛选有效电芯温度；无有效值时不得替换成0℃，处置策略待确认"
+      ],
+      "root_id": "SC2",
+      "canonical_function_id": "S2-F05",
+      "abstraction_level": "叶级功能",
+      "child_function_ids": [],
+      "source_model_path": [
+        "行为模型/SC2-行为模型.sysml",
+        "行为评估流程",
+        "获取有效电池控制温度"
+      ],
+      "behaviour_refs": [
+        {
+          "file": "行为模型/SC2-行为模型.sysml",
+          "root": "SC2",
+          "node": "获取有效电池控制温度"
+        }
+      ],
+      "reference_profile": "SC2_REFERENCE_35C_MAX_VALID",
+      "adoption_status": "必须由项目明确采用；不作为已获批准规则"
+    }
+  },
+  {
+    "req_id": "SC2-006",
+    "name": "判定电池主动冷却需求",
+    "description": "判定电池主动冷却需求：最高有效电芯温度>=35℃时提出电池供风请求；按本次扩充清单C02/A06参考细化，低于35℃时撤销请求，不关闭仍有需求的座舱空调；不新增滞回阈值。",
+    "type": "功能需求",
+    "category": "功能性",
+    "source_refs": [
+      {
+        "file": "原始文件备份/热管理系统需求分析与建模修改任务书.txt",
+        "section": "5.3"
+      },
+      {
+        "file": "00_修改依据/汽车热管理_SVOE功能清单_扩充版.md",
+        "line": 36,
+        "section": "2. 完整SVOE清单 / 共用功能",
+        "function_id": "C02",
+        "evidence_status": "本次直接核对清单；清单所引外部原文未随附件提供，未独立复核",
+        "usage": "本次结合清单的参考细化；非原11.3条目自带约束"
+      },
+      {
+        "file": "00_修改依据/汽车热管理_SVOE功能清单_扩充版.md",
+        "line": 86,
+        "section": "2. 完整SVOE清单 / 场景二空气换热",
+        "function_id": "A06",
+        "evidence_status": "本次直接核对清单；清单所引外部原文未随附件提供，未独立复核",
+        "usage": "本次结合清单的参考细化；非原11.3条目自带约束"
+      }
+    ],
+    "extras": {
+      "function_id": "S2-F06",
+      "scenario": "纯电热管理建模",
+      "analysis_status": "来源支持的功能分解；输入输出为分析契约，非新增物理接口",
+      "s": null,
+      "v": "判定",
+      "o": "电池主动冷却需求",
+      "e": "在电芯控制温度>=35℃时发出主动冷却请求",
+      "action": "判定电池主动冷却需求",
+      "inputs": [
+        {
+          "concept": "最高有效电芯控制温度",
+          "variables": [],
+          "port_id": "S2-F06-I01",
+          "type_ref": "C092",
+          "semantic_role": "分析数据",
+          "measurement_unit": "℃"
+        }
+      ],
+      "outputs": [
+        {
+          "concept": "主动冷却请求",
+          "variables": [],
+          "port_id": "S2-F06-O01",
+          "type_ref": "C010",
+          "semantic_role": "请求/命令",
+          "measurement_unit": null
+        }
+      ],
+      "parent_id": "SC2",
+      "hierarchy_path": [
+        "11.23SEOV案例_优化版",
+        "SC2",
+        "S2-F06 判定电池主动冷却需求"
+      ],
+      "required_capability": null,
+      "required_capability_status": "待业务方确认",
+      "preconditions": [
+        "场景二：最高有效电芯温度>=35℃提出供风请求；按扩充清单C02/A06参考基线，<35℃撤销该请求；不因此关闭仍有需求的座舱空调；未增加滞回阈值"
+      ],
+      "root_id": "SC2",
+      "canonical_function_id": "S2-F06",
+      "abstraction_level": "叶级功能",
+      "child_function_ids": [],
+      "source_model_path": [
+        "行为模型/SC2-行为模型.sysml",
+        "行为评估流程",
+        "提出电池主动供风请求"
+      ],
+      "behaviour_refs": [
+        {
+          "file": "行为模型/SC2-行为模型.sysml",
+          "root": "SC2",
+          "node": "提出电池主动供风请求"
+        },
+        {
+          "file": "行为模型/SC2-行为模型.sysml",
+          "root": "SC2",
+          "node": "撤销电池供风请求"
+        }
+      ],
+      "reference_profile": "SC2_REFERENCE_35C_MAX_VALID",
+      "adoption_status": "必须由项目明确采用；不作为已获批准规则"
+    }
+  },
+  {
+    "req_id": "SC2-007",
+    "name": "评估环境空气换热量",
+    "description": "评估环境空气换热量：输入电芯与发动机舱空气状态、换热条件；输出有符号环境换热贡献。温差可能反向，不能总假定降温。",
+    "type": "功能需求",
+    "category": "功能性",
+    "source_refs": [
+      {
+        "file": "原始文件备份/热管理系统需求分析与建模修改任务书.txt",
+        "section": "5.3"
+      },
+      {
+        "file": "00_修改依据/汽车热管理_SVOE功能清单_扩充版.md",
+        "line": 82,
+        "section": "2. 完整SVOE清单 / 场景二空气换热",
+        "function_id": "A02",
+        "evidence_status": "本次直接核对清单；清单所引外部原文未随附件提供，未独立复核",
+        "usage": "本次结合清单的参考细化；非原11.3条目自带约束"
+      },
+      {
+        "file": "00_修改依据/汽车热管理_SVOE功能清单_扩充版.md",
+        "line": 84,
+        "section": "2. 完整SVOE清单 / 场景二空气换热",
+        "function_id": "A04",
+        "evidence_status": "本次直接核对清单；清单所引外部原文未随附件提供，未独立复核",
+        "usage": "本次结合清单的参考细化；非原11.3条目自带约束"
+      }
+    ],
+    "extras": {
+      "function_id": "S2-F07",
+      "scenario": "纯电热管理建模",
+      "analysis_status": "来源支持的功能分解；输入输出为分析契约，非新增物理接口",
+      "s": null,
+      "v": "评估",
+      "o": "环境空气换热量",
+      "e": null,
+      "action": "评估环境空气换热量",
+      "inputs": [
+        {
+          "concept": "电池热节点与前舱局部空气状态",
+          "variables": [],
+          "port_id": "S2-F07-I01",
+          "type_ref": "C139",
+          "semantic_role": "反馈/实际状态",
+          "measurement_unit": null
+        },
+        {
+          "concept": "独立环境换热边界与有效热导",
+          "variables": [],
+          "port_id": "S2-F07-I02",
+          "type_ref": "C108",
+          "semantic_role": "分析数据",
+          "measurement_unit": null
+        }
+      ],
+      "outputs": [
+        {
+          "concept": "有符号环境换热贡献",
+          "variables": [],
+          "port_id": "S2-F07-O01",
+          "type_ref": "C098",
+          "semantic_role": "分析数据",
+          "measurement_unit": null
+        }
+      ],
+      "parent_id": "SC2",
+      "hierarchy_path": [
+        "11.23SEOV案例_优化版",
+        "SC2",
+        "S2-F07 评估环境空气换热量"
+      ],
+      "required_capability": null,
+      "required_capability_status": "待业务方确认",
+      "preconditions": [],
+      "root_id": "SC2",
+      "canonical_function_id": "S2-F07",
+      "abstraction_level": "叶级功能",
+      "child_function_ids": [],
+      "source_model_path": [
+        "行为模型/SC2-行为模型.sysml",
+        "行为评估流程",
+        "评估有符号环境换热"
+      ],
+      "behaviour_refs": [
+        {
+          "file": "行为模型/SC2-行为模型.sysml",
+          "root": "SC2",
+          "node": "评估有符号环境换热"
+        }
+      ]
+    }
+  },
+  {
+    "req_id": "SC2-008",
+    "name": "协调座舱与电池冷却能力",
+    "description": "协调座舱与电池冷却能力：输入两类冷却需求、可用能力；输出各路径能力分配。不足时优先级待确认。",
+    "type": "功能需求",
+    "category": "功能性",
+    "source_refs": [
+      {
+        "file": "原始文件备份/热管理系统需求分析与建模修改任务书.txt",
+        "section": "5.3"
+      }
+    ],
+    "extras": {
+      "function_id": "S2-F08",
+      "scenario": "纯电热管理建模",
+      "analysis_status": "来源支持的功能分解；输入输出为分析契约，非新增物理接口",
+      "s": null,
+      "v": "协调",
+      "o": "座舱与电池冷却能力",
+      "e": null,
+      "action": "协调座舱与电池冷却能力",
+      "inputs": [
+        {
+          "concept": "两类冷却需求、可用能力",
+          "variables": [],
+          "port_id": "S2-F08-I01",
+          "type_ref": "C006",
+          "semantic_role": "分析数据",
+          "measurement_unit": null
+        }
+      ],
+      "outputs": [
+        {
+          "concept": "各路径能力分配",
+          "variables": [],
+          "port_id": "S2-F08-O01",
+          "type_ref": "C056",
+          "semantic_role": "分析数据",
+          "measurement_unit": null
+        }
+      ],
+      "parent_id": "SC2",
+      "hierarchy_path": [
+        "11.23SEOV案例_优化版",
+        "SC2",
+        "S2-F08 协调座舱与电池冷却能力"
+      ],
+      "required_capability": null,
+      "required_capability_status": "待业务方确认",
+      "preconditions": [],
+      "root_id": "SC2",
+      "canonical_function_id": "S2-F08",
+      "abstraction_level": "叶级功能",
+      "child_function_ids": [],
+      "source_model_path": [
+        "行为模型/SC2-行为模型.sysml",
+        "行为评估流程",
+        "提出电池主动供风请求"
+      ],
+      "behaviour_refs": [
+        {
+          "file": "行为模型/SC2-行为模型.sysml",
+          "root": "SC2",
+          "node": "提出电池主动供风请求"
+        }
+      ]
+    }
+  },
+  {
+    "req_id": "SC2-009",
+    "name": "评估主动供风响应",
+    "description": "评估主动冷却执行状态：区分未请求、不可用、已请求待供风和已建立供风；依据电池入口实际空气温度、流量及有效热导评估换热贡献，请求本身不代表已形成冷量。",
+    "type": "功能需求",
+    "category": "功能性",
+    "source_refs": [
+      {
+        "file": "原始文件备份/热管理系统需求分析与建模修改任务书.txt",
+        "section": "5.3"
+      },
+      {
+        "file": "00_修改依据/汽车热管理_SVOE功能清单_扩充版.md",
+        "line": 85,
+        "section": "2. 完整SVOE清单 / 场景二空气换热",
+        "function_id": "A05",
+        "evidence_status": "本次直接核对清单；清单所引外部原文未随附件提供，未独立复核",
+        "usage": "本次结合清单的参考细化；非原11.3条目自带约束"
+      },
+      {
+        "file": "00_修改依据/汽车热管理_SVOE功能清单_扩充版.md",
+        "line": 87,
+        "section": "2. 完整SVOE清单 / 场景二空气换热",
+        "function_id": "A07",
+        "evidence_status": "本次直接核对清单；清单所引外部原文未随附件提供，未独立复核",
+        "usage": "本次结合清单的参考细化；非原11.3条目自带约束"
+      },
+      {
+        "file": "00_修改依据/汽车热管理_SVOE功能清单_扩充版.md",
+        "line": 88,
+        "section": "2. 完整SVOE清单 / 场景二空气换热",
+        "function_id": "A08",
+        "evidence_status": "本次直接核对清单；清单所引外部原文未随附件提供，未独立复核",
+        "usage": "本次结合清单的参考细化；非原11.3条目自带约束"
+      },
+      {
+        "file": "00_修改依据/汽车热管理_SVOE功能清单_扩充版.md",
+        "line": 89,
+        "section": "2. 完整SVOE清单 / 场景二空气换热",
+        "function_id": "A09",
+        "evidence_status": "本次直接核对清单；清单所引外部原文未随附件提供，未独立复核",
+        "usage": "本次结合清单的参考细化；非原11.3条目自带约束"
+      },
+      {
+        "file": "00_修改依据/汽车热管理_SVOE功能清单_扩充版.md",
+        "line": 91,
+        "section": "2. 完整SVOE清单 / 场景二空气换热",
+        "function_id": "A11",
+        "evidence_status": "本次直接核对清单；清单所引外部原文未随附件提供，未独立复核",
+        "usage": "本次结合清单的参考细化；非原11.3条目自带约束"
+      }
+    ],
+    "extras": {
+      "function_id": "S2-F09",
+      "scenario": "纯电热管理建模",
+      "analysis_status": "来源支持的功能分解；输入输出为分析契约，非新增物理接口",
+      "s": null,
+      "v": "评估",
+      "o": "主动供风响应",
+      "e": null,
+      "action": "评估主动供风响应",
+      "inputs": [
+        {
+          "concept": "电池主动供风请求及供风可用状态",
+          "variables": [],
+          "port_id": "S2-F09-I01",
+          "type_ref": "C127",
+          "semantic_role": "请求/命令",
+          "measurement_unit": null
+        },
+        {
+          "concept": "电池入口实际空气温度与流量",
+          "variables": [],
+          "port_id": "S2-F09-I02",
+          "type_ref": "C132",
+          "semantic_role": "反馈/实际状态",
+          "measurement_unit": null
+        },
+        {
+          "concept": "主动供风有效热导与独立换热边界",
+          "variables": [],
+          "port_id": "S2-F09-I03",
+          "type_ref": "C008",
+          "semantic_role": "分析数据",
+          "measurement_unit": null
+        }
+      ],
+      "outputs": [
+        {
+          "concept": "未请求、不可用、待供风或供风已建立的执行状态",
+          "variables": [],
+          "port_id": "S2-F09-O01",
+          "type_ref": "C099",
+          "semantic_role": "请求/命令",
+          "measurement_unit": null
+        },
+        {
+          "concept": "主动供风的有符号换热贡献",
+          "variables": [],
+          "port_id": "S2-F09-O02",
+          "type_ref": "C009",
+          "semantic_role": "分析数据",
+          "measurement_unit": null
+        }
+      ],
+      "parent_id": "SC2",
+      "hierarchy_path": [
+        "11.23SEOV案例_优化版",
+        "SC2",
+        "S2-F09 评估主动冷却执行状态"
+      ],
+      "required_capability": null,
+      "required_capability_status": "待业务方确认",
+      "preconditions": [],
+      "root_id": "SC2",
+      "canonical_function_id": "S2-F09",
+      "abstraction_level": "组合功能",
+      "child_function_ids": [
+        "S2-F09-01",
+        "S2-F09-02",
+        "S2-F09-03"
+      ],
+      "source_model_path": [
+        "行为模型/SC2-行为模型.sysml",
+        "行为评估流程",
+        "获取实际供风条件"
+      ],
+      "behaviour_refs": [
+        {
+          "file": "行为模型/SC2-行为模型.sysml",
+          "root": "SC2",
+          "node": "获取实际供风条件",
+          "via_child": "S2-F09-01"
+        },
+        {
+          "file": "行为模型/SC2-行为模型.sysml",
+          "root": "SC2",
+          "node": "判定实际供风状态",
+          "via_child": "S2-F09-02"
+        },
+        {
+          "file": "行为模型/SC2-行为模型.sysml",
+          "root": "SC2",
+          "node": "记录供风未实际建立",
+          "via_child": "S2-F09-02"
+        },
+        {
+          "file": "行为模型/SC2-行为模型.sysml",
+          "root": "SC2",
+          "node": "计算主动供风换热量",
+          "via_child": "S2-F09-03"
+        }
+      ]
+    }
+  },
+  {
+    "req_id": "SC2-010",
+    "name": "汇总空气侧换热量",
+    "description": "汇总空气侧换热量：仅汇总同一热节点和周期内独立且不重复计数的环境及主动供风路径，统一推进热状态；若空调风替换同一表面环境空气，应更新该边界，不能叠加计算两遍。",
+    "type": "功能需求",
+    "category": "功能性",
+    "source_refs": [
+      {
+        "file": "原始文件备份/热管理系统需求分析与建模修改任务书.txt",
+        "section": "5.3"
+      },
+      {
+        "file": "00_修改依据/汽车热管理_SVOE功能清单_扩充版.md",
+        "line": 82,
+        "section": "2. 完整SVOE清单 / 场景二空气换热",
+        "function_id": "A02",
+        "evidence_status": "本次直接核对清单；清单所引外部原文未随附件提供，未独立复核",
+        "usage": "本次结合清单的参考细化；非原11.3条目自带约束"
+      },
+      {
+        "file": "00_修改依据/汽车热管理_SVOE功能清单_扩充版.md",
+        "line": 93,
+        "section": "2. 完整SVOE清单 / 场景二空气换热",
+        "function_id": "A13",
+        "evidence_status": "本次直接核对清单；清单所引外部原文未随附件提供，未独立复核",
+        "usage": "本次结合清单的参考细化；非原11.3条目自带约束"
+      }
+    ],
+    "extras": {
+      "function_id": "S2-F10",
+      "scenario": "纯电热管理建模",
+      "analysis_status": "来源支持的功能分解；输入输出为分析契约，非新增物理接口",
+      "s": null,
+      "v": "汇总",
+      "o": "空气侧换热量",
+      "e": null,
+      "action": "汇总空气侧换热量",
+      "inputs": [
+        {
+          "concept": "环境/主动换热贡献、车辆与电池运行状态",
+          "variables": [],
+          "port_id": "S2-F10-I01",
+          "type_ref": "C109",
+          "semantic_role": "反馈/实际状态",
+          "measurement_unit": null
+        }
+      ],
+      "outputs": [
+        {
+          "concept": "电池/座舱热状态反馈",
+          "variables": [],
+          "port_id": "S2-F10-O01",
+          "type_ref": "C125",
+          "semantic_role": "反馈/实际状态",
+          "measurement_unit": null
+        }
+      ],
+      "parent_id": "SC2",
+      "hierarchy_path": [
+        "11.23SEOV案例_优化版",
+        "SC2",
+        "S2-F10 汇总空气侧换热量"
+      ],
+      "required_capability": null,
+      "required_capability_status": "待业务方确认",
+      "preconditions": [
+        "仅汇总独立、无重复计数的换热路径；若空调风替换同一表面的环境空气，应更新边界，不能重复叠加"
+      ],
+      "root_id": "SC2",
+      "canonical_function_id": "S2-F10",
+      "abstraction_level": "叶级功能",
+      "child_function_ids": [],
+      "source_model_path": [
+        "行为模型/SC2-行为模型.sysml",
+        "行为评估流程",
+        "汇总独立空气侧热流"
+      ],
+      "behaviour_refs": [
+        {
+          "file": "行为模型/SC2-行为模型.sysml",
+          "root": "SC2",
+          "node": "汇总独立空气侧热流"
+        },
+        {
+          "file": "行为模型/SC2-行为模型.sysml",
+          "root": "SC2",
+          "node": "更新被替换的空气边界"
+        },
+        {
+          "file": "行为模型/SC2-行为模型.sysml",
+          "root": "SC2",
+          "node": "反馈本周期热状态"
+        }
+      ]
+    }
+  },
+  {
+    "req_id": "SC3-001",
+    "name": "获取座舱目标温度",
+    "description": "获取座舱目标温度：输入人员设定或场景目标；输出有效目标温度。默认目标温度未提供。",
+    "type": "功能需求",
+    "category": "功能性",
+    "source_refs": [
+      {
+        "file": "原始文件备份/热管理系统需求分析与建模修改任务书.txt",
+        "section": "5.4"
+      }
+    ],
+    "extras": {
+      "function_id": "S3-F01",
+      "scenario": "座舱空气调节",
+      "analysis_status": "来源支持的功能分解；输入输出为分析契约，非新增物理接口",
+      "s": null,
+      "v": "获取",
+      "o": "座舱目标温度",
+      "e": null,
+      "action": "获取座舱目标温度",
+      "inputs": [
+        {
+          "concept": "人员设定或场景目标",
+          "variables": [],
+          "port_id": "S3-F01-I01",
+          "type_ref": "C011",
+          "semantic_role": "目标/设定",
+          "measurement_unit": null
+        }
+      ],
+      "outputs": [
+        {
+          "concept": "有效目标温度",
+          "variables": [],
+          "port_id": "S3-F01-O01",
+          "type_ref": "C097",
+          "semantic_role": "目标/设定",
+          "measurement_unit": null
+        }
+      ],
+      "parent_id": "SC3",
+      "hierarchy_path": [
+        "11.23SEOV案例_优化版",
+        "SC3",
+        "S3-F01 获取座舱目标温度"
+      ],
+      "required_capability": null,
+      "required_capability_status": "待业务方确认",
+      "preconditions": [],
+      "root_id": "SC3",
+      "canonical_function_id": "S3-F01",
+      "abstraction_level": "叶级功能",
+      "child_function_ids": [],
+      "source_model_path": [
+        "行为模型/SC3-行为模型.sysml",
+        "行为评估流程",
+        "获取座舱目标温度"
+      ],
+      "behaviour_refs": [
+        {
+          "file": "行为模型/SC3-行为模型.sysml",
+          "root": "SC3",
+          "node": "获取座舱目标温度"
+        }
+      ]
+    }
+  },
+  {
+    "req_id": "SC3-002",
+    "name": "获取座舱实际温度",
+    "description": "获取座舱实际温度：输入座舱温度信息；输出温度反馈。采样精度未规定。",
+    "type": "功能需求",
+    "category": "功能性",
+    "source_refs": [
+      {
+        "file": "原始文件备份/热管理系统需求分析与建模修改任务书.txt",
+        "section": "5.4"
+      }
+    ],
+    "extras": {
+      "function_id": "S3-F02",
+      "scenario": "座舱空气调节",
+      "analysis_status": "来源支持的功能分解；输入输出为分析契约，非新增物理接口",
+      "s": null,
+      "v": "获取",
+      "o": "座舱实际温度",
+      "e": null,
+      "action": "获取座舱实际温度",
+      "inputs": [
+        {
+          "concept": "座舱温度信息",
+          "variables": [],
+          "port_id": "S3-F02-I01",
+          "type_ref": "C072",
+          "semantic_role": "反馈/实际状态",
+          "measurement_unit": null
+        }
+      ],
+      "outputs": [
+        {
+          "concept": "温度反馈",
+          "variables": [],
+          "port_id": "S3-F02-O01",
+          "type_ref": "C103",
+          "semantic_role": "反馈/实际状态",
+          "measurement_unit": null
+        }
+      ],
+      "parent_id": "SC3",
+      "hierarchy_path": [
+        "11.23SEOV案例_优化版",
+        "SC3",
+        "S3-F02 获取座舱实际温度"
+      ],
+      "required_capability": null,
+      "required_capability_status": "待业务方确认",
+      "preconditions": [],
+      "root_id": "SC3",
+      "canonical_function_id": "S3-F02",
+      "abstraction_level": "叶级功能",
+      "child_function_ids": [],
+      "source_model_path": [
+        "行为模型/SC3-行为模型.sysml",
+        "行为评估流程",
+        "获取座舱实际温度"
+      ],
+      "behaviour_refs": [
+        {
+          "file": "行为模型/SC3-行为模型.sysml",
+          "root": "SC3",
+          "node": "获取座舱实际温度"
+        }
+      ]
+    }
+  },
+  {
+    "req_id": "SC3-003",
+    "name": "判定座舱制冷需求",
+    "description": "判定座舱制冷需求：输入目标温度、实测温度；输出座舱制冷需求。控制死区与算法待确认。",
+    "type": "功能需求",
+    "category": "功能性",
+    "source_refs": [
+      {
+        "file": "原始文件备份/热管理系统需求分析与建模修改任务书.txt",
+        "section": "5.4"
+      }
+    ],
+    "extras": {
+      "function_id": "S3-F03",
+      "scenario": "座舱空气调节",
+      "analysis_status": "来源支持的功能分解；输入输出为分析契约，非新增物理接口",
+      "s": null,
+      "v": "判定",
+      "o": "座舱制冷需求",
+      "e": null,
+      "action": "判定座舱制冷需求",
+      "inputs": [
+        {
+          "concept": "目标温度、实测温度",
+          "variables": [],
+          "port_id": "S3-F03-I01",
+          "type_ref": "C145",
+          "semantic_role": "目标/设定",
+          "measurement_unit": null
+        }
+      ],
+      "outputs": [
+        {
+          "concept": "座舱制冷需求",
+          "variables": [],
+          "port_id": "S3-F03-O01",
+          "type_ref": "C070",
+          "semantic_role": "分析数据",
+          "measurement_unit": null
+        }
+      ],
+      "parent_id": "SC3",
+      "hierarchy_path": [
+        "11.23SEOV案例_优化版",
+        "SC3",
+        "S3-F03 判定座舱制冷需求"
+      ],
+      "required_capability": null,
+      "required_capability_status": "待业务方确认",
+      "preconditions": [],
+      "root_id": "SC3",
+      "canonical_function_id": "S3-F03",
+      "abstraction_level": "叶级功能",
+      "child_function_ids": [],
+      "source_model_path": [
+        "行为模型/SC3-行为模型.sysml",
+        "行为评估流程",
+        "判定座舱制冷需求"
+      ],
+      "behaviour_refs": [
+        {
+          "file": "行为模型/SC3-行为模型.sysml",
+          "root": "SC3",
+          "node": "判定座舱制冷需求"
+        }
+      ]
+    }
+  },
+  {
+    "req_id": "SC3-004",
+    "name": "调节座舱制冷能力",
+    "description": "调节座舱制冷能力：输入分配的制冷能力、制冷需求；输出制冷量调节请求。不用压缩机等硬件作功能名称。",
+    "type": "功能需求",
+    "category": "功能性",
+    "source_refs": [
+      {
+        "file": "原始文件备份/热管理系统需求分析与建模修改任务书.txt",
+        "section": "5.4"
+      }
+    ],
+    "extras": {
+      "function_id": "S3-F04",
+      "scenario": "座舱空气调节",
+      "analysis_status": "来源支持的功能分解；输入输出为分析契约，非新增物理接口",
+      "s": null,
+      "v": "调节",
+      "o": "座舱制冷能力",
+      "e": "使座舱温度趋近目标；性能窗口未提供",
+      "action": "调节座舱制冷能力",
+      "inputs": [
+        {
+          "concept": "分配的制冷能力、制冷需求",
+          "variables": [],
+          "port_id": "S3-F04-I01",
+          "type_ref": "C021",
+          "semantic_role": "分析数据",
+          "measurement_unit": null
+        }
+      ],
+      "outputs": [
+        {
+          "concept": "制冷量调节请求",
+          "variables": [],
+          "port_id": "S3-F04-O01",
+          "type_ref": "C029",
+          "semantic_role": "请求/命令",
+          "measurement_unit": null
+        }
+      ],
+      "parent_id": "SC3",
+      "hierarchy_path": [
+        "11.23SEOV案例_优化版",
+        "SC3",
+        "S3-F04 调节座舱制冷能力"
+      ],
+      "required_capability": null,
+      "required_capability_status": "待业务方确认",
+      "preconditions": [],
+      "root_id": "SC3",
+      "canonical_function_id": "S3-F04",
+      "abstraction_level": "叶级功能",
+      "child_function_ids": [],
+      "source_model_path": [
+        "行为模型/SC3-行为模型.sysml",
+        "行为评估流程",
+        "调节座舱制冷能力"
+      ],
+      "behaviour_refs": [
+        {
+          "file": "行为模型/SC3-行为模型.sysml",
+          "root": "SC3",
+          "node": "调节座舱制冷能力"
+        }
+      ]
+    }
+  },
+  {
+    "req_id": "SC3-005",
+    "name": "调节座舱送风量",
+    "description": "调节座舱送风量：输入制冷请求、空气输送需求；输出座舱空气换热效果。风量上下限未给出。",
+    "type": "功能需求",
+    "category": "功能性",
+    "source_refs": [
+      {
+        "file": "原始文件备份/热管理系统需求分析与建模修改任务书.txt",
+        "section": "5.4"
+      }
+    ],
+    "extras": {
+      "function_id": "S3-F05",
+      "scenario": "座舱空气调节",
+      "analysis_status": "来源支持的功能分解；输入输出为分析契约，非新增物理接口",
+      "s": null,
+      "v": "调节",
+      "o": "座舱送风量",
+      "e": null,
+      "action": "调节座舱送风量",
+      "inputs": [
+        {
+          "concept": "制冷请求、空气输送需求",
+          "variables": [],
+          "port_id": "S3-F05-I01",
+          "type_ref": "C027",
+          "semantic_role": "请求/命令",
+          "measurement_unit": null
+        }
+      ],
+      "outputs": [
+        {
+          "concept": "座舱空气换热效果",
+          "variables": [],
+          "port_id": "S3-F05-O01",
+          "type_ref": "C074",
+          "semantic_role": "分析数据",
+          "measurement_unit": null
+        }
+      ],
+      "parent_id": "SC3",
+      "hierarchy_path": [
+        "11.23SEOV案例_优化版",
+        "SC3",
+        "S3-F05 调节座舱送风量"
+      ],
+      "required_capability": null,
+      "required_capability_status": "待业务方确认",
+      "preconditions": [],
+      "root_id": "SC3",
+      "canonical_function_id": "S3-F05",
+      "abstraction_level": "叶级功能",
+      "child_function_ids": [],
+      "source_model_path": [
+        "行为模型/SC3-行为模型.sysml",
+        "行为评估流程",
+        "调节座舱送风量"
+      ],
+      "behaviour_refs": [
+        {
+          "file": "行为模型/SC3-行为模型.sysml",
+          "root": "SC3",
+          "node": "调节座舱送风量"
+        }
+      ]
+    }
+  },
+  {
+    "req_id": "SC3-006",
+    "name": "获取电池温度与功率",
+    "description": "获取电池温度与功率：输入电池温度、充放电功率；输出有效温度/功率输入。不能将场景二35℃自动移用于本场景。",
+    "type": "功能需求",
+    "category": "功能性",
+    "source_refs": [
+      {
+        "file": "原始文件备份/热管理系统需求分析与建模修改任务书.txt",
+        "section": "5.4"
+      }
+    ],
+    "extras": {
+      "function_id": "S3-F06",
+      "scenario": "座舱空气调节",
+      "analysis_status": "来源支持的功能分解；输入输出为分析契约，非新增物理接口",
+      "s": null,
+      "v": "获取",
+      "o": "电池温度与功率",
+      "e": null,
+      "action": "获取电池温度与功率",
+      "inputs": [
+        {
+          "concept": "电池温度、充放电功率",
+          "variables": [],
+          "port_id": "S3-F06-I01",
+          "type_ref": "C137",
+          "semantic_role": "分析数据",
+          "measurement_unit": null
+        }
+      ],
+      "outputs": [
+        {
+          "concept": "有效温度/功率输入",
+          "variables": [],
+          "port_id": "S3-F06-O01",
+          "type_ref": "C094",
+          "semantic_role": "分析数据",
+          "measurement_unit": null
+        }
+      ],
+      "parent_id": "SC3",
+      "hierarchy_path": [
+        "11.23SEOV案例_优化版",
+        "SC3",
+        "S3-F06 获取电池温度与功率"
+      ],
+      "required_capability": null,
+      "required_capability_status": "待业务方确认",
+      "preconditions": [],
+      "root_id": "SC3",
+      "canonical_function_id": "S3-F06",
+      "abstraction_level": "组合功能",
+      "child_function_ids": [
+        "S3-F06-01",
+        "S3-F06-02"
+      ],
+      "source_model_path": [
+        "行为模型/SC3-行为模型.sysml",
+        "行为评估流程",
+        "获取电池控制温度"
+      ],
+      "behaviour_refs": [
+        {
+          "file": "行为模型/SC3-行为模型.sysml",
+          "root": "SC3",
+          "node": "获取电池控制温度",
+          "via_child": "S3-F06-01"
+        },
+        {
+          "file": "行为模型/SC3-行为模型.sysml",
+          "root": "SC3",
+          "node": "获取电池充放电功率",
+          "via_child": "S3-F06-02"
+        }
+      ]
+    }
+  },
+  {
+    "req_id": "SC3-007",
+    "name": "判定电池辅助冷却需求",
+    "description": "判定电池辅助冷却需求：输入温度/功率输入；输出辅助冷却需求。温度偏高 OR 功率较大；阈值未给出。",
+    "type": "功能需求",
+    "category": "功能性",
+    "source_refs": [
+      {
+        "file": "原始文件备份/热管理系统需求分析与建模修改任务书.txt",
+        "section": "5.4"
+      }
+    ],
+    "extras": {
+      "function_id": "S3-F07",
+      "scenario": "座舱空气调节",
+      "analysis_status": "来源支持的功能分解；输入输出为分析契约，非新增物理接口",
+      "s": null,
+      "v": "判定",
+      "o": "电池辅助冷却需求",
+      "e": null,
+      "action": "判定电池辅助冷却需求",
+      "inputs": [
+        {
+          "concept": "温度/功率输入",
+          "variables": [],
+          "port_id": "S3-F07-I01",
+          "type_ref": "C101",
+          "semantic_role": "分析数据",
+          "measurement_unit": null
+        }
+      ],
+      "outputs": [
+        {
+          "concept": "辅助冷却需求",
+          "variables": [],
+          "port_id": "S3-F07-O01",
+          "type_ref": "C163",
+          "semantic_role": "分析数据",
+          "measurement_unit": null
+        }
+      ],
+      "parent_id": "SC3",
+      "hierarchy_path": [
+        "11.23SEOV案例_优化版",
+        "SC3",
+        "S3-F07 判定电池辅助冷却需求"
+      ],
+      "required_capability": null,
+      "required_capability_status": "待业务方确认",
+      "preconditions": [],
+      "root_id": "SC3",
+      "canonical_function_id": "S3-F07",
+      "abstraction_level": "叶级功能",
+      "child_function_ids": [],
+      "source_model_path": [
+        "行为模型/SC3-行为模型.sysml",
+        "行为评估流程",
+        "电池辅助需求判断"
+      ],
+      "behaviour_refs": [
+        {
+          "file": "行为模型/SC3-行为模型.sysml",
+          "root": "SC3",
+          "node": "电池辅助需求判断"
+        }
+      ]
+    }
+  },
+  {
+    "req_id": "SC3-008",
+    "name": "计算电池冷却能力需求",
+    "description": "计算电池冷却能力需求：输入辅助冷却需求、热状态；输出电池冷却能力请求。热模型参数及计算算法未给出。",
+    "type": "功能需求",
+    "category": "功能性",
+    "source_refs": [
+      {
+        "file": "原始文件备份/热管理系统需求分析与建模修改任务书.txt",
+        "section": "5.4"
+      }
+    ],
+    "extras": {
+      "function_id": "S3-F08",
+      "scenario": "座舱空气调节",
+      "analysis_status": "来源支持的功能分解；输入输出为分析契约，非新增物理接口",
+      "s": null,
+      "v": "计算",
+      "o": "电池冷却能力需求",
+      "e": null,
+      "action": "计算电池冷却能力需求",
+      "inputs": [
+        {
+          "concept": "辅助冷却需求、热状态",
+          "variables": [],
+          "port_id": "S3-F08-I01",
+          "type_ref": "C164",
+          "semantic_role": "反馈/实际状态",
+          "measurement_unit": null
+        }
+      ],
+      "outputs": [
+        {
+          "concept": "电池冷却能力请求",
+          "variables": [],
+          "port_id": "S3-F08-O01",
+          "type_ref": "C133",
+          "semantic_role": "请求/命令",
+          "measurement_unit": null
+        }
+      ],
+      "parent_id": "SC3",
+      "hierarchy_path": [
+        "11.23SEOV案例_优化版",
+        "SC3",
+        "S3-F08 计算电池冷却能力需求"
+      ],
+      "required_capability": null,
+      "required_capability_status": "待业务方确认",
+      "preconditions": [],
+      "root_id": "SC3",
+      "canonical_function_id": "S3-F08",
+      "abstraction_level": "叶级功能",
+      "child_function_ids": [],
+      "source_model_path": [
+        "行为模型/SC3-行为模型.sysml",
+        "行为评估流程",
+        "计算电池冷量需求"
+      ],
+      "behaviour_refs": [
+        {
+          "file": "行为模型/SC3-行为模型.sysml",
+          "root": "SC3",
+          "node": "计算电池冷量需求"
+        }
+      ]
+    }
+  },
+  {
+    "req_id": "SC3-009",
+    "name": "分配座舱与电池制冷能力",
+    "description": "分配座舱与电池制冷能力：输入座舱/电池请求、可用制冷能力；输出两个功能的能力分配。不足时优先级/互斥策略待确认。",
+    "type": "功能需求",
+    "category": "功能性",
+    "source_refs": [
+      {
+        "file": "原始文件备份/热管理系统需求分析与建模修改任务书.txt",
+        "section": "5.4"
+      },
+      {
+        "file": "00_修改依据/汽车热管理_SVOE功能清单_扩充版.md",
+        "line": 108,
+        "section": "2. 完整SVOE清单 / 场景三液冷",
+        "function_id": "L10",
+        "evidence_status": "本次直接核对清单；清单所引外部原文未随附件提供，未独立复核",
+        "usage": "本次结合清单的参考细化；非原11.3条目自带约束"
+      }
+    ],
+    "extras": {
+      "function_id": "S3-F09",
+      "scenario": "座舱空气调节",
+      "analysis_status": "来源支持的功能分解；输入输出为分析契约，非新增物理接口",
+      "s": null,
+      "v": "分配",
+      "o": "座舱与电池制冷能力",
+      "e": null,
+      "action": "分配座舱与电池制冷能力",
+      "inputs": [
+        {
+          "concept": "座舱/电池请求、可用制冷能力",
+          "variables": [],
+          "port_id": "S3-F09-I01",
+          "type_ref": "C068",
+          "semantic_role": "请求/命令",
+          "measurement_unit": null
+        }
+      ],
+      "outputs": [
+        {
+          "concept": "两个功能的能力分配",
+          "variables": [],
+          "port_id": "S3-F09-O01",
+          "type_ref": "C005",
+          "semantic_role": "分析数据",
+          "measurement_unit": null
+        }
+      ],
+      "parent_id": "SC3",
+      "hierarchy_path": [
+        "11.23SEOV案例_优化版",
+        "SC3",
+        "S3-F09 分配座舱与电池制冷能力"
+      ],
+      "required_capability": null,
+      "required_capability_status": "待业务方确认",
+      "preconditions": [],
+      "root_id": "SC3",
+      "canonical_function_id": "S3-F09",
+      "abstraction_level": "叶级功能",
+      "child_function_ids": [],
+      "source_model_path": [
+        "行为模型/SC3-行为模型.sysml",
+        "行为评估流程",
+        "分配共享制冷能力"
+      ],
+      "behaviour_refs": [
+        {
+          "file": "行为模型/SC3-行为模型.sysml",
+          "root": "SC3",
+          "node": "分配共享制冷能力"
+        }
+      ]
+    }
+  },
+  {
+    "req_id": "SC3-010",
+    "name": "调节电池液路换热量",
+    "description": "调节电池液路换热量：输入电池分配能力、冷却液状态；输出电池热量交换响应。保留原场景冷却液路径，未改为供风。",
+    "type": "功能需求",
+    "category": "功能性",
+    "source_refs": [
+      {
+        "file": "原始文件备份/热管理系统需求分析与建模修改任务书.txt",
+        "section": "5.4"
+      },
+      {
+        "file": "00_修改依据/汽车热管理_SVOE功能清单_扩充版.md",
+        "line": 103,
+        "section": "2. 完整SVOE清单 / 场景三液冷",
+        "function_id": "L05",
+        "evidence_status": "本次直接核对清单；清单所引外部原文未随附件提供，未独立复核",
+        "usage": "本次结合清单的参考细化；非原11.3条目自带约束"
+      },
+      {
+        "file": "00_修改依据/汽车热管理_SVOE功能清单_扩充版.md",
+        "line": 104,
+        "section": "2. 完整SVOE清单 / 场景三液冷",
+        "function_id": "L06",
+        "evidence_status": "本次直接核对清单；清单所引外部原文未随附件提供，未独立复核",
+        "usage": "本次结合清单的参考细化；非原11.3条目自带约束"
+      },
+      {
+        "file": "00_修改依据/汽车热管理_SVOE功能清单_扩充版.md",
+        "line": 105,
+        "section": "2. 完整SVOE清单 / 场景三液冷",
+        "function_id": "L07",
+        "evidence_status": "本次直接核对清单；清单所引外部原文未随附件提供，未独立复核",
+        "usage": "本次结合清单的参考细化；非原11.3条目自带约束"
+      },
+      {
+        "file": "00_修改依据/汽车热管理_SVOE功能清单_扩充版.md",
+        "line": 107,
+        "section": "2. 完整SVOE清单 / 场景三液冷",
+        "function_id": "L09",
+        "evidence_status": "本次直接核对清单；清单所引外部原文未随附件提供，未独立复核",
+        "usage": "本次结合清单的参考细化；非原11.3条目自带约束"
+      }
+    ],
+    "extras": {
+      "function_id": "S3-F10",
+      "scenario": "座舱空气调节",
+      "analysis_status": "来源支持的功能分解；输入输出为分析契约，非新增物理接口",
+      "s": null,
+      "v": "调节",
+      "o": "电池液路换热量",
+      "e": "通过冷却液及Chiller路径移除电池热量",
+      "action": "调节电池液路换热量",
+      "inputs": [
+        {
+          "concept": "电池分配能力、冷却液状态",
+          "variables": [],
+          "port_id": "S3-F10-I01",
+          "type_ref": "C135",
+          "semantic_role": "反馈/实际状态",
+          "measurement_unit": null
+        }
+      ],
+      "outputs": [
+        {
+          "concept": "电池热量交换响应",
+          "variables": [],
+          "port_id": "S3-F10-O01",
+          "type_ref": "C140",
+          "semantic_role": "分析数据",
+          "measurement_unit": null
+        }
+      ],
+      "parent_id": "SC3",
+      "hierarchy_path": [
+        "11.23SEOV案例_优化版",
+        "SC3",
+        "S3-F10 调节电池液路换热量"
+      ],
+      "required_capability": null,
+      "required_capability_status": "待业务方确认",
+      "preconditions": [],
+      "root_id": "SC3",
+      "canonical_function_id": "S3-F10",
+      "abstraction_level": "叶级功能",
+      "child_function_ids": [],
+      "source_model_path": [
+        "行为模型/SC3-行为模型.sysml",
+        "行为评估流程",
+        "调节电池Chiller液路换热"
+      ],
+      "behaviour_refs": [
+        {
+          "file": "行为模型/SC3-行为模型.sysml",
+          "root": "SC3",
+          "node": "调节电池Chiller液路换热"
+        }
+      ]
+    }
+  },
+  {
+    "req_id": "SC3-011",
+    "name": "反馈座舱与电池冷却状态",
+    "description": "反馈座舱与电池冷却状态：输入座舱/电池温度与执行状态；输出需求重新评估信息。不得凭空填写安全/性能窗口上下限。",
+    "type": "功能需求",
+    "category": "功能性",
+    "source_refs": [
+      {
+        "file": "原始文件备份/热管理系统需求分析与建模修改任务书.txt",
+        "section": "5.4"
+      },
+      {
+        "file": "00_修改依据/汽车热管理_SVOE功能清单_扩充版.md",
+        "line": 75,
+        "section": "2. 完整SVOE清单 / 座舱共用功能",
+        "function_id": "K10",
+        "evidence_status": "本次直接核对清单；清单所引外部原文未随附件提供，未独立复核",
+        "usage": "本次结合清单的参考细化；非原11.3条目自带约束"
+      },
+      {
+        "file": "00_修改依据/汽车热管理_SVOE功能清单_扩充版.md",
+        "line": 112,
+        "section": "2. 完整SVOE清单 / 场景三液冷",
+        "function_id": "L14",
+        "evidence_status": "本次直接核对清单；清单所引外部原文未随附件提供，未独立复核",
+        "usage": "本次结合清单的参考细化；非原11.3条目自带约束"
+      }
+    ],
+    "extras": {
+      "function_id": "S3-F11",
+      "scenario": "座舱空气调节",
+      "analysis_status": "来源支持的功能分解；输入输出为分析契约，非新增物理接口",
+      "s": null,
+      "v": "反馈",
+      "o": "座舱与电池冷却状态",
+      "e": null,
+      "action": "反馈座舱与电池冷却状态",
+      "inputs": [
+        {
+          "concept": "座舱/电池温度与执行状态",
+          "variables": [],
+          "port_id": "S3-F11-I01",
+          "type_ref": "C067",
+          "semantic_role": "反馈/实际状态",
+          "measurement_unit": null
+        }
+      ],
+      "outputs": [
+        {
+          "concept": "需求重新评估信息",
+          "variables": [],
+          "port_id": "S3-F11-O01",
+          "type_ref": "C178",
+          "semantic_role": "反馈/实际状态",
+          "measurement_unit": null
+        }
+      ],
+      "parent_id": "SC3",
+      "hierarchy_path": [
+        "11.23SEOV案例_优化版",
+        "SC3",
+        "S3-F11 反馈座舱与电池冷却状态"
+      ],
+      "required_capability": null,
+      "required_capability_status": "待业务方确认",
+      "preconditions": [],
+      "root_id": "SC3",
+      "canonical_function_id": "S3-F11",
+      "abstraction_level": "叶级功能",
+      "child_function_ids": [],
+      "source_model_path": [
+        "行为模型/SC3-行为模型.sysml",
+        "行为评估流程",
+        "反馈座舱与电池温控状态"
+      ],
+      "behaviour_refs": [
+        {
+          "file": "行为模型/SC3-行为模型.sysml",
+          "root": "SC3",
+          "node": "反馈座舱与电池温控状态"
+        }
+      ]
+    }
+  }
+]

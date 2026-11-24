@@ -1,0 +1,36 @@
+@startdot
+digraph G {
+graph [bgcolor="white",fontname="Noto Sans CJK SC",fontsize=22,labelloc=t,label="02_3.3.1.6-功能分解 · 功能分解图",pad=0.45,nodesep=0.45,ranksep=0.65,splines=polyline,dpi=145,rankdir=LR,nodesep=.35,ranksep=.8];
+node [shape=box,style="rounded,filled",fillcolor="white",color="#858585",penwidth=1.1,fontname="Noto Sans CJK SC",fontsize=15,margin="0.16,0.12"];
+edge [color="#777777",fontname="Noto Sans CJK SC",fontsize=11,arrowsize=0.65,penwidth=1.0];
+A0 [label=<<FONT COLOR="#8070AC">▣</FONT> «action def»<BR/>自动空调控制>];
+A1 [label=<<FONT COLOR="#8070AC">▣</FONT> «action»<BR/>处理用户模式操作>];
+A0 -> A1 [dir=both,arrowtail=diamond,arrowhead=none];
+A2 [label=<<FONT COLOR="#8070AC">▣</FONT> «action»<BR/>判定目标温度边界<BR/><FONT POINT-SIZE="11">LF-008</FONT>>];
+A1 -> A2 [dir=both,arrowtail=diamond,arrowhead=none];
+A3 [label=<<FONT COLOR="#8070AC">▣</FONT> «action»<BR/>更新座舱目标温度<BR/><FONT POINT-SIZE="11">LF-009</FONT>>];
+A1 -> A3 [dir=both,arrowtail=diamond,arrowhead=none];
+A4 [label=<<FONT COLOR="#8070AC">▣</FONT> «action»<BR/>切换自动模式状态<BR/><FONT POINT-SIZE="11">LF-014</FONT>>];
+A1 -> A4 [dir=both,arrowtail=diamond,arrowhead=none];
+A5 [label=<<FONT COLOR="#8070AC">▣</FONT> «action»<BR/>处理AUTO下的AC操作<BR/><FONT POINT-SIZE="11">LF-028</FONT>>];
+A1 -> A5 [dir=both,arrowtail=diamond,arrowhead=none];
+A6 [label=<<FONT COLOR="#8070AC">▣</FONT> «action»<BR/>获取温度与环境信息>];
+A0 -> A6 [dir=both,arrowtail=diamond,arrowhead=none];
+A7 [label=<<FONT COLOR="#8070AC">▣</FONT> «action»<BR/>获取温度与环境信息<BR/><FONT POINT-SIZE="11">LF-010</FONT>>];
+A6 -> A7 [dir=both,arrowtail=diamond,arrowhead=none];
+A8 [label=<<FONT COLOR="#8070AC">▣</FONT> «action»<BR/>协调自动温控请求>];
+A0 -> A8 [dir=both,arrowtail=diamond,arrowhead=none];
+A9 [label=<<FONT COLOR="#8070AC">▣</FONT> «action»<BR/>协调自动温控请求<BR/><FONT POINT-SIZE="11">LF-011</FONT>>];
+A8 -> A9 [dir=both,arrowtail=diamond,arrowhead=none];
+A10 [label=<<FONT COLOR="#8070AC">▣</FONT> «action»<BR/>调节座舱温度<BR/><FONT POINT-SIZE="11">LF-015</FONT>>];
+A8 -> A10 [dir=both,arrowtail=diamond,arrowhead=none];
+A11 [label=<<FONT COLOR="#8070AC">▣</FONT> «action»<BR/>处理AUTO模式请求>];
+A0 -> A11 [dir=both,arrowtail=diamond,arrowhead=none];
+A12 [label=<<FONT COLOR="#8070AC">▣</FONT> «action»<BR/>反馈自动模式状态<BR/><FONT POINT-SIZE="11">LF-012</FONT>>];
+A11 -> A12 [dir=both,arrowtail=diamond,arrowhead=none];
+A13 [label=<<FONT COLOR="#8070AC">▣</FONT> «action»<BR/>更新自动温控运行信息>];
+A0 -> A13 [dir=both,arrowtail=diamond,arrowhead=none];
+A14 [label=<<FONT COLOR="#8070AC">▣</FONT> «action»<BR/>反馈空调运行状态<BR/><FONT POINT-SIZE="11">LF-013</FONT>>];
+A13 -> A14 [dir=both,arrowtail=diamond,arrowhead=none];
+}
+@enddot

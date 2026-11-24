@@ -1,0 +1,29 @@
+@startdot
+digraph G {
+graph [bgcolor="white",fontname="Noto Sans CJK SC",fontsize=22,labelloc=t,label="3.3.1.2 空调制热 · 需求图",pad=0.45,nodesep=0.45,ranksep=0.65,splines=polyline,dpi=145,layout=neato,overlap=true,notranslate=true,splines=line];
+node [shape=box,style="rounded,filled",fillcolor="white",color="#858585",penwidth=1.1,fontname="Noto Sans CJK SC",fontsize=15,margin="0.16,0.12"];
+edge [color="#777777",fontname="Noto Sans CJK SC",fontsize=11,arrowsize=0.65,penwidth=1.0];
+MAIN [pos="0,0!",shape=plain,label=<<TABLE BORDER="1" COLOR="#858585" CELLBORDER="0" CELLSPACING="0" CELLPADDING="10" STYLE="ROUNDED"><TR><TD><FONT COLOR="#8070AC">▣</FONT> «requirement def»<BR/><B>空调制热</B><BR/>3.3.1.2 · 系统需求</TD></TR><TR><TD BORDER="1" SIDES="T"><I>doc</I><BR/>原需求层次保留</TD></TR></TABLE>>];
+R0 [pos="-3.5,2.4!",width=2.8,height=1.0,label=<<FONT COLOR="#8070AC">▣</FONT> «requirement»<BR/>3.3.1.2-01<BR/>制热请求输入<BR/><FONT POINT-SIZE="11">系统需求</FONT>>];
+MAIN -> R0 [dir=both,arrowtail=diamond,arrowhead=none];
+// 3.3.1.2-01 | heatingRequestInput | 接收用户制热请求与目标温度；物理输入路径待确认
+R1 [pos="0,3.4!",width=2.8,height=1.0,label=<<FONT COLOR="#8070AC">▣</FONT> «requirement»<BR/>3.3.1.2-02<BR/>环境与电池热负荷适配<BR/><FONT POINT-SIZE="11">系统需求</FONT>>];
+MAIN -> R1 [dir=both,arrowtail=diamond,arrowhead=none];
+// 3.3.1.2-02 | environmentLoadAdaptation | 环境温度与电池热负荷对输出优化方式待明确
+R2 [pos="3.5,2.4!",width=2.8,height=1.0,label=<<FONT COLOR="#8070AC">▣</FONT> «requirement»<BR/>3.3.1.2-03<BR/>电加热使能条件<BR/><FONT POINT-SIZE="11">系统需求</FONT>>];
+MAIN -> R2 [dir=both,arrowtail=diamond,arrowhead=none];
+// 3.3.1.2-03 | ptcEnableConditions | 空气输送开启、目标温度高于室内、高压可用、整车无故障、SOC>10%全部满足后允许加热
+R3 [pos="-3.7,0.0!",width=2.8,height=1.0,label=<<FONT COLOR="#8070AC">▣</FONT> «requirement»<BR/>3.3.1.2-04<BR/>电加热通断控制<BR/><FONT POINT-SIZE="11">系统需求</FONT>>];
+MAIN -> R3 [dir=both,arrowtail=diamond,arrowhead=none];
+// 3.3.1.2-04 | ptcRelayControl | 按使能条件控制电加热通断；不设计具体继电器硬件
+R4 [pos="3.7,0.0!",width=2.8,height=1.0,label=<<FONT COLOR="#8070AC">▣</FONT> «requirement»<BR/>3.3.1.2-05<BR/>电加热过温保护<BR/><FONT POINT-SIZE="11">系统需求</FONT>>];
+MAIN -> R4 [dir=both,arrowtail=diamond,arrowhead=none];
+// 3.3.1.2-05 | ptcOvertemperatureProtection | 温度>=XXX℃停止加热，<=XXX℃允许恢复；阈值待标定
+R5 [pos="-2.4,-2.6!",width=2.8,height=1.0,label=<<FONT COLOR="#8070AC">▣</FONT> «requirement»<BR/>3.3.1.2-06<BR/>加热状态反馈<BR/><FONT POINT-SIZE="11">系统需求</FONT>>];
+MAIN -> R5 [dir=both,arrowtail=diamond,arrowhead=none];
+// 3.3.1.2-06 | ptcStatusFeedback | 反馈电加热通断、温度、状态及实际/最大功率
+R6 [pos="2.4,-2.6!",width=2.8,height=1.0,label=<<FONT COLOR="#8070AC">▣</FONT> «requirement»<BR/>3.3.1.2-07<BR/>舱内外温度信息获取<BR/><FONT POINT-SIZE="11">系统需求</FONT>>];
+MAIN -> R6 [dir=both,arrowtail=diamond,arrowhead=none];
+// 3.3.1.2-07 | cabinOutdoorTemperatureCheck | 获取室内和室外温度，保留来源采集/通信接口
+}
+@enddot

@@ -1,0 +1,6 @@
+digraph G {
+graph [bgcolor="white",fontname="Noto Sans CJK SC",fontsize=22,labelloc=t,label="01_原子及组合功能定义 · 详情_10",pad=0.45,nodesep=0.45,ranksep=0.65,splines=polyline,dpi=145,layout=neato,overlap=true,notranslate=true];
+node [shape=box,style="rounded,filled",fillcolor="white",color="#858585",penwidth=1.1,fontname="Noto Sans CJK SC",fontsize=15,margin="0.16,0.12"];
+edge [color="#777777",fontname="Noto Sans CJK SC",fontsize=11,arrowsize=0.65,penwidth=1.0];
+G0 [pos="-2.75,-0.85!",shape=plain,label=<<TABLE BORDER="1" COLOR="#858585" CELLBORDER="0" CELLSPACING="0" CELLPADDING="10" STYLE="ROUNDED"><TR><TD><FONT COLOR="#8070AC">▣</FONT> «action def»<BR/><B>S3-F06-02 获取电池充放电功率</B></TD></TR><TR><TD ALIGN="LEFT" BORDER="1" SIDES="T"><FONT POINT-SIZE="12">输入：<BR ALIGN="LEFT"/>  电池充放电功率反馈 : C129<BR ALIGN="LEFT"/>输出：<BR ALIGN="LEFT"/>  有效电池充放电功率 : C095</FONT></TD></TR></TABLE>>];
+}

@@ -1,0 +1,389 @@
+[
+  {
+    "root_id": "3.3.1.2",
+    "field": "stopRequested",
+    "value_type": "Boolean",
+    "direction": "快照输出/行为输入",
+    "unit": null,
+    "domain": "Boolean",
+    "status": "分析级快照投影，由下游适配提供；不是新增通信报文"
+  },
+  {
+    "root_id": "3.3.1.2",
+    "field": "heatingRequested",
+    "value_type": "Boolean",
+    "direction": "快照输出/行为输入",
+    "unit": null,
+    "domain": "Boolean",
+    "status": "分析级快照投影，由下游适配提供；不是新增通信报文"
+  },
+  {
+    "root_id": "3.3.1.2",
+    "field": "blowerActive",
+    "value_type": "Boolean",
+    "direction": "快照输出/行为输入",
+    "unit": null,
+    "domain": "Boolean",
+    "status": "分析级快照投影，由下游适配提供；不是新增通信报文"
+  },
+  {
+    "root_id": "3.3.1.2",
+    "field": "targetTemperature",
+    "value_type": "Real",
+    "direction": "快照输出/行为输入",
+    "unit": "℃",
+    "domain": "见上下文/枚举定义；无产品默认值",
+    "status": "分析级快照投影，由下游适配提供；不是新增通信报文"
+  },
+  {
+    "root_id": "3.3.1.2",
+    "field": "cabinTemperature",
+    "value_type": "Real",
+    "direction": "快照输出/行为输入",
+    "unit": "℃",
+    "domain": "见上下文/枚举定义；无产品默认值",
+    "status": "分析级快照投影，由下游适配提供；不是新增通信报文"
+  },
+  {
+    "root_id": "3.3.1.2",
+    "field": "highVoltageAvailable",
+    "value_type": "Boolean",
+    "direction": "快照输出/行为输入",
+    "unit": null,
+    "domain": "Boolean",
+    "status": "分析级快照投影，由下游适配提供；不是新增通信报文"
+  },
+  {
+    "root_id": "3.3.1.2",
+    "field": "vehicleFaultActive",
+    "value_type": "Boolean",
+    "direction": "快照输出/行为输入",
+    "unit": null,
+    "domain": "Boolean",
+    "status": "分析级快照投影，由下游适配提供；不是新增通信报文"
+  },
+  {
+    "root_id": "3.3.1.2",
+    "field": "soc",
+    "value_type": "Real",
+    "direction": "快照输出/行为输入",
+    "unit": "%",
+    "domain": "见上下文/枚举定义；无产品默认值",
+    "status": "分析级快照投影，由下游适配提供；不是新增通信报文"
+  },
+  {
+    "root_id": "3.3.1.2",
+    "field": "heaterTemperature",
+    "value_type": "Real",
+    "direction": "快照输出/行为输入",
+    "unit": "℃",
+    "domain": "见上下文/枚举定义；无产品默认值",
+    "status": "分析级快照投影，由下游适配提供；不是新增通信报文"
+  },
+  {
+    "root_id": "3.3.1.2",
+    "field": "cutOffTemperature",
+    "value_type": "Real",
+    "direction": "快照输出/行为输入",
+    "unit": "℃",
+    "domain": "见上下文/枚举定义；无产品默认值",
+    "status": "来源XXX℃，不得用验证用例的假设值当成标定值"
+  },
+  {
+    "root_id": "3.3.1.2",
+    "field": "recoveryTemperature",
+    "value_type": "Real",
+    "direction": "快照输出/行为输入",
+    "unit": "℃",
+    "domain": "见上下文/枚举定义；无产品默认值",
+    "status": "来源XXX℃，不得用验证用例的假设值当成标定值"
+  },
+  {
+    "root_id": "3.3.1.2",
+    "field": "calibrationValid",
+    "value_type": "Boolean",
+    "direction": "快照输出/行为输入",
+    "unit": null,
+    "domain": "Boolean",
+    "status": "分析级快照投影，由下游适配提供；不是新增通信报文"
+  },
+  {
+    "root_id": "3.3.1.2",
+    "field": "protectionWasActive",
+    "value_type": "Boolean",
+    "direction": "快照输出/行为输入",
+    "unit": null,
+    "domain": "Boolean",
+    "status": "分析级快照投影，由下游适配提供；不是新增通信报文"
+  },
+  {
+    "root_id": "3.3.1.6",
+    "field": "stopRequested",
+    "value_type": "Boolean",
+    "direction": "快照输出/行为输入",
+    "unit": null,
+    "domain": "Boolean",
+    "status": "分析级快照投影，由下游适配提供；不是新增通信报文"
+  },
+  {
+    "root_id": "3.3.1.6",
+    "field": "autoModeActive",
+    "value_type": "Boolean",
+    "direction": "快照输出/行为输入",
+    "unit": null,
+    "domain": "Boolean",
+    "status": "分析级快照投影，由下游适配提供；不是新增通信报文"
+  },
+  {
+    "root_id": "3.3.1.6",
+    "field": "operation",
+    "value_type": "AutoOperation",
+    "direction": "快照输出/行为输入",
+    "unit": null,
+    "domain": "见上下文/枚举定义；无产品默认值",
+    "status": "分析级快照投影，由下游适配提供；不是新增通信报文"
+  },
+  {
+    "root_id": "3.3.1.9",
+    "field": "stopRequested",
+    "value_type": "Boolean",
+    "direction": "快照输出/行为输入",
+    "unit": null,
+    "domain": "Boolean",
+    "status": "分析级快照投影，由下游适配提供；不是新增通信报文"
+  },
+  {
+    "root_id": "3.3.1.9",
+    "field": "requestKind",
+    "value_type": "WindscreenKind",
+    "direction": "快照输出/行为输入",
+    "unit": null,
+    "domain": "见上下文/枚举定义；无产品默认值",
+    "status": "分析级快照投影，由下游适配提供；不是新增通信报文"
+  },
+  {
+    "root_id": "3.3.1.9",
+    "field": "soc",
+    "value_type": "Real",
+    "direction": "快照输出/行为输入",
+    "unit": "%",
+    "domain": "见上下文/枚举定义；无产品默认值",
+    "status": "分析级快照投影，由下游适配提供；不是新增通信报文"
+  },
+  {
+    "root_id": "3.3.1.9",
+    "field": "coolingRequestedByEnvironment",
+    "value_type": "Boolean",
+    "direction": "快照输出/行为输入",
+    "unit": null,
+    "domain": "Boolean",
+    "status": "分析级快照投影，由下游适配提供；不是新增通信报文"
+  },
+  {
+    "root_id": "SC1",
+    "field": "stopRequested",
+    "value_type": "Boolean",
+    "direction": "快照输出/行为输入",
+    "unit": null,
+    "domain": "Boolean",
+    "status": "分析级快照投影，由下游适配提供；不是新增通信报文"
+  },
+  {
+    "root_id": "SC1",
+    "field": "driveRequested",
+    "value_type": "Boolean",
+    "direction": "快照输出/行为输入",
+    "unit": null,
+    "domain": "Boolean",
+    "status": "分析级快照投影，由下游适配提供；不是新增通信报文"
+  },
+  {
+    "root_id": "SC1",
+    "field": "brakeRequested",
+    "value_type": "Boolean",
+    "direction": "快照输出/行为输入",
+    "unit": null,
+    "domain": "Boolean",
+    "status": "分析级快照投影，由下游适配提供；不是新增通信报文"
+  },
+  {
+    "root_id": "SC1",
+    "field": "regenAvailable",
+    "value_type": "Boolean",
+    "direction": "快照输出/行为输入",
+    "unit": null,
+    "domain": "Boolean",
+    "status": "分析级快照投影，由下游适配提供；不是新增通信报文"
+  },
+  {
+    "root_id": "SC1",
+    "field": "batteryAcceptsCharge",
+    "value_type": "Boolean",
+    "direction": "快照输出/行为输入",
+    "unit": null,
+    "domain": "Boolean",
+    "status": "分析级快照投影，由下游适配提供；不是新增通信报文"
+  },
+  {
+    "root_id": "SC1",
+    "field": "generationRequested",
+    "value_type": "Boolean",
+    "direction": "快照输出/行为输入",
+    "unit": null,
+    "domain": "Boolean",
+    "status": "分析级快照投影，由下游适配提供；不是新增通信报文"
+  },
+  {
+    "root_id": "SC1",
+    "field": "engineRunning",
+    "value_type": "Boolean",
+    "direction": "快照输出/行为输入",
+    "unit": null,
+    "domain": "Boolean",
+    "status": "分析级快照投影，由下游适配提供；不是新增通信报文"
+  },
+  {
+    "root_id": "SC2",
+    "field": "stopRequested",
+    "value_type": "Boolean",
+    "direction": "快照输出/行为输入",
+    "unit": null,
+    "domain": "Boolean",
+    "status": "分析级快照投影，由下游适配提供；不是新增通信报文"
+  },
+  {
+    "root_id": "SC2",
+    "field": "elapsedSeconds",
+    "value_type": "Real",
+    "direction": "快照输出/行为输入",
+    "unit": "s",
+    "domain": "非负、单调场景累计秒数",
+    "status": "分析级快照投影，由下游适配提供；不是新增通信报文"
+  },
+  {
+    "root_id": "SC2",
+    "field": "referenceProfileAccepted",
+    "value_type": "Boolean",
+    "direction": "快照输出/行为输入",
+    "unit": null,
+    "domain": "Boolean",
+    "status": "项目明确采用SC2参考规则后方为true；示例默认false不代表实车策略"
+  },
+  {
+    "root_id": "SC2",
+    "field": "cellTemperatureValid",
+    "value_type": "Boolean",
+    "direction": "快照输出/行为输入",
+    "unit": "℃",
+    "domain": "Boolean",
+    "status": "分析级快照投影，由下游适配提供；不是新增通信报文"
+  },
+  {
+    "root_id": "SC2",
+    "field": "maxValidCellTemperature",
+    "value_type": "Real",
+    "direction": "快照输出/行为输入",
+    "unit": "℃",
+    "domain": "见上下文/枚举定义；无产品默认值",
+    "status": "分析级快照投影，由下游适配提供；不是新增通信报文"
+  },
+  {
+    "root_id": "SC2",
+    "field": "supplyCapabilityAvailable",
+    "value_type": "Boolean",
+    "direction": "快照输出/行为输入",
+    "unit": null,
+    "domain": "Boolean",
+    "status": "分析级快照投影，由下游适配提供；不是新增通信报文"
+  },
+  {
+    "root_id": "SC2",
+    "field": "supplyFeedbackValid",
+    "value_type": "Boolean",
+    "direction": "快照输出/行为输入",
+    "unit": null,
+    "domain": "Boolean",
+    "status": "分析级快照投影，由下游适配提供；不是新增通信报文"
+  },
+  {
+    "root_id": "SC2",
+    "field": "actualAirflowPositive",
+    "value_type": "Boolean",
+    "direction": "快照输出/行为输入",
+    "unit": null,
+    "domain": "Boolean",
+    "status": "分析级快照投影，由下游适配提供；不是新增通信报文"
+  },
+  {
+    "root_id": "SC2",
+    "field": "independentAirBoundaries",
+    "value_type": "Boolean",
+    "direction": "快照输出/行为输入",
+    "unit": null,
+    "domain": "Boolean",
+    "status": "分析级快照投影，由下游适配提供；不是新增通信报文"
+  },
+  {
+    "root_id": "SC3",
+    "field": "stopRequested",
+    "value_type": "Boolean",
+    "direction": "快照输出/行为输入",
+    "unit": null,
+    "domain": "Boolean",
+    "status": "分析级快照投影，由下游适配提供；不是新增通信报文"
+  },
+  {
+    "root_id": "SC3",
+    "field": "cabinCoolingRequested",
+    "value_type": "Boolean",
+    "direction": "快照输出/行为输入",
+    "unit": null,
+    "domain": "Boolean",
+    "status": "分析级快照投影，由下游适配提供；不是新增通信报文"
+  },
+  {
+    "root_id": "SC3",
+    "field": "batteryCriteriaDefined",
+    "value_type": "Boolean",
+    "direction": "快照输出/行为输入",
+    "unit": null,
+    "domain": "Boolean",
+    "status": "SC3温度偏高/功率较大判据已定义时为true；不套用35℃"
+  },
+  {
+    "root_id": "SC3",
+    "field": "batteryTemperatureHigh",
+    "value_type": "Boolean",
+    "direction": "快照输出/行为输入",
+    "unit": "℃",
+    "domain": "Boolean",
+    "status": "分析级快照投影，由下游适配提供；不是新增通信报文"
+  },
+  {
+    "root_id": "SC3",
+    "field": "batteryPowerHigh",
+    "value_type": "Boolean",
+    "direction": "快照输出/行为输入",
+    "unit": null,
+    "domain": "Boolean",
+    "status": "分析级快照投影，由下游适配提供；不是新增通信报文"
+  },
+  {
+    "root_id": "SC3",
+    "field": "availableCapacitySufficient",
+    "value_type": "Boolean",
+    "direction": "快照输出/行为输入",
+    "unit": null,
+    "domain": "Boolean",
+    "status": "分析级快照投影，由下游适配提供；不是新增通信报文"
+  },
+  {
+    "root_id": "SC3",
+    "field": "chillerPathAvailable",
+    "value_type": "Boolean",
+    "direction": "快照输出/行为输入",
+    "unit": null,
+    "domain": "Boolean",
+    "status": "分析级快照投影，由下游适配提供；不是新增通信报文"
+  }
+]

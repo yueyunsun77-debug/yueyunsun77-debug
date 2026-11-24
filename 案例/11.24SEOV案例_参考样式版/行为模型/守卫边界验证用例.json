@@ -1,0 +1,960 @@
+[
+  {
+    "case_id": "3.3.1.2-CASE-01",
+    "root_id": "3.3.1.2",
+    "name": "使能条件不满足：blowerActive",
+    "snapshot_overrides": {
+      "stopRequested": false,
+      "heatingRequested": true,
+      "blowerActive": false,
+      "targetTemperature": 22,
+      "cabinTemperature": 20,
+      "highVoltageAvailable": true,
+      "vehicleFaultActive": false,
+      "soc": 11,
+      "heaterTemperature": 50,
+      "cutOffTemperature": 60,
+      "recoveryTemperature": 40,
+      "calibrationValid": true,
+      "protectionWasActive": false
+    },
+    "required_nodes": [
+      "抑制电加热请求"
+    ],
+    "forbidden_nodes": [
+      "允许正常加热请求",
+      "允许恢复后的加热请求"
+    ],
+    "basis": "IND-001",
+    "note": "验证用假设参数仅用于守卫逻辑，不是产品标定；不执行车辆动力学"
+  },
+  {
+    "case_id": "3.3.1.2-CASE-02",
+    "root_id": "3.3.1.2",
+    "name": "使能条件不满足：targetTemperature",
+    "snapshot_overrides": {
+      "stopRequested": false,
+      "heatingRequested": true,
+      "blowerActive": true,
+      "targetTemperature": 20,
+      "cabinTemperature": 20,
+      "highVoltageAvailable": true,
+      "vehicleFaultActive": false,
+      "soc": 11,
+      "heaterTemperature": 50,
+      "cutOffTemperature": 60,
+      "recoveryTemperature": 40,
+      "calibrationValid": true,
+      "protectionWasActive": false
+    },
+    "required_nodes": [
+      "抑制电加热请求"
+    ],
+    "forbidden_nodes": [
+      "允许正常加热请求",
+      "允许恢复后的加热请求"
+    ],
+    "basis": "IND-002",
+    "note": "验证用假设参数仅用于守卫逻辑，不是产品标定；不执行车辆动力学"
+  },
+  {
+    "case_id": "3.3.1.2-CASE-03",
+    "root_id": "3.3.1.2",
+    "name": "使能条件不满足：highVoltageAvailable",
+    "snapshot_overrides": {
+      "stopRequested": false,
+      "heatingRequested": true,
+      "blowerActive": true,
+      "targetTemperature": 22,
+      "cabinTemperature": 20,
+      "highVoltageAvailable": false,
+      "vehicleFaultActive": false,
+      "soc": 11,
+      "heaterTemperature": 50,
+      "cutOffTemperature": 60,
+      "recoveryTemperature": 40,
+      "calibrationValid": true,
+      "protectionWasActive": false
+    },
+    "required_nodes": [
+      "抑制电加热请求"
+    ],
+    "forbidden_nodes": [
+      "允许正常加热请求",
+      "允许恢复后的加热请求"
+    ],
+    "basis": "IND-003",
+    "note": "验证用假设参数仅用于守卫逻辑，不是产品标定；不执行车辆动力学"
+  },
+  {
+    "case_id": "3.3.1.2-CASE-04",
+    "root_id": "3.3.1.2",
+    "name": "使能条件不满足：vehicleFaultActive",
+    "snapshot_overrides": {
+      "stopRequested": false,
+      "heatingRequested": true,
+      "blowerActive": true,
+      "targetTemperature": 22,
+      "cabinTemperature": 20,
+      "highVoltageAvailable": true,
+      "vehicleFaultActive": true,
+      "soc": 11,
+      "heaterTemperature": 50,
+      "cutOffTemperature": 60,
+      "recoveryTemperature": 40,
+      "calibrationValid": true,
+      "protectionWasActive": false
+    },
+    "required_nodes": [
+      "抑制电加热请求"
+    ],
+    "forbidden_nodes": [
+      "允许正常加热请求",
+      "允许恢复后的加热请求"
+    ],
+    "basis": "IND-004",
+    "note": "验证用假设参数仅用于守卫逻辑，不是产品标定；不执行车辆动力学"
+  },
+  {
+    "case_id": "3.3.1.2-CASE-05",
+    "root_id": "3.3.1.2",
+    "name": "使能条件不满足：soc",
+    "snapshot_overrides": {
+      "stopRequested": false,
+      "heatingRequested": true,
+      "blowerActive": true,
+      "targetTemperature": 22,
+      "cabinTemperature": 20,
+      "highVoltageAvailable": true,
+      "vehicleFaultActive": false,
+      "soc": 10,
+      "heaterTemperature": 50,
+      "cutOffTemperature": 60,
+      "recoveryTemperature": 40,
+      "calibrationValid": true,
+      "protectionWasActive": false
+    },
+    "required_nodes": [
+      "抑制电加热请求"
+    ],
+    "forbidden_nodes": [
+      "允许正常加热请求",
+      "允许恢复后的加热请求"
+    ],
+    "basis": "IND-005",
+    "note": "验证用假设参数仅用于守卫逻辑，不是产品标定；不执行车辆动力学"
+  },
+  {
+    "case_id": "3.3.1.2-CASE-06",
+    "root_id": "3.3.1.2",
+    "name": "正常条件允许",
+    "snapshot_overrides": {
+      "stopRequested": false,
+      "heatingRequested": true,
+      "blowerActive": true,
+      "targetTemperature": 22,
+      "cabinTemperature": 20,
+      "highVoltageAvailable": true,
+      "vehicleFaultActive": false,
+      "soc": 11,
+      "heaterTemperature": 50,
+      "cutOffTemperature": 60,
+      "recoveryTemperature": 40,
+      "calibrationValid": true,
+      "protectionWasActive": false
+    },
+    "required_nodes": [
+      "允许正常加热请求"
+    ],
+    "forbidden_nodes": [
+      "切断过温加热请求"
+    ],
+    "basis": "IND-001~006",
+    "note": "验证用假设参数仅用于守卫逻辑，不是产品标定；不执行车辆动力学"
+  },
+  {
+    "case_id": "3.3.1.2-CASE-07",
+    "root_id": "3.3.1.2",
+    "name": "达到过温上限",
+    "snapshot_overrides": {
+      "stopRequested": false,
+      "heatingRequested": true,
+      "blowerActive": true,
+      "targetTemperature": 22,
+      "cabinTemperature": 20,
+      "highVoltageAvailable": true,
+      "vehicleFaultActive": false,
+      "soc": 11,
+      "heaterTemperature": 60,
+      "cutOffTemperature": 60,
+      "recoveryTemperature": 40,
+      "calibrationValid": true,
+      "protectionWasActive": false
+    },
+    "required_nodes": [
+      "切断过温加热请求"
+    ],
+    "forbidden_nodes": [
+      "允许正常加热请求"
+    ],
+    "basis": "IND-007，60℃仅为验证假设",
+    "note": "验证用假设参数仅用于守卫逻辑，不是产品标定；不执行车辆动力学"
+  },
+  {
+    "case_id": "3.3.1.2-CASE-08",
+    "root_id": "3.3.1.2",
+    "name": "恢复阈值等值且其他许可满足",
+    "snapshot_overrides": {
+      "stopRequested": false,
+      "heatingRequested": true,
+      "blowerActive": true,
+      "targetTemperature": 22,
+      "cabinTemperature": 20,
+      "highVoltageAvailable": true,
+      "vehicleFaultActive": false,
+      "soc": 11,
+      "heaterTemperature": 40,
+      "cutOffTemperature": 60,
+      "recoveryTemperature": 40,
+      "calibrationValid": true,
+      "protectionWasActive": true
+    },
+    "required_nodes": [
+      "允许恢复后的加热请求"
+    ],
+    "forbidden_nodes": [
+      "维持保护禁止状态"
+    ],
+    "basis": "IND-008，40℃仅为验证假设",
+    "note": "验证用假设参数仅用于守卫逻辑，不是产品标定；不执行车辆动力学"
+  },
+  {
+    "case_id": "3.3.1.2-CASE-09",
+    "root_id": "3.3.1.2",
+    "name": "恢复温度满足但SOC不许可",
+    "snapshot_overrides": {
+      "stopRequested": false,
+      "heatingRequested": true,
+      "blowerActive": true,
+      "targetTemperature": 22,
+      "cabinTemperature": 20,
+      "highVoltageAvailable": true,
+      "vehicleFaultActive": false,
+      "soc": 10,
+      "heaterTemperature": 40,
+      "cutOffTemperature": 60,
+      "recoveryTemperature": 40,
+      "calibrationValid": true,
+      "protectionWasActive": true
+    },
+    "required_nodes": [
+      "抑制电加热请求"
+    ],
+    "forbidden_nodes": [
+      "允许恢复后的加热请求"
+    ],
+    "basis": "IND-005与IND-008共同约束",
+    "note": "验证用假设参数仅用于守卫逻辑，不是产品标定；不执行车辆动力学"
+  },
+  {
+    "case_id": "3.3.1.2-CASE-10",
+    "root_id": "3.3.1.2",
+    "name": "标定未提供",
+    "snapshot_overrides": {
+      "stopRequested": false,
+      "heatingRequested": true,
+      "blowerActive": true,
+      "targetTemperature": 22,
+      "cabinTemperature": 20,
+      "highVoltageAvailable": true,
+      "vehicleFaultActive": false,
+      "soc": 11,
+      "heaterTemperature": 50,
+      "cutOffTemperature": 60,
+      "recoveryTemperature": 40,
+      "calibrationValid": false,
+      "protectionWasActive": false
+    },
+    "required_nodes": [
+      "记录标定参数缺口"
+    ],
+    "forbidden_nodes": [
+      "允许正常加热请求",
+      "允许恢复后的加热请求"
+    ],
+    "basis": "XXX阈值不自动填值",
+    "note": "验证用假设参数仅用于守卫逻辑，不是产品标定；不执行车辆动力学"
+  },
+  {
+    "case_id": "3.3.1.6-CASE-01",
+    "root_id": "3.3.1.6",
+    "name": "AUTO操作：temperature",
+    "snapshot_overrides": {
+      "stopRequested": false,
+      "autoModeActive": true,
+      "operation": "temperature"
+    },
+    "required_nodes": [
+      "更新温度并保持AUTO",
+      "反馈自动与空调状态"
+    ],
+    "forbidden_nodes": [],
+    "basis": "3.3.1.6原请求/模式规则；AC例外为IND-035/036",
+    "note": "验证用假设参数仅用于守卫逻辑，不是产品标定；不执行车辆动力学"
+  },
+  {
+    "case_id": "3.3.1.6-CASE-02",
+    "root_id": "3.3.1.6",
+    "name": "AUTO操作：circulation",
+    "snapshot_overrides": {
+      "stopRequested": false,
+      "autoModeActive": true,
+      "operation": "circulation"
+    },
+    "required_nodes": [
+      "保持AUTO循环操作",
+      "反馈自动与空调状态"
+    ],
+    "forbidden_nodes": [],
+    "basis": "3.3.1.6原请求/模式规则；AC例外为IND-035/036",
+    "note": "验证用假设参数仅用于守卫逻辑，不是产品标定；不执行车辆动力学"
+  },
+  {
+    "case_id": "3.3.1.6-CASE-03",
+    "root_id": "3.3.1.6",
+    "name": "AUTO操作：airflow",
+    "snapshot_overrides": {
+      "stopRequested": false,
+      "autoModeActive": true,
+      "operation": "airflow"
+    },
+    "required_nodes": [
+      "退出AUTO并保留其他自动项",
+      "反馈自动与空调状态"
+    ],
+    "forbidden_nodes": [],
+    "basis": "3.3.1.6原请求/模式规则；AC例外为IND-035/036",
+    "note": "验证用假设参数仅用于守卫逻辑，不是产品标定；不执行车辆动力学"
+  },
+  {
+    "case_id": "3.3.1.6-CASE-04",
+    "root_id": "3.3.1.6",
+    "name": "AUTO操作：distribution",
+    "snapshot_overrides": {
+      "stopRequested": false,
+      "autoModeActive": true,
+      "operation": "distribution"
+    },
+    "required_nodes": [
+      "退出AUTO并保留其他自动项",
+      "反馈自动与空调状态"
+    ],
+    "forbidden_nodes": [],
+    "basis": "3.3.1.6原请求/模式规则；AC例外为IND-035/036",
+    "note": "验证用假设参数仅用于守卫逻辑，不是产品标定；不执行车辆动力学"
+  },
+  {
+    "case_id": "3.3.1.6-CASE-05",
+    "root_id": "3.3.1.6",
+    "name": "AUTO操作：frontDefrost",
+    "snapshot_overrides": {
+      "stopRequested": false,
+      "autoModeActive": true,
+      "operation": "frontDefrost"
+    },
+    "required_nodes": [
+      "切换至前除霜模式",
+      "反馈自动与空调状态"
+    ],
+    "forbidden_nodes": [],
+    "basis": "3.3.1.6原请求/模式规则；AC例外为IND-035/036",
+    "note": "验证用假设参数仅用于守卫逻辑，不是产品标定；不执行车辆动力学"
+  },
+  {
+    "case_id": "3.3.1.6-CASE-06",
+    "root_id": "3.3.1.6",
+    "name": "AUTO操作：ac",
+    "snapshot_overrides": {
+      "stopRequested": false,
+      "autoModeActive": true,
+      "operation": "ac"
+    },
+    "required_nodes": [
+      "处理AC关闭与Close反馈",
+      "反馈自动与空调状态"
+    ],
+    "forbidden_nodes": [],
+    "basis": "3.3.1.6原请求/模式规则；AC例外为IND-035/036",
+    "note": "验证用假设参数仅用于守卫逻辑，不是产品标定；不执行车辆动力学"
+  },
+  {
+    "case_id": "3.3.1.6-CASE-07",
+    "root_id": "3.3.1.6",
+    "name": "AUTO操作：autoRepeat",
+    "snapshot_overrides": {
+      "stopRequested": false,
+      "autoModeActive": true,
+      "operation": "autoRepeat"
+    },
+    "required_nodes": [
+      "记录重复AUTO语义缺口",
+      "反馈自动与空调状态"
+    ],
+    "forbidden_nodes": [],
+    "basis": "3.3.1.6原请求/模式规则；AC例外为IND-035/036",
+    "note": "验证用假设参数仅用于守卫逻辑，不是产品标定；不执行车辆动力学"
+  },
+  {
+    "case_id": "3.3.1.6-CASE-08",
+    "root_id": "3.3.1.6",
+    "name": "AUTO操作：noChange",
+    "snapshot_overrides": {
+      "stopRequested": false,
+      "autoModeActive": true,
+      "operation": "noChange"
+    },
+    "required_nodes": [
+      "保持当前自动控制",
+      "反馈自动与空调状态"
+    ],
+    "forbidden_nodes": [],
+    "basis": "3.3.1.6原请求/模式规则；AC例外为IND-035/036",
+    "note": "验证用假设参数仅用于守卫逻辑，不是产品标定；不执行车辆动力学"
+  },
+  {
+    "case_id": "3.3.1.6-CASE-09",
+    "root_id": "3.3.1.6",
+    "name": "非AUTO不运行自动协调",
+    "snapshot_overrides": {
+      "stopRequested": false,
+      "autoModeActive": false,
+      "operation": "noChange"
+    },
+    "required_nodes": [
+      "反馈自动与空调状态"
+    ],
+    "forbidden_nodes": [
+      "协调自动温控请求"
+    ],
+    "basis": "自动模式前置条件",
+    "note": "验证用假设参数仅用于守卫逻辑，不是产品标定；不执行车辆动力学"
+  },
+  {
+    "case_id": "3.3.1.9-CASE-01",
+    "root_id": "3.3.1.9",
+    "name": "rearUnspecified SOC=20",
+    "snapshot_overrides": {
+      "stopRequested": false,
+      "requestKind": "rearUnspecified",
+      "soc": 20,
+      "coolingRequestedByEnvironment": true
+    },
+    "required_nodes": [
+      "记录后风窗或未知依据缺口"
+    ],
+    "forbidden_nodes": [
+      "请求最大送风量"
+    ],
+    "basis": "IND-029、LF-025及原边界资料缺口",
+    "note": "验证用假设参数仅用于守卫逻辑，不是产品标定；不执行车辆动力学"
+  },
+  {
+    "case_id": "3.3.1.9-CASE-02",
+    "root_id": "3.3.1.9",
+    "name": "unresolved SOC=20",
+    "snapshot_overrides": {
+      "stopRequested": false,
+      "requestKind": "unresolved",
+      "soc": 20,
+      "coolingRequestedByEnvironment": true
+    },
+    "required_nodes": [
+      "记录后风窗或未知依据缺口"
+    ],
+    "forbidden_nodes": [
+      "允许制冷除湿请求"
+    ],
+    "basis": "IND-029、LF-025及原边界资料缺口",
+    "note": "验证用假设参数仅用于守卫逻辑，不是产品标定；不执行车辆动力学"
+  },
+  {
+    "case_id": "3.3.1.9-CASE-03",
+    "root_id": "3.3.1.9",
+    "name": "frontDefrost SOC=9",
+    "snapshot_overrides": {
+      "stopRequested": false,
+      "requestKind": "frontDefrost",
+      "soc": 9,
+      "coolingRequestedByEnvironment": true
+    },
+    "required_nodes": [
+      "允许制冷除湿请求"
+    ],
+    "forbidden_nodes": [
+      "禁止低电量非前除霜制冷"
+    ],
+    "basis": "IND-029、LF-025及原边界资料缺口",
+    "note": "验证用假设参数仅用于守卫逻辑，不是产品标定；不执行车辆动力学"
+  },
+  {
+    "case_id": "3.3.1.9-CASE-04",
+    "root_id": "3.3.1.9",
+    "name": "frontDemist SOC=9",
+    "snapshot_overrides": {
+      "stopRequested": false,
+      "requestKind": "frontDemist",
+      "soc": 9,
+      "coolingRequestedByEnvironment": true
+    },
+    "required_nodes": [
+      "禁止低电量非前除霜制冷"
+    ],
+    "forbidden_nodes": [
+      "允许制冷除湿请求"
+    ],
+    "basis": "IND-029、LF-025及原边界资料缺口",
+    "note": "验证用假设参数仅用于守卫逻辑，不是产品标定；不执行车辆动力学"
+  },
+  {
+    "case_id": "3.3.1.9-CASE-05",
+    "root_id": "3.3.1.9",
+    "name": "frontDefrost SOC=10",
+    "snapshot_overrides": {
+      "stopRequested": false,
+      "requestKind": "frontDefrost",
+      "soc": 10,
+      "coolingRequestedByEnvironment": true
+    },
+    "required_nodes": [
+      "记录SOC等于10的边界缺口"
+    ],
+    "forbidden_nodes": [
+      "允许制冷除湿请求"
+    ],
+    "basis": "IND-029、LF-025及原边界资料缺口",
+    "note": "验证用假设参数仅用于守卫逻辑，不是产品标定；不执行车辆动力学"
+  },
+  {
+    "case_id": "3.3.1.9-CASE-06",
+    "root_id": "3.3.1.9",
+    "name": "环境不请求除湿",
+    "snapshot_overrides": {
+      "stopRequested": false,
+      "requestKind": "frontDefrost",
+      "soc": 11,
+      "coolingRequestedByEnvironment": false
+    },
+    "required_nodes": [
+      "不提出环境除湿请求"
+    ],
+    "forbidden_nodes": [
+      "允许制冷除湿请求"
+    ],
+    "basis": "环境条件按来源输入，不编造阈值",
+    "note": "验证用假设参数仅用于守卫逻辑，不是产品标定；不执行车辆动力学"
+  },
+  {
+    "case_id": "SC1-CASE-01",
+    "root_id": "SC1",
+    "name": "驱动与发电可并行",
+    "snapshot_overrides": {
+      "stopRequested": false,
+      "driveRequested": true,
+      "brakeRequested": false,
+      "regenAvailable": true,
+      "batteryAcceptsCharge": true,
+      "generationRequested": true,
+      "engineRunning": true
+    },
+    "required_nodes": [
+      "执行电驱动请求",
+      "调节发电工作点",
+      "管理充电能量收支"
+    ],
+    "forbidden_nodes": [
+      "协调再生充电"
+    ],
+    "basis": "原串联混动场景与能量路径",
+    "note": "验证用假设参数仅用于守卫逻辑，不是产品标定；不执行车辆动力学"
+  },
+  {
+    "case_id": "SC1-CASE-02",
+    "root_id": "SC1",
+    "name": "加速制动同时有效",
+    "snapshot_overrides": {
+      "stopRequested": false,
+      "driveRequested": true,
+      "brakeRequested": true,
+      "regenAvailable": true,
+      "batteryAcceptsCharge": true,
+      "generationRequested": true,
+      "engineRunning": true
+    },
+    "required_nodes": [
+      "记录加速制动冲突"
+    ],
+    "forbidden_nodes": [
+      "执行电驱动请求",
+      "协调再生充电"
+    ],
+    "basis": "驾驶意图冲突策略未规定",
+    "note": "验证用假设参数仅用于守卫逻辑，不是产品标定；不执行车辆动力学"
+  },
+  {
+    "case_id": "SC1-CASE-03",
+    "root_id": "SC1",
+    "name": "电池不能接受回收",
+    "snapshot_overrides": {
+      "stopRequested": false,
+      "driveRequested": false,
+      "brakeRequested": true,
+      "regenAvailable": true,
+      "batteryAcceptsCharge": false,
+      "generationRequested": true,
+      "engineRunning": true
+    },
+    "required_nodes": [
+      "记录回收不可用"
+    ],
+    "forbidden_nodes": [
+      "协调再生充电"
+    ],
+    "basis": "充电接受能力约束",
+    "note": "验证用假设参数仅用于守卫逻辑，不是产品标定；不执行车辆动力学"
+  },
+  {
+    "case_id": "SC2-CASE-01",
+    "root_id": "SC2",
+    "name": "静置阶段低于120秒",
+    "snapshot_overrides": {
+      "stopRequested": false,
+      "elapsedSeconds": 119.9,
+      "referenceProfileAccepted": true,
+      "cellTemperatureValid": true,
+      "maxValidCellTemperature": 35,
+      "supplyCapabilityAvailable": true,
+      "supplyFeedbackValid": true,
+      "actualAirflowPositive": true,
+      "independentAirBoundaries": true
+    },
+    "required_nodes": [
+      "执行静置预冷工况",
+      "计算主动供风换热量"
+    ],
+    "forbidden_nodes": [
+      "执行匀速行驶工况"
+    ],
+    "basis": "IND-038，清单C02/A08/A11",
+    "note": "验证用假设参数仅用于守卫逻辑，不是产品标定；不执行车辆动力学"
+  },
+  {
+    "case_id": "SC2-CASE-02",
+    "root_id": "SC2",
+    "name": "120秒进入匀速阶段",
+    "snapshot_overrides": {
+      "stopRequested": false,
+      "elapsedSeconds": 120,
+      "referenceProfileAccepted": true,
+      "cellTemperatureValid": true,
+      "maxValidCellTemperature": 35,
+      "supplyCapabilityAvailable": true,
+      "supplyFeedbackValid": true,
+      "actualAirflowPositive": true,
+      "independentAirBoundaries": true
+    },
+    "required_nodes": [
+      "执行匀速行驶工况"
+    ],
+    "forbidden_nodes": [
+      "执行静置预冷工况"
+    ],
+    "basis": "IND-038/039",
+    "note": "验证用假设参数仅用于守卫逻辑，不是产品标定；不执行车辆动力学"
+  },
+  {
+    "case_id": "SC2-CASE-03",
+    "root_id": "SC2",
+    "name": "1320秒结束工况",
+    "snapshot_overrides": {
+      "stopRequested": false,
+      "elapsedSeconds": 1320,
+      "referenceProfileAccepted": true,
+      "cellTemperatureValid": true,
+      "maxValidCellTemperature": 35,
+      "supplyCapabilityAvailable": true,
+      "supplyFeedbackValid": true,
+      "actualAirflowPositive": true,
+      "independentAirBoundaries": true
+    },
+    "required_nodes": [
+      "done"
+    ],
+    "forbidden_nodes": [
+      "执行匀速行驶工况",
+      "提出电池主动供风请求"
+    ],
+    "basis": "IND-038/040：2+20分钟推导，不新增产品指标",
+    "note": "验证用假设参数仅用于守卫逻辑，不是产品标定；不执行车辆动力学"
+  },
+  {
+    "case_id": "SC2-CASE-04",
+    "root_id": "SC2",
+    "name": "未批准参考方案",
+    "snapshot_overrides": {
+      "stopRequested": false,
+      "elapsedSeconds": 119.9,
+      "referenceProfileAccepted": false,
+      "cellTemperatureValid": true,
+      "maxValidCellTemperature": 35,
+      "supplyCapabilityAvailable": true,
+      "supplyFeedbackValid": true,
+      "actualAirflowPositive": true,
+      "independentAirBoundaries": true
+    },
+    "required_nodes": [
+      "记录参考规则未批准",
+      "评估有符号环境换热"
+    ],
+    "forbidden_nodes": [
+      "提出电池主动供风请求",
+      "计算主动供风换热量"
+    ],
+    "basis": "清单参考与正式采用分离",
+    "note": "验证用假设参数仅用于守卫逻辑，不是产品标定；不执行车辆动力学"
+  },
+  {
+    "case_id": "SC2-CASE-05",
+    "root_id": "SC2",
+    "name": "低于35撤销电池请求",
+    "snapshot_overrides": {
+      "stopRequested": false,
+      "elapsedSeconds": 119.9,
+      "referenceProfileAccepted": true,
+      "cellTemperatureValid": true,
+      "maxValidCellTemperature": 34.9,
+      "supplyCapabilityAvailable": true,
+      "supplyFeedbackValid": true,
+      "actualAirflowPositive": true,
+      "independentAirBoundaries": true
+    },
+    "required_nodes": [
+      "撤销电池供风请求",
+      "处理座舱降温请求"
+    ],
+    "forbidden_nodes": [
+      "提出电池主动供风请求"
+    ],
+    "basis": "清单C02/A06；不关闭仍有需求的座舱空调",
+    "note": "验证用假设参数仅用于守卫逻辑，不是产品标定；不执行车辆动力学"
+  },
+  {
+    "case_id": "SC2-CASE-06",
+    "root_id": "SC2",
+    "name": "请求存在但未建立实际流量",
+    "snapshot_overrides": {
+      "stopRequested": false,
+      "elapsedSeconds": 119.9,
+      "referenceProfileAccepted": true,
+      "cellTemperatureValid": true,
+      "maxValidCellTemperature": 35,
+      "supplyCapabilityAvailable": true,
+      "supplyFeedbackValid": true,
+      "actualAirflowPositive": false,
+      "independentAirBoundaries": true
+    },
+    "required_nodes": [
+      "提出电池主动供风请求",
+      "记录供风未实际建立"
+    ],
+    "forbidden_nodes": [
+      "计算主动供风换热量"
+    ],
+    "basis": "清单A07/A08/A11：请求不等于实际",
+    "note": "验证用假设参数仅用于守卫逻辑，不是产品标定；不执行车辆动力学"
+  },
+  {
+    "case_id": "SC2-CASE-07",
+    "root_id": "SC2",
+    "name": "同一表面边界被替换",
+    "snapshot_overrides": {
+      "stopRequested": false,
+      "elapsedSeconds": 119.9,
+      "referenceProfileAccepted": true,
+      "cellTemperatureValid": true,
+      "maxValidCellTemperature": 35,
+      "supplyCapabilityAvailable": true,
+      "supplyFeedbackValid": true,
+      "actualAirflowPositive": true,
+      "independentAirBoundaries": false
+    },
+    "required_nodes": [
+      "更新被替换的空气边界"
+    ],
+    "forbidden_nodes": [
+      "汇总独立空气侧热流"
+    ],
+    "basis": "清单A02/A13：不能重复计热",
+    "note": "验证用假设参数仅用于守卫逻辑，不是产品标定；不执行车辆动力学"
+  },
+  {
+    "case_id": "SC2-CASE-08",
+    "root_id": "SC2",
+    "name": "电芯温度无有效值",
+    "snapshot_overrides": {
+      "stopRequested": false,
+      "elapsedSeconds": 119.9,
+      "referenceProfileAccepted": true,
+      "cellTemperatureValid": false,
+      "maxValidCellTemperature": 35,
+      "supplyCapabilityAvailable": true,
+      "supplyFeedbackValid": true,
+      "actualAirflowPositive": true,
+      "independentAirBoundaries": true
+    },
+    "required_nodes": [
+      "记录无有效温度缺口"
+    ],
+    "forbidden_nodes": [
+      "提出电池主动供风请求"
+    ],
+    "basis": "清单C01：无效值不能替换成0℃",
+    "note": "验证用假设参数仅用于守卫逻辑，不是产品标定；不执行车辆动力学"
+  },
+  {
+    "case_id": "SC3-CASE-01",
+    "root_id": "SC3",
+    "name": "仅功率较大也触发电池需求",
+    "snapshot_overrides": {
+      "stopRequested": false,
+      "cabinCoolingRequested": true,
+      "batteryCriteriaDefined": true,
+      "batteryTemperatureHigh": false,
+      "batteryPowerHigh": true,
+      "availableCapacitySufficient": true,
+      "chillerPathAvailable": true
+    },
+    "required_nodes": [
+      "计算电池冷量需求",
+      "调节电池Chiller液路换热",
+      "调节座舱制冷能力"
+    ],
+    "forbidden_nodes": [
+      "记录无电池辅助冷却需求"
+    ],
+    "basis": "原场景温度偏高OR功率较大",
+    "note": "验证用假设参数仅用于守卫逻辑，不是产品标定；不执行车辆动力学"
+  },
+  {
+    "case_id": "SC3-CASE-02",
+    "root_id": "SC3",
+    "name": "仅温度偏高也触发需求",
+    "snapshot_overrides": {
+      "stopRequested": false,
+      "cabinCoolingRequested": true,
+      "batteryCriteriaDefined": true,
+      "batteryTemperatureHigh": true,
+      "batteryPowerHigh": false,
+      "availableCapacitySufficient": true,
+      "chillerPathAvailable": true
+    },
+    "required_nodes": [
+      "计算电池冷量需求"
+    ],
+    "forbidden_nodes": [
+      "记录无电池辅助冷却需求"
+    ],
+    "basis": "同上OR关系",
+    "note": "验证用假设参数仅用于守卫逻辑，不是产品标定；不执行车辆动力学"
+  },
+  {
+    "case_id": "SC3-CASE-03",
+    "root_id": "SC3",
+    "name": "两项都不高不执行电池冷却",
+    "snapshot_overrides": {
+      "stopRequested": false,
+      "cabinCoolingRequested": true,
+      "batteryCriteriaDefined": true,
+      "batteryTemperatureHigh": false,
+      "batteryPowerHigh": false,
+      "availableCapacitySufficient": true,
+      "chillerPathAvailable": true
+    },
+    "required_nodes": [
+      "保持无电池冷却请求"
+    ],
+    "forbidden_nodes": [
+      "调节电池Chiller液路换热"
+    ],
+    "basis": "OR关系及执行前置条件",
+    "note": "验证用假设参数仅用于守卫逻辑，不是产品标定；不执行车辆动力学"
+  },
+  {
+    "case_id": "SC3-CASE-04",
+    "root_id": "SC3",
+    "name": "判据未定义不能外推35℃",
+    "snapshot_overrides": {
+      "stopRequested": false,
+      "cabinCoolingRequested": true,
+      "batteryCriteriaDefined": false,
+      "batteryTemperatureHigh": false,
+      "batteryPowerHigh": true,
+      "availableCapacitySufficient": true,
+      "chillerPathAvailable": true
+    },
+    "required_nodes": [
+      "记录电池判据未定义"
+    ],
+    "forbidden_nodes": [
+      "计算电池冷量需求",
+      "调节电池Chiller液路换热"
+    ],
+    "basis": "场景三阈值未提供",
+    "note": "验证用假设参数仅用于守卫逻辑，不是产品标定；不执行车辆动力学"
+  },
+  {
+    "case_id": "SC3-CASE-05",
+    "root_id": "SC3",
+    "name": "冷量能力不足策略待确认",
+    "snapshot_overrides": {
+      "stopRequested": false,
+      "cabinCoolingRequested": true,
+      "batteryCriteriaDefined": true,
+      "batteryTemperatureHigh": false,
+      "batteryPowerHigh": true,
+      "availableCapacitySufficient": false,
+      "chillerPathAvailable": true
+    },
+    "required_nodes": [
+      "记录能力不足分配策略缺口"
+    ],
+    "forbidden_nodes": [
+      "调节电池Chiller液路换热",
+      "调节座舱制冷能力"
+    ],
+    "basis": "不得自行发明能力不足的优先级/降级策略",
+    "note": "验证用假设参数仅用于守卫逻辑，不是产品标定；不执行车辆动力学"
+  },
+  {
+    "case_id": "SC3-CASE-06",
+    "root_id": "SC3",
+    "name": "Chiller流路不可用",
+    "snapshot_overrides": {
+      "stopRequested": false,
+      "cabinCoolingRequested": true,
+      "batteryCriteriaDefined": true,
+      "batteryTemperatureHigh": false,
+      "batteryPowerHigh": true,
+      "availableCapacitySufficient": true,
+      "chillerPathAvailable": false
+    },
+    "required_nodes": [
+      "记录Chiller流路不可用",
+      "调节座舱制冷能力"
+    ],
+    "forbidden_nodes": [
+      "调节电池Chiller液路换热"
+    ],
+    "basis": "保留冷却液—Chiller路径；不用风冷代替",
+    "note": "验证用假设参数仅用于守卫逻辑，不是产品标定；不执行车辆动力学"
+  }
+]

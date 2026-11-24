@@ -1,0 +1,38 @@
+@startdot
+digraph G {
+graph [bgcolor="white",fontname="Noto Sans CJK SC",fontsize=22,labelloc=t,label="02_3.3.1.9-功能分解 · 功能分解图",pad=0.45,nodesep=0.45,ranksep=0.65,splines=polyline,dpi=145,rankdir=LR,nodesep=.35,ranksep=.8];
+node [shape=box,style="rounded,filled",fillcolor="white",color="#858585",penwidth=1.1,fontname="Noto Sans CJK SC",fontsize=15,margin="0.16,0.12"];
+edge [color="#777777",fontname="Noto Sans CJK SC",fontsize=11,arrowsize=0.65,penwidth=1.0];
+A0 [label=<<FONT COLOR="#8070AC">▣</FONT> «action def»<BR/>前风窗除霜除雾控制>];
+A1 [label=<<FONT COLOR="#8070AC">▣</FONT> «action»<BR/>接收风窗除霜或除雾请求>];
+A0 -> A1 [dir=both,arrowtail=diamond,arrowhead=none];
+A2 [label=<<FONT COLOR="#8070AC">▣</FONT> «action»<BR/>接收风窗除霜除雾请求<BR/><FONT POINT-SIZE="11">LF-016</FONT>>];
+A1 -> A2 [dir=both,arrowtail=diamond,arrowhead=none];
+A3 [label=<<FONT COLOR="#8070AC">▣</FONT> «action»<BR/>配置风窗模式参数>];
+A0 -> A3 [dir=both,arrowtail=diamond,arrowhead=none];
+A4 [label=<<FONT COLOR="#8070AC">▣</FONT> «action»<BR/>调节送风模式<BR/><FONT POINT-SIZE="11">LF-017</FONT>>];
+A3 -> A4 [dir=both,arrowtail=diamond,arrowhead=none];
+A5 [label=<<FONT COLOR="#8070AC">▣</FONT> «action»<BR/>调节送风量<BR/><FONT POINT-SIZE="11">LF-018</FONT>>];
+A3 -> A5 [dir=both,arrowtail=diamond,arrowhead=none];
+A6 [label=<<FONT COLOR="#8070AC">▣</FONT> «action»<BR/>调节空气循环方式<BR/><FONT POINT-SIZE="11">LF-019</FONT>>];
+A3 -> A6 [dir=both,arrowtail=diamond,arrowhead=none];
+A7 [label=<<FONT COLOR="#8070AC">▣</FONT> «action»<BR/>保持座舱温度设定<BR/><FONT POINT-SIZE="11">LF-021</FONT>>];
+A3 -> A7 [dir=both,arrowtail=diamond,arrowhead=none];
+A8 [label=<<FONT COLOR="#8070AC">▣</FONT> «action»<BR/>确定制冷除湿请求>];
+A0 -> A8 [dir=both,arrowtail=diamond,arrowhead=none];
+A9 [label=<<FONT COLOR="#8070AC">▣</FONT> «action»<BR/>调节制冷能力<BR/><FONT POINT-SIZE="11">LF-020</FONT>>];
+A8 -> A9 [dir=both,arrowtail=diamond,arrowhead=none];
+A10 [label=<<FONT COLOR="#8070AC">▣</FONT> «action»<BR/>仲裁热管理能力请求<BR/><FONT POINT-SIZE="11">LF-023</FONT>>];
+A8 -> A10 [dir=both,arrowtail=diamond,arrowhead=none];
+A11 [label=<<FONT COLOR="#8070AC">▣</FONT> «action»<BR/>判定低电量制冷许可<BR/><FONT POINT-SIZE="11">LF-024</FONT>>];
+A8 -> A11 [dir=both,arrowtail=diamond,arrowhead=none];
+A12 [label=<<FONT COLOR="#8070AC">▣</FONT> «action»<BR/>反馈风窗运行信息>];
+A0 -> A12 [dir=both,arrowtail=diamond,arrowhead=none];
+A13 [label=<<FONT COLOR="#8070AC">▣</FONT> «action»<BR/>反馈风窗与空调状态<BR/><FONT POINT-SIZE="11">LF-022</FONT>>];
+A12 -> A13 [dir=both,arrowtail=diamond,arrowhead=none];
+A14 [label=<<FONT COLOR="#8070AC">▣</FONT> «action»<BR/>执行风窗温控请求>];
+A0 -> A14 [dir=both,arrowtail=diamond,arrowhead=none];
+A15 [label=<<FONT COLOR="#8070AC">▣</FONT> «action»<BR/>控制前风窗除霜除雾模式<BR/><FONT POINT-SIZE="11">LF-026</FONT>>];
+A14 -> A15 [dir=both,arrowtail=diamond,arrowhead=none];
+}
+@enddot
